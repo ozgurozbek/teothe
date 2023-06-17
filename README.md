@@ -1,3 +1,8 @@
+# Starting up locally
+
+- Install Node.js
+- run `npm install` on root of `package.json` file.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
