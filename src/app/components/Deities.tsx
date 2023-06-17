@@ -4,7 +4,7 @@ import {
   BookTwoTone, //Knowledge
   HeartTwoTone, //Life
   FireTwoTone, //Light
-  UserOutlined, //Death
+  UsbTwoTone, //Death
   TrophyTwoTone, // Tempest
   EyeInvisibleTwoTone, // Trickery
   PictureTwoTone, // Nature
@@ -13,6 +13,31 @@ import {
 } from '@ant-design/icons';
 
 const { Title } = Typography;
+
+function Domain({ name }) {
+  switch (name) {
+    case "War":
+      return (<FlagTwoTone twoToneColor="#eb2f00" />);
+    case "Nature":
+      return (<PictureTwoTone twoToneColor="#eb0096" />);
+    case "Trickery":
+      return (<EyeInvisibleTwoTone twoToneColor="#0b2f96" />);
+    case "Fundamental":
+      return (<CrownTwoTone twoToneColor="#000000" />);
+    case "Knowledge":
+      return (<BookTwoTone twoToneColor="#eb962f" />);
+    case "Tempest":
+      return (<TrophyTwoTone twoToneColor="#eeee00" />);
+    case "Life":
+      return (<HeartTwoTone twoToneColor="#eb2f96" />);
+    case "Light":
+      return (<FireTwoTone twoToneColor="#eb2f42" />);
+    case "Death":
+      return (<UsbTwoTone twoToneColor="#424242" />);
+    default:
+      return ("Error")
+  }
+}
 
 function Deity({ imageSrc, descriptionProps }) {
   return (
@@ -37,10 +62,10 @@ export default function DeitiesInformation() {
         descriptionProps={{
           title: 'Jenelius Londste',
           body: 'Demigoddess of devotion, usually associated with fanatic determination.',
-          domain: 'Life, Tempest',
+          domain: <div><Domain name={"Life"}/><Domain name={"Tempest"}/></div>,
         }}
       />
-      
+
       <Deity
         imageSrc={'https://ozgurozbek.github.io/dnd/min_images/Lcaoc.jpg'}
         descriptionProps={{
@@ -49,7 +74,7 @@ export default function DeitiesInformation() {
           domain: 'Knowledge',
         }}
       />
-      
+
       <Deity
         imageSrc={'https://ozgurozbek.github.io/dnd/min_images/Veri.png'}
         descriptionProps={{
@@ -58,7 +83,7 @@ export default function DeitiesInformation() {
           domain: 'Life, Tempest',
         }}
       />
-      
+
       <Deity
         imageSrc={'https://ozgurozbek.github.io/dnd/min_images/Tharizdun.png'}
         descriptionProps={{
@@ -67,7 +92,7 @@ export default function DeitiesInformation() {
           domain: 'Fundamental',
         }}
       />
-      
+
     </section>
   )
 }
