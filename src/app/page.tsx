@@ -63,7 +63,7 @@ const App: React.FC = () => {
             <Breadcrumb.Item>Deities</Breadcrumb.Item>
             <Breadcrumb.Item>Demigods</Breadcrumb.Item>
           </Breadcrumb>
-          <Card bordered={false} className='w-full inline'>
+          <Card bordered={false} className='w-full'>
             <DeitiesInformation/>
           </Card>
         </Content>
