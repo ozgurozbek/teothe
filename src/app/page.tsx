@@ -10,7 +10,6 @@ import {
 import type { MenuProps } from 'antd';
 import { Breadcrumb, Layout, Menu, Card, Empty } from 'antd';
 
-import CommonLore from './tabs/commonLore';
 import DeitiesInformation from './components/Deities';
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -33,17 +32,18 @@ function getItem(
 
 const items: MenuItem[] = [
   getItem('Common Lore', '1', <DesktopOutlined />),
-  getItem('Tables', '2', <PieChartOutlined />),
+  getItem('Deities', '2', <DesktopOutlined />),
+  getItem('Tables', '3', <PieChartOutlined />),
   getItem('Library', 'sub1', <UserOutlined />, [
-    getItem('General', '3'),
-    getItem('Teothe', '4'),
-    getItem('Epipremnum', '5'),
-    getItem('Thaum', '6'),
-    getItem('Choll', '7'),
-    getItem('Fiction', '8'),
+    getItem('General', '4'),
+    getItem('Teothe', '5'),
+    getItem('Epipremnum', '6'),
+    getItem('Thaum', '7'),
+    getItem('Choll', '8'),
+    getItem('Fiction', '9'),
   ]),
-  getItem('Map Legend', '9', <FileOutlined />),
-  getItem('Races', '10', <PieChartOutlined />),
+  getItem('Map Legend', '10', <FileOutlined />),
+  getItem('Races', '11', <PieChartOutlined />),
 ];
 
 const App: React.FC = () => {

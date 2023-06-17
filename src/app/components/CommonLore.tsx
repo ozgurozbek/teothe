@@ -2,7 +2,7 @@ import { Typography } from 'antd';
 
 const { Title } = Typography;
 
-export default function CommonLore() {
+export default function CommonLoreInformation() {
     return (
         <section>
             <Title>Intro</Title>
