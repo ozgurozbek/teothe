@@ -1,7 +1,11 @@
+import { Typography } from 'antd';
+
+const { Title } = Typography;
+
 export default function CommonLore() {
     return (
         <section>
-            <h1>Intro</h1>
+            <Title>Intro</Title>
             <p>Long before their battles, gods were once "All," harnessing the energy and magic of reality. However, their egos led to conflicts and the need to determine superiority. Lesser creatures desired an end to the fighting, but gods, being immortal and unforgiving, couldn't accept another "Perfect Being's" actions.</p>
             <p>Eventually, prayers were answered, and the gods ceased fighting, but this created a worse situation. They stopped communicating and individually created humans from Mceeju, who, despite their differences, served the gods. The gods made peace with their divergences and established various races within the Astral Sea.</p>
             <p>Humans, lacking intelligence and divine guidance, possessed magic but often perished due to imperfections. Their deaths released magic into the universe. The gods accepted their punishment and judged themselves, losing their perfect nature and becoming distinct from one another.</p>
