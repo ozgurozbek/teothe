@@ -50,7 +50,7 @@ function GetDomains(data){
 
 export default function Deity({ imageSrc, descriptionProps }) {
   return (
-    <div className='inline-flex w-full p-4'>
+    <div className='inline-flex w-full py-4'>
       <Avatar
         size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }}
         src={imageSrc}

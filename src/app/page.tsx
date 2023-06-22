@@ -59,26 +59,24 @@ const items: MenuItem[] = [
 
 const App: React.FC = () => {
   const [collapsed, setCollapsed] = useState(false);
-
+  // Menu > defaultSelectedKeys={['1']}
   return (
     <Layout style={{ minHeight: '100vh' }}>
       <Sider collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
         <img src='./teothe3K.png' alt='Teothe3K Icon' />
-        <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline" items={items} />
+        <Menu theme="dark" mode="inline" items={items} />
       </Sider>
       <Layout>
         <Header style={{ padding: '0px', }} />
-        <Content style={{ margin: '0 16px' }}>
+        <Content id='PageContent' style={{ margin: '0 16px' }}>
           <Breadcrumb style={{ margin: '16px 0' }}>
-            <Breadcrumb.Item>Lore</Breadcrumb.Item>
-            <Breadcrumb.Item>Deities</Breadcrumb.Item>
-            <Breadcrumb.Item>Demigods</Breadcrumb.Item>
+            <Breadcrumb.Item>Teothe3K</Breadcrumb.Item>
           </Breadcrumb>
-          <Card id='PageContent' bordered={false} className='w-full'>
+          <Card bordered={false} className='w-full'>
             <Empty/>
           </Card>
         </Content>
-        <Footer style={{ textAlign: 'center' }}>Ant Design ©2023 Created by Ant UED</Footer>
+        <Footer style={{ textAlign: 'center' }}>God Damn</Footer>
       </Layout>
     </Layout>
   );
