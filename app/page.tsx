@@ -15,6 +15,7 @@ import { Breadcrumb, Layout, Menu, Card, Empty } from 'antd';
 import CommonLorePage from '../pages/PageCommonLore';
 import DeitiesPage from '../pages/PageDeities';
 import QuestDataPage from '../pages/PageGetQuest';
+import TablesPage from '../pages/PageTables';
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -39,14 +40,9 @@ function getItem(
 }
 
 const items: MenuItem[] = [
-  getItem(
-    <a onClick={() => {
-      loadPage(<CommonLorePage/>);
-    }}>Common Lore</a>, '1', <DesktopOutlined />),
-  getItem(<a onClick={() => {
-    loadPage(<DeitiesPage/>);
-  }}>Deities</a>, '2', <DesktopOutlined />),
-  getItem('Tables', '3', <PieChartOutlined />),
+  getItem(<a onClick={() => { loadPage(<CommonLorePage/>); }}>Common Lore</a>, '1', <DesktopOutlined />),
+  getItem(<a onClick={() => { loadPage(<DeitiesPage/>); }}>Deities</a>, '2', <DesktopOutlined />),
+  getItem(<a onClick={() => { loadPage(<TablesPage/>); }}>Tables</a>, '3', <PieChartOutlined />),
   getItem('Library', 'sub1', <UserOutlined />, [
     getItem('General', '4'),
     getItem('Teothe', '5'),
@@ -57,9 +53,7 @@ const items: MenuItem[] = [
   ]),
   getItem('Map Legend', '10', <FileOutlined />),
   getItem('Races', '11', <PieChartOutlined />),
-  getItem(<a onClick={() => {
-    loadPage(<QuestDataPage/>);
-  }}>Quest Generator</a>, '12', <SettingOutlined />),
+  getItem(<a onClick={() => { loadPage(<QuestDataPage/>); }}>Quest Generator</a>, '12', <SettingOutlined />),
 ];
 
 const App: React.FC = () => {
