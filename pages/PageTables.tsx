@@ -5,6 +5,8 @@ import MaterialsTable from "@/TableMaterials";
 import CalendarTable from "@/TableCalendar";
 import TablesNavigator from "@/TableNavigation";
 
+import "../app/PageTables.Module.css";
+
 export default function TablesPage() {
     return (
         <section>
