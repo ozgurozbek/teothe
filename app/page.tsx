@@ -7,12 +7,14 @@ import {
   FileOutlined,
   PieChartOutlined,
   UserOutlined,
+  SettingOutlined,
 } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import { Breadcrumb, Layout, Menu, Card, Empty } from 'antd';
 
 import CommonLorePage from '../pages/PageCommonLore';
 import DeitiesPage from '../pages/PageDeities';
+import QuestDataPage from '../pages/PageGetQuest';
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -55,6 +57,9 @@ const items: MenuItem[] = [
   ]),
   getItem('Map Legend', '10', <FileOutlined />),
   getItem('Races', '11', <PieChartOutlined />),
+  getItem(<a onClick={() => {
+    loadPage(<QuestDataPage/>);
+  }}>Quest Generator</a>, '12', <SettingOutlined />),
 ];
 
 const App: React.FC = () => {
