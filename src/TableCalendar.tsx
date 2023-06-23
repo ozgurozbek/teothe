@@ -1,40 +1,77 @@
 import { Table } from "antd";
+import SimpleContent from "./SimpleCon";
 
 export default function CalendarTable() {
   const dataSource = [
     {
-      key: '1',
-      name: 'Mike',
-      age: 32,
-      address: '10 Downing Street',
+      month: '1',
+      name: "Buibus",
+      season: 'Spring',
     },
     {
-      key: '2',
-      name: 'John',
-      age: 42,
-      address: '10 Downing Street',
+      month: '2',
+      name: "Ukeus",
+      season: 'Spring',
     },
+    {
+      month: '3',
+      name: "Verus",
+      season: 'Summer',
+    },
+    {
+      month: '4',
+      name: "Vihus",
+      season: 'Summer',
+    },
+    {
+      month: '5',
+      name: "Fexyius",
+      season: 'Fall',
+    },
+    {
+      month: '6',
+      name: "Vesius",
+      season: 'Fall',
+    },
+    {
+      month: '7',
+      name: "Cyaxus",
+      season: 'Winter',
+    },
+    {
+      month: '8',
+      name: "Radus",
+      season: 'Winter',
+    },
+    
+    
   ];
 
   const columns = [
+    {
+      title: 'Month',
+      dataIndex: 'month',
+      key: 'month',
+    },
     {
       title: 'Name',
       dataIndex: 'name',
       key: 'name',
     },
     {
-      title: 'Age',
-      dataIndex: 'age',
-      key: 'age',
-    },
-    {
-      title: 'Address',
-      dataIndex: 'address',
-      key: 'address',
+      title: 'Season',
+      dataIndex: 'season',
+      key: 'season',
     },
   ];
 
-  return (<>
-    <Table dataSource={dataSource} columns={columns} />;
-  </>)
+  return (<section className="py-4">
+  <SimpleContent
+    contentProps={{
+      title: "Calendar",
+      text: ["Every month has 48 days, every week has 8 days, every day has 24 hours.", "In total, there are 384 days in a year."]
+    }}
+  />
+  <Table dataSource={dataSource} columns={columns} pagination={false}/>
+</section>)
 }
