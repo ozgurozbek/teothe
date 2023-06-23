@@ -68,7 +68,7 @@ export default function MaterialsTable() {
     },
   ];
 
-  return (<section className="py-4">
+  return (<section id="materialvariants" className="py-4">
   <SimpleContent
     contentProps={{
       title: "Material Variants",

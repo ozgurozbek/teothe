@@ -84,7 +84,7 @@ export default function ResurrectionTable() {
     },
   ];
 
-  return (<section className="py-4">
+  return (<section id="resurrection" className="py-4">
     <SimpleContent
       contentProps={{
         title: "Resurrection",

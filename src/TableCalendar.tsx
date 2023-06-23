@@ -65,7 +65,7 @@ export default function CalendarTable() {
     },
   ];
 
-  return (<section className="py-4">
+  return (<section id="calendar" className="py-4">
   <SimpleContent
     contentProps={{
       title: "Calendar",
