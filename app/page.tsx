@@ -11,8 +11,8 @@ import {
 import type { MenuProps } from 'antd';
 import { Breadcrumb, Layout, Menu, Card, Empty } from 'antd';
 
-import CommonLorePage from './pages/PageCommonLore';
-import DeitiesPage from './pages/PageDeities';
+import CommonLorePage from '../pages/PageCommonLore';
+import DeitiesPage from '../pages/PageDeities';
 
 const { Header, Content, Footer, Sider } = Layout;
 
