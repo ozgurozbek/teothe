@@ -1,4 +1,4 @@
-import GetCrumbs from "@/NavigationCrumb";
+import GetCrumbs from "@/components/NavigationCrumb";
 import { Card } from "antd";
 import type { InferGetStaticPropsType, GetStaticProps } from 'next'
  
@@ -9,8 +9,9 @@ type Quest = {
 export const getStaticProps: GetStaticProps<{
   quest: Quest
 }> = async () => {
-  const res = await fetch('https://xeculus.pythonanywhere.com/generate')
+  const res = await fetch(' ')
   const quest = await res.json()
+  console.log(quest)
   return { props: { quest } }
 }
  

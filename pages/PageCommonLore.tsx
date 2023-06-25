@@ -1,6 +1,6 @@
 import { Card } from "antd";
-import GetCrumbs from "@/NavigationCrumb";
-import SimpleContent from "@/SimpleCon";
+import GetCrumbs from "@/components/NavigationCrumb";
+import SimpleContent from "@/components/SimpleCon";
 
 export default function CommonLorePage() {
     return (

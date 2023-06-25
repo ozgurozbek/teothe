@@ -1,9 +1,9 @@
 import { Card } from "antd";
-import GetCrumbs from "@/NavigationCrumb";
-import ResurrectionTable from "@/TableResurrection";
-import MaterialsTable from "@/TableMaterials";
-import CalendarTable from "@/TableCalendar";
-import TablesNavigator from "@/TableNavigation";
+import GetCrumbs from "@/components/NavigationCrumb";
+import ResurrectionTable from "@/components/TableResurrection";
+import MaterialsTable from "@/components/TableMaterials";
+import CalendarTable from "@/components/TableCalendar";
+import TablesNavigator from "@/components/TableNavigation";
 
 import "../app/PageTables.Module.css";
 
