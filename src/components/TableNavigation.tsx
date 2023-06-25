@@ -1,6 +1,6 @@
 import { Button, Space } from "antd";
 
-function NavigateToTable(tableid) {
+function NavigateToTable(tableid: string) {
   document.getElementById(tableid)?.scrollIntoView();
 }
 

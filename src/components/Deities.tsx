@@ -13,7 +13,7 @@ import {
 
 const { Title } = Typography;
 
-function GetDomainObject(name) {
+function GetDomainObject(name: string) {
   switch (name) {
     case "War":
       return <FlagTwoTone className="py-2 text-2xl" twoToneColor="#eb2f00" />;
@@ -42,16 +42,22 @@ function GetDomainObject(name) {
   }
 }
 
-function GetDomains(data) {
-  var data = data.split(", ");
-  var result = [];
-  for (let i = 0; i < data.length; i++) {
-    result.push(GetDomainObject(data[i]));
+function GetDomains(data: string) {
+  let splitData = data.split(", ");
+  let result = [];
+  for (let i = 0; i < splitData.length; i++) {
+    result.push(GetDomainObject(splitData[i]));
   }
   return result;
 }
 
-export default function Deity({ imageSrc, descriptionProps }) {
+export default function Deity({
+  imageSrc,
+  descriptionProps,
+}: {
+  imageSrc: string;
+  descriptionProps: { title: string; body: string; domain: string };
+}) {
   return (
     <div className="inline-flex w-full py-4">
       <Avatar

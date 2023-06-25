@@ -19,7 +19,7 @@ import TablesPage from "Pages/PageTables";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
-function loadPage(pageComponent) {
+function loadPage(pageComponent: React.ReactElement) {
   render(pageComponent, document.getElementById("PageContent"));
 }
 

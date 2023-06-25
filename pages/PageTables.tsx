@@ -5,7 +5,7 @@ import MaterialsTable from "Comp/TableMaterials";
 import CalendarTable from "Comp/TableCalendar";
 import TablesNavigator from "Comp/TableNavigation";
 
-import "@/css/PageTables.Module.css";
+import "App/css/PageTables.Module.css";
 
 export default function TablesPage() {
   return (
