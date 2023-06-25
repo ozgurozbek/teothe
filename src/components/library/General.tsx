@@ -1,16 +1,45 @@
-import { pdfjs, Document, Page } from "react-pdf";
-
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
+import { Card, Space } from "antd";
+import GetCrumbs from "Comp/NavigationCrumb";
+import GetBook from "Comp/library/GetBook";
 
 export default function GeneralTab() {
   return (
-    <section>
-      <Document file="https://ozgurozbek.github.io/dnd/books/TheseClovers.pdf">
-        <Page />
-        <Page />
-        <Page />
-        <Page />
-      </Document>
-    </section>
+    <>
+      <GetCrumbs path={"Library,General"} />
+      <Card bordered={false} className="w-full h-full">
+        <Space wrap>
+          <GetBook
+            bookProps={{
+              url: "https://ozgurozbek.github.io/dnd/books/TheseClovers.pdf",
+              name: "TheseClovers",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "https://ozgurozbek.github.io/dnd/books/SeraBook.pdf",
+              name: "SeraBook",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "https://ozgurozbek.github.io/dnd/books/DivineTales1.pdf",
+              name: "DivineTales1",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "https://ozgurozbek.github.io/dnd/books/AncientSummary.pdf",
+              name: "AncientSummary",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "https://ozgurozbek.github.io/dnd/books/Reform.pdf",
+              name: "Reform",
+            }}
+          />
+        </Space>
+      </Card>
+    </>
   );
 }
