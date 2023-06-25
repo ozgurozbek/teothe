@@ -1,7 +1,7 @@
 import { Card } from "antd";
-import Deity from "@/components/Deities";
-import GetCrumbs from "@/components/NavigationCrumb";
-import SimpleContent from "@/components/SimpleCon";
+import Deity from "Comp/commonlore/Deities";
+import GetCrumbs from "Comp/NavigationCrumb";
+import SimpleContent from "Comp/SimpleCon";
 
 export default function DeitiesPage() {
   return (

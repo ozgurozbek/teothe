@@ -16,6 +16,7 @@ import CommonLorePage from "Pages/PageCommonLore";
 import DeitiesPage from "Pages/PageDeities";
 import QuestDataPage from "App/getQuest/page";
 import TablesPage from "Pages/PageTables";
+import LibraryPage from "Pages/PageLibrary";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
@@ -72,14 +73,33 @@ const items: MenuItem[] = [
     <PieChartOutlined />
   ),
   getItem("Library", "sub1", <UserOutlined />, [
-    getItem("General", "4"),
+    getItem(
+      <a
+        onClick={() => {
+          loadPage(<LibraryPage />);
+        }}
+      >
+        General
+      </a>,
+      "4"
+    ),
     getItem("Teothe", "5"),
     getItem("Epipremnum", "6"),
     getItem("Thaum", "7"),
     getItem("Choll", "8"),
     getItem("Fiction", "9"),
   ]),
-  getItem("Map Legend", "10", <FileOutlined />),
+  getItem(
+    <a
+      onClick={() => {
+        loadPage(<LibraryPage />);
+      }}
+    >
+      Not Map Legend
+    </a>,
+    "10",
+    <FileOutlined />
+  ),
   getItem("Races", "11", <PieChartOutlined />),
   getItem(
     <a
