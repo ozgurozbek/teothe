@@ -4,74 +4,77 @@ import SimpleContent from "./SimpleCon";
 export default function CalendarTable() {
   const dataSource = [
     {
-      month: '1',
+      month: "1",
       name: "Buibus",
-      season: 'Spring',
+      season: "Spring",
     },
     {
-      month: '2',
+      month: "2",
       name: "Ukeus",
-      season: 'Spring',
+      season: "Spring",
     },
     {
-      month: '3',
+      month: "3",
       name: "Verus",
-      season: 'Summer',
+      season: "Summer",
     },
     {
-      month: '4',
+      month: "4",
       name: "Vihus",
-      season: 'Summer',
+      season: "Summer",
     },
     {
-      month: '5',
+      month: "5",
       name: "Fexyius",
-      season: 'Fall',
+      season: "Fall",
     },
     {
-      month: '6',
+      month: "6",
       name: "Vesius",
-      season: 'Fall',
+      season: "Fall",
     },
     {
-      month: '7',
+      month: "7",
       name: "Cyaxus",
-      season: 'Winter',
+      season: "Winter",
     },
     {
-      month: '8',
+      month: "8",
       name: "Radus",
-      season: 'Winter',
+      season: "Winter",
     },
-    
-    
   ];
 
   const columns = [
     {
-      title: 'Month',
-      dataIndex: 'month',
-      key: 'month',
+      title: "Month",
+      dataIndex: "month",
+      key: "month",
     },
     {
-      title: 'Name',
-      dataIndex: 'name',
-      key: 'name',
+      title: "Name",
+      dataIndex: "name",
+      key: "name",
     },
     {
-      title: 'Season',
-      dataIndex: 'season',
-      key: 'season',
+      title: "Season",
+      dataIndex: "season",
+      key: "season",
     },
   ];
 
-  return (<section id="calendar" className="py-4">
-  <SimpleContent
-    contentProps={{
-      title: "Calendar",
-      text: ["Every month has 48 days, every week has 8 days, every day has 24 hours.", "In total, there are 384 days in a year."]
-    }}
-  />
-  <Table dataSource={dataSource} columns={columns} pagination={false}/>
-</section>)
+  return (
+    <section id="calendar" className="py-4">
+      <SimpleContent
+        contentProps={{
+          title: "Calendar",
+          text: [
+            "Every month has 48 days, every week has 8 days, every day has 24 hours.",
+            "In total, there are 384 days in a year.",
+          ],
+        }}
+      />
+      <Table dataSource={dataSource} columns={columns} pagination={false} />
+    </section>
+  );
 }
