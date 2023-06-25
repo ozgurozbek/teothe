@@ -14,7 +14,7 @@ import type { MenuProps } from "antd";
 
 import CommonLorePage from "../../pages/PageCommonLore";
 import DeitiesPage from "../../pages/PageDeities";
-import QuestDataPage from "../../pages/PageGetQuest";
+import QuestDataPage from "../getQuest/page";
 import TablesPage from "../../pages/PageTables";
 
 type MenuItem = Required<MenuProps>["items"][number];
