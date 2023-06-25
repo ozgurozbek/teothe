@@ -2,8 +2,8 @@
 
 import React from "react";
 import { Layout } from "antd";
-import Sidebar from "./components/SideNav";
-import Dashboard from "../pages/PageDashboard";
+import Sidebar from "Comp/SideNav";
+import Dashboard from "Pages/PageDashboard";
 
 export default function App() {
   return (

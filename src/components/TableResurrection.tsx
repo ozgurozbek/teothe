@@ -1,5 +1,5 @@
 import { Table } from "antd";
-import SimpleContent from "./SimpleCon";
+import SimpleContent from "Comp/SimpleCon";
 
 export default function ResurrectionTable() {
   const dataSource = [
