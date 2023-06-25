@@ -1,7 +1,8 @@
-"use client"; // This is a client component 👈🏽
-
-import React, { useState } from "react";
+import { useState } from "react";
 import { render } from "react-dom";
+import { Menu } from "antd";
+import Sider from "antd/es/layout/Sider";
+
 import {
   DesktopOutlined,
   FileOutlined,
@@ -10,14 +11,11 @@ import {
   SettingOutlined,
 } from "@ant-design/icons";
 import type { MenuProps } from "antd";
-import { Breadcrumb, Layout, Menu, Card, Empty } from "antd";
 
-import CommonLorePage from "../pages/PageCommonLore";
-import DeitiesPage from "../pages/PageDeities";
-import QuestDataPage from "../pages/PageGetQuest";
-import TablesPage from "../pages/PageTables";
-
-const { Header, Content, Footer, Sider } = Layout;
+import CommonLorePage from "Pages/PageCommonLore";
+import DeitiesPage from "Pages/PageDeities";
+import QuestDataPage from "App/getQuest/page";
+import TablesPage from "Pages/PageTables";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
@@ -96,33 +94,17 @@ const items: MenuItem[] = [
   ),
 ];
 
-const App: React.FC = () => {
+export default function Sidebar() {
   const [collapsed, setCollapsed] = useState(false);
   // Menu > defaultSelectedKeys={['1']}
   return (
-    <Layout style={{ minHeight: "100vh" }}>
-      <Sider
-        collapsible
-        collapsed={collapsed}
-        onCollapse={(value) => setCollapsed(value)}
-      >
-        <img src="./teothe3K.png" alt="Teothe3K Icon" />
-        <Menu theme="dark" mode="inline" items={items} />
-      </Sider>
-      <Layout>
-        <Header style={{ padding: "0px" }} />
-        <Content id="PageContent" style={{ margin: "0 16px" }}>
-          <Breadcrumb style={{ margin: "16px 0" }}>
-            <Breadcrumb.Item>Teothe3K</Breadcrumb.Item>
-          </Breadcrumb>
-          <Card bordered={false} className="w-full">
-            <Empty />
-          </Card>
-        </Content>
-        <Footer style={{ textAlign: "center" }}>God Damn</Footer>
-      </Layout>
-    </Layout>
+    <Sider
+      collapsible
+      collapsed={collapsed}
+      onCollapse={(value) => setCollapsed(value)}
+    >
+      <img src="./teothe3K.png" alt="Teothe3K Icon" />
+      <Menu theme="dark" mode="inline" items={items} />
+    </Sider>
   );
-};
-
-export default App;
+}
