@@ -11,10 +11,6 @@ export default function SimpleContent({
     text: string[];
   };
 }) {
-  let imgData;
-  if (contentProps.image) {
-  }
-
   let textData = [];
   for (let i = 0; i < contentProps.text.length; i++) {
     textData.push(<p className="mb-2">{contentProps.text[i]}</p>);
