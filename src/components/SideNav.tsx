@@ -17,7 +17,7 @@ import DeitiesPage from "Pages/PageDeities";
 import QuestDataPage from "App/getQuest/page";
 import TablesPage from "Pages/PageTables";
 import LibraryPage from "Pages/PageLibrary";
-import StateTestPage from "Pages/PageStateTest";
+import MapLegendPage from "Pages/PageMapLegend";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
@@ -93,10 +93,10 @@ const items: MenuItem[] = [
   getItem(
     <a
       onClick={() => {
-        loadPage(<StateTestPage />);
+        loadPage(<MapLegendPage />);
       }}
     >
-      Not Map Legend
+      Map Legend
     </a>,
     "10",
     <FileOutlined />
