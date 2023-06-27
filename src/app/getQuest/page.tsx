@@ -1,28 +1,22 @@
-async function getData() {
-  let data = await fetch("https://xeculus.pythonanywhere.com/generate", {
-    cache: "no-store",
-  });
-  return data.text();
-}
-
-export default async function GetQuest() {
-  const data = await getData();
-  return <div>{data}</div>;
-}
-
-/*
 import GetCrumbs from "@/components/NavigationCrumb";
 import { Card } from "antd";
+import useSWR from "swr";
 
-async function getData() {
-  let data = await fetch("https://xeculus.pythonanywhere.com/generate", {
-    cache: "no-store",
-  });
-  return data.text();
-}
-
-export default async function GetQuest() {
-  const data = await getData();
+export default function GetQuest() {
+  const fetcher = (...args) =>
+    fetch(
+      // ...args // use for build
+      "https://cors-anywhere.herokuapp.com/" + args[0] // use for testing
+    ).then((res) => res.text());
+  const { data, error } = useSWR(
+    "https://xeculus.pythonanywhere.com/generate",
+    fetcher
+  );
+  if (error) {
+    console.log(error);
+    return <div>failed to load</div>;
+  }
+  if (!data) return <div>loading...</div>;
   return (
     <>
       <GetCrumbs path="Quest Generator API,Generate" />
@@ -30,4 +24,3 @@ export default async function GetQuest() {
     </>
   );
 }
-*/
