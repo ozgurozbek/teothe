@@ -14,7 +14,7 @@ import type { MenuProps } from "antd";
 
 import CommonLorePage from "Pages/PageCommonLore";
 import DeitiesPage from "Pages/PageDeities";
-import QuestDataPage from "App/getQuest/page";
+import GetQuest from "App/getQuest/page";
 import TablesPage from "Pages/PageTables";
 import LibraryPage from "Pages/PageLibrary";
 import MapLegendPage from "Pages/PageMapLegend";
@@ -105,7 +105,7 @@ const items: MenuItem[] = [
   getItem(
     <a
       onClick={() => {
-        loadPage(<QuestDataPage />);
+        loadPage(<GetQuest />);
       }}
     >
       Quest Generator
