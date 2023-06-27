@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Card, Space } from "antd";
+import { Button, Card, Image, Space } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 
 export default function MapLegendPage() {
@@ -21,7 +21,11 @@ export default function MapLegendPage() {
     let mapData = [];
     for (let i = 0; i < maps.length; i++) {
       mapData.push(
-        <img className="absolute" src={"./map" + maps[i] + ".png"} />
+        <Image
+          rootClassName="absolute"
+          preview={false}
+          src={"./map" + maps[i] + ".png"}
+        />
       );
     }
     return <div className="mt-4 h-[400px]">{mapData}</div>;
@@ -31,7 +35,7 @@ export default function MapLegendPage() {
     <section>
       <GetCrumbs path={"Test,State"} />
       <Card bordered={false} className="w-full">
-        <Space>
+        <Space wrap>
           <Button
             onClick={() => {
               handleVis("2");
