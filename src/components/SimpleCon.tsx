@@ -1,4 +1,4 @@
-import { Typography } from "antd";
+import { Typography, Image } from "antd";
 
 const { Title } = Typography;
 
@@ -20,8 +20,8 @@ export default function SimpleContent({
     <section>
       <Title>{contentProps.title}</Title>
       {contentProps.image?.src && (
-        <img
-          className="my-4 rounded-lg"
+        <Image
+          rootClassName="my-4 rounded-lg"
           src={contentProps.image.src}
           alt={contentProps.image.alt}
         />
