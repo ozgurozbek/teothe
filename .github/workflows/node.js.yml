@@ -16,28 +16,28 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 18
+      # - name: Set up Node.js
+      #   uses: actions/setup-node@v2
+      #   with:
+      #     node-version: 18
 
-      - name: Install dependencies
-        run: npm ci
+      # - name: Install dependencies
+      #   run: npm ci
 
-      - name: Cache npm dependencies
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+      # - name: Cache npm dependencies
+      #   uses: actions/cache@v2
+      #   with:
+      #     path: ~/.npm
+      #     key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-node-
 
-      - name: Run development environment
-        run: npm run build --if-present
-        env:
-          CI: true
-        shell: cmd
+      # - name: Run development environment
+      #   run: npm run build --if-present
+      #   env:
+      #     CI: true
+      #   shell: cmd
 
-      - name: Stop development environment
-        run: taskkill /IM "node.exe" /F /FI "WINDOWTITLE eq npm run build*" || true
-        shell: cmd
+      # - name: Stop development environment
+      #   run: taskkill /IM "node.exe" /F /FI "WINDOWTITLE eq npm run build*" || true
+      #   shell: cmd
