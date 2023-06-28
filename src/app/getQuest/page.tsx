@@ -3,7 +3,7 @@ import { Card } from "antd";
 import useSWR from "swr";
 
 export default function GetQuest() {
-  const fetcher = (...args) =>
+  const fetcher = (...args: string[]) =>
     fetch(
       // ...args // use for build
       "https://cors-anywhere.herokuapp.com/" + args[0] // use for testing
