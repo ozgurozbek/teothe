@@ -1,3 +1,5 @@
+[![Node.js CI](https://github.com/ozgurozbek/teothe-frontend/actions/workflows/node.js.yml/badge.svg)](https://github.com/ozgurozbek/teothe-frontend/actions/workflows/node.js.yml)
+
 # Starting up locally
 
 - Install Node.js
