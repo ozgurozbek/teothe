@@ -1,5 +1,5 @@
 import MapEntry from "Comp/maps/MapEntry";
-import { Card, Divider } from "antd";
+import { Card } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import SimpleContent from "Comp/SimpleCon";
 import useSWR from "swr";
