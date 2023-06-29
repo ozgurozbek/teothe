@@ -8,12 +8,14 @@ export default function SimpleContent({
   contentProps: {
     image?: { src: string; alt: string };
     title: string;
-    text: string[];
+    text?: string[];
   };
 }) {
   let textData = [];
-  for (let i = 0; i < contentProps.text.length; i++) {
-    textData.push(<p className="mb-2">{contentProps.text[i]}</p>);
+  if (contentProps.text) {
+    for (let i = 0; i < contentProps.text.length; i++) {
+      textData.push(<p className="mb-2">{contentProps.text[i]}</p>);
+    }
   }
 
   return (
@@ -26,7 +28,7 @@ export default function SimpleContent({
           alt={contentProps.image.alt}
         />
       )}
-      {textData}
+      {contentProps.text && textData}
     </section>
   );
 }
