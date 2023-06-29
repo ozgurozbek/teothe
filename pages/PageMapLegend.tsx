@@ -1,64 +1,50 @@
-import { useState } from "react";
-import { Button, Card, Image, Space } from "antd";
+import MapEntry from "Comp/maps/MapEntry";
+import { Card, Divider } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
+import SimpleContent from "Comp/SimpleCon";
+import useSWR from "swr";
+
+function GetMapLegend() {
+  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
+  const { data, error } = useSWR("http://localhost:5000/getMapRes", fetcher);
+  if (error) {
+    console.log(error);
+    return <div>Failed to access API</div>;
+  }
+  if (!data) return <div>Loading...</div>;
+
+  let renderedMapRes = [];
+  for (let item of data) {
+    renderedMapRes.push(
+      //name type check image
+      <MapEntry
+        imageSrc={item[3]}
+        textProps={{
+          name: item[0],
+          rarity: item[1],
+          check: item[2],
+        }}
+      />
+    );
+  }
+  return renderedMapRes;
+}
 
 export default function MapLegendPage() {
-  const [maps, setMapVis] = useState("1");
-  let temp: any;
-
-  function handleVis(data: string) {
-    // This is not an array, it is an ugly substring hack
-    if (!maps.includes(data)) {
-      temp = maps + data;
-    } else {
-      temp = maps.split(data);
-      temp = temp[0] + temp[1];
-    }
-    setMapVis(temp);
-  }
-
-  function ShowMaps() {
-    let mapData = [];
-    for (let i = 0; i < maps.length; i++) {
-      mapData.push(
-        <Image
-          rootClassName="absolute"
-          preview={false}
-          src={"./map" + maps[i] + ".png"}
-        />
-      );
-    }
-    return <div className="mt-4 h-[400px]">{mapData}</div>;
-  }
-
   return (
     <section>
-      <GetCrumbs path={"Test,State"} />
+      <GetCrumbs path={"Pages,Deities"} />
       <Card bordered={false} className="w-full">
-        <Space wrap>
-          <Button
-            onClick={() => {
-              handleVis("2");
-            }}
-          >
-            Mountain Overlay
-          </Button>
-          <Button
-            onClick={() => {
-              handleVis("3");
-            }}
-          >
-            Water Overlay
-          </Button>
-          <Button
-            onClick={() => {
-              handleVis("4");
-            }}
-          >
-            City Overlay
-          </Button>
-        </Space>
-        <ShowMaps />
+        <SimpleContent
+          contentProps={{
+            title: "Map Legend",
+            text: [
+              "Resource based legend for trader campaigns, descriptions and difficulty classes for all of them.",
+              "Adds new skills named Artifice and Influence. Difficulty classes are averaged out. They can change depending on the situation.",
+            ],
+          }}
+        />
+        {GetMapLegend()}
       </Card>
     </section>
   );
