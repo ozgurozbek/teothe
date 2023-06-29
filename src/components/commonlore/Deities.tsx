@@ -111,16 +111,11 @@ export default function Deity({
   return (
     <div className="inline-flex w-full py-4">
       <Avatar
-        size={120}
-        style={{ backgroundColor: "#000000", border: "none" }}
-        src={
-          <Image
-            width={"auto"}
-            height={"100%"}
-            src={imageSrc}
-            alt={descriptionProps.title}
-          ></Image>
-        }
+        size={{ xs: 24, sm: 40, md: 64, lg: 80, xl: 100, xxl: 120 }}
+        src={imageSrc}
+        alt={descriptionProps.title}
+        draggable={false}
+        onClick={() => window.open(imageSrc, "_blank")}
       />
       <div className="px-4 w-[90%]">
         <Title>{descriptionProps.title}</Title>
