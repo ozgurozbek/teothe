@@ -18,6 +18,7 @@ import GetQuest from "App/getQuest/page";
 import TablesPage from "Pages/PageTables";
 import LibraryPage from "Pages/PageLibrary";
 import MapLegendPage from "Pages/PageMapLegend";
+import LocationsPage from "Pages/PageLocations";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
@@ -47,6 +48,17 @@ const items: MenuItem[] = [
       }}
     >
       Common Lore
+    </a>,
+    "1",
+    <DesktopOutlined />
+  ),
+  getItem(
+    <a
+      onClick={() => {
+        loadPage(<LocationsPage />);
+      }}
+    >
+      Planes of Existence
     </a>,
     "1",
     <DesktopOutlined />
