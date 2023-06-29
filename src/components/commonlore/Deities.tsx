@@ -1,4 +1,4 @@
-import { Typography, Avatar } from "antd";
+import { Typography, Avatar, Image } from "antd";
 import {
   CrownTwoTone, // Fundamental
   BookTwoTone, //Knowledge
@@ -111,9 +111,16 @@ export default function Deity({
   return (
     <div className="inline-flex w-full py-4">
       <Avatar
-        size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }}
-        src={imageSrc}
-        alt={descriptionProps.title}
+        size={120}
+        style={{ backgroundColor: "#000000", border: "none" }}
+        src={
+          <Image
+            width={"auto"}
+            height={"100%"}
+            src={imageSrc}
+            alt={descriptionProps.title}
+          ></Image>
+        }
       />
       <div className="px-4 w-[90%]">
         <Title>{descriptionProps.title}</Title>
