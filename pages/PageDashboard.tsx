@@ -49,7 +49,7 @@ export default function Dashboard() {
         </a>
         ,{" "}
         <a target="_blank" href="https://www.dmsguild.com/">
-          DM's Guild
+          DM&apos;s Guild
         </a>
         ,{" "}
         <a target="_blank" href="https://www.gmbinder.com/">

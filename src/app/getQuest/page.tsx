@@ -1,3 +1,5 @@
+"use client";
+
 import GetCrumbs from "@/components/NavigationCrumb";
 import { Card } from "antd";
 import useSWR from "swr";

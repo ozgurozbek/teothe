@@ -5,8 +5,7 @@ import SimpleContent from "Comp/SimpleCon";
 import useSWR from "swr";
 
 function GetDeities(rank: string) {
-  const fetcher = (...args: string[]) =>
-    fetch(...args).then((res) => res.json());
+  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR("http://localhost:5000/getDeities", fetcher);
   if (error) {
     console.log(error);
