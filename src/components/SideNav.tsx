@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { render } from "react-dom";
-import { Menu } from "antd";
+import { Menu, Image } from "antd";
 import Sider from "antd/es/layout/Sider";
 
 import {
@@ -124,7 +124,7 @@ export default function Sidebar() {
       collapsed={collapsed}
       onCollapse={(value) => setCollapsed(value)}
     >
-      <img src="./teothe3K.png" alt="Teothe3K Icon" />
+      <Image src="./teothe3K.png" alt="Teothe3K Icon" />
       <Menu theme="dark" mode="inline" items={items} />
     </Sider>
   );
