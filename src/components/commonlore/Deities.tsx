@@ -16,27 +16,77 @@ const { Title } = Typography;
 function GetDomainObject(name: string) {
   switch (name) {
     case "War":
-      return <FlagTwoTone className="py-2 text-2xl" twoToneColor="#eb2f00" />;
+      return (
+        <FlagTwoTone
+          title="War"
+          className="py-2 text-2xl"
+          twoToneColor="#eb2f00"
+        />
+      );
     case "Nature":
       return (
-        <PictureTwoTone className="py-2 text-2xl" twoToneColor="#eb0096" />
+        <PictureTwoTone
+          title="Nature"
+          className="py-2 text-2xl"
+          twoToneColor="#eb0096"
+        />
       );
     case "Trickery":
       return (
-        <EyeInvisibleTwoTone className="py-2 text-2xl" twoToneColor="#0b2f96" />
+        <EyeInvisibleTwoTone
+          title="Trickery"
+          className="py-2 text-2xl"
+          twoToneColor="#0b2f96"
+        />
       );
     case "Fundamental":
-      return <CrownTwoTone className="py-2 text-2xl" twoToneColor="#333333" />;
+      return (
+        <CrownTwoTone
+          title="Fundamental"
+          className="py-2 text-2xl"
+          twoToneColor="#333333"
+        />
+      );
     case "Knowledge":
-      return <BookTwoTone className="py-2 text-2xl" twoToneColor="#bb362f" />;
+      return (
+        <BookTwoTone
+          title="Knowledge"
+          className="py-2 text-2xl"
+          twoToneColor="#bb362f"
+        />
+      );
     case "Tempest":
-      return <TrophyTwoTone className="py-2 text-2xl" twoToneColor="#aaaa00" />;
+      return (
+        <TrophyTwoTone
+          title="Tempest"
+          className="py-2 text-2xl"
+          twoToneColor="#aaaa00"
+        />
+      );
     case "Life":
-      return <HeartTwoTone className="py-2 text-2xl" twoToneColor="#eb2f96" />;
+      return (
+        <HeartTwoTone
+          title="Life"
+          className="py-2 text-2xl"
+          twoToneColor="#eb2f96"
+        />
+      );
     case "Light":
-      return <FireTwoTone className="py-2 text-2xl" twoToneColor="#eb2f42" />;
+      return (
+        <FireTwoTone
+          title="Light"
+          className="py-2 text-2xl"
+          twoToneColor="#eb2f42"
+        />
+      );
     case "Death":
-      return <UsbTwoTone className="py-2 text-2xl" twoToneColor="#424242" />;
+      return (
+        <UsbTwoTone
+          title="Death"
+          className="py-2 text-2xl"
+          twoToneColor="#424242"
+        />
+      );
     default:
       return "Error";
   }
