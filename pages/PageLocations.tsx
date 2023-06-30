@@ -1,6 +1,5 @@
 import GetCrumbs from "@/components/NavigationCrumb";
 import Location from "@/components/locations/Locations";
-import { Typography, Image, Divider } from "antd";
 import { Card } from "antd";
 import useSWR from "swr";
 
@@ -18,10 +17,10 @@ function GetPlanes() {
     {
       renderedPlanes.push(
         <Location
-          imageSrc={"./Planes/" + item[1] + ".png"}
+          imageSrc={"./Planes/" + item[0] + ".png"}
           locationProps={{
-            name: item[1],
-            description: item[2],
+            name: item[0],
+            description: item[1],
           }}
         />
       );
@@ -34,9 +33,9 @@ export default function LocationsPage() {
   return (
     <section>
       <GetCrumbs path={"Pages,Locations"} />
-      <Card bordered={false} className="w-full " />
-      {GetPlanes()}
-      <Divider />
+      <Card bordered={false} className=" w-full">
+        {GetPlanes()}
+      </Card>
     </section>
   );
 }
