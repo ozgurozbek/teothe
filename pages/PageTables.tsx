@@ -1,12 +1,81 @@
-import { Card } from "antd";
+import { Button, Card, Divider, Empty, Space } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
-import TablesNavigator from "Comp/tables/TableNavigation";
 import useSWR from "swr";
 import { Table } from "antd";
 
-import "App/css/PageTables.Module.css";
+import { useState } from "react";
+import SimpleContent from "@/components/SimpleCon";
 
-function GetTableData(query: string) {
+function GetTableData() {
+  const [curTable, setCurTable] = useState("resurrection");
+  const [displayEmpty, setDisplayEmpty] = useState(true);
+  let query = curTable;
+
+  function TablesNavigator() {
+    return (
+      <>
+        <Space wrap>
+          <Button
+            onClick={() => {
+              setDisplayEmpty(false);
+              setCurTable("material");
+            }}
+          >
+            Material Variants
+          </Button>
+          <Button
+            onClick={() => {
+              setDisplayEmpty(false);
+              setCurTable("calendar");
+            }}
+          >
+            Calendar
+          </Button>
+          <Button
+            onClick={() => {
+              setDisplayEmpty(false);
+              setCurTable("alchemy");
+            }}
+          >
+            Alchemy
+          </Button>
+          <Button
+            onClick={() => {
+              setDisplayEmpty(false);
+              setCurTable("resurrection");
+            }}
+          >
+            Resurrection
+          </Button>
+          <Button
+            onClick={() => {
+              setDisplayEmpty(false);
+              setCurTable("enhancements");
+            }}
+          >
+            Enhancements
+          </Button>
+          <Button
+            onClick={() => {
+              setDisplayEmpty(false);
+              setCurTable("runes");
+            }}
+          >
+            Runes
+          </Button>
+          <Button
+            onClick={() => {
+              setDisplayEmpty(false);
+              setCurTable("adultry");
+            }}
+          >
+            Adultry
+          </Button>
+        </Space>
+      </>
+    );
+  }
+
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
     "http://localhost:5000/getTables?tab=" + query,
@@ -17,6 +86,16 @@ function GetTableData(query: string) {
     return <div>Failed to access API</div>;
   }
   if (!data) return <div>Loading...</div>;
+
+  if (displayEmpty) {
+    return (
+      <>
+        <TablesNavigator />
+        <Divider />
+        <Empty />
+      </>
+    );
+  }
 
   function titleCase(text: string) {
     return text
@@ -43,8 +122,23 @@ function GetTableData(query: string) {
     }
     dataSource.push(item);
   }
-
-  return <Table dataSource={dataSource} columns={columns} pagination={false} />;
+  return (
+    <>
+      <TablesNavigator />
+      <Divider />
+      <SimpleContent
+        contentProps={{
+          title: titleCase(query),
+        }}
+      />
+      <Table
+        className="mt-4"
+        dataSource={dataSource}
+        columns={columns}
+        pagination={false}
+      />
+    </>
+  );
 }
 
 export default function TablesPage() {
@@ -52,9 +146,7 @@ export default function TablesPage() {
     <section>
       <GetCrumbs path={"Pages,Tables"} />
       <Card bordered={false} className="w-full">
-        <TablesNavigator />
-        {GetTableData("resurrection")} Update this with state from the
-        navigator.
+        {GetTableData()}
       </Card>
     </section>
   );
