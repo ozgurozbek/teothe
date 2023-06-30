@@ -116,7 +116,7 @@ function GetTableData() {
 
   let dataSource = [];
   for (let rowData of data[1]) {
-    let item = {};
+    let item: any = {};
     for (let i = 0; i < columns.length; i++) {
       item[columns[i].dataIndex] = rowData[i];
     }
