@@ -1,15 +1,60 @@
+import GetCrumbs from "@/components/NavigationCrumb";
+import Location from "@/components/locations/Locations";
+import { Card } from "antd";
+import useSWR from "swr";
+
+function GetPlanes() {
+  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
+  const { data, error } = useSWR("http://localhost:5000/getPlanes", fetcher);
+  if (error) {
+    console.log(error);
+    return <div>Failed to access API</div>;
+  }
+  if (!data) return <div>Loading...</div>;
+
+  let renderedPlanes = [];
+  for (let item of data) {
+    {
+      renderedPlanes.push(
+        <Location
+          imageSrc={"./Planes/" + item[0] + ".png"}
+          locationProps={{
+            name: item[0],
+            description: item[1],
+          }}
+        />
+      );
+    }
+  }
+  return renderedPlanes;
+}
+
+export default function LocationsPage() {
+  return (
+    <section>
+      <GetCrumbs path={"Pages,Locations"} />
+      <Card bordered={false} className=" w-full">
+        {GetPlanes()}
+      </Card>
+    </section>
+  );
+}
+
 /* Burayı sen yapabilirsin muhtemelen problem yaşamadan.
 
-Görmek için bu sayfayı da src/app/SideNav.tsx içine koyman gerek, yeni bir buton ile Locations veya Planes of Existence etc. gibi bir şey yazabilirsin.
+Görmek için bu sayfayı da src/app/SideNav.tsx içine koyman gerek, 
+yeni bir buton ile Locations veya Planes of Existence etc. gibi bir şey yazabilirsin.
 
 Deities içindeki getDeities fonksiyonunun aynısını getLocations olarak yazacaksın:
   veritabanı sana deities'de 4 tane column dönüyor, bunları da ben item[0] item[1] item[2] item[3] olarak kullanıyorum.
-  senin kullanacağın locations tablosu 2 tane column dönüyor: planes > planeName, planeDescription ---> bunları item[0] ve item[1] olarak kullanabilirsin,
+  senin kullanacağın locations tablosu 2 tane column dönüyor: 
+  planes > planeName, planeDescription ---> bunları item[0] ve item[1] olarak kullanabilirsin,
   ya da parse edip doğru düzgün isim ver. Sen bilirsin.
 
 pages/PageDeities.tsx sana bayağı iyi bir örnek.
 
-Lütfen sayfayı yaparken Wheel3K.jpg'i en üste koy. Diğerleri için resim yok, istersen public içine benzer bir resim ekleyip onu da yapabilirsin.
+Lütfen sayfayı yaparken Wheel3K.jpg'i en üste koy. Diğerleri için resim yok, 
+istersen public içine benzer bir resim ekleyip onu da yapabilirsin.
   Onun dışında, return ettiğin kısım da buna benzeyecek:
 
 <SimpleContent
