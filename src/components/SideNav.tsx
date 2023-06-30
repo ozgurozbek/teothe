@@ -18,6 +18,7 @@ import GetQuest from "App/getQuest/page";
 import TablesPage from "Pages/PageTables";
 import LibraryPage from "Pages/PageLibrary";
 import MapLegendPage from "Pages/PageMapLegend";
+import MapOverlayPage from "Pages/PageMapOverlay";
 import LocationsPage from "Pages/PageLocations";
 
 type MenuItem = Required<MenuProps>["items"][number];
@@ -105,13 +106,24 @@ const items: MenuItem[] = [
   getItem(
     <a
       onClick={() => {
+        loadPage(<MapOverlayPage />);
+      }}
+    >
+      Map Overlay
+    </a>,
+    "10",
+    <FileOutlined />
+  ),
+  getItem(
+    <a
+      onClick={() => {
         loadPage(<MapLegendPage />);
       }}
     >
       Map Legend
     </a>,
-    "10",
-    <FileOutlined />
+    "13",
+    <DesktopOutlined />
   ),
   getItem("Races", "11", <PieChartOutlined />),
   getItem(
