@@ -20,6 +20,7 @@ import LibraryPage from "Pages/PageLibrary";
 import MapLegendPage from "Pages/PageMapLegend";
 import MapOverlayPage from "Pages/PageMapOverlay";
 import LocationsPage from "Pages/PageLocations";
+import RacesPage from "Pages/PageRaces";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
@@ -125,7 +126,17 @@ const items: MenuItem[] = [
     "13",
     <DesktopOutlined />
   ),
-  getItem("Races", "11", <PieChartOutlined />),
+  getItem(
+    <a
+      onClick={() => {
+        loadPage(<RacesPage />);
+      }}
+    >
+      Races
+    </a>,
+    "11",
+    <PieChartOutlined />
+  ),
   getItem(
     <a
       onClick={() => {
