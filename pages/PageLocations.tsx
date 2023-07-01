@@ -1,5 +1,5 @@
 import GetCrumbs from "@/components/NavigationCrumb";
-import Location from "@/components/locations/Locations";
+import Location from "@/components/Locations";
 import { Card } from "antd";
 import useSWR from "swr";
 
