@@ -38,7 +38,8 @@ body {
   background-color: #141414 !important;
 }
 .ant-menu-item-selected,
-.ant-btn:hover {
+.ant-btn:hover,
+li:active {
   background-color: #630436 !important;
 }
 h1 {
@@ -65,4 +66,10 @@ footer > a {
 .ant-table {
   background-color: transparent !important;
   color: white !important;
+}
+.ant-table-cell-row-hover {
+  color: #15181d !important;
+}
+::selection {
+  background: #630436;
 }
