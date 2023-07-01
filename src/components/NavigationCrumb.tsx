@@ -1,11 +1,13 @@
-import { Breadcrumb } from "antd";
-
 export default function GetCrumbs({ path }: { path: string }) {
   var data = path.split(",");
   var result = [];
   for (let i = 0; i < data.length; i++) {
-    result.push(<Breadcrumb.Item>{data[i]}</Breadcrumb.Item>);
+    if (i > 0) {
+      result.push(<span> / {data[i]}</span>);
+    } else {
+      result.push(<span className="text-slate-400"> / {data[i]}</span>);
+    }
   }
 
-  return <Breadcrumb className="m-4">{result}</Breadcrumb>;
+  return <span className="m-4">{result}</span>;
 }
