@@ -11,17 +11,58 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 14, 20, 28;
+    --background-end-rgb: 14, 20, 28;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    to bottom,
+    rgb(var(--background-start-rgb)),
+    rgb(var(--background-end-rgb))
+  ) !important;
+}
+.ant-layout {
+  background-color: #00000033 !important;
+}
+.ant-menu-dark,
+.ant-layout-sider,
+.ant-layout-sider-trigger,
+.ant-layout-header,
+.ant-layout-footer {
+  background-color: transparent !important;
+}
+.ant-menu-sub {
+  background-color: #141414 !important;
+}
+.ant-menu-item-selected,
+.ant-btn:hover {
+  background-color: #630436 !important;
+}
+h1 {
+  color: white !important;
+  text-shadow: 0 0 8px #630436, 0 0 8px #630436, 0 0 8px #630436;
+}
+.ant-card-body {
+  color: white !important;
+}
+.ant-card {
+  background-color: #66666620 !important;
+}
+.ant-btn {
+  color: white !important;
+  border-color: #630436 !important;
+  background-color: #63043633 !important;
+}
+footer > a {
+  color: #630436 !important;
+}
+.ant-empty-description {
+  color: white !important;
+}
+.ant-table {
+  background-color: transparent !important;
+  color: white !important;
 }

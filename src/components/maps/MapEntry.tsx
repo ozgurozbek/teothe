@@ -16,7 +16,7 @@ export default function MapEntry({
 
   return (
     <div className="inline-flex py-4 w-[10%]">
-      <Tooltip title={tooltipEle} color={"#001529"}>
+      <Tooltip title={tooltipEle} color={"#630436"}>
         <Avatar
           size={{ xs: 24, sm: 32, md: 48, lg: 64, xl: 72, xxl: 100 }}
           src={imageSrc}
