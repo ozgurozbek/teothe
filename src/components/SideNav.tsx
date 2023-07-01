@@ -148,7 +148,7 @@ export default function Sidebar() {
       collapsed={collapsed}
       onCollapse={(value) => setCollapsed(value)}
     >
-      <Image src="./teothe3K.png" alt="Teothe3K Icon" />
+      <Image src="./teothe3K.png" alt="Teothe3K Icon" preview={false} />
       <Menu theme="dark" mode="inline" items={items} />
     </Sider>
   );
