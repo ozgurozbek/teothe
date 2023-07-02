@@ -1,15 +1,8 @@
 import { useState } from "react";
 import { render } from "react-dom";
-import { Menu, Image } from "antd";
+import { Menu, Image, Avatar } from "antd";
 import Sider from "antd/es/layout/Sider";
 
-import {
-  DesktopOutlined,
-  FileOutlined,
-  PieChartOutlined,
-  UserOutlined,
-  SettingOutlined,
-} from "@ant-design/icons";
 import type { MenuProps } from "antd";
 
 import CommonLorePage from "Pages/PageCommonLore";
@@ -26,6 +19,18 @@ type MenuItem = Required<MenuProps>["items"][number];
 
 function loadPage(pageComponent: React.ReactElement) {
   render(pageComponent, document.getElementById("PageContent"));
+}
+
+function getIcon(pageName: string) {
+  return (
+    <Avatar
+      size={24}
+      src={"./Icons/SideNav/" + pageName + ".svg"}
+      alt={pageName + " Icon"}
+      draggable={false}
+      shape="square"
+    ></Avatar>
+  );
 }
 
 function getItem(
@@ -52,7 +57,7 @@ const items: MenuItem[] = [
       Common Lore
     </a>,
     "1",
-    <DesktopOutlined />
+    getIcon("CommonLore")
   ),
   getItem(
     <a
@@ -63,7 +68,7 @@ const items: MenuItem[] = [
       Planes of Existence
     </a>,
     "15",
-    <DesktopOutlined />
+    getIcon("Locations")
   ),
   getItem(
     <a
@@ -74,7 +79,7 @@ const items: MenuItem[] = [
       Deities
     </a>,
     "2",
-    <DesktopOutlined />
+    getIcon("Deities")
   ),
   getItem(
     <a
@@ -85,9 +90,9 @@ const items: MenuItem[] = [
       Tables
     </a>,
     "3",
-    <PieChartOutlined />
+    getIcon("Tables")
   ),
-  getItem("Library", "sub1", <UserOutlined />, [
+  getItem("Library", "sub1", getIcon("Library"), [
     getItem(
       <a
         onClick={() => {
@@ -113,7 +118,7 @@ const items: MenuItem[] = [
       Map Overlay
     </a>,
     "10",
-    <FileOutlined />
+    getIcon("MapOverlay")
   ),
   getItem(
     <a
@@ -124,7 +129,7 @@ const items: MenuItem[] = [
       Map Legend
     </a>,
     "13",
-    <DesktopOutlined />
+    getIcon("MapLegend")
   ),
   getItem(
     <a
@@ -135,7 +140,7 @@ const items: MenuItem[] = [
       Races
     </a>,
     "11",
-    <PieChartOutlined />
+    getIcon("Races")
   ),
   getItem(
     <a
@@ -146,7 +151,7 @@ const items: MenuItem[] = [
       Quest Generator
     </a>,
     "12",
-    <SettingOutlined />
+    getIcon("QuestGenerator")
   ),
 ];
 
