@@ -118,7 +118,7 @@ export default function Deity({
         onClick={() => window.open(imageSrc, "_blank")}
       />
       <div className="px-4 w-[90%]">
-        <Title>{descriptionProps.title}</Title>
+        <Title level={2}>{descriptionProps.title}</Title>
         <p>{descriptionProps.body}</p>
       </div>
       <i className="px-4 w-[5%]">{GetDomains(descriptionProps.domain)}</i>

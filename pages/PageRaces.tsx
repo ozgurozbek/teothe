@@ -1,5 +1,5 @@
 import GetCrumbs from "@/components/NavigationCrumb";
-import RacesCon from "@/components/RacesCon";
+import RacesCon from "@/components/races/RacesCon";
 import { Card, Divider } from "antd";
 import useSWR from "swr";
 

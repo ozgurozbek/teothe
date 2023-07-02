@@ -129,6 +129,7 @@ function GetTableData() {
       <SimpleContent
         contentProps={{
           title: titleCase(query),
+          text: [data[2]],
         }}
       />
       <Table
