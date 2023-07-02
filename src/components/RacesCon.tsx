@@ -23,11 +23,13 @@ export default function RacesCon({
           <Image src={RacePic.src} alt={RacePic.alt} />
         </Col>
         <Col>
-          <p className="italic text-center pt-2 text-lg">{RacePic.phrase}</p>
+          <p className="italic text-center pt-2 px-2 text-lg">
+            {RacePic.phrase}
+          </p>
         </Col>
       </Col>
       <Col span={18}>
-        <Title>{DescriptionText.title}</Title>
+        <Title className="capitalize">{DescriptionText.title}</Title>
         {textData}
         <p className="pt-2 text-pink-600"> {DescriptionText.homebrew}</p>
       </Col>

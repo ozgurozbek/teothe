@@ -1,28 +1,48 @@
 import GetCrumbs from "@/components/NavigationCrumb";
 import RacesCon from "@/components/RacesCon";
 import { Card, Divider } from "antd";
+import useSWR from "swr";
+
+function GetRaces() {
+  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
+  const { data, error } = useSWR("http://localhost:5000/getRaces", fetcher);
+  if (error) {
+    console.log(error);
+    return <div>Failed to access API</div>;
+  }
+  if (!data) return <div>Loading...</div>;
+
+  let renderedRaces = [];
+  for (let item of data) {
+    {
+      renderedRaces.push(
+        <>
+          <RacesCon
+            RacePic={{
+              src: "./Races/" + item[0] + ".png",
+              alt: item[0],
+              phrase: item[1],
+            }}
+            DescriptionText={{
+              title: item[0],
+              paragraph: item[2].split("_"),
+              homebrew: item[3],
+            }}
+          />
+          <Divider />
+        </>
+      );
+    }
+  }
+  return renderedRaces;
+}
 
 export default function RacesPage() {
   return (
     <>
       <GetCrumbs path={"Pages,Races"} />
       <Card bordered={false} className="">
-        <RacesCon
-          RacePic={{
-            src: "https://ozgurozbek.github.io/dnd/min_images/race_images/human.png",
-            alt: "human",
-            phrase:
-              "humanhum anhuma nhumanh umanhumanhum anhumanh umanhumanhuman nhumanhu maanhuman human humanhuman",
-          }}
-          DescriptionText={{
-            title: "Human",
-            paragraph: [
-              "Humans were widespread, could be found in most regions and, in general, were fierce and disagreeable, which could sometimes lead certain other races to view them with contempt. They were renowned for their diversity and ambition, and although they lacked specialization, they could excel in many areas. While there were no natural human subraces, planetouched subspecies of humans were found in the Realms. These included the aasimars, genasi, and tieflings. There was also great ethnic diversity between humans in different regions. Humans bred outside their race many times, resulting in the various half-human races like half-elves and half-orcs.",
-            ],
-            homebrew: "HUAMNNNNNNNN",
-          }}
-        />
-        <Divider />
+        {GetRaces()}
       </Card>
     </>
   );
