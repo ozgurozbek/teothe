@@ -42,7 +42,9 @@ body {
 li:active {
   background-color: #630436 !important;
 }
-h1 {
+h1,
+h2,
+h3 {
   color: white !important;
   text-shadow: 0 0 8px #630436, 0 0 8px #630436, 0 0 8px #630436;
 }
@@ -68,7 +70,8 @@ footer > a {
   color: white !important;
 }
 .ant-table-cell-row-hover {
-  color: #15181d !important;
+  color: white !important;
+  background-color: #251622 !important;
 }
 ::selection {
   background: #630436;
