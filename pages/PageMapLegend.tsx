@@ -33,7 +33,7 @@ function GetMapLegend() {
 export default function MapLegendPage() {
   return (
     <section>
-      <GetCrumbs path={"Pages,Deities"} />
+      <GetCrumbs path={"Pages,Map Legend"} />
       <Card bordered={false} className="w-full">
         <SimpleContent
           contentProps={{

@@ -32,7 +32,7 @@ function GetPlanes() {
 export default function LocationsPage() {
   return (
     <section>
-      <GetCrumbs path={"Pages,Locations"} />
+      <GetCrumbs path={"Pages,Planes of Existence"} />
       <Card bordered={false} className=" w-full">
         {GetPlanes()}
       </Card>

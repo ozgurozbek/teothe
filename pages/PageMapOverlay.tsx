@@ -33,7 +33,7 @@ export default function MapOverlayPage() {
 
   return (
     <section>
-      <GetCrumbs path={"Test,State"} />
+      <GetCrumbs path={"Pages,Map Overlay"} />
       <Card bordered={false} className="w-full">
         <Space wrap>
           <Button
