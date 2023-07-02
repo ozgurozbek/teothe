@@ -1,15 +1,4 @@
-import { Typography, Avatar, Image } from "antd";
-import {
-  CrownTwoTone, // Fundamental
-  BookTwoTone, //Knowledge
-  HeartTwoTone, //Life
-  FireTwoTone, //Light
-  UsbTwoTone, //Death
-  TrophyTwoTone, // Tempest
-  EyeInvisibleTwoTone, // Trickery
-  PictureTwoTone, // Nature
-  FlagTwoTone, // War
-} from "@ant-design/icons";
+import { Typography, Avatar, Tooltip } from "antd";
 
 const { Title } = Typography;
 
@@ -17,75 +6,129 @@ function GetDomainObject(name: string) {
   switch (name) {
     case "War":
       return (
-        <FlagTwoTone
-          title="War"
-          className="py-2 text-2xl"
-          twoToneColor="#eb2f00"
-        />
+        <Tooltip placement="left" color={"#630436"} title={"War"}>
+          {" "}
+          <Avatar
+            // title="War"
+            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            src={"./Icons/Domains/war.png"}
+            alt={""}
+            draggable={false}
+            shape="square"
+          />
+        </Tooltip>
       );
     case "Nature":
       return (
-        <PictureTwoTone
-          title="Nature"
-          className="py-2 text-2xl"
-          twoToneColor="#eb0096"
-        />
+        <Tooltip placement="left" color={"#630436"} title={"Nature"}>
+          {" "}
+          <Avatar
+            // title="Nature"
+            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            src={"./Icons/Domains/nature.png"}
+            alt={""}
+            draggable={false}
+            shape="square"
+          />
+        </Tooltip>
       );
     case "Trickery":
       return (
-        <EyeInvisibleTwoTone
-          title="Trickery"
-          className="py-2 text-2xl"
-          twoToneColor="#0b2f96"
-        />
+        <Tooltip placement="left" color={"#630436"} title={"Trickery"}>
+          {" "}
+          <Avatar
+            // title="Trickery"
+            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            src={"./Icons/Domains/trickery.png"}
+            alt={""}
+            draggable={false}
+            shape="square"
+          />
+        </Tooltip>
       );
     case "Fundamental":
       return (
-        <CrownTwoTone
-          title="Fundamental"
-          className="py-2 text-2xl"
-          twoToneColor="#333333"
-        />
+        <Tooltip placement="left" color={"#630436"} title={"Fundamental"}>
+          {" "}
+          <Avatar
+            // title="Fundamental"
+            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            src={"./Icons/Domains/fundamental.png"}
+            alt={""}
+            draggable={false}
+            shape="square"
+          />
+        </Tooltip>
       );
     case "Knowledge":
       return (
-        <BookTwoTone
-          title="Knowledge"
-          className="py-2 text-2xl"
-          twoToneColor="#bb362f"
-        />
+        <Tooltip placement="left" color={"#630436"} title={"Knowledge"}>
+          {" "}
+          <Avatar
+            // title="Knowledge"
+            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            src={"./Icons/Domains/knowledge.png"}
+            alt={""}
+            draggable={false}
+            shape="square"
+          />
+        </Tooltip>
       );
     case "Tempest":
       return (
-        <TrophyTwoTone
-          title="Tempest"
-          className="py-2 text-2xl"
-          twoToneColor="#aaaa00"
-        />
+        <Tooltip placement="left" color={"#630436"} title={"Tempest"}>
+          {" "}
+          <Avatar
+            // title="Tempest"
+            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            src={"./Icons/Domains/tempest.png"}
+            alt={""}
+            draggable={false}
+            shape="square"
+          />
+        </Tooltip>
       );
     case "Life":
       return (
-        <HeartTwoTone
-          title="Life"
-          className="py-2 text-2xl"
-          twoToneColor="#eb2f96"
-        />
+        <Tooltip placement="left" color={"#630436"} title={"Life"}>
+          {" "}
+          <Avatar
+            // title="Life"
+            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            src={"./Icons/Domains/life.png"}
+            alt={""}
+            draggable={false}
+            shape="square"
+          />
+        </Tooltip>
       );
     case "Light":
       return (
-        <FireTwoTone
-          title="Light"
-          className="py-2 text-2xl"
-          twoToneColor="#eb2f42"
-        />
+        <Tooltip placement="left" color={"#630436"} title={"Light"}>
+          {" "}
+          <Avatar
+            // title="Light"
+            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            src={"./Icons/Domains/light.png"}
+            alt={""}
+            draggable={false}
+            shape="square"
+          />
+        </Tooltip>
       );
     case "Death":
       return (
-        <UsbTwoTone
-          title="Death"
-          className="py-2 text-2xl"
-          twoToneColor="#424242"
-        />
+        <Tooltip placement="left" color={"#630436"} title={"Death"}>
+          {" "}
+          <Avatar
+            // title="Death"
+            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            src={"./Icons/Domains/death.png"}
+            alt={""}
+            draggable={false}
+            shape="square"
+          />
+        </Tooltip>
       );
     default:
       return "Error";
@@ -111,17 +154,17 @@ export default function Deity({
   return (
     <div className="inline-flex w-full py-4">
       <Avatar
-        size={{ xs: 24, sm: 40, md: 64, lg: 80, xl: 100, xxl: 120 }}
+        size={{ xs: 64, sm: 64, md: 64, lg: 80, xl: 100, xxl: 120 }}
         src={imageSrc}
         alt={descriptionProps.title}
         draggable={false}
         onClick={() => window.open(imageSrc, "_blank")}
       />
-      <div className="px-4 w-[90%]">
+      <div className="px-4 w-[75%]">
         <Title level={2}>{descriptionProps.title}</Title>
         <p>{descriptionProps.body}</p>
       </div>
-      <i className="px-4 w-[5%]">{GetDomains(descriptionProps.domain)}</i>
+      <i className="w-[15%] ml-[auto]">{GetDomains(descriptionProps.domain)}</i>
     </div>
   );
 }
