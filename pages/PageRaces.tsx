@@ -19,10 +19,7 @@ function GetRaces() {
         <>
           <RacesCon
             RacePic={{
-              src:
-                "https://ozgurozbek.github.io/dnd/min_images/race_images/" +
-                item[0] +
-                ".png",
+              src: "./Races/" + item[0] + ".png",
               alt: item[0],
               phrase: item[1],
             }}

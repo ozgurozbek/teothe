@@ -15,6 +15,7 @@ function GetDomainObject(name: string) {
             alt={""}
             draggable={false}
             shape="square"
+            className="float-right"
           />
         </Tooltip>
       );
@@ -29,6 +30,7 @@ function GetDomainObject(name: string) {
             alt={""}
             draggable={false}
             shape="square"
+            className="float-right"
           />
         </Tooltip>
       );
@@ -43,6 +45,7 @@ function GetDomainObject(name: string) {
             alt={""}
             draggable={false}
             shape="square"
+            className="float-right"
           />
         </Tooltip>
       );
@@ -57,6 +60,7 @@ function GetDomainObject(name: string) {
             alt={""}
             draggable={false}
             shape="square"
+            className="float-right"
           />
         </Tooltip>
       );
@@ -71,6 +75,7 @@ function GetDomainObject(name: string) {
             alt={""}
             draggable={false}
             shape="square"
+            className="float-right"
           />
         </Tooltip>
       );
@@ -85,6 +90,7 @@ function GetDomainObject(name: string) {
             alt={""}
             draggable={false}
             shape="square"
+            className="float-right"
           />
         </Tooltip>
       );
@@ -99,6 +105,7 @@ function GetDomainObject(name: string) {
             alt={""}
             draggable={false}
             shape="square"
+            className="float-right"
           />
         </Tooltip>
       );
@@ -113,6 +120,7 @@ function GetDomainObject(name: string) {
             alt={""}
             draggable={false}
             shape="square"
+            className="float-right"
           />
         </Tooltip>
       );
@@ -127,6 +135,7 @@ function GetDomainObject(name: string) {
             alt={""}
             draggable={false}
             shape="square"
+            className="float-right"
           />
         </Tooltip>
       );

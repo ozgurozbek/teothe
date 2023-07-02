@@ -18,15 +18,11 @@ export default function RacesCon({
 
   return (
     <Row justify="space-between">
-      <Col span={6}>
+      <Col span={6} className="pr-4">
         <Col span={24}>
-          <Image
-            src={RacePic.src}
-            alt={RacePic.alt}
-            rootClassName="object-cover"
-          />
+          <Image src={RacePic.src} alt={RacePic.alt} rootClassName="w-full" />
         </Col>
-        <Col span={18} offset={3}>
+        <Col span={24}>
           <p className="italic text-center pt-2 px-2 text-lg">
             {RacePic.phrase}
           </p>
