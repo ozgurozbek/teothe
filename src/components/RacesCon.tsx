@@ -20,9 +20,13 @@ export default function RacesCon({
     <Row justify="space-between">
       <Col span={6}>
         <Col span={24}>
-          <Image src={RacePic.src} alt={RacePic.alt} />
+          <Image
+            src={RacePic.src}
+            alt={RacePic.alt}
+            rootClassName="object-cover"
+          />
         </Col>
-        <Col>
+        <Col span={18} offset={3}>
           <p className="italic text-center pt-2 px-2 text-lg">
             {RacePic.phrase}
           </p>
