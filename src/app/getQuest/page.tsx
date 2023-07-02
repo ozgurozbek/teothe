@@ -5,11 +5,7 @@ import { Card } from "antd";
 import useSWR from "swr";
 
 export default function GetQuest() {
-  const fetcher = (...args: string[]) =>
-    fetch(
-      // ...args // use for build
-      "https://cors-anywhere.herokuapp.com/" + args[0] // use for testing
-    ).then((res) => res.text());
+  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.text());
   const { data, error } = useSWR(
     "https://xeculus.pythonanywhere.com/generate",
     fetcher
@@ -22,7 +18,9 @@ export default function GetQuest() {
   return (
     <>
       <GetCrumbs path="Quest Generator API,Generate" />
-      <Card>{data}</Card>
+      <Card bordered={false} className="w-full">
+        {data}
+      </Card>
     </>
   );
 }
