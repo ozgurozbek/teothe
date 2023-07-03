@@ -68,7 +68,7 @@ const items: MenuItem[] = [
     >
       Planes of Existence
     </a>,
-    "15",
+    "2",
     getIcon("Locations")
   ),
   getItem(
@@ -79,7 +79,7 @@ const items: MenuItem[] = [
     >
       Deities
     </a>,
-    "2",
+    "3",
     getIcon("Deities")
   ),
   getItem(
@@ -90,7 +90,7 @@ const items: MenuItem[] = [
     >
       Tables
     </a>,
-    "3",
+    "4",
     getIcon("Tables")
   ),
   getItem("Library", "sub1", getIcon("Library"), [
@@ -102,13 +102,13 @@ const items: MenuItem[] = [
       >
         General
       </a>,
-      "4"
+      "5"
     ),
-    getItem("Teothe", "5"),
-    getItem("Epipremnum", "6"),
-    getItem("Thaum", "7"),
-    getItem("Choll", "8"),
-    getItem("Fiction", "9"),
+    getItem("Teothe", "6"),
+    getItem("Epipremnum", "7"),
+    getItem("Thaum", "8"),
+    getItem("Choll", "9"),
+    getItem("Fiction", "10"),
   ]),
   getItem(
     <a
@@ -118,7 +118,7 @@ const items: MenuItem[] = [
     >
       Homebrews
     </a>,
-    "3",
+    "11",
     getIcon("Homebrews")
   ),
   getItem(
@@ -129,7 +129,7 @@ const items: MenuItem[] = [
     >
       Map Overlay
     </a>,
-    "10",
+    "12",
     getIcon("MapOverlay")
   ),
   getItem(
@@ -151,7 +151,7 @@ const items: MenuItem[] = [
     >
       Races
     </a>,
-    "11",
+    "14",
     getIcon("Races")
   ),
   getItem(
@@ -162,7 +162,7 @@ const items: MenuItem[] = [
     >
       Quest Generator
     </a>,
-    "12",
+    "15",
     getIcon("QuestGenerator")
   ),
 ];

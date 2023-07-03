@@ -13,9 +13,21 @@ function GetHomebrews(category: string) {
   if (!data) return <div>Loading...</div>;
 
   let renderedEntries = [];
+  let first: boolean = true;
   for (let item of data) {
     if (item[0] === category) {
-      renderedEntries.push(<li>{item[1]}</li>);
+      if (first) {
+        renderedEntries.push(
+          <li className="hover:bg-[#630436] py-4">{item[1]}</li>
+        );
+        first = false;
+      } else {
+        renderedEntries.push(
+          <li className="hover:bg-[#630436] py-4 border-t border-[#e5e7eb]">
+            {item[1]}
+          </li>
+        );
+      }
     }
   }
   return renderedEntries;
