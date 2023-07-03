@@ -25,6 +25,7 @@ export default function MapOverlayPage() {
           rootClassName="absolute"
           preview={false}
           src={"./map" + maps[i] + ".png"}
+          alt={maps[i]}
         />
       );
     }

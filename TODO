@@ -35,3 +35,6 @@
 - [x] Add tools icon
 - [ ] Tools table (BE)
 - [ ] Display tools and actions available to them in a table maybe?
+
+- [x] ./pages/PageMapOverlay.tsx Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.
+- [x] ./src/app/layout.tsx Error: Synchronous scripts should not be used. See: https://nextjs.org/docs/messages/no-sync-scripts @next/next/no-sync-scripts
