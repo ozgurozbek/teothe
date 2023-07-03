@@ -1,0 +1,29 @@
+# TODO
+
+- [x] Add TODO
+
+- [x] Place emotional echoes
+- [x] Split maps
+- [ ] Maps export
+- [ ] Map descriptions
+
+- [ ] Library JS import somehow
+- [ ] Library PDFleri ve renderi
+
+- [x] Homebrews page icon
+- [ ] Homebrews page
+
+- [ ] Deity images square crop
+- [ ] Deity display on click ustteki olunca avatar icine antd image veriyoruz oluyor bu
+
+- [ ] Races show hide homebrews (state ig)
+
+- [x] Add pricing icon
+- [ ] Common pricing table (BE)
+- [ ] Common pricing page
+
+- [ ] Some images have text in them in Locations, crop them
+
+- [x] Add tools icon
+- [ ] Tools table (BE)
+- [ ] Display tools and actions available to them in a table maybe?
