@@ -93,23 +93,17 @@ const items: MenuItem[] = [
     "4",
     getIcon("Tables")
   ),
-  getItem("Library", "sub1", getIcon("Library"), [
-    getItem(
-      <a
-        onClick={() => {
-          loadPage(<LibraryPage />);
-        }}
-      >
-        General
-      </a>,
-      "5"
-    ),
-    getItem("Teothe", "6"),
-    getItem("Epipremnum", "7"),
-    getItem("Thaum", "8"),
-    getItem("Choll", "9"),
-    getItem("Fiction", "10"),
-  ]),
+  getItem(
+    <a
+      onClick={() => {
+        loadPage(<LibraryPage />);
+      }}
+    >
+      Library
+    </a>,
+    "5",
+    getIcon("Library")
+  ),
   getItem(
     <a
       onClick={() => {

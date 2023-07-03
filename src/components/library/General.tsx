@@ -5,7 +5,7 @@ import GetBook from "Comp/library/GetBook";
 export default function GeneralTab() {
   return (
     <>
-      <GetCrumbs path={"Library,General"} />
+      <GetCrumbs path={"Pages,Library"} />
       <Card bordered={false} className="w-full h-full">
         <Space wrap>
           <GetBook

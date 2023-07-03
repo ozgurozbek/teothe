@@ -6,7 +6,12 @@ function GetDomainObject(name: string) {
   switch (name) {
     case "War":
       return (
-        <Tooltip placement="left" color={"#630436"} title={"War"}>
+        <Tooltip
+          className="float-right"
+          placement="left"
+          color={"#630436"}
+          title={"War"}
+        >
           {" "}
           <Avatar
             // title="War"
@@ -21,7 +26,12 @@ function GetDomainObject(name: string) {
       );
     case "Nature":
       return (
-        <Tooltip placement="left" color={"#630436"} title={"Nature"}>
+        <Tooltip
+          className="float-right"
+          placement="left"
+          color={"#630436"}
+          title={"Nature"}
+        >
           {" "}
           <Avatar
             // title="Nature"
@@ -36,7 +46,12 @@ function GetDomainObject(name: string) {
       );
     case "Trickery":
       return (
-        <Tooltip placement="left" color={"#630436"} title={"Trickery"}>
+        <Tooltip
+          className="float-right"
+          placement="left"
+          color={"#630436"}
+          title={"Trickery"}
+        >
           {" "}
           <Avatar
             // title="Trickery"
@@ -51,7 +66,12 @@ function GetDomainObject(name: string) {
       );
     case "Fundamental":
       return (
-        <Tooltip placement="left" color={"#630436"} title={"Fundamental"}>
+        <Tooltip
+          className="float-right"
+          placement="left"
+          color={"#630436"}
+          title={"Fundamental"}
+        >
           {" "}
           <Avatar
             // title="Fundamental"
@@ -66,7 +86,12 @@ function GetDomainObject(name: string) {
       );
     case "Knowledge":
       return (
-        <Tooltip placement="left" color={"#630436"} title={"Knowledge"}>
+        <Tooltip
+          className="float-right"
+          placement="left"
+          color={"#630436"}
+          title={"Knowledge"}
+        >
           {" "}
           <Avatar
             // title="Knowledge"
@@ -81,7 +106,12 @@ function GetDomainObject(name: string) {
       );
     case "Tempest":
       return (
-        <Tooltip placement="left" color={"#630436"} title={"Tempest"}>
+        <Tooltip
+          className="float-right"
+          placement="left"
+          color={"#630436"}
+          title={"Tempest"}
+        >
           {" "}
           <Avatar
             // title="Tempest"
@@ -96,7 +126,12 @@ function GetDomainObject(name: string) {
       );
     case "Life":
       return (
-        <Tooltip placement="left" color={"#630436"} title={"Life"}>
+        <Tooltip
+          className="float-right"
+          placement="left"
+          color={"#630436"}
+          title={"Life"}
+        >
           {" "}
           <Avatar
             // title="Life"
@@ -111,7 +146,12 @@ function GetDomainObject(name: string) {
       );
     case "Light":
       return (
-        <Tooltip placement="left" color={"#630436"} title={"Light"}>
+        <Tooltip
+          className="float-right"
+          placement="left"
+          color={"#630436"}
+          title={"Light"}
+        >
           {" "}
           <Avatar
             // title="Light"
@@ -126,7 +166,12 @@ function GetDomainObject(name: string) {
       );
     case "Death":
       return (
-        <Tooltip placement="left" color={"#630436"} title={"Death"}>
+        <Tooltip
+          className="float-right"
+          placement="left"
+          color={"#630436"}
+          title={"Death"}
+        >
           {" "}
           <Avatar
             // title="Death"

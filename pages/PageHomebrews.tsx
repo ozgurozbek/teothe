@@ -36,7 +36,7 @@ function GetHomebrews(category: string) {
 export default function HomebrewsPage() {
   return (
     <section>
-      <GetCrumbs path={"Pages,Deities"} />
+      <GetCrumbs path={"Pages,Homebrews"} />
       <Card bordered={false} className="w-full">
         <SimpleContent
           contentProps={{
