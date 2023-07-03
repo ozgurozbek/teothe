@@ -5,7 +5,7 @@ import SimpleContent from "@/components/SimpleCon";
 export default function CommonLorePage() {
   return (
     <section>
-      <GetCrumbs path={"Pages,Common Lore"} />
+      <GetCrumbs path={"Teothe3K,Common Lore"} />
       <Card bordered={false} className="w-full">
         <SimpleContent
           contentProps={{

@@ -47,7 +47,7 @@ export default function RacesPage() {
 
   return (
     <>
-      <GetCrumbs path={"Pages,Races"} />
+      <GetCrumbs path={"Teothe3K,Races"} />
       <Card bordered={false}>
         <div className="float-right text-pink-600">
           <span className="align-bottom">Homebrew </span>

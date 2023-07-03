@@ -145,7 +145,7 @@ function GetTableData() {
 export default function TablesPage() {
   return (
     <section>
-      <GetCrumbs path={"Pages,Tables"} />
+      <GetCrumbs path={"Teothe3K,Tables"} />
       <Card bordered={false} className="w-full">
         {GetTableData()}
       </Card>

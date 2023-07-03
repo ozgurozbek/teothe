@@ -9,5 +9,5 @@ export default function GetCrumbs({ path }: { path: string }) {
     }
   }
 
-  return <span className="m-4">{result}</span>;
+  return result;
 }

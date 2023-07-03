@@ -34,7 +34,7 @@ export default function MapOverlayPage() {
 
   return (
     <section>
-      <GetCrumbs path={"Pages,Map Overlay"} />
+      <GetCrumbs path={"Teothe3K,Map Overlay"} />
       <Card bordered={false} className="w-full">
         <Space wrap>
           <Button
