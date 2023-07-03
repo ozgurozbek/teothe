@@ -15,6 +15,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+        <script src="https://booksjs.github.io/books/js/books.min.js"></script>
+        <link
+          rel="stylesheet"
+          href="https://booksjs.github.io/books/css/booksjs.css"
+        ></link>
+      </head>
       <body className={"text-white " + inter.className}>{children}</body>
     </html>
   );

@@ -1,14 +1,18 @@
-import { EmbedPDF } from "@simplepdf/react-embed-pdf";
 import { Button } from "antd";
-
+declare function booksjsLib(url: string): any;
 export default function GetBook({
   bookProps,
 }: {
   bookProps: { url: string; name: string };
 }) {
   return (
-    <EmbedPDF>
-      <Button href={bookProps.url}>{bookProps.name}</Button>
-    </EmbedPDF>
+    <Button
+      onClick={() => {
+        console.log("Opening book");
+        booksjsLib(bookProps.url).loadDocument();
+      }}
+    >
+      {bookProps.name}
+    </Button>
   );
 }

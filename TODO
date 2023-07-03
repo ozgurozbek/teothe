@@ -4,17 +4,25 @@
 
 - [x] Place emotional echoes
 - [x] Split maps
-- [ ] Maps export
+- [ ] Export climates
+- [ ] Export resources
+- [ ] Export echoes
+- [ ] Export kingdoms
+- [ ] Export places
+- [ ] Export travel routes
+- [ ] Export cities
+- [ ] Export steamcart
+- [ ] Export continents
+- [ ] Export compass
 - [ ] Map descriptions
 
-- [ ] Library JS import somehow
-- [ ] Library PDFleri ve renderi
+- [x] Library JS import somehow
+- [x] Library PDFleri ve renderi
 
 - [x] Homebrews page icon
 - [ ] Homebrews page
 
-- [ ] Deity images square crop
-- [ ] Deity display on click ustteki olunca avatar icine antd image veriyoruz oluyor bu
+- [x] Deity images crop to fit
 
 - [x] Races show hide homebrews (state ig)
 
@@ -22,7 +30,7 @@
 - [ ] Common pricing table (BE)
 - [ ] Common pricing page
 
-- [ ] Some images have text in them in Locations, crop them
+- [x] Some images have text in them in Locations, crop them
 
 - [x] Add tools icon
 - [ ] Tools table (BE)
