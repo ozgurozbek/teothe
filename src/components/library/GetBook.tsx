@@ -7,8 +7,8 @@ export default function GetBook({
 }) {
   return (
     <Button
+      className="m-1"
       onClick={() => {
-        console.log("Opening book");
         booksjsLib(bookProps.url).loadDocument();
       }}
     >
