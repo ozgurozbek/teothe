@@ -14,6 +14,7 @@ import MapLegendPage from "Pages/PageMapLegend";
 import MapOverlayPage from "Pages/PageMapOverlay";
 import LocationsPage from "Pages/PageLocations";
 import RacesPage from "Pages/PageRaces";
+import HomebrewsPage from "Pages/PageHomebrews";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
@@ -109,6 +110,17 @@ const items: MenuItem[] = [
     getItem("Choll", "8"),
     getItem("Fiction", "9"),
   ]),
+  getItem(
+    <a
+      onClick={() => {
+        loadPage(<HomebrewsPage />);
+      }}
+    >
+      Homebrews
+    </a>,
+    "3",
+    getIcon("Homebrews")
+  ),
   getItem(
     <a
       onClick={() => {
