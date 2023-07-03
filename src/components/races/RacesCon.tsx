@@ -7,7 +7,7 @@ export default function RacesCon({
   DescriptionText,
 }: {
   RacePic: { src: string; alt: string; phrase: string };
-  DescriptionText: { title: string; paragraph: string[]; homebrew: string };
+  DescriptionText: { title: string; paragraph: string[]; homebrew?: string };
 }) {
   let textData = [];
   {

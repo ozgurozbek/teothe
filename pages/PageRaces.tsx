@@ -1,9 +1,10 @@
 import GetCrumbs from "@/components/NavigationCrumb";
 import RacesCon from "@/components/races/RacesCon";
-import { Card, Divider } from "antd";
+import { Card, Divider, Switch } from "antd";
 import useSWR from "swr";
+import { useState } from "react";
 
-function GetRaces() {
+function GetRaces(brewCheck: boolean) {
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR("http://localhost:5000/getRaces", fetcher);
   if (error) {
@@ -20,13 +21,13 @@ function GetRaces() {
           <RacesCon
             RacePic={{
               src: "./Races/" + item[0] + ".png",
-              alt: item[0],
+              alt: item[0] + "image",
               phrase: item[1],
             }}
             DescriptionText={{
               title: item[0],
               paragraph: item[2].split("_"),
-              homebrew: item[3],
+              homebrew: brewCheck ? item[3] : "",
             }}
           />
           <Divider />
@@ -38,12 +39,23 @@ function GetRaces() {
 }
 
 export default function RacesPage() {
+  const [brew, setBrewVis] = useState(true);
+
+  function ShowBrew() {
+    setBrewVis(!brew);
+  }
+
   return (
     <>
       <GetCrumbs path={"Pages,Races"} />
-      <Card bordered={false} className="">
-        {GetRaces()}
+      <Card bordered={false}>
+        <div className="float-right text-pink-600">
+          <span className="align-bottom">Homebrew </span>
+          <Switch defaultChecked className="bg-[#630436]" onChange={ShowBrew} />
+        </div>
+        {GetRaces(brew)}
       </Card>
     </>
   );
 }
+// aligning that span took longer than the entire page

@@ -39,7 +39,8 @@ body {
 }
 .ant-menu-item-selected,
 .ant-btn:hover,
-li:active {
+li:active,
+.ant-switch-checked {
   background-color: #630436 !important;
 }
 h1,
