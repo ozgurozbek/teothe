@@ -21,6 +21,9 @@
 - [x] Add cooking table to tables
 
 - [ ] Fill races table (BE)
+- [ ] Races tab Homebrew button is inline with other elements that shifts the Human entry; fix
+
+- [ ] SideNav icons shift when collapsed
 
 - [x] Library JS import somehow
 - [x] Library PDFleri ve renderi
