@@ -16,6 +16,7 @@ import LocationsPage from "Pages/PageLocations";
 import RacesPage from "Pages/PageRaces";
 import HomebrewsPage from "Pages/PageHomebrews";
 import PricingPage from "Pages/PageCommonPricing";
+import ToolsPage from "Pages/PageTools";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
@@ -115,6 +116,17 @@ const items: MenuItem[] = [
     </a>,
     "6",
     getIcon("Pricing")
+  ),
+  getItem(
+    <a
+      onClick={() => {
+        loadPage(<ToolsPage />);
+      }}
+    >
+      Tools
+    </a>,
+    "7",
+    getIcon("Tools")
   ),
   getItem(
     <a
