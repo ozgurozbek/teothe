@@ -71,6 +71,14 @@ function GetTableData() {
           >
             Adultry
           </Button>
+          <Button
+            onClick={() => {
+              setDisplayEmpty(false);
+              setCurTable("cooking");
+            }}
+          >
+            Cooking
+          </Button>
         </Space>
       </>
     );

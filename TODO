@@ -16,24 +16,31 @@
 - [ ] Export compass
 - [ ] Map descriptions
 
+- [x] Add cooking table (BE)
+- [x] Update table descriptions
+- [x] Add cooking table to tables
+
+- [ ] Fill races table (BE)
+
 - [x] Library JS import somehow
 - [x] Library PDFleri ve renderi
 
 - [x] Homebrews page icon
-- [ ] Homebrews page
+- [x] Homebrews page
 
 - [x] Deity images crop to fit
 
 - [x] Races show hide homebrews (state ig)
 
 - [x] Add pricing icon
-- [ ] Common pricing table (BE)
+- [x] Common pricing table (BE)
 - [ ] Common pricing page
+- [ ] Common pricing table sort by name or price (ANTD Table)
 
 - [x] Some images have text in them in Locations, crop them
 
 - [x] Add tools icon
-- [ ] Tools table (BE)
+- [x] Tools table (BE)
 - [ ] Display tools and actions available to them in a table maybe?
 
 - [x] ./pages/PageMapOverlay.tsx Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.
