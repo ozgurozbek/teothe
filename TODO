@@ -34,8 +34,8 @@
 
 - [x] Add pricing icon
 - [x] Common pricing table (BE)
-- [ ] Common pricing page
-- [ ] Common pricing table sort by name or price (ANTD Table)
+- [x] Common pricing page
+- [x] Common pricing table sort by price (ANTD Table)
 
 - [x] Some images have text in them in Locations, crop them
 
