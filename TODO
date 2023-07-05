@@ -21,8 +21,8 @@
 - [x] Add cooking table to tables
 
 - [ ] Fill races table (BE)
-- [ ] Races tab Homebrew button is inline with other elements that shifts the Human entry; fix
-- [ ] Races tab homebrew text is not split by underscore to p elements
+- [x] Races tab Homebrew button is inline with other elements that shifts the Human entry; fix
+- [x] Races tab homebrew text is not split by underscore to p elements
 
 - [ ] SideNav icons shift when collapsed
 

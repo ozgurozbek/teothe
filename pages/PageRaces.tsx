@@ -27,7 +27,7 @@ function GetRaces(brewCheck: boolean) {
             DescriptionText={{
               title: item[0],
               paragraph: item[2].split("_"),
-              homebrew: brewCheck ? item[3] : "",
+              homebrew: brewCheck ? item[3].split("_") : "",
             }}
           />
           <Divider />
@@ -48,14 +48,11 @@ export default function RacesPage() {
   return (
     <>
       <GetCrumbs path={"Teothe3K,Races"} />
-      <Card bordered={false}>
-        <div className="float-right text-pink-600">
-          <span className="align-bottom">Homebrew </span>
-          <Switch defaultChecked className="bg-[#630436]" onChange={ShowBrew} />
-        </div>
-        {GetRaces(brew)}
-      </Card>
+      <div className="float-right text-pink-600">
+        <span className="align-bottom">Homebrew </span>
+        <Switch defaultChecked className="bg-[#630436]" onChange={ShowBrew} />
+      </div>
+      <Card bordered={false}>{GetRaces(brew)}</Card>
     </>
   );
 }
-// aligning that span took longer than the entire page

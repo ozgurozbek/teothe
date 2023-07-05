@@ -7,12 +7,21 @@ export default function RacesCon({
   DescriptionText,
 }: {
   RacePic: { src: string; alt: string; phrase: string };
-  DescriptionText: { title: string; paragraph: string[]; homebrew?: string };
+  DescriptionText: { title: string; paragraph: string[]; homebrew?: string[] };
 }) {
   let textData = [];
+  let textData2 = [];
+
   {
     for (let i = 0; i < DescriptionText.paragraph.length; i++) {
       textData.push(<p className="mb-1">{DescriptionText.paragraph[i]}</p>);
+    }
+  }
+  if (DescriptionText.homebrew) {
+    for (let i = 0; i < DescriptionText.homebrew.length; i++) {
+      textData2.push(
+        <p className="pt-2 text-pink-600"> {DescriptionText.homebrew[i]}</p>
+      );
     }
   }
 
@@ -31,7 +40,7 @@ export default function RacesCon({
       <Col span={18}>
         <Title className="capitalize">{DescriptionText.title}</Title>
         {textData}
-        <p className="pt-2 text-pink-600"> {DescriptionText.homebrew}</p>
+        {textData2}
       </Col>
     </Row>
   );
