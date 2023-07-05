@@ -17,12 +17,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="theme-color" content="#630436" />
+        <meta name="apple-mobile-web-app-status-bar" content="#90cdf4" />
         <Script src="https://mozilla.github.io/pdf.js/build/pdf.js"></Script>
         <Script src="https://booksjs.github.io/books/js/books.min.js"></Script>
         <link
           rel="stylesheet"
           href="https://booksjs.github.io/books/css/booksjs.css"
         ></link>
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/dragon.png" />
       </head>
       <body className={"text-white " + inter.className}>{children}</body>
     </html>
