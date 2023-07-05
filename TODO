@@ -16,6 +16,10 @@
 - [ ] Export compass
 - [ ] Map descriptions
 
+- [ ] Mobile force landscape
+- [ ] Mobile planes of existence div heights
+- [ ] Mobile library css things
+
 - [x] Add cooking table (BE)
 - [x] Update table descriptions
 - [x] Add cooking table to tables
@@ -24,7 +28,7 @@
 - [x] Races tab Homebrew button is inline with other elements that shifts the Human entry; fix
 - [x] Races tab homebrew text is not split by underscore to p elements
 
-- [ ] SideNav icons shift when collapsed
+- [x] SideNav icons shift when collapsed
 
 - [x] Library JS import somehow
 - [x] Library PDFleri ve renderi
