@@ -20,6 +20,9 @@
 - [ ] Mobile planes of existence div heights
 - [ ] Mobile library css things
 
+- [ ] SideNav is not crawlable
+- [ ] SideNav logo has no width & height
+
 - [x] Add cooking table (BE)
 - [x] Update table descriptions
 - [x] Add cooking table to tables
