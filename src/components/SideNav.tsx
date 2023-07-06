@@ -61,140 +61,146 @@ export default function Sidebar() {
         setCollapsed(value);
       }}
     >
-      <Image src="./teothe3K.png" alt="Teothe3K Icon" preview={false} />
+      <Image
+        width="200px"
+        height="83px"
+        src="./teothe3K.png"
+        alt="Teothe3K Icon"
+        preview={false}
+      />
       <Menu
         theme="dark"
         mode="inline"
         items={[
           getItem(
-            <a
+            <div
               onClick={() => {
                 loadPage(<CommonLorePage />);
               }}
             >
               Common Lore
-            </a>,
+            </div>,
             "1",
             getIcon("CommonLore", collapsed)
           ),
           getItem(
-            <a
+            <div
               onClick={() => {
                 loadPage(<LocationsPage />);
               }}
             >
               Planes of Existence
-            </a>,
+            </div>,
             "2",
             getIcon("Locations", collapsed)
           ),
           getItem(
-            <a
+            <div
               onClick={() => {
                 loadPage(<DeitiesPage />);
               }}
             >
               Deities
-            </a>,
+            </div>,
             "3",
             getIcon("Deities", collapsed)
           ),
           getItem(
-            <a
+            <div
               onClick={() => {
                 loadPage(<TablesPage />);
               }}
             >
               Tables
-            </a>,
+            </div>,
             "4",
             getIcon("Tables", collapsed)
           ),
           getItem(
-            <a
+            <div
               onClick={() => {
                 loadPage(<LibraryPage />);
               }}
             >
               Library
-            </a>,
+            </div>,
             "5",
             getIcon("Library", collapsed)
           ),
           getItem(
-            <a
+            <div
               onClick={() => {
                 loadPage(<PricingPage />);
               }}
             >
               Pricing
-            </a>,
+            </div>,
             "6",
             getIcon("Pricing", collapsed)
           ),
           getItem(
-            <a
+            <div
               onClick={() => {
                 loadPage(<ToolsPage />);
               }}
             >
               Tools
-            </a>,
+            </div>,
             "7",
             getIcon("Tools", collapsed)
           ),
           getItem(
-            <a
+            <div
               onClick={() => {
                 loadPage(<HomebrewsPage />);
               }}
             >
               Homebrews
-            </a>,
+            </div>,
             "11",
             getIcon("Homebrews", collapsed)
           ),
           getItem(
-            <a
+            <div
               onClick={() => {
                 loadPage(<MapOverlayPage />);
               }}
             >
               Map Overlay
-            </a>,
+            </div>,
             "12",
             getIcon("MapOverlay", collapsed)
           ),
           getItem(
-            <a
+            <div
               onClick={() => {
                 loadPage(<MapLegendPage />);
               }}
             >
               Map Legend
-            </a>,
+            </div>,
             "13",
             getIcon("MapLegend", collapsed)
           ),
           getItem(
-            <a
+            <div
               onClick={() => {
                 loadPage(<RacesPage />);
               }}
             >
               Races
-            </a>,
+            </div>,
             "14",
             getIcon("Races", collapsed)
           ),
           getItem(
-            <a
+            <div
               onClick={() => {
                 loadPage(<GetQuest />);
               }}
             >
               Quest Generator
-            </a>,
+            </div>,
             "15",
             getIcon("QuestGenerator", collapsed)
           ),
