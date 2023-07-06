@@ -10,7 +10,7 @@ export default function Location({
   locationProps: { name: string; description: string };
 }) {
   return (
-    <div className="inline-flex w-1/2 md:w-full sm:w-full xs:w-full">
+    <div className="inline-flex xl:w-1/2 lg:w-1/2 md:w-full sm:w-full xs:w-full">
       <div
         className="pt-40 text-center w-full min-h-[60vh] "
         style={{
