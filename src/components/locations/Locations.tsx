@@ -10,7 +10,7 @@ export default function Location({
   locationProps: { name: string; description: string };
 }) {
   return (
-    <div className="inline-flex w-1/2">
+    <div className="inline-flex w-1/2 md:w-full sm:w-full xs:w-full">
       <div
         className="pt-40 text-center w-full min-h-[60vh] "
         style={{
@@ -28,7 +28,7 @@ export default function Location({
         >
           {locationProps.name}
         </Title>
-        <p className="px-24 drop-shadow-[0_0.4px_0.4px_rgba(0,0,0,1)]">
+        <p className="px-24 drop-shadow-[0_0.4px_0.4px_rgba(0,0,0,1)] md:pb-4 sm:pb-4 xs:pb-4">
           {locationProps.description}
         </p>
       </div>

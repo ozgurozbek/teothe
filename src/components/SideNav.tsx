@@ -108,6 +108,17 @@ export default function Sidebar() {
           getItem(
             <div
               onClick={() => {
+                loadPage(<RacesPage />);
+              }}
+            >
+              Races
+            </div>,
+            "14",
+            getIcon("Races", collapsed)
+          ),
+          getItem(
+            <div
+              onClick={() => {
                 loadPage(<TablesPage />);
               }}
             >
@@ -181,17 +192,6 @@ export default function Sidebar() {
             </div>,
             "13",
             getIcon("MapLegend", collapsed)
-          ),
-          getItem(
-            <div
-              onClick={() => {
-                loadPage(<RacesPage />);
-              }}
-            >
-              Races
-            </div>,
-            "14",
-            getIcon("Races", collapsed)
           ),
           getItem(
             <div
