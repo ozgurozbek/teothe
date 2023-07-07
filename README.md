@@ -1,4 +1,4 @@
-[![Node.js CI](https://github.com/ozgurozbek/teothe-frontend/actions/workflows/node.js.yml/badge.svg)](https://github.com/ozgurozbek/teothe-frontend/actions/workflows/node.js.yml)
+[![Next Publish to Pages](https://github.com/ozgurozbek/teothe-frontend/actions/workflows/nextjs.yml/badge.svg)](https://github.com/ozgurozbek/teothe-frontend/actions/workflows/nextjs.yml)
 
 # Starting up locally
 
