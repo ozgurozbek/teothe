@@ -1,10 +1,12 @@
-import { Button, Card, Divider, Image, Space } from "antd";
+import { Button, Card, Divider, Image, Space, Tooltip } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import SimpleContent from "@/components/SimpleCon";
 
 import {
   CheckCircleOutlined,
+  CheckCircleFilled,
   ExclamationCircleOutlined,
+  ExclamationCircleFilled,
 } from "@ant-design/icons";
 
 export default function MapOverlayPage() {
@@ -34,6 +36,7 @@ export default function MapOverlayPage() {
             text: [
               "Map overlays change their index in the order of the button press. You can add or remove overlays by clicking the respective button. These are obviously not HD, and small campuses or travel routes may provide difficult to see.",
               "Your character quite literally does not know about these. The only accessible maps to your character from the get-go are marked with a checkmark. These are also the left-hand side of the button row. Purchase the rest in-game or hire a scriber.",
+              "Moreover, icons with fills have tooltips attached to them giving additional information to the Player.",
             ],
           }}
         />
@@ -47,15 +50,22 @@ export default function MapOverlayPage() {
               Campuses <CheckCircleOutlined />
             </span>
           </Button>
-          <Button
-            onClick={() => {
-              handleMapVisibility("Compass");
-            }}
+          <Tooltip
+            title={
+              "Bottom left has the scale for the map with a single unit displaying a day in travel pace (8hrs)"
+            }
+            color={"#630436"}
           >
-            <span>
-              Compass <CheckCircleOutlined />
-            </span>
-          </Button>
+            <Button
+              onClick={() => {
+                handleMapVisibility("Compass");
+              }}
+            >
+              <span>
+                Compass <CheckCircleFilled />
+              </span>
+            </Button>
+          </Tooltip>
           <Button
             onClick={() => {
               handleMapVisibility("Continents");
@@ -93,15 +103,22 @@ export default function MapOverlayPage() {
               Climate <ExclamationCircleOutlined />
             </span>
           </Button>
-          <Button
-            onClick={() => {
-              handleMapVisibility("Echoes");
-            }}
+          <Tooltip
+            title={
+              "Fear 😱, Joy 😊, Sorrow 😔, Love 😍, Anger 😠, Hope 🥺, Anxiety 😵, Awe 😨, Desire 😳, Abandonment 😒"
+            }
+            color={"#630436"}
           >
-            <span>
-              Emotional Echoes <ExclamationCircleOutlined />
-            </span>
-          </Button>
+            <Button
+              onClick={() => {
+                handleMapVisibility("Echoes");
+              }}
+            >
+              <span>
+                Emotional Echoes <ExclamationCircleFilled />
+              </span>
+            </Button>
+          </Tooltip>
           <Button
             onClick={() => {
               handleMapVisibility("Resources");
@@ -120,15 +137,22 @@ export default function MapOverlayPage() {
               Steamcart <ExclamationCircleOutlined />
             </span>
           </Button>
-          <Button
-            onClick={() => {
-              handleMapVisibility("Trade");
-            }}
+          <Tooltip
+            title={
+              "Red: Woven Route, Blue: Wavekeep Route, Purple: Elkian Route"
+            }
+            color={"#630436"}
           >
-            <span>
-              Trade Routes <ExclamationCircleOutlined />
-            </span>
-          </Button>
+            <Button
+              onClick={() => {
+                handleMapVisibility("Trade");
+              }}
+            >
+              <span>
+                Trade Routes <ExclamationCircleFilled />
+              </span>
+            </Button>
+          </Tooltip>
           <Button
             onClick={() => {
               handleMapVisibility("Travel");

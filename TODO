@@ -2,9 +2,9 @@
 
 ## Release
 
-- [ ] Map descriptions
+- [x] Map descriptions: There is no easy way of doing this simply without changing page layout. I mean, it is for the best as the DM should describe them, it'd be bad if the map described itself. Some exceptions have their icons changed and now use tooltips.
 - [x] Fill races table (BE): Not all of them, most common and basic ones are fine.
-- [ ] Mobile: library css things
+- [x] Mobile: library css things - This worked fine?
 - [x] Library page looks improved
 - [x] Races pages Homebrew switch has the same color when On and Off
 - [x] Delete Quest Page
