@@ -1,7 +1,20 @@
 # TODO
 
-- [x] Add TODO
+## Release
 
+- [ ] Map descriptions
+- [ ] Fill races table (BE): Not all of them, most common and basic ones are fine.
+- [ ] Mobile: library css things
+- [ ] Library page looks like shit
+- [ ] Races pages Homebrew switch has the same color when On and Off
+- [ ] Quest generator page needs to have a button to refresh the quest
+
+- [ ] Move backend into pythonanywhere
+- [ ] Compile and move FE build to github pages
+
+## InDev
+
+- [x] Add TODO
 - [x] Place emotional echoes
 - [x] Split maps
 - [x] Export base
@@ -15,45 +28,29 @@
 - [x] Export steamcart
 - [x] Export continents
 - [x] Export compass
-- [ ] Map descriptions
-
 - [x] Mobile force landscape, i guess
 - [x] Mobile planes of existence div heights
-- [ ] Mobile library css things
-
 - [x] SideNav is not crawlable
 - [x] SideNav logo has no width & height
-
 - [x] Add cooking table (BE)
 - [x] Update table descriptions
 - [x] Add cooking table to tables
-
-- [ ] Fill races table (BE)
 - [x] Races tab Homebrew button is inline with other elements that shifts the Human entry; fix
 - [x] Races tab homebrew text is not split by underscore to p elements
-
 - [x] SideNav icons shift when collapsed
-
 - [x] Library JS import somehow
 - [x] Library PDFleri ve renderi
-
 - [x] Homebrews page icon
 - [x] Homebrews page
-
 - [x] Deity images crop to fit
-
 - [x] Races show hide homebrews (state ig)
-
 - [x] Add pricing icon
 - [x] Common pricing table (BE)
 - [x] Common pricing page
 - [x] Common pricing table sort by price (ANTD Table)
-
 - [x] Some images have text in them in Locations, crop them
-
 - [x] Add tools icon
 - [x] Tools table (BE)
 - [x] Display tools and actions available to them in a table
-
 - [x] ./pages/PageMapOverlay.tsx Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.
-- [x] ./src/app/layout.tsx Error: Synchronous scripts should not be used. See: https://nextjs.org/docs/messages/no-sync-scripts @next/next/no-sync-scripts
+- [x] ./src/app/layout.tsx Error: Synchronous scripts should not be used. See: [https://nextjs.org/docs/messages/no-sync-scripts] @next/next/no-sync-scripts
