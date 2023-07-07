@@ -1,4 +1,4 @@
-import { Card } from "antd";
+import { Card, Skeleton } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import useSWR from "swr";
 import { Table } from "antd";
@@ -23,7 +23,7 @@ function GetTableData() {
     console.log(error);
     return <div>Failed to access API</div>;
   }
-  if (!data) return <div>Loading...</div>;
+  if (!data) return <Skeleton active />;
 
   console.log(data);
   //dataSource, columns

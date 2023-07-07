@@ -1,6 +1,6 @@
 import GetCrumbs from "@/components/NavigationCrumb";
 import SimpleContent from "@/components/SimpleCon";
-import { Card, Divider } from "antd";
+import { Card, Divider, Skeleton } from "antd";
 import useSWR from "swr";
 
 function GetHomebrews(category: string) {
@@ -13,7 +13,7 @@ function GetHomebrews(category: string) {
     console.log(error);
     return <div>Failed to access API</div>;
   }
-  if (!data) return <div>Loading...</div>;
+  if (!data) return <Skeleton active />;
 
   let renderedEntries = [];
   let first: boolean = true;

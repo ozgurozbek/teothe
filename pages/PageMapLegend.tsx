@@ -1,5 +1,5 @@
 import MapEntry from "Comp/maps/MapEntry";
-import { Card } from "antd";
+import { Card, Skeleton } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import SimpleContent from "Comp/SimpleCon";
 import useSWR from "swr";
@@ -14,7 +14,7 @@ function GetMapLegend() {
     console.log(error);
     return <div>Failed to access API</div>;
   }
-  if (!data) return <div>Loading...</div>;
+  if (!data) return <Skeleton active />;
 
   let renderedMapRes = [];
   for (let item of data) {

@@ -1,6 +1,6 @@
 import GetCrumbs from "@/components/NavigationCrumb";
 import Location from "@/components/locations/Locations";
-import { Card } from "antd";
+import { Card, Skeleton } from "antd";
 import useSWR from "swr";
 
 function GetPlanes() {
@@ -13,7 +13,7 @@ function GetPlanes() {
     console.log(error);
     return <div>Failed to access API</div>;
   }
-  if (!data) return <div>Loading...</div>;
+  if (!data) return <Skeleton active />;
 
   let renderedPlanes = [];
   for (let item of data) {

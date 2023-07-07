@@ -1,4 +1,4 @@
-import { Card, Divider } from "antd";
+import { Card, Divider, Skeleton } from "antd";
 import Deity from "Comp/commonlore/Deities";
 import GetCrumbs from "Comp/NavigationCrumb";
 import SimpleContent from "Comp/SimpleCon";
@@ -14,7 +14,7 @@ function GetDeities(rank: string) {
     console.log(error);
     return <div>Failed to access API</div>;
   }
-  if (!data) return <div>Loading...</div>;
+  if (!data) return <Skeleton active />;
 
   let renderedDeities = [];
   for (let item of data) {

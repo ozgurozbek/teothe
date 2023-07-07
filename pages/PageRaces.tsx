@@ -1,6 +1,6 @@
 import GetCrumbs from "@/components/NavigationCrumb";
 import RacesCon from "@/components/races/RacesCon";
-import { Card, Divider, Switch } from "antd";
+import { Card, Divider, Skeleton, Switch } from "antd";
 import useSWR from "swr";
 import { useState } from "react";
 
@@ -14,7 +14,7 @@ function GetRaces(brewCheck: boolean) {
     console.log(error);
     return <div>Failed to access API</div>;
   }
-  if (!data) return <div>Loading...</div>;
+  if (!data) return <Skeleton active />;
 
   let renderedRaces = [];
   for (let item of data) {
