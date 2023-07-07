@@ -1,4 +1,4 @@
-[![Next Publish to Pages](https://github.com/ozgurozbek/teothe-frontend/actions/workflows/nextjs.yml/badge.svg)](https://github.com/ozgurozbek/teothe-frontend/actions/workflows/nextjs.yml)
+[![Deploy Next.js site to Pages](https://github.com/ozgurozbek/teothe/actions/workflows/nextjs.yml/badge.svg)](https://github.com/ozgurozbek/teothe/actions/workflows/nextjs.yml)
 
 # Starting up locally
 
