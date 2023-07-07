@@ -1,38 +1,22 @@
-import { useState } from "react";
 import { Button, Card, Image, Space } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import SimpleContent from "@/components/SimpleCon";
 
 export default function MapOverlayPage() {
-  const [maps, setMapVis] = useState(["Base"]);
-  let temp: string[] = [];
-
-  function handleVis(data: string) {
-    temp = maps;
-    if (maps.includes(data)) {
-      const index = temp.indexOf(data);
+  let visibleMaps: string[] = [];
+  function handleMapVisibility(mapName: string) {
+    if (visibleMaps.includes(mapName)) {
+      (document.getElementById(mapName) as HTMLInputElement).style.visibility =
+        "hidden";
+      const index = visibleMaps.indexOf(mapName);
       if (index > -1) {
-        temp.splice(index, 1);
+        visibleMaps.splice(index, 1);
       }
     } else {
-      temp.push(data);
+      (document.getElementById(mapName) as HTMLInputElement).style.visibility =
+        "visible";
+      visibleMaps.push(mapName);
     }
-    setMapVis(temp);
-  }
-
-  function ShowMaps() {
-    let mapData = [];
-    for (let i = 0; i < maps.length; i++) {
-      mapData.push(
-        <Image
-          rootClassName="absolute"
-          preview={false}
-          src={"./Maps/" + maps[i] + ".png"}
-          alt={maps[i]}
-        />
-      );
-    }
-    return <div className="mt-4">{mapData}</div>;
   }
 
   return (
@@ -50,84 +34,178 @@ export default function MapOverlayPage() {
         <Space wrap>
           <Button
             onClick={() => {
-              handleVis("Campuses");
+              handleMapVisibility("Campuses");
             }}
           >
             Campuses Overlay
           </Button>
           <Button
             onClick={() => {
-              handleVis("Climates");
+              handleMapVisibility("Climates");
             }}
           >
             Climates Overlay
           </Button>
           <Button
             onClick={() => {
-              handleVis("Compass");
+              handleMapVisibility("Compass");
             }}
           >
             Compass Overlay
           </Button>
           <Button
             onClick={() => {
-              handleVis("Continents");
+              handleMapVisibility("Continents");
             }}
           >
             Continents Overlay
           </Button>
           <Button
             onClick={() => {
-              handleVis("Echoes");
+              handleMapVisibility("Echoes");
             }}
           >
             Echoes Overlay
           </Button>
           <Button
             onClick={() => {
-              handleVis("Kingdoms");
+              handleMapVisibility("Kingdoms");
             }}
           >
             Kingdoms Overlay
           </Button>
           <Button
             onClick={() => {
-              handleVis("Places");
+              handleMapVisibility("Places");
             }}
           >
             Places Overlay
           </Button>
           <Button
             onClick={() => {
-              handleVis("Resources");
+              handleMapVisibility("Resources");
             }}
           >
             Resources Overlay
           </Button>
           <Button
             onClick={() => {
-              handleVis("Steamcart");
+              handleMapVisibility("Steamcart");
             }}
           >
             Steamcart Overlay
           </Button>
           <Button
             onClick={() => {
-              handleVis("Trade");
+              handleMapVisibility("Trade");
             }}
           >
             Trade Overlay
           </Button>
           <Button
             onClick={() => {
-              handleVis("Travel");
+              handleMapVisibility("Travel");
             }}
           >
             Travel Overlay
           </Button>
         </Space>
-        <div className="relative">
-          <ShowMaps />
+        <div className="relative mt-4">
+          <Image
+            rootClassName="absolute"
+            preview={false}
+            draggable={false}
+            src={"./Maps/Base.png"}
+            alt={"Base"}
+          />
+          <Image
+            rootClassName="absolute invisible"
+            preview={false}
+            draggable={false}
+            src={"./Maps/Campuses.png"}
+            alt={"Campuses"}
+            id={"Campuses"}
+          />
+          <Image
+            rootClassName="absolute invisible"
+            preview={false}
+            draggable={false}
+            src={"./Maps/Climates.png"}
+            alt={"Climates"}
+            id={"Climates"}
+          />
+          <Image
+            rootClassName="absolute invisible"
+            preview={false}
+            draggable={false}
+            src={"./Maps/Compass.png"}
+            alt={"Compass"}
+            id={"Compass"}
+          />
+          <Image
+            rootClassName="absolute invisible"
+            preview={false}
+            draggable={false}
+            src={"./Maps/Continents.png"}
+            alt={"Continents"}
+            id={"Continents"}
+          />
+          <Image
+            rootClassName="absolute invisible"
+            preview={false}
+            draggable={false}
+            src={"./Maps/Echoes.png"}
+            alt={"Echoes"}
+            id={"Echoes"}
+          />
+          <Image
+            rootClassName="absolute invisible"
+            preview={false}
+            draggable={false}
+            src={"./Maps/Kingdoms.png"}
+            alt={"Kingdoms"}
+            id={"Kingdoms"}
+          />
+          <Image
+            rootClassName="absolute invisible"
+            preview={false}
+            draggable={false}
+            src={"./Maps/Places.png"}
+            alt={"Places"}
+            id={"Places"}
+          />
+          <Image
+            rootClassName="absolute invisible"
+            preview={false}
+            draggable={false}
+            src={"./Maps/Resources.png"}
+            alt={"Resources"}
+            id={"Resources"}
+          />
+          <Image
+            rootClassName="absolute invisible"
+            preview={false}
+            draggable={false}
+            src={"./Maps/Steamcart.png"}
+            alt={"Steamcart"}
+            id={"Steamcart"}
+          />
+          <Image
+            rootClassName="absolute invisible"
+            preview={false}
+            draggable={false}
+            src={"./Maps/Trade.png"}
+            alt={"Trade"}
+            id={"Trade"}
+          />
+          <Image
+            rootClassName="absolute invisible"
+            preview={false}
+            draggable={false}
+            src={"./Maps/Travel.png"}
+            alt={"Travel"}
+            id={"Travel"}
+          />
         </div>
       </Card>
     </section>
