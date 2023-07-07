@@ -1,5 +1,12 @@
 # TODO
 
+## 1.1
+
+- [ ] Sidenav collapsed not working
+- [x] Common lore does not have the Planes wheel
+- [x] Map description tooltips to bottom instead of top
+- [ ] 3 More races to DB
+
 ## Release
 
 - [x] Map descriptions: There is no easy way of doing this simply without changing page layout. I mean, it is for the best as the DM should describe them, it'd be bad if the map described itself. Some exceptions have their icons changed and now use tooltips.
@@ -9,7 +16,6 @@
 - [x] Races pages Homebrew switch has the same color when On and Off
 - [x] Delete Quest Page
 - [x] Antd Loading..
-
 - [x] Move backend into pythonanywhere
 - [x] Compile and move FE build to github pages
 

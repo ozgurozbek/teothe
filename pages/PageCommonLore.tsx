@@ -24,6 +24,29 @@ export default function CommonLorePage() {
         <Divider />
         <SimpleContent
           contentProps={{
+            image: {
+              src: "https://ozgurozbek.github.io/dnd/Wheel3K.jpg",
+              alt: "Wheel Cosmology",
+            },
+            title: "Dimensional Cosmology",
+            text: [
+              "The Wheel Cosmology in Teothe is a conceptual framework that organizes the multiverse into a series of interconnected planes and realms. It envisions existence as a great wheel with various planes revolving around a central hub, the Marble. The cosmology encompasses the Far Realms, Outer Planes representing different alignments, Inner Planes embodying elemental forces, the Astral Sea connecting all planes, and additional planes like the Feywild and Shadowfell that mirror and intersect with the Material Plane. This cosmological model provides a structured and interconnected backdrop for adventures and campaigns, offering a vast array of realms and dimensions for exploration and storytelling.",
+              "Material Plane: The plane of existence where most D&D adventures take place. It is a diverse and varied world, consisting of continents, seas, and skies. It is the realm inhabited by mortals, and it serves as a central hub connecting with other planes.",
+              "Feywild: Also known as the Plane of Faerie, it is a vibrant and magical reflection of the Material Plane. It is home to fey creatures, such as fairies, elves, and other enchanted beings. Time and nature behave differently in the Feywild.",
+              "Shadowfell: A dark and gloomy plane that mirrors the Material Plane, associated with darkness, decay, and negative emotions. It is a realm of shadows and is inhabited by undead creatures and other dark entities. Time and nature behave differently in the Shadow plane.",
+              "Ethereal Plane: A misty and insubstantial realm that coexists with the Material Plane. It is often accessed through magical means and is used for travel and interaction with ethereal beings and objects.",
+              "Elemental Planes: In addition to the Inner Planes, there are also Para-Elemental Planes and Quasi-Elemental Planes. The Para-Elemental Planes lie between two adjacent Inner Planes and contain a blend of elemental energies. The Quasi-Elemental Planes exist between the Elemental Planes and combine elemental forces with other phenomena like ash, steam, ice, and more.",
+              "Inner Planes: Elemental planes that embody the raw forces of nature. They include the Elemental Plane of Fire, Elemental Plane of Water, Elemental Plane of Air, and Elemental Plane of Earth. Each plane is abundant in its corresponding elemental energy.",
+              "Outer Planes: A collection of planes representing different moral and ethical alignments. These planes include the Overseer realms. They are home to powerful deities and beings embodying these alignments.",
+              "Astral Sea: The plane that connects all the other planes, serving as a vast void of silvery mist. It is traversed by the Astral Projection and acts as a conduit between different realms. It is also home to astral creatures.",
+              "Far Realms: A plane of existence that lies beyond the known multiverse, characterized by eldritch and incomprehensible entities. It is a realm of madness and alien horrors.",
+              "These summaries provide a brief overview of each component within the Dimensional Cosmology of Teothe, offering a glimpse into the diverse and interconnected planes that players and characters may explore during their adventures.",
+            ],
+          }}
+        />
+        <Divider />
+        <SimpleContent
+          contentProps={{
             title: "Gate Keepers",
             text: [
               "All take their power from Mceeju so all are close to gods in power.",
