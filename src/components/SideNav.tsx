@@ -7,7 +7,6 @@ import type { MenuProps } from "antd";
 
 import CommonLorePage from "Pages/PageCommonLore";
 import DeitiesPage from "Pages/PageDeities";
-import GetQuest from "App/getQuest/page";
 import TablesPage from "Pages/PageTables";
 import LibraryPage from "Pages/PageLibrary";
 import MapLegendPage from "Pages/PageMapLegend";
@@ -192,17 +191,6 @@ export default function Sidebar() {
             </div>,
             "13",
             getIcon("MapLegend", collapsed)
-          ),
-          getItem(
-            <div
-              onClick={() => {
-                loadPage(<GetQuest />);
-              }}
-            >
-              Quest Generator
-            </div>,
-            "15",
-            getIcon("QuestGenerator", collapsed)
           ),
         ]}
       />

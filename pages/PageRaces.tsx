@@ -53,7 +53,7 @@ export default function RacesPage() {
       <GetCrumbs path={"Teothe3K,Races"} />
       <div className="float-right text-pink-600">
         <span className="align-bottom">Homebrew </span>
-        <Switch defaultChecked className="bg-[#630436]" onChange={ShowBrew} />
+        <Switch defaultChecked onChange={ShowBrew} />
       </div>
       <Card bordered={false}>{GetRaces(brew)}</Card>
     </>
