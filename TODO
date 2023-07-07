@@ -3,7 +3,7 @@
 ## 1.1
 
 - [ ] Sidenav collapsed not working
-- [ ] Common lore does not have the Planes wheel
+- [x] Common lore does not have the Planes wheel
 - [ ] Map description tooltips to bottom instead of top
 - [ ] 3 More races to DB
 
