@@ -1,14 +1,16 @@
 import GetCrumbs from "@/components/NavigationCrumb";
 import SimpleContent from "@/components/SimpleCon";
 import GetBook from "@/components/library/GetBook";
-import { Card } from "antd";
+import { Card, Divider } from "antd";
+import Title from "antd/es/typography/Title";
 
 export default function LibraryPage() {
   return (
     <>
       <GetCrumbs path={"Teothe3K,Library"} />
       <Card bordered={false} className="w-full h-full">
-        <SimpleContent contentProps={{ title: "General" }} />
+        <Title>Library</Title>
+        <Title level={2}>General</Title>
         <GetBook
           bookProps={{
             url: "https://ozgurozbek.github.io/dnd/books/TheseClovers.pdf",
@@ -87,7 +89,8 @@ export default function LibraryPage() {
             name: "Dated; Myth of Creation",
           }}
         />
-        <SimpleContent contentProps={{ title: "Teothe" }} />
+        <Divider style={{ borderColor: "white" }} />
+        <Title level={2}>Teothe</Title>
         <GetBook
           bookProps={{
             url: "https://ozgurozbek.github.io/dnd/books/FishermenUprising.pdf",
@@ -136,7 +139,8 @@ export default function LibraryPage() {
             name: "Poem on Akash",
           }}
         />
-        <SimpleContent contentProps={{ title: "Fiction" }} />
+        <Divider style={{ borderColor: "white" }} />
+        <Title level={2}>Fiction</Title>
         <GetBook
           bookProps={{
             url: "https://ozgurozbek.github.io/dnd/books/HTTFBAPWDKTABBTATTKEBIRTDANAATIEWYANTLTMVCRN.pdf",
@@ -167,7 +171,8 @@ export default function LibraryPage() {
             name: "Song Of Catastrophe",
           }}
         />
-        <SimpleContent contentProps={{ title: "Epipremnum" }} />
+        <Divider style={{ borderColor: "white" }} />
+        <Title level={2}>Epipremnum</Title>
         <GetBook
           bookProps={{
             url: "https://ozgurozbek.github.io/dnd/books/Epipremnum.pdf",
@@ -180,7 +185,8 @@ export default function LibraryPage() {
             name: "Mirror of Erised",
           }}
         />
-        <SimpleContent contentProps={{ title: "Thaum" }} />
+        <Divider style={{ borderColor: "white" }} />
+        <Title level={2}>Thaum</Title>
         <GetBook
           bookProps={{
             url: "https://ozgurozbek.github.io/dnd/books/DufreneNotes.pdf",
@@ -193,7 +199,8 @@ export default function LibraryPage() {
             name: "Jeremiah's Cookbook",
           }}
         />
-        <SimpleContent contentProps={{ title: "Choll" }} />
+        <Divider style={{ borderColor: "white" }} />
+        <Title level={2}>Choll</Title>
         <GetBook
           bookProps={{
             url: "https://ozgurozbek.github.io/dnd/books/Choll.pdf",
