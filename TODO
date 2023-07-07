@@ -4,16 +4,17 @@
 
 - [x] Place emotional echoes
 - [x] Split maps
-- [ ] Export climates
-- [ ] Export resources
-- [ ] Export echoes
-- [ ] Export kingdoms
-- [ ] Export places
-- [ ] Export travel routes
-- [ ] Export cities
-- [ ] Export steamcart
-- [ ] Export continents
-- [ ] Export compass
+- [x] Export base
+- [x] Export climates
+- [x] Export resources
+- [x] Export echoes
+- [x] Export kingdoms
+- [x] Export places
+- [x] Export travel routes
+- [x] Export cities
+- [x] Export steamcart
+- [x] Export continents
+- [x] Export compass
 - [ ] Map descriptions
 
 - [x] Mobile force landscape, i guess
