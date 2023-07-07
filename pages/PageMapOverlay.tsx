@@ -51,6 +51,7 @@ export default function MapOverlayPage() {
             </span>
           </Button>
           <Tooltip
+            placement="bottom"
             title={
               "Bottom left has the scale for the map with a single unit displaying a day in travel pace (8hrs)"
             }
@@ -104,6 +105,7 @@ export default function MapOverlayPage() {
             </span>
           </Button>
           <Tooltip
+            placement="bottom"
             title={
               "Fear 😱, Joy 😊, Sorrow 😔, Love 😍, Anger 😠, Hope 🥺, Anxiety 😵, Awe 😨, Desire 😳, Abandonment 😒"
             }
@@ -138,6 +140,7 @@ export default function MapOverlayPage() {
             </span>
           </Button>
           <Tooltip
+            placement="bottom"
             title={
               "Red: Woven Route, Blue: Wavekeep Route, Purple: Elkian Route"
             }
