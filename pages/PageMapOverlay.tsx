@@ -1,6 +1,11 @@
-import { Button, Card, Image, Space } from "antd";
+import { Button, Card, Divider, Image, Space } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import SimpleContent from "@/components/SimpleCon";
+
+import {
+  CheckCircleOutlined,
+  ExclamationCircleOutlined,
+} from "@ant-design/icons";
 
 export default function MapOverlayPage() {
   let visibleMaps: string[] = [];
@@ -27,7 +32,8 @@ export default function MapOverlayPage() {
           contentProps={{
             title: "Map Overlay",
             text: [
-              "Map overlays change their index in the order of the button press. You can add or remove overlays. There are obviously not HD, and small campuses or travel routes may provide difficult to see.",
+              "Map overlays change their index in the order of the button press. You can add or remove overlays by clicking the respective button. These are obviously not HD, and small campuses or travel routes may provide difficult to see.",
+              "Your character quite literally does not know about these. The only accessible maps to your character from the get-go are marked with a checkmark. These are also the left-hand side of the button row. Purchase the rest in-game or hire a scriber.",
             ],
           }}
         />
@@ -37,77 +43,100 @@ export default function MapOverlayPage() {
               handleMapVisibility("Campuses");
             }}
           >
-            Campuses Overlay
-          </Button>
-          <Button
-            onClick={() => {
-              handleMapVisibility("Climates");
-            }}
-          >
-            Climates Overlay
+            <span>
+              Campuses <CheckCircleOutlined />
+            </span>
           </Button>
           <Button
             onClick={() => {
               handleMapVisibility("Compass");
             }}
           >
-            Compass Overlay
+            <span>
+              Compass <CheckCircleOutlined />
+            </span>
           </Button>
           <Button
             onClick={() => {
               handleMapVisibility("Continents");
             }}
           >
-            Continents Overlay
-          </Button>
-          <Button
-            onClick={() => {
-              handleMapVisibility("Echoes");
-            }}
-          >
-            Echoes Overlay
+            <span>
+              Continents <CheckCircleOutlined />
+            </span>
           </Button>
           <Button
             onClick={() => {
               handleMapVisibility("Kingdoms");
             }}
           >
-            Kingdoms Overlay
+            <span>
+              Kingdoms <CheckCircleOutlined />
+            </span>
           </Button>
           <Button
             onClick={() => {
               handleMapVisibility("Places");
             }}
           >
-            Places Overlay
+            <span>
+              Places <CheckCircleOutlined />
+            </span>
+          </Button>
+          <Divider type="vertical" style={{ borderColor: "white" }} />
+          <Button
+            onClick={() => {
+              handleMapVisibility("Climates");
+            }}
+          >
+            <span>
+              Climate <ExclamationCircleOutlined />
+            </span>
+          </Button>
+          <Button
+            onClick={() => {
+              handleMapVisibility("Echoes");
+            }}
+          >
+            <span>
+              Emotional Echoes <ExclamationCircleOutlined />
+            </span>
           </Button>
           <Button
             onClick={() => {
               handleMapVisibility("Resources");
             }}
           >
-            Resources Overlay
+            <span>
+              Map Resources <ExclamationCircleOutlined />
+            </span>
           </Button>
           <Button
             onClick={() => {
               handleMapVisibility("Steamcart");
             }}
           >
-            Steamcart Overlay
+            <span>
+              Steamcart <ExclamationCircleOutlined />
+            </span>
           </Button>
           <Button
             onClick={() => {
               handleMapVisibility("Trade");
             }}
           >
-            Trade Overlay
+            <span>
+              Trade Routes <ExclamationCircleOutlined />
+            </span>
           </Button>
           <Button
             onClick={() => {
               handleMapVisibility("Travel");
             }}
           >
-            Travel Overlay
+            <span>
+              Travel Routes <ExclamationCircleOutlined />
+            </span>
           </Button>
         </Space>
         <div className="relative mt-4">
