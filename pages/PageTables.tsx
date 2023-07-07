@@ -86,7 +86,7 @@ function GetTableData() {
 
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
-    "http://localhost:5000/getTables?tab=" + query,
+    "https://teothe.pythonanywhere.com/getTables?tab=" + query,
     fetcher
   );
   if (error) {

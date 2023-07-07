@@ -6,7 +6,10 @@ import useSWR from "swr";
 
 function GetMapLegend() {
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
-  const { data, error } = useSWR("http://localhost:5000/getMapRes", fetcher);
+  const { data, error } = useSWR(
+    "https://teothe.pythonanywhere.com/getMapRes",
+    fetcher
+  );
   if (error) {
     console.log(error);
     return <div>Failed to access API</div>;

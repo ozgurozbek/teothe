@@ -6,7 +6,10 @@ import { useState } from "react";
 
 function GetRaces(brewCheck: boolean) {
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
-  const { data, error } = useSWR("http://localhost:5000/getRaces", fetcher);
+  const { data, error } = useSWR(
+    "https://teothe.pythonanywhere.com/getRaces",
+    fetcher
+  );
   if (error) {
     console.log(error);
     return <div>Failed to access API</div>;
