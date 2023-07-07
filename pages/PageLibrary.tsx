@@ -1,8 +1,8 @@
 import GetCrumbs from "@/components/NavigationCrumb";
-import SimpleContent from "@/components/SimpleCon";
 import GetBook from "@/components/library/GetBook";
-import { Card, Divider } from "antd";
-import Title from "antd/es/typography/Title";
+import { Typography, Card, Divider } from "antd";
+
+const { Title } = Typography;
 
 export default function LibraryPage() {
   return (
