@@ -20,9 +20,14 @@ import GetCrumbs from "./NavigationCrumb";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
-function loadPage(pageComponent: React.ReactElement) {
-  render(pageComponent, document.getElementById("PageContent"));
-}
+const loadPage = (menuItem: any) => {
+  //if menuItem.key bilmemne ise bunu renderla etc.
+  render(<CommonLorePage />, document.getElementById("PageContent"));
+};
+
+//function loadPage(pageComponent: React.ReactElement) {
+//  render(pageComponent, document.getElementById("PageContent"));
+//}
 
 function getIcon(pageName: string, avatarSize: boolean) {
   return (
@@ -41,6 +46,7 @@ function getItem(
   label: React.ReactNode,
   key: React.Key,
   icon?: React.ReactNode,
+  element?: React.ReactElement,
   children?: MenuItem[]
 ): MenuItem {
   return {
@@ -48,6 +54,7 @@ function getItem(
     icon,
     children,
     label,
+    element,
   } as MenuItem;
 }
 
@@ -86,6 +93,7 @@ export default function Sidebar() {
       </div>
 
       <Menu
+        onClick={loadPage}
         style={{
           position: "fixed",
           width: collapsed ? "80px" : "inherit",
@@ -96,26 +104,16 @@ export default function Sidebar() {
         mode="inline"
         items={[
           getItem(
-            <div
-              onClick={() => {
-                loadPage(<CommonLorePage />);
-              }}
-            >
-              Common Lore
-            </div>,
+            "Common Lore",
             "1",
-            getIcon("CommonLore", collapsed)
+            getIcon("CommonLore", collapsed),
+            <CommonLorePage />
           ),
           getItem(
-            <div
-              onClick={() => {
-                loadPage(<LocationsPage />);
-              }}
-            >
-              Planes of Existence
-            </div>,
+            "Planes of Existence",
             "2",
-            getIcon("Locations", collapsed)
+            getIcon("Locations", collapsed),
+            <LocationsPage />
           ),
           getItem(
             <div
