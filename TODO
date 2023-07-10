@@ -18,7 +18,7 @@
 - [ ] SideNav icon sizes / or wait for page load to display
 - [ ] SideNav fixed to top
 - [ ] Half-elf çocuk diye yazsın
-- [ ] Races page image alt fix
+- [x] Races page image alt fix
 - [x] Fix logo image size
 - [x] Make logo onclick to display nothing
 - [ ] Layout>hasSider(bool): Whether contain Sider in children, don't have to assign it normally. Useful in ssr avoid style flickering

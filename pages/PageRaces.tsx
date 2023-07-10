@@ -24,7 +24,7 @@ function GetRaces(brewCheck: boolean) {
           <RacesCon
             RacePic={{
               src: "./Races/" + item[0] + ".png",
-              alt: item[0] + "image",
+              alt: item[0] + " image",
               phrase: item[1],
             }}
             DescriptionText={{
