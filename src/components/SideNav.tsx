@@ -27,6 +27,7 @@ function loadPage(pageComponent: React.ReactElement) {
 function getIcon(pageName: string, avatarSize: boolean) {
   return (
     <Avatar
+      className="transition-all"
       size={avatarSize ? 16 : 24}
       src={"./Icons/SideNav/" + pageName + ".svg"}
       alt={pageName + " Icon"}
@@ -61,22 +62,36 @@ export default function Sidebar() {
         setCollapsed(value);
       }}
     >
-      <Image
-        src="./teothe3K.png"
-        alt="Teothe3K Icon"
-        preview={false}
-        onClick={() => {
-          loadPage(
-            <>
-              <GetCrumbs path="Teothe3K" />
-              <Card bordered={false} className="w-full">
-                <Empty />
-              </Card>
-            </>
-          );
-        }}
-      />
+      <div>
+        <Image
+          className="cursor-pointer transition-all"
+          style={{
+            position: "fixed",
+            width: collapsed ? "80px" : "200px",
+          }}
+          src="./teothe3K.png"
+          alt="Teothe3K Icon"
+          preview={false}
+          onClick={() => {
+            loadPage(
+              <>
+                <GetCrumbs path="Teothe3K" />
+                <Card bordered={false} className="w-full">
+                  <Empty />
+                </Card>
+              </>
+            );
+          }}
+        />
+      </div>
+
       <Menu
+        style={{
+          position: "fixed",
+          width: collapsed ? "80px" : "inherit",
+          // top: "22%",
+          top: collapsed ? 60 : 100,
+        }}
         theme="dark"
         mode="inline"
         items={[
