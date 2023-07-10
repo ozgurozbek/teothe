@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { render } from "react-dom";
-import { Menu, Image, Avatar } from "antd";
+import { Menu, Image, Avatar, Empty, Card } from "antd";
 import Sider from "antd/es/layout/Sider";
 
 import type { MenuProps } from "antd";
@@ -16,6 +16,7 @@ import RacesPage from "Pages/PageRaces";
 import HomebrewsPage from "Pages/PageHomebrews";
 import PricingPage from "Pages/PageCommonPricing";
 import ToolsPage from "Pages/PageTools";
+import GetCrumbs from "./NavigationCrumb";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
@@ -61,11 +62,19 @@ export default function Sidebar() {
       }}
     >
       <Image
-        width="200px"
-        height="83px"
         src="./teothe3K.png"
         alt="Teothe3K Icon"
         preview={false}
+        onClick={() => {
+          loadPage(
+            <>
+              <GetCrumbs path="Teothe3K" />
+              <Card bordered={false} className="w-full">
+                <Empty />
+              </Card>
+            </>
+          );
+        }}
       />
       <Menu
         theme="dark"
