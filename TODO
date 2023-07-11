@@ -2,21 +2,18 @@
 
 ## 1.2
 
-- [ ] 6 More races to DB
 - [ ] Deities images use image in avatar
 - [ ] PWA
 - [ ] Map zoom idea bounce
+- [ ] SideNav icon sizes / or wait for page load to display
 
 ## 1.1
 
 - [x] Planes wheel update to show holes\*
 - [x] Scroll to top button
-- [ ] SideNav icon sizes / or wait for page load to display
 - [x] Sidenav collapsed not working
 - [x] Common lore does not have the Planes wheel
 - [x] Map description tooltips to bottom instead of top
-- [ ] 6 More races to DB
-- [ ] Half-elf çocuk diye yazsın DB
 - [x] Races page image alt fix
 - [x] Fix logo image size
 - [x] Make logo onclick to display nothing
