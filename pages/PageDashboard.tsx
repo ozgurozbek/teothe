@@ -4,6 +4,7 @@ import GetCrumbs from "@/components/NavigationCrumb";
 const { Header, Content, Footer } = Layout;
 
 export default function Dashboard() {
+  let aud = new Audio("/ost.mp3");
   return (
     <Layout>
       <Header style={{ padding: "0px" }} />
@@ -67,6 +68,14 @@ export default function Dashboard() {
           Forgotten Realms Wiki
         </a>
         . 2016-2023.
+        <a
+          target="_blank"
+          href="https://ozgurozbek.github.io/dnd/min_images/npcawards.webp"
+          onClick={() => aud.play()}
+        >
+          {" "}
+          ?{" "}
+        </a>
       </Footer>
     </Layout>
   );
