@@ -3,13 +3,13 @@
 ## 1.2
 
 - [ ] 6 More races to DB
-- [ ] Planes wheel update to show holes\*
 - [ ] Deities images use image in avatar
 - [ ] PWA
 - [ ] Map zoom idea bounce
 
 ## 1.1
 
+- [x] Planes wheel update to show holes\*
 - [x] Scroll to top button
 - [ ] SideNav icon sizes / or wait for page load to display
 - [x] Sidenav collapsed not working

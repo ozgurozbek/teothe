@@ -25,7 +25,7 @@ export default function CommonLorePage() {
         <SimpleContent
           contentProps={{
             image: {
-              src: "https://ozgurozbek.github.io/dnd/Wheel3K.jpg",
+              src: "./wheel.png",
               alt: "Wheel Cosmology",
             },
             title: "Dimensional Cosmology",
