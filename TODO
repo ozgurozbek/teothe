@@ -11,21 +11,22 @@
 
 ## 1.1
 
-- [ ] Sidenav collapsed not working
+- [ ] SideNav icon sizes / or wait for page load to display
+- [x] Sidenav collapsed not working
 - [x] Common lore does not have the Planes wheel
 - [x] Map description tooltips to bottom instead of top
 - [ ] 6 More races to DB
-- [ ] SideNav icon sizes / or wait for page load to display
-- [ ] Half-elf çocuk diye yazsın
+- [ ] Half-elf çocuk diye yazsın DB
 - [x] Races page image alt fix
 - [x] Fix logo image size
 - [x] Make logo onclick to display nothing
-- [ ] Layout>hasSider(bool): Whether contain Sider in children, don't have to assign it normally. Useful in ssr avoid style flickering
 - [x] Logo responsive on sidenav chage
 - [x] make sidenav size change respect tailwind
 - [x] layout sidenav loc changes
 - [x] menu image transition
 - [x] SideNav fixed to top
+
+- [-] Layout>hasSider(bool): Whether contain Sider in children, don't have to assign it normally. Useful in ssr avoid style flickering
 
 ## Release
 

@@ -25,7 +25,6 @@ function GetTableData() {
   }
   if (!data) return <Skeleton active />;
 
-  console.log(data);
   //dataSource, columns
   let columns: ColumnsType<DataType> = [];
   columns.push(

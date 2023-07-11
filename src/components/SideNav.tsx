@@ -21,13 +21,47 @@ import GetCrumbs from "./NavigationCrumb";
 type MenuItem = Required<MenuProps>["items"][number];
 
 const loadPage = (menuItem: any) => {
-  //if menuItem.key bilmemne ise bunu renderla etc.
-  render(<CommonLorePage />, document.getElementById("PageContent"));
-};
+  let Ele = <></>;
+  switch (menuItem.key) {
+    case "1":
+      Ele = <CommonLorePage />;
+      break;
+    case "2":
+      Ele = <LocationsPage />;
+      break;
+    case "3":
+      Ele = <DeitiesPage />;
+      break;
+    case "4":
+      Ele = <RacesPage />;
+      break;
+    case "5":
+      Ele = <TablesPage />;
+      break;
+    case "6":
+      Ele = <LibraryPage />;
+      break;
+    case "7":
+      Ele = <PricingPage />;
+      break;
+    case "8":
+      Ele = <ToolsPage />;
+      break;
+    case "9":
+      Ele = <HomebrewsPage />;
+      break;
+    case "10":
+      Ele = <MapOverlayPage />;
+      break;
+    case "11":
+      Ele = <MapLegendPage />;
+      break;
 
-//function loadPage(pageComponent: React.ReactElement) {
-//  render(pageComponent, document.getElementById("PageContent"));
-//}
+    default:
+      break;
+  }
+  render(Ele, document.getElementById("PageContent"));
+};
 
 function getIcon(pageName: string, avatarSize: boolean) {
   return (
@@ -79,16 +113,17 @@ export default function Sidebar() {
           src="./teothe3K.png"
           alt="Teothe3K Icon"
           preview={false}
-          onClick={() => {
-            loadPage(
+          onClick={() =>
+            render(
               <>
                 <GetCrumbs path="Teothe3K" />
                 <Card bordered={false} className="w-full">
                   <Empty />
                 </Card>
-              </>
-            );
-          }}
+              </>,
+              document.getElementById("PageContent")
+            )
+          }
         />
       </div>
 
@@ -103,117 +138,17 @@ export default function Sidebar() {
         theme="dark"
         mode="inline"
         items={[
-          getItem(
-            "Common Lore",
-            "1",
-            getIcon("CommonLore", collapsed),
-            <CommonLorePage />
-          ),
-          getItem(
-            "Planes of Existence",
-            "2",
-            getIcon("Locations", collapsed),
-            <LocationsPage />
-          ),
-          getItem(
-            <div
-              onClick={() => {
-                loadPage(<DeitiesPage />);
-              }}
-            >
-              Deities
-            </div>,
-            "3",
-            getIcon("Deities", collapsed)
-          ),
-          getItem(
-            <div
-              onClick={() => {
-                loadPage(<RacesPage />);
-              }}
-            >
-              Races
-            </div>,
-            "14",
-            getIcon("Races", collapsed)
-          ),
-          getItem(
-            <div
-              onClick={() => {
-                loadPage(<TablesPage />);
-              }}
-            >
-              Tables
-            </div>,
-            "4",
-            getIcon("Tables", collapsed)
-          ),
-          getItem(
-            <div
-              onClick={() => {
-                loadPage(<LibraryPage />);
-              }}
-            >
-              Library
-            </div>,
-            "5",
-            getIcon("Library", collapsed)
-          ),
-          getItem(
-            <div
-              onClick={() => {
-                loadPage(<PricingPage />);
-              }}
-            >
-              Pricing
-            </div>,
-            "6",
-            getIcon("Pricing", collapsed)
-          ),
-          getItem(
-            <div
-              onClick={() => {
-                loadPage(<ToolsPage />);
-              }}
-            >
-              Tools
-            </div>,
-            "7",
-            getIcon("Tools", collapsed)
-          ),
-          getItem(
-            <div
-              onClick={() => {
-                loadPage(<HomebrewsPage />);
-              }}
-            >
-              Homebrews
-            </div>,
-            "11",
-            getIcon("Homebrews", collapsed)
-          ),
-          getItem(
-            <div
-              onClick={() => {
-                loadPage(<MapOverlayPage />);
-              }}
-            >
-              Map Overlay
-            </div>,
-            "12",
-            getIcon("MapOverlay", collapsed)
-          ),
-          getItem(
-            <div
-              onClick={() => {
-                loadPage(<MapLegendPage />);
-              }}
-            >
-              Map Legend
-            </div>,
-            "13",
-            getIcon("MapLegend", collapsed)
-          ),
+          getItem("Common Lore", "1", getIcon("CommonLore", collapsed)),
+          getItem("Planes of Existence", "2", getIcon("Locations", collapsed)),
+          getItem("Deities", "3", getIcon("Deities", collapsed)),
+          getItem("Races", "4", getIcon("Races", collapsed)),
+          getItem("Tables", "5", getIcon("Tables", collapsed)),
+          getItem("Library", "6", getIcon("Library", collapsed)),
+          getItem("Pricing", "7", getIcon("Pricing", collapsed)),
+          getItem("Tools", "8", getIcon("Tools", collapsed)),
+          getItem("Homebrews", "9", getIcon("Homebrews", collapsed)),
+          getItem("Map Overlay", "10", getIcon("MapOverlay", collapsed)),
+          getItem("Map Legend", "11", getIcon("MapLegend", collapsed)),
         ]}
       />
     </Sider>
