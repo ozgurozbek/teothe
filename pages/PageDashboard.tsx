@@ -1,9 +1,18 @@
 import { Card, Empty, Layout } from "antd";
 import GetCrumbs from "@/components/NavigationCrumb";
 
+import { CaretUpOutlined } from "@ant-design/icons";
+
 const { Header, Content, Footer } = Layout;
 
 export default function Dashboard() {
+  let aud = new Audio("/ost.mp3");
+
+  function goUp() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+
   return (
     <Layout>
       <Header style={{ padding: "0px" }} />
@@ -67,7 +76,21 @@ export default function Dashboard() {
           Forgotten Realms Wiki
         </a>
         . 2016-2023.
+        <a
+          target="_blank"
+          href="https://ozgurozbek.github.io/dnd/min_images/npcawards.webp"
+          onClick={() => aud.play()}
+        >
+          {" "}
+          ?{" "}
+        </a>
       </Footer>
+      <div
+        className="w-12 h-12 rounded-full bg-[#630436] hover:bg-[#30011a] fixed bottom-4 right-4 transition-all text-center text-4xl"
+        onClick={goUp}
+      >
+        <CaretUpOutlined />
+      </div>
     </Layout>
   );
 }

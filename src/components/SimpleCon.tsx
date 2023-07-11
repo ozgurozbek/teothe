@@ -23,7 +23,8 @@ export default function SimpleContent({
       <Title>{contentProps.title}</Title>
       {contentProps.image?.src && (
         <Image
-          rootClassName="my-4 rounded-lg"
+          rootClassName="w-full"
+          className="rounded-xl w-full"
           src={contentProps.image.src}
           alt={contentProps.image.alt}
         />
