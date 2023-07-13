@@ -1,19 +1,20 @@
 import { Card } from "antd";
 
-export default function CalendarCell(cellProps: {
-  dayName: string;
-  dayNumber: number;
-  moonPhase?: string;
-  holiday?: string;
-  sessionNote?: string;
+export default function CalendarCell({
+  cellProps,
+}: {
+  cellProps: {
+    dayNumber: number;
+    moonPhase?: string;
+    holiday?: string[];
+    sessionNote?: string;
+  };
 }) {
   return (
-    <Card className="rounded-none">
+    <Card bordered={false} className="rounded-none h-full">
       <div className="h-12">
-        <span>{cellProps.dayName}</span>
-        <span className="float-right">
-          {cellProps.moonPhase} {cellProps.dayNumber}
-        </span>
+        <span>{cellProps.moonPhase}</span>
+        <span className="float-right">{cellProps.dayNumber}</span>
       </div>
       {cellProps.holiday && (
         <div className="bg-red-300 h-4">
