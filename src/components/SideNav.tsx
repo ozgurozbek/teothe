@@ -17,6 +17,7 @@ import HomebrewsPage from "Pages/PageHomebrews";
 import PricingPage from "Pages/PageCommonPricing";
 import ToolsPage from "Pages/PageTools";
 import GetCrumbs from "./NavigationCrumb";
+import CalendarPage from "Pages/PageCalendar";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
@@ -55,6 +56,9 @@ const loadPage = (menuItem: any) => {
       break;
     case "11":
       Ele = <MapLegendPage />;
+      break;
+    case "12":
+      Ele = <CalendarPage />;
       break;
 
     default:
@@ -149,6 +153,7 @@ export default function Sidebar() {
           getItem("Homebrews", "9", getIcon("Homebrews", collapsed)),
           getItem("Map Overlay", "10", getIcon("MapOverlay", collapsed)),
           getItem("Map Legend", "11", getIcon("MapLegend", collapsed)),
+          getItem("Calendar", "12", getIcon("Calendar", collapsed)),
         ]}
       />
     </Sider>
