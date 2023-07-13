@@ -153,7 +153,7 @@ export default function Sidebar() {
           getItem("Homebrews", "9", getIcon("Homebrews", collapsed)),
           getItem("Map Overlay", "10", getIcon("MapOverlay", collapsed)),
           getItem("Map Legend", "11", getIcon("MapLegend", collapsed)),
-          getItem("Calendar", "12", getIcon("Tables", collapsed)),
+          getItem("Calendar", "12", getIcon("Calendar", collapsed)),
         ]}
       />
     </Sider>
