@@ -10,19 +10,30 @@ export default function CalendarCell({
     sessionNote?: string;
   };
 }) {
-  return (
-    <Card bordered={false} className="rounded-none h-full">
-      <div className="h-12">
-        <span>{cellProps.moonPhase}</span>
-        <span className="float-right">{cellProps.dayNumber}</span>
-      </div>
-      {cellProps.holiday && (
-        <div className="bg-red-300 h-4">
-          <span>
-            <strong>{cellProps.holiday}</strong>
+  let holidayList = [];
+  if (cellProps.holiday) {
+    for (let i = 0; i < cellProps.holiday.length; i++) {
+      holidayList.push(
+        <div className="text-red-600 w-full italic">
+          <span title={cellProps.holiday[i].split(", ")[1]}>
+            {cellProps.holiday[i].split(", ")[0]}
           </span>
         </div>
-      )}
+      );
+    }
+  }
+
+  return (
+    <section className="h-full w-full p-2">
+      <div className="h-8">
+        <span>
+          <strong>{cellProps.moonPhase}</strong>
+        </span>
+        <span className="float-right">
+          <strong>{cellProps.dayNumber}</strong>
+        </span>
+      </div>
+      {holidayList && holidayList}
       {cellProps.sessionNote && (
         <div className="bg-blue-300 h-20">
           <span>
@@ -30,6 +41,6 @@ export default function CalendarCell({
           </span>
         </div>
       )}
-    </Card>
+    </section>
   );
 }

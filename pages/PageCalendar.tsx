@@ -5,7 +5,7 @@ import CalendarTable from "@/components/calendar/CalendarTable";
 import { useState } from "react";
 
 export default function CalendarPage() {
-  const [monthName, setMonthName] = useState("Buibus");
+  const [monthName, setMonthName] = useState("Radus");
   const [year, setYear] = useState(27);
 
   return (
