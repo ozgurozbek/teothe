@@ -390,6 +390,5 @@ export default function CalendarTable({
       );
     }
   }
-  console.log(calendarProps);
   return <Row>{tableMain}</Row>;
 }
