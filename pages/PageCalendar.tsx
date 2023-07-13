@@ -1,12 +1,4 @@
-import {
-  Button,
-  Card,
-  Dropdown,
-  InputNumber,
-  MenuProps,
-  Space,
-  message,
-} from "antd";
+import { Button, Card, Dropdown, InputNumber, MenuProps, Space } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import SimpleContent from "@/components/SimpleCon";
 import CalendarTable from "@/components/calendar/CalendarTable";
@@ -78,15 +70,6 @@ export default function CalendarPage() {
               </Space>
             </Button>
           </Dropdown>
-          <InputNumber
-            addonAfter="Blue"
-            defaultValue={27}
-            min={27}
-            precision={0}
-            keyboard={false}
-            onChange={onChange}
-          />
-          Press Enter when done.
         </Space>
         <CalendarTable calendarProps={{ monthName: monthName, year: year }} />
       </Card>
