@@ -1,5 +1,3 @@
-import { Card } from "antd";
-
 export default function CalendarCell({
   cellProps,
 }: {
@@ -26,21 +24,24 @@ export default function CalendarCell({
   return (
     <section className="h-full w-full p-2">
       <div className="h-8">
-        <span>
-          <strong>{cellProps.moonPhase}</strong>
-        </span>
-        <span className="float-right">
-          <strong>{cellProps.dayNumber}</strong>
-        </span>
+        <div>
+          <img
+            className="h-6 absolute invert blur-sm"
+            title={cellProps.moonPhase}
+            src={"./Icons/Calendar/" + cellProps.moonPhase + ".png"}
+          />
+          <img
+            className="h-6 mix-blend-multiply absolute"
+            title={cellProps.moonPhase}
+            src={"./Icons/Calendar/" + cellProps.moonPhase + ".png"}
+          />
+        </div>
+        <div className="float-right pr-4">
+          <strong className="absolute blur-sm">{cellProps.dayNumber}</strong>
+          <strong className="absolute ">{cellProps.dayNumber}</strong>
+        </div>
       </div>
       {holidayList && holidayList}
-      {cellProps.sessionNote && (
-        <div className="bg-blue-300 h-20">
-          <span>
-            <strong>{cellProps.sessionNote}</strong>
-          </span>
-        </div>
-      )}
     </section>
   );
 }
