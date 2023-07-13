@@ -6,11 +6,6 @@ import { useState } from "react";
 import { DownOutlined } from "@ant-design/icons";
 export default function CalendarPage() {
   const [monthName, setMonthName] = useState("Radus");
-  const [year, setYear] = useState(27);
-
-  const onChange = (value: number) => {
-    setYear(value);
-  };
 
   const handleMenuClick: MenuProps["onClick"] = (e) => {
     setMonthName(e.key);
@@ -71,7 +66,7 @@ export default function CalendarPage() {
             </Button>
           </Dropdown>
         </Space>
-        <CalendarTable calendarProps={{ monthName: monthName, year: year }} />
+        <CalendarTable calendarProps={{ monthName: monthName, year: 27 }} />
       </Card>
     </section>
   );
