@@ -57,10 +57,11 @@ export default function CalendarPage() {
       <Card bordered={false} className="w-full">
         <SimpleContent contentProps={{ title: "Calendar" }} />
         <Space className="mb-4">
+          Month:{" "}
           <Dropdown menu={menuProps}>
             <Button>
               <Space>
-                Month
+                {monthName}
                 <DownOutlined />
               </Space>
             </Button>
