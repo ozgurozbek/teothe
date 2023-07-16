@@ -5,10 +5,15 @@ import CalendarTable from "@/components/calendar/CalendarTable";
 import { useState } from "react";
 import { DownOutlined } from "@ant-design/icons";
 export default function CalendarPage() {
-  const [monthName, setMonthName] = useState("Radus");
+  const [monthName, setMonthName] = useState("");
+  const [tableNo, setTableNo] = useState("1");
 
-  const handleMenuClick: MenuProps["onClick"] = (e) => {
+  const handleMonthClick: MenuProps["onClick"] = (e) => {
     setMonthName(e.key);
+  };
+
+  const handleTableClick: MenuProps["onClick"] = (e) => {
+    setTableNo(e.key);
   };
 
   const items: MenuProps["items"] = [
@@ -45,10 +50,24 @@ export default function CalendarPage() {
       key: "Radus",
     },
   ];
-
-  const menuProps = {
+  const monthProps = {
     items,
-    onClick: handleMenuClick,
+    onClick: handleMonthClick,
+  };
+
+  const tableItems: MenuProps["items"] = [
+    {
+      label: "1",
+      key: "1",
+    },
+    {
+      label: "2",
+      key: "2",
+    },
+  ];
+  const tableProps = {
+    items: tableItems,
+    onClick: handleTableClick,
   };
 
   return (
@@ -57,8 +76,17 @@ export default function CalendarPage() {
       <Card bordered={false} className="w-full">
         <SimpleContent contentProps={{ title: "Calendar" }} />
         <Space className="mb-4">
+          Table:{" "}
+          <Dropdown menu={tableProps}>
+            <Button>
+              <Space>
+                {tableNo}
+                <DownOutlined />
+              </Space>
+            </Button>
+          </Dropdown>
           Month:{" "}
-          <Dropdown menu={menuProps}>
+          <Dropdown menu={monthProps}>
             <Button>
               <Space>
                 {monthName}
@@ -67,7 +95,9 @@ export default function CalendarPage() {
             </Button>
           </Dropdown>
         </Space>
-        <CalendarTable calendarProps={{ monthName: monthName, year: 27 }} />
+        <CalendarTable
+          calendarProps={{ tableNo: tableNo, monthName: monthName, year: 27 }}
+        />
       </Card>
     </section>
   );

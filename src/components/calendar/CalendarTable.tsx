@@ -1,5 +1,26 @@
-import { Col, Row } from "antd";
+import { Col, Row, Skeleton } from "antd";
 import CalendarCell from "./CalendarCell";
+import useSWR from "swr";
+
+function GetSessionNotes(tableNo: string, year: string, month: string) {
+  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
+  const { data, error } = useSWR(
+    "https://teothe.pythonanywhere.com/getSessionNotes?table=" +
+      tableNo +
+      "&year=" +
+      year +
+      "&month=" +
+      month,
+    fetcher
+  );
+  if (error) {
+    console.log(error);
+    return <div>Failed to access API</div>;
+  }
+  if (!data) return <Skeleton active />;
+
+  return data;
+}
 
 const holidays: { [key: string]: string[] } = {
   "Buibus, 1": ["New Years", "Sister's Month"],
@@ -330,10 +351,17 @@ export default function CalendarTable({
   calendarProps,
 }: {
   calendarProps: {
+    tableNo: string;
     monthName: string;
     year: number;
   };
 }) {
+  let thisMonthsNotes = GetSessionNotes(
+    calendarProps.tableNo,
+    calendarProps.year.toString(),
+    calendarProps.monthName
+  );
+  //console.log(thisMonthsNotes);
   let tableMain = [];
   for (let index = 1; index < 49; index++) {
     if (
