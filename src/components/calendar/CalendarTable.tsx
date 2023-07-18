@@ -361,7 +361,6 @@ export default function CalendarTable({
     calendarProps.year.toString(),
     calendarProps.monthName
   );
-  //console.log(thisMonthsNotes);
   let tableMain = [];
   for (let index = 1; index < 49; index++) {
     if (
@@ -377,6 +376,7 @@ export default function CalendarTable({
                 dayNumber: index,
                 moonPhase: getMoonPhase(calendarProps.monthName, index),
                 holiday: getHolidays(calendarProps.monthName, index),
+                sessionNote: thisMonthsNotes[index],
               }}
             />
           </Col>
@@ -387,6 +387,7 @@ export default function CalendarTable({
                 dayNumber: index,
                 moonPhase: getMoonPhase(calendarProps.monthName, index),
                 holiday: getHolidays(calendarProps.monthName, index),
+                sessionNote: thisMonthsNotes[index],
               }}
             />
           </Col>
@@ -401,6 +402,7 @@ export default function CalendarTable({
                 dayNumber: index,
                 moonPhase: getMoonPhase(calendarProps.monthName, index),
                 holiday: getHolidays(calendarProps.monthName, index),
+                sessionNote: thisMonthsNotes[index],
               }}
             />
           </Col>
@@ -411,6 +413,7 @@ export default function CalendarTable({
                 dayNumber: index,
                 moonPhase: getMoonPhase(calendarProps.monthName, index),
                 holiday: getHolidays(calendarProps.monthName, index),
+                sessionNote: thisMonthsNotes[index],
               }}
             />
           </Col>

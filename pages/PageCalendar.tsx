@@ -7,6 +7,7 @@ import { DownOutlined } from "@ant-design/icons";
 export default function CalendarPage() {
   const [monthName, setMonthName] = useState("");
   const [tableNo, setTableNo] = useState("1");
+  const [yearCount, setYearCount] = useState(27);
 
   const handleMonthClick: MenuProps["onClick"] = (e) => {
     setMonthName(e.key);
@@ -14,6 +15,10 @@ export default function CalendarPage() {
 
   const handleTableClick: MenuProps["onClick"] = (e) => {
     setTableNo(e.key);
+  };
+
+  const handleYearClick = (value: number) => {
+    setYearCount(value);
   };
 
   const items: MenuProps["items"] = [
@@ -94,9 +99,21 @@ export default function CalendarPage() {
               </Space>
             </Button>
           </Dropdown>
+          <InputNumber
+            addonAfter="Blue Era"
+            defaultValue={27}
+            min={27}
+            precision={0}
+            keyboard={false}
+            onChange={handleYearClick}
+          />
         </Space>
         <CalendarTable
-          calendarProps={{ tableNo: tableNo, monthName: monthName, year: 27 }}
+          calendarProps={{
+            tableNo: tableNo,
+            monthName: monthName,
+            year: yearCount,
+          }}
         />
       </Card>
     </section>

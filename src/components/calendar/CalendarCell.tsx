@@ -42,6 +42,11 @@ export default function CalendarCell({
         </div>
       </div>
       {holidayList && holidayList}
+      {cellProps.sessionNote && (
+        <div className="text-green-600 w-full italic">
+          <p>{cellProps.sessionNote}</p>
+        </div>
+      )}
     </section>
   );
 }

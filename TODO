@@ -8,6 +8,11 @@
 - [ ] SideNav icon sizes / or wait for page load to display
 - [ ] Races page responsive (sm screen)
 - [ ] Page Top scroll smooth tailwind
+- [ ] CalendarCell.tsx images don't have alt prop (fix by using image prop from a library such as nextjs)
+- [ ] split from --- in session notes
+- [ ] calendar cell scroll
+- [ ] calendar year input css
+- [ ] PageCalendar onchange
 
 ## 1.1
 
