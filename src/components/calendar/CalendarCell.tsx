@@ -43,8 +43,16 @@ export default function CalendarCell({
       </div>
       {holidayList && holidayList}
       {cellProps.sessionNote && (
-        <div className="text-green-600 w-full italic">
-          <p>{cellProps.sessionNote}</p>
+        <div
+          className={
+            holidayList.length === 0
+              ? "text-green-600 w-full italic text-clip h-44 overflow-y-scroll no-scrollbar"
+              : holidayList.length === 3
+              ? "text-green-600 w-full italic text-clip h-28 overflow-y-scroll no-scrollbar"
+              : "text-green-600 w-full italic text-clip h-36 overflow-y-scroll no-scrollbar"
+          }
+        >
+          <p className="">{cellProps.sessionNote}</p>
         </div>
       )}
     </section>

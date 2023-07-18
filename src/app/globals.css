@@ -1,6 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer utilities {
+  @variants responsive {
+    .no-scrollbar::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    .no-scrollbar::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    /* Handle */
+    .no-scrollbar::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
+    /* Handle on hover */
+    .no-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -59,7 +81,8 @@ h3 {
 .ant-card {
   background-color: #66666620 !important;
 }
-.ant-btn {
+.ant-btn,
+.ant-input-number {
   color: white !important;
   border-color: #630436 !important;
   background-color: #63043633 !important;
@@ -67,7 +90,8 @@ h3 {
 footer > a {
   color: #630436 !important;
 }
-.ant-empty-description {
+.ant-empty-description,
+.ant-input-number-input {
   color: white !important;
 }
 .ant-table {
@@ -77,6 +101,12 @@ footer > a {
 .ant-table-cell-row-hover {
   color: white !important;
   background-color: #630436 !important;
+}
+
+.ant-input-number-group-addon {
+  color: white !important;
+  background-color: #630436 !important;
+  border-color: #630436 !important;
 }
 ::selection {
   background: #30011a;

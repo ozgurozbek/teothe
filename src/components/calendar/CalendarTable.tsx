@@ -370,7 +370,7 @@ export default function CalendarTable({
     ) {
       tableMain.push(
         index % 2 == 0 ? (
-          <Col span={3} className="bg-transparent h-36">
+          <Col span={3} className="bg-transparent h-56">
             <CalendarCell
               cellProps={{
                 dayNumber: index,
@@ -381,7 +381,7 @@ export default function CalendarTable({
             />
           </Col>
         ) : (
-          <Col span={3} className="bg-[#0b1016] h-36">
+          <Col span={3} className="bg-[#0b1016] h-56">
             <CalendarCell
               cellProps={{
                 dayNumber: index,
@@ -396,7 +396,7 @@ export default function CalendarTable({
     } else {
       tableMain.push(
         index % 2 == 0 ? (
-          <Col span={3} className="bg-[#0b1016] h-36">
+          <Col span={3} className="bg-[#0b1016] h-56">
             <CalendarCell
               cellProps={{
                 dayNumber: index,
@@ -407,7 +407,7 @@ export default function CalendarTable({
             />
           </Col>
         ) : (
-          <Col span={3} className="bg-transparent h-36">
+          <Col span={3} className="bg-transparent h-56">
             <CalendarCell
               cellProps={{
                 dayNumber: index,

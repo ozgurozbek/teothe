@@ -1,4 +1,13 @@
-import { Button, Card, Dropdown, InputNumber, MenuProps, Space } from "antd";
+import {
+  Button,
+  Card,
+  Divider,
+  Dropdown,
+  Empty,
+  InputNumber,
+  MenuProps,
+  Space,
+} from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import SimpleContent from "@/components/SimpleCon";
 import CalendarTable from "@/components/calendar/CalendarTable";
@@ -74,7 +83,6 @@ export default function CalendarPage() {
     items: tableItems,
     onClick: handleTableClick,
   };
-
   return (
     <section>
       <GetCrumbs path={"Teothe3K,Calendar"} />
@@ -90,6 +98,7 @@ export default function CalendarPage() {
               </Space>
             </Button>
           </Dropdown>
+          <Divider type="vertical" style={{ borderColor: "white" }} />
           Month:{" "}
           <Dropdown menu={monthProps}>
             <Button>
@@ -99,6 +108,8 @@ export default function CalendarPage() {
               </Space>
             </Button>
           </Dropdown>
+          <Divider type="vertical" style={{ borderColor: "white" }} />
+          Year:{" "}
           <InputNumber
             addonAfter="Blue Era"
             defaultValue={27}
@@ -108,13 +119,17 @@ export default function CalendarPage() {
             onChange={handleYearClick}
           />
         </Space>
-        <CalendarTable
-          calendarProps={{
-            tableNo: tableNo,
-            monthName: monthName,
-            year: yearCount,
-          }}
-        />
+        {monthName !== "" ? (
+          <CalendarTable
+            calendarProps={{
+              tableNo: tableNo,
+              monthName: monthName,
+              year: yearCount,
+            }}
+          />
+        ) : (
+          <Empty />
+        )}
       </Card>
     </section>
   );

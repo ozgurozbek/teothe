@@ -10,7 +10,7 @@
 - [ ] Page Top scroll smooth tailwind
 - [ ] CalendarCell.tsx images don't have alt prop (fix by using image prop from a library such as nextjs)
 - [ ] split from --- in session notes
-- [ ] calendar cell scroll
+- [x] CalendarCell.tsx scroll
 - [ ] calendar year input css
 - [ ] PageCalendar onchange
 
