@@ -29,11 +29,13 @@ export default function CalendarCell({
             className="h-6 absolute invert blur-sm"
             title={cellProps.moonPhase}
             src={"./Icons/Calendar/" + cellProps.moonPhase + ".png"}
+            alt={cellProps.moonPhase}
           />
           <img
             className="h-6 mix-blend-multiply absolute"
             title={cellProps.moonPhase}
             src={"./Icons/Calendar/" + cellProps.moonPhase + ".png"}
+            alt={cellProps.moonPhase}
           />
         </div>
         <div className="float-right pr-4">
