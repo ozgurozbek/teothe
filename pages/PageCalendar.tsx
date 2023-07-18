@@ -116,7 +116,11 @@ export default function CalendarPage() {
             min={27}
             precision={0}
             keyboard={false}
-            onChange={handleYearClick}
+            onChange={(x) => {
+              if (x != null) {
+                handleYearClick(x);
+              }
+            }}
           />
         </Space>
         {monthName !== "" ? (

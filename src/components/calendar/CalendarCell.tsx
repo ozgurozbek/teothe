@@ -52,7 +52,9 @@ export default function CalendarCell({
               : "text-green-600 w-full italic text-clip h-36 overflow-y-scroll no-scrollbar"
           }
         >
-          <p className="">{cellProps.sessionNote}</p>
+          <p title={cellProps.sessionNote.split(" --- ")[1]}>
+            {cellProps.sessionNote.split(" --- ")[0]}
+          </p>
         </div>
       )}
     </section>

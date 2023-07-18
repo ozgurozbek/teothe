@@ -9,10 +9,10 @@
 - [ ] Races page responsive (sm screen)
 - [ ] Page Top scroll smooth tailwind
 - [ ] CalendarCell.tsx images don't have alt prop (fix by using image prop from a library such as nextjs)
-- [ ] split from --- in session notes
+- [x] split from --- in session notes
 - [x] CalendarCell.tsx scroll
-- [ ] calendar year input css
-- [ ] PageCalendar onchange
+- [x] calendar year input css
+- [x] PageCalendar onchange
 
 ## 1.1
 
