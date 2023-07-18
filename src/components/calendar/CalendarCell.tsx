@@ -29,11 +29,13 @@ export default function CalendarCell({
             className="h-6 absolute invert blur-sm"
             title={cellProps.moonPhase}
             src={"./Icons/Calendar/" + cellProps.moonPhase + ".png"}
+            alt={cellProps.moonPhase}
           />
           <img
             className="h-6 mix-blend-multiply absolute"
             title={cellProps.moonPhase}
             src={"./Icons/Calendar/" + cellProps.moonPhase + ".png"}
+            alt={cellProps.moonPhase}
           />
         </div>
         <div className="float-right pr-4">
@@ -42,6 +44,21 @@ export default function CalendarCell({
         </div>
       </div>
       {holidayList && holidayList}
+      {cellProps.sessionNote && (
+        <div
+          className={
+            holidayList.length === 0
+              ? "text-green-600 w-full italic text-clip h-44 overflow-y-scroll no-scrollbar"
+              : holidayList.length === 3
+              ? "text-green-600 w-full italic text-clip h-28 overflow-y-scroll no-scrollbar"
+              : "text-green-600 w-full italic text-clip h-36 overflow-y-scroll no-scrollbar"
+          }
+        >
+          <p title={cellProps.sessionNote.split(" --- ")[1]}>
+            {cellProps.sessionNote.split(" --- ")[0]}
+          </p>
+        </div>
+      )}
     </section>
   );
 }

@@ -1,5 +1,26 @@
-import { Col, Row } from "antd";
+import { Col, Row, Skeleton } from "antd";
 import CalendarCell from "./CalendarCell";
+import useSWR from "swr";
+
+function GetSessionNotes(tableNo: string, year: string, month: string) {
+  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
+  const { data, error } = useSWR(
+    "https://teothe.pythonanywhere.com/getSessionNotes?table=" +
+      tableNo +
+      "&year=" +
+      year +
+      "&month=" +
+      month,
+    fetcher
+  );
+  if (error) {
+    console.log(error);
+    return <div>Failed to access API</div>;
+  }
+  if (!data) return <Skeleton active />;
+
+  return data;
+}
 
 const holidays: { [key: string]: string[] } = {
   "Buibus, 1": ["New Years", "Sister's Month"],
@@ -330,10 +351,16 @@ export default function CalendarTable({
   calendarProps,
 }: {
   calendarProps: {
+    tableNo: string;
     monthName: string;
     year: number;
   };
 }) {
+  let thisMonthsNotes = GetSessionNotes(
+    calendarProps.tableNo,
+    calendarProps.year.toString(),
+    calendarProps.monthName
+  );
   let tableMain = [];
   for (let index = 1; index < 49; index++) {
     if (
@@ -343,22 +370,24 @@ export default function CalendarTable({
     ) {
       tableMain.push(
         index % 2 == 0 ? (
-          <Col span={3} className="bg-transparent h-36">
+          <Col span={3} className="bg-transparent h-56">
             <CalendarCell
               cellProps={{
                 dayNumber: index,
                 moonPhase: getMoonPhase(calendarProps.monthName, index),
                 holiday: getHolidays(calendarProps.monthName, index),
+                sessionNote: thisMonthsNotes[index],
               }}
             />
           </Col>
         ) : (
-          <Col span={3} className="bg-[#0b1016] h-36">
+          <Col span={3} className="bg-[#0b1016] h-56">
             <CalendarCell
               cellProps={{
                 dayNumber: index,
                 moonPhase: getMoonPhase(calendarProps.monthName, index),
                 holiday: getHolidays(calendarProps.monthName, index),
+                sessionNote: thisMonthsNotes[index],
               }}
             />
           </Col>
@@ -367,22 +396,24 @@ export default function CalendarTable({
     } else {
       tableMain.push(
         index % 2 == 0 ? (
-          <Col span={3} className="bg-[#0b1016] h-36">
+          <Col span={3} className="bg-[#0b1016] h-56">
             <CalendarCell
               cellProps={{
                 dayNumber: index,
                 moonPhase: getMoonPhase(calendarProps.monthName, index),
                 holiday: getHolidays(calendarProps.monthName, index),
+                sessionNote: thisMonthsNotes[index],
               }}
             />
           </Col>
         ) : (
-          <Col span={3} className="bg-transparent h-36">
+          <Col span={3} className="bg-transparent h-56">
             <CalendarCell
               cellProps={{
                 dayNumber: index,
                 moonPhase: getMoonPhase(calendarProps.monthName, index),
                 holiday: getHolidays(calendarProps.monthName, index),
+                sessionNote: thisMonthsNotes[index],
               }}
             />
           </Col>
