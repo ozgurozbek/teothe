@@ -2,6 +2,11 @@ import { Typography, Image } from "antd";
 
 const { Title } = Typography;
 
+/**
+ * For basic static text or image content. Images are full-width.
+ * @param contentProps 
+ * @returns Title, if Image(antd), if text
+ */
 export default function SimpleContent({
   contentProps,
 }: {

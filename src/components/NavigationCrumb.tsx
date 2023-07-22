@@ -1,3 +1,8 @@
+/**
+ * Splits input by , and returns. First entry is darker colour.
+ * @param path 
+ * @returns span
+ */
 export default function GetCrumbs({ path }: { path: string }) {
   var data = path.split(",");
   var result = [];

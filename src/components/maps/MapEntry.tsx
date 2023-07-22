@@ -1,5 +1,11 @@
 import { Avatar, Tooltip } from "antd";
 
+/**
+ * Generates map resources entries with icons and tooltip.
+ * @param imageSrc 
+ * @param textProps 
+ * @returns div
+ */
 export default function MapEntry({
   imageSrc,
   textProps,

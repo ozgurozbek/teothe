@@ -21,6 +21,11 @@ import CalendarPage from "Pages/PageCalendar";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
+/**
+ * Renders the page on click
+ * @param menuItem 
+ * @returns Page
+ */
 const loadPage = (menuItem: any) => {
   let Ele = <></>;
   switch (menuItem.key) {
@@ -67,6 +72,12 @@ const loadPage = (menuItem: any) => {
   render(Ele, document.getElementById("PageContent"));
 };
 
+/**
+ * Gets Deity icons from the Sidenav icon
+ * @param pageName 
+ * @param avatarSize 
+ * @returns Deity Avatar
+ */
 function getIcon(pageName: string, avatarSize: boolean) {
   return (
     <Avatar
@@ -96,6 +107,10 @@ function getItem(
   } as MenuItem;
 }
 
+/**
+ * This is the main sidebar, only overruled by itself
+ * @returns Sider(antd)
+ */
 export default function Sidebar() {
   const [collapsed, setCollapsed] = useState(false);
   // Menu > defaultSelectedKeys={['1']}
