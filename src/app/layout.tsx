@@ -9,6 +9,11 @@ export const metadata = {
   description: "A Material Plane for TTRPG Systems",
 };
 
+/**
+ * returns the main html page as layout. Imports external JS and CSS libraries. Provides html head tags.
+ * @param children 
+ * @returns html
+ */
 export default function RootLayout({
   children,
 }: {
