@@ -4,6 +4,7 @@ const { Title } = Typography;
 
 /**
  * For basic static text or image content. Images are full-width.
+ * @tutorial 
  * @param contentProps 
  * @returns Title, if Image(antd), if text
  */

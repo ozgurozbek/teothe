@@ -1,5 +1,6 @@
 /**
  * Splits input by , and returns. First entry is darker colour.
+ * @tutorial
  * @param path 
  * @returns span
  */

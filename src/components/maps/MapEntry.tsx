@@ -2,6 +2,7 @@ import { Avatar, Tooltip } from "antd";
 
 /**
  * Generates map resources entries with icons and tooltip.
+ * @tutorial
  * @param imageSrc 
  * @param textProps 
  * @returns div

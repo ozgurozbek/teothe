@@ -210,6 +210,7 @@ function GetDomains(data: string) {
 
 /**
  * Creates the inline deity entry on Deities page.
+ * @tutorial
  * @param imageSrc
  * @param descriptionProps
  * @returns div
