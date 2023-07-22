@@ -4,6 +4,7 @@ import useSWR from "swr";
 
 /**
  * Fetches session notes data from the backend for the calendar
+ * @backend fetch
  * @param tableNo
  * @param year 
  * @param month title case
@@ -233,6 +234,7 @@ const holidays: { [key: string]: string[] } = {
 
 /**
  * Gets the holidays for select month and date in a string format merged with ", ", which is then split in CalendarCell.tsx
+ * @generator
  * @param monthName title case
  * @param date 
  * @returns string array
@@ -352,6 +354,7 @@ const moonPhase = [
 
 /**
  * Gets the moon phases for select month and date
+ * @generator
  * @param monthName title case
  * @param date 
  * @returns string

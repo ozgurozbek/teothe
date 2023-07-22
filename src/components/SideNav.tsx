@@ -23,8 +23,9 @@ type MenuItem = Required<MenuProps>["items"][number];
 
 /**
  * Renders the page on click
+ * @generator
  * @param menuItem 
- * @returns Page
+ * @returns React Element
  */
 const loadPage = (menuItem: any) => {
   let Ele = <></>;
@@ -74,6 +75,7 @@ const loadPage = (menuItem: any) => {
 
 /**
  * Gets Deity icons from the Sidenav icon
+ * @generator
  * @param pageName 
  * @param avatarSize 
  * @returns Deity Avatar
@@ -91,6 +93,16 @@ function getIcon(pageName: string, avatarSize: boolean) {
   );
 }
 
+/**
+ * Generates Sidebar Menu items
+ * @generator
+ * @param label 
+ * @param key 
+ * @param icon 
+ * @param element 
+ * @param children 
+ * @returns MenuItem(antd)
+ */
 function getItem(
   label: React.ReactNode,
   key: React.Key,

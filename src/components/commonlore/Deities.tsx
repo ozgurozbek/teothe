@@ -4,6 +4,7 @@ const { Title } = Typography;
 
 /**
  * Returns a domain image based on domain name.
+ * @generator
  * @param name 
  * @returns Tooltip(antd) > Avatar(antd)
  */
@@ -195,7 +196,8 @@ function GetDomainObject(name: string) {
 }
 
 /**
- * Splits multiple domains by ", " and pushes a GetDomainObject image into an array. Used for deities, some can have multiple domains.
+ * Splits multiple domains by ", " and pushes a GetDomainObject image into an array. Used for deities, some can have multiple domains. 
+ * @generator
  * @param data 
  * @returns array
  */
