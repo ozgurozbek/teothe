@@ -4,6 +4,12 @@ import GetCrumbs from "Comp/NavigationCrumb";
 import SimpleContent from "Comp/SimpleCon";
 import useSWR from "swr";
 
+/**
+ * Fetches map resources data from the backend and feeds MapEntry
+ * @see MapEntry
+ * @backend fetch
+ * @returns Array of MapEntry
+ */
 function GetMapLegend() {
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
@@ -33,6 +39,10 @@ function GetMapLegend() {
   return renderedMapRes;
 }
 
+/**
+ * Displays all map resource entries from the GetMapLegend function and provides description
+ * @returns MapEntry and SimpleContent in Card(antd) in section
+ */
 export default function MapLegendPage() {
   return (
     <section>

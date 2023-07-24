@@ -13,6 +13,10 @@ interface DataType {
   cost: string;
 }
 
+/**
+ * Fetches tool data from the backend
+ * @returns SimpleContent, Table(antd): splits response JSON to tool, proficiency, allows
+ */
 function GetTableData() {
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(

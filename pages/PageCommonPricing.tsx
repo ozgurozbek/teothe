@@ -13,6 +13,11 @@ interface DataType {
   cost: string;
 }
 
+/**
+ * Gets pricing table data and provides a filter in the Table
+ * @backend fetch
+ * @returns SimpleCon and Table(antd) wrapped with <>
+ */
 function GetTableData() {
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
@@ -93,6 +98,10 @@ function GetTableData() {
   );
 }
 
+/**
+ * Calls and displays the Common Pricing table
+ * @returns Table(antd) wrapped with Card(antd) wrapped with section
+ */
 export default function PricingPage() {
   return (
     <section>

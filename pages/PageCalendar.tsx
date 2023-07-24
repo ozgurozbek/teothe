@@ -13,6 +13,13 @@ import SimpleContent from "@/components/SimpleCon";
 import CalendarTable from "@/components/calendar/CalendarTable";
 import { useState } from "react";
 import { DownOutlined } from "@ant-design/icons";
+
+/**
+ * The parent component for the calendar. Holds states that are then passed to the table then to cell. Helps fetch data depending on table number, month and year.
+ * @see CalendarTable
+ * @see CalendarCell
+ * @returns Card(antd) wrapped by section
+ */
 export default function CalendarPage() {
   const [monthName, setMonthName] = useState("");
   const [tableNo, setTableNo] = useState("1");

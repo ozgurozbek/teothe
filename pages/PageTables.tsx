@@ -6,6 +6,11 @@ import { Table } from "antd";
 import { useState } from "react";
 import SimpleContent from "@/components/SimpleCon";
 
+/**
+ * Updates states to use selected table
+ * @generator
+ * @returns Buttons(antd) wrapped by Space(antd) wrapped by <>
+ */
 function GetTableData() {
   const [curTable, setCurTable] = useState("resurrection");
   const [displayEmpty, setDisplayEmpty] = useState(true);

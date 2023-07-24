@@ -4,6 +4,13 @@ import GetCrumbs from "Comp/NavigationCrumb";
 import SimpleContent from "Comp/SimpleCon";
 import useSWR from "swr";
 
+/**
+ * Gets Deity data and passes the props to Deity component
+ * @see Deity
+ * @backend fetch
+ * @param rank The deity rank as string
+ * @returns Deity component array
+ */
 function GetDeities(rank: string) {
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
@@ -34,6 +41,10 @@ function GetDeities(rank: string) {
   return renderedDeities;
 }
 
+/**
+ * Categorizes and displays deities with text describing each category
+ * @returns SimpleContent and GetDeities response wrapped with Card(antd) in section
+ */
 export default function DeitiesPage() {
   return (
     <section>

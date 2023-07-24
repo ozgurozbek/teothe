@@ -9,6 +9,10 @@ import {
   ExclamationCircleFilled,
 } from "@ant-design/icons";
 
+/**
+ * Multiple images positioned on top of each other and update their visibility
+ * @returns Card(antd) wrapped by section
+ */
 export default function MapOverlayPage() {
   let visibleMaps: string[] = [];
   function handleMapVisibility(mapName: string) {
