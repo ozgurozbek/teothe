@@ -39,6 +39,7 @@ const holidays: { [key: string]: string[] } = {
   "Vihus, 46": ["Festival of Renewal"],
   "Vihus, 47": ["Festival of Renewal"],
   "Vihus, 48": ["Festival of Renewal"],
+  "Ukeus, 4": ["Blightbreaker Day*, Only in Tribes of Blight. This is to celebrate the sacrifice of the 'Withered'"],
   "Ukeus, 48": ["Leaf day"],
   "Vesius, 27": ["Harvest"],
   "Cyaxus, 1": ["Sleep"],
@@ -405,7 +406,15 @@ export default function CalendarTable({
     ) {
       tableMain.push(
         index % 2 == 0 ? (
-          <Col span={3} className="bg-transparent h-56">
+          <Col
+            xs={6}
+            sm={6}
+            md={6}
+            lg={3}
+            xl={3}
+            xxl={3}
+            className="bg-transparent h-56"
+          >
             <CalendarCell
               cellProps={{
                 dayNumber: index,
@@ -416,7 +425,15 @@ export default function CalendarTable({
             />
           </Col>
         ) : (
-          <Col span={3} className="bg-[#0b1016] h-56">
+          <Col
+            xs={6}
+            sm={6}
+            md={6}
+            lg={3}
+            xl={3}
+            xxl={3}
+            className="bg-[#0b1016] h-56"
+          >
             <CalendarCell
               cellProps={{
                 dayNumber: index,
@@ -431,7 +448,15 @@ export default function CalendarTable({
     } else {
       tableMain.push(
         index % 2 == 0 ? (
-          <Col span={3} className="bg-[#0b1016] h-56">
+          <Col
+            xs={6}
+            sm={6}
+            md={6}
+            lg={3}
+            xl={3}
+            xxl={3}
+            className="bg-[#0b1016] h-56"
+          >
             <CalendarCell
               cellProps={{
                 dayNumber: index,
@@ -442,7 +467,15 @@ export default function CalendarTable({
             />
           </Col>
         ) : (
-          <Col span={3} className="bg-transparent h-56">
+          <Col
+            xs={6}
+            sm={6}
+            md={6}
+            lg={3}
+            xl={3}
+            xxl={3}
+            className="bg-transparent h-56"
+          >
             <CalendarCell
               cellProps={{
                 dayNumber: index,

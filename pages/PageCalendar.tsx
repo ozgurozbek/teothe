@@ -6,7 +6,9 @@ import {
   Empty,
   InputNumber,
   MenuProps,
+  Skeleton,
   Space,
+  Table,
 } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import SimpleContent from "@/components/SimpleCon";
@@ -14,12 +16,69 @@ import CalendarTable from "@/components/calendar/CalendarTable";
 import { useState } from "react";
 import { DownOutlined } from "@ant-design/icons";
 
+import useSWR from "swr";
+
 /**
  * The parent component for the calendar. Holds states that are then passed to the table then to cell. Helps fetch data depending on table number, month and year.
  * @see CalendarTable
  * @see CalendarCell
  * @returns Card(antd) wrapped by section
  */
+function GetAPICalendar() {
+  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
+  const { data, error } = useSWR(
+    "https://teothe.pythonanywhere.com/getTables?tab=calendar",
+    fetcher
+  );
+  if (error) {
+    console.log(error);
+    return <div>Failed to access API</div>;
+  }
+  if (!data) return <Skeleton active />;
+
+  function titleCase(text: string) {
+    return text
+      .split(" ")
+      .map((w) => w[0].toUpperCase() + w.substring(1).toLowerCase())
+      .join(" ");
+  }
+
+  //dataSource, columns
+  let columns = [];
+  for (let i = 0; i < data[0].length; i++) {
+    columns.push({
+      title: titleCase(data[0][i]),
+      dataIndex: data[0][i],
+      key: data[0][i],
+    });
+  }
+
+  let dataSource = [];
+  for (let rowData of data[1]) {
+    let item: any = {};
+    for (let i = 0; i < columns.length; i++) {
+      item[columns[i].dataIndex] = rowData[i];
+    }
+    dataSource.push(item);
+  }
+  return (
+    <>
+      <SimpleContent
+        contentProps={{
+          title: "Calendar Information",
+          text: [data[2]],
+        }}
+      />
+      <Table
+        className="mt-4"
+        dataSource={dataSource}
+        columns={columns}
+        pagination={false}
+      />
+    </>
+  );
+}
+
 export default function CalendarPage() {
   const [monthName, setMonthName] = useState("");
   const [tableNo, setTableNo] = useState("1");
@@ -141,6 +200,8 @@ export default function CalendarPage() {
         ) : (
           <Empty />
         )}
+        <Divider/>
+        <GetAPICalendar/>
       </Card>
     </section>
   );

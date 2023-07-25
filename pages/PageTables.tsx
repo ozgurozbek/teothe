@@ -31,14 +31,6 @@ function GetTableData() {
           <Button
             onClick={() => {
               setDisplayEmpty(false);
-              setCurTable("calendar");
-            }}
-          >
-            Calendar
-          </Button>
-          <Button
-            onClick={() => {
-              setDisplayEmpty(false);
               setCurTable("alchemy");
             }}
           >

@@ -32,7 +32,7 @@ export default function RacesCon({
 
   return (
     <Row justify="space-between">
-      <Col span={6} className="pr-4">
+      <Col xs={24} sm={24} md={12} lg={6} xl={6} xxl={6} className="pr-4">
         <Col span={24}>
           <Image src={RacePic.src} alt={RacePic.alt} rootClassName="w-full" />
         </Col>
@@ -42,7 +42,7 @@ export default function RacesCon({
           </p>
         </Col>
       </Col>
-      <Col span={18}>
+      <Col xs={24} sm={24} md={12} lg={18} xl={18} xxl={18}>
         <Title className="capitalize">{DescriptionText.title}</Title>
         {raceDesc}
         {raceBrew}
