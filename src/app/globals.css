@@ -25,21 +25,14 @@
 }
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  //--foreground-rgb: 0, 0, 0;
+  //--background-start-rgb: 214, 219, 220;
+  //--background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 14, 20, 28;
+  --background-end-rgb: 14, 20, 28;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 14, 20, 28;
-    --background-end-rgb: 14, 20, 28;
-  }
-}
-html {
-  scroll-behavior: smooth;
-}
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -49,7 +42,7 @@ body {
   ) !important;
 }
 .ant-layout {
-  background-color: #00000033 !important;
+  background-color: rgba(0,0,0,0.2) !important;
 }
 .ant-menu-dark,
 .ant-layout-sider,
@@ -79,13 +72,13 @@ h3 {
   color: white !important;
 }
 .ant-card {
-  background-color: #66666620 !important;
+  background-color: rgba(102,102,102,0.13) !important;
 }
 .ant-btn,
 .ant-input-number {
   color: white !important;
   border-color: #630436 !important;
-  background-color: #63043633 !important;
+  background-color: rgba(99, 4, 54, 0.2) !important;
 }
 footer > a {
   color: #630436 !important;

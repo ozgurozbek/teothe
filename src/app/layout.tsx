@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <head>
         <meta name="theme-color" content="#630436" />
         <meta name="apple-mobile-web-app-status-bar" content="#90cdf4" />
