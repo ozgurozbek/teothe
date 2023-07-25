@@ -16,7 +16,7 @@
 - [ ] PWA
 - [ ] SideNav icon sizes / or wait for page load to display
 - [x] Races page responsive (sm screen)
-- [ ] Page Top scroll smooth tailwind
+- [x] Page Top scroll smooth tailwind
 - [ ] CalendarTable responsive cell coloring idea bounce (probably needs a bit of a rewrite based on some responsive conditions or cellnumber == even type stuff) (I think giving each cell a border and fixing their background color is easier. I don't want it to turn more into a spaghetti)
 - [x] Look for things to add to TODO
 - [x] CalendarCell.tsx images don't have alt prop
