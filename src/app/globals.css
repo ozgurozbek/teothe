@@ -49,7 +49,7 @@ body {
   ) !important;
 }
 .ant-layout {
-  background-color: #00000033 !important;
+  background-color: rgba(0,0,0,33) !important;
 }
 .ant-menu-dark,
 .ant-layout-sider,
@@ -79,13 +79,13 @@ h3 {
   color: white !important;
 }
 .ant-card {
-  background-color: #66666620 !important;
+  background-color: rgba(66,66,66,20) !important;
 }
 .ant-btn,
 .ant-input-number {
   color: white !important;
   border-color: #630436 !important;
-  background-color: #63043633 !important;
+  background-color: rgba(63,04,36,33) !important;
 }
 footer > a {
   color: #630436 !important;

@@ -11,10 +11,9 @@
 
 ## 1.2
 
-- [ ] rgba instead of 8 digit HEX colouring
+- [x] rgba instead of 8 digit HEX colouring
 - [ ] Deities images use image in avatar
 - [ ] PWA
-- [ ] Map zoom idea bounce
 - [ ] SideNav icon sizes / or wait for page load to display
 - [x] Races page responsive (sm screen)
 - [ ] Page Top scroll smooth tailwind
@@ -25,6 +24,8 @@
 - [x] CalendarCell.tsx scroll
 - [x] calendar year input css
 - [x] PageCalendar onchange
+
+- [-] Map zoom idea bounce
 
 ## 1.1
 
