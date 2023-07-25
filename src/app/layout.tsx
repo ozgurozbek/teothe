@@ -30,7 +30,7 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://booksjs.github.io/books/css/booksjs.css"
         ></link>
-        <link rel="manifest" href="/manifest.json" />
+        <link rel="manifest" href="./manifest.json" />
         <link rel="apple-touch-icon" href="/dragon.png" />
       </head>
       <body className={"text-white " + inter.className}>{children}</body>
