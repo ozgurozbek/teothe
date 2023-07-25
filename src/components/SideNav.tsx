@@ -24,7 +24,7 @@ type MenuItem = Required<MenuProps>["items"][number];
 /**
  * Renders the page on click
  * @generator
- * @param menuItem 
+ * @param menuItem
  * @returns React Element
  */
 const loadPage = (menuItem: any) => {
@@ -76,8 +76,8 @@ const loadPage = (menuItem: any) => {
 /**
  * Gets Deity icons from the Sidenav icon
  * @generator
- * @param pageName 
- * @param avatarSize 
+ * @param pageName
+ * @param avatarSize
  * @returns Deity Avatar
  */
 function getIcon(pageName: string, avatarSize: boolean) {
@@ -96,11 +96,11 @@ function getIcon(pageName: string, avatarSize: boolean) {
 /**
  * Generates Sidebar Menu items
  * @generator
- * @param label 
- * @param key 
- * @param icon 
- * @param element 
- * @param children 
+ * @param label
+ * @param key
+ * @param icon
+ * @param element
+ * @param children
  * @returns MenuItem(antd)
  */
 function getItem(
@@ -147,10 +147,20 @@ export default function Sidebar() {
           onClick={() =>
             render(
               <>
-                <GetCrumbs path="Teothe3K" />
-                <Card bordered={false} className="w-full">
-                  <Empty />
-                </Card>
+                <section
+                  className="h-full"
+                  style={{
+                    backgroundImage: 'url("./background.png")',
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                    backgroundSize: "contain",
+                  }}
+                >
+                  <GetCrumbs path="Teothe3K" />
+                  <Card bordered={false} className="w-full">
+                    <Empty />
+                  </Card>
+                </section>
               </>,
               document.getElementById("PageContent")
             )

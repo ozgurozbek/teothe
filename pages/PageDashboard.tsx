@@ -14,11 +14,20 @@ export default function Dashboard() {
   return (
     <Layout>
       <Header style={{ padding: "0px" }} />
-      <Content id="PageContent" style={{ margin: "0 16px", backgroundImage: 'url("./background.png")', backgroundRepeat: "no-repeat", backgroundPosition: "center",  backgroundSize: "contain" }}>
-        <GetCrumbs path="Teothe3K" />
-        <Card bordered={false} className="w-full">
-          <Empty />
-        </Card>
+      <Content id="PageContent" style={{ margin: "0 16px" }}>
+        <section className="h-full"
+          style={{
+            backgroundImage: 'url("./background.png")',
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            backgroundSize: "contain",
+          }}
+        >
+          <GetCrumbs path="Teothe3K" />
+          <Card bordered={false} className="w-full">
+            <Empty />
+          </Card>
+        </section>
       </Content>
       <Footer style={{ textAlign: "center" }}>
         Teothe, its information, its documents and the TTRPG content is provided
