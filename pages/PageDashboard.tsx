@@ -14,7 +14,7 @@ export default function Dashboard() {
   return (
     <Layout>
       <Header style={{ padding: "0px" }} />
-      <Content id="PageContent" style={{ margin: "0 16px" }}>
+      <Content id="PageContent" style={{ margin: "0 16px", backgroundImage: 'url("/background.png")', backgroundRepeat: "no-repeat", backgroundPosition: "center",  backgroundSize: "contain" }}>
         <GetCrumbs path="Teothe3K" />
         <Card bordered={false} className="w-full">
           <Empty />
