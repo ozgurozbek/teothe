@@ -27,6 +27,7 @@ const holidays: { [key: string]: string[] } = {
   "Vihus, 46": ["Festival of Renewal"],
   "Vihus, 47": ["Festival of Renewal"],
   "Vihus, 48": ["Festival of Renewal"],
+  "Ukeus, 4": ["Blightbreaker Day*, Only in Tribes of Blight. This is to celebrate the sacrifice of the 'Withered'"],
   "Ukeus, 48": ["Leaf day"],
   "Vesius, 27": ["Harvest"],
   "Cyaxus, 1": ["Sleep"],
