@@ -15,8 +15,15 @@ import SimpleContent from "@/components/SimpleCon";
 import CalendarTable from "@/components/calendar/CalendarTable";
 import { useState } from "react";
 import { DownOutlined } from "@ant-design/icons";
+
 import useSWR from "swr";
 
+/**
+ * The parent component for the calendar. Holds states that are then passed to the table then to cell. Helps fetch data depending on table number, month and year.
+ * @see CalendarTable
+ * @see CalendarCell
+ * @returns Card(antd) wrapped by section
+ */
 function GetAPICalendar() {
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(

@@ -4,6 +4,12 @@ import { Typography, Card, Divider } from "antd";
 
 const { Title } = Typography;
 
+/**
+ * Uses github.io legacy D&D website to fetch books as pdfs, and pushes them to GetBook. Provides Title(antd) and text to categorize them.
+ * @see GetBook
+ * @old_website fetch
+ * @returns 
+ */
 export default function LibraryPage() {
   return (
     <>

@@ -2,25 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 @layer utilities {
-  @variants responsive {
-    .no-scrollbar::-webkit-scrollbar {
-      width: 5px;
-    }
+  .no-scrollbar::-webkit-scrollbar {
+    width: 5px;
+  }
 
-    /* Track */
-    .no-scrollbar::-webkit-scrollbar-track {
-      background: transparent;
-    }
+  /* Track */
+  .no-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
 
-    /* Handle */
-    .no-scrollbar::-webkit-scrollbar-thumb {
-      background: #888;
-    }
+  /* Handle */
+  .no-scrollbar::-webkit-scrollbar-thumb {
+    background: #888;
+  }
 
-    /* Handle on hover */
-    .no-scrollbar::-webkit-scrollbar-thumb:hover {
-      background: #555;
-    }
+  /* Handle on hover */
+  .no-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555;
   }
 }
 

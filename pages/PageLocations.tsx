@@ -3,6 +3,12 @@ import Location from "@/components/locations/Locations";
 import { Card, Skeleton } from "antd";
 import useSWR from "swr";
 
+/**
+ * Fetches planes data from the backend and uses local images
+ * @backend fetch
+ * @see Location
+ * @returns Location array
+ */
 function GetPlanes() {
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
@@ -32,6 +38,10 @@ function GetPlanes() {
   return renderedPlanes;
 }
 
+/**
+ * Displays information from GetPlanes
+ * @returns Location array wrapped by Card(antd) in section
+ */
 export default function LocationsPage() {
   return (
     <section>

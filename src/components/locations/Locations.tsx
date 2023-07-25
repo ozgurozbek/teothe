@@ -2,6 +2,12 @@ import { Typography } from "antd";
 
 const { Title } = Typography;
 
+/**
+ * Generates plane information using plane name and text. Plane name is centered.
+ * @param imageSrc 
+ * @param locationProps 
+ * @returns div
+ */
 export default function Location({
   imageSrc,
   locationProps,

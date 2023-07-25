@@ -2,6 +2,12 @@ import { Typography, Avatar, Tooltip } from "antd";
 
 const { Title } = Typography;
 
+/**
+ * Returns a domain image based on domain name.
+ * @generator
+ * @param name 
+ * @returns Tooltip(antd) > Avatar(antd)
+ */
 function GetDomainObject(name: string) {
   switch (name) {
     case "War":
@@ -189,6 +195,12 @@ function GetDomainObject(name: string) {
   }
 }
 
+/**
+ * Splits multiple domains by ", " and pushes a GetDomainObject image into an array. Used for deities, some can have multiple domains. 
+ * @generator
+ * @param data 
+ * @returns array
+ */
 function GetDomains(data: string) {
   let splitData = data.split(", ");
   let result = [];
@@ -198,6 +210,13 @@ function GetDomains(data: string) {
   return result;
 }
 
+/**
+ * Creates the inline deity entry on Deities page.
+ * @tutorial
+ * @param imageSrc
+ * @param descriptionProps
+ * @returns div
+ */
 export default function Deity({
   imageSrc,
   descriptionProps,

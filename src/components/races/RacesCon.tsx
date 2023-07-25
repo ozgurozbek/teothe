@@ -2,6 +2,12 @@ import { Typography, Col, Row, Image } from "antd";
 
 const { Title } = Typography;
 
+/**
+ * Generates Race content with image, text and homebrew.
+ * @param RacePic
+ * @param DescriptionText
+ * @returns Row(antd)
+ */
 export default function RacesCon({
   RacePic,
   DescriptionText,
@@ -9,17 +15,16 @@ export default function RacesCon({
   RacePic: { src: string; alt: string; phrase: string };
   DescriptionText: { title: string; paragraph: string[]; homebrew?: string[] };
 }) {
-  let textData = [];
-  let textData2 = [];
+  let raceDesc = [];
+  let raceBrew = [];
 
-  {
-    for (let i = 0; i < DescriptionText.paragraph.length; i++) {
-      textData.push(<p className="mb-1">{DescriptionText.paragraph[i]}</p>);
-    }
+  for (let i = 0; i < DescriptionText.paragraph.length; i++) {
+    raceDesc.push(<p className="mb-1">{DescriptionText.paragraph[i]}</p>);
   }
+
   if (DescriptionText.homebrew) {
     for (let i = 0; i < DescriptionText.homebrew.length; i++) {
-      textData2.push(
+      raceBrew.push(
         <p className="pt-2 text-pink-600"> {DescriptionText.homebrew[i]}</p>
       );
     }
@@ -39,8 +44,8 @@ export default function RacesCon({
       </Col>
       <Col xs={24} sm={24} md={12} lg={18} xl={18} xxl={18}>
         <Title className="capitalize">{DescriptionText.title}</Title>
-        {textData}
-        {textData2}
+        {raceDesc}
+        {raceBrew}
       </Col>
     </Row>
   );

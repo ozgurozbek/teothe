@@ -5,6 +5,10 @@ import { ConfigProvider, Layout, theme } from "antd";
 import Sidebar from "Comp/SideNav";
 import Dashboard from "Pages/PageDashboard";
 
+/**
+ * Main App. Sidebar will react.render the Dashboard to update.
+ * @returns ConfigProvider(antd) > Layout(antd) > Sidebar, Dashboard
+ */
 export default function App() {
   return (
     <ConfigProvider

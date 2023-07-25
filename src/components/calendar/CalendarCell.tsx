@@ -1,3 +1,8 @@
+/**
+ * Generates cell data from props passed in CalendarTable. It has 2 of both date and image since one is used for blue and moon is also inverted. Holidays are coloured pink, Session Notes are coloured green. Session notes are split by " --- " and used in title because entries added by Boteculus discord bot is tagged with the user name that added it.
+ * @param cellProps
+ * @returns section
+ */
 export default function CalendarCell({
   cellProps,
 }: {

@@ -2,6 +2,15 @@ import { Col, Row, Skeleton } from "antd";
 import CalendarCell from "./CalendarCell";
 import useSWR from "swr";
 
+/**
+ * Fetches session notes data from the backend for the calendar
+ * @backend fetch
+ * @param tableNo
+ * @param year 
+ * @param month title case
+ * @returns JSON with dates as keys and entries as values
+ * @example {"11":"Entry 1", "12":"Entry 2", "13":"Entry 3"}
+ */
 function GetSessionNotes(tableNo: string, year: string, month: string) {
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
@@ -22,6 +31,9 @@ function GetSessionNotes(tableNo: string, year: string, month: string) {
   return data;
 }
 
+/**
+ * Staticly holds holidays for every month and date if there is one
+ */
 const holidays: { [key: string]: string[] } = {
   "Buibus, 1": ["New Years", "Sister's Month"],
   "Vihus, 46": ["Festival of Renewal"],
@@ -221,11 +233,21 @@ const holidays: { [key: string]: string[] } = {
   "Radus, 10": ["Sunken Barrel Morning*, Celebrated heavily by Dwarves"],
 };
 
+/**
+ * Gets the holidays for select month and date in a string format merged with ", ", which is then split in CalendarCell.tsx
+ * @generator
+ * @param monthName title case
+ * @param date 
+ * @returns string array
+ */
 function getHolidays(monthName: string, date: number) {
   const key: string = monthName + ", " + date;
   return holidays[key];
 }
 
+/**
+ * Staticly holds moon phases for every month, split into 2 for moon cycles
+ */
 const moonPhase = [
   {
     // For Buibus, Verus, Fexyius*, Cyaxus
@@ -331,6 +353,13 @@ const moonPhase = [
   },
 ];
 
+/**
+ * Gets the moon phases for select month and date
+ * @generator
+ * @param monthName title case
+ * @param date 
+ * @returns string
+ */
 function getMoonPhase(monthName: string, date: number) {
   let temp: any = [];
   if (
@@ -348,6 +377,11 @@ function getMoonPhase(monthName: string, date: number) {
   return temp;
 }
 
+/**
+ * Generates the Calendar view with CalendarCell.tsx populating a cell for each date. It is split weirdly for grid styling purposes. There is 8 cols per row.
+ * @param calendarProps 
+ * @returns Row(antd)
+ */
 export default function CalendarTable({
   calendarProps,
 }: {
@@ -363,6 +397,7 @@ export default function CalendarTable({
     calendarProps.monthName
   );
   let tableMain = [];
+  /* Index here is the date */
   for (let index = 1; index < 49; index++) {
     if (
       index < 9 ||
