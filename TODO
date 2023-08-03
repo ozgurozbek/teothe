@@ -4,11 +4,17 @@
 
 - [ ] When minimized, sidenav always shows the tab name after clicking it
 - [ ] When minimized and landscape, sidenav does not fit the screen
-- [ ] 6 more races to backend (Decide which ones. We must finish SRD and PHB first)
+- [ ] 6 more races to backend (Decide which ones. We should finish SRD and PHB first)
 - [ ] PWA (Web app manifest or service worker do not meet the installability requirements, Failures: No manifest was fetched.)
 - [ ] Deities images use image in avatar, need to have square deity images
-- [ ] When clicked to the top sidenav image to return homepage, sidenav still keeps active tab
+- [ ] When the top sidenav image is clicked, sidenav still keeps active tab
 - [ ] CalendarTable responsive cell coloring idea bounce (probably needs a bit of a rewrite based on some responsive conditions or cellnumber == even type stuff) (I think giving each cell a border and fixing their background color is easier. I don't want it to turn more into a spaghetti)
+- [ ] Improve page title, too short + single word
+- [ ] next-size-adjust meta tag
+- [ ] more words in the main page, maybe we can provide a campaign setting text
+- [ ] share on discord button would be nice
+- [ ] more internal links, lets redirect each button to its page if you want instead of rendering all in some content area, so not a Single Page App
+- [ ] Robots.txt
 
 ## 1.2
 
