@@ -7,67 +7,66 @@ import {
   Dropdown,
   Space,
   Button,
+  Divider,
 } from "antd";
 import { useState } from "react";
-
-import useSWR from "swr";
+import { DownOutlined } from "@ant-design/icons";
 
 const { TextArea } = Input;
 
-/**
- * The parent component for the calendar. Holds states that are then passed to the table then to cell. Helps fetch data depending on table number, month and year.
- * @see CalendarTable
- * @see CalendarCell
- * @returns Card(antd) wrapped by section
- */
-function GetSessionNote(tableNo: string, year: string, month: string) {
-  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
-  const { data, error } = useSWR(
-    "https://teothe.pythonanywhere.com/getSessionNotes?table=" +
-      tableNo +
-      "&year=" +
-      year +
-      "&month=" +
-      month,
-    fetcher
-  );
-  if (error) {
-    console.log(error);
-    return "Failed to access API";
-  }
-  if (!data) return "No Data";
-
-  //dataSource, columns
-  console.log(data);
-  return data;
-}
-
-export default function () {
+export default function CalendarNoteUpdatePage() {
   const [monthName, setMonthName] = useState("");
-  const [tableNo, setTableNo] = useState(1);
-  const [yearCount, setYearCount] = useState(27);
+  const [tableNo, setTableNo] = useState("1");
+  const [yearCount, setYearCount] = useState<number>(27);
   const [dayNumber, setDayNumber] = useState(0);
-  const [textInput, setTextInput] = useState("");
-
-  const handleDayClick = (value: number) => {
-    setDayNumber(value);
-  };
+  const [textInputText, setTextInputText] = useState<string>("");
 
   const handleMonthClick: MenuProps["onClick"] = (e) => {
     setMonthName(e.key);
   };
 
-  const handleTableClick = (value: number) => {
-    setTableNo(value);
+  const handleTableClick: MenuProps["onClick"] = (e) => {
+    setTableNo(e.key);
   };
 
   const handleYearClick = (value: number) => {
     setYearCount(value);
   };
 
-  function handleNextClick() {
-    // Fetch data and put it in textInput state
-  }
+  const handleDayClick = (value: number) => {
+    setDayNumber(value);
+  };
+
+  const handleNextClick = async () => {
+    if (tableNo && monthName && dayNumber >= 1 && dayNumber <= 48) {
+      try {
+        const response = await fetch(
+          "https://teothe.pythonanywhere.com/getSessionNotes?table=" +
+            tableNo +
+            "&year=" +
+            yearCount +
+            "&month=" +
+            monthName
+        );
+  
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
+  
+        const responseData = await response.json();
+  
+        if (responseData === "N") {
+          setTextInputText("");
+        } else {
+          const selectedData = responseData[dayNumber];
+          setTextInputText(selectedData || "");
+        }
+      } catch (error) {
+        console.error("Error fetching data:", error);
+        setTextInputText("Error fetching data");
+      }
+    }
+  };
 
   const items: MenuProps["items"] = [
     {
@@ -108,6 +107,21 @@ export default function () {
     onClick: handleMonthClick,
   };
 
+  const tableItems: MenuProps["items"] = [
+    {
+      label: "1",
+      key: "1",
+    },
+    {
+      label: "2",
+      key: "2",
+    },
+  ];
+  const tableProps = {
+    items: tableItems,
+    onClick: handleTableClick,
+  };
+
   return (
     <Card>
       <SimpleContent
@@ -116,48 +130,62 @@ export default function () {
           text: ["Select Table, Year, Month and Day to start typing"],
         }}
       />
-      Table
-      <InputNumber
-        size="large"
-        min={1}
-        max={2}
-        defaultValue={1}
-        onChange={(x) => {
-          if (x != null) {
-            handleTableClick(x);
-          }
-        }}
-      />
-      Year
-      <InputNumber
-        size="large"
-        min={27}
-        defaultValue={27}
-        onChange={(x) => {
-          if (x != null) {
-            handleYearClick(x);
-          }
-        }}
-      />
-      Month
-      <Dropdown menu={monthProps}>
-        <Button>
-          <Space>{monthName}</Space>
+      <Space className="mb-4">
+        Table:{" "}
+        <Dropdown menu={tableProps}>
+          <Button>
+            <Space>
+              {tableNo}
+              <DownOutlined />
+            </Space>
+          </Button>
+        </Dropdown>
+        <Divider type="vertical" style={{ borderColor: "white" }} />
+        Year:{" "}
+        <InputNumber
+          min={27}
+          defaultValue={27}
+          onChange={(x) => {
+            if (x != null) {
+              handleYearClick(x);
+            }
+          }}
+        />
+        <Divider type="vertical" style={{ borderColor: "white" }} />
+        Month:{" "}
+        <Dropdown menu={monthProps}>
+          <Button>
+            <Space>
+              {monthName}
+              <DownOutlined />
+            </Space>
+          </Button>
+        </Dropdown>
+        <Divider type="vertical" style={{ borderColor: "white" }} />
+        Day:{" "}
+        <InputNumber
+          min={1}
+          max={48}
+          onChange={(x) => {
+            if (x != null) {
+              handleDayClick(x);
+            }
+          }}
+        />
+        <Divider type="vertical" style={{ borderColor: "white" }} />
+        <Button type="primary" onClick={handleNextClick}>
+          Next
         </Button>
-      </Dropdown>
-      Day
-      <InputNumber
-        size="large"
-        min={1}
-        max={48}
-        onChange={(x) => {
-          if (x != null) {
-            handleDayClick(x);
-          }
-        }}
+      </Space>
+      <Divider />
+      <TextArea
+        rows={4}
+        maxLength={1000}
+        showCount={true}
+        value={textInputText}
+        onChange={(e) => setTextInputText(e.target.value)}
       />
-      <Button onClick={handleNextClick}>next</Button>
-      <TextArea value={textInput}></TextArea>
+      <Divider />
       <Button type="primary" htmlType="submit">
         Submit
       </Button>
