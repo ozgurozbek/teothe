@@ -68,6 +68,26 @@ export default function CalendarNoteUpdatePage() {
     }
   };
 
+  const handleSubmit = async () => {
+    if (tableNo && yearCount && monthName && dayNumber && textInputText) {
+      const endpoint = `https://teothe.pythonanywhere.com/setSessionNotes?table=${tableNo}&year=${yearCount}&month=${monthName}&date=${dayNumber}&entry=${encodeURIComponent(textInputText.replaceAll(" ", "_"))}`;
+
+      try {
+        const response = await fetch(endpoint);
+        if (response.ok) {
+          alert("Data updated successfully");
+        } else {
+          alert("Failed to update data");
+        }
+      } catch (error) {
+        console.error("Error updating data:", error);
+        alert("An error occurred while updating data");
+      }
+    } else {
+      alert("Please fill in all the required fields");
+    }
+  };
+
   const items: MenuProps["items"] = [
     {
       label: "Buibus",
@@ -186,7 +206,7 @@ export default function CalendarNoteUpdatePage() {
         onChange={(e) => setTextInputText(e.target.value)}
       />
       <Divider />
-      <Button type="primary" htmlType="submit">
+      <Button type="primary" htmlType="submit" onClick={handleSubmit}>
         Submit
       </Button>
     </Card>
