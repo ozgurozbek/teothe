@@ -13,6 +13,7 @@ import { useState } from "react";
 import useSWR from "swr";
 
 const { TextArea } = Input;
+
 /**
  * The parent component for the calendar. Holds states that are then passed to the table then to cell. Helps fetch data depending on table number, month and year.
  * @see CalendarTable
@@ -64,12 +65,8 @@ export default function () {
     setYearCount(value);
   };
 
-  function suleyman() {
-    setTextInput(
-      GetSessionNote(tableNo.toString(), yearCount.toString(), monthName)[
-        dayNumber
-      ]
-    );
+  function handleNextClick() {
+    // Fetch data and put it in textInput state
   }
 
   const items: MenuProps["items"] = [
@@ -109,21 +106,6 @@ export default function () {
   const monthProps = {
     items,
     onClick: handleMonthClick,
-  };
-
-  const tableItems: MenuProps["items"] = [
-    {
-      label: "1",
-      key: "1",
-    },
-    {
-      label: "2",
-      key: "2",
-    },
-  ];
-  const tableProps = {
-    items: tableItems,
-    onClick: handleTableClick,
   };
 
   return (
@@ -174,8 +156,8 @@ export default function () {
           }
         }}
       />
-      <Button onClick={suleyman}>next</Button>
-      <textarea>{textInput}</textarea>
+      <Button onClick={handleNextClick}>next</Button>
+      <TextArea value={textInput}></TextArea>
       <Button type="primary" htmlType="submit">
         Submit
       </Button>
