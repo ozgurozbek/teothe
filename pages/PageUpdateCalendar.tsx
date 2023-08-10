@@ -48,18 +48,18 @@ export default function CalendarNoteUpdatePage() {
             "&month=" +
             monthName
         );
-  
+
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }
-  
+
         const responseData = await response.json();
-  
+
         if (responseData === "N") {
           setTextInputText("");
         } else {
           const selectedData = responseData[dayNumber];
-          setTextInputText(selectedData || "");
+          setTextInputText(selectedData.split(" --- ")[0] || "");
         }
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -70,7 +70,9 @@ export default function CalendarNoteUpdatePage() {
 
   const handleSubmit = async () => {
     if (tableNo && yearCount && monthName && dayNumber && textInputText) {
-      const endpoint = `https://teothe.pythonanywhere.com/setSessionNotes?table=${tableNo}&year=${yearCount}&month=${monthName}&date=${dayNumber}&entry=${encodeURIComponent(textInputText.replaceAll(" ", "_"))}`;
+      const endpoint = `https://teothe.pythonanywhere.com/setSessionNotes?table=${tableNo}&year=${yearCount}&month=${monthName}&date=${dayNumber}&entry=${encodeURIComponent(
+        textInputText.replaceAll(" ", "_")
+      )}`;
 
       try {
         const response = await fetch(endpoint);
