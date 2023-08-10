@@ -20,6 +20,7 @@ export default function CalendarNoteUpdatePage() {
   const [yearCount, setYearCount] = useState<number>(27);
   const [dayNumber, setDayNumber] = useState(0);
   const [textInputText, setTextInputText] = useState<string>("");
+  const [userName, setUserName] = useState<string>("");
 
   const handleMonthClick: MenuProps["onClick"] = (e) => {
     setMonthName(e.key);
@@ -71,7 +72,7 @@ export default function CalendarNoteUpdatePage() {
   const handleSubmit = async () => {
     if (tableNo && yearCount && monthName && dayNumber && textInputText) {
       const endpoint = `https://teothe.pythonanywhere.com/setSessionNotes?table=${tableNo}&year=${yearCount}&month=${monthName}&date=${dayNumber}&entry=${encodeURIComponent(
-        textInputText.replaceAll(" ", "_")
+        textInputText.replaceAll(" ", "_")+"_---_"+userName //_---_ is being split in the FE when fetching from BE on main Calendar page to generate titles on hover.
       )}`;
 
       try {
@@ -153,6 +154,8 @@ export default function CalendarNoteUpdatePage() {
         }}
       />
       <Space className="mb-4">
+        User:{" "}
+        <Input placeholder="Username" onChange={(e) => setUserName(e.target.value)}/>
         Table:{" "}
         <Dropdown menu={tableProps}>
           <Button>
@@ -204,6 +207,7 @@ export default function CalendarNoteUpdatePage() {
         rows={4}
         maxLength={1000}
         showCount={true}
+        placeholder="Enter session note here. Make sure it is less than a 1000 characters!"
         value={textInputText}
         onChange={(e) => setTextInputText(e.target.value)}
       />
