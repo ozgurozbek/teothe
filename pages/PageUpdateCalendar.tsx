@@ -1,3 +1,6 @@
+"use client";
+import "App/globals.css";
+
 import SimpleContent from "@/components/SimpleCon";
 import {
   Card,
