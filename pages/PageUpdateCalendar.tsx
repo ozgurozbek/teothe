@@ -70,7 +70,7 @@ export default function CalendarNoteUpdatePage() {
   };
 
   const handleSubmit = async () => {
-    if (tableNo && yearCount && monthName && dayNumber && textInputText) {
+    if (userName.replaceAll(" ","")!="" && tableNo && yearCount && monthName!="" && dayNumber>0 && dayNumber<=48 && textInputText) {
       const endpoint = `https://teothe.pythonanywhere.com/setSessionNotes?table=${tableNo}&year=${yearCount}&month=${monthName}&date=${dayNumber}&entry=${encodeURIComponent(
         textInputText.replaceAll(" ", "_")+"_---_"+userName //_---_ is being split in the FE when fetching from BE on main Calendar page to generate titles on hover.
       )}`;
@@ -168,7 +168,7 @@ export default function CalendarNoteUpdatePage() {
         <Divider type="vertical" style={{ borderColor: "white" }} />
         Year:{" "}
         <InputNumber
-          min={27}
+          min={1}
           defaultValue={27}
           onChange={(x) => {
             if (x != null) {
