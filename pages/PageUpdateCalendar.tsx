@@ -11,6 +11,7 @@ import {
   Space,
   Button,
   Divider,
+  Col,
 } from "antd";
 import { useState } from "react";
 import { DownOutlined } from "@ant-design/icons";
@@ -73,9 +74,17 @@ export default function CalendarNoteUpdatePage() {
   };
 
   const handleSubmit = async () => {
-    if (userName.replaceAll(" ","")!="" && tableNo && yearCount && monthName!="" && dayNumber>0 && dayNumber<=48 && textInputText) {
+    if (
+      userName.replaceAll(" ", "") != "" &&
+      tableNo &&
+      yearCount &&
+      monthName != "" &&
+      dayNumber > 0 &&
+      dayNumber <= 48 &&
+      textInputText
+    ) {
       const endpoint = `https://teothe.pythonanywhere.com/setSessionNotes?table=${tableNo}&year=${yearCount}&month=${monthName}&date=${dayNumber}&entry=${encodeURIComponent(
-        textInputText.replaceAll(" ", "_")+"_---_"+userName //_---_ is being split in the FE when fetching from BE on main Calendar page to generate titles on hover.
+        textInputText.replaceAll(" ", "_") + "_---_" + userName //_---_ is being split in the FE when fetching from BE on main Calendar page to generate titles on hover.
       )}`;
 
       try {
@@ -149,16 +158,20 @@ export default function CalendarNoteUpdatePage() {
   };
 
   return (
-    <Card>
+    <Card className="border-none h-auto md:h-screen p-4">
       <SimpleContent
         contentProps={{
           title: "Change Calendar Data",
           text: ["Select Table, Year, Month and Day to start typing"],
         }}
       />
-      <Space className="mb-4">
+      <Space className="mb-4 flex flex-wrap md:space-x-4 lg:w-4/5 xl:w-auto">
         User:{" "}
-        <Input placeholder="Username" onChange={(e) => setUserName(e.target.value)}/>
+        <Input
+          placeholder="Username"
+          className=" white-placeholder"
+          onChange={(e) => setUserName(e.target.value)}
+        />
         Table:{" "}
         <Dropdown menu={tableProps}>
           <Button>
@@ -213,6 +226,7 @@ export default function CalendarNoteUpdatePage() {
         placeholder="Enter session note here. Make sure it is less than a 1000 characters!"
         value={textInputText}
         onChange={(e) => setTextInputText(e.target.value)}
+        className="md:h-40"
       />
       <Divider />
       <Button type="primary" htmlType="submit" onClick={handleSubmit}>
