@@ -40,7 +40,7 @@ body {
   ) !important;
 }
 .ant-layout {
-  background-color: rgba(0,0,0,0.2) !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
 }
 .ant-menu-dark,
 .ant-layout-sider,
@@ -70,10 +70,11 @@ h3 {
   color: white !important;
 }
 .ant-card {
-  background-color: rgba(102,102,102,0.13) !important;
+  background-color: rgba(102, 102, 102, 0.13) !important;
 }
 .ant-btn,
-.ant-input-number {
+.ant-input-number,
+.white-placeholder {
   color: white !important;
   border-color: #630436 !important;
   background-color: rgba(99, 4, 54, 0.2) !important;
@@ -101,4 +102,7 @@ footer > a {
 }
 ::selection {
   background: #30011a;
+}
+.white-placeholder::placeholder {
+  color: white !important;
 }
