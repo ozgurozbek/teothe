@@ -11,7 +11,6 @@ import {
   Space,
   Button,
   Divider,
-  Col,
 } from "antd";
 import { useState } from "react";
 import { DownOutlined } from "@ant-design/icons";
@@ -19,8 +18,8 @@ import { DownOutlined } from "@ant-design/icons";
 const { TextArea } = Input;
 
 export default function CalendarNoteUpdatePage() {
-  const [monthName, setMonthName] = useState("");
-  const [tableNo, setTableNo] = useState("1");
+  const [monthName, setMonthName] = useState("Select Month");
+  const [tableNo, setTableNo] = useState("Select Table");
   const [yearCount, setYearCount] = useState<number>(27);
   const [dayNumber, setDayNumber] = useState(0);
   const [textInputText, setTextInputText] = useState<string>("");
@@ -55,7 +54,7 @@ export default function CalendarNoteUpdatePage() {
         );
 
         if (response.status === 404) {
-          setTextInputText("")
+          setTextInputText("");
         }
         if (!response.ok && response.status != 404) {
           throw new Error("Failed to fetch data");
@@ -68,7 +67,7 @@ export default function CalendarNoteUpdatePage() {
           setTextInputText(responseData[dayNumber].split(" --- ")[0]);
         }
       } catch (error) {
-        console.log(error)
+        console.log(error);
       }
     }
   };
@@ -76,9 +75,10 @@ export default function CalendarNoteUpdatePage() {
   const handleSubmit = async () => {
     if (
       userName.replaceAll(" ", "") != "" &&
-      tableNo &&
+      tableNo != "Select Table" &&
       yearCount &&
       monthName != "" &&
+      monthName != "Select Month" &&
       dayNumber > 0 &&
       dayNumber <= 48 &&
       textInputText
@@ -158,21 +158,19 @@ export default function CalendarNoteUpdatePage() {
   };
 
   return (
-    <Card className="border-none h-auto md:h-screen p-4">
+    <Card className="border-none h-[calc(100vh-2rem)] m-4">
       <SimpleContent
         contentProps={{
           title: "Change Calendar Data",
-          text: ["Select Table, Year, Month and Day to start typing"],
+          text: ["Fill User, select Table, Year, Month and Day to submit"],
         }}
       />
-      <Space className="mb-4 flex flex-wrap md:space-x-4 lg:w-4/5 xl:w-auto">
-        User:{" "}
+      <Space wrap={true}>
         <Input
-          placeholder="Username"
-          className=" white-placeholder"
+          addonBefore="User"
+          placeholder="Your Name"
           onChange={(e) => setUserName(e.target.value)}
         />
-        Table:{" "}
         <Dropdown menu={tableProps}>
           <Button>
             <Space>
@@ -181,9 +179,8 @@ export default function CalendarNoteUpdatePage() {
             </Space>
           </Button>
         </Dropdown>
-        <Divider type="vertical" style={{ borderColor: "white" }} />
-        Year:{" "}
         <InputNumber
+          addonBefore="Year"
           min={1}
           defaultValue={27}
           onChange={(x) => {
@@ -191,9 +188,8 @@ export default function CalendarNoteUpdatePage() {
               handleYearClick(x);
             }
           }}
+          addonAfter="Blue Era"
         />
-        <Divider type="vertical" style={{ borderColor: "white" }} />
-        Month:{" "}
         <Dropdown menu={monthProps}>
           <Button>
             <Space>
@@ -202,8 +198,6 @@ export default function CalendarNoteUpdatePage() {
             </Space>
           </Button>
         </Dropdown>
-        <Divider type="vertical" style={{ borderColor: "white" }} />
-        Day:{" "}
         <InputNumber
           min={1}
           max={48}
@@ -212,24 +206,33 @@ export default function CalendarNoteUpdatePage() {
               handleDayClick(x);
             }
           }}
+          addonBefore="Day"
         />
-        <Divider type="vertical" style={{ borderColor: "white" }} />
-        <Button type="primary" onClick={handleNextClick}>
+        <Button
+          type="primary"
+          onClick={handleNextClick}
+          className="w-full ant-table-cell-row-hover"
+        >
           Fetch Current Note
         </Button>
       </Space>
-      <Divider />
+      <Divider style={{ borderColor: "white" }} />
       <TextArea
         rows={4}
         maxLength={1000}
         showCount={true}
         placeholder="Enter session note here. Make sure it is less than a 1000 characters!"
         value={textInputText}
+        style={{ backgroundColor: "transparent", borderColor: "#630436" }}
         onChange={(e) => setTextInputText(e.target.value)}
-        className="md:h-40"
       />
-      <Divider />
-      <Button type="primary" htmlType="submit" onClick={handleSubmit}>
+      <Divider style={{ borderColor: "white" }} />
+      <Button
+        type="primary"
+        htmlType="submit"
+        onClick={handleSubmit}
+        className="w-full ant-table-cell-row-hover"
+      >
         Submit
       </Button>
     </Card>
