@@ -54,21 +54,21 @@ export default function CalendarNoteUpdatePage() {
             monthName
         );
 
-        if (!response.ok) {
+        if (response.status === 404) {
+          setTextInputText("")
+        }
+        if (!response.ok && response.status != 404) {
           throw new Error("Failed to fetch data");
         }
 
         const responseData = await response.json();
-
         if (responseData === "N") {
           setTextInputText("");
         } else {
-          const selectedData = responseData[dayNumber];
-          setTextInputText(selectedData.split(" --- ")[0] || "");
+          setTextInputText(responseData[dayNumber].split(" --- ")[0]);
         }
       } catch (error) {
-        console.error("Error fetching data:", error);
-        setTextInputText("Error fetching data");
+        console.log(error)
       }
     }
   };
@@ -215,7 +215,7 @@ export default function CalendarNoteUpdatePage() {
         />
         <Divider type="vertical" style={{ borderColor: "white" }} />
         <Button type="primary" onClick={handleNextClick}>
-          Next
+          Fetch Current Note
         </Button>
       </Space>
       <Divider />
