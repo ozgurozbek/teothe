@@ -73,8 +73,8 @@ h3 {
   background-color: rgba(102, 102, 102, 0.13) !important;
 }
 .ant-btn,
-.ant-input-number,
-.white-placeholder {
+.ant-input,
+.ant-input-number {
   color: white !important;
   border-color: #630436 !important;
   background-color: rgba(99, 4, 54, 0.2) !important;
@@ -94,7 +94,7 @@ footer > a {
   color: white !important;
   background-color: #630436 !important;
 }
-
+.ant-input-group-addon,
 .ant-input-number-group-addon {
   color: white !important;
   background-color: #630436 !important;

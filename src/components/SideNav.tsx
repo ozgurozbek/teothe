@@ -139,7 +139,6 @@ export default function Sidebar() {
         <Image
           className="cursor-pointer transition-all"
           style={{
-            position: "fixed",
             width: collapsed ? "80px" : "200px",
           }}
           src="./teothe3K.png"
@@ -174,10 +173,7 @@ export default function Sidebar() {
       <Menu
         onClick={loadPage}
         style={{
-          position: "fixed",
           width: collapsed ? "80px" : "inherit",
-          // top: "22%",
-          top: collapsed ? 60 : 100,
         }}
         theme="dark"
         mode="inline"
