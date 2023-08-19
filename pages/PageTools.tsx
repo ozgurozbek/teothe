@@ -46,6 +46,11 @@ function GetTableData() {
       title: "Exclusive Benefits",
       dataIndex: "allows",
       key: "allows",
+    },
+    {
+      title: "Pricing Table",
+      dataIndex: "price",
+      key: "price",
     }
   );
 
@@ -55,6 +60,7 @@ function GetTableData() {
     item["tool"] = rowData[0];
     item["proficiency"] = rowData[1];
     item["allows"] = rowData[2];
+    item["price"] = rowData[3];
     dataSource.push(item);
   }
   return (
