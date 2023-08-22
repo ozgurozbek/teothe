@@ -9,9 +9,9 @@
 - [ ] Deities images use image in avatar, need to have square deity images
 - [ ] When the top sidenav image is clicked, sidenav still keeps active tab
 - [ ] CalendarTable responsive cell coloring idea bounce (probably needs a bit of a rewrite based on some responsive conditions or cellnumber == even type stuff) (I think giving each cell a border and fixing their background color is easier. I don't want it to turn more into a spaghetti)
-- [ ] Improve page title, too short + single word
-- [ ] next-size-adjust meta tag
-- [ ] more words in the main page, maybe we can provide a campaign setting text
+- [x] Improve page title, too short + single word
+- [ ] next-size-adjust meta tag - needs testing
+- [x] more words in the main page, maybe we can provide a campaign setting text
 - [ ] share on discord button would be nice
 - [ ] more internal links, lets redirect each button to its page if you want instead of rendering all in some content area, so not a Single Page App
 - [x] Robots.txt
