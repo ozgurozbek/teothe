@@ -1,8 +1,9 @@
 import GetCrumbs from "@/components/NavigationCrumb";
 import Language from "@/components/language/languages";
-import { Button, Card, Dropdown, Skeleton, MenuProps } from "antd";
+import { Button, Card, Dropdown, Skeleton, MenuProps, Space } from "antd";
 import useSWR from "swr";
 import { useState } from "react";
+import { DownOutlined } from "@ant-design/icons";
 
 function GetLanguageData() {
   const [curLang, setCurLang] = useState("Abyssal");
@@ -39,10 +40,17 @@ function GetLanguageData() {
   function LanguagesDropdown() {
     return (
       <>
-        Language:{" "}
-        <Dropdown menu={langProps}>
-          <Button>{curLang}</Button>
-        </Dropdown>
+        <Space className="mb-4">
+          Language:{" "}
+          <Dropdown menu={langProps}>
+            <Button>
+              <Space>
+                {curLang}
+                <DownOutlined />
+              </Space>
+            </Button>
+          </Dropdown>
+        </Space>
       </>
     );
   }
@@ -59,6 +67,7 @@ function GetLanguageData() {
   if (!data) return <Skeleton active />;
 
   let renderedLanguages = [];
+
   for (let item of data) {
     {
       renderedLanguages.push(
