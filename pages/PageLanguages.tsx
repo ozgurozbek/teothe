@@ -69,7 +69,7 @@ function GetLanguageData() {
   let renderedLanguages = [];
 
   for (let item of data) {
-    {
+    if (item === data[0]) {
       renderedLanguages.push(
         <Language
           languageProps={{
@@ -77,6 +77,17 @@ function GetLanguageData() {
             translatedWord: item[1],
             homebrew: item[2],
           }}
+        />
+      );
+    } else {
+      renderedLanguages.push(
+        <Language
+          languageProps={{
+            originalWord: item[0],
+            translatedWord: item[1],
+            homebrew: item[2],
+          }}
+          borderProp="border-t border-[#e5e7eb]"
         />
       );
     }
