@@ -12,25 +12,26 @@ function GetLanguageData() {
   const handleLangClick: MenuProps["onClick"] = (e) => {
     setCurLang(e.key);
   };
+  const langItems: MenuProps["items"] = [];
 
-  const langItems: MenuProps["items"] = [
-    {
-      label: "Abyssal",
-      key: "Abyssal",
-    },
-    {
-      label: "Draconic",
-      key: "Draconic",
-    },
-    {
-      label: "Drow",
-      key: "Drow",
-    },
-    {
-      label: "Dwarvish",
-      key: "Dwarvish",
-    },
-  ];
+  const langItemsFetcher = (args: RequestInfo) =>
+    fetch(args).then((res) => res.json());
+
+  const { data: langItemsData, error: langItemsError } = useSWR(
+    "https://teothe.pythonanywhere.com/getLanguages?head=True",
+    langItemsFetcher
+  );
+
+  if (langItemsError) {
+    console.log(langItemsError);
+  } else if (langItemsData) {
+    langItemsData.forEach((item: string[]) => {
+      langItems.push({
+        label: item[0],
+        key: item[0],
+      });
+    });
+  }
 
   const langProps = {
     items: langItems,
@@ -57,7 +58,7 @@ function GetLanguageData() {
 
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
-    "http://localhost:5000/getLanguages?lang=" + query, //http://localhost:5000/getLanguages?head=True
+    "https://teothe.pythonanywhere.com/getLanguages?lang=" + query,
     fetcher
   );
   if (error) {
