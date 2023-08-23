@@ -19,6 +19,7 @@ import ToolsPage from "Pages/PageTools";
 import GetCrumbs from "./NavigationCrumb";
 import CalendarPage from "Pages/PageCalendar";
 import SimpleContent from "./SimpleCon";
+import LanguagesPage from "Pages/PageLanguages";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
@@ -67,7 +68,9 @@ const loadPage = (menuItem: any) => {
     case "12":
       Ele = <CalendarPage />;
       break;
-
+    case "13":
+      Ele = <LanguagesPage />;
+      break;
     default:
       break;
   }
@@ -190,6 +193,7 @@ export default function Sidebar() {
           getItem("Map Overlay", "10", getIcon("MapOverlay", collapsed)),
           getItem("Map Legend", "11", getIcon("MapLegend", collapsed)),
           getItem("Calendar", "12", getIcon("Calendar", collapsed)),
+          getItem("Languages", "13", getIcon("Calendar", collapsed)),
         ]}
       />
     </Sider>
