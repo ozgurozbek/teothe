@@ -193,7 +193,7 @@ export default function Sidebar() {
           getItem("Map Overlay", "10", getIcon("MapOverlay", collapsed)),
           getItem("Map Legend", "11", getIcon("MapLegend", collapsed)),
           getItem("Calendar", "12", getIcon("Calendar", collapsed)),
-          getItem("Languages", "13", getIcon("Calendar", collapsed)),
+          getItem("Languages", "13", getIcon("Languages", collapsed)),
         ]}
       />
     </Sider>
