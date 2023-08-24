@@ -15,6 +15,7 @@
 - [ ] share on discord button would be nice
 - [ ] more internal links, lets redirect each button to its page if you want instead of rendering all in some content area, so not a Single Page App
 - [ ] Robots.txt
+- [ ] Fix homebrews page to fetch only once.
 
 ## 1.2
 
