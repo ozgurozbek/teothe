@@ -14,6 +14,7 @@
 - [x] more words in the main page, maybe we can provide a campaign setting text
 - [ ] share on discord button would be nice
 - [ ] more internal links, lets redirect each button to its page if you want instead of rendering all in some content area, so not a Single Page App
+- [ ] Fix homebrews page to fetch only once.
 - [x] Robots.txt
 
 ## 1.2

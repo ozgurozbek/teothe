@@ -4,6 +4,7 @@ import { Button, Card, Dropdown, Skeleton, MenuProps, Space } from "antd";
 import useSWR from "swr";
 import { useState } from "react";
 import { DownOutlined } from "@ant-design/icons";
+import SimpleContent from "@/components/SimpleCon";
 
 function GetLanguageData() {
   const [curLang, setCurLang] = useState("Abyssal");
@@ -106,6 +107,15 @@ export default function LanguagesPage() {
     <>
       <GetCrumbs path={"Teothe3K,Languages"} />
       <Card bordered={false} className=" w-full">
+        <SimpleContent
+          contentProps={{
+            title: "Languages",
+            text: [
+              "These are the language entries. Entries in white are from original Forgotten Realms content. Pinks are homebrew entries made specifically for Teothe. Pink and italic entries are adapted from original content to Teothe.",
+              "Select language from the dropdown menu below to display the respected dictionary.",
+            ],
+          }}
+        />
         {GetLanguageData()}
       </Card>
     </>
