@@ -19,7 +19,9 @@ export default function RacesCon({
   let raceBrew = [];
 
   for (let i = 0; i < DescriptionText.paragraph.length; i++) {
-    raceDesc.push(<p className="mb-1">{DescriptionText.paragraph[i]}</p>);
+    if (DescriptionText.paragraph[i] != "") {
+      raceDesc.push(<p className="mb-1">{DescriptionText.paragraph[i]}</p>);
+    }
   }
 
   if (DescriptionText.homebrew) {

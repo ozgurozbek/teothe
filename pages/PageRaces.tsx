@@ -1,6 +1,6 @@
 import GetCrumbs from "@/components/NavigationCrumb";
 import RacesCon from "@/components/races/RacesCon";
-import { Card, Divider, Skeleton, Switch } from "antd";
+import { Card, Divider, Skeleton, Space, Switch } from "antd";
 import useSWR from "swr";
 import { useState } from "react";
 
@@ -8,9 +8,10 @@ import { useState } from "react";
  * Fetches races data from the backend and uses local images
  * @backend fetch
  * @param brewCheck The state that controls whether homebrew content is turned on or off
+ * @param officialCheck The state that controls whether official content is turned on or off
  * @returns RacesCon and Divider(antd) wrapped with <> 
  */
-function GetRaces(brewCheck: boolean) {
+function GetRaces(brewCheck: boolean, officialCheck: boolean) {
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
     "https://teothe.pythonanywhere.com/getRaces",
@@ -35,7 +36,7 @@ function GetRaces(brewCheck: boolean) {
             }}
             DescriptionText={{
               title: item[0],
-              paragraph: item[2].split("_"),
+              paragraph: officialCheck ? item[2].split("_") : "",
               homebrew: brewCheck ? item[3].split("_") : "",
             }}
           />
@@ -53,19 +54,32 @@ function GetRaces(brewCheck: boolean) {
  */
 export default function RacesPage() {
   const [brew, setBrewVis] = useState(true);
+  const [official, setOfficialVis] = useState(true);
 
-  function ShowBrew() {
+  function ToggleBrew() {
     setBrewVis(!brew);
+  }
+
+  function ToggleOfficial() {
+    setOfficialVis(!official);
   }
 
   return (
     <>
       <GetCrumbs path={"Teothe3K,Races"} />
-      <div className="float-right text-pink-600">
+      
+      <Space className="float-right">
+      <div className="text-pink-600">
         <span className="align-bottom">Homebrew </span>
-        <Switch defaultChecked onChange={ShowBrew} />
+        <Switch defaultChecked onChange={ToggleBrew} />
+        {" "}
       </div>
-      <Card bordered={false}>{GetRaces(brew)}</Card>
+      <div>
+        <span className="align-bottom">Official </span>
+        <Switch defaultChecked onChange={ToggleOfficial} />
+        {" "}
+      </div></Space>
+      <Card bordered={false}>{GetRaces(brew, official)}</Card>
     </>
   );
 }
