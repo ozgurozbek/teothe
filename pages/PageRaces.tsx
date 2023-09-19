@@ -1,6 +1,6 @@
 import GetCrumbs from "@/components/NavigationCrumb";
 import RacesCon from "@/components/races/RacesCon";
-import { Card, Divider, Skeleton, Switch } from "antd";
+import { Card, Divider, Skeleton, Space, Switch } from "antd";
 import useSWR from "swr";
 import { useState } from "react";
 
@@ -67,12 +67,18 @@ export default function RacesPage() {
   return (
     <>
       <GetCrumbs path={"Teothe3K,Races"} />
-      <div className="float-right text-pink-600">
-        <span className="align-bottom">Official </span>
-        <Switch defaultChecked onChange={ToggleOfficial} />
+      
+      <Space className="float-right">
+      <div className="text-pink-600">
         <span className="align-bottom">Homebrew </span>
         <Switch defaultChecked onChange={ToggleBrew} />
+        {" "}
       </div>
+      <div>
+        <span className="align-bottom">Official </span>
+        <Switch defaultChecked onChange={ToggleOfficial} />
+        {" "}
+      </div></Space>
       <Card bordered={false}>{GetRaces(brew, official)}</Card>
     </>
   );
