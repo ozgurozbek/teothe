@@ -76,6 +76,14 @@ function GetTableData() {
           >
             Cooking
           </Button>
+          <Button
+            onClick={() => {
+              setDisplayEmpty(false);
+              setCurTable("scroll");
+            }}
+          >
+            Scrolls
+          </Button>
         </Space>
       </>
     );
