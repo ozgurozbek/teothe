@@ -26,10 +26,20 @@ export default function App() {
       }}
     >
       <Layout style={{ minHeight: "100vh" }}>
-        <Header style={{ padding: "0px" }}>
+        <Header
+          style={{
+            padding: "0px",
+            position: "sticky",
+            top: 0,
+            zIndex: 1,
+            width: "100%",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
           <Navbar />
         </Header>
-        <Content id="PageContent" style={{ margin: "0 16px" }}>
+        <Content id="PageContent" style={{ margin: "1rem auto 0 auto"}} className="container">
           <GetCrumbs path="Teothe3K" />
           <Card bordered={false} className="w-full">
             <SimpleContent

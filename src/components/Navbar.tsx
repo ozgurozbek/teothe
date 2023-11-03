@@ -1,6 +1,5 @@
-import { useState } from "react";
 import { render } from "react-dom";
-import { Menu, Image, Avatar, Empty, Card } from "antd";
+import { Menu, Image, Avatar, Card } from "antd";
 
 import type { MenuProps } from "antd";
 
@@ -106,6 +105,7 @@ function getIcon(pageName: string) {
   return (
     <Avatar
       className="transition-all"
+      size={16}
       src={"./Icons/SideNav/" + pageName + ".svg"}
       alt={pageName + " Icon"}
       draggable={false}
@@ -115,15 +115,14 @@ function getIcon(pageName: string) {
 }
 
 export default function Navbar({}: {}) {
-  const [collapsed, setCollapsed] = useState(false);
   return (
-    <div className="flex items-center justify-between border-b border-gray-400 py-8">
-      <div>
-        <Image
+    <div className="bg-[#090d12] w-full inline-flex">
+      <Image
           src="./teothe3K.png"
           alt=" Teothe3K Icon"
           style={{
-            width: "200px",
+            width: "120px",
+            padding: "4px"
           }}
           preview={false}
           onClick={() =>
@@ -150,84 +149,27 @@ export default function Navbar({}: {}) {
             )
           }
         />
-      </div>
-      <nav>
-        <section className="flex lg:hidden">
-          <div
-            className=" space-y-2"
-            onClick={() => setCollapsed((prev) => !prev)}
-          >
-            <span className="block h-0.5 w-8 bg-[#630436]"></span>
-            <span className="block h-0.5 w-8 bg-[#630436]"></span>
-            <span className="block h-0.5 w-8 bg-[#630436]"></span>
-          </div>
-
-          <div className={collapsed ? "showMenuNav" : "hideMenuNav"}>
-            <div
-              className="absolute top-0 right-0 px-8 py-8"
-              onClick={() => setCollapsed(false)}
-            >
-              <svg
-                className="h-8 w-8 text-gray-600"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <line x1="18" y1="6" x2="6" y2="18" />
-                <line x1="6" y1="6" x2="18" y2="18" />
-              </svg>
-            </div>
-            <div className="flex flex-col items-center justify-between min-h-[250px]">
-              <Menu
-                onClick={loadPage}
-                theme="dark"
-                mode="inline"
-                items={[
-                  getItem("Common Lore", "1", getIcon("CommonLore")),
-                  getItem("Planes of Existence", "2", getIcon("Locations")),
-                  getItem("Deities", "3", getIcon("Deities")),
-                  getItem("Races", "4", getIcon("Races")),
-                  getItem("Tables", "5", getIcon("Tables")),
-                  getItem("Library", "6", getIcon("Library")),
-                  getItem("Pricing", "7", getIcon("Pricing")),
-                  getItem("Tools", "8", getIcon("Tools")),
-                  getItem("Homebrews", "9", getIcon("Homebrews")),
-                  getItem("Map Overlay", "10", getIcon("MapOverlay")),
-                  getItem("Map Legend", "11", getIcon("MapLegend")),
-                  getItem("Calendar", "12", getIcon("Calendar")),
-                  getItem("Languages", "13", getIcon("Languages")),
-                ]}
-              />
-            </div>
-          </div>
-        </section>
-
-        <div className="hidden lg:flex ROUNDED">
-          <Menu
-            onClick={loadPage}
-            theme="dark"
-            mode="horizontal"
-            items={[
-              getItem("Common Lore", "1", getIcon("CommonLore")),
-              getItem("Planes of Existence", "2", getIcon("Locations")),
-              getItem("Deities", "3", getIcon("Deities")),
-              getItem("Races", "4", getIcon("Races")),
-              getItem("Tables", "5", getIcon("Tables")),
-              getItem("Library", "6", getIcon("Library")),
-              getItem("Pricing", "7", getIcon("Pricing")),
-              getItem("Tools", "8", getIcon("Tools")),
-              getItem("Homebrews", "9", getIcon("Homebrews")),
-              getItem("Map Overlay", "10", getIcon("MapOverlay")),
-              getItem("Map Legend", "11", getIcon("MapLegend")),
-              getItem("Calendar", "12", getIcon("Calendar")),
-              getItem("Languages", "13", getIcon("Languages")),
-            ]}
-          />
-        </div>
-      </nav>
+      <Menu
+        onClick={loadPage}
+        theme="dark"
+        mode="horizontal"
+        className="w-full"
+        items={[
+          getItem("Common Lore", "1", getIcon("CommonLore")),
+          getItem("Planes", "2", getIcon("Locations")),
+          getItem("Deities", "3", getIcon("Deities")),
+          getItem("Races", "4", getIcon("Races")),
+          getItem("Tables", "5", getIcon("Tables")),
+          getItem("Library", "6", getIcon("Library")),
+          getItem("Pricing", "7", getIcon("Pricing")),
+          getItem("Tools", "8", getIcon("Tools")),
+          getItem("Homebrews", "9", getIcon("Homebrews")),
+          getItem("Map Overlay", "10", getIcon("MapOverlay")),
+          getItem("Map Legend", "11", getIcon("MapLegend")),
+          getItem("Calendar", "12", getIcon("Calendar")),
+          getItem("Languages", "13", getIcon("Languages")),
+        ]}
+      />
     </div>
   );
 }
