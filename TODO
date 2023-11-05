@@ -2,7 +2,7 @@
 
 ## 1.4
 
-- [ ] Fix navbar height and text size
+- [x] Fix navbar height and text size
 - [x] Fix navbar active tab display style
 - [ ] When minimized, menu always shows the tab name after clicking it
 - [ ] Menu always shows the active tab after clicking main image
