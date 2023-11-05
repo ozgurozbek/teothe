@@ -1,18 +1,26 @@
 # TODO
 
-## 1.3.2
+## 1.4
 
-- [ ] When minimized, sidenav always shows the tab name after clicking it
-- [ ] When minimized and landscape, sidenav does not fit the screen
-- [ ] 3 more races to backend
+- [ ] Fix navbar height and text size
+- [x] Fix navbar active tab display style
+- [ ] When minimized, menu always shows the tab name after clicking it
+- [ ] Menu always shows the active tab after clicking main image
 - [ ] PWA (Web app manifest or service worker do not meet the installability requirements, Failures: No manifest was fetched.)
-- [ ] Deities images use image in avatar, need to have square deity images
 - [ ] When the top sidenav image is clicked, sidenav still keeps active tab
 - [ ] CalendarTable responsive cell coloring idea bounce (probably needs a bit of a rewrite based on some responsive conditions or cellnumber == even type stuff) (I think giving each cell a border and fixing their background color is easier. I don't want it to turn more into a spaghetti)
-- [ ] next-size-adjust meta tag - needs testing
-- [ ] share on discord button would be nice
-- [ ] more internal links, lets redirect each button to its page if you want instead of rendering all in some content area, so not a Single Page App
+- [ ] More internal links, lets redirect each button to its page if you want instead of rendering all in some content area, so not a Single Page App
 - [ ] Fix deities page to fetch only once
+
+## 1.3.2
+
+- [x] When minimized, sidenav always shows the tab name after clicking it
+- [x] When minimized and landscape, sidenav does not fit the screen
+- [x] 3 more races to backend
+- [x] Deities images use image in avatar, need to have square deity images
+- [x] next-size-adjust meta tag - needs testing
+
+- [-] share on discord button would be nice
 
 ## 1.3
 
