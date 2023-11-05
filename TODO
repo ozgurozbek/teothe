@@ -4,10 +4,11 @@
 
 - [x] Fix navbar height and text size
 - [x] Fix navbar active tab display style
+- [x] Fix navbar build errors
 - [ ] When minimized, menu always shows the tab name after clicking it
 - [ ] Menu always shows the active tab after clicking main image
-- [ ] PWA (Web app manifest or service worker do not meet the installability requirements, Failures: No manifest was fetched.)
 - [ ] When the top sidenav image is clicked, sidenav still keeps active tab
+- [ ] PWA (Web app manifest or service worker do not meet the installability requirements, Failures: No manifest was fetched.)
 - [ ] CalendarTable responsive cell coloring idea bounce (probably needs a bit of a rewrite based on some responsive conditions or cellnumber == even type stuff) (I think giving each cell a border and fixing their background color is easier. I don't want it to turn more into a spaghetti)
 - [ ] More internal links, lets redirect each button to its page if you want instead of rendering all in some content area, so not a Single Page App
 - [ ] Fix deities page to fetch only once
