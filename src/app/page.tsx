@@ -6,6 +6,7 @@ import GetCrumbs from "@/components/NavigationCrumb";
 import { CaretUpOutlined } from "@ant-design/icons";
 import Navbar from "Comp/Navbar";
 import SimpleContent from "@/components/SimpleCon";
+import ReactDOM from "react-dom";
 
 const { Header, Content, Footer } = Layout;
 
@@ -39,7 +40,11 @@ export default function App() {
         >
           <Navbar />
         </Header>
-        <Content id="PageContent" style={{ margin: "1rem auto 0 auto"}} className="container">
+        <Content
+          id="PageContent"
+          style={{ margin: "1rem auto 0 auto" }}
+          className="container"
+        >
           <GetCrumbs path="Teothe3K" />
           <Card bordered={false} className="w-full">
             <SimpleContent
@@ -80,7 +85,7 @@ export default function App() {
           >
             Wizards CC BY
           </a>
-          .Further attributions can be found on the{" "}
+          . Further attributions can be found on the{" "}
           <a
             target="_blank"
             href="https://ozgurozbek.github.io/dnd/img-credits.xml"
@@ -122,3 +127,5 @@ export default function App() {
     </ConfigProvider>
   );
 }
+
+window.onload = function() {ReactDOM.render(<App/>, document.body);}; //Thank god
