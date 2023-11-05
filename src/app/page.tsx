@@ -128,4 +128,4 @@ export default function App() {
   );
 }
 
-window.onload = function() {ReactDOM.render(<App/>, document.body);}; //Thank god
+window.onload = function() {ReactDOM.render(<App/>, document.body);};
