@@ -6,7 +6,6 @@ import GetCrumbs from "@/components/NavigationCrumb";
 import { CaretUpOutlined } from "@ant-design/icons";
 import Navbar from "Comp/Navbar";
 import SimpleContent from "@/components/SimpleCon";
-import ReactDOM from "react-dom";
 
 const { Header, Content, Footer } = Layout;
 
@@ -127,5 +126,3 @@ export default function App() {
     </ConfigProvider>
   );
 }
-
-window.onload = function() {ReactDOM.render(<App/>, document.body);};

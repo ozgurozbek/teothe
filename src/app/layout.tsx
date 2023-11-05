@@ -33,7 +33,8 @@ export default function RootLayout({
         <link rel="manifest" href="./manifest.json" />
         <link rel="apple-touch-icon" href="/dragon.png" />
       </head>
-      <body className={"text-white " + inter.className}>{children}</body>
+      <body id="_main_body_" className={"opacity-0 text-white " + inter.className}>{children}</body>
+      <Script>document.getElementById("_main_body_").classList.remove("opacity-0");</Script>
     </html>
   );
 }
