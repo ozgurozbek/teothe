@@ -18,6 +18,7 @@ import GetCrumbs from "./NavigationCrumb";
 import CalendarPage from "Pages/PageCalendar";
 import SimpleContent from "./SimpleCon";
 import LanguagesPage from "Pages/PageLanguages";
+import { useState } from "react";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
@@ -113,7 +114,12 @@ function getIcon(pageName: string) {
   );
 }
 
+//Antd Menu takes selectedKeys as argument.
+// You just need to add state const [selectedKeys, setselectedKeys] = useState<Array<string>>([]); and when you click on
+// Menu.Item - set it's key to state setselectedKeys([e.key]);. And when you press LOGO - setselectedKeys([]);
+
 export default function Navbar({}: {}) {
+  const [selectedKeys, setselectedKeys] = useState<Array<string>>([]);
   return (
     <div className="bg-[#090d12] w-full inline-flex h-16">
       <div className="flex w-full">
@@ -126,7 +132,8 @@ export default function Navbar({}: {}) {
             marginTop: "0.5rem",
           }}
           preview={false}
-          onClick={() =>
+          onClick={() => {
+            setselectedKeys([]);
             render(
               <>
                 <GetCrumbs path="Teothe3K" />
@@ -147,11 +154,15 @@ export default function Navbar({}: {}) {
                 </Card>
               </>,
               document.getElementById("PageContent")
-            )
-          }
+            );
+          }}
         />
         <Menu
-          onClick={loadPage}
+          onClick={(e) => {
+            loadPage(e);
+            setselectedKeys([e.key]);
+          }}
+          selectedKeys={selectedKeys}
           theme="dark"
           mode="horizontal"
           style={{
