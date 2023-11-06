@@ -24,7 +24,7 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#630436" />
         <meta name="apple-mobile-web-app-status-bar" content="#90cdf4" />
-        <Script src="https://mozilla.github.io/pdf.js/build/pdf.js"></Script>
+        <Script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></Script>
         <Script src="https://booksjs.github.io/books/js/books.min.js"></Script>
         <link
           rel="stylesheet"
@@ -33,7 +33,8 @@ export default function RootLayout({
         <link rel="manifest" href="./manifest.json" />
         <link rel="apple-touch-icon" href="/dragon.png" />
       </head>
-      <body className={"text-white " + inter.className}>{children}</body>
+      <body id="layout-body" className={"opacity-0 text-white " + inter.className}>{children}</body>
+      <Script id="opacity-script">document.getElementById(&quot;layout-body&quot;).classList.remove(&quot;opacity-0&quot;);</Script>
     </html>
   );
 }

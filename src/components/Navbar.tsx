@@ -1,7 +1,5 @@
-import { useState } from "react";
 import { render } from "react-dom";
-import { Menu, Image, Avatar, Empty, Card } from "antd";
-import Sider from "antd/es/layout/Sider";
+import { Menu, Image, Card } from "antd";
 
 import type { MenuProps } from "antd";
 
@@ -20,6 +18,7 @@ import GetCrumbs from "./NavigationCrumb";
 import CalendarPage from "Pages/PageCalendar";
 import SimpleContent from "./SimpleCon";
 import LanguagesPage from "Pages/PageLanguages";
+import { useState } from "react";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
@@ -78,26 +77,6 @@ const loadPage = (menuItem: any) => {
 };
 
 /**
- * Gets Deity icons from the Sidenav icon
- * @generator
- * @param pageName
- * @param avatarSize
- * @returns Deity Avatar
- */
-function getIcon(pageName: string, avatarSize: boolean) {
-  return (
-    <Avatar
-      className="transition-all"
-      size={avatarSize ? 16 : 24}
-      src={"./Icons/SideNav/" + pageName + ".svg"}
-      alt={pageName + " Icon"}
-      draggable={false}
-      shape="square"
-    ></Avatar>
-  );
-}
-
-/**
  * Generates Sidebar Menu items
  * @generator
  * @param label
@@ -124,30 +103,43 @@ function getItem(
 }
 
 /**
- * This is the main sidebar, only overruled by itself
- * @returns Sider(antd)
+ * Gets Icon
+ * @generator
+ * @param pageName
+ * @returns img
  */
-export default function Sidebar() {
-  const [collapsed, setCollapsed] = useState(false);
-  // Menu > defaultSelectedKeys={['1']}
+function getIcon(pageName: string) {
   return (
-    <Sider
-      collapsible
-      collapsed={collapsed}
-      onCollapse={(value) => {
-        setCollapsed(value);
-      }}
-    >
-      <div>
+    <img
+      className="transition-all"
+      width={20}
+      src={"./Icons/SideNav/" + pageName + ".svg"}
+      alt={pageName + " Icon"}
+      draggable={false}
+    ></img>
+  );
+}
+
+/**
+ * This is the main navbar, only overruled by itself > Responsive for mobile. Don't change Menu(Antd) parameters
+ * @returns Navbar div>div>Image(antd)+Menu(antd)
+ */
+export default function Navbar() {
+  const [selectedKeys, setselectedKeys] = useState<Array<string>>([]);
+  return (
+    <div className="bg-[#090d12] w-full inline-flex h-16">
+      <div className="flex w-full">
         <Image
-          className="cursor-pointer transition-all"
-          style={{
-            width: collapsed ? "80px" : "200px",
-          }}
           src="./teothe3K.png"
-          alt="Teothe3K Icon"
+          alt=" Teothe3K Icon"
+          style={{
+            width: "120px",
+            padding: "4px",
+            marginTop: "0.5rem",
+          }}
           preview={false}
-          onClick={() =>
+          onClick={() => {
+            setselectedKeys([]);
             render(
               <>
                 <GetCrumbs path="Teothe3K" />
@@ -168,34 +160,40 @@ export default function Sidebar() {
                 </Card>
               </>,
               document.getElementById("PageContent")
-            )
-          }
+            );
+          }}
+        />
+        <Menu
+          onClick={(e) => {
+            loadPage(e);
+            setselectedKeys([e.key]);
+          }}
+          selectedKeys={selectedKeys}
+          theme="dark"
+          mode="horizontal"
+          style={{
+            flex: "auto",
+            minWidth: 0,
+            fontSize: "1rem",
+            userSelect: "none",
+          }}
+          items={[
+            getItem("Common Lore", "1", getIcon("CommonLore")),
+            getItem("Planes", "2", getIcon("Locations")),
+            getItem("Deities", "3", getIcon("Deities")),
+            getItem("Races", "4", getIcon("Races")),
+            getItem("Tables", "5", getIcon("Tables")),
+            getItem("Library", "6", getIcon("Library")),
+            getItem("Pricing", "7", getIcon("Pricing")),
+            getItem("Tools", "8", getIcon("Tools")),
+            getItem("Homebrews", "9", getIcon("Homebrews")),
+            getItem("Map Overlay", "10", getIcon("MapOverlay")),
+            getItem("Map Legend", "11", getIcon("MapLegend")),
+            getItem("Calendar", "12", getIcon("Calendar")),
+            getItem("Languages", "13", getIcon("Languages")),
+          ]}
         />
       </div>
-
-      <Menu
-        onClick={loadPage}
-        style={{
-          width: collapsed ? "80px" : "inherit",
-        }}
-        theme="dark"
-        mode="inline"
-        items={[
-          getItem("Common Lore", "1", getIcon("CommonLore", collapsed)),
-          getItem("Planes of Existence", "2", getIcon("Locations", collapsed)),
-          getItem("Deities", "3", getIcon("Deities", collapsed)),
-          getItem("Races", "4", getIcon("Races", collapsed)),
-          getItem("Tables", "5", getIcon("Tables", collapsed)),
-          getItem("Library", "6", getIcon("Library", collapsed)),
-          getItem("Pricing", "7", getIcon("Pricing", collapsed)),
-          getItem("Tools", "8", getIcon("Tools", collapsed)),
-          getItem("Homebrews", "9", getIcon("Homebrews", collapsed)),
-          getItem("Map Overlay", "10", getIcon("MapOverlay", collapsed)),
-          getItem("Map Legend", "11", getIcon("MapLegend", collapsed)),
-          getItem("Calendar", "12", getIcon("Calendar", collapsed)),
-          getItem("Languages", "13", getIcon("Languages", collapsed)),
-        ]}
-      />
-    </Sider>
+    </div>
   );
 }
