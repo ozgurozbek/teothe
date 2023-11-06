@@ -102,6 +102,12 @@ function getItem(
   } as MenuItem;
 }
 
+/**
+ * Gets Icon
+ * @generator
+ * @param pageName
+ * @returns img
+ */
 function getIcon(pageName: string) {
   return (
     <img
@@ -114,11 +120,11 @@ function getIcon(pageName: string) {
   );
 }
 
-//Antd Menu takes selectedKeys as argument.
-// You just need to add state const [selectedKeys, setselectedKeys] = useState<Array<string>>([]); and when you click on
-// Menu.Item - set it's key to state setselectedKeys([e.key]);. And when you press LOGO - setselectedKeys([]);
-
-export default function Navbar({}: {}) {
+/**
+ * This is the main navbar, only overruled by itself > Responsive for mobile. Don't change Menu(Antd) parameters
+ * @returns Navbar div>div>Image(antd)+Menu(antd)
+ */
+export default function Navbar() {
   const [selectedKeys, setselectedKeys] = useState<Array<string>>([]);
   return (
     <div className="bg-[#090d12] w-full inline-flex h-16">
