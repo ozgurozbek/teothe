@@ -56,6 +56,7 @@ const holidays: { [key: string]: string[] } = {
     "Full moon",
   ],
   "Ukeus, 33": ["Artisan's day"],
+  "Verus, 18": ["Pole Day*, Aokin spesific"],
   "Verus, 48": ["Elven Eve*, Elf spesific"],
   "Vesius, 48": ["Hammer Week*, Dwarf spesific"],
   "Vesius, 47": ["Hammer Week*, Dwarf spesific"],
