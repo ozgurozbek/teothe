@@ -64,10 +64,24 @@ export default function CalendarNoteUpdatePage() {
         if (responseData === "N") {
           setTextInputText("");
         } else {
-          setTextInputText(responseData[dayNumber].split(" --- ")[0]);
+          try {
+            setTextInputText(responseData[dayNumber].split(" --- ")[0]);
+          } catch (error: any) {
+
+            if (error.name != "TypeError") {
+              console.log(error.name);
+              console.log("Unknown error. Reset text area.");
+            // Otherwise it is a splitting error. As expected.
+            } else {
+              setTextInputText(""); // We clear whether it is mistyped, or we can't split.
+            }
+          }
         }
-      } catch (error) {
-        console.log(error);
+      } catch (error: any) {
+        if (error.name != "SyntaxError") {
+          console.log(error);
+        // Otherwise it is the No Data Found JSON Syntax Error.
+        }
       }
     }
   };
