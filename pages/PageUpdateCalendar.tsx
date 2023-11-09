@@ -158,6 +158,7 @@ export default function CalendarNoteUpdatePage() {
   };
 
   return (
+    <div className="container m-auto">
     <Card className="border-none h-[calc(100vh-2rem)] m-4">
       <SimpleContent
         contentProps={{
@@ -236,5 +237,6 @@ export default function CalendarNoteUpdatePage() {
         Submit
       </Button>
     </Card>
+    </div>
   );
 }
