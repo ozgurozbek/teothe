@@ -3,6 +3,7 @@ import { Card, Skeleton } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import SimpleContent from "Comp/SimpleCon";
 import useSWR from "swr";
+import Link from "next/link";
 
 /**
  * Fetches map resources data from the backend and feeds MapEntry
@@ -58,6 +59,8 @@ export default function MapLegendPage() {
           }}
         />
         {GetMapLegend()}
+        <br/>
+        <Link href={"https://ozgurozbek.github.io/dnd/MapResourcesDoc.pdf"} target="_blank">See the mechanics document here.</Link>
       </Card>
     </section>
   );
