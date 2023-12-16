@@ -18,12 +18,12 @@ export default function GetBook({
 }) {
   return (
     <Button
-      className="m-1"
+      className="m-1 w-72 block mx-auto sm:inline-block sm:w-auto"
       onClick={() => {
         booksjsLib(bookProps.url).loadDocument();
       }}
     >
-      {bookProps.name}
+      <p className="truncate">{bookProps.name}</p>
     </Button>
   );
 }
