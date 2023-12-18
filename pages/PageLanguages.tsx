@@ -5,7 +5,15 @@ import { useState, useEffect } from "react";
 import { DownOutlined } from "@ant-design/icons";
 import SimpleContent from "@/components/SimpleCon";
 
-function LanguagesDropdown({ curLang, langList, handleLangClick }:{curLang:string,langList:MenuProps["items"],handleLangClick:MenuProps["onClick"]}) {
+function LanguagesDropdown({
+  curLang,
+  langList,
+  handleLangClick,
+}: {
+  curLang: string;
+  langList: MenuProps["items"];
+  handleLangClick: MenuProps["onClick"];
+}) {
   const langProps = {
     items: langList,
     onClick: handleLangClick,
@@ -14,7 +22,16 @@ function LanguagesDropdown({ curLang, langList, handleLangClick }:{curLang:strin
   return (
     <Space className="mb-4">
       Language:{" "}
-      <Dropdown menu={langProps}>
+      <Dropdown
+        menu={langProps}
+        autoFocus={true}
+        overlayStyle={{
+          maxHeight: 384,
+          overflowY: "auto",
+          scrollbarWidth: "thin",
+          scrollBehavior: "smooth",
+        }}
+      >
         <Button>
           <Space>
             {curLang}
@@ -22,7 +39,9 @@ function LanguagesDropdown({ curLang, langList, handleLangClick }:{curLang:strin
           </Space>
         </Button>
       </Dropdown>
-      {!langProps.items && <Button onClick={()=>window.location.reload()}>Refresh Page</Button>}
+      {!langProps.items && (
+        <Button onClick={() => window.location.reload()}>Refresh Page</Button>
+      )}
     </Space>
   );
 }
@@ -33,7 +52,7 @@ export default function LanguagesPage() {
   const [data, setData] = useState([]);
   const [error, setError] = useState(null);
 
-  const handleLangClick = (e:any) => {
+  const handleLangClick = (e: any) => {
     setCurLang(e.key);
   };
 
@@ -43,7 +62,7 @@ export default function LanguagesPage() {
     fetch("https://teothe.pythonanywhere.com/getLanguages?head=True")
       .then((res) => res.json())
       .then((langItemsData) => {
-        const langListTemp = langItemsData.map((item:string) => ({
+        const langListTemp = langItemsData.map((item: string) => ({
           label: item[0],
           key: item[0],
         }));
