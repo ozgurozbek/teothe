@@ -28,7 +28,7 @@ function GetMapLegend() {
     renderedMapRes.push(
       //name type check image
       <MapEntry
-        imageSrc={item[3]}
+        imageSrc={"./Maps/Legends/" + item[0] + ".png"}
         textProps={{
           name: item[0],
           rarity: item[1],
