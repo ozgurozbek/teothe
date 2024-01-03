@@ -150,6 +150,7 @@ function GetTableData() {
         dataSource={dataSource}
         columns={columns}
         pagination={false}
+        scroll={{ x: 1200 }}
       />
     </>
   );
