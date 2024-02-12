@@ -22,6 +22,14 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+      <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="manifest" href="/manifest.json" />
+        <link
+          rel="apple-touch-icon"
+          sizes="192x192"
+          href="/PWA/icon-192-192.png"
+        />
         <meta name="theme-color" content="#630436" />
         <meta name="apple-mobile-web-app-status-bar" content="#90cdf4" />
         <Script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></Script>
@@ -30,7 +38,6 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://booksjs.github.io/books/css/booksjs.css"
         ></link>
-        <link rel="manifest" href="./manifest.json" />
         <link rel="apple-touch-icon" href="/dragon.png" />
       </head>
       <body id="layout-body" className={"opacity-0 text-white " + inter.className}>{children}</body>
