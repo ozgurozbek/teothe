@@ -154,40 +154,46 @@ export default function CalendarPage() {
       <GetCrumbs path={"Teothe3K,Calendar"} />
       <Card bordered={false} className="w-full">
         <SimpleContent contentProps={{ title: "Calendar" }} />
-        <Space className="mb-4">
-          Table:{" "}
-          <Dropdown menu={tableProps}>
-            <Button>
-              <Space>
-                {tableNo}
-                <DownOutlined />
-              </Space>
-            </Button>
-          </Dropdown>
+        <Space className="mb-4 flex flex-wrap">
+          <div>
+            Table:{" "}
+            <Dropdown menu={tableProps}>
+              <Button>
+                <Space>
+                  {tableNo}
+                  <DownOutlined />
+                </Space>
+              </Button>
+            </Dropdown>
+          </div>
           <Divider type="vertical" style={{ borderColor: "white" }} />
-          Month:{" "}
-          <Dropdown menu={monthProps}>
-            <Button>
-              <Space>
-                {monthName}
-                <DownOutlined />
-              </Space>
-            </Button>
-          </Dropdown>
+          <div>
+            Month:{" "}
+            <Dropdown menu={monthProps}>
+              <Button>
+                <Space>
+                  {monthName}
+                  <DownOutlined />
+                </Space>
+              </Button>
+            </Dropdown>
+          </div>
           <Divider type="vertical" style={{ borderColor: "white" }} />
-          Year:{" "}
-          <InputNumber
-            addonAfter="Blue Era"
-            defaultValue={27}
-            min={27}
-            precision={0}
-            keyboard={false}
-            onChange={(x) => {
-              if (x != null) {
-                handleYearClick(x);
-              }
-            }}
-          />
+          <div className="flex items-center ">
+            <p className="mr-2"> Year: </p>
+            <InputNumber
+              addonAfter="Blue Era"
+              defaultValue={27}
+              min={27}
+              precision={0}
+              keyboard={false}
+              onChange={(x) => {
+                if (x != null) {
+                  handleYearClick(x);
+                }
+              }}
+            />
+          </div>
         </Space>
         {monthName !== "" ? (
           <CalendarTable
@@ -200,8 +206,8 @@ export default function CalendarPage() {
         ) : (
           <Empty />
         )}
-        <Divider/>
-        <GetAPICalendar/>
+        <Divider />
+        <GetAPICalendar />
       </Card>
     </section>
   );
