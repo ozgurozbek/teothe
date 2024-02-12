@@ -62,7 +62,7 @@ export default function App() {
           </Card>
         </Content>
         <Footer style={{ textAlign: "center" }}>
-          Teothe, its information, its documents and the TTRPG content is
+          Teothe, Teothe3K, their information, their documents and the TTRPG content is
           provided under the{" "}
           <a
             target="_blank"
@@ -73,14 +73,14 @@ export default function App() {
           and protected by the{" "}
           <a
             target="_blank"
-            href="https://ozgurozbek.github.io/dnd/SRD-OGL_V5.1.pdf"
+            href="./SRD-OGL_V5.1.pdf"
           >
             Wizards OGL{" "}
           </a>
           and{" "}
           <a
             target="_blank"
-            href="https://ozgurozbek.github.io/dnd/SRD5.1-CCBY4.0_License_live%20links.pdf"
+            href="./SRD5.1-CCBY4.0_License_livelinks.pdf"
           >
             Wizards CC BY
           </a>
@@ -114,7 +114,7 @@ export default function App() {
           >
             Forgotten Realms Wiki
           </a>
-          . 2016-2023.
+          . 2016-2024.
         </Footer>
         <div
           className="w-12 h-12 rounded-full bg-[#630436] hover:bg-[#30011a] fixed bottom-4 right-4 transition-all text-center text-4xl"
