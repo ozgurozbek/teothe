@@ -1,7 +1,7 @@
 {
   "name": "Teothe",
   "short_name": "Teothe",
-  "start_url": "/teothe/",
+  "start_url": "/",
   "background_color": "#630436",
   "theme_color": "#630436",
   "display": "standalone",
