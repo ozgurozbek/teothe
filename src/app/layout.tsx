@@ -11,7 +11,7 @@ export const metadata = {
 
 /**
  * returns the main html page as layout. Imports external JS and CSS libraries. Provides html head tags.
- * @param children 
+ * @param children
  * @returns html
  */
 export default function RootLayout({
@@ -40,8 +40,15 @@ export default function RootLayout({
         ></link>
         <link rel="apple-touch-icon" href="/dragon.png" />
       </head>
-      <body id="layout-body" className={"opacity-0 text-white " + inter.className}>{children}</body>
-      <Script id="opacity-script">document.getElementById(&quot;layout-body&quot;).classList.remove(&quot;opacity-0&quot;);</Script>
+      <body
+        id="layout-body"
+        className={"opacity-0 text-white " + inter.className}
+      >
+        {children}
+      </body>
+      <Script id="opacity-script">
+        document.getElementById(&quot;layout-body&quot;).classList.remove(&quot;opacity-0&quot;);
+      </Script>
     </html>
   );
 }
