@@ -11,7 +11,7 @@ export const metadata = {
 
 /**
  * returns the main html page as layout. Imports external JS and CSS libraries. Provides html head tags.
- * @param children 
+ * @param children
  * @returns html
  */
 export default function RootLayout({
@@ -26,15 +26,18 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar" content="#90cdf4" />
         <Script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></Script>
         <Script src="https://booksjs.github.io/books/js/books.min.js"></Script>
-        <link
-          rel="stylesheet"
-          href="https://booksjs.github.io/books/css/booksjs.css"
-        ></link>
         <link rel="manifest" href="./manifest.json" />
         <link rel="apple-touch-icon" href="/dragon.png" />
       </head>
-      <body id="layout-body" className={"opacity-0 text-white " + inter.className}>{children}</body>
-      <Script id="opacity-script">document.getElementById(&quot;layout-body&quot;).classList.remove(&quot;opacity-0&quot;);</Script>
+      <body
+        id="layout-body"
+        className={"opacity-0 text-white " + inter.className}
+      >
+        {children}
+      </body>
+      <Script id="opacity-script">
+        document.getElementById(&quot;layout-body&quot;).classList.remove(&quot;opacity-0&quot;);
+      </Script>
     </html>
   );
 }
