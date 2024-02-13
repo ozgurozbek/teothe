@@ -1,3 +1,5 @@
+"use client"
+
 import GetCrumbs from "@/components/NavigationCrumb";
 import Location from "@/components/locations/Locations";
 import { Card, Skeleton } from "antd";

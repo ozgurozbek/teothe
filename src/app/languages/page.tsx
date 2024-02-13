@@ -1,3 +1,5 @@
+"use client"
+
 import GetCrumbs from "@/components/NavigationCrumb";
 import Language from "@/components/language/languages";
 import { Button, Card, Dropdown, Skeleton, MenuProps, Space } from "antd";
@@ -122,7 +124,7 @@ export default function LanguagesPage() {
   ));
 
   return (
-    <>
+    <section>
       <GetCrumbs path={"Teothe3K,Languages"} />
       <Card bordered={false} className="w-full">
         <SimpleContent
@@ -141,6 +143,6 @@ export default function LanguagesPage() {
         />
         {renderedLanguages}
       </Card>
-    </>
+    </section>
   );
 }

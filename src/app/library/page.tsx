@@ -1,3 +1,5 @@
+"use client"
+
 import GetCrumbs from "@/components/NavigationCrumb";
 import GetBook from "@/components/library/GetBook";
 import { Typography, Card, Divider } from "antd";
@@ -12,7 +14,7 @@ const { Title } = Typography;
  */
 export default function LibraryPage() {
   return (
-    <>
+    <section>
       <GetCrumbs path={"Teothe3K,Library"} />
       <Card bordered={false} className="w-full h-full">
         <Title>Library</Title>
@@ -214,6 +216,6 @@ export default function LibraryPage() {
           }}
         />
       </Card>
-    </>
+    </section>
   );
 }

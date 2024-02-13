@@ -1,3 +1,5 @@
+"use client"
+
 import { Button, Card, Divider, Empty, Skeleton, Space } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import useSWR from "swr";

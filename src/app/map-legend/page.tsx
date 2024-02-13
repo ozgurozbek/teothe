@@ -1,3 +1,5 @@
+"use client"
+
 import MapEntry from "Comp/maps/MapEntry";
 import { Card, Skeleton } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
