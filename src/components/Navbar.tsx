@@ -1,24 +1,24 @@
+import React, { useState, Suspense } from "react";
 import { render } from "react-dom";
-import { Menu, Image, Card } from "antd";
-
+import { Menu, Image, Card, Skeleton } from "antd";
 import type { MenuProps } from "antd";
 
-import CommonLorePage from "Pages/PageCommonLore";
-import DeitiesPage from "Pages/PageDeities";
-import TablesPage from "Pages/PageTables";
-import LibraryPage from "Pages/PageLibrary";
-import MapLegendPage from "Pages/PageMapLegend";
-import MapOverlayPage from "Pages/PageMapOverlay";
-import LocationsPage from "Pages/PageLocations";
-import RacesPage from "Pages/PageRaces";
-import HomebrewsPage from "Pages/PageHomebrews";
-import PricingPage from "Pages/PageCommonPricing";
-import ToolsPage from "Pages/PageTools";
-import GetCrumbs from "./NavigationCrumb";
-import CalendarPage from "Pages/PageCalendar";
-import SimpleContent from "./SimpleCon";
-import LanguagesPage from "Pages/PageLanguages";
-import { useState } from "react";
+//Instead of importing all pages at the beginning, this dynamical importing can help reduce the initial bundle size.
+const CommonLorePage = React.lazy(() => import("Pages/PageCommonLore"));
+const DeitiesPage = React.lazy(() => import("Pages/PageDeities"));
+const TablesPage = React.lazy(() => import("Pages/PageTables"));
+const LibraryPage = React.lazy(() => import("Pages/PageLibrary"));
+const MapLegendPage = React.lazy(() => import("Pages/PageMapLegend"));
+const MapOverlayPage = React.lazy(() => import("Pages/PageMapOverlay"));
+const LocationsPage = React.lazy(() => import("Pages/PageLocations"));
+const RacesPage = React.lazy(() => import("Pages/PageRaces"));
+const HomebrewsPage = React.lazy(() => import("Pages/PageHomebrews"));
+const PricingPage = React.lazy(() => import("Pages/PageCommonPricing"));
+const ToolsPage = React.lazy(() => import("Pages/PageTools"));
+const GetCrumbs = React.lazy(() => import("./NavigationCrumb"));
+const CalendarPage = React.lazy(() => import("Pages/PageCalendar"));
+const SimpleContent = React.lazy(() => import("./SimpleCon"));
+const LanguagesPage = React.lazy(() => import("Pages/PageLanguages"));
 
 type MenuItem = Required<MenuProps>["items"][number];
 
@@ -87,7 +87,8 @@ const loadPage = (menuItem: any) => {
     default:
       break;
   }
-  render(ele, document.getElementById("PageContent"));
+  //Handles the React Suspense component for lazy-loaded pages, otherwise app will crash since it's not async.
+  render(<Suspense fallback={<Skeleton active />}>{ele}</Suspense>, document.getElementById("PageContent"));
 
   const url = `/${eleLabel}`;
   window.history.pushState({ path: url }, "", url);
