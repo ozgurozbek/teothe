@@ -1,25 +1,26 @@
+"use client"
+
 import React, { useState, Suspense } from "react";
 import { render } from "react-dom";
 import { Menu, Image, Card, Skeleton } from "antd";
 import type { MenuProps } from "antd";
 
 //Instead of importing all pages at the beginning, this dynamical importing can help reduce the initial bundle size.
-const CommonLorePage = React.lazy(() => import("Pages/PageCommonLore"));
-const DeitiesPage = React.lazy(() => import("Pages/PageDeities"));
-const TablesPage = React.lazy(() => import("Pages/PageTables"));
-const LibraryPage = React.lazy(() => import("Pages/PageLibrary"));
-const MapLegendPage = React.lazy(() => import("Pages/PageMapLegend"));
-const MapOverlayPage = React.lazy(() => import("Pages/PageMapOverlay"));
-const LocationsPage = React.lazy(() => import("Pages/PageLocations"));
-const RacesPage = React.lazy(() => import("Pages/PageRaces"));
-const HomebrewsPage = React.lazy(() => import("Pages/PageHomebrews"));
-const PricingPage = React.lazy(() => import("Pages/PageCommonPricing"));
-const ToolsPage = React.lazy(() => import("Pages/PageTools"));
+const CommonLorePage = React.lazy(() => import("@/app/common-lore/page"));
+const DeitiesPage = React.lazy(() => import("@/app/deities/page"));
+const TablesPage = React.lazy(() => import("@/app/tables/page"));
+const LibraryPage = React.lazy(() => import("@/app/library/page"));
+const MapLegendPage = React.lazy(() => import("@/app/map-legend/page"));
+const MapOverlayPage = React.lazy(() => import("@/app/map-overlay/page"));
+const LocationsPage = React.lazy(() => import("@/app/locations/page"));
+const RacesPage = React.lazy(() => import("@/app/races/page"));
+const HomebrewsPage = React.lazy(() => import("@/app/homebrews/page"));
+const PricingPage = React.lazy(() => import("@/app/pricing/page"));
+const ToolsPage = React.lazy(() => import("@/app/tools/page"));
+const CalendarPage = React.lazy(() => import("@/app/calendar/page"));
+const LanguagesPage = React.lazy(() => import("@/app/languages/page"));
 const GetCrumbs = React.lazy(() => import("./NavigationCrumb"));
-const CalendarPage = React.lazy(() => import("Pages/PageCalendar"));
 const SimpleContent = React.lazy(() => import("./SimpleCon"));
-const LanguagesPage = React.lazy(() => import("Pages/PageLanguages"));
-
 type MenuItem = Required<MenuProps>["items"][number];
 
 /**
