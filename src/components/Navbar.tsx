@@ -1,26 +1,14 @@
-"use client"
+"use client";
 
-import React, { useState, Suspense } from "react";
+import React, { useState } from "react";
 import { render } from "react-dom";
-import { Menu, Image, Card, Skeleton } from "antd";
+import { Menu, Image, Card } from "antd";
 import type { MenuProps } from "antd";
+import { useRouter } from "next/navigation";
 
-//Instead of importing all pages at the beginning, this dynamical importing can help reduce the initial bundle size.
-const CommonLorePage = React.lazy(() => import("@/app/common-lore/page"));
-const DeitiesPage = React.lazy(() => import("@/app/deities/page"));
-const TablesPage = React.lazy(() => import("@/app/tables/page"));
-const LibraryPage = React.lazy(() => import("@/app/library/page"));
-const MapLegendPage = React.lazy(() => import("@/app/map-legend/page"));
-const MapOverlayPage = React.lazy(() => import("@/app/map-overlay/page"));
-const LocationsPage = React.lazy(() => import("@/app/locations/page"));
-const RacesPage = React.lazy(() => import("@/app/races/page"));
-const HomebrewsPage = React.lazy(() => import("@/app/homebrews/page"));
-const PricingPage = React.lazy(() => import("@/app/pricing/page"));
-const ToolsPage = React.lazy(() => import("@/app/tools/page"));
-const CalendarPage = React.lazy(() => import("@/app/calendar/page"));
-const LanguagesPage = React.lazy(() => import("@/app/languages/page"));
-const GetCrumbs = React.lazy(() => import("./NavigationCrumb"));
-const SimpleContent = React.lazy(() => import("./SimpleCon"));
+import GetCrumbs from "./NavigationCrumb";
+import SimpleContent from "./SimpleCon";
+
 type MenuItem = Required<MenuProps>["items"][number];
 
 /**
@@ -30,69 +18,36 @@ type MenuItem = Required<MenuProps>["items"][number];
  * @returns React Element
  */
 const loadPage = (menuItem: any) => {
-  let ele = <></>;
-  let eleLabel = "";
   switch (menuItem.key) {
     case "1":
-      ele = <CommonLorePage />;
-      eleLabel = "common-lore"
-      break;
+      return "common-lore";
     case "2":
-      ele = <LocationsPage />;
-      eleLabel = "planes"
-      break;
+      return "planes";
     case "3":
-      ele = <DeitiesPage />;
-      eleLabel = "deities"
-      break;
+      return "deities";
     case "4":
-      ele = <RacesPage />;
-      eleLabel = "races"
-      break;
+      return "races";
     case "5":
-      ele = <TablesPage />;
-      eleLabel = "tables"
-      break;
+      return "tables";
     case "6":
-      ele = <LibraryPage />;
-      eleLabel = "library"
-      break;
+      return "library";
     case "7":
-      ele = <PricingPage />;
-      eleLabel = "pricing"
-      break;
+      return "pricing";
     case "8":
-      ele = <ToolsPage />;
-      eleLabel = "tools"
-      break;
+      return "tools";
     case "9":
-      ele = <HomebrewsPage />;
-      eleLabel = "homebrews"
-      break;
+      return "homebrews";
     case "10":
-      ele = <MapOverlayPage />;
-      eleLabel = "map-overlay"
-      break;
+      return "map-overlay";
     case "11":
-      ele = <MapLegendPage />;
-      eleLabel = "map-legend"
-      break;
+      return "map-legend";
     case "12":
-      ele = <CalendarPage />;
-      eleLabel = "calendar"
-      break;
+      return "calendar";
     case "13":
-      ele = <LanguagesPage />;
-      eleLabel = "languages"
-      break;
+      return "languages";
     default:
-      break;
+      return ""; //Redirects to /
   }
-  //Handles the React Suspense component for lazy-loaded pages, otherwise app will crash since it's not async.
-  render(<Suspense fallback={<Skeleton active />}>{ele}</Suspense>, document.getElementById("PageContent"));
-
-  const url = `/${eleLabel}`;
-  window.history.pushState({ path: url }, "", url);
 };
 
 /**
@@ -144,6 +99,7 @@ function getIcon(pageName: string) {
  * @returns Navbar div>div>Image(antd)+Menu(antd)
  */
 export default function Navbar() {
+  const router = useRouter();
   const [selectedKeys, setselectedKeys] = useState<Array<string>>([]);
 
   return (
@@ -186,8 +142,8 @@ export default function Navbar() {
         />
         <Menu
           onClick={(e) => {
-            loadPage(e);
             setselectedKeys([e.key]);
+            router.push(loadPage(e));
           }}
           selectedKeys={selectedKeys}
           theme="dark"
