@@ -9,7 +9,7 @@
 - [ ] Fix global and custom css
 - [ ] Remove redundant global and custom css, or carry them over to tailwind wherever possible
 - [ ] Fix caret positioning
-- [ ] PWA remove forced landscape
+- [x] PWA remove forced landscape
 - [ ] Update function definitions
 - [ ] Navbar doesn't appear selected when directed from URL
 - [ ] Rewrite pageUpdateCalendar
