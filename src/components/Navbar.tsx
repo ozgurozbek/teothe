@@ -29,51 +29,68 @@ type MenuItem = Required<MenuProps>["items"][number];
  * @returns React Element
  */
 const loadPage = (menuItem: any) => {
-  let Ele = <></>;
+  let ele = <></>;
+  let eleLabel = "";
   switch (menuItem.key) {
     case "1":
-      Ele = <CommonLorePage />;
+      ele = <CommonLorePage />;
+      eleLabel = "common-lore"
       break;
     case "2":
-      Ele = <LocationsPage />;
+      ele = <LocationsPage />;
+      eleLabel = "planes"
       break;
     case "3":
-      Ele = <DeitiesPage />;
+      ele = <DeitiesPage />;
+      eleLabel = "deities"
       break;
     case "4":
-      Ele = <RacesPage />;
+      ele = <RacesPage />;
+      eleLabel = "races"
       break;
     case "5":
-      Ele = <TablesPage />;
+      ele = <TablesPage />;
+      eleLabel = "tables"
       break;
     case "6":
-      Ele = <LibraryPage />;
+      ele = <LibraryPage />;
+      eleLabel = "library"
       break;
     case "7":
-      Ele = <PricingPage />;
+      ele = <PricingPage />;
+      eleLabel = "pricing"
       break;
     case "8":
-      Ele = <ToolsPage />;
+      ele = <ToolsPage />;
+      eleLabel = "tools"
       break;
     case "9":
-      Ele = <HomebrewsPage />;
+      ele = <HomebrewsPage />;
+      eleLabel = "homebrews"
       break;
     case "10":
-      Ele = <MapOverlayPage />;
+      ele = <MapOverlayPage />;
+      eleLabel = "map-overlay"
       break;
     case "11":
-      Ele = <MapLegendPage />;
+      ele = <MapLegendPage />;
+      eleLabel = "map-legend"
       break;
     case "12":
-      Ele = <CalendarPage />;
+      ele = <CalendarPage />;
+      eleLabel = "calendar"
       break;
     case "13":
-      Ele = <LanguagesPage />;
+      ele = <LanguagesPage />;
+      eleLabel = "languages"
       break;
     default:
       break;
   }
-  render(Ele, document.getElementById("PageContent"));
+  render(ele, document.getElementById("PageContent"));
+
+  const url = `/${eleLabel}`;
+  window.history.pushState({ path: url }, "", url);
 };
 
 /**
@@ -126,6 +143,7 @@ function getIcon(pageName: string) {
  */
 export default function Navbar() {
   const [selectedKeys, setselectedKeys] = useState<Array<string>>([]);
+
   return (
     <div className="bg-[#090d12] w-full inline-flex h-16">
       <div className="flex w-full">
@@ -139,6 +157,7 @@ export default function Navbar() {
           }}
           preview={false}
           onClick={() => {
+            window.history.pushState({ path: "/" }, "", "/");
             setselectedKeys([]);
             render(
               <>
