@@ -1,15 +1,28 @@
 # TODO
 
+## 2.0
+
+- [ ] When minimized, menu always shows the tab name after clicking it
+- [ ] CalendarTable responsive cell coloring idea bounce (probably needs a bit of a rewrite based on some responsive conditions or cellnumber == even type stuff) (I think giving each cell a border and fixing their background color is easier. I don't want it to turn more into a spaghetti)
+- [x] More internal links, lets redirect each button to its page if you want instead of rendering all in some content area, so not a Single Page App
+- [x] Proper APP/ Routing
+- [ ] Fix global and custom css
+- [ ] Remove redundant global and custom css, or carry them over to tailwind wherever possible
+- [ ] Fix caret positioning
+- [ ] PWA remove forced landscape
+- [ ] Update function definitions
+- [ ] Navbar doesn't appear selected when directed from URL
+- [ ] Rewrite pageUpdateCalendar
+
+- [-] (1.3.2) share on discord button would be nice
+
 ## 1.4
 
 - [x] Fix navbar height and text size
 - [x] Fix navbar active tab display style
 - [x] Fix navbar build errors
-- [ ] When minimized, menu always shows the tab name after clicking it
 - [x] Menu always shows the active tab after clicking main image
-- [ ] PWA (Web app manifest or service worker do not meet the installability requirements, Failures: No manifest was fetched.)
-- [ ] CalendarTable responsive cell coloring idea bounce (probably needs a bit of a rewrite based on some responsive conditions or cellnumber == even type stuff) (I think giving each cell a border and fixing their background color is easier. I don't want it to turn more into a spaghetti)
-- [ ] More internal links, lets redirect each button to its page if you want instead of rendering all in some content area, so not a Single Page App
+- [x] PWA (Web app manifest or service worker do not meet the installability requirements, Failures: No manifest was fetched.)
 - [x] Fix deities page to fetch only once - it already fetches once because of NextJS
 
 ## 1.3.2
