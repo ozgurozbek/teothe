@@ -115,7 +115,6 @@ export default function Navbar() {
           }}
           preview={false}
           onClick={() => {
-            window.history.pushState({ path: "/" }, "", "/");
             setselectedKeys([]);
             render(
               <>
