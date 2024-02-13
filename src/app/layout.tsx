@@ -1,6 +1,7 @@
 import "App/globals.css";
 import { Inter } from "next/font/google";
 import Script from "next/script";
+import RootLayoutProvider from "./layoutProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-      <meta charSet="utf-8" />
+        <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="manifest" href="/manifest.json" />
         <link
@@ -44,7 +45,7 @@ export default function RootLayout({
         id="layout-body"
         className={"opacity-0 text-white " + inter.className}
       >
-        {children}
+        <RootLayoutProvider>{children}</RootLayoutProvider>
       </body>
       <Script id="opacity-script">
         document.getElementById(&quot;layout-body&quot;).classList.remove(&quot;opacity-0&quot;);
