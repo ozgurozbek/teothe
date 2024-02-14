@@ -3,7 +3,7 @@ const withPWA = require("next-pwa")({
 });
 
 const nextConfig = {
-  output: "export",
+  output: "standalone", //Optimization in Calendar fails in Export, hence to be able to build...
   experimental: {
     nextScriptWorkers: false,
   },

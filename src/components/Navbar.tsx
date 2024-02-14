@@ -5,6 +5,7 @@ import { render } from "react-dom";
 import { Menu, Image, Card } from "antd";
 import type { MenuProps } from "antd";
 import { useRouter } from "next/navigation";
+import NextImage from "next/image"; //Because its not default I can rename my import. So good.
 
 import GetCrumbs from "./NavigationCrumb";
 import SimpleContent from "./SimpleCon";
@@ -84,13 +85,14 @@ function getItem(
  */
 function getIcon(pageName: string) {
   return (
-    <img
+    <NextImage
       className="transition-all"
       width={20}
+      height={20}
       src={"./Icons/SideNav/" + pageName + ".svg"}
       alt={pageName + " Icon"}
       draggable={false}
-    ></img>
+    ></NextImage>
   );
 }
 
