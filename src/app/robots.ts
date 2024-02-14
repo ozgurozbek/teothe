@@ -1,4 +1,6 @@
 import { MetadataRoute } from 'next'
+
+const sitemapUrl = 'https://teothe.com/sitemap.xml'; //Not sure if ./ or / works on this url
  
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -8,6 +10,6 @@ export default function robots(): MetadataRoute.Robots {
       //disallow: '/private/',
       crawlDelay: 5,
     },
-    //sitemap: 'add sitemap.xml if converted from SPA-like to next router pages.',
+    sitemap: sitemapUrl
   }
 }
