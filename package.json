@@ -1,6 +1,6 @@
 {
-  "name": "template-app",
-  "version": "0.1.0",
+  "name": "teothe",
+  "version": "2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
