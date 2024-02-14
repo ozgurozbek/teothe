@@ -2,12 +2,13 @@
 
 ## 2.0
 
+- [ ] SEO for pages now that they exist independently
 - [ ] When minimized, menu always shows the tab name after clicking it
 - [ ] CalendarTable responsive cell coloring idea bounce (probably needs a bit of a rewrite based on some responsive conditions or cellnumber == even type stuff) (I think giving each cell a border and fixing their background color is easier. I don't want it to turn more into a spaghetti)
 - [x] More internal links, lets redirect each button to its page if you want instead of rendering all in some content area, so not a Single Page App
 - [x] Proper APP/ Routing
 - [ ] Fix global and custom css
-- [ ] Remove redundant global and custom css, or carry them over to tailwind wherever possible
+- [-] Remove redundant global and custom css, or carry them over to tailwind wherever possible. https://github.com/ant-design/ant-design/issues/38975
 - [ ] Fix caret positioning
 - [x] PWA remove forced landscape
 - [ ] Update function definitions
