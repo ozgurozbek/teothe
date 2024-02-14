@@ -60,12 +60,20 @@ li:active,
   background-color: #630436 !important;
 }
 .ant-menu > li:not(.ant-menu-item-selected).ant-menu-item:hover {
-  background: rgb(9,13,18) !important;
-  background: linear-gradient(180deg, rgba(9,13,18,1) 70%, rgba(99,4,54,1) 100%) !important;
+  background: rgb(9, 13, 18) !important;
+  background: linear-gradient(
+    180deg,
+    rgba(9, 13, 18, 1) 70%,
+    rgba(99, 4, 54, 1) 100%
+  ) !important;
 }
 .ant-menu-item-selected {
-  background: rgb(9,13,18) !important;
-  background: linear-gradient(180deg, rgba(9,13,18,1) 60%, rgba(99,4,54,1) 90%) !important;
+  background: rgb(9, 13, 18) !important;
+  background: linear-gradient(
+    180deg,
+    rgba(9, 13, 18, 1) 60%,
+    rgba(99, 4, 54, 1) 90%
+  ) !important;
 }
 h1,
 h2,
@@ -109,7 +117,4 @@ footer > a {
 }
 ::selection {
   background: #30011a;
-}
-.white-placeholder::placeholder {
-  color: white !important;
 }
