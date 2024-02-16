@@ -4,8 +4,8 @@ const { Title } = Typography;
 
 /**
  * For basic static text or image content. Images are full-width.
- * @tutorial 
- * @param contentProps 
+ * @tutorial
+ * @param contentProps
  * @returns Title, if Image(antd), if text
  */
 export default function SimpleContent({
@@ -21,6 +21,11 @@ export default function SimpleContent({
   if (contentProps.text) {
     for (let i = 0; i < contentProps.text.length; i++) {
       textData.push(<p className="mb-2">{contentProps.text[i]}</p>);
+      textData.push(
+        <p key={i} className="mb-2">
+          {contentProps.text[i]}
+        </p>
+      );
     }
   }
 

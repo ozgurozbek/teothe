@@ -9,9 +9,9 @@ export default function GetCrumbs({ path }: { path: string }) {
   var result = [];
   for (let i = 0; i < data.length; i++) {
     if (i > 0) {
-      result.push(<span> / {data[i]}</span>);
+      result.push(<span key={i}> / {data[i]}</span>);
     } else {
-      result.push(<span className="text-slate-400"> / {data[i]}</span>);
+      result.push(<span key={i} className="text-slate-400"> / {data[i]}</span>);
     }
   }
 
