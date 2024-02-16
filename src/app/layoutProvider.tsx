@@ -3,8 +3,27 @@
 import { CaretUpOutlined } from "@ant-design/icons";
 import { ConfigProvider, Layout, theme } from "antd";
 import Navbar from "Comp/Navbar";
+import Script from "next/script";
 
 const { Header, Content, Footer } = Layout;
+
+export const scrollTo = (id: string) => {
+  const offset = 100;
+
+  const element: any = document.getElementById(id);
+  if (!element) {
+    window.location.href = `/#${id}`;
+  }
+  const bodyRect = document.body.getBoundingClientRect().top;
+  const elementRect = element.getBoundingClientRect().top;
+  const elementPosition = elementRect - bodyRect;
+  const offsetPosition = elementPosition - offset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth",
+  });
+};
 
 /**
  * returns the main html page as layout. Imports external JS and CSS libraries. Provides html head tags.
@@ -103,6 +122,31 @@ export default function RootLayoutProvider({
         >
           <CaretUpOutlined />
         </div>
+        <Script
+          id="hashChangeScroller"
+          strategy="afterInteractive"
+          // dangerouslySetInnerHTML={{
+          //   __html: `window.onload = () => {
+          //       const handleHashChange = () => {
+          //         const { hash } = window.location;
+          //         console.log("Logged Hash: "+hash)
+          //         if (hash) {
+          //           const targetElement = document.querySelector(hash);
+          //           if (targetElement) {
+          //             targetElement.scrollIntoView({ behavior: "smooth" });
+          //           }
+          //         }
+          //       };
+          // 
+          //       handleHashChange(); // Scroll to section on initial load
+          // 
+          //       // Listen for hash changes and scroll to the section
+          //       window.addEventListener("hashchange", handleHashChange);
+          // 
+          //     };
+          //   `,
+          // }}
+        ></Script>
       </Layout>
     </ConfigProvider>
   );

@@ -1,4 +1,5 @@
 import { Typography, Image } from "antd";
+import { LinkOutlined } from "@ant-design/icons";
 
 const { Title } = Typography;
 
@@ -20,7 +21,6 @@ export default function SimpleContent({
   let textData = [];
   if (contentProps.text) {
     for (let i = 0; i < contentProps.text.length; i++) {
-      textData.push(<p className="mb-2">{contentProps.text[i]}</p>);
       textData.push(
         <p key={i} className="mb-2">
           {contentProps.text[i]}
@@ -31,7 +31,10 @@ export default function SimpleContent({
 
   return (
     <section>
-      <Title>{contentProps.title}</Title>
+      <Title id={contentProps.title.replaceAll(" ", "-").toLowerCase()}>
+        {contentProps.title}{" "}
+        <LinkOutlined className="cursor-pointer hover:text-white text-[#630436] hover:underline transition" onClick={()=>{navigator.clipboard.writeText(window.location.href.split("#")[0]+"#"+contentProps.title.replaceAll(" ", "-").toLowerCase())}} />
+      </Title>
       {contentProps.image?.src && (
         <Image
           rootClassName="w-full"
