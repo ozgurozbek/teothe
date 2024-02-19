@@ -1,9 +1,10 @@
 "use client";
 
-import { CaretUpOutlined } from "@ant-design/icons";
+import { CaretUpOutlined, CopyOutlined } from "@ant-design/icons";
 import { ConfigProvider, Layout, theme } from "antd";
 import Navbar from "Comp/Navbar";
 import Script from "next/script";
+import { useEffect } from "react";
 
 const { Header, Content, Footer } = Layout;
 
@@ -39,6 +40,10 @@ export default function RootLayoutProvider({
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
+
+  function copyToClipboard() {
+    navigator.clipboard.writeText(window.location.href);
+  }  
 
   return (
     <ConfigProvider
@@ -122,31 +127,12 @@ export default function RootLayoutProvider({
         >
           <CaretUpOutlined />
         </div>
-        <Script
-          id="hashChangeScroller"
-          strategy="afterInteractive"
-          // dangerouslySetInnerHTML={{
-          //   __html: `window.onload = () => {
-          //       const handleHashChange = () => {
-          //         const { hash } = window.location;
-          //         console.log("Logged Hash: "+hash)
-          //         if (hash) {
-          //           const targetElement = document.querySelector(hash);
-          //           if (targetElement) {
-          //             targetElement.scrollIntoView({ behavior: "smooth" });
-          //           }
-          //         }
-          //       };
-          // 
-          //       handleHashChange(); // Scroll to section on initial load
-          // 
-          //       // Listen for hash changes and scroll to the section
-          //       window.addEventListener("hashchange", handleHashChange);
-          // 
-          //     };
-          //   `,
-          // }}
-        ></Script>
+        <div
+          className="w-12 h-12 rounded-full bg-[#630436] hover:bg-[#30011a] fixed bottom-20 right-4 transition-all flex items-center justify-center text-3xl"
+          onClick={copyToClipboard}
+        >
+          <CopyOutlined />
+        </div>
       </Layout>
     </ConfigProvider>
   );
