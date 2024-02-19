@@ -1,3 +1,5 @@
+"use client"
+
 import { Card, Divider, Skeleton } from "antd";
 import Deity from "Comp/commonlore/Deities";
 import GetCrumbs from "Comp/NavigationCrumb";

@@ -1,3 +1,5 @@
+"use client"
+
 import GetCrumbs from "@/components/NavigationCrumb";
 import RacesCon from "@/components/races/RacesCon";
 import { Card, Divider, Skeleton, Space, Switch } from "antd";
@@ -65,7 +67,7 @@ export default function RacesPage() {
   }
 
   return (
-    <>
+    <section>
       <GetCrumbs path={"Teothe3K,Races"} />
       
       <Space className="float-right">
@@ -80,6 +82,6 @@ export default function RacesPage() {
         {" "}
       </div></Space>
       <Card bordered={false}>{GetRaces(brew, official)}</Card>
-    </>
+    </section>
   );
 }

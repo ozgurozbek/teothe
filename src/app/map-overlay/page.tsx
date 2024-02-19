@@ -1,3 +1,5 @@
+"use client"
+
 import { Button, Card, Divider, Image, Space, Tooltip } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import SimpleContent from "@/components/SimpleCon";

@@ -1,3 +1,5 @@
+"use client"
+
 import { Card, Divider } from "antd";
 import GetCrumbs from "@/components/NavigationCrumb";
 import SimpleContent from "@/components/SimpleCon";

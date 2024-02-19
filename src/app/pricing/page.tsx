@@ -1,3 +1,5 @@
+"use client"
+
 import { Card, Skeleton } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import useSWR from "swr";

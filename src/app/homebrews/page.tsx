@@ -1,3 +1,5 @@
+"use client";
+
 import GetCrumbs from "@/components/NavigationCrumb";
 import SimpleContent from "@/components/SimpleCon";
 import { Card, Divider, Skeleton } from "antd";
@@ -7,7 +9,7 @@ import useSWR from "swr";
  * The array elements are stylized here.
  * Fetches all homebrew entries from the backend then categorizes it in FE.
  * @backend fetch
- * @param category 
+ * @param category
  * @returns Array of li elements
  */
 function GetHomebrews(category: string) {
@@ -33,7 +35,7 @@ function GetHomebrews(category: string) {
         first = false;
       } else {
         renderedEntries.push(
-          <li className="hover:bg-[#630436] py-4 border-t border-[#e5e7eb]">
+          <li className="hover:bg-[#630436] py-4 border-t border-[#33373b]">
             {item[1]}
           </li>
         );
