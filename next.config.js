@@ -7,6 +7,7 @@ const withPWA = require("next-pwa")({
 
 const nextConfig = {
   output: "export",
+  //images: { unoptimized: true }, // Error: Image Optimization using the default loader is not compatible with `{ output: 'export' }`. Next.js (13.5.6) is outdated.
   experimental: {
     nextScriptWorkers: false,
   },

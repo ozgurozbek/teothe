@@ -21,7 +21,7 @@ type MenuItem = Required<MenuProps>["items"][number];
 function getItem(
   label: React.ReactNode,
   key: React.Key,
-  href: string,
+  href: string | undefined,
   icon?: React.ReactNode,
   element?: React.ReactElement,
   children?: MenuItem[]
@@ -30,7 +30,7 @@ function getItem(
     key,
     icon,
     children,
-    label: <Link href={"/" + href}>{label}</Link>,
+    label: href ? <Link href={"/" + href}>{label}</Link> : label,
     element,
   } as MenuItem;
 }
@@ -47,7 +47,7 @@ function getIcon(pageName: string) {
       className="transition-all"
       width={20}
       height={20}
-      src={"./Icons/SideNav/" + pageName + ".svg"}
+      src={"/Icons/SideNav/" + pageName + ".svg"}
       alt={pageName + " Icon"}
       draggable={false}
     ></NextImage>
@@ -114,7 +114,7 @@ export default function Navbar() {
           }}
         >
           <Image
-            src="./teothe3K.png"
+            src="/teothe3K.png"
             alt=" Teothe3K Icon"
             style={{
               width: "120px",
