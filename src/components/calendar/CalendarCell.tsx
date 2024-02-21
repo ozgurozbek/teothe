@@ -1,4 +1,10 @@
+"use client";
+
 import Image from "next/image";
+
+const imageLoader = ( {src} : {src:string} ) => {
+  return "https://teothe.com/Icons/Calendar/"+src+".png";
+};
 
 /**
  * Generates cell data from props passed in CalendarTable. It has 2 of both date and image since one is used for blue and moon is also inverted. Holidays are coloured pink, Session Notes are coloured green. Session notes are split by " --- " and used in title because entries added by Boteculus discord bot is tagged with the user name that added it.
@@ -10,7 +16,7 @@ export default function CalendarCell({
 }: {
   cellProps: {
     dayNumber: number;
-    moonPhase?: string;
+    moonPhase: string;
     holiday?: string[];
     sessionNote?: string;
   };
@@ -33,17 +39,21 @@ export default function CalendarCell({
       <div className="h-8">
         <div>
           <Image
+            //@ts-ignore
+            loader={imageLoader}
             className="h-6 absolute invert blur-sm"
             title={cellProps.moonPhase}
-            src={"/Icons/Calendar/" + cellProps.moonPhase + ".png"}
+            src={cellProps.moonPhase.replace(" ", "%20")}
             alt={`${cellProps.moonPhase}`}
             height={24}
             width={24}
           />
           <Image
+            //@ts-ignore            
+            loader={imageLoader}
             className="h-6 mix-blend-multiply absolute"
             title={cellProps.moonPhase}
-            src={"/Icons/Calendar/" + cellProps.moonPhase + ".png"}
+            src={cellProps.moonPhase.replace(" ", "%20")}
             alt={`${cellProps.moonPhase}`}
             height={24}
             width={24}
