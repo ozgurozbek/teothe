@@ -14,7 +14,7 @@ import useSWR from "swr";
 function GetPlanes() {
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
-    "https://teothe.pythonanywhere.com/getPlanes",
+    "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getPlanes",
     fetcher
   );
   if (error) {

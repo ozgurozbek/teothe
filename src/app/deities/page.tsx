@@ -16,7 +16,7 @@ import useSWR from "swr";
 function GetDeities(rank: string) {
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
-    "https://teothe.pythonanywhere.com/getDeities",
+    "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getDeities",
     fetcher
   );
   if (error) {
@@ -27,14 +27,14 @@ function GetDeities(rank: string) {
 
   let renderedDeities = [];
   for (let item of data) {
-    if (item[0] === rank) {
+    if (item.deityTitle === rank) {
       renderedDeities.push(
         <Deity
-          imageSrc={"./Deities/" + item[1] + ".png"}
+          imageSrc={"./Deities/" + item.deityName + ".png"}
           descriptionProps={{
-            title: item[1],
-            body: item[2],
-            domain: item[3],
+            title: item.deityName,
+            body: item.deityText,
+            domain: item.deityDomains,
           }}
         />
       );

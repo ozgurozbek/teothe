@@ -45,7 +45,7 @@ export default function CalendarNoteUpdatePage() {
     if (tableNo && monthName && dayNumber >= 1 && dayNumber <= 48) {
       try {
         const response = await fetch(
-          "https://teothe.pythonanywhere.com/getSessionNotes?table=" +
+          "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getSessionNotes?table=" +
             tableNo +
             "&year=" +
             yearCount +
@@ -97,7 +97,7 @@ export default function CalendarNoteUpdatePage() {
       dayNumber <= 48 &&
       textInputText
     ) {
-      const endpoint = `https://teothe.pythonanywhere.com/setSessionNotes?table=${tableNo}&year=${yearCount}&month=${monthName}&date=${dayNumber}&entry=${encodeURIComponent(
+      const endpoint = `https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/setSessionNotes?table=${tableNo}&year=${yearCount}&month=${monthName}&date=${dayNumber}&entry=${encodeURIComponent(
         textInputText.replaceAll(" ", "_") + "_---_" + userName //_---_ is being split in the FE when fetching from BE on main Calendar page to generate titles on hover.
       )}`;
 

@@ -16,7 +16,7 @@ import { useState } from "react";
 function GetRaces(brewCheck: boolean, officialCheck: boolean) {
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
-    "https://teothe.pythonanywhere.com/getRaces",
+    "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getRaces",
     fetcher
   );
   if (error) {

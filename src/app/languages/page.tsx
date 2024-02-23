@@ -61,7 +61,7 @@ export default function LanguagesPage() {
   useEffect(() => {
     (args: RequestInfo) => fetch(args).then((res) => res.json());
 
-    fetch("https://teothe.pythonanywhere.com/getLanguages?head=True")
+    fetch("https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getLanguages?head=True")
       .then((res) => res.json())
       .then((langItemsData) => {
         const langListTemp = langItemsData.map((item: string) => ({
@@ -79,7 +79,7 @@ export default function LanguagesPage() {
   useEffect(() => {
     (args: RequestInfo) => fetch(args).then((res) => res.json());
 
-    fetch("https://teothe.pythonanywhere.com/getLanguages?lang=" + curLang)
+    fetch("https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getLanguages?lang=" + curLang)
       .then((res) => res.json())
       .then((data) => {
         setData(data);

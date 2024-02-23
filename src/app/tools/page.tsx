@@ -22,7 +22,7 @@ interface DataType {
 function GetTableData() {
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
-    "https://teothe.pythonanywhere.com/getTools",
+    "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getTools",
     fetcher
   );
   if (error) {

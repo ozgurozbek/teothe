@@ -16,7 +16,7 @@ import Link from "next/link";
 function GetMapLegend() {
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
-    "https://teothe.pythonanywhere.com/getMapRes",
+    "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getMapRes",
     fetcher
   );
   if (error) {
