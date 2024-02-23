@@ -30,8 +30,8 @@ function GetPlanes() {
         <Location
           imageSrc={"./Planes/" + item[0] + ".png"}
           locationProps={{
-            name: item[0],
-            description: item[1],
+            name: item.planeName,
+            description: item.planeDescription,
           }}
         />
       );

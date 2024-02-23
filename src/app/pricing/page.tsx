@@ -73,13 +73,8 @@ function GetTableData() {
     }
   );
 
-  let dataSource = [];
-  for (let rowData of data) {
-    let item: any = {};
-    item["item"] = rowData[0];
-    item["cost"] = rowData[1];
-    dataSource.push(item);
-  }
+  let dataSource = data;
+  
   return (
     <>
       <SimpleContent

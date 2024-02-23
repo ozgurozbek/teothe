@@ -32,14 +32,14 @@ function GetRaces(brewCheck: boolean, officialCheck: boolean) {
         <>
           <RacesCon
             RacePic={{
-              src: "./Races/" + item[0] + ".png",
-              alt: item[0] + " image",
-              phrase: item[1],
+              src: "./Races/" + item.name + ".png",
+              alt: item.name + " image",
+              phrase: item.phrase,
             }}
             DescriptionText={{
-              title: item[0],
-              paragraph: officialCheck ? item[2].split("_") : "",
-              homebrew: brewCheck ? item[3].split("_") : "",
+              title: item.name,
+              paragraph: officialCheck ? item.description.split("_") : "",
+              homebrew: brewCheck ? item.homebrew.split("_") : "",
             }}
           />
           <Divider />
