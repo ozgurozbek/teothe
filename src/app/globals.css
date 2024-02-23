@@ -117,4 +117,9 @@ footer > a {
 }
 ::selection {
   background: #30011a;
+  color: white;
+}
+.ant-table-thead th {
+  background-color: white !important;
+  color: black !important;
 }

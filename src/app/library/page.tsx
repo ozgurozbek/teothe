@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import GetCrumbs from "@/components/NavigationCrumb";
 import GetBook from "@/components/library/GetBook";
@@ -97,7 +97,7 @@ export default function LibraryPage() {
             name: "Dated; Myth of Creation",
           }}
         />
-        <Divider style={{ borderColor: "white" }} />
+        <Divider />
         <Title level={2}>Teothe</Title>
         <GetBook
           bookProps={{
@@ -147,7 +147,7 @@ export default function LibraryPage() {
             name: "Poem on Akash",
           }}
         />
-        <Divider style={{ borderColor: "white" }} />
+        <Divider />
         <Title level={2}>Fiction</Title>
         <GetBook
           bookProps={{
@@ -179,7 +179,7 @@ export default function LibraryPage() {
             name: "Song Of Catastrophe",
           }}
         />
-        <Divider style={{ borderColor: "white" }} />
+        <Divider />
         <Title level={2}>Epipremnum</Title>
         <GetBook
           bookProps={{
@@ -193,7 +193,7 @@ export default function LibraryPage() {
             name: "Mirror of Erised",
           }}
         />
-        <Divider style={{ borderColor: "white" }} />
+        <Divider />
         <Title level={2}>Thaum</Title>
         <GetBook
           bookProps={{
@@ -207,7 +207,7 @@ export default function LibraryPage() {
             name: "Jeremiah's Cookbook",
           }}
         />
-        <Divider style={{ borderColor: "white" }} />
+        <Divider />
         <Title level={2}>Choll</Title>
         <GetBook
           bookProps={{

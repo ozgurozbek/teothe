@@ -1,10 +1,30 @@
 "use client";
 
-import { CaretUpOutlined } from "@ant-design/icons";
+import { CaretUpOutlined, CopyOutlined } from "@ant-design/icons";
 import { ConfigProvider, Layout, theme } from "antd";
 import Navbar from "Comp/Navbar";
+import Script from "next/script";
+import { useEffect } from "react";
 
 const { Header, Content, Footer } = Layout;
+
+export const scrollTo = (id: string) => {
+  const offset = 100;
+
+  const element: any = document.getElementById(id);
+  if (!element) {
+    window.location.href = `/#${id}`;
+  }
+  const bodyRect = document.body.getBoundingClientRect().top;
+  const elementRect = element.getBoundingClientRect().top;
+  const elementPosition = elementRect - bodyRect;
+  const offsetPosition = elementPosition - offset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth",
+  });
+};
 
 /**
  * returns the main html page as layout. Imports external JS and CSS libraries. Provides html head tags.
@@ -20,6 +40,10 @@ export default function RootLayoutProvider({
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
+
+  function copyToClipboard() {
+    navigator.clipboard.writeText(window.location.href);
+  }  
 
   return (
     <ConfigProvider
@@ -102,6 +126,12 @@ export default function RootLayoutProvider({
           onClick={goUp}
         >
           <CaretUpOutlined />
+        </div>
+        <div
+          className="w-12 h-12 rounded-full bg-[#630436] hover:bg-[#30011a] fixed bottom-20 right-4 transition-all flex items-center justify-center text-3xl"
+          onClick={copyToClipboard}
+        >
+          <CopyOutlined />
         </div>
       </Layout>
     </ConfigProvider>
