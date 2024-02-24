@@ -17,6 +17,11 @@ import { DownOutlined } from "@ant-design/icons";
 
 const { TextArea } = Input;
 
+/**
+ * Component for updating calendar notes. Allows users to input and update session notes for specific dates.
+ * @generator
+ * @returns The calendar note update page with input fields and buttons for updating and fetching data.
+ */
 export default function CalendarNoteUpdatePage() {
   const [monthName, setMonthName] = useState("Select Month");
   const [tableNo, setTableNo] = useState("Select Table");

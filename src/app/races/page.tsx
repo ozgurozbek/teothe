@@ -7,14 +7,20 @@ import useSWR from "swr";
 import { useState } from "react";
 
 /**
- * Fetches races data from the backend and uses local images
- * @backend fetch
- * @param brewCheck The state that controls whether homebrew content is turned on or off
- * @param officialCheck The state that controls whether official content is turned on or off
- * @returns RacesCon and Divider(antd) wrapped with <> 
+ * Function to fetch and render race data based on homebrew and official toggle switches.
+ * @param {boolean} brewCheck - Toggle switch for homebrew races.
+ * @param {boolean} officialCheck - Toggle switch for official races.
+ * @generator
+ * @see RacesCon
+ * @returns An array of rendered race components.
  */
 function GetRaces(brewCheck: boolean, officialCheck: boolean) {
-  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
+  /**
+     * Fetcher function for API requests.
+     * @param args - RequestInfo object containing information about the request.
+     * @returns Promise resolving to the parsed JSON response.
+     */
+    const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
     "https://teothe.pythonanywhere.com/getRaces",
     fetcher
@@ -51,8 +57,8 @@ function GetRaces(brewCheck: boolean, officialCheck: boolean) {
 }
 
 /**
- * Gathers every race and displays image, information and homebrew in a card. Homebrew is also controlled by a state that is reversed in the switch.
- * @returns GetCrumbs, div > Switch(antd), Card(antd)
+ * Component for the races page, displaying breadcrumbs, toggle switches for homebrew and official races, and a card containing race data.
+ * @returns The races page section with breadcrumbs, toggle switches, and race data.
  */
 export default function RacesPage() {
   const [brew, setBrewVis] = useState(true);

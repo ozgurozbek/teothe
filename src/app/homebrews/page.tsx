@@ -6,14 +6,18 @@ import { Card, Divider, Skeleton } from "antd";
 import useSWR from "swr";
 
 /**
- * The array elements are stylized here.
- * Fetches all homebrew entries from the backend then categorizes it in FE.
- * @backend fetch
- * @param category
- * @returns Array of li elements
+ * Function to get and render homebrew entries based on the specified category.
+ * @param category - The category of homebrew entries to fetch.
+ * @generator
+ * @returns Array of JSX elements representing the homebrew entries.
  */
 function GetHomebrews(category: string) {
-  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
+  /**
+     * Fetcher function for API requests.
+     * @param args - RequestInfo object containing information about the request.
+     * @returns Promise resolving to the parsed JSON response.
+     */
+    const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
     "https://teothe.pythonanywhere.com/getHomebrews",
     fetcher

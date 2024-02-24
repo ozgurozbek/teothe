@@ -27,6 +27,11 @@ import {
    * @returns Card(antd) wrapped by section
    */
   function GetAPICalendar() {
+    /**
+     * Fetcher function for API requests.
+     * @param args - RequestInfo object containing information about the request.
+     * @returns Promise resolving to the parsed JSON response.
+     */
     const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
     const { data, error } = useSWR(
       "https://teothe.pythonanywhere.com/getTables?tab=calendar",

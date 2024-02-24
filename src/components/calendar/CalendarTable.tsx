@@ -12,7 +12,12 @@ import useSWR from "swr";
  * @example {"11":"Entry 1", "12":"Entry 2", "13":"Entry 3"}
  */
 function GetSessionNotes(tableNo: string, year: string, month: string) {
-  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
+  /**
+     * Fetcher function for API requests.
+     * @param args - RequestInfo object containing information about the request.
+     * @returns Promise resolving to the parsed JSON response.
+     */
+    const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
     "https://teothe.pythonanywhere.com/getSessionNotes?table=" +
       tableNo +

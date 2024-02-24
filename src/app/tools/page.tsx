@@ -16,11 +16,17 @@ interface DataType {
 }
 
 /**
- * Fetches tool data from the backend
- * @returns SimpleContent, Table(antd): splits response JSON to tool, proficiency, allows
+ * Function to fetch and display player tool data from the API.
+ * @generator
+ * @returns The table displaying information about player tools.
  */
 function GetTableData() {
-  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
+  /**
+     * Fetcher function for API requests.
+     * @param args - RequestInfo object containing information about the request.
+     * @returns Promise resolving to the parsed JSON response.
+     */
+    const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
     "https://teothe.pythonanywhere.com/getTools",
     fetcher
@@ -86,6 +92,10 @@ function GetTableData() {
   );
 }
 
+/**
+ * Component for the tools page, displaying breadcrumbs and a card containing table data.
+ * @returns The tools page section with breadcrumbs and table data.
+ */
 export default function ToolsPage() {
   return (
     <section>

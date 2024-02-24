@@ -11,9 +11,9 @@ export const metadata = {
 };
 
 /**
- * returns the main html page as layout. Imports external JS and CSS libraries. Provides html head tags.
- * @param children
- * @returns html
+ * Root layout component that sets up the basic HTML structure with meta tags, links, and scripts.
+ * @param children - The content to be rendered inside the layout.
+ * @returns The HTML structure for the root layout.
  */
 export default function RootLayout({
   children,

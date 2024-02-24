@@ -2,6 +2,7 @@ import { Button } from "antd";
 
 /**
  * Includes the imported JS library on main page.tsx to this component
+ * @see https://github.com/booksjs/books/pull/2
  * @param url
  */
 declare function booksjsLib(url: string): any;
