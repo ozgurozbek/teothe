@@ -202,6 +202,8 @@ import {
               />
             </div>
           </Space>
+          
+        <Divider />
           {monthName !== "" ? (
             <CalendarTable
               calendarProps={{
