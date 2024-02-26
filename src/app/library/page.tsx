@@ -132,7 +132,7 @@ export default function LibraryPage() {
         <GetBook
           bookProps={{
             url: "https://ozgurozbek.github.io/dnd/books/WarriorsGuildRedArmy.pdf",
-            name: "Warrior's Guild &amp; The Red Army",
+            name: "Warrior's Guild & The Red Army",
           }}
         />
         <GetBook
