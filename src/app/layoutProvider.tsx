@@ -3,11 +3,15 @@
 import { CaretUpOutlined, CopyOutlined } from "@ant-design/icons";
 import { ConfigProvider, Layout, theme } from "antd";
 import Navbar from "Comp/Navbar";
-import Script from "next/script";
-import { useEffect } from "react";
 
 const { Header, Content, Footer } = Layout;
 
+/**
+ * Helper function for the page to scroll to certain element when provided with ID
+ * @ignore Not yet implemented
+ * @param id 
+ * @returns
+ */
 export const scrollTo = (id: string) => {
   const offset = 100;
 
@@ -27,9 +31,10 @@ export const scrollTo = (id: string) => {
 };
 
 /**
- * returns the main html page as layout. Imports external JS and CSS libraries. Provides html head tags.
- * @param children
- * @returns html
+ * Root layout provider component that sets up the overall layout structure.
+ * Imports external JS and CSS libraries, provides ANTD ConfigProvider, and includes components like Header, Content, and Footer.
+ * @param children - The content to be rendered inside the layout.
+ * @returns The configured layout structure.
  */
 export default function RootLayoutProvider({
   children,

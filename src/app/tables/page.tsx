@@ -9,9 +9,9 @@ import { useState } from "react";
 import SimpleContent from "@/components/SimpleCon";
 
 /**
- * Updates states to use selected table
+ * Function to fetch and display data for different tables.
  * @generator
- * @returns Buttons(antd) wrapped by Space(antd) wrapped by <>
+ * @returns The table displaying information about the selected table.
  */
 function GetTableData() {
   const [curTable, setCurTable] = useState("resurrection");
@@ -91,7 +91,12 @@ function GetTableData() {
     );
   }
 
-  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
+  /**
+     * Fetcher function for API requests.
+     * @param args - RequestInfo object containing information about the request.
+     * @returns Promise resolving to the parsed JSON response.
+     */
+    const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
     "https://teothe.pythonanywhere.com/getTables?tab=" + query,
     fetcher
@@ -158,6 +163,10 @@ function GetTableData() {
   );
 }
 
+/**
+ * Component for the tables page, displaying breadcrumbs and a card containing table data.
+ * @returns The tables page section with breadcrumbs and table data.
+ */
 export default function TablesPage() {
   return (
     <section>

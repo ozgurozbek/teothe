@@ -9,8 +9,8 @@ const { Title } = Typography;
 /**
  * Uses github.io legacy D&D website to fetch books as pdfs, and pushes them to GetBook. Provides Title(antd) and text to categorize them.
  * @see GetBook
- * @old_website fetch
- * @returns
+ * @generator - Fetches from the legacy website, github.io
+ * @returns JSX elements for the Library page.
  */
 export default function LibraryPage() {
   return (
@@ -132,7 +132,7 @@ export default function LibraryPage() {
         <GetBook
           bookProps={{
             url: "https://ozgurozbek.github.io/dnd/books/WarriorsGuildRedArmy.pdf",
-            name: "Warrior's Guild &amp; The Red Army",
+            name: "Warrior's Guild & The Red Army",
           }}
         />
         <GetBook

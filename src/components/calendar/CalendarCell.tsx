@@ -69,10 +69,10 @@ export default function CalendarCell({
         <div
           className={
             holidayList.length === 0
-              ? "text-green-600 w-full italic text-clip h-44 overflow-y-scroll no-scrollbar"
+              ? "w-full italic text-clip h-44 overflow-y-scroll no-scrollbar"
               : holidayList.length === 3
-              ? "text-green-600 w-full italic text-clip h-28 overflow-y-scroll no-scrollbar"
-              : "text-green-600 w-full italic text-clip h-36 overflow-y-scroll no-scrollbar"
+              ? "w-full italic text-clip h-28 overflow-y-scroll no-scrollbar"
+              : "w-full italic text-clip h-36 overflow-y-scroll no-scrollbar"
           }
         >
           <p title={cellProps.sessionNote.split(" --- ")[1]}>

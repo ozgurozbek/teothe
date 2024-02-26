@@ -9,12 +9,17 @@ import useSWR from "swr";
 /**
  * Gets Deity data and passes the props to Deity component
  * @see Deity
- * @backend fetch
+ * @generator
  * @param rank The deity rank as string
  * @returns Deity component array
  */
 function GetDeities(rank: string) {
-  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
+  /**
+     * Fetcher function for API requests.
+     * @param args - RequestInfo object containing information about the request.
+     * @returns Promise resolving to the parsed JSON response.
+     */
+    const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
     "https://teothe.pythonanywhere.com/getDeities",
     fetcher

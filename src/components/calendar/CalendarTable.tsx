@@ -6,12 +6,17 @@ import useSWR from "swr";
  * Fetches session notes data from the backend for the calendar
  * @backend fetch
  * @param tableNo
- * @param year 
+ * @param year
  * @param month title case
  * @returns JSON with dates as keys and entries as values
  * @example {"11":"Entry 1", "12":"Entry 2", "13":"Entry 3"}
  */
 function GetSessionNotes(tableNo: string, year: string, month: string) {
+  /**
+   * Fetcher function for API requests.
+   * @param args - RequestInfo object containing information about the request.
+   * @returns Promise resolving to the parsed JSON response.
+   */
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
     "https://teothe.pythonanywhere.com/getSessionNotes?table=" +
@@ -39,8 +44,12 @@ const holidays: { [key: string]: string[] } = {
   "Vihus, 46": ["Festival of Renewal"],
   "Vihus, 47": ["Festival of Renewal"],
   "Vihus, 48": ["Festival of Renewal"],
-  "Ukeus, 4": ["Blightbreaker Day*, Only in Tribes of Blight. This is to celebrate the sacrifice of the 'Withered'"],
-  "Ukeus, 22": ["The Running*, An annual ritual where the drow went out to commit a massacre against a surface community."],
+  "Ukeus, 4": [
+    "Blightbreaker Day*, Only in Tribes of Blight. This is to celebrate the sacrifice of the 'Withered'",
+  ],
+  "Ukeus, 22": [
+    "The Running*, An annual ritual where the drow went out to commit a massacre against a surface community.",
+  ],
   "Ukeus, 48": ["Leaf day"],
   "Vesius, 27": ["Harvest"],
   "Cyaxus, 1": ["Sleep"],
@@ -239,7 +248,7 @@ const holidays: { [key: string]: string[] } = {
  * Gets the holidays for select month and date in a string format merged with ", ", which is then split in CalendarCell.tsx
  * @generator
  * @param monthName title case
- * @param date 
+ * @param date
  * @returns string array
  */
 function getHolidays(monthName: string, date: number) {
@@ -359,7 +368,7 @@ const moonPhase = [
  * Gets the moon phases for select month and date
  * @generator
  * @param monthName title case
- * @param date 
+ * @param date
  * @returns string
  */
 function getMoonPhase(monthName: string, date: number) {
@@ -381,7 +390,7 @@ function getMoonPhase(monthName: string, date: number) {
 
 /**
  * Generates the Calendar view with CalendarCell.tsx populating a cell for each date. It is split weirdly for grid styling purposes. There is 8 cols per row.
- * @param calendarProps 
+ * @param calendarProps
  * @returns Row(antd)
  */
 export default function CalendarTable({
@@ -401,95 +410,27 @@ export default function CalendarTable({
   let tableMain = [];
   /* Index here is the date */
   for (let index = 1; index < 49; index++) {
-    if (
-      index < 9 ||
-      (index >= 17 && index < 25) ||
-      (index >= 33 && index < 41)
-    ) {
       tableMain.push(
-        index % 2 == 0 ? (
-          <Col
-            xs={6}
-            sm={6}
-            md={6}
-            lg={3}
-            xl={3}
-            xxl={3}
-            className="bg-transparent h-56"
-          >
-            <CalendarCell
-              cellProps={{
-                dayNumber: index,
-                moonPhase: getMoonPhase(calendarProps.monthName, index),
-                holiday: getHolidays(calendarProps.monthName, index),
-                sessionNote: thisMonthsNotes[index],
-              }}
-            />
-          </Col>
-        ) : (
-          <Col
-            xs={6}
-            sm={6}
-            md={6}
-            lg={3}
-            xl={3}
-            xxl={3}
-            className="bg-[#0b1016] h-56"
-          >
-            <CalendarCell
-              cellProps={{
-                dayNumber: index,
-                moonPhase: getMoonPhase(calendarProps.monthName, index),
-                holiday: getHolidays(calendarProps.monthName, index),
-                sessionNote: thisMonthsNotes[index],
-              }}
-            />
-          </Col>
-        )
+        <Col
+          xs={12}
+          sm={6}
+          md={4}
+          lg={4}
+          xl={3}
+          xxl={3}
+          className="bg-[#171b20] h-60"
+          style={{boxShadow:"0px 0px 0px 1px #33373b"}}
+        >
+          <CalendarCell
+            cellProps={{
+              dayNumber: index,
+              moonPhase: getMoonPhase(calendarProps.monthName, index),
+              holiday: getHolidays(calendarProps.monthName, index),
+              sessionNote: thisMonthsNotes[index],
+            }}
+          />
+        </Col>
       );
-    } else {
-      tableMain.push(
-        index % 2 == 0 ? (
-          <Col
-            xs={6}
-            sm={6}
-            md={6}
-            lg={3}
-            xl={3}
-            xxl={3}
-            className="bg-[#0b1016] h-56"
-          >
-            <CalendarCell
-              cellProps={{
-                dayNumber: index,
-                moonPhase: getMoonPhase(calendarProps.monthName, index),
-                holiday: getHolidays(calendarProps.monthName, index),
-                sessionNote: thisMonthsNotes[index],
-              }}
-            />
-          </Col>
-        ) : (
-          <Col
-            xs={6}
-            sm={6}
-            md={6}
-            lg={3}
-            xl={3}
-            xxl={3}
-            className="bg-transparent h-56"
-          >
-            <CalendarCell
-              cellProps={{
-                dayNumber: index,
-                moonPhase: getMoonPhase(calendarProps.monthName, index),
-                holiday: getHolidays(calendarProps.monthName, index),
-                sessionNote: thisMonthsNotes[index],
-              }}
-            />
-          </Col>
-        )
-      );
-    }
   }
   return <Row>{tableMain}</Row>;
 }

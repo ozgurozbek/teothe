@@ -1,5 +1,4 @@
 "use client";
-import "App/globals.css";
 
 import SimpleContent from "@/components/SimpleCon";
 import {
@@ -17,6 +16,11 @@ import { DownOutlined } from "@ant-design/icons";
 
 const { TextArea } = Input;
 
+/**
+ * Component for updating calendar notes. Allows users to input and update session notes for specific dates.
+ * @generator
+ * @returns The calendar note update page with input fields and buttons for updating and fetching data.
+ */
 export default function CalendarNoteUpdatePage() {
   const [monthName, setMonthName] = useState("Select Month");
   const [tableNo, setTableNo] = useState("Select Table");
@@ -172,22 +176,22 @@ export default function CalendarNoteUpdatePage() {
   };
 
   return (
-    <div className="container m-auto">
-    <Card className="border-none h-[calc(100vh-2rem)] m-4">
+    <section>
+    <Card bordered={false} className="w-full">
       <SimpleContent
         contentProps={{
           title: "Change Calendar Data",
           text: ["Fill User, select Table, Year, Month and Day to submit"],
         }}
       />
-      <Space wrap={true}>
+      <Space size={4} wrap={true}>
         <Input
           addonBefore="User"
           placeholder="Your Name"
           onChange={(e) => setUserName(e.target.value)}
         />
         <Dropdown menu={tableProps}>
-          <Button>
+          <Button className="w-full">
             <Space>
               {tableNo}
               <DownOutlined />
@@ -204,6 +208,7 @@ export default function CalendarNoteUpdatePage() {
             }
           }}
           addonAfter="Blue Era"
+          style={{ width: "12rem" }}
         />
         <Dropdown menu={monthProps}>
           <Button>
@@ -222,16 +227,16 @@ export default function CalendarNoteUpdatePage() {
             }
           }}
           addonBefore="Day"
+          style={{ width: "7rem" }}
         />
         <Button
           type="primary"
           onClick={handleNextClick}
-          className="w-full ant-table-cell-row-hover"
         >
           Fetch Current Note
         </Button>
       </Space>
-      <Divider style={{ borderColor: "white" }} />
+      <Divider />
       <TextArea
         rows={4}
         maxLength={1000}
@@ -241,16 +246,16 @@ export default function CalendarNoteUpdatePage() {
         style={{ backgroundColor: "transparent", borderColor: "#630436" }}
         onChange={(e) => setTextInputText(e.target.value)}
       />
-      <Divider style={{ borderColor: "white" }} />
+      <Divider />
       <Button
         type="primary"
         htmlType="submit"
         onClick={handleSubmit}
-        className="w-full ant-table-cell-row-hover"
+        className="float-right md:w-40 w-full"
       >
         Submit
       </Button>
     </Card>
-    </div>
+    </section>
   );
 }
