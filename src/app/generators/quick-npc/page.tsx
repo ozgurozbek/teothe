@@ -69,11 +69,11 @@ function GetQuickNPC() {
       special1: string;
       special2: string;
     };
-    // NPCGen: {
-    // languagesAndIssues: string;
-    // alignmentAndFaith: string;
-    // skillAndVoice: string;
-    // };
+    NPCGen: {
+      languagesAndIssues: string;
+      alignmentAndFaith: string;
+      skillAndVoice: string;
+    };
     quirks: {
       hook: string;
       orientation: string;
@@ -82,12 +82,10 @@ function GetQuickNPC() {
     };
   }
 
-  function DevelopNPC(): TeotheNPC {
+  function DevelopNPC(responseText: string): TeotheNPC {
     const { npc } = generate();
 
-    // const NPCGenResponse: string[] = responseText.split(". ");
-    // console.log(responseText);
-    // console.log(NPCGenResponse);
+    const NPCGenResponse: string[] = responseText.split(". ");
 
     const traits: string[] = [
       `Gourmand: Obsessed with food, cooks a lot.`,
@@ -157,30 +155,31 @@ function GetQuickNPC() {
     ];
 
     // This is very cursed, 10th character is always unique and describes the NPCs stat tendency. Merging xeculus.pythonanywhere with the npc library requires matching stats.
-    // let abilityPrefixer = NPCGenResponse[3];
-    // console.log(abilityPrefixer);
-    // switch (abilityPrefixer[10]) {
-    // case "n":
-    // npc.abilities.intelligence += 2;
-    // break;
-    // case "i":
-    // npc.abilities.wisdom += 2;
-    // break;
-    // case "t":
-    // npc.abilities.strength += 2;
-    // break;
-    // case "o":
-    // npc.abilities.constitution += 2;
-    // break;
-    // case "e":
-    // npc.abilities.dexterity += 2;
-    // break;
-    // case "h":
-    // npc.abilities.charisma += 2;
-    // break;
-    // default:
-    // break;
-    // }
+    let abilityPrefixer = NPCGenResponse[3];
+    if (abilityPrefixer) {
+      switch (abilityPrefixer[10]) {
+        case "n":
+          npc.abilities.intelligence += 5;
+          break;
+        case "i":
+          npc.abilities.wisdom += 5;
+          break;
+        case "t":
+          npc.abilities.strength += 5;
+          break;
+        case "o":
+          npc.abilities.constitution += 5;
+          break;
+        case "e":
+          npc.abilities.dexterity += 5;
+          break;
+        case "h":
+          npc.abilities.charisma += 5;
+          break;
+        default:
+          break;
+      }
+    }
 
     return {
       name: npc.description.name,
@@ -210,11 +209,11 @@ function GetQuickNPC() {
         special1: npc.physical.special1,
         special2: npc.physical.special2,
       },
-      // NPCGen: {
-      // languagesAndIssues: NPCGenResponse[1],
-      // alignmentAndFaith: NPCGenResponse[2],
-      // skillAndVoice: NPCGenResponse[3],
-      // },
+      NPCGen: {
+        languagesAndIssues: NPCGenResponse[1],
+        alignmentAndFaith: NPCGenResponse[2],
+        skillAndVoice: NPCGenResponse[3],
+      },
       quirks: {
         hook: npc.hook.description,
         orientation: npc.relationship.orientation,
@@ -224,7 +223,7 @@ function GetQuickNPC() {
     };
   }
 
-  let outputNPC = DevelopNPC();
+  let outputNPC = DevelopNPC(innerText);
 
   return (
     <>
@@ -246,16 +245,12 @@ function GetQuickNPC() {
                 outputNPC.alignment[1].toString() +
                 " good aligned",
               outputNPC.description.age.toString() + " years old",
-              "having a combined " +
-                outputNPC.stats[0] +
-                outputNPC.stats[1] +
-                outputNPC.stats[2] +
-                " physical and " +
-                outputNPC.stats[3] +
-                outputNPC.stats[4] +
-                outputNPC.stats[5] +
-                " mental stats",
-              outputNPC.description.age.toString(),
+              "str: " + outputNPC.stats[0],
+              "dex: " + outputNPC.stats[1],
+              "con: " + outputNPC.stats[2],
+              "int: " + outputNPC.stats[3],
+              "wis: " + outputNPC.stats[4],
+              "cha: " + outputNPC.stats[5],
               outputNPC.description.gender,
               outputNPC.description.name,
               outputNPC.description.occupation,
@@ -271,9 +266,9 @@ function GetQuickNPC() {
               outputNPC.quirks.orientation,
               outputNPC.quirks.quirk,
               outputNPC.quirks.trait,
-              // outputNPC.NPCGen.languagesAndIssues,
-              // outputNPC.NPCGen.alignmentAndFaith,
-              // outputNPC.NPCGen.skillAndVoice,
+              outputNPC.NPCGen.languagesAndIssues,
+              outputNPC.NPCGen.alignmentAndFaith,
+              outputNPC.NPCGen.skillAndVoice,
             ],
           }}
         />
