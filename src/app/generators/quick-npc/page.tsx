@@ -240,35 +240,17 @@ function GetQuickNPC() {
           contentProps={{
             title: outputNPC.name,
             text: [
-              outputNPC.alignment[0].toString() +
-                " lawful and " +
-                outputNPC.alignment[1].toString() +
-                " good aligned",
-              outputNPC.description.age.toString() + " years old",
-              "str: " + outputNPC.stats[0],
-              "dex: " + outputNPC.stats[1],
-              "con: " + outputNPC.stats[2],
-              "int: " + outputNPC.stats[3],
-              "wis: " + outputNPC.stats[4],
-              "cha: " + outputNPC.stats[5],
-              outputNPC.description.gender,
-              outputNPC.description.name,
-              outputNPC.description.occupation,
-              outputNPC.description.race,
-              outputNPC.description.hair,
-              outputNPC.description.eyes,
-              outputNPC.description.skin,
-              outputNPC.description.build,
-              outputNPC.description.face,
-              outputNPC.description.special1,
-              outputNPC.description.special2,
-              outputNPC.quirks.hook,
-              outputNPC.quirks.orientation,
-              outputNPC.quirks.quirk,
-              outputNPC.quirks.trait,
-              outputNPC.NPCGen.languagesAndIssues,
-              outputNPC.NPCGen.alignmentAndFaith,
-              outputNPC.NPCGen.skillAndVoice,
+              // `You encounter a character who exudes an aura of ${outputNPC.alignment[0]} lawfulness and ${outputNPC.alignment[1]} goodness.`,
+              `They are ${outputNPC.description.age} years old.`,
+              `Strength: ${outputNPC.stats[0]}, Dexterity: ${outputNPC.stats[1]}, Constitution: ${outputNPC.stats[2]},`,
+              `Intelligence: ${outputNPC.stats[3]}, Wisdom: ${outputNPC.stats[4]}, Charisma: ${outputNPC.stats[5]}.`,
+              `This ${outputNPC.description.gender} individual goes by the name of ${outputNPC.description.name} and is known for their ${outputNPC.description.occupation} profession.`,
+              `Belonging to the ${outputNPC.description.race} race, their ${outputNPC.description.hair}, ${outputNPC.description.eyes}, and ${outputNPC.description.skin} contribute to a distinctive appearance.`,
+              `They have ${outputNPC.description.build} with a ${outputNPC.description.face}. ${outputNPC.description.special1} ${outputNPC.description.special2}`,
+              `${outputNPC.quirks.quirk} and is known for being ${outputNPC.quirks.trait}`,
+              `${outputNPC.quirks.hook} They identify as ${outputNPC.quirks.orientation}.`,
+              `When it comes to communication: ${outputNPC.NPCGen.languagesAndIssues}. ${outputNPC.NPCGen.alignmentAndFaith}.`,
+              `In the realm of skills and voice, ${outputNPC.NPCGen.skillAndVoice}.`
             ],
           }}
         />
