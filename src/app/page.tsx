@@ -6,8 +6,8 @@ import GetCrumbs from "@/components/NavigationCrumb";
 import SimpleContent from "@/components/SimpleCon";
 
 /**
- * Main App. Sidebar will react.render the Dashboard to update.
- * @returns ConfigProvider(antd) > Layout(antd) > Sidebar, Dashboard
+ * Main application component that renders the Teothe3K Campaign Setting.
+ * @returns The application section containing breadcrumbs, a card with simple content, and information about the Teothe3K world.
  */
 export default function App() {
   return (

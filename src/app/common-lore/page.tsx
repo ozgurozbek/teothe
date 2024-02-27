@@ -7,6 +7,7 @@ import SimpleContent from "@/components/SimpleCon";
 /**
  * Uses SimpleContent to generate a page full of text describing the common lore of teothe.
  * @tutorial
+ * @see SimpleContent
  * @returns Card(antd) wrapped by section
  */
 export default function CommonLorePage() {

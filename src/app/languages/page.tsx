@@ -7,6 +7,13 @@ import { useState, useEffect } from "react";
 import { DownOutlined } from "@ant-design/icons";
 import SimpleContent from "@/components/SimpleCon";
 
+/**
+ * Functional component for the LanguagesDropdown.
+ * @param curLang - The current language.
+ * @param langList - List of languages.
+ * @param handleLangClick - Click event handler for language selection.
+ * @returns JSX elements representing the LanguagesDropdown.
+ */
 function LanguagesDropdown({
   curLang,
   langList,
@@ -48,6 +55,12 @@ function LanguagesDropdown({
   );
 }
 
+/**
+ * Functional component for the LanguagesPage.
+ * @generator
+ * @see Language
+ * @returns JSX elements representing the LanguagesPage.
+ */
 export default function LanguagesPage() {
   const [curLang, setCurLang] = useState("Abyssal");
   const [langList, setLangList] = useState<MenuProps["items"]>([]);

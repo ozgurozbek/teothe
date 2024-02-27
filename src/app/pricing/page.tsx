@@ -16,12 +16,17 @@ interface DataType {
 }
 
 /**
- * Gets pricing table data and provides a filter in the Table
- * @backend fetch
- * @returns SimpleCon and Table(antd) wrapped with <>
+ * Function to fetch and display common pricing table data.
+ * @generator
+ * @returns JSX element containing the common pricing table data.
  */
 function GetTableData() {
-  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
+  /**
+     * Fetcher function for API requests.
+     * @param args - RequestInfo object containing information about the request.
+     * @returns Promise resolving to the parsed JSON response.
+     */
+    const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
     "https://teothe.pythonanywhere.com/getPricing",
     fetcher
@@ -101,8 +106,8 @@ function GetTableData() {
 }
 
 /**
- * Calls and displays the Common Pricing table
- * @returns Table(antd) wrapped with Card(antd) wrapped with section
+ * Component for the pricing page, displaying breadcrumbs and a card containing pricing table data.
+ * @returns The pricing page section with breadcrumbs and pricing table data.
  */
 export default function PricingPage() {
   return (

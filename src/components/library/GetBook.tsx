@@ -2,6 +2,7 @@ import { Button } from "antd";
 
 /**
  * Includes the imported JS library on main page.tsx to this component
+ * @see https://github.com/booksjs/books/pull/2
  * @param url
  */
 declare function booksjsLib(url: string): any;
@@ -18,7 +19,7 @@ export default function GetBook({
 }) {
   return (
     <Button
-      className="m-1 w-72 block mx-auto sm:inline-block sm:w-auto"
+      className="m-1 md:mx-1 w-72 block mx-auto md:inline-block md:w-auto"
       onClick={() => {
         booksjsLib(bookProps.url).loadDocument();
       }}

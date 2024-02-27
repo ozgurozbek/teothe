@@ -8,13 +8,18 @@ import useSWR from "swr";
 import Link from "next/link";
 
 /**
- * Fetches map resources data from the backend and feeds MapEntry
+ * Component to get and render the map legend entries.
+ * @generator
  * @see MapEntry
- * @backend fetch
- * @returns Array of MapEntry
+ * @returns JSX elements representing the map legend entries.
  */
 function GetMapLegend() {
-  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
+  /**
+     * Fetcher function for API requests.
+     * @param args - RequestInfo object containing information about the request.
+     * @returns Promise resolving to the parsed JSON response.
+     */
+    const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
     "https://teothe.pythonanywhere.com/getMapRes",
     fetcher
@@ -43,8 +48,8 @@ function GetMapLegend() {
 }
 
 /**
- * Displays all map resource entries from the GetMapLegend function and provides description
- * @returns MapEntry and SimpleContent in Card(antd) in section
+ * Component that asynchronously fetches map legend data from an API and renders map legend entries.
+ * @returns An array of JSX elements representing map legend entries.
  */
 export default function MapLegendPage() {
   return (

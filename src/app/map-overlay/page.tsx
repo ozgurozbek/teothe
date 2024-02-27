@@ -12,8 +12,8 @@ import {
 } from "@ant-design/icons";
 
 /**
- * Multiple images positioned on top of each other and update their visibility
- * @returns Card(antd) wrapped by section
+ * Component that manages map overlay visibility based on user interactions.
+ * @returns JSX elements representing the MapOverlayPage component.
  */
 export default function MapOverlayPage() {
   let visibleMaps: string[] = [];
