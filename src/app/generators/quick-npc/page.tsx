@@ -241,16 +241,22 @@ function GetQuickNPC() {
             title: outputNPC.name,
             text: [
               // `You encounter a character who exudes an aura of ${outputNPC.alignment[0]} lawfulness and ${outputNPC.alignment[1]} goodness.`,
-              `They are ${outputNPC.description.age} years old.`,
-              `Strength: ${outputNPC.stats[0]}, Dexterity: ${outputNPC.stats[1]}, Constitution: ${outputNPC.stats[2]},`,
-              `Intelligence: ${outputNPC.stats[3]}, Wisdom: ${outputNPC.stats[4]}, Charisma: ${outputNPC.stats[5]}.`,
-              `This ${outputNPC.description.gender} individual goes by the name of ${outputNPC.description.name} and is known for their ${outputNPC.description.occupation} profession.`,
-              `Belonging to the ${outputNPC.description.race} race, their ${outputNPC.description.hair}, ${outputNPC.description.eyes}, and ${outputNPC.description.skin} contribute to a distinctive appearance.`,
-              `They have ${outputNPC.description.build} with a ${outputNPC.description.face}. ${outputNPC.description.special1} ${outputNPC.description.special2}`,
-              `${outputNPC.quirks.quirk} and is known for being ${outputNPC.quirks.trait}`,
-              `${outputNPC.quirks.hook} They identify as ${outputNPC.quirks.orientation}.`,
-              `When it comes to communication: ${outputNPC.NPCGen.languagesAndIssues}. ${outputNPC.NPCGen.alignmentAndFaith}.`,
-              `In the realm of skills and voice, ${outputNPC.NPCGen.skillAndVoice}.`
+              ` ${
+                outputNPC.name
+              } is a ${outputNPC.quirks.orientation.toLowerCase()} ${
+                outputNPC.description.race
+              } ${outputNPC.description.gender}. They are ${
+                outputNPC.description.age
+              } years old. They are known for their ${
+                outputNPC.description.occupation
+              } profession.`,
+              `They have ${outputNPC.description.hair} ${outputNPC.description.eyes}. Their ${outputNPC.description.skin} contribute to a distinctive appearance. They have ${outputNPC.description.build} with ${outputNPC.description.face}. ${outputNPC.description.special1} ${outputNPC.description.special2} ${outputNPC.NPCGen.languagesAndIssues}.`,
+              `${outputNPC.NPCGen.skillAndVoice}. ${outputNPC.quirks.hook} ${
+                outputNPC.quirks.quirk
+              } and is known for being ${outputNPC.quirks.trait.toLowerCase()} ${
+                outputNPC.NPCGen.alignmentAndFaith
+              }.`,
+              `Strength: ${outputNPC.stats[0]}, Dexterity: ${outputNPC.stats[1]}, Constitution: ${outputNPC.stats[2]} Intelligence: ${outputNPC.stats[3]}, Wisdom: ${outputNPC.stats[4]}, Charisma: ${outputNPC.stats[5]}`,
             ],
           }}
         />
