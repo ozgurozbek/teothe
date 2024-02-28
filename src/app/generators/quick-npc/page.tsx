@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Card, Divider, Empty, Skeleton } from "antd";
+import { Button, Card, Divider, Empty, Skeleton, Space } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import { useState } from "react";
 import SimpleContent from "@/components/SimpleCon";
@@ -42,6 +42,47 @@ function GetQuickNPC() {
     } //I like this approach better, it'd help us retry if something goes wrong - Unlike the rest of the fetchers
   };
 
+  const handleFantasyGroundsClick = (value: string, outputNPC: TeotheNPC) => {
+    switch (value) {
+      case "desc":
+        navigator.clipboard.writeText(
+          `${
+            outputNPC.name
+          } is a ${outputNPC.quirks.orientation.toLowerCase()} ${
+            outputNPC.description.race
+          } ${outputNPC.description.gender}. They are ${
+            outputNPC.description.age
+          } years old. They are known for their ${
+            outputNPC.description.occupation
+          } profession.\r\n` +
+            `They have ${outputNPC.description.hair} ${outputNPC.description.eyes}. Their ${outputNPC.description.skin} contribute to a distinctive appearance. They have ${outputNPC.description.build} with ${outputNPC.description.face}. ${outputNPC.description.special1} ${outputNPC.description.special2} ${outputNPC.NPCGen.languagesAndIssues}.\r\n` +
+            `${outputNPC.NPCGen.skillAndVoice}. ${outputNPC.quirks.hook} ${
+              outputNPC.quirks.quirk
+            } and is known for being ${outputNPC.quirks.trait.toLowerCase()} ${
+              outputNPC.NPCGen.alignmentAndFaith
+            }.`
+        );
+        break;
+      case "stat":
+        navigator.clipboard.writeText(
+        `${outputNPC.name}\r\nMedium Humanoid (${outputNPC.description.race} ${outputNPC.description.gender})\r\nArmor Class ${8+Number(statBonusHash[outputNPC.stats[1]])+Number(statBonusHash[outputNPC.stats[2]])} (+5 with mage armor)\r\nHit Points ${Math.floor((outputNPC.stats[0]+outputNPC.stats[1]+outputNPC.stats[2]*1.5+6)/4)}\r\nSpeed 30 ft.\r\n`+
+        `STR DEX CON INT WIS CHA\r\n` + //For newline hopefully
+          `${outputNPC.stats[0]} (${statBonusHash[outputNPC.stats[0]]}) ${outputNPC.stats[1]} (${statBonusHash[outputNPC.stats[1]]}) ${outputNPC.stats[2]} (${statBonusHash[outputNPC.stats[2]]}) ${outputNPC.stats[3]} (${statBonusHash[outputNPC.stats[3]]}) ${outputNPC.stats[4]} (${statBonusHash[outputNPC.stats[4]]}) ${outputNPC.stats[5]} (${statBonusHash[outputNPC.stats[5]]})\r\n`+
+        `Saving Throws\r\n`+
+        `Skills\r\n`+
+        `Damage Resistances\r\n`+
+        `Damage Immunities\r\n`+
+        `Condition Immunities\r\n`+
+        `Senses darkvision 30 ft., passive Perception ${10+Number(statBonusHash[outputNPC.stats[4]])}\r\n`+
+        `Languages See description\r\n`+
+        `Challenge 0 (0 XP) Proficiency Bonus +2\r\n`+
+        `Philosophy. ${outputNPC.NPCGen.alignmentAndFaith}\r\n`+
+        `Profession. ${outputNPC.description.occupation.charAt(0).toUpperCase() + outputNPC.description.occupation.substring(1)}`)
+        break;
+      default:
+        break;
+    }
+  };
   /** This is the main area for the Teothe style NPC generation
    * This NPC generation is also compatible with Fantasy Grounds
    * as of 2024 February. This requires two buttons, one to copy
@@ -58,7 +99,6 @@ function GetQuickNPC() {
     description: {
       age: number;
       gender: string;
-      name: string;
       occupation: string;
       race: string;
       hair: string;
@@ -80,6 +120,40 @@ function GetQuickNPC() {
       quirk: string;
       trait: string;
     };
+  }
+
+  const statBonusHash:any = {
+    0:"-5",
+    1:"-5",
+    2:"-4",
+    3:"-4",
+    4:"-3",
+    5:"-3",
+    6:"-2",
+    7:"-2",
+    8:"-1",
+    9:"-1",
+    10:"+0",
+    11:"+0",
+    12:"+1",
+    13:"+1",
+    14:"+2",
+    15:"+2",
+    16:"+3",
+    17:"+3",
+    18:"+4",
+    19:"+4",
+    20:"+5",
+    21:"+5",
+    22:"+6",
+    23:"+6",
+    24:"+7",
+    25:"+7",
+    26:"+8",
+    27:"+8",
+    28:"+9",
+    29:"+9",
+    30:"+10",
   }
 
   function DevelopNPC(responseText: string): TeotheNPC {
@@ -198,7 +272,6 @@ function GetQuickNPC() {
       description: {
         age: npc.description.age,
         gender: npc.description.gender,
-        name: npc.description.name,
         occupation: npc.description.occupation,
         race: npc.description.race,
         hair: npc.physical.hair,
@@ -227,39 +300,55 @@ function GetQuickNPC() {
 
   return (
     <>
-      <Button onClick={handleButtonClick}>
-        {displayEmpty ? "Generate Quest Idea" : "Generate New Quest Idea"}
-      </Button>
+      <Space wrap>
+        <Button onClick={handleButtonClick}>
+          {displayEmpty ? "Generate Quick NPC" : "Generate New Quick NPC"}
+        </Button>
+        <Button onClick={() => handleFantasyGroundsClick("stat", outputNPC)}>
+          {displayEmpty ? "Generate First" : "Statblock for FGU"}
+        </Button>
+        <Button onClick={() => handleFantasyGroundsClick("desc", outputNPC)}>
+          {displayEmpty ? "Generate First" : "Description for FGU"}
+        </Button>
+      </Space>
       <Divider />
       {loading ? (
         <Skeleton active />
       ) : displayEmpty ? (
         <Empty />
       ) : (
+        <>
         <SimpleContent
           contentProps={{
             title: outputNPC.name,
             text: [
               // `You encounter a character who exudes an aura of ${outputNPC.alignment[0]} lawfulness and ${outputNPC.alignment[1]} goodness.`,
-              ` ${
-                outputNPC.name
-              } is a ${outputNPC.quirks.orientation.toLowerCase()} ${
-                outputNPC.description.race
-              } ${outputNPC.description.gender}. They are ${
-                outputNPC.description.age
-              } years old. They are known for their ${
-                outputNPC.description.occupation
-              } profession.`,
+              `${outputNPC.name} is a ${outputNPC.quirks.orientation.toLowerCase()} ${outputNPC.description.race} ${outputNPC.description.gender}. They are ${outputNPC.description.age} years old. They are known for their ${outputNPC.description.occupation} profession.`,
               `They have ${outputNPC.description.hair} ${outputNPC.description.eyes}. Their ${outputNPC.description.skin} contribute to a distinctive appearance. They have ${outputNPC.description.build} with ${outputNPC.description.face}. ${outputNPC.description.special1} ${outputNPC.description.special2} ${outputNPC.NPCGen.languagesAndIssues}.`,
               `${outputNPC.NPCGen.skillAndVoice}. ${outputNPC.quirks.hook} ${
                 outputNPC.quirks.quirk
               } and is known for being ${outputNPC.quirks.trait.toLowerCase()} ${
                 outputNPC.NPCGen.alignmentAndFaith
-              }.`,
-              `Strength: ${outputNPC.stats[0]}, Dexterity: ${outputNPC.stats[1]}, Constitution: ${outputNPC.stats[2]} Intelligence: ${outputNPC.stats[3]}, Wisdom: ${outputNPC.stats[4]}, Charisma: ${outputNPC.stats[5]}`,
+              }.`
             ],
           }}
         />
+        <Divider />
+        <SimpleContent
+          contentProps={{
+            title: "Statblock",
+            text: [
+            `Medium Humanoid (${outputNPC.description.race} ${outputNPC.description.gender})`,`Armor Class ${8+Number(statBonusHash[outputNPC.stats[1]])+Number(statBonusHash[outputNPC.stats[2]])} (+5 with mage armor)`,`Hit Points ${Math.floor((outputNPC.stats[0]+outputNPC.stats[1]+outputNPC.stats[2]*1.5+6)/4)}`,`Speed 30 ft.`,
+            `Strength: ${outputNPC.stats[0]}, Dexterity: ${outputNPC.stats[1]}, Constitution: ${outputNPC.stats[2]} Intelligence: ${outputNPC.stats[3]}, Wisdom: ${outputNPC.stats[4]}, Charisma: ${outputNPC.stats[5]}`,
+            `Senses darkvision 30 ft., passive Perception ${10+Number(statBonusHash[outputNPC.stats[4]])}`,
+            `Languages See description`,
+            `Challenge 0 (0 XP) Proficiency Bonus +2`,
+            `Philosophy. ${outputNPC.NPCGen.alignmentAndFaith}`,
+            `Profession. ${outputNPC.description.occupation.charAt(0).toUpperCase() + outputNPC.description.occupation.substring(1)}`,
+            ],
+          }}
+        />
+        </>
       )}
     </>
   );
