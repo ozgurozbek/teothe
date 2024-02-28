@@ -155,7 +155,7 @@ export default function Navbar() {
             getItem("Map Legend", "11", "map-legend", getIcon("MapLegend")),
             getItem("Calendar", "12", "calendar", getIcon("Calendar")),
             getItem("Languages", "13", "languages", getIcon("Languages")),
-            getItem("Generators", "", undefined, getIcon("Generators"), undefined, [ //undefined for href & Element
+            getItem("Generators", "-1", undefined, getIcon("Generators"), undefined, [ //undefined for href & Element
               getItem("Quest Idea", "14", "generators/quest-idea", undefined), //undefined for Icon
               getItem("Quick NPC", "15", "generators/quick-npc", undefined), //undefined for Icon
             ]),
