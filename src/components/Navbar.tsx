@@ -88,6 +88,10 @@ const loadPageURL = (menuItem: any) => {
       return "12";
     case "languages":
       return "13";
+    case "quest-idea":
+      return "14";
+    case "quick-npc":
+      return "15";
     default:
       return "0";
   }
@@ -151,6 +155,10 @@ export default function Navbar() {
             getItem("Map Legend", "11", "map-legend", getIcon("MapLegend")),
             getItem("Calendar", "12", "calendar", getIcon("Calendar")),
             getItem("Languages", "13", "languages", getIcon("Languages")),
+            getItem("Generators", "-1", undefined, getIcon("Generators"), undefined, [ //undefined for href & Element
+              getItem("Quest Idea", "14", "generators/quest-idea", undefined), //undefined for Icon
+              getItem("Quick NPC", "15", "generators/quick-npc", undefined), //undefined for Icon
+            ]),
           ]}
         />
       </div>
