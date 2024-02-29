@@ -27,16 +27,16 @@ function GetHomebrews(category: string) {
   let renderedEntries = [];
   let first: boolean = true;
   for (let item of data) {
-    if (item[0] === category) {
+    if (item.tag === category) {
       if (first) {
         renderedEntries.push(
-          <li className="hover:bg-[#630436] py-4">{item[1]}</li>
+          <li className="hover:bg-[#630436] py-4">{item.description}</li>
         );
         first = false;
       } else {
         renderedEntries.push(
           <li className="hover:bg-[#630436] py-4 border-t border-[#33373b]">
-            {item[1]}
+            {item.description}
           </li>
         );
       }

@@ -61,12 +61,14 @@ export default function LanguagesPage() {
   useEffect(() => {
     (args: RequestInfo) => fetch(args).then((res) => res.json());
 
-    fetch("https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getLanguages?head=True")
+    fetch(
+      "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getLanguages?head=True"
+    )
       .then((res) => res.json())
       .then((langItemsData) => {
-        const langListTemp = langItemsData.map((item: string) => ({
-          label: item[0],
-          key: item[0],
+        const langListTemp = langItemsData.map((item: string[]) => ({
+          label: item,
+          key: item,
         }));
         setLangList(langListTemp);
       })
@@ -79,7 +81,10 @@ export default function LanguagesPage() {
   useEffect(() => {
     (args: RequestInfo) => fetch(args).then((res) => res.json());
 
-    fetch("https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getLanguages?lang=" + curLang)
+    fetch(
+      "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getLanguages?lang=" +
+        curLang
+    )
       .then((res) => res.json())
       .then((data) => {
         setData(data);
@@ -111,13 +116,13 @@ export default function LanguagesPage() {
     return <Skeleton active />;
   }
 
-  const renderedLanguages = data.map((item, index) => (
+  const renderedLanguages = data.map((item: any, index) => (
     <Language
       key={index}
       languageProps={{
-        originalWord: item[0],
-        translatedWord: item[1],
-        homebrew: item[2],
+        originalWord: item.word,
+        translatedWord: item.translation,
+        homebrew: item.homebrew,
       }}
       borderProp={index === 0 ? undefined : "border-t border-[#33373b]"}
     />
