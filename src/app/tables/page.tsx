@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Button, Card, Divider, Empty, Skeleton, Space } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
@@ -93,7 +93,8 @@ function GetTableData() {
 
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
-    "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getTables?tab=" + query,
+    "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getTables?tab=" +
+      query,
     fetcher
   );
   if (error) {
@@ -121,21 +122,17 @@ function GetTableData() {
 
   //dataSource, columns
   let columns = [];
-  for (let i = 0; i < data[0].length; i++) {
+  for (let j = 0; j < data.tableDescription.columns.length; j++) {
     columns.push({
-      title: titleCase(data[0][i]),
-      dataIndex: data[0][i],
-      key: data[0][i],
+      title: titleCase(data.tableDescription.columns[j]),
+      dataIndex: data.tableDescription.columns[j],
+      key: data.tableDescription.columns[j],
     });
   }
 
   let dataSource = [];
-  for (let rowData of data[1]) {
-    let item: any = {};
-    for (let i = 0; i < columns.length; i++) {
-      item[columns[i].dataIndex] = rowData[i];
-    }
-    dataSource.push(item);
+  for (let rowData of data.tableData) {
+    dataSource.push(rowData);
   }
   return (
     <>
@@ -144,7 +141,7 @@ function GetTableData() {
       <SimpleContent
         contentProps={{
           title: titleCase(query),
-          text: [data[2]],
+          text: [data.tableDescription.description],
         }}
       />
       <Table
