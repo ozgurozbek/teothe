@@ -1,17 +1,41 @@
 {
+    "user":"Kutay",
     "achievements": [
         {
+            "id": "1",
             "name": "Overkill",
             "description": "You hit someone double to their hp",
             "point": "5",
-            "numberOfPeople":"2"
+            "achievers": [
+              "Batuhan",
+              "Ayşe",
+              "Kutay"
+            ]
         },
-        
         {
+            "id": "2",
             "name": "Levrage",
             "description": "You blackmailed an innocent NPC",
             "point": "20",
-            "numberOfPeople":"4"
+            "achievers": [
+              "Batuhan"
+            ]
+        },
+        {
+            "id": "3",
+            "name": "asd",
+            "description": "AS DAS DASD",
+            "point": "5",
+            "achievers": []
+        },
+        {
+            "id": "4",
+            "name": "qwe",
+            "description": "QEQW EQWEQ qweqw eWE",
+            "point": "10",
+            "achievers": [
+              "Kutay"
+            ]
         }
     ]
 }
