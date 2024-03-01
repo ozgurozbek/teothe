@@ -18,7 +18,7 @@
     "eslint-config-next": "13.4.5",
     "next": "13.5.6",
     "next-pwa": "^5.6.0",
-    "npc-generator": "^1.0.2",
+    "npc-generator": "github:ozgurozbek/npc-generator#teothe",
     "postcss": "8.4.31",
     "react": "18.2.0",
     "react-dom": "18.2.0",
