@@ -114,10 +114,6 @@ function GetAchievementsData() {
     value: point,
   }));
   
-
-  
-  
-  
   const columns: ColumnsType<AchievementType> = [
     {
         title: "Completed",
