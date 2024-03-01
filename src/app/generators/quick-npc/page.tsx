@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Card, Divider, Empty, Skeleton, Space } from "antd";
+import { Button, Card, Divider, Empty, Space } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import { useState } from "react";
 import SimpleContent from "@/components/SimpleCon";
@@ -9,80 +9,94 @@ import { generate } from "npc-generator";
 /**
  * React component for rendering a Quest Idea Generator interface.
  * The component includes a button that, when clicked, conditionally fetches data from an API using the useSWR hook.
- * The fetched data is displayed or replaced with a loading skeleton based on the fetch state.
+ * The fetched data is displayed or replaced with data on the fetch state.
  * The component utilizes the useMemo hook to memoize the handleButtonClick function, preventing unnecessary re-fetching on each render.
  * @generator
  * @returns JSX elements representing the Quest Idea Generator interface.
  */
 function GetQuickNPC() {
   const [displayEmpty, setDisplayEmpty] = useState(true);
-  const [innerText, setInnerText] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [teotheNPC, setTeotheNPC] = useState<TeotheNPC>(DevelopNPC());
 
-  const handleButtonClick = async () => {
-    try {
-      setLoading(true);
-
-      const response = await fetch(
-        "https://xeculus.pythonanywhere.com/npc_generate"
-      );
-
-      if (!response.ok) {
-        throw new Error("Failed to access Quest Idea Generator API");
-      }
-
-      const data = await response.text();
-
-      setInnerText(data);
-      setDisplayEmpty(false);
-    } catch (error) {
-      console.error(error);
-    } finally {
-      setLoading(false);
-    } //I like this approach better, it'd help us retry if something goes wrong - Unlike the rest of the fetchers
+  const handleButtonClick = () => {
+    setTeotheNPC(DevelopNPC());
+    setDisplayEmpty(false);
   };
 
-  const handleFantasyGroundsClick = (value: string, outputNPC: TeotheNPC) => {
+  const handleFantasyGroundsClick = (value: string, teotheNPC: TeotheNPC) => {
     switch (value) {
       case "desc":
         navigator.clipboard.writeText(
-          `${
-            outputNPC.name
-          } is a ${outputNPC.quirks.orientation.toLowerCase()} ${
-            outputNPC.description.race
-          } ${outputNPC.description.gender}. They are ${
-            outputNPC.description.age
-          } years old. They are known for their ${
-            outputNPC.description.occupation
-          } profession.\r\n` +
-            `They have ${outputNPC.description.hair} ${outputNPC.description.eyes}. Their ${outputNPC.description.skin} contribute to a distinctive appearance. They have ${outputNPC.description.build} with ${outputNPC.description.face}. ${outputNPC.description.special1} ${outputNPC.description.special2} ${outputNPC.NPCGen.languagesAndIssues}.\r\n` +
-            `${outputNPC.NPCGen.skillAndVoice}. ${outputNPC.quirks.hook} ${
-              outputNPC.quirks.quirk
-            } and is known for being ${outputNPC.quirks.trait.toLowerCase()} ${
-              outputNPC.NPCGen.alignmentAndFaith
-            }.`
+          `${teotheNPC.name} (${teotheNPC.alignment}) is a ${
+            teotheNPC.description.age
+          } years old, ${teotheNPC.relationship.orientation.toLowerCase()} ${
+            teotheNPC.description.race
+          } ${teotheNPC.description.gender}. ${
+            teotheNPC.description.pronounCapit
+          } is a ${teotheNPC.description.occupation}. ${
+            teotheNPC.description.pronounCapit
+          } is ${teotheNPC.relationship.status.toLocaleLowerCase()}.\r\n` +
+            `${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.hair} ${teotheNPC.physical.eyes}. Their ${teotheNPC.physical.skin} contribute to a distinctive appearance. ${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.build} with ${teotheNPC.physical.face}. ${teotheNPC.physical.special1} ${teotheNPC.physical.special2}\r\n` +
+            `${teotheNPC.ptraits.traits1}${teotheNPC.ptraits.traits2}${
+              teotheNPC.description.pronounCapit
+            } sounds ${teotheNPC.local.voice}, knows ${
+              teotheNPC.local.languages
+            } languages. ${teotheNPC.hook.description} ${
+              teotheNPC.pquirks.description
+            } and is known for being ${teotheNPC.local.trait.toLowerCase()} ${
+              teotheNPC.ptraits.traitslizards
+            } ${teotheNPC.ptraits.traitsgoliaths} ${
+              teotheNPC.religion.description
+            }. `
         );
         break;
       case "stat":
         navigator.clipboard.writeText(
-        `${outputNPC.name}\r\nMedium Humanoid (${outputNPC.description.race} ${outputNPC.description.gender})\r\nArmor Class ${8+Number(statBonusHash[outputNPC.stats[1]])+Number(statBonusHash[outputNPC.stats[2]])} (+5 with mage armor)\r\nHit Points ${Math.floor((outputNPC.stats[0]+outputNPC.stats[1]+outputNPC.stats[2]*1.5+6)/4)}\r\nSpeed 30 ft.\r\n`+
-        `STR DEX CON INT WIS CHA\r\n` + //For newline hopefully
-          `${outputNPC.stats[0]} (${statBonusHash[outputNPC.stats[0]]}) ${outputNPC.stats[1]} (${statBonusHash[outputNPC.stats[1]]}) ${outputNPC.stats[2]} (${statBonusHash[outputNPC.stats[2]]}) ${outputNPC.stats[3]} (${statBonusHash[outputNPC.stats[3]]}) ${outputNPC.stats[4]} (${statBonusHash[outputNPC.stats[4]]}) ${outputNPC.stats[5]} (${statBonusHash[outputNPC.stats[5]]})\r\n`+
-        `Saving Throws\r\n`+
-        `Skills\r\n`+
-        `Damage Resistances\r\n`+
-        `Damage Immunities\r\n`+
-        `Condition Immunities\r\n`+
-        `Senses darkvision 30 ft., passive Perception ${10+Number(statBonusHash[outputNPC.stats[4]])}\r\n`+
-        `Languages See description\r\n`+
-        `Challenge 0 (0 XP) Proficiency Bonus +2\r\n`+
-        `Philosophy. ${outputNPC.NPCGen.alignmentAndFaith}\r\n`+
-        `Profession. ${outputNPC.description.occupation.charAt(0).toUpperCase() + outputNPC.description.occupation.substring(1)}`)
+          `${teotheNPC.name}\r\nMedium Humanoid (${
+            teotheNPC.description.race
+          } ${teotheNPC.description.gender})\r\nArmor Class ${
+            8 +
+            Number(statBonusHash[teotheNPC.stats[1]]) +
+            Number(statBonusHash[teotheNPC.stats[2]])
+          } (+5 with mage armor)\r\nHit Points ${Math.floor(
+            (teotheNPC.stats[0] +
+              teotheNPC.stats[1] +
+              teotheNPC.stats[2] * 1.5 +
+              6) /
+              4
+          )}\r\nSpeed 30 ft.\r\n` +
+            `STR DEX CON INT WIS CHA\r\n` + //For newline hopefully
+            `${teotheNPC.stats[0]} (${statBonusHash[teotheNPC.stats[0]]}) ${
+              teotheNPC.stats[1]
+            } (${statBonusHash[teotheNPC.stats[1]]}) ${teotheNPC.stats[2]} (${
+              statBonusHash[teotheNPC.stats[2]]
+            }) ${teotheNPC.stats[3]} (${statBonusHash[teotheNPC.stats[3]]}) ${
+              teotheNPC.stats[4]
+            } (${statBonusHash[teotheNPC.stats[4]]}) ${teotheNPC.stats[5]} (${
+              statBonusHash[teotheNPC.stats[5]]
+            })\r\n` +
+            `Saving Throws\r\n` +
+            `Skills\r\n` +
+            `Damage Resistances\r\n` +
+            `Damage Immunities\r\n` +
+            `Condition Immunities\r\n` +
+            `Senses darkvision 30 ft., passive Perception ${
+              10 + Number(statBonusHash[teotheNPC.stats[4]])
+            }\r\n` +
+            `Languages ${teotheNPC.local.languages} languages\r\n` +
+            `Challenge 0 (0 XP) Proficiency Bonus +2\r\n` +
+            `Philosophy. ${teotheNPC.alignment}. ${teotheNPC.religion.description}\r\n` +
+            `Profession. ${
+              teotheNPC.description.occupation.charAt(0).toUpperCase() +
+              teotheNPC.description.occupation.substring(1)
+            }`
+        );
         break;
       default:
         break;
     }
   };
+
   /** This is the main area for the Teothe style NPC generation
    * This NPC generation is also compatible with Fantasy Grounds
    * as of 2024 February. This requires two buttons, one to copy
@@ -93,73 +107,118 @@ function GetQuickNPC() {
    * can import it to Fantasy Grounds.
    */
   interface TeotheNPC {
-    name: string;
-    stats: number[];
-    alignment: number[];
     description: {
       age: number;
       gender: string;
-      occupation: string;
       race: string;
+      occupation: string;
+      pronounMinus: string;
+      pronounCapit: string;
+    };
+    physical: {
       hair: string;
       eyes: string;
       skin: string;
+      height: number;
       build: string;
       face: string;
       special1: string;
       special2: string;
     };
-    NPCGen: {
-      languagesAndIssues: string;
-      alignmentAndFaith: string;
-      skillAndVoice: string;
-    };
-    quirks: {
-      hook: string;
+    relationship: {
       orientation: string;
-      quirk: string;
+      status: string;
+    };
+    religion: {
+      description: string;
+    };
+    ptraits: {
+      traitslizards: string;
+      traitsgoliaths: string;
+      traits1: string;
+      traits2: string;
+    };
+    pquirks: {
+      description: string;
+    };
+    hook: {
+      description: string;
+    };
+    name: string;
+    stats: number[];
+    alignment: string;
+    local: {
       trait: string;
+      languages: string;
+      voice: string;
     };
   }
 
-  const statBonusHash:any = {
-    0:"-5",
-    1:"-5",
-    2:"-4",
-    3:"-4",
-    4:"-3",
-    5:"-3",
-    6:"-2",
-    7:"-2",
-    8:"-1",
-    9:"-1",
-    10:"+0",
-    11:"+0",
-    12:"+1",
-    13:"+1",
-    14:"+2",
-    15:"+2",
-    16:"+3",
-    17:"+3",
-    18:"+4",
-    19:"+4",
-    20:"+5",
-    21:"+5",
-    22:"+6",
-    23:"+6",
-    24:"+7",
-    25:"+7",
-    26:"+8",
-    27:"+8",
-    28:"+9",
-    29:"+9",
-    30:"+10",
-  }
+  const statBonusHash: any = {
+    0: "-5",
+    1: "-5",
+    2: "-4",
+    3: "-4",
+    4: "-3",
+    5: "-3",
+    6: "-2",
+    7: "-2",
+    8: "-1",
+    9: "-1",
+    10: "+0",
+    11: "+0",
+    12: "+1",
+    13: "+1",
+    14: "+2",
+    15: "+2",
+    16: "+3",
+    17: "+3",
+    18: "+4",
+    19: "+4",
+    20: "+5",
+    21: "+5",
+    22: "+6",
+    23: "+6",
+    24: "+7",
+    25: "+7",
+    26: "+8",
+    27: "+8",
+    28: "+9",
+    29: "+9",
+    30: "+10",
+  };
 
-  function DevelopNPC(responseText: string): TeotheNPC {
+  function DevelopNPC(): TeotheNPC {
     const { npc } = generate();
 
-    const NPCGenResponse: string[] = responseText.split(". ");
+    const languages: string[] = [
+      "only the local",
+      "common and one more",
+      "common and two more",
+      "common and three more",
+      "exotic",
+    ];
+
+    const voices: string[] = [
+      "filled with air",
+      "rough",
+      "deep",
+      "high",
+      "enthusiastic",
+      "bored",
+      "angry",
+      "authoritative",
+      "comedic",
+      "conversational",
+      "elegant",
+      "enticing",
+      "inspiring",
+      "nurturing",
+      "playful",
+      "sad",
+      "scared",
+      "unorthodox",
+    ];
 
     const traits: string[] = [
       `Gourmand: Obsessed with food, cooks a lot.`,
@@ -228,34 +287,64 @@ function GetQuickNPC() {
       `Tycoon: Always looking for business opportunities, they want to own it all.`,
     ];
 
-    // This is very cursed, 10th character is always unique and describes the NPCs stat tendency. Merging xeculus.pythonanywhere with the npc library requires matching stats.
-    let abilityPrefixer = NPCGenResponse[3];
-    if (abilityPrefixer) {
-      switch (abilityPrefixer[10]) {
-        case "n":
-          npc.abilities.intelligence += 5;
-          break;
-        case "i":
-          npc.abilities.wisdom += 5;
-          break;
-        case "t":
-          npc.abilities.strength += 5;
-          break;
-        case "o":
-          npc.abilities.constitution += 5;
-          break;
-        case "e":
-          npc.abilities.dexterity += 5;
-          break;
-        case "h":
-          npc.abilities.charisma += 5;
-          break;
-        default:
-          break;
+    const alignmentPrefixer = (
+      lawful: number,
+      ethicalneutral: number,
+      chaotic: number,
+      good: number,
+      moralneutral: number,
+      evil: number
+    ) => {
+      let alignment = "";
+      if (lawful > chaotic && lawful >= ethicalneutral) {
+        alignment = "Lawful";
+      } else if (chaotic > lawful && chaotic >= ethicalneutral) {
+        alignment = "Chaotic";
+      } else if (chaotic <= ethicalneutral && lawful <= ethicalneutral) {
+        alignment = "Neutral";
       }
-    }
+
+      if (good > evil && good >= moralneutral) {
+        alignment += " Good";
+      } else if (evil > good && evil >= moralneutral) {
+        alignment += " Evil";
+      } else if (evil <= moralneutral && good <= moralneutral) {
+        alignment += " Neutral";
+      }
+
+      return alignment;
+    };
 
     return {
+      physical: {
+        hair: npc.physical.hair,
+        eyes: npc.physical.eyes,
+        skin: npc.physical.skin,
+        height: npc.physical.height,
+        build: npc.physical.build,
+        face: npc.physical.face,
+        special1: npc.physical.special1,
+        special2: npc.physical.special2,
+      },
+      relationship: {
+        orientation: npc.relationship.orientation,
+        status: npc.relationship.status,
+      },
+      religion: {
+        description: npc.religion.description,
+      },
+      ptraits: {
+        traitslizards: npc.ptraits.traitslizards,
+        traitsgoliaths: npc.ptraits.traitsgoliaths,
+        traits1: npc.ptraits.traits1,
+        traits2: npc.ptraits.traits2,
+      },
+      pquirks: {
+        description: npc.pquirks.description,
+      },
+      hook: {
+        description: npc.hook.description,
+      },
       name: npc.description.name,
       stats: [
         npc.abilities.strength,
@@ -265,38 +354,29 @@ function GetQuickNPC() {
         npc.abilities.wisdom,
         npc.abilities.charisma,
       ],
-      alignment: [
-        npc.alignment.lawful - npc.alignment.chaotic,
-        npc.alignment.good - npc.alignment.evil,
-      ],
+      alignment: alignmentPrefixer(
+        npc.alignment.lawful,
+        npc.alignment.ethicalneutral,
+        npc.alignment.chaotic,
+        npc.alignment.good,
+        npc.alignment.moralneutral,
+        npc.alignment.evil
+      ),
       description: {
+        pronounCapit: npc.description.pronounCapit,
+        pronounMinus: npc.description.pronounMinus,
         age: npc.description.age,
         gender: npc.description.gender,
         occupation: npc.description.occupation,
         race: npc.description.race,
-        hair: npc.physical.hair,
-        eyes: npc.physical.eyes,
-        skin: npc.physical.skin,
-        build: npc.physical.build,
-        face: npc.physical.face,
-        special1: npc.physical.special1,
-        special2: npc.physical.special2,
       },
-      NPCGen: {
-        languagesAndIssues: NPCGenResponse[1],
-        alignmentAndFaith: NPCGenResponse[2],
-        skillAndVoice: NPCGenResponse[3],
-      },
-      quirks: {
-        hook: npc.hook.description,
-        orientation: npc.relationship.orientation,
-        quirk: npc.pquirks.description,
+      local: {
         trait: traits[Math.floor(Math.random() * traits.length)],
+        languages: languages[Math.floor(Math.random() * languages.length)],
+        voice: voices[Math.floor(Math.random() * voices.length)],
       },
     };
   }
-
-  let outputNPC = DevelopNPC(innerText);
 
   return (
     <>
@@ -304,50 +384,79 @@ function GetQuickNPC() {
         <Button onClick={handleButtonClick}>
           {displayEmpty ? "Generate Quick NPC" : "Generate New Quick NPC"}
         </Button>
-        <Button onClick={() => handleFantasyGroundsClick("stat", outputNPC)}>
+        <Button onClick={() => handleFantasyGroundsClick("stat", teotheNPC)}>
           {displayEmpty ? "Generate First" : "Statblock for FGU"}
         </Button>
-        <Button onClick={() => handleFantasyGroundsClick("desc", outputNPC)}>
+        <Button onClick={() => handleFantasyGroundsClick("desc", teotheNPC)}>
           {displayEmpty ? "Generate First" : "Description for FGU"}
         </Button>
       </Space>
       <Divider />
-      {loading ? (
-        <Skeleton active />
-      ) : displayEmpty ? (
+      {displayEmpty ? (
         <Empty />
       ) : (
         <>
-        <SimpleContent
-          contentProps={{
-            title: outputNPC.name,
-            text: [
-              // `You encounter a character who exudes an aura of ${outputNPC.alignment[0]} lawfulness and ${outputNPC.alignment[1]} goodness.`,
-              `${outputNPC.name} is a ${outputNPC.quirks.orientation.toLowerCase()} ${outputNPC.description.race} ${outputNPC.description.gender}. They are ${outputNPC.description.age} years old. They are known for their ${outputNPC.description.occupation} profession.`,
-              `They have ${outputNPC.description.hair} ${outputNPC.description.eyes}. Their ${outputNPC.description.skin} contribute to a distinctive appearance. They have ${outputNPC.description.build} with ${outputNPC.description.face}. ${outputNPC.description.special1} ${outputNPC.description.special2} ${outputNPC.NPCGen.languagesAndIssues}.`,
-              `${outputNPC.NPCGen.skillAndVoice}. ${outputNPC.quirks.hook} ${
-                outputNPC.quirks.quirk
-              } and is known for being ${outputNPC.quirks.trait.toLowerCase()} ${
-                outputNPC.NPCGen.alignmentAndFaith
-              }.`
-            ],
-          }}
-        />
-        <Divider />
-        <SimpleContent
-          contentProps={{
-            title: "Statblock",
-            text: [
-            `Medium Humanoid (${outputNPC.description.race} ${outputNPC.description.gender})`,`Armor Class ${8+Number(statBonusHash[outputNPC.stats[1]])+Number(statBonusHash[outputNPC.stats[2]])} (+5 with mage armor)`,`Hit Points ${Math.floor((outputNPC.stats[0]+outputNPC.stats[1]+outputNPC.stats[2]*1.5+6)/4)}`,`Speed 30 ft.`,
-            `Strength: ${outputNPC.stats[0]}, Dexterity: ${outputNPC.stats[1]}, Constitution: ${outputNPC.stats[2]} Intelligence: ${outputNPC.stats[3]}, Wisdom: ${outputNPC.stats[4]}, Charisma: ${outputNPC.stats[5]}`,
-            `Senses darkvision 30 ft., passive Perception ${10+Number(statBonusHash[outputNPC.stats[4]])}`,
-            `Languages See description`,
-            `Challenge 0 (0 XP) Proficiency Bonus +2`,
-            `Philosophy. ${outputNPC.NPCGen.alignmentAndFaith}`,
-            `Profession. ${outputNPC.description.occupation.charAt(0).toUpperCase() + outputNPC.description.occupation.substring(1)}`,
-            ],
-          }}
-        />
+          <SimpleContent
+            contentProps={{
+              title: teotheNPC.name,
+              text: [
+                `${teotheNPC.name} (${teotheNPC.alignment}) is a ${
+                  teotheNPC.description.age
+                } years old, ${teotheNPC.relationship.orientation.toLowerCase()} ${
+                  teotheNPC.description.race
+                } ${teotheNPC.description.gender}. ${
+                  teotheNPC.description.pronounCapit
+                } is a ${teotheNPC.description.occupation}. ${
+                  teotheNPC.description.pronounCapit
+                } is ${teotheNPC.relationship.status.toLocaleLowerCase()}. `,
+                `${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.hair} ${teotheNPC.physical.eyes}. Their ${teotheNPC.physical.skin} contribute to a distinctive appearance. ${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.build} with ${teotheNPC.physical.face}. ${teotheNPC.physical.special1} ${teotheNPC.physical.special2}`,
+                `${teotheNPC.ptraits.traits1}${teotheNPC.ptraits.traits2}${
+                  teotheNPC.description.pronounCapit
+                } sounds ${teotheNPC.local.voice}, knows ${
+                  teotheNPC.local.languages
+                } languages. ${teotheNPC.hook.description} ${
+                  teotheNPC.pquirks.description
+                } and is known for being ${teotheNPC.local.trait.toLowerCase()} ${
+                  teotheNPC.ptraits.traitslizards
+                } ${teotheNPC.ptraits.traitsgoliaths} ${
+                  teotheNPC.religion.description
+                }. `,
+              ],
+            }}
+          />
+          <Divider />
+          <SimpleContent
+            contentProps={{
+              title: "Statblock",
+              text: [
+                `Medium Humanoid (${teotheNPC.description.race} ${teotheNPC.description.gender})`,
+                `Armor Class ${
+                  8 +
+                  Number(statBonusHash[teotheNPC.stats[1]]) +
+                  Number(statBonusHash[teotheNPC.stats[2]])
+                } (+5 with mage armor)`,
+                `Hit Points ${Math.floor(
+                  (teotheNPC.stats[0] +
+                    teotheNPC.stats[1] +
+                    teotheNPC.stats[2] * 1.5 +
+                    6) /
+                    4
+                )}`,
+                `Speed 30 ft.`,
+                `Strength: ${teotheNPC.stats[0]}, Dexterity: ${teotheNPC.stats[1]}, Constitution: ${teotheNPC.stats[2]} Intelligence: ${teotheNPC.stats[3]}, Wisdom: ${teotheNPC.stats[4]}, Charisma: ${teotheNPC.stats[5]}`,
+                `Senses darkvision 30 ft., passive Perception ${
+                  10 + Number(statBonusHash[teotheNPC.stats[4]])
+                }`,
+                `Languages ${teotheNPC.local.languages} languages`,
+                `Challenge 0 (0 XP) Proficiency Bonus +2`,
+                `Philosophy. ${teotheNPC.alignment}. ${teotheNPC.religion.description}`,
+                `Profession. ${
+                  teotheNPC.description.occupation.charAt(0).toUpperCase() +
+                  teotheNPC.description.occupation.substring(1)
+                }`,
+              ],
+            }}
+          />
         </>
       )}
     </>
