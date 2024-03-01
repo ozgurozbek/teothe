@@ -1,23 +1,7 @@
 "use client";
-/*
-achievements de ne olur ? 
-
-achievement, descr, AchievementPuanı, How many people has it
-
-Todo with Kutsi;
-1- Make it work DONE
-2- Filter DONE 
-3 - User Interaction Done
-4 - Make it look good, Styling?
-5- Responsive design (4 ile birlikte yap)
-6 - Achievemen details; Achievement üstüne tıkladığında, achievementi almak için ne yapman gerektiği yazabilir. şu anda olan texti de flavor text yaparız. 
-Ya da üstüne tıkladığında achievementı alan insanlardan kısa hikayeler alınabilir (Not alkan)
-7 - User Profilleri ile integration, kolay gelsin. 
-
-*/
 
 import React, { useState, useEffect } from "react";
-import { Card, Checkbox, Skeleton, Table, Modal, Input } from "antd";
+import { Card, Checkbox, Skeleton, Table } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import type { ColumnsType } from "antd/es/table";
 import achievementsData from "./achievements.json";
@@ -32,29 +16,27 @@ interface AchievementType {
   point: string;
   completed: boolean;
   completedBy?: string | null;
-  achievers: string[];
+  achievers?: string[] | null;
 }
-interface Achievement {
-    achievers: string[];
-    point: string;
-  }
-  
-  interface UserPoints {
-    user: string;
-    totalPoints: number;
-  }
+
+interface UserPoints {
+  user: string;
+  totalPoints: number;
+}
 
 //exotic ass batuhan
 
 function GetAchievementsData() {
   const [achievements, setAchievements] = useState<AchievementType[]>([]);
   const [userPointsState, setUserPointsState] = useState<UserPoints[]>([]);
-  
-  const calculateUserPoints = (achievements: AchievementType[]): UserPoints[]  => {
+
+  const calculateUserPoints = (
+    achievements: AchievementType[]
+  ): UserPoints[] => {
     const userPointsMap: { [user: string]: number } = {};
 
     achievements.forEach(({ achievers, point }) => {
-      achievers.forEach((user) => {
+      achievers?.forEach((user) => {
         if (!userPointsMap[user]) {
           userPointsMap[user] = 0;
         }
@@ -62,17 +44,17 @@ function GetAchievementsData() {
       });
     });
     return Object.entries(userPointsMap).map(([user, totalPoints]) => ({
-        user,
-        totalPoints,
-      }));
-    };
-    
+      user,
+      totalPoints,
+    }));
+  };
+
   useEffect(() => {
     const initializedData = achievementsData.achievements.map(
       (achievement, index) => ({
         ...achievement,
         key: index,
-        completed: achievement.achievers.includes(achievementsData.user),
+        completed: achievement.achievers?.includes(achievementsData.user) ? achievement.achievers.includes(achievementsData.user) : false,
       })
     );
     setAchievements(initializedData);
@@ -86,7 +68,7 @@ function GetAchievementsData() {
     const achievementIndex = achievements.findIndex((a) => a.key === key);
     if (achievementIndex !== -1) {
       const achievement = achievements[achievementIndex];
-      let newAchievers = [...achievement.achievers];
+      let newAchievers = achievement.achievers ? [...achievement.achievers] : [];
       if (achievement.completed) {
         //biz silişiyoruz
         newAchievers = newAchievers.filter(
@@ -113,19 +95,19 @@ function GetAchievementsData() {
     text: point,
     value: point,
   }));
-  
+
   const columns: ColumnsType<AchievementType> = [
     {
-        title: "Completed",
-        dataIndex: 'completed',
-        key: "completed",
-        render: (_, record) => (
-          <Checkbox
-            checked={record.completed}
-            onChange={() => handleCompletionToggle(record.key)}
-          />
-        ),
-      },
+      title: "Completed",
+      dataIndex: "completed",
+      key: "completed",
+      render: (_, record) => (
+        <Checkbox
+          checked={record.completed}
+          onChange={() => handleCompletionToggle(record.key)}
+        />
+      ),
+    },
     {
       title: "Name",
       dataIndex: "name",
@@ -142,6 +124,7 @@ function GetAchievementsData() {
       dataIndex: "point",
       key: "point",
       sorter: (a, b) => parseInt(a.point) - parseInt(b.point),
+      defaultSortOrder: "ascend",
       filters: pointOptions,
       onFilter: (value, record) => record.point.toString() === value,
     },
@@ -149,19 +132,19 @@ function GetAchievementsData() {
       title: "Number Of People",
       dataIndex: "numberOfPeople",
       key: "numberOfPeople",
-      render: (_, record) => record.achievers.length,
-    //   sorter: (a, b) => parseInt(a.numberOfPeople) - parseInt(b.numberOfPeople),
+      render: (_, record) => record.achievers?.length,
+      //   sorter: (a, b) => parseInt(a.numberOfPeople) - parseInt(b.numberOfPeople),
       // Filtering can be added similarly if needed
     },
-    
+
     {
       title: "Completed By",
       dataIndex: "completedBy",
       key: "completedBy",
-      render: (_, record) => record.achievers.join(', ') || 'N/A',
+      render: (_, record) => record.achievers?.join(", ") || "N/A",
     },
   ];
-  const userPointsColumns: ColumnsType<UserPoints>= [
+  const userPointsColumns: ColumnsType<UserPoints> = [
     {
       title: "User",
       dataIndex: "user",
@@ -171,16 +154,9 @@ function GetAchievementsData() {
       title: "Total Points",
       dataIndex: "totalPoints",
       key: "totalPoints",
+      // Add sort here
     },
   ];
-
-//   let dataSource = achievementsData.achievements.map((achievement, index) => ({
-//     key: index,
-//     name: achievement.name,
-//     description: achievement.description,
-//     point: achievement.point,
-//     numberOfPeople: achievement.numberOfPeople,
-//   }));
 
   return (
     <>
@@ -188,7 +164,7 @@ function GetAchievementsData() {
         contentProps={{
           title: "Achievements",
           text: [
-            "Here are the achievements that play can earn. Each achievement has its unique criteria and points associated with it.",
+            "Displays the achievements that players can earn. Each achievement has a unique criteria and points associated with it. Your Teothe achievements have been reset. You must not alter the gameplay to gain achievements.",
           ],
         }}
       />
@@ -205,7 +181,7 @@ function GetAchievementsData() {
         columns={userPointsColumns}
         pagination={false}
         scroll={{ x: 800 }}
-        title={() => "User Points"}
+        title={() => "Leaderboard"}
       />
     </>
   );
