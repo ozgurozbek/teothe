@@ -1,0 +1,17 @@
+{
+    "achievements": [
+        {
+            "name": "Overkill",
+            "description": "You hit someone double to their hp",
+            "point": "5",
+            "numberOfPeople":"2"
+        },
+        
+        {
+            "name": "Levrage",
+            "description": "You blackmailed an innocent NPC",
+            "point": "20",
+            "numberOfPeople":"4"
+        }
+    ]
+}
