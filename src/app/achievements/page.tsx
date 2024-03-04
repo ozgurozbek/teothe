@@ -55,7 +55,8 @@ function GetAchievementsData() {
         key: index,
         completed: achievement.achievers?.includes(achievementsData.user) || false,
       })
-    );
+    ).sort((a,b) => parseInt(a.id) - parseInt(b.id));
+
     setAchievements(initializedData);
   }, []);
   useEffect(() => {
@@ -117,7 +118,6 @@ function GetAchievementsData() {
       dataIndex: "point",
       key: "point",
       sorter: (a, b) => parseInt(a.point) - parseInt(b.point),
-      defaultSortOrder: "ascend",
       filters: pointOptions,
       onFilter: (value, record) => record.point.toString() === value,
     },
