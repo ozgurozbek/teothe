@@ -3,8 +3,6 @@
 import { CaretUpOutlined, CopyOutlined } from "@ant-design/icons";
 import { ConfigProvider, Layout, theme } from "antd";
 import Navbar from "Comp/Navbar";
-import Script from "next/script";
-import { useEffect } from "react";
 
 const { Header, Content, Footer } = Layout;
 

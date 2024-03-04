@@ -138,19 +138,20 @@ export default function Navbar() {
             userSelect: "none",
           }}
           items={[
-            getItem("Common Lore", "1", "common-lore", getIcon("CommonLore")),
-            getItem("Planes", "2", "planes", getIcon("Locations")),
-            getItem("Deities", "3", "deities", getIcon("Deities")),
-            getItem("Races", "4", "races", getIcon("Races")),
-            getItem("Tables", "5", "tables", getIcon("Tables")),
-            getItem("Library", "6", "library", getIcon("Library")),
-            getItem("Pricing", "7", "pricing", getIcon("Pricing")),
-            getItem("Tools", "8", "tools", getIcon("Tools")),
-            getItem("Homebrews", "9", "homebrews", getIcon("Homebrews")),
-            getItem("Map Overlay", "10", "map-overlay", getIcon("MapOverlay")),
-            getItem("Map Legend", "11", "map-legend", getIcon("MapLegend")),
-            getItem("Calendar", "12", "calendar", getIcon("Calendar")),
-            getItem("Languages", "13", "languages", getIcon("Languages")),
+            getItem("Login", "1", "login", getIcon("Login")),
+            getItem("Common Lore", "2", "common-lore", getIcon("CommonLore")),
+            getItem("Planes", "3", "planes", getIcon("Locations")),
+            getItem("Deities", "4", "deities", getIcon("Deities")),
+            getItem("Races", "5", "races", getIcon("Races")),
+            getItem("Tables", "6", "tables", getIcon("Tables")),
+            getItem("Library", "7", "library", getIcon("Library")),
+            getItem("Pricing", "8", "pricing", getIcon("Pricing")),
+            getItem("Tools", "9", "tools", getIcon("Tools")),
+            getItem("Homebrews", "10", "homebrews", getIcon("Homebrews")),
+            getItem("Map Overlay", "11", "map-overlay", getIcon("MapOverlay")),
+            getItem("Map Legend", "12", "map-legend", getIcon("MapLegend")),
+            getItem("Calendar", "13", "calendar", getIcon("Calendar")),
+            getItem("Languages", "14", "languages", getIcon("Languages")),
           ]}
         />
       </div>

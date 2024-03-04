@@ -9,11 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-amplify/cli": "^12.10.1",
+    "@aws-amplify/ui-react": "^6.1.5",
     "@types/node": "20.3.1",
     "@types/react": "18.2.12",
     "@types/react-dom": "18.2.5",
     "antd": "^5.14.1",
     "autoprefixer": "10.4.14",
+    "aws-amplify": "^6.0.18",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.5",
     "next": "13.5.6",
