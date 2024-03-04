@@ -145,7 +145,8 @@ function GetAchievementsData() {
       title: "Total Points",
       dataIndex: "totalPoints",
       key: "totalPoints",
-      // Add sort here
+      sorter: (a, b) => a.totalPoints - b.totalPoints,
+      defaultSortOrder: 'descend',
     },
   ];
 
