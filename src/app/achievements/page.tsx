@@ -174,7 +174,7 @@ function GetAchievementsData() {
       </Button>
       <Modal
         title="Leaderboard"
-        visible={isModalVisible}
+        open={isModalVisible}
         onCancel={handleCancel}
         footer={[
           <Button key="back" onClick={handleCancel}>
