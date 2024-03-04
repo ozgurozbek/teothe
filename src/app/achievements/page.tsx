@@ -225,7 +225,7 @@ function GetAchievementsData() {
   );
 }
 
-function AchievementsPageComponent() {
+export default memo(function AchievementsPageComponent() {
   return (
     <section>
       <GetCrumbs path={"Teothe3K, Achievements"} />
@@ -234,8 +234,4 @@ function AchievementsPageComponent() {
       </Card>
     </section>
   );
-}
-
-const AchievementsPage = memo(AchievementsPageComponent);
-
-export default AchievementsPage;
+});
