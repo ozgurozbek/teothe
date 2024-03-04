@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import GetCrumbs from "@/components/NavigationCrumb";
 import RacesCon from "@/components/races/RacesCon";
@@ -11,7 +11,7 @@ import { useState } from "react";
  * @backend fetch
  * @param brewCheck The state that controls whether homebrew content is turned on or off
  * @param officialCheck The state that controls whether official content is turned on or off
- * @returns RacesCon and Divider(antd) wrapped with <> 
+ * @returns RacesCon and Divider(antd) wrapped with <>
  */
 function GetRaces(brewCheck: boolean, officialCheck: boolean) {
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
@@ -38,8 +38,16 @@ function GetRaces(brewCheck: boolean, officialCheck: boolean) {
             }}
             DescriptionText={{
               title: item.name,
-              paragraph: officialCheck ? item.description.split("_") : "",
-              homebrew: brewCheck ? item.homebrew.split("_") : "",
+              paragraph: officialCheck
+                ? item.description
+                  ? item.description.split("_")
+                  : ""
+                : "",
+              homebrew: brewCheck
+                ? item.homebrew
+                  ? item.homebrew.split("_")
+                  : ""
+                : "",
             }}
           />
           <Divider />
@@ -69,18 +77,17 @@ export default function RacesPage() {
   return (
     <section>
       <GetCrumbs path={"Teothe3K,Races"} />
-      
+
       <Space className="float-right">
-      <div className="text-pink-600">
-        <span className="align-bottom">Homebrew </span>
-        <Switch defaultChecked onChange={ToggleBrew} />
-        {" "}
-      </div>
-      <div>
-        <span className="align-bottom">Official </span>
-        <Switch defaultChecked onChange={ToggleOfficial} />
-        {" "}
-      </div></Space>
+        <div className="text-pink-600">
+          <span className="align-bottom">Homebrew </span>
+          <Switch defaultChecked onChange={ToggleBrew} />{" "}
+        </div>
+        <div>
+          <span className="align-bottom">Official </span>
+          <Switch defaultChecked onChange={ToggleOfficial} />{" "}
+        </div>
+      </Space>
       <Card bordered={false}>{GetRaces(brew, official)}</Card>
     </section>
   );
