@@ -58,6 +58,7 @@ function GetAPICalendar() {
   for (let rowData of data.tableData) {
     dataSource.push(rowData);
   }
+  dataSource.sort((a, b) => parseInt(a.month) - parseInt(b.month));
   return (
     <>
       <SimpleContent
