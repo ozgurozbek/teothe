@@ -1,12 +1,14 @@
 "use client";
+
 import React, { useState, useEffect, useCallback, memo, useMemo } from "react";
 import { Card, Checkbox, Skeleton, Table, Modal, Button } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import type { ColumnsType } from "antd/es/table";
 import achievementsData from "./achievements.json";
-
 import SimpleContent from "@/components/SimpleCon";
 import { TrophyOutlined, UserOutlined } from "@ant-design/icons";
+import Confetti from 'react-confetti'
+import useWindowSize from 'react-use/lib/useWindowSize'
 
 interface AchievementType {
   key: React.Key;
@@ -28,6 +30,8 @@ function GetAchievementsData() {
   const [achievements, setAchievements] = useState<AchievementType[]>([]);
   const [userPointsState, setUserPointsState] = useState<UserPoints[]>([]);
   const [isModalVisible, setIsModalVisible] = useState(false);
+
+  const { width, height } = useWindowSize()
 
   const showModal = () => {
     setIsModalVisible(true);
@@ -175,6 +179,11 @@ function GetAchievementsData() {
 
   return (
     <>
+    {isModalVisible && <Confetti
+    width={document.getElementById("achievements")?.offsetWidth}
+    height={height}
+    className="z-50"/>
+    }
       <SimpleContent
         contentProps={{
           title: "Achievements",
@@ -190,6 +199,9 @@ function GetAchievementsData() {
         title="Leaderboard"
         open={isModalVisible}
         onCancel={handleCancel}
+        styles={{mask:{ backdropFilter: 'none' } }} //none, blur(2px)
+        mask={true}
+        maskClosable={true}
         footer={[
           <Button key="back" onClick={handleCancel}>
             Ok
