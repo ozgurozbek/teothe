@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect, useCallback, memo, useMemo } from "react";
-import { Card, Checkbox, Skeleton, Table } from "antd";
+import { Card, Checkbox, Skeleton, Table, Modal, Button } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import type { ColumnsType } from "antd/es/table";
 import achievementsData from "./achievements.json";
@@ -26,7 +26,16 @@ interface UserPoints {
 function GetAchievementsData() {
   const [achievements, setAchievements] = useState<AchievementType[]>([]);
   const [userPointsState, setUserPointsState] = useState<UserPoints[]>([]);
+  const [isModalVisible, setIsModalVisible] = useState(false);
 
+  const showModal = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
+  
   const calculateUserPoints = useCallback((achievements: AchievementType[]): UserPoints[] => {
     const userPointsMap: { [user: string]: number } = {};
 
@@ -160,20 +169,31 @@ function GetAchievementsData() {
           ],
         }}
       />
+      <Button type="primary" onClick={showModal}>
+        Show Leaderboard
+      </Button>
+      <Modal
+        title="Leaderboard"
+        visible={isModalVisible}
+        onCancel={handleCancel}
+        footer={[
+          <Button key="back" onClick={handleCancel}>
+            Ok
+          </Button>,
+        ]}
+      >
+        <Table
+          dataSource={userPointsState}
+          columns={userPointsColumns}
+          pagination={false}
+        />
+      </Modal>
       <Table
         className="mt-4"
         dataSource={achievements}
         columns={columns}
         pagination={false}
         scroll={{ x: 1200 }}
-      />
-      <Table
-        className="mt-4"
-        dataSource={userPointsState}
-        columns={userPointsColumns}
-        pagination={false}
-        scroll={{ x: 800 }}
-        title={() => "Leaderboard"}
       />
     </>
   );
