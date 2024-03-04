@@ -123,3 +123,8 @@ footer > a {
   background-color: white !important;
   color: black !important;
 }
+
+.ant-checkbox:hover .ant-checkbox-inner, .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #261725 !important;
+  border-color: #261725 !important;
+}
