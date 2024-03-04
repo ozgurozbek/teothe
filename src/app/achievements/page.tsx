@@ -1,6 +1,5 @@
 "use client";
-
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback, memo, useMemo } from "react";
 import { Card, Checkbox, Skeleton, Table } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import type { ColumnsType } from "antd/es/table";
@@ -18,21 +17,17 @@ interface AchievementType {
   completedBy?: string | null;
   achievers?: string[] | null;
 }
-
 interface UserPoints {
   user: string;
   totalPoints: number;
 }
-
 //exotic ass batuhan
 
 function GetAchievementsData() {
   const [achievements, setAchievements] = useState<AchievementType[]>([]);
   const [userPointsState, setUserPointsState] = useState<UserPoints[]>([]);
 
-  const calculateUserPoints = (
-    achievements: AchievementType[]
-  ): UserPoints[] => {
+  const calculateUserPoints = useCallback((achievements: AchievementType[]): UserPoints[] => {
     const userPointsMap: { [user: string]: number } = {};
 
     achievements.forEach(({ achievers, point }) => {
@@ -47,54 +42,52 @@ function GetAchievementsData() {
       user,
       totalPoints,
     }));
-  };
+  }, []);
+  
+  const pointOptions = useMemo(() => Array.from(new Set(achievementsData.achievements.map((a) => a.point))).map((point) => ({
+    text: point,
+    value: point,
+  })), []);
 
   useEffect(() => {
-    const initializedData = achievementsData.achievements.map(
-      (achievement, index) => ({
-        ...achievement,
+    const initializedData = achievementsData.achievements.map((achievement, index) => ({
+      ...achievement,
         key: index,
-        completed: achievement.achievers?.includes(achievementsData.user) ? achievement.achievers.includes(achievementsData.user) : false,
+        completed: achievement.achievers?.includes(achievementsData.user) || false,
       })
     );
     setAchievements(initializedData);
   }, []);
   useEffect(() => {
-    // Recalculate and update user points whenever achievements data changes
     setUserPointsState(calculateUserPoints(achievements));
-  }, [achievements]);
+  }, [achievements, calculateUserPoints]);
 
-  const handleCompletionToggle = (key: React.Key) => {
-    const achievementIndex = achievements.findIndex((a) => a.key === key);
-    if (achievementIndex !== -1) {
-      const achievement = achievements[achievementIndex];
-      let newAchievers = achievement.achievers ? [...achievement.achievers] : [];
-      if (achievement.completed) {
-        //biz silişiyoruz
-        newAchievers = newAchievers.filter(
-          (name) => name !== achievementsData.user
-        );
-      } else {
-        newAchievers.push(achievementsData.user);
+  const handleCompletionToggle = useCallback((key: React.Key) => {
+    setAchievements((prevAchievements) => {
+      const achievementIndex = prevAchievements.findIndex((a) => a.key === key);
+      if (achievementIndex !== -1) {
+        const newAchievements = [...prevAchievements];
+        const achievement = prevAchievements[achievementIndex];
+        let newAchievers = achievement.achievers ? [...achievement.achievers] : [];
+        if (achievement.completed) {
+          newAchievers = newAchievers.filter((name) => name !== achievementsData.user);
+        } else {
+          newAchievers.push(achievementsData.user);
+        }
+        newAchievements[achievementIndex] = {
+          ...achievement,
+          achievers: newAchievers,
+          completed: !achievement.completed,
+        };
+        return newAchievements;
       }
-      const updatedAchievements = [...achievements];
-      updatedAchievements[achievementIndex] = {
-        ...achievement,
-        achievers: newAchievers,
-        completed: !achievement.completed,
-      };
-      setAchievements(updatedAchievements);
-    }
-  };
+      return prevAchievements;
+    });
+  }, []);
+
   if (!achievementsData) return <Skeleton active />;
 
-  //Filter operation ll be here I hope to god
-  const pointOptions = Array.from(
-    new Set(achievementsData.achievements.map((a) => a.point))
-  ).map((point) => ({
-    text: point,
-    value: point,
-  }));
+  
 
   const columns: ColumnsType<AchievementType> = [
     {
@@ -132,9 +125,7 @@ function GetAchievementsData() {
       title: "Number Of People",
       dataIndex: "numberOfPeople",
       key: "numberOfPeople",
-      render: (_, record) => record.achievers?.length,
-      //   sorter: (a, b) => parseInt(a.numberOfPeople) - parseInt(b.numberOfPeople),
-      // Filtering can be added similarly if needed
+      render: (_, record) => record.achievers?.length || 0,
     },
 
     {
@@ -187,7 +178,7 @@ function GetAchievementsData() {
   );
 }
 
-export default function AchievementsPage() {
+function AchievementsPageComponent() {
   return (
     <section>
       <GetCrumbs path={"Teothe3K, Achievements"} />
@@ -197,3 +188,7 @@ export default function AchievementsPage() {
     </section>
   );
 }
+
+const AchievementsPage = memo(AchievementsPageComponent);
+
+export default AchievementsPage;
