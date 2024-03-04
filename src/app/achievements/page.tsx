@@ -6,6 +6,7 @@ import type { ColumnsType } from "antd/es/table";
 import achievementsData from "./achievements.json";
 
 import SimpleContent from "@/components/SimpleCon";
+import { TrophyOutlined, UserOutlined } from "@ant-design/icons";
 
 interface AchievementType {
   key: React.Key;
@@ -35,36 +36,47 @@ function GetAchievementsData() {
   const handleCancel = () => {
     setIsModalVisible(false);
   };
-  
-  const calculateUserPoints = useCallback((achievements: AchievementType[]): UserPoints[] => {
-    const userPointsMap: { [user: string]: number } = {};
 
-    achievements.forEach(({ achievers, point }) => {
-      achievers?.forEach((user) => {
-        if (!userPointsMap[user]) {
-          userPointsMap[user] = 0;
-        }
-        userPointsMap[user] += parseInt(point, 10);
+  const calculateUserPoints = useCallback(
+    (achievements: AchievementType[]): UserPoints[] => {
+      const userPointsMap: { [user: string]: number } = {};
+
+      achievements.forEach(({ achievers, point }) => {
+        achievers?.forEach((user) => {
+          if (!userPointsMap[user]) {
+            userPointsMap[user] = 0;
+          }
+          userPointsMap[user] += parseInt(point, 10);
+        });
       });
-    });
-    return Object.entries(userPointsMap).map(([user, totalPoints]) => ({
-      user,
-      totalPoints,
-    }));
-  }, []);
-  
-  const pointOptions = useMemo(() => Array.from(new Set(achievementsData.achievements.map((a) => a.point))).map((point) => ({
-    text: point,
-    value: point,
-  })), []);
+      return Object.entries(userPointsMap).map(([user, totalPoints]) => ({
+        user,
+        totalPoints,
+      }));
+    },
+    []
+  );
+
+  const pointOptions = useMemo(
+    () =>
+      Array.from(
+        new Set(achievementsData.achievements.map((a) => a.point))
+      ).map((point) => ({
+        text: point,
+        value: point,
+      })),
+    []
+  );
 
   useEffect(() => {
-    const initializedData = achievementsData.achievements.map((achievement, index) => ({
-      ...achievement,
+    const initializedData = achievementsData.achievements
+      .map((achievement, index) => ({
+        ...achievement,
         key: index,
-        completed: achievement.achievers?.includes(achievementsData.user) || false,
-      })
-    ).sort((a,b) => parseInt(a.id) - parseInt(b.id));
+        completed:
+          achievement.achievers?.includes(achievementsData.user) || false,
+      }))
+      .sort((a, b) => parseInt(a.id) - parseInt(b.id));
 
     setAchievements(initializedData);
   }, []);
@@ -78,9 +90,13 @@ function GetAchievementsData() {
       if (achievementIndex !== -1) {
         const newAchievements = [...prevAchievements];
         const achievement = prevAchievements[achievementIndex];
-        let newAchievers = achievement.achievers ? [...achievement.achievers] : [];
+        let newAchievers = achievement.achievers
+          ? [...achievement.achievers]
+          : [];
         if (achievement.completed) {
-          newAchievers = newAchievers.filter((name) => name !== achievementsData.user);
+          newAchievers = newAchievers.filter(
+            (name) => name !== achievementsData.user
+          );
         } else {
           newAchievers.push(achievementsData.user);
         }
@@ -97,11 +113,9 @@ function GetAchievementsData() {
 
   if (!achievementsData) return <Skeleton active />;
 
-  
-
   const columns: ColumnsType<AchievementType> = [
     {
-      title: "Completed",
+      title: <TrophyOutlined />,
       dataIndex: "completed",
       key: "completed",
       render: (_, record) => (
@@ -123,7 +137,7 @@ function GetAchievementsData() {
       key: "description",
     },
     {
-      title: "Points",
+      title: "Score",
       dataIndex: "point",
       key: "point",
       sorter: (a, b) => parseInt(a.point) - parseInt(b.point),
@@ -131,7 +145,7 @@ function GetAchievementsData() {
       onFilter: (value, record) => record.point.toString() === value,
     },
     {
-      title: "Number Of People",
+      title: <UserOutlined />,
       dataIndex: "numberOfPeople",
       key: "numberOfPeople",
       render: (_, record) => record.achievers?.length || 0,
@@ -155,7 +169,7 @@ function GetAchievementsData() {
       dataIndex: "totalPoints",
       key: "totalPoints",
       sorter: (a, b) => a.totalPoints - b.totalPoints,
-      defaultSortOrder: 'descend',
+      defaultSortOrder: "descend",
     },
   ];
 
