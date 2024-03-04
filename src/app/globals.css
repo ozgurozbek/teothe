@@ -124,7 +124,20 @@ footer > a {
   color: black !important;
 }
 
-.ant-checkbox:hover .ant-checkbox-inner, .ant-checkbox-checked .ant-checkbox-inner {
+.ant-checkbox-inner, .ant-checkbox-input {
+  transform: scale(1.4)
+}
+
+.ant-checkbox:hover .ant-checkbox-inner {
   background-color: #30011a !important;
   border-color: #30011a !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: white !important;
+  border-color: white !important;
+}
+
+.ant-checkbox-inner:after {
+  border-color: transparent !important;
 }

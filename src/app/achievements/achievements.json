@@ -322,7 +322,7 @@
       "description": "Resurrect a party member.",
       "point": "1",
       "name": "Resurrected",
-      "achievers": ["Hazal"]
+      "achievers": ["Hazal","Kutay"]
     },
     {
       "id": "136",
