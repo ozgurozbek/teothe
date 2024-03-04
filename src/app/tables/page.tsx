@@ -134,6 +134,8 @@ function GetTableData() {
   for (let rowData of data.tableData) {
     dataSource.push(rowData);
   }
+  dataSource.sort((a, b) => parseInt(a.id) - parseInt(b.id));
+
   return (
     <>
       <TablesNavigator />

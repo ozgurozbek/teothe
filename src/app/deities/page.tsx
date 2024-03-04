@@ -1,10 +1,18 @@
-"use client"
+"use client";
 
 import { Card, Divider, Skeleton } from "antd";
 import Deity from "Comp/commonlore/Deities";
 import GetCrumbs from "Comp/NavigationCrumb";
 import SimpleContent from "Comp/SimpleCon";
 import useSWR from "swr";
+
+interface DataType {
+  deityDomains: string;
+  deityTitle: string;
+  deityName: string;
+  deityText: string;
+  deityId: number;
+}
 
 /**
  * Gets Deity data and passes the props to Deity component
@@ -24,6 +32,8 @@ function GetDeities(rank: string) {
     return <div>Failed to access API</div>;
   }
   if (!data) return <Skeleton active />;
+
+  data.sort((a: DataType, b: DataType) => a.deityId - b.deityId);
 
   let renderedDeities = [];
   for (let item of data) {
