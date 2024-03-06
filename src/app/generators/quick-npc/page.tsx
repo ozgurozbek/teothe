@@ -1,10 +1,151 @@
 "use client";
 
-import { Button, Card, Divider, Empty, Space } from "antd";
+import { Button, Card, Divider, Dropdown, Empty, MenuProps, Space } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import { useState } from "react";
 import SimpleContent from "@/components/SimpleCon";
-import { generate } from "npc-generator";
+import {
+  getNpcOptionsValues,
+  NpcGenerateOptions,
+  generate,
+  GenerateOptionValueSimple,
+} from "npc-generator";
+import { DownOutlined } from "@ant-design/icons";
+
+/* Hoisted variables */
+//Utility to pull stat modifiers
+var statBonusHash: any = {
+  0: "-5",
+  1: "-5",
+  2: "-4",
+  3: "-4",
+  4: "-3",
+  5: "-3",
+  6: "-2",
+  7: "-2",
+  8: "-1",
+  9: "-1",
+  10: "+0",
+  11: "+0",
+  12: "+1",
+  13: "+1",
+  14: "+2",
+  15: "+2",
+  16: "+3",
+  17: "+3",
+  18: "+4",
+  19: "+4",
+  20: "+5",
+  21: "+5",
+  22: "+6",
+  23: "+6",
+  24: "+7",
+  25: "+7",
+  26: "+8",
+  27: "+8",
+  28: "+9",
+  29: "+9",
+  30: "+10",
+};
+
+// Utility for languages
+var languages: string[] = [
+  "only the local languages",
+  "common and one more language",
+  "common and two more languages",
+  "common and three more languages",
+  "exotic languages",
+];
+
+// Utility for voices
+var voices: string[] = [
+  "filled with air",
+  "rough",
+  "deep",
+  "high",
+  "enthusiastic",
+  "bored",
+  "angry",
+  "authoritative",
+  "comedic",
+  "conversational",
+  "elegant",
+  "enticing",
+  "inspiring",
+  "nurturing",
+  "playful",
+  "sad",
+  "scared",
+  "unorthodox",
+];
+
+// Utility for traits
+var traits: string[] = [
+  `Gourmand: Obsessed with food, cooks a lot.`,
+  `Ascetic: Has forsaken physical comforts and enjoyments, enjoys simplicity.`,
+  `Nimble: Moves around with ease as if they are dancing.`,
+  `Clever: They are good at out-of-the-box thinking.`,
+  `Open-Minded: Doesn't judge people often, will consider even the wildest claims.`,
+  `Kind: Exceptionally agreeable, doesn't insult others.`,
+  `Sanguine: Exceptionally upbeat, very difficult to lower their mood.`,
+  `Optimist: Can always find the silver lining.`,
+  `Steadfast: Mentally strong and doesn't crumble under stress.`,
+  `Brave: Shows courage in the face of danger.`,
+  `Iron Stomach: Has a strong resistance to ingesting contaminants and toxins.`,
+  `Night Owl: Is usually awake at night and asleep during the day.`,
+  `Masochist: Likes being subjected to pain.`,
+  `Transhumanist: Wants to enhance their body through artifice or magic.`,
+  `Tortured Artist: Feels misunderstood by other people, wants to create the greatest piece of art.`,
+  `Chemical Fascination: Loves altering their mental state with drugs and chemicals, suffers withdrawal quickly.`,
+  `Teetotaler: Abhors the idea of gaining pleasure from chemicals, doesn't drink or use drugs.`,
+  `Absent-Minded: Will sometimes completely forget what they are doing.`,
+  `Obsessed Worker: Always focused on their job, starts feeling uneasy when not working.`,
+  `Perfectionist: Can't bear to stop working on something until it is perfect.`,
+  `Lazy Worker: Hates their job, works slowly and would much rather be doing anything else.`,
+  `Clumsy: Constantly fumbling and dropping things.`,
+  `Fidgeter: Is constantly fiddling with something in their hand.`,
+  `Neat: Their environment must always be clean and tidy.`,
+  `Slob: Doesn't care about the cleanliness of their environment.`,
+  `Animal Lover: Loves animals, and tends to be surrounded by them.`,
+  `Animal Hater: Can't stand animals, and often tries to avoid them.`,
+  `Rebellious: Dislikes authority, and resists any attempt at control over them.`,
+  `Compliant: Always obeys authority, and shows little to no resistance to new rules.`,
+  `Submissive: Meekly obedient to others, and shows no resistance in conflict.`,
+  `Dominant: They must be the loudest voice, have their idea pursued, and be the most powerful in the room.`,
+  `Party Animal: Loves parties, and often tries to organize them.`,
+  `Introvert: Doesn't like too much social interaction, and tends to be timid or blunt in conversation.`,
+  `Snob: Believes that they are of the highest class, and looks down upon those lesser than them.`,
+  `Squeamish: Gets grossed out easily.`,
+  `Drunken Prodigy: Seems to perform better, work better, and just be better while they are drunk.`,
+  `Stoned Prodigy: Seems to perform better, work better, and just be better while they are under the influence of drugs.`,
+  `Hoplophobia: They are terrified of weapons.`,
+  `Hoplophile: Has an irrational love for weaponry.`,
+  `Autophobia: Has a fear of being alone.`,
+  `Indecisive: Struggles to commit to a decision.`,
+  `Hypochondriac: Is constantly concerned with their health, possibly believing that they have afflictions that they don't.`,
+  `Twitchy: Some of their muscles seem to spasm at random.`,
+  `Agoraphobia: Is scared of going outside.`,
+  `Purist: Doesn't like people who are magically inclined.`,
+  `Greedy: Always wants more, and gets mad if they don't get it.`,
+  `Jealous: If they see something they don't have, they do what they need to get it.`,
+  `Pyromaniac: They love watching and starting fires, and get angry when they are extinguished.`,
+  `Sadist: Enjoys inflicting pain on others.`,
+  `Wimp: Cowers at the slightest notion of violence.`,
+  `Abrasive: Exceptionally blunt, doesn't consider people's feelings when talking.`,
+  `Creepy Breathing: Breathes considerably heavily and sweats constantly.`,
+  `Misandrist: Dislikes and distrusts men.`,
+  `Misogynist: Dislikes and distrusts women.`,
+  `Misanthrope: Dislikes and distrusts people, believes that all actions are taken for selfish reasons.`,
+  `Pessimist: Always assumes the worst outcome.`,
+  `Depressive: Perpetually in an awful mood, very difficult to raise their mood.`,
+  `Nervous: Feels the strain from stress more than others.`,
+  `Volatile: Even the smallest thing can make them explode, very quick to break under stress.`,
+  `Sickly: They are far more likely to get sick than others.`,
+  `Insomniac: Forever tired, they can't seem to get a good night's rest.`,
+  `World Weary: Well-versed in world/country/state politics, but is very anxious about the fallout of world events.`,
+  `Desensitized: They have seen so many traumatic events that those same events no longer faze them.`,
+  `Tycoon: Always looking for business opportunities, they want to own it all.`,
+];
 
 /**
  * React component for rendering a Quest Idea Generator interface.
@@ -16,13 +157,110 @@ import { generate } from "npc-generator";
  */
 function GetQuickNPC() {
   const [displayEmpty, setDisplayEmpty] = useState(true);
+  const [raceNo, setRaceNo] = useState("N/A");
+  const [genderNo, setGenderNo] = useState("N/A");
+  const [alignmentNo, setAlignmentNo] = useState("N/A");
+  const [occupationNo, setOccupationNo] = useState("N/A");
+  const [npcOptionsObject, setNpcOptionsObject] = useState<
+    NpcGenerateOptions | undefined
+  >(undefined);
   const [teotheNPC, setTeotheNPC] = useState<TeotheNPC>(DevelopNPC());
 
-  const handleButtonClick = () => {
-    setTeotheNPC(DevelopNPC());
+  // Generates NPC options from the library
+  const npcOptionsValues = getNpcOptionsValues();
+
+  /* RACES */
+  const handleRaceClick: MenuProps["onClick"] = (e) => {
+    setRaceNo(e.key);
+    setNpcOptionsObject({ race: Number(e.key), gender: npcOptionsObject?.gender, classorprof:npcOptionsObject?.classorprof, alignment:npcOptionsObject?.alignment });
+  };
+
+  const raceProps = {
+    items: npcOptionsValues.races.map(racesMapper),
+    onClick: handleRaceClick,
+  };
+
+  // Utility for race dropdown, has an issue with their displays
+  function racesMapper(raceObject: {
+    name: string;
+    value: number;
+    subraces: GenerateOptionValueSimple | undefined;
+  }) {
+    return { label: raceObject.name, key: raceObject.value };
+  }
+  /* RACES END */
+
+  /* GENDER */
+  const handleGenderClick: MenuProps["onClick"] = (e) => {
+    setGenderNo(e.key);
+    setNpcOptionsObject({ race:npcOptionsObject?.race, gender: Number(e.key), classorprof:npcOptionsObject?.classorprof, alignment:npcOptionsObject?.alignment });
+  };
+
+  const genderProps = {
+    items: npcOptionsValues.genders.map(genderMapper),
+    onClick: handleGenderClick,
+  };
+
+  //Utility for gender dropdown, has an issue with their displays
+  function genderMapper(genderObject: { name: string; value: number }) {
+    return { label: genderObject.name, key: genderObject.value };
+  }
+  /* GENDER END */
+
+  /* CLASS OR OCCUPATION */
+  const handleOccupationClick: MenuProps["onClick"] = (e) => {
+    setOccupationNo(e.key);
+    setNpcOptionsObject({ race:npcOptionsObject?.race, gender: npcOptionsObject?.gender, classorprof:Number(e.key), alignment:npcOptionsObject?.alignment });
+  };
+
+  const occupationProps = {
+    items: npcOptionsValues.occupations.map(occupationsMapper),
+    onClick: handleOccupationClick,
+  };
+
+  // Utility for occupation dropdown, has an issue with their displays
+  function occupationsMapper(occupationObject: {
+    name: string;
+    value: number;
+  }) {
+    return { label: occupationObject.name, key: occupationObject.value };
+  }
+  /* CLASS OR OCCUPATION END */
+
+  /* ALIGNMENT */
+  const handleAlignmentClick: MenuProps["onClick"] = (e) => {
+    setAlignmentNo(e.key);
+    setNpcOptionsObject({ race:npcOptionsObject?.race, gender: npcOptionsObject?.gender, classorprof:npcOptionsObject?.classorprof, alignment:Number(e.key) });
+  };
+
+  const alignmentProps = {
+    items: npcOptionsValues.alignments.map(alignmentsMapper),
+    onClick: handleAlignmentClick,
+  };
+
+  // Utility for alignment dropdown, has an issue with their displays
+  function alignmentsMapper(alignmentsObject: {
+    name: string;
+    value: number;
+  }) {
+    return { label: alignmentsObject.name, key: alignmentsObject.value };
+  }
+  /* ALIGNMENT END */
+
+  // Develops NPC depending on value (norm: normal npc, spcf: specific npc)
+  const handleButtonClick = (value: string) => {
+    switch (value) {
+      case "norm":
+        setTeotheNPC(DevelopNPC());
+        break;
+      case "spcf":
+        setTeotheNPC(DevelopNPC(npcOptionsObject));
+        break;
+    }
     setDisplayEmpty(false);
   };
 
+  // Handles statblock and description generation for Fantasy Grounds depending on value (desc, stat)
   const handleFantasyGroundsClick = (value: string, teotheNPC: TeotheNPC) => {
     switch (value) {
       case "desc":
@@ -41,7 +279,7 @@ function GetQuickNPC() {
               teotheNPC.description.pronounCapit
             } sounds ${teotheNPC.local.voice}, knows ${
               teotheNPC.local.languages
-            } languages. ${teotheNPC.hook.description} ${
+            }. ${teotheNPC.hook.description} ${
               teotheNPC.pquirks.description
             } and is known for being ${teotheNPC.local.trait.toLowerCase()} ${
               teotheNPC.ptraits.traitslizards
@@ -83,7 +321,7 @@ function GetQuickNPC() {
             `Senses darkvision 30 ft., passive Perception ${
               10 + Number(statBonusHash[teotheNPC.stats[4]])
             }\r\n` +
-            `Languages ${teotheNPC.local.languages} languages\r\n` +
+            `Languages ${teotheNPC.local.languages}\r\n` +
             `Challenge 0 (0 XP) Proficiency Bonus +2\r\n` +
             `Philosophy. ${teotheNPC.alignment}. ${teotheNPC.religion.description}\r\n` +
             `Profession. ${
@@ -106,6 +344,8 @@ function GetQuickNPC() {
    * approaches on this page, and in this area, and make sure you
    * can import it to Fantasy Grounds.
    */
+
+  // Defines TeotheNPC type
   interface TeotheNPC {
     description: {
       age: number;
@@ -154,166 +394,43 @@ function GetQuickNPC() {
     };
   }
 
-  const statBonusHash: any = {
-    0: "-5",
-    1: "-5",
-    2: "-4",
-    3: "-4",
-    4: "-3",
-    5: "-3",
-    6: "-2",
-    7: "-2",
-    8: "-1",
-    9: "-1",
-    10: "+0",
-    11: "+0",
-    12: "+1",
-    13: "+1",
-    14: "+2",
-    15: "+2",
-    16: "+3",
-    17: "+3",
-    18: "+4",
-    19: "+4",
-    20: "+5",
-    21: "+5",
-    22: "+6",
-    23: "+6",
-    24: "+7",
-    25: "+7",
-    26: "+8",
-    27: "+8",
-    28: "+9",
-    29: "+9",
-    30: "+10",
-  };
+  // Utility to convert alignment numbers to readable alignment
+  function alignmentPrefixer(
+    lawful: number,
+    ethicalneutral: number,
+    chaotic: number,
+    good: number,
+    moralneutral: number,
+    evil: number
+  ) {
+    let alignment = "";
+    if (lawful > chaotic && lawful >= ethicalneutral) {
+      alignment = "Lawful";
+    } else if (chaotic > lawful && chaotic >= ethicalneutral) {
+      alignment = "Chaotic";
+    } else if (chaotic <= ethicalneutral && lawful <= ethicalneutral) {
+      alignment = "Neutral";
+    } else if (chaotic == lawful) {
+      // and also greater than neutral
+      alignment = "Any";
+    }
 
-  function DevelopNPC(): TeotheNPC {
-    const { npc } = generate();
+    if (good > evil && good >= moralneutral) {
+      alignment += " Good";
+    } else if (evil > good && evil >= moralneutral) {
+      alignment += " Evil";
+    } else if (evil <= moralneutral && good <= moralneutral) {
+      alignment += " Neutral";
+    } else if (evil == good) {
+      // and also greater than neutral
+      alignment += " Any";
+    }
 
-    const languages: string[] = [
-      "only the local",
-      "common and one more",
-      "common and two more",
-      "common and three more",
-      "exotic",
-    ];
+    return alignment;
+  }
 
-    const voices: string[] = [
-      "filled with air",
-      "rough",
-      "deep",
-      "high",
-      "enthusiastic",
-      "bored",
-      "angry",
-      "authoritative",
-      "comedic",
-      "conversational",
-      "elegant",
-      "enticing",
-      "inspiring",
-      "nurturing",
-      "playful",
-      "sad",
-      "scared",
-      "unorthodox",
-    ];
-
-    const traits: string[] = [
-      `Gourmand: Obsessed with food, cooks a lot.`,
-      `Ascetic: Has forsaken physical comforts and enjoyments, enjoys simplicity.`,
-      `Nimble: Moves around with ease as if they are dancing.`,
-      `Clever: They are good at out-of-the-box thinking.`,
-      `Open-Minded: Doesn't judge people often, will consider even the wildest claims.`,
-      `Kind: Exceptionally agreeable, doesn't insult others.`,
-      `Sanguine: Exceptionally upbeat, very difficult to lower their mood.`,
-      `Optimist: Can always find the silver lining.`,
-      `Steadfast: Mentally strong and doesn't crumble under stress.`,
-      `Brave: Shows courage in the face of danger.`,
-      `Iron Stomach: Has a strong resistance to ingesting contaminants and toxins.`,
-      `Night Owl: Is usually awake at night and asleep during the day.`,
-      `Masochist: Likes being subjected to pain.`,
-      `Transhumanist: Wants to enhance their body through artifice or magic.`,
-      `Tortured Artist: Feels misunderstood by other people, wants to create the greatest piece of art.`,
-      `Chemical Fascination: Loves altering their mental state with drugs and chemicals, suffers withdrawal quickly.`,
-      `Teetotaler: Abhors the idea of gaining pleasure from chemicals, doesn't drink or use drugs.`,
-      `Absent-Minded: Will sometimes completely forget what they are doing.`,
-      `Obsessed Worker: Always focused on their job, starts feeling uneasy when not working.`,
-      `Perfectionist: Can't bear to stop working on something until it is perfect.`,
-      `Lazy Worker: Hates their job, works slowly and would much rather be doing anything else.`,
-      `Clumsy: Constantly fumbling and dropping things.`,
-      `Fidgeter: Is constantly fiddling with something in their hand.`,
-      `Neat: Their environment must always be clean and tidy.`,
-      `Slob: Doesn't care about the cleanliness of their environment.`,
-      `Animal Lover: Loves animals, and tends to be surrounded by them.`,
-      `Animal Hater: Can't stand animals, and often tries to avoid them.`,
-      `Rebellious: Dislikes authority, and resists any attempt at control over them.`,
-      `Compliant: Always obeys authority, and shows little to no resistance to new rules.`,
-      `Submissive: Meekly obedient to others, and shows no resistance in conflict.`,
-      `Dominant: They must be the loudest voice, have their idea pursued, and be the most powerful in the room.`,
-      `Party Animal: Loves parties, and often tries to organize them.`,
-      `Introvert: Doesn't like too much social interaction, and tends to be timid or blunt in conversation.`,
-      `Snob: Believes that they are of the highest class, and looks down upon those lesser than them.`,
-      `Squeamish: Gets grossed out easily.`,
-      `Drunken Prodigy: Seems to perform better, work better, and just be better while they are drunk.`,
-      `Stoned Prodigy: Seems to perform better, work better, and just be better while they are under the influence of drugs.`,
-      `Hoplophobia: They are terrified of weapons.`,
-      `Hoplophile: Has an irrational love for weaponry.`,
-      `Autophobia: Has a fear of being alone.`,
-      `Indecisive: Struggles to commit to a decision.`,
-      `Hypochondriac: Is constantly concerned with their health, possibly believing that they have afflictions that they don't.`,
-      `Twitchy: Some of their muscles seem to spasm at random.`,
-      `Agoraphobia: Is scared of going outside.`,
-      `Purist: Doesn't like people who are magically inclined.`,
-      `Greedy: Always wants more, and gets mad if they don't get it.`,
-      `Jealous: If they see something they don't have, they do what they need to get it.`,
-      `Pyromaniac: They love watching and starting fires, and get angry when they are extinguished.`,
-      `Sadist: Enjoys inflicting pain on others.`,
-      `Wimp: Cowers at the slightest notion of violence.`,
-      `Abrasive: Exceptionally blunt, doesn't consider people's feelings when talking.`,
-      `Creepy Breathing: Breathes considerably heavily and sweats constantly.`,
-      `Misandrist: Dislikes and distrusts men.`,
-      `Misogynist: Dislikes and distrusts women.`,
-      `Misanthrope: Dislikes and distrusts people, believes that all actions are taken for selfish reasons.`,
-      `Pessimist: Always assumes the worst outcome.`,
-      `Depressive: Perpetually in an awful mood, very difficult to raise their mood.`,
-      `Nervous: Feels the strain from stress more than others.`,
-      `Volatile: Even the smallest thing can make them explode, very quick to break under stress.`,
-      `Sickly: They are far more likely to get sick than others.`,
-      `Insomniac: Forever tired, they can't seem to get a good night's rest.`,
-      `World Weary: Well-versed in world/country/state politics, but is very anxious about the fallout of world events.`,
-      `Desensitized: They have seen so many traumatic events that those same events no longer faze them.`,
-      `Tycoon: Always looking for business opportunities, they want to own it all.`,
-    ];
-
-    const alignmentPrefixer = (
-      lawful: number,
-      ethicalneutral: number,
-      chaotic: number,
-      good: number,
-      moralneutral: number,
-      evil: number
-    ) => {
-      let alignment = "";
-      if (lawful > chaotic && lawful >= ethicalneutral) {
-        alignment = "Lawful";
-      } else if (chaotic > lawful && chaotic >= ethicalneutral) {
-        alignment = "Chaotic";
-      } else if (chaotic <= ethicalneutral && lawful <= ethicalneutral) {
-        alignment = "Neutral";
-      }
-
-      if (good > evil && good >= moralneutral) {
-        alignment += " Good";
-      } else if (evil > good && evil >= moralneutral) {
-        alignment += " Evil";
-      } else if (evil <= moralneutral && good <= moralneutral) {
-        alignment += " Neutral";
-      }
-
-      return alignment;
-    };
+  function DevelopNPC(objectToUse: NpcGenerateOptions | undefined = undefined): TeotheNPC {
+    const { npc } = generate({ npcOptions: objectToUse });
 
     return {
       physical: {
@@ -381,7 +498,7 @@ function GetQuickNPC() {
   return (
     <>
       <Space wrap>
-        <Button onClick={handleButtonClick}>
+        <Button onClick={() => handleButtonClick("norm")}>
           {displayEmpty ? "Generate Quick NPC" : "Generate New Quick NPC"}
         </Button>
         <Button onClick={() => handleFantasyGroundsClick("stat", teotheNPC)}>
@@ -389,6 +506,48 @@ function GetQuickNPC() {
         </Button>
         <Button onClick={() => handleFantasyGroundsClick("desc", teotheNPC)}>
           {displayEmpty ? "Generate First" : "Description for FGU"}
+        </Button>
+      </Space>
+      <Divider />
+      <Space wrap>
+        Race:{" "}
+        <Dropdown menu={raceProps}>
+          <Button>
+            <Space>
+              {raceNo}
+              <DownOutlined />
+            </Space>
+          </Button>
+        </Dropdown>
+        Gender:{" "}
+        <Dropdown menu={genderProps}>
+          <Button>
+            <Space>
+              {genderNo}
+              <DownOutlined />
+            </Space>
+          </Button>
+        </Dropdown>
+        Occupation:{" "}
+        <Dropdown menu={occupationProps}>
+          <Button>
+            <Space>
+              {occupationNo}
+              <DownOutlined />
+            </Space>
+          </Button>
+        </Dropdown>
+        Tendency:{" "}
+        <Dropdown menu={alignmentProps}>
+          <Button>
+            <Space>
+              {alignmentNo}
+              <DownOutlined />
+            </Space>
+          </Button>
+        </Dropdown>
+        <Button onClick={() => handleButtonClick("spcf")}>
+          {displayEmpty ? "Generate Specific NPC" : "Generate New Specific NPC"}
         </Button>
       </Space>
       <Divider />
@@ -414,7 +573,7 @@ function GetQuickNPC() {
                   teotheNPC.description.pronounCapit
                 } sounds ${teotheNPC.local.voice}, knows ${
                   teotheNPC.local.languages
-                } languages. ${teotheNPC.hook.description} ${
+                }. ${teotheNPC.hook.description} ${
                   teotheNPC.pquirks.description
                 } and is known for being ${teotheNPC.local.trait.toLowerCase()} ${
                   teotheNPC.ptraits.traitslizards
@@ -447,7 +606,7 @@ function GetQuickNPC() {
                 `Senses darkvision 30 ft., passive Perception ${
                   10 + Number(statBonusHash[teotheNPC.stats[4]])
                 }`,
-                `Languages ${teotheNPC.local.languages} languages`,
+                `Languages ${teotheNPC.local.languages}`,
                 `Challenge 0 (0 XP) Proficiency Bonus +2`,
                 `Philosophy. ${teotheNPC.alignment}. ${teotheNPC.religion.description}`,
                 `Profession. ${
