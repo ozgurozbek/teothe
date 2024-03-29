@@ -23,7 +23,17 @@ function GetRaces(brewCheck: boolean, officialCheck: boolean) {
     console.log(error);
     return <div>Failed to access API</div>;
   }
+
+  interface DataType {
+    description: string;
+    homebrew: string;
+    name: string;
+    phrase: string;
+  }
+
   if (!data) return <Skeleton active />;
+
+  data.sort((a: DataType, b: DataType) => a.name.charCodeAt(0) - b.name.charCodeAt(0));
 
   let renderedRaces = [];
   for (let item of data) {
