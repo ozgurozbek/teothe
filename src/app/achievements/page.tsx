@@ -1,11 +1,10 @@
 "use client";
 
-import React, { useState, useEffect, useCallback, memo, useMemo } from "react";
+import React, { useState, useEffect } from "react";
 import { Card, Checkbox, Skeleton, Table, Modal, Button, Empty } from "antd";
 import { TrophyOutlined, UserOutlined } from "@ant-design/icons";
 import Confetti from "react-confetti";
 import useWindowSize from "react-use/lib/useWindowSize";
-import useSWR from "swr";
 import GetCrumbs from "Comp/NavigationCrumb";
 import SimpleContent from "@/components/SimpleCon";
 import type { ColumnsType } from "antd/es/table";
@@ -36,91 +35,54 @@ interface AchievementDataType {
     }
   ];
 }
-//exotic ass batuhan
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
-// USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE
+
 function GetAchievementsData() {
-  const [userSecret, setUserSecret] = useState("USE YOUR OWN SECRET, DON'T PUSH SECRET TO REMOTE"); // Secret user, bir input field ile setter çağırıp oraya key isteyeceğiz, başka bir buton da olacak update için, key'i de gönderecek
+  const [userSecret, setUserSecret] = useState(""); // Secret user, bir input field ile setter çağırıp oraya key isteyeceğiz, başka bir buton da olacak update için, key'i de gönderecek67597689
   const [displayEmpty, setDisplayEmpty] = useState(true);
   const [achievementsData, setAchievementsData] = useState<AchievementDataType | undefined>();
-  const [achievements, setAchievements] = useState<AchievementType[]>([]); //Bu nerede doluyor? setter hiç çağırmamışsın
+  const [achievements, setAchievements] = useState<AchievementType[]>([]);
   const [userPointsState, setUserPointsState] = useState<UserPoints[]>([]);
+  const [loading, setLoading] = useState(false);
   const [isModalVisible, setIsModalVisible] = useState(false);
-  const { width, height } = useWindowSize();
+  const { height } = useWindowSize();
 
-  /**
-   * Fetcher function for API requests.
-   * @param args - RequestInfo object containing information about the request.
-   * @returns Promise resolving to the parsed JSON response.
-   */
   useEffect(() => {
-    fetch(
-      `https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getAchievements?key=${userSecret}`
-    )
+    setLoading(true); // true when fetching
+    fetch(`https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getAchievements?key=${userSecret}`)
       .then((res) => res.json())
       .then((data) => {
         setAchievementsData(data);
         setDisplayEmpty(false);
+        setLoading(false); // false when fetched
       })
       .catch((error) => {
         console.log("Error on Fetcher: " + error);
-        setAchievementsData(error);
+        setAchievementsData(undefined); // Set achievementsData to undefined on error, idk why this was set to error. It'd break everything
         setDisplayEmpty(true);
+        setLoading(false);
       });
   }, [userSecret]);
 
-  console.log(achievementsData);
+  useEffect(() => {
+    if (achievementsData && achievementsData.achievements) {
+      const initializedData = achievementsData.achievements
+        .map((achievement, index) => ({
+          ...achievement,
+          key: index,
+          completed: achievement.achievers?.includes(achievementsData.user) || false,
+        }))
+        .sort((a, b) => parseInt(a.id) - parseInt(b.id));
+
+      setAchievements(initializedData);
+    }
+  }, [achievementsData]);
+
+  if (loading) {
+    return <Skeleton active />;
+  }
 
   if (displayEmpty) {
-    return (
-      <>
-        <Empty />
-      </>
-    );
+    return <Empty />;
   }
 
   const showModal = () => {
@@ -161,19 +123,6 @@ function GetAchievementsData() {
   //       value: point,
   //     })
   //   );
-
-  if (achievementsData && displayEmpty) {
-    const initializedData = achievementsData.achievements
-      .map((achievement, index) => ({
-        ...achievement,
-        key: index,
-        completed:
-          achievement.achievers?.includes(achievementsData.user) || false,
-      }))
-      .sort((a, b) => parseInt(a.id) - parseInt(b.id));
-
-    setAchievements(initializedData);
-  }
 
   const handleCompletionToggle = (key: React.Key) => {
     if (achievementsData) {
