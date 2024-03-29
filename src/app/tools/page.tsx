@@ -28,7 +28,7 @@ function GetTableData() {
      */
     const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
-    "https://teothe.pythonanywhere.com/getTools",
+    "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getTools",
     fetcher
   );
   if (error) {
@@ -65,10 +65,10 @@ function GetTableData() {
   let dataSource = [];
   for (let rowData of data) {
     let item: any = {};
-    item["tool"] = rowData[0];
-    item["proficiency"] = rowData[1];
-    item["allows"] = rowData[2];
-    item["cost"] = rowData[3];
+    item["tool"] = rowData.tool;
+    item["proficiency"] = rowData.proficiency;
+    item["allows"] = rowData.allows;
+    item["cost"] = rowData.cost;
     dataSource.push(item);
   }
   return (

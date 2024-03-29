@@ -21,7 +21,7 @@ function GetMapLegend() {
      */
     const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
-    "https://teothe.pythonanywhere.com/getMapRes",
+    "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getMapRes",
     fetcher
   );
   if (error) {
@@ -35,11 +35,11 @@ function GetMapLegend() {
     renderedMapRes.push(
       //name type check image
       <MapEntry
-        imageSrc={"./Maps/Legends/" + item[0] + ".png"}
+        imageSrc={"./Maps/Legends/" + item.name + ".png"}
         textProps={{
-          name: item[0],
-          rarity: item[1],
-          check: item[2],
+          name: item.name,
+          rarity: item.type,
+          check: item.dice,
         }}
       />
     );

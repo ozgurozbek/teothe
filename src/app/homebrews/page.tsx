@@ -19,7 +19,7 @@ function GetHomebrews(category: string) {
      */
     const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
-    "https://teothe.pythonanywhere.com/getHomebrews",
+    "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getHomebrews",
     fetcher
   );
   if (error) {
@@ -31,16 +31,16 @@ function GetHomebrews(category: string) {
   let renderedEntries = [];
   let first: boolean = true;
   for (let item of data) {
-    if (item[0] === category) {
+    if (item.tag === category) {
       if (first) {
         renderedEntries.push(
-          <li className="hover:bg-[#630436] py-4">{item[1]}</li>
+          <li className="hover:bg-[#630436] py-4">{item.description}</li>
         );
         first = false;
       } else {
         renderedEntries.push(
           <li className="hover:bg-[#630436] py-4 border-t border-[#33373b]">
-            {item[1]}
+            {item.description}
           </li>
         );
       }

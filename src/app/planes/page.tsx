@@ -19,7 +19,7 @@ function GetPlanes() {
      */
     const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
-    "https://teothe.pythonanywhere.com/getPlanes",
+    "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getPlanes",
     fetcher
   );
   if (error) {
@@ -33,10 +33,10 @@ function GetPlanes() {
     {
       renderedPlanes.push(
         <Location
-          imageSrc={"./Planes/" + item[0] + ".png"}
+          imageSrc={"./Planes/" + item.planeName + ".png"}
           locationProps={{
-            name: item[0],
-            description: item[1],
+            name: item.planeName,
+            description: item.planeDescription,
           }}
         />
       );

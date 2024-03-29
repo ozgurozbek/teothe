@@ -28,14 +28,51 @@ function GetTableData() {
      */
     const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
-    "https://teothe.pythonanywhere.com/getPricing",
+    "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getPricing",
     fetcher
   );
   if (error) {
     console.log(error);
     return <div>Failed to access API</div>;
   }
+
+  interface ResponseDataType {
+    cost: string;
+    item: string;
+  }
+
   if (!data) return <Skeleton active />;
+
+  function PriceSorter(cost:string) {
+    //gp sp ye göre stringi böl
+    let resp = cost.split(" ")
+    let multiplier = 1;
+    let value = 0;
+
+    //çarpan bulmak için 2. kısmı kullan
+    switch (resp[1]) {
+      case "cp":
+        value = Number(resp[0])
+        break;
+      case "sp":
+        value = Number(resp[0])*10
+        break;
+      case "gp":
+        value = Number(resp[0])*100
+        break;
+      case "pp":
+        value = Number(resp[0])*1000
+        break;
+      default:
+        value = 999999;
+        break;
+    }
+
+    //çarp sonucu döndür
+    return value
+  }
+
+  data.sort((a: ResponseDataType, b: ResponseDataType) => PriceSorter(a.cost) - PriceSorter(b.cost));
 
   //dataSource, columns
   let columns: ColumnsType<DataType> = [];
@@ -49,10 +86,6 @@ function GetTableData() {
           text: "CP",
           value: "cp",
         },
-        //{
-        //  text: "EP",
-        //  value: "ep 1",
-        //},
         {
           text: "SP",
           value: "sp",
@@ -78,13 +111,8 @@ function GetTableData() {
     }
   );
 
-  let dataSource = [];
-  for (let rowData of data) {
-    let item: any = {};
-    item["item"] = rowData[0];
-    item["cost"] = rowData[1];
-    dataSource.push(item);
-  }
+  let dataSource = data;
+  
   return (
     <>
       <SimpleContent
