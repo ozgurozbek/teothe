@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Card, Checkbox, Skeleton, Table, Modal, Button, Empty } from "antd";
+import { Card, Checkbox, Skeleton, Table, Modal, Button, Empty, Input, Space } from "antd";
 import { TrophyOutlined, UserOutlined } from "@ant-design/icons";
 import Confetti from "react-confetti";
 import useWindowSize from "react-use/lib/useWindowSize";
@@ -236,11 +236,16 @@ function GetAchievementsData() {
               className="z-50"
             />
           )}
-          {
+          <Space size={4} wrap={true}>
+            <Input
+              addonBefore="User"
+              placeholder="Your Secret"
+              onChange={(e) => setUserSecret(e.target.value)}
+            />
             <Button type="primary" onClick={showModal}>
               Show Leaderboard
             </Button>
-          }
+          </Space>
           <Modal
             title="Leaderboard"
             open={isModalVisible}
