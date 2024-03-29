@@ -14,7 +14,7 @@ import useSWR from "swr";
 function GetSessionNotes(tableNo: string, year: string, month: string) {
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
-    "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getSessionNotes?table=" +
+    "https://teothe.pythonanywhere.com/getSessionNotes?table=" +
       tableNo +
       "&year=" +
       year +
