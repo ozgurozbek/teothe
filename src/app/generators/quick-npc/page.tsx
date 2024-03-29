@@ -273,8 +273,8 @@ function GetQuickNPC() {
             teotheNPC.description.pronounCapit
           } is a ${teotheNPC.description.occupation}. ${
             teotheNPC.description.pronounCapit
-          } is ${teotheNPC.relationship.status.toLocaleLowerCase()}.\r\n` +
-            `${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.hair} ${teotheNPC.physical.eyes}. Their ${teotheNPC.physical.skin} contribute to a distinctive appearance. ${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.build} with ${teotheNPC.physical.face}. ${teotheNPC.physical.special1} ${teotheNPC.physical.special2}\r\n` +
+          } is ${teotheNPC.relationship.status.toLocaleLowerCase()}.\r\n\n`.replace(/  +/g, ' ') +
+            `${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.hair} ${teotheNPC.physical.eyes}. Their ${teotheNPC.physical.skin} contribute to a distinctive appearance. ${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.build} with ${teotheNPC.physical.face}. ${teotheNPC.physical.special1} ${teotheNPC.physical.special2}\r\n\n`.replace(/  +/g, ' ') +
             `${teotheNPC.ptraits.traits1}${teotheNPC.ptraits.traits2}${
               teotheNPC.description.pronounCapit
             } sounds ${teotheNPC.local.voice}, knows ${
@@ -285,7 +285,7 @@ function GetQuickNPC() {
               teotheNPC.ptraits.traitslizards
             } ${teotheNPC.ptraits.traitsgoliaths} ${
               teotheNPC.religion.description
-            }. `
+            }.`.replace(/  +/g, ' ')
         );
         break;
       case "stat":
