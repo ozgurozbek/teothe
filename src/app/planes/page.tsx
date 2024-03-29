@@ -28,7 +28,7 @@ function GetPlanes() {
     {
       renderedPlanes.push(
         <Location
-          imageSrc={"./Planes/" + item[0] + ".png"}
+          imageSrc={"./Planes/" + item.planeName + ".png"}
           locationProps={{
             name: item.planeName,
             description: item.planeDescription,
