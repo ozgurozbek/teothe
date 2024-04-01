@@ -60,8 +60,8 @@ export default function MapLegendPage() {
           contentProps={{
             title: "Map Legend",
             text: [
-              "Resource based legend for trader campaigns, descriptions and difficulty classes for all of them.",
-              "Adds new skills named Artifice and Influence. Difficulty classes are averaged out. They can change depending on the situation.",
+              "Resource based legend for trader campaigns, descriptions and difficulty classes for all of them. These valuables can be found across Teothe.",
+              "Adds new skills named Artifice and Influence. Difficulty classes are averaged out. They can change depending on the situation and in where you are in Teothe.",
             ],
           }}
         />

@@ -122,7 +122,7 @@ function GetTableData() {
         contentProps={{
           title: "Common Pricing",
           text: [
-            "This is a reference for common pricing. Keep in mind that personal gain, state the provider is, countries, and many other things affect pricing, therefore rendering this table somewhat inaccurate.",
+            "This is a reference for common pricing in Teothe. Keep in mind that personal gain, state the provider is, countries, and many other things affect pricing, therefore rendering this table somewhat inaccurate.",
           ],
         }}
       />

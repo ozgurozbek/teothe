@@ -40,8 +40,8 @@ export default function MapOverlayPage() {
           contentProps={{
             title: "Map Overlay",
             text: [
-              "Map overlays change their index in the order of the button press. You can add or remove overlays by clicking the respective button. These are obviously not HD, and small campuses or travel routes may provide difficult to see.",
-              "Your character quite literally does not know about these. The only accessible maps to your character from the get-go are marked with a checkmark. These are also the left-hand side of the button row. Purchase the rest in-game or hire a scriber.",
+              "Map overlays of Teothe change their index in the order of the button press. You can add or remove overlays by clicking the respective button. These are obviously not HD, and small campuses or travel routes may provide difficult to see.",
+              "Your character quite literally does not know about these. The only accessible maps to your character from the get-go are marked with a checkmark. These are also the left-hand side of the button row. The rest can be purchased in some places across Teothe or can be drawn by hiring a scriber.",
               "Moreover, icons with fills have tooltips attached to them giving additional information to the Player.",
             ],
           }}
