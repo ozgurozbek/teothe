@@ -156,7 +156,15 @@ export default function CalendarPage() {
     <section>
       <GetCrumbs path={"Teothe,Calendar"} />
       <Card bordered={false} className="w-full">
-        <SimpleContent contentProps={{ title: "Calendar" }} />
+        <SimpleContent
+          contentProps={{
+            title: "Calendar",
+            text: [
+              "In the realm of Teothe, 28 unique holidays are celebrated throught 8 months of every year.",
+              "16 of these holidays are recognized and celebrated by everyone in Teothe, and 12 of them are specific to different races.",
+            ],
+          }}
+        />
         <Space className="mb-4 flex flex-wrap">
           <div>
             Table:{" "}
