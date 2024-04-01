@@ -16,11 +16,11 @@ import { useState } from "react";
  */
 function GetRaces(brewCheck: boolean, officialCheck: boolean) {
   /**
-     * Fetcher function for API requests.
-     * @param args - RequestInfo object containing information about the request.
-     * @returns Promise resolving to the parsed JSON response.
-     */
-    const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
+   * Fetcher function for API requests.
+   * @param args - RequestInfo object containing information about the request.
+   * @returns Promise resolving to the parsed JSON response.
+   */
+  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
     "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getRaces",
     fetcher
@@ -39,7 +39,9 @@ function GetRaces(brewCheck: boolean, officialCheck: boolean) {
 
   if (!data) return <Skeleton active />;
 
-  data.sort((a: DataType, b: DataType) => a.name.charCodeAt(0) - b.name.charCodeAt(0));
+  data.sort(
+    (a: DataType, b: DataType) => a.name.charCodeAt(0) - b.name.charCodeAt(0)
+  );
 
   let renderedRaces = [];
   for (let item of data) {
@@ -92,7 +94,7 @@ export default function RacesPage() {
 
   return (
     <section>
-      <GetCrumbs path={"Teothe3K,Races"} />
+      <GetCrumbs path={"Teothe,Races"} />
 
       <Space className="float-right">
         <div className="text-pink-600">

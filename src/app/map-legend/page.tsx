@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import MapEntry from "Comp/maps/MapEntry";
 import { Card, Skeleton } from "antd";
@@ -15,11 +15,11 @@ import Link from "next/link";
  */
 function GetMapLegend() {
   /**
-     * Fetcher function for API requests.
-     * @param args - RequestInfo object containing information about the request.
-     * @returns Promise resolving to the parsed JSON response.
-     */
-    const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
+   * Fetcher function for API requests.
+   * @param args - RequestInfo object containing information about the request.
+   * @returns Promise resolving to the parsed JSON response.
+   */
+  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
     "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getMapRes",
     fetcher
@@ -54,7 +54,7 @@ function GetMapLegend() {
 export default function MapLegendPage() {
   return (
     <section>
-      <GetCrumbs path={"Teothe3K,Map Legend"} />
+      <GetCrumbs path={"Teothe,Map Legend"} />
       <Card bordered={false} className="w-full">
         <SimpleContent
           contentProps={{
@@ -66,8 +66,13 @@ export default function MapLegendPage() {
           }}
         />
         {GetMapLegend()}
-        <br/>
-        <Link href={"https://ozgurozbek.github.io/dnd/MapResourcesDoc.pdf"} target="_blank">See the mechanics document here.</Link>
+        <br />
+        <Link
+          href={"https://ozgurozbek.github.io/dnd/MapResourcesDoc.pdf"}
+          target="_blank"
+        >
+          See the mechanics document here.
+        </Link>
       </Card>
     </section>
   );

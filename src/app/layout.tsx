@@ -6,7 +6,7 @@ import RootLayoutProvider from "./layoutProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Teothe3K - A 5E Campaign Setting",
+  title: "Teothe - A 5E Campaign Setting",
   description: "A Material Plane for TTRPG Systems",
 };
 

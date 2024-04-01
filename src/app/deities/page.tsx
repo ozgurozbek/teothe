@@ -65,7 +65,7 @@ function GetDeities(rank: string) {
 export default function DeitiesPage() {
   return (
     <section>
-      <GetCrumbs path={"Teothe3K,Deities"} />
+      <GetCrumbs path={"Teothe,Deities"} />
       <Card bordered={false} className="w-full">
         <SimpleContent
           contentProps={{

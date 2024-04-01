@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Card, Divider } from "antd";
 import GetCrumbs from "@/components/NavigationCrumb";
@@ -13,7 +13,7 @@ import SimpleContent from "@/components/SimpleCon";
 export default function CommonLorePage() {
   return (
     <section>
-      <GetCrumbs path={"Teothe3K,Common Lore"} />
+      <GetCrumbs path={"Teothe,Common Lore"} />
       <Card bordered={false} className="w-full">
         <SimpleContent
           contentProps={{

@@ -13,11 +13,11 @@ import useSWR from "swr";
  */
 function GetHomebrews(category: string) {
   /**
-     * Fetcher function for API requests.
-     * @param args - RequestInfo object containing information about the request.
-     * @returns Promise resolving to the parsed JSON response.
-     */
-    const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
+   * Fetcher function for API requests.
+   * @param args - RequestInfo object containing information about the request.
+   * @returns Promise resolving to the parsed JSON response.
+   */
+  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
     "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getHomebrews",
     fetcher
@@ -56,7 +56,7 @@ function GetHomebrews(category: string) {
 export default function HomebrewsPage() {
   return (
     <section>
-      <GetCrumbs path={"Teothe3K,Homebrews"} />
+      <GetCrumbs path={"Teothe,Homebrews"} />
       <Card bordered={false} className="w-full">
         <SimpleContent
           contentProps={{

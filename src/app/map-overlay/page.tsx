@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Button, Card, Divider, Image, Space, Tooltip } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
@@ -34,7 +34,7 @@ export default function MapOverlayPage() {
 
   return (
     <section>
-      <GetCrumbs path={"Teothe3K,Map Overlay"} />
+      <GetCrumbs path={"Teothe,Map Overlay"} />
       <Card bordered={false} className="w-full min-h-[110vh]">
         <SimpleContent
           contentProps={{

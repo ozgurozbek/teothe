@@ -15,7 +15,7 @@ const { Title } = Typography;
 export default function LibraryPage() {
   return (
     <section>
-      <GetCrumbs path={"Teothe3K,Library"} />
+      <GetCrumbs path={"Teothe,Library"} />
       <Card bordered={false} className="w-full h-full">
         <Title>Library</Title>
         <Title level={2}>General</Title>

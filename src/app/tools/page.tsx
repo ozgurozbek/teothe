@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Card, Skeleton } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
@@ -22,11 +22,11 @@ interface DataType {
  */
 function GetTableData() {
   /**
-     * Fetcher function for API requests.
-     * @param args - RequestInfo object containing information about the request.
-     * @returns Promise resolving to the parsed JSON response.
-     */
-    const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
+   * Fetcher function for API requests.
+   * @param args - RequestInfo object containing information about the request.
+   * @returns Promise resolving to the parsed JSON response.
+   */
+  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
     "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getTools",
     fetcher
@@ -99,7 +99,7 @@ function GetTableData() {
 export default function ToolsPage() {
   return (
     <section>
-      <GetCrumbs path={"Teothe3K,Tools"} />
+      <GetCrumbs path={"Teothe,Tools"} />
       <Card bordered={false} className="w-full">
         {GetTableData()}
       </Card>

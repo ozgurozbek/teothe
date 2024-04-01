@@ -143,7 +143,7 @@ export default function LanguagesPage() {
 
   return (
     <section>
-      <GetCrumbs path={"Teothe3K,Languages"} />
+      <GetCrumbs path={"Teothe,Languages"} />
       <Card bordered={false} className="w-full">
         <SimpleContent
           contentProps={{

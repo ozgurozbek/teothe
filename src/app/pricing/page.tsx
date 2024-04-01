@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Card, Skeleton } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
@@ -22,11 +22,11 @@ interface DataType {
  */
 function GetTableData() {
   /**
-     * Fetcher function for API requests.
-     * @param args - RequestInfo object containing information about the request.
-     * @returns Promise resolving to the parsed JSON response.
-     */
-    const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
+   * Fetcher function for API requests.
+   * @param args - RequestInfo object containing information about the request.
+   * @returns Promise resolving to the parsed JSON response.
+   */
+  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
     "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getPricing",
     fetcher
@@ -43,25 +43,25 @@ function GetTableData() {
 
   if (!data) return <Skeleton active />;
 
-  function PriceSorter(cost:string) {
+  function PriceSorter(cost: string) {
     //gp sp ye göre stringi böl
-    let resp = cost.split(" ")
+    let resp = cost.split(" ");
     let multiplier = 1;
     let value = 0;
 
     //çarpan bulmak için 2. kısmı kullan
     switch (resp[1]) {
       case "cp":
-        value = Number(resp[0])
+        value = Number(resp[0]);
         break;
       case "sp":
-        value = Number(resp[0])*10
+        value = Number(resp[0]) * 10;
         break;
       case "gp":
-        value = Number(resp[0])*100
+        value = Number(resp[0]) * 100;
         break;
       case "pp":
-        value = Number(resp[0])*1000
+        value = Number(resp[0]) * 1000;
         break;
       default:
         value = 999999;
@@ -69,10 +69,13 @@ function GetTableData() {
     }
 
     //çarp sonucu döndür
-    return value
+    return value;
   }
 
-  data.sort((a: ResponseDataType, b: ResponseDataType) => PriceSorter(a.cost) - PriceSorter(b.cost));
+  data.sort(
+    (a: ResponseDataType, b: ResponseDataType) =>
+      PriceSorter(a.cost) - PriceSorter(b.cost)
+  );
 
   //dataSource, columns
   let columns: ColumnsType<DataType> = [];
@@ -112,7 +115,7 @@ function GetTableData() {
   );
 
   let dataSource = data;
-  
+
   return (
     <>
       <SimpleContent
@@ -140,7 +143,7 @@ function GetTableData() {
 export default function PricingPage() {
   return (
     <section>
-      <GetCrumbs path={"Teothe3K,Common Pricing"} />
+      <GetCrumbs path={"Teothe,Common Pricing"} />
       <Card bordered={false} className="w-full">
         {GetTableData()}
       </Card>

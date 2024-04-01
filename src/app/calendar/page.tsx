@@ -27,11 +27,11 @@ import useSWR from "swr";
  * @returns Card(antd) wrapped by section
  */
 function GetAPICalendar() {
-    /**
-     * Fetcher function for API requests.
-     * @param args - RequestInfo object containing information about the request.
-     * @returns Promise resolving to the parsed JSON response.
-     */
+  /**
+   * Fetcher function for API requests.
+   * @param args - RequestInfo object containing information about the request.
+   * @returns Promise resolving to the parsed JSON response.
+   */
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
     "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getTables?tab=calendar",
@@ -154,7 +154,7 @@ export default function CalendarPage() {
   };
   return (
     <section>
-      <GetCrumbs path={"Teothe3K,Calendar"} />
+      <GetCrumbs path={"Teothe,Calendar"} />
       <Card bordered={false} className="w-full">
         <SimpleContent contentProps={{ title: "Calendar" }} />
         <Space className="mb-4 flex flex-wrap">
@@ -198,7 +198,7 @@ export default function CalendarPage() {
             />
           </div>
         </Space>
-          
+
         <Divider />
         {monthName !== "" ? (
           <CalendarTable

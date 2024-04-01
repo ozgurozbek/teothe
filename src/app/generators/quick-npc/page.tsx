@@ -172,7 +172,12 @@ function GetQuickNPC() {
   /* RACES */
   const handleRaceClick: MenuProps["onClick"] = (e) => {
     setRaceNo(e.key);
-    setNpcOptionsObject({ race: Number(e.key), gender: npcOptionsObject?.gender, classorprof:npcOptionsObject?.classorprof, alignment:npcOptionsObject?.alignment });
+    setNpcOptionsObject({
+      race: Number(e.key),
+      gender: npcOptionsObject?.gender,
+      classorprof: npcOptionsObject?.classorprof,
+      alignment: npcOptionsObject?.alignment,
+    });
   };
 
   const raceProps = {
@@ -193,7 +198,12 @@ function GetQuickNPC() {
   /* GENDER */
   const handleGenderClick: MenuProps["onClick"] = (e) => {
     setGenderNo(e.key);
-    setNpcOptionsObject({ race:npcOptionsObject?.race, gender: Number(e.key), classorprof:npcOptionsObject?.classorprof, alignment:npcOptionsObject?.alignment });
+    setNpcOptionsObject({
+      race: npcOptionsObject?.race,
+      gender: Number(e.key),
+      classorprof: npcOptionsObject?.classorprof,
+      alignment: npcOptionsObject?.alignment,
+    });
   };
 
   const genderProps = {
@@ -210,7 +220,12 @@ function GetQuickNPC() {
   /* CLASS OR OCCUPATION */
   const handleOccupationClick: MenuProps["onClick"] = (e) => {
     setOccupationNo(e.key);
-    setNpcOptionsObject({ race:npcOptionsObject?.race, gender: npcOptionsObject?.gender, classorprof:Number(e.key), alignment:npcOptionsObject?.alignment });
+    setNpcOptionsObject({
+      race: npcOptionsObject?.race,
+      gender: npcOptionsObject?.gender,
+      classorprof: Number(e.key),
+      alignment: npcOptionsObject?.alignment,
+    });
   };
 
   const occupationProps = {
@@ -230,7 +245,12 @@ function GetQuickNPC() {
   /* ALIGNMENT */
   const handleAlignmentClick: MenuProps["onClick"] = (e) => {
     setAlignmentNo(e.key);
-    setNpcOptionsObject({ race:npcOptionsObject?.race, gender: npcOptionsObject?.gender, classorprof:npcOptionsObject?.classorprof, alignment:Number(e.key) });
+    setNpcOptionsObject({
+      race: npcOptionsObject?.race,
+      gender: npcOptionsObject?.gender,
+      classorprof: npcOptionsObject?.classorprof,
+      alignment: Number(e.key),
+    });
   };
 
   const alignmentProps = {
@@ -239,10 +259,7 @@ function GetQuickNPC() {
   };
 
   // Utility for alignment dropdown, has an issue with their displays
-  function alignmentsMapper(alignmentsObject: {
-    name: string;
-    value: number;
-  }) {
+  function alignmentsMapper(alignmentsObject: { name: string; value: number }) {
     return { label: alignmentsObject.name, key: alignmentsObject.value };
   }
   /* ALIGNMENT END */
@@ -273,8 +290,14 @@ function GetQuickNPC() {
             teotheNPC.description.pronounCapit
           } is a ${teotheNPC.description.occupation}. ${
             teotheNPC.description.pronounCapit
-          } is ${teotheNPC.relationship.status.toLocaleLowerCase()}.\r\n\n`.replace(/  +/g, ' ') +
-            `${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.hair} ${teotheNPC.physical.eyes}. Their ${teotheNPC.physical.skin} contribute to a distinctive appearance. ${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.build} with ${teotheNPC.physical.face}. ${teotheNPC.physical.special1} ${teotheNPC.physical.special2}\r\n\n`.replace(/  +/g, ' ') +
+          } is ${teotheNPC.relationship.status.toLocaleLowerCase()}.\r\n\n`.replace(
+            /  +/g,
+            " "
+          ) +
+            `${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.hair} ${teotheNPC.physical.eyes}. Their ${teotheNPC.physical.skin} contribute to a distinctive appearance. ${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.build} with ${teotheNPC.physical.face}. ${teotheNPC.physical.special1} ${teotheNPC.physical.special2}\r\n\n`.replace(
+              /  +/g,
+              " "
+            ) +
             `${teotheNPC.ptraits.traits1}${teotheNPC.ptraits.traits2}${
               teotheNPC.description.pronounCapit
             } sounds ${teotheNPC.local.voice}, knows ${
@@ -285,7 +308,7 @@ function GetQuickNPC() {
               teotheNPC.ptraits.traitslizards
             } ${teotheNPC.ptraits.traitsgoliaths} ${
               teotheNPC.religion.description
-            }.`.replace(/  +/g, ' ')
+            }.`.replace(/  +/g, " ")
         );
         break;
       case "stat":
@@ -429,7 +452,9 @@ function GetQuickNPC() {
     return alignment;
   }
 
-  function DevelopNPC(objectToUse: NpcGenerateOptions | undefined = undefined): TeotheNPC {
+  function DevelopNPC(
+    objectToUse: NpcGenerateOptions | undefined = undefined
+  ): TeotheNPC {
     const { npc } = generate({ npcOptions: objectToUse });
 
     return {
@@ -626,7 +651,7 @@ function GetQuickNPC() {
 export default function QuickNPCGeneratorPage() {
   return (
     <section>
-      <GetCrumbs path={"Teothe3K,Generators,Quick NPC Generator"} />
+      <GetCrumbs path={"Teothe,Generators,Quick NPC Generator"} />
       <Card bordered={false} className="w-full">
         {GetQuickNPC()}
       </Card>

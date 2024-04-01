@@ -55,11 +55,11 @@ function getIcon(pageName: string) {
 }
 
 /**
-   * Renders the page on click
-   * @generator
-   * @param menuItem
-   * @returns React Element
-   */
+ * Renders the page on click
+ * @generator
+ * @param menuItem
+ * @returns React Element
+ */
 const loadPageURL = (menuItem: any) => {
   switch (menuItem) {
     case "common-lore":
@@ -119,7 +119,7 @@ export default function Navbar() {
         >
           <Image
             src="/teothe3K.png"
-            alt=" Teothe3K Icon"
+            alt=" Teothe Icon"
             style={{
               width: "120px",
               padding: "4px",
@@ -155,10 +155,18 @@ export default function Navbar() {
             getItem("Map Legend", "11", "map-legend", getIcon("MapLegend")),
             getItem("Calendar", "12", "calendar", getIcon("Calendar")),
             getItem("Languages", "13", "languages", getIcon("Languages")),
-            getItem("Generators", "-1", undefined, getIcon("Generators"), undefined, [ //undefined for href & Element
-              getItem("Quest Idea", "14", "generators/quest-idea", undefined), //undefined for Icon
-              getItem("Quick NPC", "15", "generators/quick-npc", undefined), //undefined for Icon
-            ]),
+            getItem(
+              "Generators",
+              "-1",
+              undefined,
+              getIcon("Generators"),
+              undefined,
+              [
+                //undefined for href & Element
+                getItem("Quest Idea", "14", "generators/quest-idea", undefined), //undefined for Icon
+                getItem("Quick NPC", "15", "generators/quick-npc", undefined), //undefined for Icon
+              ]
+            ),
           ]}
         />
       </div>

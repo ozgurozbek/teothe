@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import GetCrumbs from "@/components/NavigationCrumb";
 import Location from "@/components/locations/Locations";
@@ -13,11 +13,11 @@ import useSWR from "swr";
  */
 function GetPlanes() {
   /**
-     * Fetcher function for API requests.
-     * @param args - RequestInfo object containing information about the request.
-     * @returns Promise resolving to the parsed JSON response.
-     */
-    const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
+   * Fetcher function for API requests.
+   * @param args - RequestInfo object containing information about the request.
+   * @returns Promise resolving to the parsed JSON response.
+   */
+  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
     "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getPlanes",
     fetcher
@@ -52,7 +52,7 @@ function GetPlanes() {
 export default function LocationsPage() {
   return (
     <section>
-      <GetCrumbs path={"Teothe3K,Planes of Existence"} />
+      <GetCrumbs path={"Teothe,Planes of Existence"} />
       <Card bordered={false} className=" w-full">
         {GetPlanes()}
       </Card>

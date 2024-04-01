@@ -76,7 +76,7 @@ function GetQuestIdea() {
 export default function QuestIdeaGeneratorPage() {
   return (
     <section>
-      <GetCrumbs path={"Teothe3K,Generators,Quest Idea Generator"} />
+      <GetCrumbs path={"Teothe,Generators,Quest Idea Generator"} />
       <Card bordered={false} className="w-full">
         {GetQuestIdea()}
       </Card>

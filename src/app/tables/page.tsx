@@ -92,11 +92,11 @@ function GetTableData() {
   }
 
   /**
-     * Fetcher function for API requests.
-     * @param args - RequestInfo object containing information about the request.
-     * @returns Promise resolving to the parsed JSON response.
-     */
-    const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
+   * Fetcher function for API requests.
+   * @param args - RequestInfo object containing information about the request.
+   * @returns Promise resolving to the parsed JSON response.
+   */
+  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
     "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getTables?tab=" +
       query,
@@ -169,7 +169,7 @@ function GetTableData() {
 export default function TablesPage() {
   return (
     <section>
-      <GetCrumbs path={"Teothe3K,Tables"} />
+      <GetCrumbs path={"Teothe,Tables"} />
       <Card bordered={false} className="w-full">
         {GetTableData()}
       </Card>
