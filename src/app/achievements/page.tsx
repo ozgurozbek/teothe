@@ -1,13 +1,24 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Card, Checkbox, Skeleton, Table, Modal, Button, Empty, Input, Space } from "antd";
+import {
+  Card,
+  Checkbox,
+  Skeleton,
+  Table,
+  Modal,
+  Button,
+  Empty,
+  Input,
+  Space,
+} from "antd";
 import { TrophyOutlined, UserOutlined } from "@ant-design/icons";
 import Confetti from "react-confetti";
 import useWindowSize from "react-use/lib/useWindowSize";
 import GetCrumbs from "Comp/NavigationCrumb";
 import SimpleContent from "@/components/SimpleCon";
 import type { ColumnsType } from "antd/es/table";
+import { ColumnFilterItem } from "antd/es/table/interface";
 
 interface AchievementType {
   key: React.Key;
@@ -39,7 +50,9 @@ interface AchievementDataType {
 function GetAchievementsData() {
   const [userSecret, setUserSecret] = useState(""); // Secret user, bir input field ile setter çağırıp oraya key isteyeceğiz, başka bir buton da olacak update için, key'i de gönderecek67597689
   const [displayEmpty, setDisplayEmpty] = useState(true);
-  const [achievementsData, setAchievementsData] = useState<AchievementDataType | undefined>();
+  const [achievementsData, setAchievementsData] = useState<
+    AchievementDataType | undefined
+  >();
   const [achievements, setAchievements] = useState<AchievementType[]>([]);
   const [userPointsState, setUserPointsState] = useState<UserPoints[]>([]);
   const [loading, setLoading] = useState(false);
@@ -48,7 +61,9 @@ function GetAchievementsData() {
 
   useEffect(() => {
     setLoading(true); // true when fetching
-    fetch(`https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getAchievements?key=${userSecret}`)
+    fetch(
+      `https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getAchievements?key=${userSecret}`
+    )
       .then((res) => res.json())
       .then((data) => {
         setAchievementsData(data);
@@ -69,7 +84,8 @@ function GetAchievementsData() {
         .map((achievement, index) => ({
           ...achievement,
           key: index,
-          completed: achievement.achievers?.includes(achievementsData.user) || false,
+          completed:
+            achievement.achievers?.includes(achievementsData.user) || false,
         }))
         .sort((a, b) => parseInt(a.id) - parseInt(b.id));
 
@@ -86,6 +102,7 @@ function GetAchievementsData() {
   }
 
   const showModal = () => {
+    pointCalculator();
     setIsModalVisible(true);
   };
 
@@ -112,18 +129,24 @@ function GetAchievementsData() {
     }));
   };
 
-  if (achievements && displayEmpty) {
-  setUserPointsState(calculateUserPoints(achievements));
+  function pointCalculator() {
+    if (achievements) {
+      setUserPointsState(calculateUserPoints(achievements));
+    }
   }
 
-  // const pointOptions = () =>
-  //   Array.from(new Set(achievementsData?.achievements.map((a) => a.point))).map(
-  //     (point) => ({
-  //       text: point,
-  //       value: point,
-  //     })
-  //   );
-
+  let pointOptions: ColumnFilterItem[] = [];
+  if (achievementsData && Array.isArray(achievementsData.achievements)) {
+    pointOptions = Array.from(
+      new Set(achievementsData.achievements.map((a) => a.point))
+    ).map(
+      (point): ColumnFilterItem => ({
+        text: point.toString(), // Ensuring text is a string
+        value: point, // Keeping value as a number is fine, but you can also use toString() if needed
+      })
+    );
+  }
+  
   const handleCompletionToggle = (key: React.Key) => {
     if (achievementsData) {
       setAchievements((prevAchievements) => {
@@ -183,7 +206,7 @@ function GetAchievementsData() {
       dataIndex: "point",
       key: "point",
       sorter: (a, b) => parseInt(a.point) - parseInt(b.point),
-      // filter: pointOptions,
+      filters: pointOptions,
       onFilter: (value, record) => record.point.toString() === value,
     },
     {
