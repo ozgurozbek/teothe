@@ -171,6 +171,9 @@ function GetAchievementsData() {
             achievers: newAchievers,
             completed: !achievement.completed,
           };
+          var xmlHttp = new XMLHttpRequest();
+          xmlHttp.open("GET", "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/setAchievements?key="+userSecret+"&id="+achievementsData.achievements[Number(key)].id, false); //Keep this false for discouraged synchronous request. Or don't.
+          xmlHttp.send(null);
           return newAchievements;
         }
         return prevAchievements;
@@ -244,7 +247,7 @@ function GetAchievementsData() {
         contentProps={{
           title: "Achievements",
           text: [
-            "Displays the achievements that players can earn. Each achievement has a unique criteria and points associated with it. Your Teothe achievements have been reset. You must not alter the gameplay to gain achievements.",
+            "Displays the achievements that players can earn when you enter your Secret. Each achievement has a unique criteria and points associated with it. Your Teothe achievements have been reset. You must not alter the gameplay to gain achievements. You can NOT remove your achievements.",
           ],
         }}
       />
@@ -260,10 +263,10 @@ function GetAchievementsData() {
             />
           )}
           <Space size={4} wrap={true}>
-            <Input
-              addonBefore="User"
+            <Input.Password
+              addonBefore={userSecret ? achievementsData?.user : "User"}
               placeholder="Your Secret"
-              onChange={(e) => setUserSecret(e.target.value)}
+              onPressEnter={(e) => setUserSecret(e.currentTarget.value)}
             />
             <Button type="primary" onClick={showModal}>
               Show Leaderboard
