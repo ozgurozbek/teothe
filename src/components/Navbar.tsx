@@ -92,6 +92,8 @@ const loadPageURL = (menuItem: any) => {
       return "14";
     case "quick-npc":
       return "15";
+    case "achievements":
+      return "16";
     default:
       return "0";
   }
@@ -159,6 +161,7 @@ export default function Navbar() {
               getItem("Quest Idea", "14", "generators/quest-idea", undefined), //undefined for Icon
               getItem("Quick NPC", "15", "generators/quick-npc", undefined), //undefined for Icon
             ]),
+            getItem("Achievements", "16","achievements",getIcon("achievements")),
           ]}
         />
       </div>
