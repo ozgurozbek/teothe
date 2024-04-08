@@ -145,23 +145,25 @@ export default function Navbar() {
           }}
           items={[
             getItem("Common Lore", "1", "common-lore", getIcon("CommonLore")),
-            getItem("Planes", "2", "planes", getIcon("Locations")),
             getItem("Deities", "3", "deities", getIcon("Deities")),
             getItem("Races", "4", "races", getIcon("Races")),
-            getItem("Tables", "5", "tables", getIcon("Tables")),
             getItem("Library", "6", "library", getIcon("Library")),
-            getItem("Pricing", "7", "pricing", getIcon("Pricing")),
             getItem("Tools", "8", "tools", getIcon("Tools")),
-            getItem("Homebrews", "9", "homebrews", getIcon("Homebrews")),
             getItem("Map Overlay", "10", "map-overlay", getIcon("MapOverlay")),
-            getItem("Map Legend", "11", "map-legend", getIcon("MapLegend")),
             getItem("Calendar", "12", "calendar", getIcon("Calendar")),
-            getItem("Languages", "13", "languages", getIcon("Languages")),
-            getItem("Generators", "-1", undefined, getIcon("Generators"), undefined, [ //undefined for href & Element
-              getItem("Quest Idea", "14", "generators/quest-idea", undefined), //undefined for Icon
-              getItem("Quick NPC", "15", "generators/quick-npc", undefined), //undefined for Icon
+            getItem("Achievements", "16","achievements",getIcon("Achievements")),
+            getItem("DM's Works", "-2", undefined, getIcon("DMworks"), undefined, [ //undefined for href & Element
+              getItem("Planes", "2", "planes", getIcon("Locations")),
+              getItem("Tables", "5", "tables", getIcon("Tables")),
+              getItem("Pricing", "7", "pricing", getIcon("Pricing")),
+              getItem("Homebrews", "9", "homebrews", getIcon("Homebrews")),
+              getItem("Map Legend", "11", "map-legend", getIcon("MapLegend")),
+              getItem("Languages", "13", "languages", getIcon("Languages")),
             ]),
-            getItem("Achievements", "16","achievements",getIcon("achievements")),
+            getItem("Generators", "-1", undefined, getIcon("Generators"), undefined, [ //undefined for href & Element
+              getItem("Quest Idea", "14", "generators/quest-idea", getIcon("QuickIdea")), //undefined for Icon
+              getItem("Quick NPC", "15", "generators/quick-npc", getIcon("QuickNPC")), //undefined for Icon
+            ]),
           ]}
         />
       </div>

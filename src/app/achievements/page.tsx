@@ -171,9 +171,24 @@ function GetAchievementsData() {
             achievers: newAchievers,
             completed: !achievement.completed,
           };
-          var xmlHttp = new XMLHttpRequest();
-          xmlHttp.open("GET", "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/setAchievements?key="+userSecret+"&id="+achievementsData.achievements[Number(key)].id, false); //Keep this false for discouraged synchronous request. Or don't.
-          xmlHttp.send(null);
+          fetch(`https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/setAchievements?key=${userSecret}&id=${achievementsData.achievements[Number(key)].id}`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+          })
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.json();
+          })
+          .then(data => {
+            console.log(data);
+          })
+          .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+          });
           return newAchievements;
         }
         return prevAchievements;
@@ -263,7 +278,8 @@ function GetAchievementsData() {
             />
           )}
           <Space size={4} wrap={true}>
-            <Input.Password
+            <Input
+              type="Password"
               addonBefore={userSecret ? achievementsData?.user : "User"}
               placeholder="Your Secret"
               onPressEnter={(e) => setUserSecret(e.currentTarget.value)}
