@@ -141,7 +141,7 @@ function GetAchievementsData() {
       new Set(achievementsData.achievements.map((a) => a.point))
     ).map(
       (point): ColumnFilterItem => ({
-        text: point.toString(), // Ensuring text is a string
+        text: point, // Ensuring text is a string
         value: point, // Keeping value as a number is fine, but you can also use toString() if needed
       })
     );
@@ -225,7 +225,7 @@ function GetAchievementsData() {
       key: "point",
       sorter: (a, b) => parseInt(a.point) - parseInt(b.point),
       filters: pointOptions,
-      onFilter: (value, record) => record.point.toString() === value,
+      onFilter: (value, record) => record.point === value,
     },
     {
       title: <UserOutlined />,
