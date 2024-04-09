@@ -1,9 +1,9 @@
 "use client";
 
-import { Card, Divider } from "antd";
+import { Button, Card, Divider } from "antd";
 import GetCrumbs from "@/components/NavigationCrumb";
 import SimpleContent from "@/components/SimpleCon";
-
+import { DoubleRightOutlined } from "@ant-design/icons";
 /**
  * Uses SimpleContent to generate a page full of text describing the common lore of teothe.
  * @tutorial
@@ -52,6 +52,11 @@ export default function CommonLorePage() {
             ],
           }}
         />
+        <Button href="/planes">
+          <span>
+            See Planes <DoubleRightOutlined />
+          </span>
+        </Button>
         <Divider />
         <SimpleContent
           contentProps={{
@@ -86,6 +91,11 @@ export default function CommonLorePage() {
             ],
           }}
         />
+        <Button href="/deities">
+          <span>
+            See Deities <DoubleRightOutlined />
+          </span>
+        </Button>
       </Card>
     </section>
   );

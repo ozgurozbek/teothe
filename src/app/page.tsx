@@ -1,9 +1,10 @@
 "use client";
 
 import React from "react";
-import { Card } from "antd";
+import { Button, Card } from "antd";
 import GetCrumbs from "@/components/NavigationCrumb";
 import SimpleContent from "@/components/SimpleCon";
+import { DoubleRightOutlined } from "@ant-design/icons";
 
 /**
  * Main application component that renders the Teothe Campaign Setting.
@@ -27,6 +28,11 @@ export default function App() {
             ],
           }}
         />
+        <Button href="/common-lore">
+          <span>
+            See Common Lore <DoubleRightOutlined />
+          </span>
+        </Button>
       </Card>
     </section>
   );

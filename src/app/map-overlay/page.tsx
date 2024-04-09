@@ -127,15 +127,21 @@ export default function MapOverlayPage() {
               </span>
             </Button>
           </Tooltip>
-          <Button
-            onClick={() => {
-              handleMapVisibility("Resources");
-            }}
+          <Tooltip
+            placement="bottom"
+            title={"See Map Legend for more detail"}
+            color={"#630436"}
           >
-            <span>
-              Map Resources <ExclamationCircleOutlined />
-            </span>
-          </Button>
+            <Button
+              onClick={() => {
+                handleMapVisibility("Resources");
+              }}
+            >
+              <span>
+                Map Legend <ExclamationCircleFilled />
+              </span>
+            </Button>
+          </Tooltip>
           <Button
             onClick={() => {
               handleMapVisibility("Steamcart");
