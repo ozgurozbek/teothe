@@ -81,7 +81,7 @@ export default function DeitiesPage() {
           contentProps={{
             title: "Greater Deities",
             text: [
-              "Greater Deities, worshipped by millions across the realm of Teothe, embody the pinnacle of divine power and foresight. With the ability to discern events a week in advance and shape reality with the creation of artifacts, they command unwavering respect and awe. Their strength is unmatched, rendering them unchallengeable by mortals and lesser beings. Often veiled in mystery, their presence is seldom witnessed by worshipers, who revere them from afar. Avatars, mere echoes of their divine essence, carry but a fraction of their immense power, yet each remains as formidable as a lesser deity. Destruction is a fleeting setback, for these deities can summon up to ten avatars at will, ensuring their influence endures across the ages. It is no wonder that lesser gods flock to their ranks, drawn by the irresistible allure of their omnipotence.",
+              "Greater Deities, worshipped by millions across the realm of Teothe, embody the pinnacle of divine power and foresight. They have the ability to discern events a week in advance and shape reality with the creation of artifacts. Their strength is unchallengeable by mortals and lesser beings. Avatars, mere echoes of their divine essence that they create, carry a fraction of their immense power and each are as powerful as a lesser deity. These deities can summon up to ten avatars at will and their destruction doesn't damage their influence. It is no wonder that lesser gods flock to their ranks, drawn by the irresistible allure of their omnipotence.",
             ],
           }}
         />
