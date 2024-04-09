@@ -17,8 +17,8 @@ import SimpleContent from "@/components/SimpleCon";
 import CalendarTable from "@/components/calendar/CalendarTable";
 import { useState } from "react";
 import { DownOutlined } from "@ant-design/icons";
-
 import useSWR from "swr";
+import Metadata from "@/components/Metadata";
 
 /**
  * The parent component for the calendar. Holds states that are then passed to the table then to cell. Helps fetch data depending on table number, month and year.
@@ -153,75 +153,81 @@ export default function CalendarPage() {
     onClick: handleTableClick,
   };
   return (
-    <section>
-      <GetCrumbs path={"Teothe,Calendar"} />
-      <Card bordered={false} className="w-full">
-        <SimpleContent
-          contentProps={{
-            title: "Calendar",
-            text: [
-              "In the realm of Teothe, 28 unique holidays are celebrated throught 8 months of every year.",
-              "16 of these holidays are recognized and celebrated by everyone in Teothe, and 12 of them are specific to different races.",
-            ],
-          }}
-        />
-        <Space className="mb-4 flex flex-wrap">
-          <div>
-            Table:{" "}
-            <Dropdown menu={tableProps}>
-              <Button>
-                <Space>
-                  {tableNo}
-                  <DownOutlined />
-                </Space>
-              </Button>
-            </Dropdown>
-          </div>
-          <Divider type="vertical" style={{ borderColor: "white" }} />
-          <div>
-            Month:{" "}
-            <Dropdown menu={monthProps}>
-              <Button>
-                <Space>
-                  {monthName}
-                  <DownOutlined />
-                </Space>
-              </Button>
-            </Dropdown>
-          </div>
-          <Divider type="vertical" style={{ borderColor: "white" }} />
-          <div className="flex items-center ">
-            <p className="mr-2"> Year: </p>
-            <InputNumber
-              addonAfter="Blue Era"
-              defaultValue={27}
-              min={27}
-              precision={0}
-              keyboard={false}
-              onChange={(x) => {
-                if (x != null) {
-                  handleYearClick(x);
-                }
-              }}
-            />
-          </div>
-        </Space>
-
-        <Divider />
-        {monthName !== "" ? (
-          <CalendarTable
-            calendarProps={{
-              tableNo: tableNo,
-              monthName: monthName,
-              year: yearCount,
+    <>
+      <Metadata
+        title="Teothe - A 5E Campaign Setting | Calendar"
+        description="Explore the unique calendar system of Teothe, detailing moon phases, holidays, and session notes providing rich insight on what happened on our adventures in our Calendar section."
+      />
+      <section>
+        <GetCrumbs path={"Teothe,Calendar"} />
+        <Card bordered={false} className="w-full">
+          <SimpleContent
+            contentProps={{
+              title: "Calendar",
+              text: [
+                "In the realm of Teothe, 28 unique holidays are celebrated throught 8 months of every year.",
+                "16 of these holidays are recognized and celebrated by everyone in Teothe, and 12 of them are specific to different races.",
+              ],
             }}
           />
-        ) : (
-          <Empty />
-        )}
-        <Divider />
-        <GetAPICalendar />
-      </Card>
-    </section>
+          <Space className="mb-4 flex flex-wrap">
+            <div>
+              Table:{" "}
+              <Dropdown menu={tableProps}>
+                <Button>
+                  <Space>
+                    {tableNo}
+                    <DownOutlined />
+                  </Space>
+                </Button>
+              </Dropdown>
+            </div>
+            <Divider type="vertical" style={{ borderColor: "white" }} />
+            <div>
+              Month:{" "}
+              <Dropdown menu={monthProps}>
+                <Button>
+                  <Space>
+                    {monthName}
+                    <DownOutlined />
+                  </Space>
+                </Button>
+              </Dropdown>
+            </div>
+            <Divider type="vertical" style={{ borderColor: "white" }} />
+            <div className="flex items-center ">
+              <p className="mr-2"> Year: </p>
+              <InputNumber
+                addonAfter="Blue Era"
+                defaultValue={27}
+                min={27}
+                precision={0}
+                keyboard={false}
+                onChange={(x) => {
+                  if (x != null) {
+                    handleYearClick(x);
+                  }
+                }}
+              />
+            </div>
+          </Space>
+
+          <Divider />
+          {monthName !== "" ? (
+            <CalendarTable
+              calendarProps={{
+                tableNo: tableNo,
+                monthName: monthName,
+                year: yearCount,
+              }}
+            />
+          ) : (
+            <Empty />
+          )}
+          <Divider />
+          <GetAPICalendar />
+        </Card>
+      </section>
+    </>
   );
 }

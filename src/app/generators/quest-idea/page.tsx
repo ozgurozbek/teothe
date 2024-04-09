@@ -4,6 +4,7 @@ import { Button, Card, Divider, Empty, Skeleton } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import { useState } from "react";
 import SimpleContent from "@/components/SimpleCon";
+import Metadata from "@/components/Metadata";
 
 /**
  * React component for rendering a Quest Idea Generator interface.
@@ -43,6 +44,10 @@ function GetQuestIdea() {
 
   return (
     <>
+      <Metadata
+        title="Teothe - A 5E Campaign Setting | Quest Idea Generator"
+        description="Spark creativity and excitement for your next campaign with our Quest Idea Generator, providing endless adventure possibilities and inspiration."
+      />
       <Button onClick={handleButtonClick}>
         {displayEmpty ? "Generate Quest Idea" : "Generate New Quest Idea"}
       </Button>

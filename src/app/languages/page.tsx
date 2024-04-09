@@ -6,6 +6,7 @@ import { Button, Card, Dropdown, Skeleton, MenuProps, Space } from "antd";
 import { useState, useEffect } from "react";
 import { DownOutlined } from "@ant-design/icons";
 import SimpleContent from "@/components/SimpleCon";
+import Metadata from "@/components/Metadata";
 
 /**
  * Functional component for the LanguagesDropdown.
@@ -142,25 +143,31 @@ export default function LanguagesPage() {
   ));
 
   return (
-    <section>
-      <GetCrumbs path={"Teothe,Languages"} />
-      <Card bordered={false} className="w-full">
-        <SimpleContent
-          contentProps={{
-            title: "Languages",
-            text: [
-              "These are the language entries. Entries in white are from original Forgotten Realms content. Pinks are homebrew entries made specifically for Teothe. Pink and italic entries are adapted from original content to Teothe.",
-              "Select a language from the dropdown menu below to display the respective dictionary.",
-            ],
-          }}
-        />
-        <LanguagesDropdown
-          curLang={curLang}
-          langList={langList}
-          handleLangClick={handleLangClick}
-        />
-        {renderedLanguages}
-      </Card>
-    </section>
+    <>
+      <Metadata
+        title="Teothe - A 5E Campaign Setting | Languages"
+        description="Delve into the rich tapestry of languages spoken across Teothe, each with its homebrews and cultural significance."
+      />
+      <section>
+        <GetCrumbs path={"Teothe,Languages"} />
+        <Card bordered={false} className="w-full">
+          <SimpleContent
+            contentProps={{
+              title: "Languages",
+              text: [
+                "These are the language entries. Entries in white are from original Forgotten Realms content. Pinks are homebrew entries made specifically for Teothe. Pink and italic entries are adapted from original content to Teothe.",
+                "Select a language from the dropdown menu below to display the respective dictionary.",
+              ],
+            }}
+          />
+          <LanguagesDropdown
+            curLang={curLang}
+            langList={langList}
+            handleLangClick={handleLangClick}
+          />
+          {renderedLanguages}
+        </Card>
+      </section>
+    </>
   );
 }

@@ -11,6 +11,7 @@ import {
   GenerateOptionValueSimple,
 } from "npc-generator";
 import { DownOutlined } from "@ant-design/icons";
+import Metadata from "@/components/Metadata";
 
 /* Hoisted variables */
 //Utility to pull stat modifiers
@@ -522,6 +523,10 @@ function GetQuickNPC() {
 
   return (
     <>
+      <Metadata
+        title="Teothe - A 5E Campaign Setting | Quick NPC Generator"
+        description="Populate your world with vibrant characters using our Quick NPC Generator, featuring diverse personalities, backgrounds, and traits to enhance your storytelling."
+      />
       <Space wrap>
         <Button onClick={() => handleButtonClick("norm")}>
           {displayEmpty ? "Generate Quick NPC" : "Generate New Quick NPC"}
