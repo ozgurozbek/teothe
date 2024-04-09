@@ -7,7 +7,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Teothe - A 5E Campaign Setting",
-  description: "A Material Plane for TTRPG Systems",
+  description:
+    "Dive into Teothe, a rich 5th Edition Dungeons & Dragons campaign setting offering endless adventures on the Material Plane. Discover its lore, creatures, and mysteries.",
 };
 
 /**
