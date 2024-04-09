@@ -5,11 +5,11 @@ import RootLayoutProvider from "./layoutProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Teothe - A 5E Campaign Setting",
-  description:
-    "Dive into Teothe, a rich 5th Edition Dungeons & Dragons campaign setting offering endless adventures on the Material Plane. Discover its lore, creatures, and mysteries.",
-};
+// export const metadata = {
+//   title: "Teothe - A 5E Campaign Setting",
+//   description:
+//     "Dive into Teothe, a rich 5th Edition Dungeons & Dragons campaign setting offering endless adventures on the Material Plane. Discover its lore, creatures, and mysteries.",
+// };
 
 /**
  * Root layout component that sets up the basic HTML structure with meta tags, links, and scripts.

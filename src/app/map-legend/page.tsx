@@ -6,6 +6,7 @@ import GetCrumbs from "Comp/NavigationCrumb";
 import SimpleContent from "Comp/SimpleCon";
 import useSWR from "swr";
 import Link from "next/link";
+import Metadata from "@/components/Metadata";
 
 /**
  * Component to get and render the map legend entries.
@@ -53,27 +54,33 @@ function GetMapLegend() {
  */
 export default function MapLegendPage() {
   return (
-    <section>
-      <GetCrumbs path={"Teothe,Map Legend"} />
-      <Card bordered={false} className="w-full">
-        <SimpleContent
-          contentProps={{
-            title: "Map Legend",
-            text: [
-              "Resource based legend for trader campaigns, descriptions and difficulty classes for all of them. These valuables can be found across Teothe.",
-              "Adds new skills named Artifice and Influence. Difficulty classes are averaged out. They can change depending on the situation and in where you are in Teothe.",
-            ],
-          }}
-        />
-        {GetMapLegend()}
-        <br />
-        <Link
-          href={"https://ozgurozbek.github.io/dnd/MapResourcesDoc.pdf"}
-          target="_blank"
-        >
-          See the mechanics document here.
-        </Link>
-      </Card>
-    </section>
+    <>
+      <Metadata
+        title="Teothe - A 5E Campaign Setting | Map Legend"
+        description="Decode the symbols of Teothe's maps with our Map Legend, providing clarity and understanding to the geography of the Material Plane."
+      />
+      <section>
+        <GetCrumbs path={"Teothe,Map Legend"} />
+        <Card bordered={false} className="w-full">
+          <SimpleContent
+            contentProps={{
+              title: "Map Legend",
+              text: [
+                "Resource based legend for trader campaigns, descriptions and difficulty classes for all of them. These valuables can be found across Teothe.",
+                "Adds new skills named Artifice and Influence. Difficulty classes are averaged out. They can change depending on the situation and in where you are in Teothe.",
+              ],
+            }}
+          />
+          {GetMapLegend()}
+          <br />
+          <Link
+            href={"https://ozgurozbek.github.io/dnd/MapResourcesDoc.pdf"}
+            target="_blank"
+          >
+            See the mechanics document here.
+          </Link>
+        </Card>
+      </section>
+    </>
   );
 }

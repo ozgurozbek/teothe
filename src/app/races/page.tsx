@@ -5,6 +5,7 @@ import RacesCon from "@/components/races/RacesCon";
 import { Card, Divider, Skeleton, Space, Switch } from "antd";
 import useSWR from "swr";
 import { useState } from "react";
+import Metadata from "@/components/Metadata";
 
 /**
  * Function to fetch and render race data based on homebrew and official toggle switches.
@@ -93,20 +94,26 @@ export default function RacesPage() {
   }
 
   return (
-    <section>
-      <GetCrumbs path={"Teothe,Races"} />
+    <>
+      <Metadata
+        title="Teothe - A 5E Campaign Setting | Races"
+        description="Discover the myriad races that inhabit Teothe, each with its own abilities, cultures, and histories, enriching your adventures with diversity and depth."
+      />
+      <section>
+        <GetCrumbs path={"Teothe,Races"} />
 
-      <Space className="float-right">
-        <div className="text-pink-600">
-          <span className="align-bottom">Homebrew </span>
-          <Switch defaultChecked onChange={ToggleBrew} />{" "}
-        </div>
-        <div>
-          <span className="align-bottom">Official </span>
-          <Switch defaultChecked onChange={ToggleOfficial} />{" "}
-        </div>
-      </Space>
-      <Card bordered={false}>{GetRaces(brew, official)}</Card>
-    </section>
+        <Space className="float-right">
+          <div className="text-pink-600">
+            <span className="align-bottom">Homebrew </span>
+            <Switch defaultChecked onChange={ToggleBrew} />{" "}
+          </div>
+          <div>
+            <span className="align-bottom">Official </span>
+            <Switch defaultChecked onChange={ToggleOfficial} />{" "}
+          </div>
+        </Space>
+        <Card bordered={false}>{GetRaces(brew, official)}</Card>
+      </section>
+    </>
   );
 }
