@@ -1,9 +1,8 @@
-"use client";
-
 import GetCrumbs from "@/components/NavigationCrumb";
 import SimpleContent from "@/components/SimpleCon";
 import { Card, Divider, Skeleton } from "antd";
 import useSWR from "swr";
+import { Metadata } from "next";
 
 /**
  * Function to get and render homebrew entries based on the specified category.
@@ -48,6 +47,12 @@ function GetHomebrews(category: string) {
   }
   return renderedEntries;
 }
+
+export const metadata: Metadata = {
+  title: "Homebrews",
+  description:
+    "Explore rules that are unique to the Teothe 5E Campaign Setting.",
+};
 
 /**
  * Displays the list elements like other Table(antd) elements, and provides categories

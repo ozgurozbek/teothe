@@ -1,11 +1,9 @@
-"use client";
-
 import { Card, Skeleton } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import useSWR from "swr";
 import { Table } from "antd";
 import type { ColumnsType } from "antd/es/table";
-
+import { Metadata } from "next";
 import SimpleContent from "@/components/SimpleCon";
 
 interface DataType {
@@ -14,6 +12,11 @@ interface DataType {
   dataIndex: string;
   cost: string;
 }
+export const metadata: Metadata = {
+  title: "Pricing",
+  description:
+    "Learn about the pricing of myriad different items and services in Teothe.",
+};
 
 /**
  * Function to fetch and display common pricing table data.

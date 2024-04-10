@@ -1,11 +1,9 @@
-"use client";
-
 import GetCrumbs from "@/components/NavigationCrumb";
 import RacesCon from "@/components/races/RacesCon";
 import { Card, Divider, Skeleton, Space, Switch } from "antd";
 import useSWR from "swr";
 import { useState } from "react";
-import Metadata from "@/components/Metadata";
+import { Metadata } from "next";
 
 /**
  * Function to fetch and render race data based on homebrew and official toggle switches.
@@ -77,6 +75,12 @@ function GetRaces(brewCheck: boolean, officialCheck: boolean) {
   return renderedRaces;
 }
 
+export const metadata: Metadata = {
+  title: "Races",
+  description:
+    "Discover the myriad races that inhabit Teothe, each with its own abilities, cultures, and histories, enriching your adventures with diversity and depth.",
+};
+
 /**
  * Component for the races page, displaying breadcrumbs, toggle switches for homebrew and official races, and a card containing race data.
  * @returns The races page section with breadcrumbs, toggle switches, and race data.
@@ -94,26 +98,20 @@ export default function RacesPage() {
   }
 
   return (
-    <>
-      <Metadata
-        title="Teothe - A 5E Campaign Setting | Races"
-        description="Discover the myriad races that inhabit Teothe, each with its own abilities, cultures, and histories, enriching your adventures with diversity and depth."
-      />
-      <section>
-        <GetCrumbs path={"Teothe,Races"} />
+    <section>
+      <GetCrumbs path={"Teothe,Races"} />
 
-        <Space className="float-right">
-          <div className="text-pink-600">
-            <span className="align-bottom">Homebrew </span>
-            <Switch defaultChecked onChange={ToggleBrew} />{" "}
-          </div>
-          <div>
-            <span className="align-bottom">Official </span>
-            <Switch defaultChecked onChange={ToggleOfficial} />{" "}
-          </div>
-        </Space>
-        <Card bordered={false}>{GetRaces(brew, official)}</Card>
-      </section>
-    </>
+      <Space className="float-right">
+        <div className="text-pink-600">
+          <span className="align-bottom">Homebrew </span>
+          <Switch defaultChecked onChange={ToggleBrew} />{" "}
+        </div>
+        <div>
+          <span className="align-bottom">Official </span>
+          <Switch defaultChecked onChange={ToggleOfficial} />{" "}
+        </div>
+      </Space>
+      <Card bordered={false}>{GetRaces(brew, official)}</Card>
+    </section>
   );
 }

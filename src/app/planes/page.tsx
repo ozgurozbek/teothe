@@ -1,10 +1,8 @@
-"use client";
-
 import GetCrumbs from "@/components/NavigationCrumb";
 import Location from "@/components/locations/Locations";
 import { Card, Skeleton } from "antd";
 import useSWR from "swr";
-import Metadata from "@/components/Metadata";
+import { Metadata } from "next";
 
 /**
  * Function to fetch planes of existence data from an API and render them as Location components.
@@ -46,23 +44,22 @@ function GetPlanes() {
   return renderedPlanes;
 }
 
+export const metadata: Metadata = {
+  title: "Planes",
+  description:
+    "Journey beyond the Material Plane of Teothe and explore the diverse realms, with unique inhabitants, rules, landscapes, and secrets awaiting discovery.",
+};
 /**
  * Function to fetch and display information about the planes of existence.
  * @returns An array of JSX elements representing the planes of existence.
  */
 export default function LocationsPage() {
   return (
-    <>
-      <Metadata
-        title="Teothe - A 5E Campaign Setting | Planes"
-        description="Journey beyond the Material Plane of Teothe and explore the diverse realms, with unique inhabitants, rules, landscapes, and secrets awaiting discovery."
-      />
-      <section>
-        <GetCrumbs path={"Teothe,Planes of Existence"} />
-        <Card bordered={false} className=" w-full">
-          {GetPlanes()}
-        </Card>
-      </section>
-    </>
+    <section>
+      <GetCrumbs path={"Teothe,Planes of Existence"} />
+      <Card bordered={false} className=" w-full">
+        {GetPlanes()}
+      </Card>
+    </section>
   );
 }

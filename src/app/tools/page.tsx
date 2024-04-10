@@ -1,11 +1,9 @@
-"use client";
-
 import { Card, Skeleton } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import useSWR from "swr";
 import { Table } from "antd";
 import type { ColumnsType } from "antd/es/table";
-
+import { Metadata } from "next";
 import SimpleContent from "@/components/SimpleCon";
 
 interface DataType {
@@ -15,6 +13,11 @@ interface DataType {
   cost: string;
 }
 
+export const metadata: Metadata = {
+  title: "Tools",
+  description:
+    "Explore our suite of tools that empover, provide utility and add flavor to your character. Learn about how you can acquire and use them.",
+};
 /**
  * Function to fetch and display player tool data from the API.
  * @generator

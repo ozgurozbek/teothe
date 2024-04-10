@@ -1,12 +1,16 @@
-"use client";
-
 import { Button, Card, Divider, Empty, Skeleton, Space } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import useSWR from "swr";
 import { Table } from "antd";
 import { useState } from "react";
 import SimpleContent from "@/components/SimpleCon";
-import Metadata from "@/components/Metadata";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Tables",
+  description:
+    "Enhance your gameplay with our collection of tables, from weapon enhancements to resurrection chances and expenses, optimizing your TTRPG experience.",
+};
 
 /**
  * Function to fetch and display data for different tables.
@@ -168,17 +172,11 @@ function GetTableData() {
  */
 export default function TablesPage() {
   return (
-    <>
-      <Metadata
-        title="Teothe - A 5E Campaign Setting | Tables"
-        description="Enhance your gameplay with our collection of tables, from weapon enhancements to resurrection chances and expenses, optimizing your TTRPG experience."
-      />
-      <section>
-        <GetCrumbs path={"Teothe,Tables"} />
-        <Card bordered={false} className="w-full">
-          {GetTableData()}
-        </Card>
-      </section>
-    </>
+    <section>
+      <GetCrumbs path={"Teothe,Tables"} />
+      <Card bordered={false} className="w-full">
+        {GetTableData()}
+      </Card>
+    </section>
   );
 }
