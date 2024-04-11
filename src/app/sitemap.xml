@@ -55,4 +55,12 @@
     <loc>https://teothe.com/languages</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://teothe.com/generators/quest-idea</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://teothe.com/generators/quick-npc</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>
