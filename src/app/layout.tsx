@@ -2,12 +2,18 @@ import "App/globals.css";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import RootLayoutProvider from "./layoutProvider";
+import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Teothe3K - A 5E Campaign Setting",
-  description: "A Material Plane for TTRPG Systems",
+// This gets overridden by the metadata on pages but is the default
+export const metadata: Metadata = {
+  title: {
+    template: "Teothe | %s",
+    default: "Teothe",
+  },
+  description:
+    "Dive into Teothe, a rich 5th Edition Dungeons & Dragons campaign setting offering endless adventures on the Material Plane. Discover its lore, creatures, and mysteries.",
 };
 
 /**

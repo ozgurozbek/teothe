@@ -55,11 +55,11 @@ function getIcon(pageName: string) {
 }
 
 /**
-   * Renders the page on click
-   * @generator
-   * @param menuItem
-   * @returns React Element
-   */
+ * Renders the page on click
+ * @generator
+ * @param menuItem
+ * @returns React Element
+ */
 const loadPageURL = (menuItem: any) => {
   switch (menuItem) {
     case "common-lore":
@@ -121,7 +121,7 @@ export default function Navbar() {
         >
           <Image
             src="/teothe3K.png"
-            alt=" Teothe3K Icon"
+            alt=" Teothe Icon"
             style={{
               width: "120px",
               padding: "4px",

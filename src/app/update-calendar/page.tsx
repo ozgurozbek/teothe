@@ -71,11 +71,10 @@ export default function CalendarNoteUpdatePage() {
           try {
             setTextInputText(responseData[dayNumber].split(" --- ")[0]);
           } catch (error: any) {
-
             if (error.name != "TypeError") {
               console.log(error.name);
               console.log("Unknown error. Reset text area.");
-            // Otherwise it is a splitting error. As expected.
+              // Otherwise it is a splitting error. As expected.
             } else {
               setTextInputText(""); // We clear whether it is mistyped, or we can't split.
             }
@@ -84,7 +83,7 @@ export default function CalendarNoteUpdatePage() {
       } catch (error: any) {
         if (error.name != "SyntaxError") {
           console.log(error);
-        // Otherwise it is the No Data Found JSON Syntax Error.
+          // Otherwise it is the No Data Found JSON Syntax Error.
         }
       }
     }
@@ -177,85 +176,82 @@ export default function CalendarNoteUpdatePage() {
 
   return (
     <section>
-    <Card bordered={false} className="w-full">
-      <SimpleContent
-        contentProps={{
-          title: "Change Calendar Data",
-          text: ["Fill User, select Table, Year, Month and Day to submit"],
-        }}
-      />
-      <Space size={4} wrap={true}>
-        <Input
-          addonBefore="User"
-          placeholder="Your Name"
-          onChange={(e) => setUserName(e.target.value)}
-        />
-        <Dropdown menu={tableProps}>
-          <Button className="w-full">
-            <Space>
-              {tableNo}
-              <DownOutlined />
-            </Space>
-          </Button>
-        </Dropdown>
-        <InputNumber
-          addonBefore="Year"
-          min={1}
-          defaultValue={27}
-          onChange={(x) => {
-            if (x != null) {
-              handleYearClick(x);
-            }
+      <Card bordered={false} className="w-full">
+        <SimpleContent
+          contentProps={{
+            title: "Change Calendar Data",
+            text: ["Fill User, select Table, Year, Month and Day to submit"],
           }}
-          addonAfter="Blue Era"
-          style={{ width: "12rem" }}
         />
-        <Dropdown menu={monthProps}>
-          <Button>
-            <Space>
-              {monthName}
-              <DownOutlined />
-            </Space>
+        <Space size={4} wrap={true}>
+          <Input
+            addonBefore="User"
+            placeholder="Your Name"
+            onChange={(e) => setUserName(e.target.value)}
+          />
+          <Dropdown menu={tableProps}>
+            <Button className="w-full">
+              <Space>
+                {tableNo}
+                <DownOutlined />
+              </Space>
+            </Button>
+          </Dropdown>
+          <InputNumber
+            addonBefore="Year"
+            min={1}
+            defaultValue={27}
+            onChange={(x) => {
+              if (x != null) {
+                handleYearClick(x);
+              }
+            }}
+            addonAfter="Blue Era"
+            style={{ width: "12rem" }}
+          />
+          <Dropdown menu={monthProps}>
+            <Button>
+              <Space>
+                {monthName}
+                <DownOutlined />
+              </Space>
+            </Button>
+          </Dropdown>
+          <InputNumber
+            min={1}
+            max={48}
+            onChange={(x) => {
+              if (x != null) {
+                handleDayClick(x);
+              }
+            }}
+            addonBefore="Day"
+            style={{ width: "7rem" }}
+          />
+          <Button type="primary" onClick={handleNextClick}>
+            Fetch Current Note
           </Button>
-        </Dropdown>
-        <InputNumber
-          min={1}
-          max={48}
-          onChange={(x) => {
-            if (x != null) {
-              handleDayClick(x);
-            }
-          }}
-          addonBefore="Day"
-          style={{ width: "7rem" }}
+        </Space>
+        <Divider />
+        <TextArea
+          rows={4}
+          maxLength={1000}
+          showCount={true}
+          placeholder="Enter session note here. Make sure it is less than a 1000 characters!"
+          value={textInputText}
+          style={{ backgroundColor: "transparent", borderColor: "#630436" }}
+          onChange={(e) => setTextInputText(e.target.value)}
         />
+        <Divider />
         <Button
           type="primary"
-          onClick={handleNextClick}
+          htmlType="submit"
+          onClick={handleSubmit}
+          className="float-right md:w-40 w-full"
         >
-          Fetch Current Note
+          Submit
         </Button>
-      </Space>
-      <Divider />
-      <TextArea
-        rows={4}
-        maxLength={1000}
-        showCount={true}
-        placeholder="Enter session note here. Make sure it is less than a 1000 characters!"
-        value={textInputText}
-        style={{ backgroundColor: "transparent", borderColor: "#630436" }}
-        onChange={(e) => setTextInputText(e.target.value)}
-      />
-      <Divider />
-      <Button
-        type="primary"
-        htmlType="submit"
-        onClick={handleSubmit}
-        className="float-right md:w-40 w-full"
-      >
-        Submit
-      </Button>
-    </Card>
+      </Card>
     </section>
   );
 }
