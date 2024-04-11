@@ -115,6 +115,7 @@ footer > a {
   background-color: #630436 !important;
   border-color: #630436 !important;
 }
+.ant-menu-dark.ant-menu-horizontal >.ant-menu-submenu-selected,
 ::selection {
   background: #30011a;
   color: white;
@@ -122,4 +123,22 @@ footer > a {
 .ant-table-thead th {
   background-color: white !important;
   color: black !important;
+}
+
+.ant-checkbox-inner, .ant-checkbox-input {
+  transform: scale(1.4)
+}
+
+.ant-checkbox:hover .ant-checkbox-inner {
+  background-color: #30011a !important;
+  border-color: #30011a !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: white !important;
+  border-color: white !important;
+}
+
+.ant-checkbox-inner:after {
+  border-color: transparent !important;
 }
