@@ -15,7 +15,7 @@ import SimpleContent from "@/components/SimpleCon";
 function GetTableData() {
   const [curTable, setCurTable] = useState("resurrection");
   const [displayEmpty, setDisplayEmpty] = useState(true);
-  let query = curTable;
+  const [query, setQuery] = useState("");
 
   function TablesNavigator() {
     return (
@@ -25,6 +25,7 @@ function GetTableData() {
             onClick={() => {
               setDisplayEmpty(false);
               setCurTable("material");
+              setQuery("Material Variants")
             }}
           >
             Material Variants
@@ -33,6 +34,7 @@ function GetTableData() {
             onClick={() => {
               setDisplayEmpty(false);
               setCurTable("alchemy");
+              setQuery("Alchemy")
             }}
           >
             Alchemy
@@ -41,6 +43,7 @@ function GetTableData() {
             onClick={() => {
               setDisplayEmpty(false);
               setCurTable("resurrection");
+              setQuery("Resurrection")
             }}
           >
             Resurrection
@@ -49,6 +52,7 @@ function GetTableData() {
             onClick={() => {
               setDisplayEmpty(false);
               setCurTable("enhancements");
+              setQuery("Enhancements")
             }}
           >
             Enhancements
@@ -57,6 +61,7 @@ function GetTableData() {
             onClick={() => {
               setDisplayEmpty(false);
               setCurTable("runes");
+              setQuery("Runes")
             }}
           >
             Runes
@@ -65,6 +70,7 @@ function GetTableData() {
             onClick={() => {
               setDisplayEmpty(false);
               setCurTable("adultry");
+              setQuery("Adultry")
             }}
           >
             Adultry
@@ -73,6 +79,7 @@ function GetTableData() {
             onClick={() => {
               setDisplayEmpty(false);
               setCurTable("cooking");
+              setQuery("Cooking")
             }}
           >
             Cooking
@@ -81,6 +88,7 @@ function GetTableData() {
             onClick={() => {
               setDisplayEmpty(false);
               setCurTable("scroll");
+              setQuery("Scrolls")
             }}
           >
             Scrolls
@@ -98,7 +106,7 @@ function GetTableData() {
   const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
   const { data, error } = useSWR(
     "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getTables?tab=" +
-      query,
+    curTable,
     fetcher
   );
   if (error) {
