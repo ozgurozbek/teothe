@@ -1,34 +1,11 @@
 "use client";
 
 import { CaretUpOutlined, CopyOutlined } from "@ant-design/icons";
-import { ConfigProvider, Layout, theme } from "antd";
+import { Alert, ConfigProvider, Layout, theme } from "antd";
 import Navbar from "Comp/Navbar";
+import { useState } from "react";
 
 const { Header, Content, Footer } = Layout;
-
-/**
- * Helper function for the page to scroll to certain element when provided with ID
- * @ignore Not yet implemented
- * @param id 
- * @returns
- */
-export const scrollTo = (id: string) => {
-  const offset = 100;
-
-  const element: any = document.getElementById(id);
-  if (!element) {
-    window.location.href = `/#${id}`;
-  }
-  const bodyRect = document.body.getBoundingClientRect().top;
-  const elementRect = element.getBoundingClientRect().top;
-  const elementPosition = elementRect - bodyRect;
-  const offsetPosition = elementPosition - offset;
-
-  window.scrollTo({
-    top: offsetPosition,
-    behavior: "smooth",
-  });
-};
 
 /**
  * Root layout provider component that sets up the overall layout structure.
@@ -41,6 +18,8 @@ export default function RootLayoutProvider({
 }: {
   children: React.ReactNode;
 }) {
+  const [displayCopyAlert, setDisplayCopyAlert] = useState(false)
+
   function goUp() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -48,7 +27,8 @@ export default function RootLayoutProvider({
 
   function copyToClipboard() {
     navigator.clipboard.writeText(window.location.href);
-  }  
+    setDisplayCopyAlert(true)
+  }
 
   return (
     <ConfigProvider
@@ -138,6 +118,10 @@ export default function RootLayoutProvider({
         >
           <CopyOutlined />
         </div>
+        {displayCopyAlert &&
+        <div className="w-48 h-12 rounded-full fixed bottom-20 right-16 transition-all flex items-center justify-center text-3xl">
+          <Alert message="Copied Page URL!" type="success" showIcon closable onClose={() => setDisplayCopyAlert(false)} />
+        </div>}
       </Layout>
     </ConfigProvider>
   );

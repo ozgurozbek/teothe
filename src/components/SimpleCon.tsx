@@ -1,5 +1,4 @@
 import { Typography, Image } from "antd";
-import { LinkOutlined } from "@ant-design/icons";
 
 const { Title } = Typography;
 
@@ -33,8 +32,7 @@ export default function SimpleContent({
     <section>
       <Title id={contentProps.title.replaceAll(" ", "-").toLowerCase()}>
         {contentProps.title}{" "}
-        <LinkOutlined className="cursor-pointer hover:text-white text-[#630436] hover:underline transition" onClick={()=>{navigator.clipboard.writeText(window.location.href.split("#")[0]+"#"+contentProps.title.replaceAll(" ", "-").toLowerCase())}} />
-      </Title>
+    </Title>
       {contentProps.image?.src && (
         <Image
           rootClassName="w-full"
