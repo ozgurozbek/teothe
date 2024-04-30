@@ -78,7 +78,7 @@ var voices: string[] = [
   "unorthodox",
 ];
 
-// Utility for traits
+// Utility for traits -> TODO: MOVE THEM TO THE NPC-GENERATOR REPO @TEOTHE BRANCH, there are many other areas for quirks.
 var traits: string[] = [
   `Gourmand: Obsessed with food, cooks a lot.`,
   `Ascetic: Has forsaken physical comforts and enjoyments, enjoys simplicity.`,
@@ -114,7 +114,7 @@ var traits: string[] = [
   `Party Animal: Loves parties, and often tries to organize them.`,
   `Introvert: Doesn't like too much social interaction, and tends to be timid or blunt in conversation.`,
   `Snob: Believes that they are of the highest class, and looks down upon those lesser than them.`,
-  `Squeamish: Gets grossed out easily.`,
+  // `Squeamish: Gets grossed out easily.`, Already exists below, and is worse. Maybe update or remove.
   `Drunken Prodigy: Seems to perform better, work better, and just be better while they are drunk.`,
   `Stoned Prodigy: Seems to perform better, work better, and just be better while they are under the influence of drugs.`,
   `Hoplophobia: They are terrified of weapons.`,
@@ -144,6 +144,53 @@ var traits: string[] = [
   `World Weary: Well-versed in world/country/state politics, but is very anxious about the fallout of world events.`,
   `Desensitized: They have seen so many traumatic events that those same events no longer faze them.`,
   `Tycoon: Always looking for business opportunities, they want to own it all.`,
+  // Rephrase these to fit in with the above, where necessary.
+  `Austere: Prefers the simple, simple life.`,
+  `Book Burner: Is certain dry satire burns the hottest.`,
+  `Braggart: Every victory, real or imagined, recounted for all, time and time again.`,
+  `Chatterbox: Just. Won't. Stop. Talking.`,
+  `Cowardice: No taste for thrill or danger.`,
+  `Curmudgeon: Begrudgingly accepts the existence of others.`,
+  `Darkly Curious: Prone to investigating the Dark Arts.`,
+  `Doomsayer: Believes this all won't end well.`,
+  `Cadaver Fearing: Pair me not with the husk of the departed or I shall crumble myself.`,
+  `Undercommon Fearing: Underdark beings strike terror in their heart.`,
+  `Cosmic Fearing: Trepidatious towards things from the Abyss and beyond.`,
+  `Pillager Fearing: Bandits evoke a certain childhood trauma.`,
+  `Germophobia: Pestilence lurks on every surface.`,
+  // `Greedy: Always focused on their share.`, Already exists above, but can be repurposed or deleted
+  `Hydrophobic: No greater terror than cool, refreshing water.`,
+  // `Hypochondriac: Imagines contracting every manner of illness from enemies.`, Already exists above, but can be repurposed or deleted
+  `Kleptomania: Consumed by the urge to steal.`,
+  `Lazy: Not motivated to do all that much.`,
+  `Lost in Space: No longer has a firm grasp on the three dimensions we depend on.`,
+  `Lost in Time: Time has become an impenetrable maze.`,
+  `Melophobic: Music is the trigger for deep-seated resentment.`,
+  `Needler: Sharp wit, sharper words.`,
+  `Occultomaniac: Enthralled with hidden cults and their trappings.`,
+  `Occultophobic: Terrified of hidden cults and their influence.`,
+  // `Pyromaniac: O What Fun Fire Brings For Me And Thee.`, Already exists above, but can be repurposed or deleted
+  `Resolute: Has sworn off the bottle.`,
+  `Selfish: Puts their own interests first.`,
+  `Squeamish: Disgusted by viscera and bodily fluids.`,
+  `Thanatophobia: Fear of death and dying.`,
+  `Vicious: Never pulls a punch.`,
+  `Tune Hummer: A hum for every occasion.`,
+  `Zoophobia: Intense fear of animals and non-human creatures.`,
+  // `Ascetic: Denial of pleasure in order to refine the spirit.`, This is not the same as above, change its name maybe?
+  `Bon Vivant: Let's knock one back and enjoy what life has to offer!.`,
+  `Compassionate: Ability to understand the trials of another.`,
+  `Death Seeker: Revels in the proximity of their own end.`,
+  `Devout: Committed to a power beyond themselves.`,
+  `Generous: Willing to give what is asked of them.`,
+  `Peacemaker: Surely, violence is the last resort.`,
+  `Raconteur: Knows how to weave an absorbing tale.`,
+  `Rummager: No stone left unturned.`,
+  // `Sanguine: A bright future can yet still be seen.`, Already exists above, but can be repurposed or deleted
+  `Sneaky: Likes to stay hidden and evasive.`,
+  `Steady: A grounding aura surrounds this one.`,
+  `Stress Knitter: The knitting needles fly when stress is high.`,
+  `Thanatomaniac: Obsessed with death and what lies beyond this mortal coil.` 
 ];
 
 /**
@@ -289,11 +336,11 @@ function GetQuickNPC() {
             teotheNPC.description.pronounCapit
           } is a ${teotheNPC.description.occupation}. ${
             teotheNPC.description.pronounCapit
-          } is ${teotheNPC.relationship.status.toLocaleLowerCase()}.\r\n\n`.replace(
+          } is ${teotheNPC.relationship.status.toLocaleLowerCase()}.\r\n`.replace(
             /  +/g,
             " "
           ) +
-            `${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.hair} ${teotheNPC.physical.eyes}. Their ${teotheNPC.physical.skin} contribute to a distinctive appearance. ${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.build} with ${teotheNPC.physical.face}. ${teotheNPC.physical.special1} ${teotheNPC.physical.special2}\r\n\n`.replace(
+            `${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.hair} ${teotheNPC.physical.eyes}. Their ${teotheNPC.physical.skin} contribute to a distinctive appearance. ${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.build} with ${teotheNPC.physical.face}. ${teotheNPC.physical.special1} ${teotheNPC.physical.special2}\r\n`.replace(
               /  +/g,
               " "
             ) +
