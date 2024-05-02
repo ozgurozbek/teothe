@@ -190,7 +190,7 @@ var traits: string[] = [
   `Sneaky: Likes to stay hidden and evasive.`,
   `Steady: A grounding aura surrounds this one.`,
   `Stress Knitter: The knitting needles fly when stress is high.`,
-  `Thanatomaniac: Obsessed with death and what lies beyond this mortal coil.` 
+  `Thanatomaniac: Obsessed with death and what lies beyond this mortal coil.`,
 ];
 
 /**
@@ -404,6 +404,14 @@ function GetQuickNPC() {
     }
   };
 
+  // Added as an AI image descriptor
+  const handleAIPromptClick = (teotheNPC: TeotheNPC) => {
+    navigator.clipboard.writeText(
+      `A ${teotheNPC.description.age} years old ${teotheNPC.description.race} ${teotheNPC.description.gender} working as a ${teotheNPC.description.occupation}.\r\n`.replace(/  +/g," ") +
+      `${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.hair} ${teotheNPC.physical.eyes}. ${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.skin}. ${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.build} with ${teotheNPC.physical.face}. ${teotheNPC.physical.special1} ${teotheNPC.physical.special2}`.replace(/  +/g," ")
+    );
+  };
+
   /** This is the main area for the Teothe style NPC generation
    * This NPC generation is also compatible with Fantasy Grounds
    * as of 2024 February. This requires two buttons, one to copy
@@ -577,6 +585,9 @@ function GetQuickNPC() {
         </Button>
         <Button onClick={() => handleFantasyGroundsClick("desc", teotheNPC)}>
           {displayEmpty ? "Generate First" : "Description for FGU"}
+        </Button>
+        <Button onClick={() => handleAIPromptClick(teotheNPC)}>
+          {displayEmpty ? "Generate First" : "Generative Prompt for AI"}
         </Button>
       </Space>
       <Divider />
