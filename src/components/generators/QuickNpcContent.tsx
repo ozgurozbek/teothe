@@ -78,121 +78,6 @@ var voices: string[] = [
   "unorthodox",
 ];
 
-// Utility for traits -> TODO: MOVE THEM TO THE NPC-GENERATOR REPO @TEOTHE BRANCH, there are many other areas for quirks.
-var traits: string[] = [
-  `Gourmand: Obsessed with food, cooks a lot.`,
-  `Ascetic: Has forsaken physical comforts and enjoyments, enjoys simplicity.`,
-  `Nimble: Moves around with ease as if they are dancing.`,
-  `Clever: They are good at out-of-the-box thinking.`,
-  `Open-Minded: Doesn't judge people often, will consider even the wildest claims.`,
-  `Kind: Exceptionally agreeable, doesn't insult others.`,
-  `Sanguine: Exceptionally upbeat, very difficult to lower their mood.`,
-  `Optimist: Can always find the silver lining.`,
-  `Steadfast: Mentally strong and doesn't crumble under stress.`,
-  `Brave: Shows courage in the face of danger.`,
-  `Iron Stomach: Has a strong resistance to ingesting contaminants and toxins.`,
-  `Night Owl: Is usually awake at night and asleep during the day.`,
-  `Masochist: Likes being subjected to pain.`,
-  `Transhumanist: Wants to enhance their body through artifice or magic.`,
-  `Tortured Artist: Feels misunderstood by other people, wants to create the greatest piece of art.`,
-  `Chemical Fascination: Loves altering their mental state with drugs and chemicals, suffers withdrawal quickly.`,
-  `Teetotaler: Abhors the idea of gaining pleasure from chemicals, doesn't drink or use drugs.`,
-  `Absent-Minded: Will sometimes completely forget what they are doing.`,
-  `Obsessed Worker: Always focused on their job, starts feeling uneasy when not working.`,
-  `Perfectionist: Can't bear to stop working on something until it is perfect.`,
-  `Lazy Worker: Hates their job, works slowly and would much rather be doing anything else.`,
-  `Clumsy: Constantly fumbling and dropping things.`,
-  `Fidgeter: Is constantly fiddling with something in their hand.`,
-  `Neat: Their environment must always be clean and tidy.`,
-  `Slob: Doesn't care about the cleanliness of their environment.`,
-  `Animal Lover: Loves animals, and tends to be surrounded by them.`,
-  `Animal Hater: Can't stand animals, and often tries to avoid them.`,
-  `Rebellious: Dislikes authority, and resists any attempt at control over them.`,
-  `Compliant: Always obeys authority, and shows little to no resistance to new rules.`,
-  `Submissive: Meekly obedient to others, and shows no resistance in conflict.`,
-  `Dominant: They must be the loudest voice, have their idea pursued, and be the most powerful in the room.`,
-  `Party Animal: Loves parties, and often tries to organize them.`,
-  `Introvert: Doesn't like too much social interaction, and tends to be timid or blunt in conversation.`,
-  `Snob: Believes that they are of the highest class, and looks down upon those lesser than them.`,
-  // `Squeamish: Gets grossed out easily.`, Already exists below, and is worse. Maybe update or remove.
-  `Drunken Prodigy: Seems to perform better, work better, and just be better while they are drunk.`,
-  `Stoned Prodigy: Seems to perform better, work better, and just be better while they are under the influence of drugs.`,
-  `Hoplophobia: They are terrified of weapons.`,
-  `Hoplophile: Has an irrational love for weaponry.`,
-  `Autophobia: Has a fear of being alone.`,
-  `Indecisive: Struggles to commit to a decision.`,
-  `Hypochondriac: Is constantly concerned with their health, possibly believing that they have afflictions that they don't.`,
-  `Twitchy: Some of their muscles seem to spasm at random.`,
-  `Agoraphobia: Is scared of going outside.`,
-  `Purist: Doesn't like people who are magically inclined.`,
-  `Greedy: Always wants more, and gets mad if they don't get it.`,
-  `Jealous: If they see something they don't have, they do what they need to get it.`,
-  `Pyromaniac: They love watching and starting fires, and get angry when they are extinguished.`,
-  `Sadist: Enjoys inflicting pain on others.`,
-  `Wimp: Cowers at the slightest notion of violence.`,
-  `Abrasive: Exceptionally blunt, doesn't consider people's feelings when talking.`,
-  `Creepy Breathing: Breathes considerably heavily and sweats constantly.`,
-  `Misandrist: Dislikes and distrusts men.`,
-  `Misogynist: Dislikes and distrusts women.`,
-  `Misanthrope: Dislikes and distrusts people, believes that all actions are taken for selfish reasons.`,
-  `Pessimist: Always assumes the worst outcome.`,
-  `Depressive: Perpetually in an awful mood, very difficult to raise their mood.`,
-  `Nervous: Feels the strain from stress more than others.`,
-  `Volatile: Even the smallest thing can make them explode, very quick to break under stress.`,
-  `Sickly: They are far more likely to get sick than others.`,
-  `Insomniac: Forever tired, they can't seem to get a good night's rest.`,
-  `World Weary: Well-versed in world/country/state politics, but is very anxious about the fallout of world events.`,
-  `Desensitized: They have seen so many traumatic events that those same events no longer faze them.`,
-  `Tycoon: Always looking for business opportunities, they want to own it all.`,
-  // Rephrase these to fit in with the above, where necessary.
-  `Austere: Prefers the simple, simple life.`,
-  `Book Burner: Is certain dry satire burns the hottest.`,
-  `Braggart: Every victory, real or imagined, recounted for all, time and time again.`,
-  `Chatterbox: Just. Won't. Stop. Talking.`,
-  `Cowardice: No taste for thrill or danger.`,
-  `Curmudgeon: Begrudgingly accepts the existence of others.`,
-  `Darkly Curious: Prone to investigating the Dark Arts.`,
-  `Doomsayer: Believes this all won't end well.`,
-  `Cadaver Fearing: Pair me not with the husk of the departed or I shall crumble myself.`,
-  `Undercommon Fearing: Underdark beings strike terror in their heart.`,
-  `Cosmic Fearing: Trepidatious towards things from the Abyss and beyond.`,
-  `Pillager Fearing: Bandits evoke a certain childhood trauma.`,
-  `Germophobia: Pestilence lurks on every surface.`,
-  // `Greedy: Always focused on their share.`, Already exists above, but can be repurposed or deleted
-  `Hydrophobic: No greater terror than cool, refreshing water.`,
-  // `Hypochondriac: Imagines contracting every manner of illness from enemies.`, Already exists above, but can be repurposed or deleted
-  `Kleptomania: Consumed by the urge to steal.`,
-  `Lazy: Not motivated to do all that much.`,
-  `Lost in Space: No longer has a firm grasp on the three dimensions we depend on.`,
-  `Lost in Time: Time has become an impenetrable maze.`,
-  `Melophobic: Music is the trigger for deep-seated resentment.`,
-  `Needler: Sharp wit, sharper words.`,
-  `Occultomaniac: Enthralled with hidden cults and their trappings.`,
-  `Occultophobic: Terrified of hidden cults and their influence.`,
-  // `Pyromaniac: O What Fun Fire Brings For Me And Thee.`, Already exists above, but can be repurposed or deleted
-  `Resolute: Has sworn off the bottle.`,
-  `Selfish: Puts their own interests first.`,
-  `Squeamish: Disgusted by viscera and bodily fluids.`,
-  `Thanatophobia: Fear of death and dying.`,
-  `Vicious: Never pulls a punch.`,
-  `Tune Hummer: A hum for every occasion.`,
-  `Zoophobia: Intense fear of animals and non-human creatures.`,
-  // `Ascetic: Denial of pleasure in order to refine the spirit.`, This is not the same as above, change its name maybe?
-  `Bon Vivant: Let's knock one back and enjoy what life has to offer!.`,
-  `Compassionate: Ability to understand the trials of another.`,
-  `Death Seeker: Revels in the proximity of their own end.`,
-  `Devout: Committed to a power beyond themselves.`,
-  `Generous: Willing to give what is asked of them.`,
-  `Peacemaker: Surely, violence is the last resort.`,
-  `Raconteur: Knows how to weave an absorbing tale.`,
-  `Rummager: No stone left unturned.`,
-  // `Sanguine: A bright future can yet still be seen.`, Already exists above, but can be repurposed or deleted
-  `Sneaky: Likes to stay hidden and evasive.`,
-  `Steady: A grounding aura surrounds this one.`,
-  `Stress Knitter: The knitting needles fly when stress is high.`,
-  `Thanatomaniac: Obsessed with death and what lies beyond this mortal coil.`,
-];
-
 /**
  * React component for rendering a Quest Idea Generator interface.
  * The component includes a button that, when clicked, conditionally fetches data from an API using the useSWR hook.
@@ -350,7 +235,7 @@ function GetQuickNPC() {
               teotheNPC.local.languages
             }. ${teotheNPC.hook.description} ${
               teotheNPC.pquirks.description
-            } and is known for being ${teotheNPC.local.trait.toLowerCase()} ${
+            } ${
               teotheNPC.ptraits.traitslizards
             } ${teotheNPC.ptraits.traitsgoliaths} ${
               teotheNPC.religion.description
@@ -465,7 +350,6 @@ function GetQuickNPC() {
     stats: number[];
     alignment: string;
     local: {
-      trait: string;
       languages: string;
       voice: string;
     };
@@ -567,7 +451,6 @@ function GetQuickNPC() {
         race: npc.description.race,
       },
       local: {
-        trait: traits[Math.floor(Math.random() * traits.length)],
         languages: languages[Math.floor(Math.random() * languages.length)],
         voice: voices[Math.floor(Math.random() * voices.length)],
       },
@@ -657,7 +540,7 @@ function GetQuickNPC() {
                   teotheNPC.local.languages
                 }. ${teotheNPC.hook.description} ${
                   teotheNPC.pquirks.description
-                } and is known for being ${teotheNPC.local.trait.toLowerCase()} ${
+                } ${
                   teotheNPC.ptraits.traitslizards
                 } ${teotheNPC.ptraits.traitsgoliaths} ${
                   teotheNPC.religion.description
