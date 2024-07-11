@@ -232,6 +232,7 @@ export default function Deity({
         alt={descriptionProps.title}
         draggable={false}
         onClick={() => window.open(imageSrc, "_blank")}
+        className="cursor-pointer"
       />
       <div className="px-4 w-[75%]">
         <Title level={2}>{descriptionProps.title}</Title>
