@@ -12,6 +12,7 @@ import {
 } from "antd";
 import { useState } from "react";
 import { DownOutlined } from "@ant-design/icons";
+import { DoubleRightOutlined } from "@ant-design/icons";
 
 /**
  * Component for easily calculating map resources. Allows users to input and get weight and prices of resources.
@@ -240,7 +241,7 @@ export default function CalculateTradeContent() {
       key: "Spices",
     },
     {
-      value: 100, //market price of a deer is about 1800$, and meat with furs would cost about 4.5gp in D&D. Since this is very common and easy to get I cut to 100$, which is 1gp 
+      value: 100, //market price of a deer is about 1800$, and meat with furs would cost about 4.5gp in D&D. Since this is very common and easy to get I cut to 100$, which is 1gp
       key: "Deer",
     },
     {
@@ -435,9 +436,9 @@ export default function CalculateTradeContent() {
     onClick: handleResourceClick,
   };
 
-  function splitCurrency(value:number) {
+  function splitCurrency(value: number) {
     if (value == 0) {
-      return "nothing"
+      return "nothing";
     }
 
     let pp = Math.floor(value / 1000); // Calculate platinum pieces
@@ -470,13 +471,26 @@ export default function CalculateTradeContent() {
         <SimpleContent
           contentProps={{
             title: "Map Resources Trade Calculator",
-            text: ["There is external information for this section to work, provided at the Teothe Website under map resources. Other skills such as Arcana or Constitution represented on the Map Resources Table. They work as presented in SRD, rules as written, and only provide a check or a bonus for research checks. You need to pass these checks to acquire what it represents.",
+            text: [
+              "There is external information for this section to work, provided at the Teothe Website under map resources. Other skills such as Arcana or Constitution represented on the Map Resources Table. They work as presented in SRD, rules as written, and only provide a check or a bonus for research checks. You need to pass these checks to acquire what it represents.",
               "Mining: You need Athletics with a Pickaxe to mine materials that are available on the map. These include some Common, Strategic and Luxury materials. Proficiency with Jeweler’s tools or Mason’s tools can provide your Athletics check with additional proficiency. Upon succeeding the DC, roll a D12 for the amount of kg you manage to find and acquire in an hour, if it is not a single item. For example, mining Iron (Strategic) requires a DC18 Athletics check with Smith’s Tools. When you succeed you make a D12 roll to determine how much you’ve mined. In 8 hours with maximum efficiency without failing any checks you’ll collect 211lb of iron ore, which is estimated to be 21gp according to Teothe pricing.",
               "Farming: You need to make a Nature skill check with appropriate common tools to properly tile or harvest the land that is presented on the map. These include some Common and Luxury materials. You also need a fair share of information on farming represented by how efficient you are. Upon succeeding in the DC and managing to raise the crops, roll a D12 for grains, a D8 for fruits and vegetables, and a D6 for unique ones. This determines the amount of lbs you’ll harvest. A common small-plot farmer will make around 250GP/year ignoring their expenses. For example harvesting Wheat (Common) requires a DC12 Nature check with appropriate tools. When you succeed you make a D12 roll to determine how much you’ve harvested since Wheat is a grain, and not a unique one. In 8 hours with maximum efficiency without failing any checks you’ll harvest ~211lbs of wheat, which is estimated to be 211cp when sold as flour according to Teothe pricing.",
-              "Make sure when selling across the borders to add the +10% on the regions that receive that resource and don't have it in their lands."
+              "Make sure when selling across the borders to add the +10% on the regions that receive that resource and don't have it in their lands.",
             ],
           }}
         />
+        <Space>
+          <Button href="/map-overlay">
+            <span>
+              See the Teothe Map <DoubleRightOutlined />
+            </span>
+          </Button>
+          <Button href="/map-legend">
+            <span>
+              See Map Legends <DoubleRightOutlined />
+            </span>
+          </Button>
+        </Space>
         <Divider />
         <Space size={4} wrap={true}>
           <InputNumber
@@ -491,7 +505,10 @@ export default function CalculateTradeContent() {
             style={{ width: "12rem" }}
           />{" "}
           of
-          <Dropdown menu={resourceProps} overlayClassName={"max-h-64 overflow-auto"}>
+          <Dropdown
+            menu={resourceProps}
+            overlayClassName={"max-h-64 overflow-auto"}
+          >
             <Button className="w-full">
               <Space>
                 {selectedResource}
@@ -499,7 +516,10 @@ export default function CalculateTradeContent() {
               </Space>
             </Button>
           </Dropdown>
-          equals {Math.floor(d12Result * 2.2)} lbs (if not a single unit), which is worth {splitCurrency(Math.floor(d12Result * 2.2 * selectedResourceValue))} rounded down.
+          equals {Math.floor(d12Result * 2.2)} lbs (if not a single unit), which
+          is worth{" "}
+          {splitCurrency(Math.floor(d12Result * 2.2 * selectedResourceValue))}{" "}
+          rounded down.
         </Space>
       </Card>
     </section>

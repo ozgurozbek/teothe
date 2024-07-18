@@ -1,11 +1,11 @@
 "use client";
 
 import MapEntry from "Comp/maps/MapEntry";
-import { Card, Skeleton } from "antd";
+import { Button, Card, Skeleton, Space } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import SimpleContent from "Comp/SimpleCon";
 import useSWR from "swr";
-import Link from "next/link";
+import { DoubleRightOutlined } from "@ant-design/icons";
 /**
  * Component to get and render the map legend entries.
  * @generator
@@ -66,12 +66,18 @@ export default function MapLegendContent() {
         />
         {GetMapLegend()}
         <br />
-        <Link
-          href={"https://ozgurozbek.github.io/dnd/MapResourcesDoc.pdf"}
-          target="_blank"
-        >
-          See the mechanics document here.
-        </Link>
+        <Space>
+          <Button target="_blank" href="./Trading_Doc.pdf">
+            <span>
+              Teothe Map Resources Supplement Document <DoubleRightOutlined />
+            </span>
+          </Button>
+          <Button href="/calculate-trade">
+            <span>
+              Teothe Map Resources Trade Calculator <DoubleRightOutlined />
+            </span>
+          </Button>
+        </Space>
       </Card>
     </section>
   );
