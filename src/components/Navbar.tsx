@@ -94,6 +94,8 @@ const loadPageURL = (menuItem: any) => {
       return "15";
     case "achievements":
       return "16";
+    case "calculate-trade":
+      return "17";
     default:
       return "0";
   }
@@ -158,6 +160,7 @@ export default function Navbar() {
               getItem("Homebrews", "9", "homebrews", getIcon("Homebrews")),
               getItem("Map Legend", "11", "map-legend", getIcon("MapLegend")),
               getItem("Languages", "13", "languages", getIcon("Languages")),
+              getItem("Calculate Trade", "17", "calculate-trade", getIcon("ResourceValueCalculator")),
               getItem("Achievements", "16","achievements",getIcon("Achievements")),
             ]),
             getItem("Generators", "-1", undefined, getIcon("Generators"), undefined, [ //undefined for href & Element
