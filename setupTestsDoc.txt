@@ -1,0 +1,4 @@
+install the testing library as so: npm install -D jest jest-environment-jsdom @testing-library/react @testing-library/jest-dom
+then basic files: npm init jest@latest
+then update the file according to: https://nextjs.org/docs/app/building-your-application/testing/jest
+then update the types by running: npm i --save-dev @types/jest
