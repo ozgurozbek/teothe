@@ -13,6 +13,7 @@ import {
 import { useState } from "react";
 import { DownOutlined } from "@ant-design/icons";
 import { DoubleRightOutlined } from "@ant-design/icons";
+import GetCrumbs from "../NavigationCrumb";
 
 /**
  * Component for easily calculating map resources. Allows users to input and get weight and prices of resources.
@@ -467,6 +468,7 @@ export default function CalculateTradeContent() {
 
   return (
     <section>
+      <GetCrumbs path={"Teothe,Calculate Trade"} />
       <Card bordered={false} className="w-full">
         <SimpleContent
           contentProps={{
