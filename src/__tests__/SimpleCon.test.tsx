@@ -1,5 +1,6 @@
 import { render } from "@testing-library/react";
 import SimpleContent from "../components/SimpleCon";
+import '@testing-library/jest-dom';
 
 describe("SimpleContent", () => {
     it("simple content prints initial title", () => {
@@ -22,7 +23,7 @@ describe("SimpleContent", () => {
             <SimpleContent contentProps={{ title: "Test Title", image: { src: "./Icons/Domains/fundamental.png", alt: "Test Image" } }} />
         );
         const img = getByAltText("Test Image");
-        expect(img).toBeInTheDocument;
+        expect(img).toBeInTheDocument();
     });
 
     it("does not render image if image src is not provided", () => {

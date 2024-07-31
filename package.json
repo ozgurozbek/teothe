@@ -18,6 +18,7 @@
     "autoprefixer": "10.4.14",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.5",
+    "msw": "^2.3.4",
     "next": "14.1.1",
     "next-pwa": "^5.6.0",
     "npc-generator": "github:ozgurozbek/npc-generator#teothe",

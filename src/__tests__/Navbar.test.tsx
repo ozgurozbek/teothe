@@ -1,5 +1,6 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import Navbar from '../components/Navbar';
 import { useRouter } from 'next/router';
 
@@ -53,22 +54,22 @@ describe('Navbar Component', () => {
   test('renders the navbar with menu items', () => {
     render(<Navbar />);
 
-    expect(screen.getByAltText('Teothe Icon')).toBeInTheDocument;
-    expect(screen.getByText('Common Lore')).toBeInTheDocument;
-    expect(screen.getByText('Deities')).toBeInTheDocument;
-    expect(screen.getByText('Races')).toBeInTheDocument;
-    expect(screen.getByText('Library')).toBeInTheDocument;
-    expect(screen.getByText('Tables')).toBeInTheDocument;
-    expect(screen.getByText('Map Overlay')).toBeInTheDocument;
-    expect(screen.getByText("DM's Works")).toBeInTheDocument;
-    expect(screen.getByText('Generators')).toBeInTheDocument;
+    expect(screen.getByAltText('Teothe Icon')).toBeInTheDocument();
+    expect(screen.getByText('Common Lore')).toBeInTheDocument();
+    expect(screen.getByText('Deities')).toBeInTheDocument();
+    expect(screen.getByText('Races')).toBeInTheDocument();
+    expect(screen.getByText('Library')).toBeInTheDocument();
+    expect(screen.getByText('Tables')).toBeInTheDocument();
+    expect(screen.getByText('Map Overlay')).toBeInTheDocument();
+    expect(screen.getByText("DM's Works")).toBeInTheDocument();
+    expect(screen.getByText('Generators')).toBeInTheDocument();
   });
 
   test('sets the selected key based on the current path', () => {
     render(<Navbar />);
     
     // Ensure that the "Common Lore" item is selected based on the pathname
-    expect(screen.getByText('Common Lore').closest('li')).toBeInTheDocument;
+    expect(screen.getByText('Common Lore').closest('li')).toBeInTheDocument();
   });
 
   test('updates selected key on menu item click', () => {
@@ -77,6 +78,6 @@ describe('Navbar Component', () => {
     fireEvent.click(screen.getByText('Deities'));
 
     // Ensure that the "Deities" item is selected
-    expect(screen.getByText('Deities').closest('li')).toBeInTheDocument;
+    expect(screen.getByText('Deities').closest('li')).toBeInTheDocument();
   });
 });
