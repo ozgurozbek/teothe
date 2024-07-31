@@ -30,8 +30,8 @@ export default function SimpleContent({
 
   return (
     <section>
-      <Title id={contentProps.title.replaceAll(" ", "-").toLowerCase()}>
-        {contentProps.title}{" "}
+      <Title data-testid="simplecon-title" id={contentProps.title.replaceAll(" ", "-").toLowerCase()}>
+        {contentProps.title}
     </Title>
       {contentProps.image?.src && (
         <Image
@@ -41,7 +41,7 @@ export default function SimpleContent({
           alt={contentProps.image.alt}
         />
       )}
-      {contentProps.text && textData}
+      <div data-testid="simplecon-paragraph">{contentProps.text && textData}</div>
     </section>
   );
 }
