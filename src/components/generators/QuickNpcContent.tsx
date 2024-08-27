@@ -463,15 +463,20 @@ function GetQuickNPC() {
         <Button onClick={() => handleButtonClick("norm")}>
           {displayEmpty ? "Generate Quick NPC" : "Generate New Quick NPC"}
         </Button>
-        <Button onClick={() => handleFantasyGroundsClick("stat", teotheNPC)}>
-          {displayEmpty ? "Generate First" : "Statblock for FGU"}
-        </Button>
-        <Button onClick={() => handleFantasyGroundsClick("desc", teotheNPC)}>
-          {displayEmpty ? "Generate First" : "Description for FGU"}
-        </Button>
-        <Button onClick={() => handleAIPromptClick(teotheNPC)}>
-          {displayEmpty ? "Generate First" : "Generative Prompt for AI"}
-        </Button>
+        {!displayEmpty &&
+        <>
+          <Divider type="vertical" style={{ borderColor: "white" }} />
+          <span>Copy </span>
+          <Button onClick={() => handleFantasyGroundsClick("stat", teotheNPC)}>
+            Statblock for FGU
+          </Button>
+          <Button onClick={() => handleFantasyGroundsClick("desc", teotheNPC)}>
+            Description for FGU
+          </Button>
+          <Button onClick={() => handleAIPromptClick(teotheNPC)}>
+            Generative Prompt for AI
+          </Button>
+        </>}
       </Space>
       <Divider />
       <Space wrap>
@@ -479,7 +484,7 @@ function GetQuickNPC() {
         <Dropdown menu={raceProps}>
           <Button>
             <Space>
-              {raceNo}
+              {raceProps.items[Number(raceNo)] ? raceProps.items[Number(raceNo)].label : raceNo}
               <DownOutlined />
             </Space>
           </Button>
@@ -488,7 +493,7 @@ function GetQuickNPC() {
         <Dropdown menu={genderProps}>
           <Button>
             <Space>
-              {genderNo}
+              {genderProps.items[Number(genderNo)] ? genderProps.items[Number(genderNo)].label : genderNo}
               <DownOutlined />
             </Space>
           </Button>
@@ -497,7 +502,7 @@ function GetQuickNPC() {
         <Dropdown menu={occupationProps}>
           <Button>
             <Space>
-              {occupationNo}
+              {occupationProps.items[Number(occupationNo)] ? occupationProps.items[Number(occupationNo)].label : occupationNo}
               <DownOutlined />
             </Space>
           </Button>
@@ -506,11 +511,12 @@ function GetQuickNPC() {
         <Dropdown menu={alignmentProps}>
           <Button>
             <Space>
-              {alignmentNo}
+              {alignmentProps.items[Number(alignmentNo)] ? alignmentProps.items[Number(alignmentNo)].label : alignmentNo}
               <DownOutlined />
             </Space>
           </Button>
         </Dropdown>
+        <Divider type="vertical" style={{ borderColor: "white" }} />
         <Button onClick={() => handleButtonClick("spcf")}>
           {displayEmpty ? "Generate Specific NPC" : "Generate New Specific NPC"}
         </Button>
