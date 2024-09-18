@@ -33,9 +33,8 @@ function LanguagesDropdown({
       <Dropdown
         menu={langProps}
         autoFocus={true}
+        overlayClassName={"max-h-64 overflow-auto no-scrollbar"}
         overlayStyle={{
-          maxHeight: 384,
-          overflowY: "auto",
           scrollbarWidth: "thin",
           scrollBehavior: "smooth",
         }}

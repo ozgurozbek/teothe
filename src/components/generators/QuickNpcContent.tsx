@@ -229,17 +229,10 @@ function GetQuickNPC() {
               /  +/g,
               " "
             ) +
-            `${teotheNPC.ptraits.traits1}${teotheNPC.ptraits.traits2}${
-              teotheNPC.description.pronounCapit
-            } sounds ${teotheNPC.local.voice}, knows ${
-              teotheNPC.local.languages
-            }. ${teotheNPC.hook.description} ${
-              teotheNPC.pquirks.description
-            } ${
-              teotheNPC.ptraits.traitslizards
-            } ${teotheNPC.ptraits.traitsgoliaths} ${
-              teotheNPC.religion.description
-            }.`.replace(/  +/g, " ")
+            `${teotheNPC.ptraits.traits1}${teotheNPC.ptraits.traits2}${teotheNPC.description.pronounCapit} sounds ${teotheNPC.local.voice}, knows ${teotheNPC.local.languages}. ${teotheNPC.hook.description} ${teotheNPC.pquirks.description} ${teotheNPC.ptraits.traitslizards} ${teotheNPC.ptraits.traitsgoliaths} ${teotheNPC.religion.description}.`.replace(
+              /  +/g,
+              " "
+            )
         );
         break;
       case "stat":
@@ -292,8 +285,14 @@ function GetQuickNPC() {
   // Added as an AI image descriptor
   const handleAIPromptClick = (teotheNPC: TeotheNPC) => {
     navigator.clipboard.writeText(
-      `A ${teotheNPC.description.age} years old ${teotheNPC.description.race} ${teotheNPC.description.gender} working as a ${teotheNPC.description.occupation}.\r\n`.replace(/  +/g," ") +
-      `${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.hair} ${teotheNPC.physical.eyes}. ${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.skin}. ${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.build} with ${teotheNPC.physical.face}. ${teotheNPC.physical.special1} ${teotheNPC.physical.special2}`.replace(/  +/g," ")
+      `A ${teotheNPC.description.age} years old ${teotheNPC.description.race} ${teotheNPC.description.gender} working as a ${teotheNPC.description.occupation}.\r\n`.replace(
+        /  +/g,
+        " "
+      ) +
+        `${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.hair} ${teotheNPC.physical.eyes}. ${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.skin}. ${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.build} with ${teotheNPC.physical.face}. ${teotheNPC.physical.special1} ${teotheNPC.physical.special2}`.replace(
+          /  +/g,
+          " "
+        )
     );
   };
 
@@ -463,28 +462,42 @@ function GetQuickNPC() {
         <Button onClick={() => handleButtonClick("norm")}>
           {displayEmpty ? "Generate Quick NPC" : "Generate New Quick NPC"}
         </Button>
-        {!displayEmpty &&
-        <>
-          <Divider type="vertical" style={{ borderColor: "white" }} />
-          <span>Copy </span>
-          <Button onClick={() => handleFantasyGroundsClick("stat", teotheNPC)}>
-            Statblock for FGU
-          </Button>
-          <Button onClick={() => handleFantasyGroundsClick("desc", teotheNPC)}>
-            Description for FGU
-          </Button>
-          <Button onClick={() => handleAIPromptClick(teotheNPC)}>
-            Generative Prompt for AI
-          </Button>
-        </>}
+        {!displayEmpty && (
+          <>
+            <Divider type="vertical" style={{ borderColor: "white" }} />
+            <span>Copy </span>
+            <Button
+              onClick={() => handleFantasyGroundsClick("stat", teotheNPC)}
+            >
+              Statblock for FGU
+            </Button>
+            <Button
+              onClick={() => handleFantasyGroundsClick("desc", teotheNPC)}
+            >
+              Description for FGU
+            </Button>
+            <Button onClick={() => handleAIPromptClick(teotheNPC)}>
+              Generative Prompt for AI
+            </Button>
+          </>
+        )}
       </Space>
       <Divider />
       <Space wrap>
         Race:{" "}
-        <Dropdown menu={raceProps}>
+        <Dropdown
+          overlayStyle={{
+            scrollbarWidth: "thin",
+            scrollBehavior: "smooth",
+          }}
+          overlayClassName={"max-h-64 overflow-auto no-scrollbar"}
+          menu={raceProps}
+        >
           <Button>
             <Space>
-              {raceProps.items[Number(raceNo)] ? raceProps.items[Number(raceNo)].label : raceNo}
+              {raceProps.items[Number(raceNo)]
+                ? raceProps.items[Number(raceNo)].label
+                : raceNo}
               <DownOutlined />
             </Space>
           </Button>
@@ -493,7 +506,9 @@ function GetQuickNPC() {
         <Dropdown menu={genderProps}>
           <Button>
             <Space>
-              {genderProps.items[Number(genderNo)] ? genderProps.items[Number(genderNo)].label : genderNo}
+              {genderProps.items[Number(genderNo)]
+                ? genderProps.items[Number(genderNo)].label
+                : genderNo}
               <DownOutlined />
             </Space>
           </Button>
@@ -502,7 +517,9 @@ function GetQuickNPC() {
         <Dropdown menu={occupationProps}>
           <Button>
             <Space>
-              {occupationProps.items[Number(occupationNo)] ? occupationProps.items[Number(occupationNo)].label : occupationNo}
+              {occupationProps.items[Number(occupationNo)]
+                ? occupationProps.items[Number(occupationNo)].label
+                : occupationNo}
               <DownOutlined />
             </Space>
           </Button>
@@ -511,7 +528,10 @@ function GetQuickNPC() {
         <Dropdown menu={alignmentProps}>
           <Button>
             <Space>
-              {alignmentProps.items[Number(alignmentNo)] ? alignmentProps.items[Number(alignmentNo)].label : alignmentNo}
+              {/* Absolutely random missing alignment on the npc-library, so we subtract 1 from the alignmentNo number on display */}
+              {alignmentProps.items[Number(alignmentNo) - 1]
+                ? alignmentProps.items[Number(alignmentNo) - 1].label
+                : alignmentNo}
               <DownOutlined />
             </Space>
           </Button>
@@ -540,17 +560,7 @@ function GetQuickNPC() {
                   teotheNPC.description.pronounCapit
                 } is ${teotheNPC.relationship.status.toLocaleLowerCase()}. `,
                 `${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.hair} ${teotheNPC.physical.eyes}. Their ${teotheNPC.physical.skin} contribute to a distinctive appearance. ${teotheNPC.description.pronounCapit} has ${teotheNPC.physical.build} with ${teotheNPC.physical.face}. ${teotheNPC.physical.special1} ${teotheNPC.physical.special2}`,
-                `${teotheNPC.ptraits.traits1}${teotheNPC.ptraits.traits2}${
-                  teotheNPC.description.pronounCapit
-                } sounds ${teotheNPC.local.voice}, knows ${
-                  teotheNPC.local.languages
-                }. ${teotheNPC.hook.description} ${
-                  teotheNPC.pquirks.description
-                } ${
-                  teotheNPC.ptraits.traitslizards
-                } ${teotheNPC.ptraits.traitsgoliaths} ${
-                  teotheNPC.religion.description
-                }. `,
+                `${teotheNPC.ptraits.traits1}${teotheNPC.ptraits.traits2}${teotheNPC.description.pronounCapit} sounds ${teotheNPC.local.voice}, knows ${teotheNPC.local.languages}. ${teotheNPC.hook.description} ${teotheNPC.pquirks.description} ${teotheNPC.ptraits.traitslizards} ${teotheNPC.ptraits.traitsgoliaths} ${teotheNPC.religion.description}. `,
               ],
             }}
           />
