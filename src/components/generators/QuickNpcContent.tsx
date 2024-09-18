@@ -8,7 +8,7 @@ import {
   NpcGenerateOptions,
   generate,
   GenerateOptionValueSimple,
-} from "npc-generator";
+} from "npc-generator-teothe";
 import { DownOutlined } from "@ant-design/icons";
 
 /* Hoisted variables */

@@ -21,7 +21,7 @@
     "msw": "^2.3.4",
     "next": "14.1.1",
     "next-pwa": "^5.6.0",
-    "npc-generator": "github:ozgurozbek/npc-generator#teothe",
+    "npc-generator-teothe": "github:ozgurozbek/npc-generator#teothe",
     "postcss": "8.4.31",
     "react": "18.2.0",
     "react-confetti": "^6.1.0",
