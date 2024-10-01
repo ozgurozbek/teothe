@@ -33,12 +33,13 @@ function LanguagesDropdown({
       <Dropdown
         menu={langProps}
         autoFocus={true}
-        overlayClassName={"max-h-64 overflow-auto no-scrollbar"}
+        dropdownRender={(menu) => (
+          <div className="max-h-64 overflow-y-scroll no-scrollbar">{menu}</div>
+        )}
         overlayStyle={{
           scrollbarWidth: "thin",
           scrollBehavior: "smooth",
-        }}
-      >
+        }}>
         <Button>
           <Space>
             {curLang}

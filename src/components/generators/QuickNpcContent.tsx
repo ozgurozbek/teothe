@@ -467,13 +467,11 @@ function GetQuickNPC() {
             <Divider type="vertical" style={{ borderColor: "white" }} />
             <span>Copy </span>
             <Button
-              onClick={() => handleFantasyGroundsClick("stat", teotheNPC)}
-            >
+              onClick={() => handleFantasyGroundsClick("stat", teotheNPC)}>
               Statblock for FGU
             </Button>
             <Button
-              onClick={() => handleFantasyGroundsClick("desc", teotheNPC)}
-            >
+              onClick={() => handleFantasyGroundsClick("desc", teotheNPC)}>
               Description for FGU
             </Button>
             <Button onClick={() => handleAIPromptClick(teotheNPC)}>
@@ -490,9 +488,12 @@ function GetQuickNPC() {
             scrollbarWidth: "thin",
             scrollBehavior: "smooth",
           }}
-          overlayClassName={"max-h-64 overflow-auto no-scrollbar"}
-          menu={raceProps}
-        >
+          dropdownRender={(menu) => (
+            <div className="max-h-64 overflow-y-scroll no-scrollbar">
+              {menu}
+            </div>
+          )}
+          menu={raceProps}>
           <Button>
             <Space>
               {raceProps.items[Number(raceNo)]
