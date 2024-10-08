@@ -3,10 +3,12 @@ import GetCrumbs from "@/components/NavigationCrumb";
 import GetBook from "@/components/library/GetBook";
 import { Typography, Card, Divider } from "antd";
 import "App/books.css";
+import Script from "next/script";
 const { Title } = Typography;
 
 /**
  * Uses github.io legacy D&D website to fetch books as pdfs, and pushes them to GetBook. Provides Title(antd) and text to categorize them.
+ * Also imports booksjs and pdfjs
  * @see GetBook
  * @generator - Fetches from the legacy website, github.io
  * @returns JSX elements for the Library page.
@@ -14,6 +16,13 @@ const { Title } = Typography;
 export default function LibraryContent() {
   return (
     <section>
+      <Script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></Script>
+      <Script src="https://booksjs.github.io/books/js/books.min.js"></Script>
+      <link
+        rel="stylesheet"
+        href="https://booksjs.github.io/books/css/booksjs.css"
+      ></link>
+
       <GetCrumbs path={"Teothe,Library"} />
       <Card bordered={false} className="w-full h-full">
         <Title>Library</Title>

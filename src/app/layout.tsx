@@ -39,12 +39,6 @@ export default function RootLayout({
         />
         <meta name="theme-color" content="#630436" />
         <meta name="apple-mobile-web-app-status-bar" content="#90cdf4" />
-        <Script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></Script>
-        <Script src="https://booksjs.github.io/books/js/books.min.js"></Script>
-        <link
-          rel="stylesheet"
-          href="https://booksjs.github.io/books/css/booksjs.css"
-        ></link>
         <link rel="apple-touch-icon" href="/dragon.png" />
       </head>
       <body
