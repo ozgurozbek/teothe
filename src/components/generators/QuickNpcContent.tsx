@@ -88,7 +88,7 @@ var voices: string[] = [
  */
 function GetQuickNPC() {
   const [displayEmpty, setDisplayEmpty] = useState(true);
-  const [raceNo, setRaceNo] = useState("N/A");
+  const [speciesNo, setSpeciesNo] = useState("N/A");
   const [genderNo, setGenderNo] = useState("N/A");
   const [alignmentNo, setAlignmentNo] = useState("N/A");
   const [occupationNo, setOccupationNo] = useState("N/A");
@@ -100,37 +100,37 @@ function GetQuickNPC() {
   // Generates NPC options from the library
   const npcOptionsValues = getNpcOptionsValues();
 
-  /* RACES */
-  const handleRaceClick: MenuProps["onClick"] = (e) => {
-    setRaceNo(e.key);
+  /* SPECIES */
+  const handleSpeciesClick: MenuProps["onClick"] = (e) => {
+    setSpeciesNo(e.key);
     setNpcOptionsObject({
-      race: Number(e.key),
+      race: Number(e.key), //Library uses race instead of species
       gender: npcOptionsObject?.gender,
       classorprof: npcOptionsObject?.classorprof,
       alignment: npcOptionsObject?.alignment,
     });
   };
 
-  const raceProps = {
-    items: npcOptionsValues.races.map(racesMapper),
-    onClick: handleRaceClick,
+  const speciesProps = {
+    items: npcOptionsValues.races.map(speciesMapper), //Library uses race instead of species
+    onClick: handleSpeciesClick,
   };
 
-  // Utility for race dropdown, has an issue with their displays
-  function racesMapper(raceObject: {
+  // Utility for species dropdown, has an issue with their displays
+  function speciesMapper(speciesObject: {
     name: string;
     value: number;
-    subraces: GenerateOptionValueSimple | undefined;
+    subraces: GenerateOptionValueSimple | undefined; //Library uses race instead of species
   }) {
-    return { label: raceObject.name, key: raceObject.value };
+    return { label: speciesObject.name, key: speciesObject.value };
   }
-  /* RACES END */
+  /* SPECIES END */
 
   /* GENDER */
   const handleGenderClick: MenuProps["onClick"] = (e) => {
     setGenderNo(e.key);
     setNpcOptionsObject({
-      race: npcOptionsObject?.race,
+      race: npcOptionsObject?.race, //Library uses race instead of species
       gender: Number(e.key),
       classorprof: npcOptionsObject?.classorprof,
       alignment: npcOptionsObject?.alignment,
@@ -152,7 +152,7 @@ function GetQuickNPC() {
   const handleOccupationClick: MenuProps["onClick"] = (e) => {
     setOccupationNo(e.key);
     setNpcOptionsObject({
-      race: npcOptionsObject?.race,
+      race: npcOptionsObject?.race, //Library uses race instead of species
       gender: npcOptionsObject?.gender,
       classorprof: Number(e.key),
       alignment: npcOptionsObject?.alignment,
@@ -177,7 +177,7 @@ function GetQuickNPC() {
   const handleAlignmentClick: MenuProps["onClick"] = (e) => {
     setAlignmentNo(e.key);
     setNpcOptionsObject({
-      race: npcOptionsObject?.race,
+      race: npcOptionsObject?.race, //Library uses race instead of species
       gender: npcOptionsObject?.gender,
       classorprof: npcOptionsObject?.classorprof,
       alignment: Number(e.key),
@@ -216,7 +216,7 @@ function GetQuickNPC() {
           `${teotheNPC.name} (${teotheNPC.alignment}) is a ${
             teotheNPC.description.age
           } years old, ${teotheNPC.relationship.orientation.toLowerCase()} ${
-            teotheNPC.description.race
+            teotheNPC.description.species
           } ${teotheNPC.description.gender}. ${
             teotheNPC.description.pronounCapit
           } is a ${teotheNPC.description.occupation}. ${
@@ -238,7 +238,7 @@ function GetQuickNPC() {
       case "stat":
         navigator.clipboard.writeText(
           `${teotheNPC.name}\r\nMedium Humanoid (${
-            teotheNPC.description.race
+            teotheNPC.description.species
           } ${teotheNPC.description.gender})\r\nArmor Class ${
             8 +
             Number(statBonusHash[teotheNPC.stats[1]]) +
@@ -285,7 +285,7 @@ function GetQuickNPC() {
   // Added as an AI image descriptor
   const handleAIPromptClick = (teotheNPC: TeotheNPC) => {
     navigator.clipboard.writeText(
-      `A ${teotheNPC.description.age} years old ${teotheNPC.description.race} ${teotheNPC.description.gender} working as a ${teotheNPC.description.occupation}.\r\n`.replace(
+      `A ${teotheNPC.description.age} years old ${teotheNPC.description.species} ${teotheNPC.description.gender} working as a ${teotheNPC.description.occupation}.\r\n`.replace(
         /  +/g,
         " "
       ) +
@@ -311,7 +311,7 @@ function GetQuickNPC() {
     description: {
       age: number;
       gender: string;
-      race: string;
+      species: string;
       occupation: string;
       pronounMinus: string;
       pronounCapit: string;
@@ -447,7 +447,7 @@ function GetQuickNPC() {
         age: npc.description.age,
         gender: npc.description.gender,
         occupation: npc.description.occupation,
-        race: npc.description.race,
+        species: npc.description.race,
       },
       local: {
         languages: languages[Math.floor(Math.random() * languages.length)],
@@ -482,7 +482,7 @@ function GetQuickNPC() {
       </Space>
       <Divider />
       <Space wrap>
-        Race:{" "}
+        Species:{" "}
         <Dropdown
           overlayStyle={{
             scrollbarWidth: "thin",
@@ -493,12 +493,12 @@ function GetQuickNPC() {
               {menu}
             </div>
           )}
-          menu={raceProps}>
+          menu={speciesProps}>
           <Button>
             <Space>
-              {raceProps.items[Number(raceNo)]
-                ? raceProps.items[Number(raceNo)].label
-                : raceNo}
+              {speciesProps.items[Number(speciesNo)]
+                ? speciesProps.items[Number(speciesNo)].label
+                : speciesNo}
               <DownOutlined />
             </Space>
           </Button>
@@ -554,7 +554,7 @@ function GetQuickNPC() {
                 `${teotheNPC.name} (${teotheNPC.alignment}) is a ${
                   teotheNPC.description.age
                 } years old, ${teotheNPC.relationship.orientation.toLowerCase()} ${
-                  teotheNPC.description.race
+                  teotheNPC.description.species
                 } ${teotheNPC.description.gender}. ${
                   teotheNPC.description.pronounCapit
                 } is a ${teotheNPC.description.occupation}. ${
@@ -570,7 +570,7 @@ function GetQuickNPC() {
             contentProps={{
               title: "Statblock",
               text: [
-                `Medium Humanoid (${teotheNPC.description.race} ${teotheNPC.description.gender})`,
+                `Medium Humanoid (${teotheNPC.description.species} ${teotheNPC.description.gender})`,
                 `Armor Class ${
                   8 +
                   Number(statBonusHash[teotheNPC.stats[1]]) +

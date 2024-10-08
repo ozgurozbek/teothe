@@ -57,7 +57,7 @@ describe('Navbar Component', () => {
     expect(screen.getByAltText('Teothe Icon')).toBeInTheDocument();
     expect(screen.getByText('Common Lore')).toBeInTheDocument();
     expect(screen.getByText('Deities')).toBeInTheDocument();
-    expect(screen.getByText('Races')).toBeInTheDocument();
+    expect(screen.getByText('Species')).toBeInTheDocument();
     expect(screen.getByText('Library')).toBeInTheDocument();
     expect(screen.getByText('Tables')).toBeInTheDocument();
     expect(screen.getByText('Map Overlay')).toBeInTheDocument();

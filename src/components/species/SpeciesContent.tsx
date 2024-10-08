@@ -1,19 +1,19 @@
 "use client";
 
 import GetCrumbs from "@/components/NavigationCrumb";
-import RacesCon from "@/components/races/RacesCon";
+import SpeciesCon from "@/components/species/SpeciesCon";
 import { Card, Divider, Skeleton, Space, Switch } from "antd";
 import useSWR from "swr";
 import { useState } from "react";
 /**
- * Function to fetch and render race data based on homebrew and official toggle switches.
- * @param {boolean} brewCheck - Toggle switch for homebrew races.
- * @param {boolean} officialCheck - Toggle switch for official races.
+ * Function to fetch and render species data based on homebrew and official toggle switches.
+ * @param {boolean} brewCheck - Toggle switch for homebrew species.
+ * @param {boolean} officialCheck - Toggle switch for official species.
  * @generator
- * @see RacesCon
- * @returns An array of rendered race components.
+ * @see SpeciesCon
+ * @returns An array of rendered species components.
  */
-function GetRaces(brewCheck: boolean, officialCheck: boolean) {
+function GetSpecies(brewCheck: boolean, officialCheck: boolean) {
   /**
    * Fetcher function for API requests.
    * @param args - RequestInfo object containing information about the request.
@@ -42,14 +42,14 @@ function GetRaces(brewCheck: boolean, officialCheck: boolean) {
     (a: DataType, b: DataType) => a.name.charCodeAt(0) - b.name.charCodeAt(0)
   );
 
-  let renderedRaces = [];
+  let renderedSpecies = [];
   for (let item of data) {
     {
-      renderedRaces.push(
+      renderedSpecies.push(
         <>
-          <RacesCon
-            RacePic={{
-              src: "./Races/" + item.name + ".png",
+          <SpeciesCon
+            SpeciesPic={{
+              src: "./Species/" + item.name + ".png",
               alt: item.name + " image",
               phrase: item.phrase,
             }}
@@ -72,14 +72,14 @@ function GetRaces(brewCheck: boolean, officialCheck: boolean) {
       );
     }
   }
-  return renderedRaces;
+  return renderedSpecies;
 }
 
 /**
- * Component for the races page, displaying breadcrumbs, toggle switches for homebrew and official races, and a card containing race data.
- * @returns The races page section with breadcrumbs, toggle switches, and race data.
+ * Component for the species page, displaying breadcrumbs, toggle switches for homebrew and official species, and a card containing species data.
+ * @returns The species page section with breadcrumbs, toggle switches, and species data.
  */
-export default function RacesContent() {
+export default function SpeciesContent() {
   const [brew, setBrewVis] = useState(true);
   const [official, setOfficialVis] = useState(true);
 
@@ -93,7 +93,7 @@ export default function RacesContent() {
 
   return (
     <section>
-      <GetCrumbs path={"Teothe,Races"} />
+      <GetCrumbs path={"Teothe,Species"} />
 
       <Space className="float-right">
         <div className="text-pink-600">
@@ -105,7 +105,7 @@ export default function RacesContent() {
           <Switch defaultChecked onChange={ToggleOfficial} />{" "}
         </div>
       </Space>
-      <Card bordered={false}>{GetRaces(brew, official)}</Card>
+      <Card bordered={false}>{GetSpecies(brew, official)}</Card>
     </section>
   );
 }

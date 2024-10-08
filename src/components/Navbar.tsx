@@ -68,7 +68,7 @@ const loadPageURL = (menuItem: any) => {
       return "2";
     case "deities":
       return "3";
-    case "races":
+    case "species":
       return "4";
     case "tables":
       return "5";
@@ -148,7 +148,7 @@ export default function Navbar() {
           items={[
             getItem("Common Lore", "1", "common-lore", getIcon("CommonLore")),
             getItem("Deities", "3", "deities", getIcon("Deities")),
-            getItem("Races", "4", "races", getIcon("Races")),
+            getItem("Species", "4", "species", getIcon("Species")),
             getItem("Library", "6", "library", getIcon("Library")),
             getItem("Tables", "5", "tables", getIcon("Tables")),
             getItem("Map Overlay", "10", "map-overlay", getIcon("MapOverlay")),
