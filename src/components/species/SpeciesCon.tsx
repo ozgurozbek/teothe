@@ -1,4 +1,4 @@
-import { Typography, Col, Row, Image } from "antd";
+import { Typography, Col, Row, Image, Button } from "antd";
 
 const { Title } = Typography;
 
@@ -13,7 +13,11 @@ export default function SpeciesCon({
   DescriptionText,
 }: {
   SpeciesPic: { src: string; alt: string; phrase: string };
-  DescriptionText: { title: string; paragraph: string[]; homebrew?: string[] };
+  DescriptionText: {
+    title: string;
+    paragraph: string | string[];
+    homebrew?: string | string[];
+  };
 }) {
   let speciesDesc = [];
   let speciesBrew = [];
@@ -33,22 +37,27 @@ export default function SpeciesCon({
   }
 
   return (
-    <Row justify="space-between">
-      <Col xs={24} sm={24} md={12} lg={6} xl={6} xxl={6} className="pr-4">
-        <Col span={24}>
-          <Image src={SpeciesPic.src} alt={SpeciesPic.alt} rootClassName="w-full" />
-        </Col>
-        <Col span={24}>
-          <p className="italic text-center pt-2 px-2 text-lg">
-            {SpeciesPic.phrase}
-          </p>
-        </Col>
+    <Col xs={24} sm={24} md={12} lg={6} xl={6} xxl={6} className="pr-4">
+      <Col span={24}>
+        <Image
+          src={SpeciesPic.src}
+          alt={SpeciesPic.alt}
+          rootClassName="w-full"
+        />
       </Col>
-      <Col xs={24} sm={24} md={12} lg={18} xl={18} xxl={18}>
+      <Col span={24}>
         <Title className="capitalize">{DescriptionText.title}</Title>
         {speciesDesc}
         {speciesBrew}
+        <p className="italic text-center pt-2 px-2 text-lg">
+          {SpeciesPic.phrase}
+        </p>
+        <Button href={"/species/"+DescriptionText.title} className="w-full mt-4">
+          <span className="capitalize">
+            More On {DescriptionText.title}
+          </span>
+        </Button>
       </Col>
-    </Row>
+    </Col>
   );
 }
