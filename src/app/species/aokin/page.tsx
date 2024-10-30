@@ -1,4 +1,4 @@
-import AokinContent from "@/components/species/aokin/aokin";
+import AokinContent from "@/components/species/subpages/aokin";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
