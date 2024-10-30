@@ -6,13 +6,11 @@ import { Card, Divider, Row, Space, Switch } from "antd";
 import { useState } from "react";
 /**
  * Function to fetch and render species data based on homebrew and official toggle switches.
- * @param {boolean} brewCheck - Toggle switch for homebrew species.
- * @param {boolean} officialCheck - Toggle switch for official species.
  * @generator
  * @see SpeciesCon
  * @returns An array of rendered species components.
  */
-function GetSpecies(brewCheck: boolean, officialCheck: boolean) {
+function GetSpecies() {
   const data = [
     {
       phrase: "Through triumphs forged in stone, our wisdom soars.",
@@ -248,15 +246,11 @@ function GetSpecies(brewCheck: boolean, officialCheck: boolean) {
             }}
             DescriptionText={{
               title: item.name,
-              paragraph: officialCheck
-                ? item.description
+              paragraph: item.description
                   ? item.description.split("_")
-                  : ""
                 : "",
-              homebrew: brewCheck
-                ? item.homebrew
+              homebrew: item.homebrew
                   ? item.homebrew.split("_")
-                  : ""
                 : "",
             }}
           />
@@ -272,32 +266,10 @@ function GetSpecies(brewCheck: boolean, officialCheck: boolean) {
  * @returns The species page section with breadcrumbs, toggle switches, and species data.
  */
 export default function SpeciesContent() {
-  const [brew, setBrewVis] = useState(true);
-  const [official, setOfficialVis] = useState(true);
-
-  function ToggleBrew() {
-    setBrewVis(!brew);
-  }
-
-  function ToggleOfficial() {
-    setOfficialVis(!official);
-  }
-
   return (
     <section>
       <GetCrumbs path={"Teothe,Species"} />
-
-      <Space className="float-right">
-        <div className="text-pink-600">
-          <span className="align-bottom">Homebrew </span>
-          <Switch defaultChecked onChange={ToggleBrew} />{" "}
-        </div>
-        <div>
-          <span className="align-bottom">Official </span>
-          <Switch defaultChecked onChange={ToggleOfficial} />{" "}
-        </div>
-      </Space>
-      <Card bordered={false}>{GetSpecies(brew, official)}</Card>
+      <Card bordered={false}>{GetSpecies()}</Card>
     </section>
   );
 }

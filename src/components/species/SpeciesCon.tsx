@@ -20,7 +20,6 @@ export default function SpeciesCon({
   };
 }) {
   let speciesDesc = [];
-  let speciesBrew = [];
 
   for (let i = 0; i < DescriptionText.paragraph.length; i++) {
     if (DescriptionText.paragraph[i] != "") {
@@ -30,8 +29,8 @@ export default function SpeciesCon({
 
   if (DescriptionText.homebrew) {
     for (let i = 0; i < DescriptionText.homebrew.length; i++) {
-      speciesBrew.push(
-        <p className="pt-2 text-pink-600"> {DescriptionText.homebrew[i]}</p>
+      speciesDesc.push(
+        <p className="text-pink-600"> {DescriptionText.homebrew[i]}</p>
       );
     }
   }
@@ -48,7 +47,6 @@ export default function SpeciesCon({
       <Col span={24}>
         <Title className="capitalize">{DescriptionText.title}</Title>
         {speciesDesc}
-        {speciesBrew}
         <p className="italic text-center pt-2 px-2 text-lg">
           {SpeciesPic.phrase}
         </p>
