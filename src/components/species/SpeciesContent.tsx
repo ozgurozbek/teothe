@@ -119,8 +119,7 @@ function GetSpecies(brewCheck: boolean, officialCheck: boolean) {
     {
       name: "aokin",
       phrase: "Should we look? No, no... Stay silent.",
-      homebrew:
-        "Aokin of Teothe are a spiritual, nature-bound species in Aoradon, shaped by Natuva beliefs, ancestral rituals, and cosmic forces."
+      homebrew: "Aokin of Teothe are a spiritual, nature-bound species in Aoradon, shaped by Natuva beliefs, ancestral rituals, and cosmic forces."
     },
     {
       phrase:
@@ -184,12 +183,8 @@ function GetSpecies(brewCheck: boolean, officialCheck: boolean) {
       name: "half-elf",
     },
     {
-      phrase:
-        "With the divine light coursing through our veins, we, the embodiment of radiance, carry the flame of hope, serving justice against the foul.",
-      homebrew:
-        "They appear as glorious humans with lustrous hair, flawless skin and piercing eyes. They often attempt to pass as humans. Aasimars are celestial to humans as the opposite of tieflings as fiends to humans._Early aasimars, now long gone, have become either demigods or lost to time. Now, Aasimars only reproduce with humans and birth aasimars.",
-      description:
-        "Whether descended from a celestial being or infused with heavenly power, aasimar are mortals who carry a spark of the Upper Planes, the realm of many lawful good deities, within their souls. They can fan that spark to bring light, ease wounds, and unleash the fury of the heavens._Aasimar can arise among any population of mortals. Aasimar are born to serve as champions of the gods, their births hailed as blessed events. They are a people of otherworldly visages, with luminous features that reveal their celestial heritage._They live for up to 160 years and often have features that hint at their celestial heritage. These often begin subtle and become more obvious when the aasimar gains the ability to reveal their full celestial nature._Aasimar are placed in the world to serve as guardians of law and good. Their patrons expect them to strike at evil, lead by example, and further the cause of justice. From an early age, an aasimar receives visions and guidance from celestial entities via dreams. These dreams help shape an aasimar, granting a sense of destiny and a desire for righteousness._Each aasimar can count a specific celestial agent of the gods as a guide. This entity is typically a deva, an angel who acts as a messenger to the mortal world._While aasimar are strident foes of evil, they typically prefer to keep a low profile. An aasimar inevitably draws the attention of evil cultists, fiends, and other enemies of good, all of whom would be eager to strike down a celestial champion if they had the chance._When traveling, aasimar prefer hoods, closed helms, and other gear that allows them to conceal their identities. They nevertheless have no compunction about striking openly at evil. The secrecy they desire is never worth endangering the innocent._An aasimar, except for one who has turned to evil, has a link to an angelic being. That being\u2014usually a deva\u2014provides guidance to the aasimar, though this connection functions only in dreams. As such, the guidance is not a direct command or a simple spoken word. Instead, the aasimar receives visions, prophecies, and feelings._The angelic being is far from omniscient. Its guidance is based on its understanding of the tenets of law and good, and it might have insight into combating especially powerful evils that it knows about._Despite its celestial origin, an aasimar is mortal and possesses free will. Most aasimar follow their ordained path, but some grow to see their abilities as a curse. These disaffected aasimar are typically content to turn away from the world, but a few become agents of evil. In their minds, their exposure to celestial powers amounted to little more than brainwashing._Evil aasimar make deadly foes. The radiant power they once commanded becomes corrupted into a horrid, draining magic. And their angelic guides abandon them._Even aasimar wholly dedicated to good sometimes feel torn between two worlds. The angels that guide them see the world from a distant perch. An aasimar who wishes to stop and help a town recover from a drought might be told by an angelic guide to push forward on a greater quest. To a distant angel, saving a few commoners might pale in comparison to defeating a cult. An aasimar's guide is wise but not infallible._Most aasimar are born from human parents, and they use the same naming conventions as their native culture.",
+      phrase: "With the divine light coursing through our veins, we, the embodiment of radiance, carry the flame of hope, serving justice against the foul.",
+      description: "Infused with heavenly power, aasimar are the ones who carry a spark of the Upper Planes.",
       name: "aasimar",
     },
     {
