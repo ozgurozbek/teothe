@@ -1,4 +1,4 @@
-import { Typography, Col, Row, Image, Button } from "antd";
+import { Typography, Col, Row, Image, Button, Divider } from "antd";
 
 const { Title } = Typography;
 
@@ -36,25 +36,27 @@ export default function SpeciesCon({
   }
 
   return (
-    <Col xs={24} sm={24} md={12} lg={6} xl={6} xxl={6} className="pr-4">
-      <Col span={24}>
+    <Col xs={24} sm={24} md={12} lg={6} xl={6} xxl={6} className="p-2">
+      <Col span={24} className="h-full flex flex-col">
         <Image
           src={SpeciesPic.src}
           alt={SpeciesPic.alt}
           rootClassName="w-full"
         />
-      </Col>
-      <Col span={24}>
         <Title className="capitalize">{DescriptionText.title}</Title>
         {speciesDesc}
         <p className="italic text-center pt-2 px-2 text-lg">
           {SpeciesPic.phrase}
         </p>
-        <Button href={"/species/"+DescriptionText.title} className="w-full mt-4">
-          <span className="capitalize">
-            More On {DescriptionText.title}
-          </span>
-        </Button>
+        <div className="mt-auto">
+          <Button
+            href={"/species/" + DescriptionText.title}
+            className="w-full mt-4 mb-4"
+          >
+            <span className="capitalize">More On {DescriptionText.title}</span>
+          </Button>
+          <Divider />
+        </div>
       </Col>
     </Col>
   );
