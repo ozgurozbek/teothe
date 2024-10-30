@@ -14,6 +14,7 @@ export default function SimpleContent({
   contentProps: {
     image?: { src: string; alt: string };
     title: string;
+    level?: 1 | 2 | 3 | 4 | 5 | undefined;
     text?: string[];
   };
 }) {
@@ -30,7 +31,7 @@ export default function SimpleContent({
 
   return (
     <section>
-      <Title data-testid="simplecon-title" id={contentProps.title.replaceAll(" ", "-").toLowerCase()}>
+      <Title data-testid="simplecon-title" level={contentProps.level} id={contentProps.title.replaceAll(" ", "-").toLowerCase()}>
         {contentProps.title}
     </Title>
       {contentProps.image?.src && (
