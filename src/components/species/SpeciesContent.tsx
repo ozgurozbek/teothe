@@ -18,12 +18,8 @@ function GetSpecies() {
       name: "goliath",
     },
     {
-      phrase:
-        "We humans have to stick together! Never trust the other species, never!",
-      homebrew:
-        "Humans are really adaptable and ambitious among the common species. Whatever drives them, they are the innovators, the achievers, and the pioneers. They are also a bit sour since they lost the information war regarding Jeikhan. Human traditions have evolved to include more lessons from older generations too, more ambitious but less celebratory ones. A militaristic attitude have grown inside the new generation.",
-      description:
-        "Humans are widespread, could be found in most regions and, in general, are fierce and disagreeable, which could sometimes lead certain other species to view them with contempt. They were renowned for their diversity and ambition, and although they lacked specialization, they could excel in many areas._While there were no natural human subspecies there was great ethnic diversity between humans in different regions. Moreover, Humans bred outside their species many times, resulting in the various half-human species like half-elves and half-orcs.",
+      phrase: "We humans have to stick together! Never trust the other species, never!",
+      description: "Humans are versatile and ambitious, capable of adapting to any environment and driven by a desire to explore and innovate.",
       name: "human",
     },
     {
@@ -36,10 +32,7 @@ function GetSpecies() {
     },
     {
       phrase: "Fury stoked by joint might, a legacy beyond mere pillage!",
-      homebrew:
-        "The dark-red goddess Fexyiaf created the orcs, and even those orcs who turn away from her worship can't fully escape her influence. The same is true of half-orcs, though their human blood moderates the impact of their orcish heritage. Some half-orcs hear the whispers of Fexyiaf in their dreams, calling them to unleash the rage that simmers within them.",
-      description:
-        "Whether united under the leadership of a mighty warlock or having fought to a standstill after years of conflict, orc and human tribes sometimes form alliances, joining forces into a larger horde to the terror of civilized lands nearby. When these alliances are sealed by marriages, half-orcs are born. Half-orcs' grayish pigmentation, sloping foreheads, jutting jaws, prominent teeth, and towering builds make their orcish heritage plain for all to see._Half-orcs most often live among orcs. Of the other species, humans are most likely to accept half-orcs, and half-orcs almost always live in human lands when not living among orc tribes.",
+      description: "Half-orcs are a blend of human and orc heritage, often struggling with their dual nature while displaying fierce strength and resilience.",
       name: "half-orc",
     },
     {
@@ -84,11 +77,9 @@ function GetSpecies() {
       name: "kenku",
     },
     {
-      description:
-        "Known as Hin amongst themselves or the ''good folk'', the ''quick folk'' and the ''sly folk'' amongst other species were humanoid creatures similar in shape to humans -whom halflings called the ''Big Folk'', or ''Manyhanded'' - but around half their size. Halflings got along well with most of the other species and were known for their curiosity and tendency to collect things._Standing somewhere around 81-100 cm tall and weighing on average between 15kg, halflings are small compared to most other species. Most halflings had dark hair and eyes and nearly all male halflings were incapable of growing true beards, though many had long sideburns._Halflings were by nature joyful and friendly in their dealings with others. Halflings appeared deceptively harmless, meaning they were often beyond the notice of enemies that might otherwise pose a threat to them. The halfling mind was practical and halflings concerned themselves with their immediate surroundings. They took pleasure in simple things, with few aspiring to greatness in the same manner as humans._While many halflings did not have the ambition for adventure that some species did, most preferred trouble to boredom. Unfortunately, the small size of halflings have an effect on their abilities. Halflings were, for instance, incapable of wielding larger weapons like greatswords or halberds._Halfling communities were tightly knit groups found around the world, usually near the settlements of other species. Most halflings didn't recognize the claims of kings or nobles as sovereign rulers but instead looked primarily to their family elders to guide them. Halflings also valued a sense of community; halflings naming each other ''halfling'' was a salute of brotherhood. Most halflings, didn't live in communities of their own but instead regions dominated by other species. This was particularly true in human societies, which attracted halflings because of the comparative rapidity with which they changed. It should be noted that halflings usually found insults directed at them to be amusing rather than insulting._Halfling culture had a fondness for stories and legends and was rich in the oral tradition. So much care was put into the retelling of traditional stories and their preservation that halflings often unwittingly had access to lore about ancient and long-gone cultures or empires that others had long since forgotten about._The halfling species had many traditional homelands, though as a whole the species was typically nomadic. Over time, Halflings became more displaced than before, though as a result they also came together in unity even more tightly than they were before. Though formerly met with prejudice, halflings earned acceptance through their skill as merchants and business partners even though they were around as the same time as dwarves, elves, and giants._The hin generally avoided realms where slavery was prevalent or those where exploitation of their kind was socially acceptable.",
+      phrase: "Life's truest treasures lie not in grand quests or towering achievements, but in the embrace of family, the bonds of kinship, and the curious pursuit of simple pleasures that weave the tapestry of our Halfling hearts.",
+      description: "Halflings are small and nimble folk, known for their resourcefulness, love for comfort, and ability to go unnoticed.",
       name: "halfling",
-      phrase:
-        "Life's truest treasures lie not in grand quests or towering achievements, but in the embrace of family, the bonds of kinship, and the curious pursuit of simple pleasures that weave the tapestry of our Halfling hearts.",
     },
     {
       phrase: "Oh, the Material Plane, a delightful canvas for my mischievous play!",
@@ -120,12 +111,8 @@ function GetSpecies() {
       name: "drow",
     },
     {
-      phrase:
-        "In the realm of boundless imagination, we wield invention and exploration, painting life's canvas with the curious brush of creation, where each moment becomes a masterpiece of play and delight.",
-      homebrew:
-        "They mate with their species, and usually believe in Wugw, Gaayjx, Megm, Veri, Uke and Lcaoc depending on their personality and society._Gnomes of Underdark excel at concealing themselves and their crafts, sometimes completely obstructing the passages to their settlements. They are perfect users of illusion magic, or Faerzress.",
-      description:
-        "Gnomes take delight in life, enjoying every moment of invention, exploration, investigation, creation, and play. A gnome's energy and enthusiasm for living shines through every inch of his or her tiny body. Gnomes average slightly over 120cm tall and weigh 20kgs. Their tan or brown faces are usually adorned with broad smiles, beneath their prodigious noses, and their bright eyes shine with excitement. Their fair hair has a tendency to stick out in every direction, as if expressing the gnome's insatiable interest in everything around. As far as gnomes are concerned, being alive is a wonderful thing, and they squeeze every ounce of enjoyment out of their three to five centuries of life._Though gnomes love jokes of all kinds, particularly puns and pranks, they're just as dedicated to the more serious tasks they undertake. Many gnomes are skilled engineers, alchemists, tinkers, and inventors. They're willing to make mistakes and laugh at themselves in the process of perfecting what they do. Gnomes speak as if they can't get the thoughts out of their heads fast enough. Even as they offer ideas and opinions on a range of subjects, they still manage to listen carefully to others, adding the appropriate exclamations of surprise and appreciation along the way._Gnomes make their homes in hilly, wooded lands. They live underground but get more fresh air than dwarves do, enjoying the natural, living world on the surface whenever they can. Their homes are well hidden by both clever construction and simple illusions. Gnomes who settle in human lands are commonly gemcutters, engineers, sages, or tinkers. Some human families retain gnome tutors, ensuring that their pupils enjoy a mix of serious learning and delighted enjoyment. A gnome might tutor several generations of a single human family over the course of his or her long life._Curious and impulsive, gnomes might take up adventuring as a way to see the world or for the love of exploring. As lovers of gems and other fine items, some gnomes take to adventuring as a quick, if dangerous, path to wealth. It's rare for a gnome to be hostile or malicious unless he or she has suffered a grievous injury. Gnomes know that most species don't share their sense of humor, but they enjoy anyone's company just as they enjoy everything else they set out to do._Gnomes love names, and most have half a dozen or so. A gnome's mother, father, clan elder, aunts, and uncles each give the gnome a name, and various nicknames from just about everyone else might or might not stick over time. Gnome names are typically variants on the names of ancestors or distant relatives, though some are purely new inventions.",
+      phrase: "In the realm of boundless imagination, we wield invention and exploration, painting life's canvas with the curious brush of creation, where each moment becomes a masterpiece of play and delight.",
+      description: "Gnomes are clever and inventive, known for their curiosity and knack for tinkering with magic and technology.",
       name: "gnome",
     },
     {

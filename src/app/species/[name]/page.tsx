@@ -16,6 +16,10 @@ const speciesComponents: Record<string, ComponentType<{}>> = {
   fairy: dynamic(() => import('@/components/species/subpages/fairy')),
   goliath: dynamic(() => import('@/components/species/subpages/goliath')),
   genasi: dynamic(() => import('@/components/species/subpages/genasi')),
+  gnome: dynamic(() => import('@/components/species/subpages/gnome')),
+  human: dynamic(() => import('@/components/species/subpages/human')),
+  "half-orc": dynamic(() => import('@/components/species/subpages/half-orc')),
+  halfling: dynamic(() => import('@/components/species/subpages/halfling')),
   // Add additional species components here
 };
 
