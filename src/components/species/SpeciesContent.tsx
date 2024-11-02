@@ -47,7 +47,7 @@ function GetSpecies() {
     },
     {
       phrase: "I had 100 mothers and each had 100 children, who are you gazing at single-skin?",
-      description: "Wherever humans live, changelings reside also; the question is whether their presence is known.",
+      description: "Changelings are shape-shifters, capable of altering their appearance at will, often hiding their true selves beneath a façade.",
       name: "changeling",
     },
     {
@@ -109,7 +109,7 @@ function GetSpecies() {
     {
       name: "aokin",
       phrase: "Should we look? No, no... Stay silent.",
-      description: "Aokin of Teothe are a spiritual, nature-bound species in Aoradon, shaped by Natuva beliefs, ancestral rituals, and cosmic forces."
+      description: "The Aokin are nature-bound beings from Teothe, shaped by ancestral traditions and a deep connection to the cosmos."
     },
     {
       phrase:
@@ -167,12 +167,12 @@ function GetSpecies() {
     },
     {
       phrase: "With the divine light coursing through our veins, we, the embodiment of radiance, carry the flame of hope, serving justice against the foul.",
-      description: "Infused with heavenly power, aasimar are the ones who carry a spark of the Upper Planes.",
+      description: "Aasimar are mortals touched by celestial power, often driven to champion good and uphold justice.",
       name: "aasimar",
     },
     {
       phrase: "Night's terror is mine to wield.",
-      description: "Neither bugs nor bears, bugbears are the hulking cousins of goblins and hobgoblins.",
+      description: "Bugbears are large, brutish creatures, blending surprising stealth with strength, often underestimated by their foes.",
       name: "bugbear",
     },
     {
@@ -186,7 +186,7 @@ function GetSpecies() {
     },
     {
       phrase: "Sad it is, as we Aarakocra soar above earthly bounds amidst wind and cloud, finding sanctuary in mountains and guidance in the eternal sky, while those confined fail to witness how each flight unveils boundless wonders untold.",
-      description: "Coloured avian species with a focus on freedom.",
+      description: "Aarakocra are avian beings with colorful feathers, known for their love of freedom and guardianship of the skies.",
       name: "aarakocra",
     },
     {
