@@ -107,9 +107,13 @@ function GetTableData() {
     <>
       <SimpleContent
         contentProps={{
-          title: "Common Pricing",
+          title: "Teothe Pricing Table: Your Comprehensive D&D Item Price Resource",
           text: [
             "This is a reference for common pricing in the Teothe. Keep in mind that personal gain, state the provider is, countries, and many other things affect pricing, therefore rendering this table somewhat inaccurate.",
+            "The Teothe Pricing Table serves as an essential resource for calculating mundane item prices in Dungeons & Dragons (D&D) campaigns. This extensive database features a diverse selection of items drawn from medieval Europe, various fantasy settings, and official D&D 5e content. By providing a comprehensive view of item costs, it equips players and Dungeon Masters with the necessary tools to enhance their gameplay.",
+            "With the ability to filter items by category, type, and cost, the pricing table allows users to quickly access vital information about pricing in their campaigns. This functionality is particularly useful for determining daily item prices, budgeting for quests, and understanding the economic aspects of their fantasy worlds. Accurate pricing is critical for creating a realistic marketplace within any D&D setting, and the Teothe Pricing Table delivers this with precision.",
+            "The table features both official D&D content and well-researched homebrew options, accommodating a wide range of campaign styles. By integrating data from historical sources alongside fantasy literature, the Teothe Pricing Table reflects the complexities of pricing in medieval economies, ensuring that players can navigate their adventures with confidence.",
+            "This comprehensive tool not only simplifies the process of calculating mundane item prices but also enriches the overall D&D experience. Whether a campaign involves the purchase of basic gear, trade negotiations, or managing in-game finances, the Teothe Pricing Table provides the accurate item prices needed to elevate gameplay. With its robust selection of costs, the table is indispensable for any D&D enthusiast looking to deepen their understanding of item pricing in both official and homebrew content.  ",
           ],
         }}
       />
