@@ -1,15 +1,12 @@
 import { MetadataRoute } from 'next'
 
-const sitemapUrl = 'https://teothe.com/sitemap.xml'; //Not sure if ./ or / works on this url
- 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: '*',
       allow: '/',
-      //disallow: '/private/',
-      crawlDelay: 5,
+      disallow: ['/SRD-OGL_V5.1.pdf', '/SRD5.1-CCBY4.0_License_livelinks.pdf'],
     },
-    sitemap: sitemapUrl
+    sitemap: 'https://teothe.com/sitemap.xml',
   }
 }

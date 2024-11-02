@@ -1,66 +1,177 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://teothe.com/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://teothe.com/common-lore</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://teothe.com/planes</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://teothe.com/deities</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://teothe.com/species</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://teothe.com/tables</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://teothe.com/library</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://teothe.com/pricing</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://teothe.com/tools</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://teothe.com/homebrews</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://teothe.com/map-overlay</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://teothe.com/map-legend</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://teothe.com/calendar</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://teothe.com/languages</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://teothe.com/generators/quest-idea</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://teothe.com/generators/quick-npc</loc>
-    <priority>0.8</priority>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://teothe.com/</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://teothe.com/common-lore</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://teothe.com/deities</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://teothe.com/library</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://teothe.com/tables</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://teothe.com/map-overlay</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://teothe.com/calendar</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://teothe.com/planes</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/aokin</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/aasimar</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/aarakocra</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/bugbear</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/changeling</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/dragonborn</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/dwarf</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/drow</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/elf</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/fairy</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/goliath</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/genasi</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/gnome</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/human</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/half-orc</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/halfling</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/half-elf</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/kenku</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/loxodon</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/leonin</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/svirfneblin</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/shifter</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/tortle</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/tiefling</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://teothe.com/species/warforged</loc>
+  <lastmod>2024-11-02T22:19:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
 </urlset>
