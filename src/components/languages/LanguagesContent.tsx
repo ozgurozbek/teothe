@@ -2,7 +2,15 @@
 
 import GetCrumbs from "@/components/NavigationCrumb";
 import Language from "./languages";
-import { Button, Card, Dropdown, Skeleton, MenuProps, Space } from "antd";
+import {
+  Button,
+  Card,
+  Dropdown,
+  Skeleton,
+  MenuProps,
+  Space,
+  Divider,
+} from "antd";
 import { useState, useEffect } from "react";
 import { DownOutlined } from "@ant-design/icons";
 import SimpleContent from "@/components/SimpleCon";
@@ -39,7 +47,8 @@ function LanguagesDropdown({
         overlayStyle={{
           scrollbarWidth: "thin",
           scrollBehavior: "smooth",
-        }}>
+        }}
+      >
         <Button>
           <Space>
             {curLang}
@@ -114,11 +123,15 @@ export default function LanguagesContent() {
           contentProps={{
             title: "Languages",
             text: [
-              "These are the language entries. Entries in white are from original Forgotten Realms content. Pinks are homebrew entries made specifically for Teothe. Pink and italic entries are adapted from original content to Teothe.",
-              "Select a language from the dropdown menu below to display the respective dictionary.",
+              "The Languages tab of Teothe serves as a comprehensive resource for Dungeons & Dragons (D&D), focusing on the exploration of fantasy languages. This feature offers a diverse array of languages, complete with both official and homebrew words, tailored specifically for enhancing the D&D 5e experience.",
+              "These are the language entries. Entries in white are from original Forgotten Realms content. Pinks are homebrew entries made specifically for Teothe. Pink and italic entries are adapted from original content to Teothe. Upon selecting a language from the dropdown menu below, the respective dictionary is displayed, showcasing a detailed collection of terms.",
+              "In the world of D&D, language plays a crucial role in storytelling and character development, providing insight into the unique cultures and histories of various fantasy realms. Teothe showcases an extensive collection of official words recognized within the D&D lexicon alongside homebrew words created by the community. This combination allows for a richer gameplay experience, enabling players and Dungeon Masters to customize their campaigns with personalized vocabulary.",
+              "The dictionary entries include meanings and contextual uses, making this resource invaluable for enriching character dialogues and infusing campaigns with deeper lore. The integration of both official and homebrew terms encourages creativity, expanding storytelling possibilities and enhancing immersion in the D&D universe.",
+              "Teothe transforms the language experience, offering a wealth of vocabulary to shape epic adventures within the realms of D&D. The richness of fantasy language serves to inspire and elevate gameplay, providing the tools needed to craft unforgettable narratives.",
             ],
           }}
         />
+        <Divider />
         Failed to fetch dropdown list data
       </Card>
     );
@@ -148,11 +161,15 @@ export default function LanguagesContent() {
           contentProps={{
             title: "Languages",
             text: [
-              "These are the language entries. Entries in white are from original Forgotten Realms content. Pinks are homebrew entries made specifically for Teothe. Pink and italic entries are adapted from original content to Teothe.",
-              "Select a language from the dropdown menu below to display the respective dictionary.",
+              "The Languages tab of Teothe serves as a comprehensive resource for Dungeons & Dragons (D&D), focusing on the exploration of fantasy languages. This feature offers a diverse array of languages, complete with both official and homebrew words, tailored specifically for enhancing the D&D 5e experience.",
+              "These are the language entries. Entries in white are from original Forgotten Realms content. Pinks are homebrew entries made specifically for Teothe. Pink and italic entries are adapted from original content to Teothe. Upon selecting a language from the dropdown menu below, the respective dictionary is displayed, showcasing a detailed collection of terms.",
+              "In the world of D&D, language plays a crucial role in storytelling and character development, providing insight into the unique cultures and histories of various fantasy realms. Teothe showcases an extensive collection of official words recognized within the D&D lexicon alongside homebrew words created by the community. This combination allows for a richer gameplay experience, enabling players and Dungeon Masters to customize their campaigns with personalized vocabulary.",
+              "The dictionary entries include meanings and contextual uses, making this resource invaluable for enriching character dialogues and infusing campaigns with deeper lore. The integration of both official and homebrew terms encourages creativity, expanding storytelling possibilities and enhancing immersion in the D&D universe.",
+              "Teothe transforms the language experience, offering a wealth of vocabulary to shape epic adventures within the realms of D&D. The richness of fantasy language serves to inspire and elevate gameplay, providing the tools needed to craft unforgettable narratives.",
             ],
           }}
         />
+        <Divider />
         <LanguagesDropdown
           curLang={curLang}
           langList={langList}

@@ -1,192 +1,138 @@
-import { Typography, Avatar, Tooltip } from "antd";
+import { Typography, Avatar, Tooltip, Space, Divider, Card } from "antd";
 
 const { Title } = Typography;
 
 /**
  * Returns a domain image based on domain name.
  * @generator
- * @param name 
+ * @param name
  * @returns Tooltip(antd) > Avatar(antd)
  */
 function GetDomainObject(name: string) {
   switch (name) {
     case "War":
       return (
-        <Tooltip
-          className="float-right"
-          placement="left"
-          color={"#630436"}
-          title={"War"}
-        >
+        <Tooltip placement="left" color={"#630436"} title={"War"}>
           {" "}
           <Avatar
             // title="War"
-            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
             src={"./Icons/Domains/war.png"}
             alt={""}
             draggable={false}
             shape="square"
-            className="float-right"
           />
         </Tooltip>
       );
     case "Nature":
       return (
-        <Tooltip
-          className="float-right"
-          placement="left"
-          color={"#630436"}
-          title={"Nature"}
-        >
+        <Tooltip placement="left" color={"#630436"} title={"Nature"}>
           {" "}
           <Avatar
             // title="Nature"
-            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
             src={"./Icons/Domains/nature.png"}
             alt={""}
             draggable={false}
             shape="square"
-            className="float-right"
           />
         </Tooltip>
       );
     case "Trickery":
       return (
-        <Tooltip
-          className="float-right"
-          placement="left"
-          color={"#630436"}
-          title={"Trickery"}
-        >
+        <Tooltip placement="left" color={"#630436"} title={"Trickery"}>
           {" "}
           <Avatar
             // title="Trickery"
-            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
             src={"./Icons/Domains/trickery.png"}
             alt={""}
             draggable={false}
             shape="square"
-            className="float-right"
           />
         </Tooltip>
       );
     case "Fundamental":
       return (
-        <Tooltip
-          className="float-right"
-          placement="left"
-          color={"#630436"}
-          title={"Fundamental"}
-        >
+        <Tooltip placement="left" color={"#630436"} title={"Fundamental"}>
           {" "}
           <Avatar
             // title="Fundamental"
-            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
             src={"./Icons/Domains/fundamental.png"}
             alt={""}
             draggable={false}
             shape="square"
-            className="float-right"
           />
         </Tooltip>
       );
     case "Knowledge":
       return (
-        <Tooltip
-          className="float-right"
-          placement="left"
-          color={"#630436"}
-          title={"Knowledge"}
-        >
+        <Tooltip placement="left" color={"#630436"} title={"Knowledge"}>
           {" "}
           <Avatar
             // title="Knowledge"
-            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
             src={"./Icons/Domains/knowledge.png"}
             alt={""}
             draggable={false}
             shape="square"
-            className="float-right"
           />
         </Tooltip>
       );
     case "Tempest":
       return (
-        <Tooltip
-          className="float-right"
-          placement="left"
-          color={"#630436"}
-          title={"Tempest"}
-        >
+        <Tooltip placement="left" color={"#630436"} title={"Tempest"}>
           {" "}
           <Avatar
             // title="Tempest"
-            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
             src={"./Icons/Domains/tempest.png"}
             alt={""}
             draggable={false}
             shape="square"
-            className="float-right"
           />
         </Tooltip>
       );
     case "Life":
       return (
-        <Tooltip
-          className="float-right"
-          placement="left"
-          color={"#630436"}
-          title={"Life"}
-        >
+        <Tooltip placement="left" color={"#630436"} title={"Life"}>
           {" "}
           <Avatar
             // title="Life"
-            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
             src={"./Icons/Domains/life.png"}
             alt={""}
             draggable={false}
             shape="square"
-            className="float-right"
           />
         </Tooltip>
       );
     case "Light":
       return (
-        <Tooltip
-          className="float-right"
-          placement="left"
-          color={"#630436"}
-          title={"Light"}
-        >
+        <Tooltip placement="left" color={"#630436"} title={"Light"}>
           {" "}
           <Avatar
             // title="Light"
-            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
             src={"./Icons/Domains/light.png"}
             alt={""}
             draggable={false}
             shape="square"
-            className="float-right"
           />
         </Tooltip>
       );
     case "Death":
       return (
-        <Tooltip
-          className="float-right"
-          placement="left"
-          color={"#630436"}
-          title={"Death"}
-        >
+        <Tooltip placement="left" color={"#630436"} title={"Death"}>
           {" "}
           <Avatar
             // title="Death"
-            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
             src={"./Icons/Domains/death.png"}
             alt={""}
             draggable={false}
             shape="square"
-            className="float-right"
           />
         </Tooltip>
       );
@@ -196,9 +142,9 @@ function GetDomainObject(name: string) {
 }
 
 /**
- * Splits multiple domains by ", " and pushes a GetDomainObject image into an array. Used for deities, some can have multiple domains. 
+ * Splits multiple domains by ", " and pushes a GetDomainObject image into an array. Used for deities, some can have multiple domains.
  * @generator
- * @param data 
+ * @param data
  * @returns array
  */
 function GetDomains(data: string) {
@@ -225,20 +171,26 @@ export default function Deity({
   descriptionProps: { title: string; body: string; domain: string };
 }) {
   return (
-    <div className="inline-flex w-full py-4">
-      <Avatar
-        size={{ xs: 64, sm: 64, md: 64, lg: 80, xl: 100, xxl: 120 }}
-        src={imageSrc}
-        alt={descriptionProps.title}
-        draggable={false}
-        onClick={() => window.open(imageSrc, "_blank")}
-        className="cursor-pointer"
-      />
-      <div className="px-4 w-[75%]">
-        <Title level={2}>{descriptionProps.title}</Title>
+    <div className="h-full p-2">
+      <Card className="w-full h-full relative pb-16">
+        {" "}
+        {/* Add `relative` and padding-bottom */}
+        <Space size="small" className="mb-2">
+          <Avatar
+            size={{ xs: 64, sm: 64, md: 64, lg: 80, xl: 100, xxl: 120 }}
+            src={imageSrc}
+            alt={descriptionProps.title}
+            draggable={false}
+            onClick={() => window.open(imageSrc, "_blank")}
+            className="cursor-pointer"
+          />
+          <Title level={3}>{descriptionProps.title}</Title>
+        </Space>
         <p>{descriptionProps.body}</p>
-      </div>
-      <i className="w-[15%] ml-[auto]">{GetDomains(descriptionProps.domain)}</i>
+        <div className="absolute bottom-0 my-4">
+          {GetDomains(descriptionProps.domain)}
+        </div>
+      </Card>
     </div>
   );
 }
