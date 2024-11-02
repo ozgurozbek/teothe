@@ -467,11 +467,13 @@ function GetQuickNPC() {
             <Divider type="vertical" style={{ borderColor: "white" }} />
             <span>Copy </span>
             <Button
-              onClick={() => handleFantasyGroundsClick("stat", teotheNPC)}>
+              onClick={() => handleFantasyGroundsClick("stat", teotheNPC)}
+            >
               Statblock for FGU
             </Button>
             <Button
-              onClick={() => handleFantasyGroundsClick("desc", teotheNPC)}>
+              onClick={() => handleFantasyGroundsClick("desc", teotheNPC)}
+            >
               Description for FGU
             </Button>
             <Button onClick={() => handleAIPromptClick(teotheNPC)}>
@@ -493,7 +495,8 @@ function GetQuickNPC() {
               {menu}
             </div>
           )}
-          menu={speciesProps}>
+          menu={speciesProps}
+        >
           <Button>
             <Space>
               {speciesProps.items[Number(speciesNo)]
@@ -610,6 +613,17 @@ export default function QuickNPCGeneratorContent() {
     <section>
       <GetCrumbs path={"Teothe,Generators,Quick NPC Generator"} />
       <Card bordered={false} className="w-full">
+        <SimpleContent
+          contentProps={{
+            title: "Quick NPC Generator",
+            text: [
+              "The Teothe NPC Generator is a powerful tool for creating rich, immersive NPCs for D&D and D&D 5e campaigns, now fully compatible with Fantasy Grounds. Ideal for both Dungeon Masters and players, this NPC generator offers a massive selection of fantasy races from official D&D sources and homebrew content, ensuring characters that feel authentic in any setting. With customization options for gender, alignment, race, and more, Teothe’s NPC generator gives you full control over every detail, allowing you to create NPCs that perfectly fit your storyline.",
+              "Teothe’s generator also includes a name generator, providing fantasy-themed names that align with each character's unique background. Each generated NPC includes a comprehensive stat block and background description, ready for immediate use. Simply copy the details to your clipboard for quick reference in any encounter. For added immersion, Teothe also offers AI-powered image generation to create visual representations of your characters, enhancing player engagement with custom portraits.",
+              "Fast, reliable, and highly versatile, the Teothe NPC generator is an invaluable resource for any D&D 5e campaign, helping Dungeon Masters quickly build fantasy characters and populate worlds with detailed NPCs. Whether you need a quick character or an intricate story NPC, Teothe’s character generator combines official content and homebrew to give you everything you need, with seamless Fantasy Grounds integration for smooth gameplay.",
+            ],
+          }}
+        />
+        <Divider/>
         {GetQuickNPC()}
       </Card>
     </section>
