@@ -142,3 +142,7 @@ footer > a {
 .ant-checkbox-inner:after {
   border-color: transparent !important;
 }
+
+.ant-table-filter-trigger {
+  color: black !important;
+}
