@@ -45,7 +45,7 @@ export default function SpeciesCon({
         />
         <Title className="capitalize">{DescriptionText.title}</Title>
         {speciesDesc}
-        <p className="italic text-center pt-2 px-2 text-lg">
+        <p className="italic pl-2 border-l-[#630436] border-l-2 text-lg text-gray-400">
           {SpeciesPic.phrase}
         </p>
         <div className="mt-auto">
