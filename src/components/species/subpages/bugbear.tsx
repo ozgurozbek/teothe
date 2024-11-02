@@ -24,7 +24,7 @@ export default function BugbearContent() {
               rootClassName="w-full"
             />
           </Col>
-          <Col xs={24} sm={24} md={12} lg={18} xl={18} xxl={18}>
+          <Col xs={24} sm={24} md={12} lg={18} xl={18} xxl={18} className="p-4 h-[60vh] overflow-y-scroll no-scrollbar">
             <SimpleContent
               contentProps={{
                 title: "The Bugbear",
