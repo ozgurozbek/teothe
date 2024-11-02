@@ -1,5 +1,14 @@
 "use client";
-import { Button, Card, Divider, Dropdown, Empty, MenuProps, Space } from "antd";
+import {
+  Alert,
+  Button,
+  Card,
+  Divider,
+  Dropdown,
+  Empty,
+  MenuProps,
+  Space,
+} from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import { useState } from "react";
 import SimpleContent from "@/components/SimpleCon";
@@ -87,6 +96,7 @@ var voices: string[] = [
  * @returns JSX elements representing the Quest Idea Generator interface.
  */
 function GetQuickNPC() {
+  const [displayButtonCopyAlert, setdisplayButtonCopyAlert] = useState(false);
   const [displayEmpty, setDisplayEmpty] = useState(true);
   const [speciesNo, setSpeciesNo] = useState("N/A");
   const [genderNo, setGenderNo] = useState("N/A");
@@ -210,6 +220,10 @@ function GetQuickNPC() {
 
   // Handles statblock and description generation for Fantasy Grounds depending on value (desc, stat)
   const handleFantasyGroundsClick = (value: string, teotheNPC: TeotheNPC) => {
+    setdisplayButtonCopyAlert(true);
+    setTimeout(() => {
+      setdisplayButtonCopyAlert(false);
+    }, 2000);
     switch (value) {
       case "desc":
         navigator.clipboard.writeText(
@@ -284,6 +298,10 @@ function GetQuickNPC() {
 
   // Added as an AI image descriptor
   const handleAIPromptClick = (teotheNPC: TeotheNPC) => {
+    setdisplayButtonCopyAlert(true);
+    setTimeout(() => {
+      setdisplayButtonCopyAlert(false);
+    }, 2000);
     navigator.clipboard.writeText(
       `A ${teotheNPC.description.age} years old ${teotheNPC.description.species} ${teotheNPC.description.gender} working as a ${teotheNPC.description.occupation}.\r\n`.replace(
         /  +/g,
@@ -479,6 +497,16 @@ function GetQuickNPC() {
             <Button onClick={() => handleAIPromptClick(teotheNPC)}>
               Generative Prompt for AI
             </Button>
+            {displayButtonCopyAlert && (
+              <div className="h-8 rounded-full flex items-center justify-center">
+                <Alert
+                  message="Copied to Clipboard!"
+                  type="success"
+                  showIcon
+                  className="py-1 m-0"
+                />
+              </div>
+            )}
           </>
         )}
       </Space>
@@ -623,7 +651,7 @@ export default function QuickNPCGeneratorContent() {
             ],
           }}
         />
-        <Divider/>
+        <Divider />
         {GetQuickNPC()}
       </Card>
     </section>
