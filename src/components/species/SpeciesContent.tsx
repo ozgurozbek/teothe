@@ -190,12 +190,8 @@ function GetSpecies() {
       name: "aarakocra",
     },
     {
-      phrase:
-        "Embrace of the green and tranquil heart of the forests, where our spirits find solace, whispers of nature weave our eternal song.",
-      homebrew:
-        "With unearthly grace and fine features, elves appear hauntingly beautiful to humans and members of many other species. They are slightly shorter than humans on average. Elves also do not enjoy consuming smears, and have taken a more secluded stance. Some elven communities have turned vegan.",
-      description:
-        "Elves can live well over 700 years, giving them a broad perspective on events that might trouble the shorter-lived species more deeply. They are more often amused than excited, and more likely to be curious than greedy. They tend to remain aloof and unfazed by petty happenstance. When pursuing a goal, however, whether adventuring on a mission or learning a new skill or art, elves can be focused and relentless. They are slow to make friends and enemies, and even slower to forget them. They reply to petty insults with disdain and to serious insults with vengeance._Most elves dwell in small forest villages hidden among the trees. Elves hunt game, gather food, and grow vegetables, and their skill and magic allow them to support themselves without the need for clearing and plowing land. They are talented artisans, crafting finely worked clothes and art objects. Their contact with outsiders is usually limited._Elves take up adventuring out of wanderlust. Since they are so long-lived, they can enjoy centuries of exploration and discovery. They dislike the pace of human society, which is regimented from day to day but constantly changing over decades, so they find careers that let them travel freely and set their own pace.",
+      phrase: "Embrace of the green and tranquil heart of the forests, where our spirits find solace, whispers of nature weave our eternal song.",
+      description: "Elves are graceful and agile beings, with a natural affinity for magic and a deep connection to the forests and the fey.",
       name: "elf",
     },
   ];

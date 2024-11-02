@@ -20,7 +20,7 @@ export default function DwarfContent() {
           <Col xs={24} sm={24} md={12} lg={6} xl={6} xxl={6} className="pr-4">
             <Image
               src={"/Species/dwarf.png"}
-              alt={"Colourful and scaly reptilian humanoid."}
+              alt={"Stout looking humanoid warrior."}
               rootClassName="w-full"
             />
           </Col>
