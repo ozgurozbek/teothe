@@ -10,6 +10,7 @@ const speciesComponents: Record<string, ComponentType<{}>> = {
   bugbear: dynamic(() => import('@/components/species/subpages/bugbear')),
   changeling: dynamic(() => import('@/components/species/subpages/changeling')),
   drow: dynamic(() => import('@/components/species/subpages/drow')),
+  dragonborn: dynamic(() => import('@/components/species/subpages/dragonborn')),
   // Add additional species components here
 };
 

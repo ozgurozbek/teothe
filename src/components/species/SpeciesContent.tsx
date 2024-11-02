@@ -68,12 +68,8 @@ function GetSpecies() {
       name: "shifter",
     },
     {
-      phrase:
-        "Within our veins flows the essence of Ehx, the fire of ambition ignites our spirits, and with scales gleaming like gems, we rise as Dragonborn, protectors of legacy and seekers of untold glory.",
-      homebrew:
-        "Unknown in heritage, they were either created by Ehx to serve other dragons or created from Ehx's spilled blood when it fell in the battle between gods. Many dragonborns believe in Ehx._Dragonborns live to be around 80, therefore end up forming friendships with Humans more often than other exotic species, even though they are considered to be one. Amongst them, rare few individuals were born with tails, but this was seen as a deformity by the dragonborn. These individuals are mostly shunned and even exiled from their dragonborn community._They hatch from eggs and breed with other Dragonborns.",
-      description:
-        "They were one of the species native to an Elemental Plane, which then moved to Inner Planes._Dragonborn exhibited many draconic features, including a scaly hide, a large muscular body, the capacity to use a breath weapon, and resistance to the same elemental energy they can breathe, thanks to their draconic heritage. Because of thousands of years of interbreeding, the scales a dragonborn wore were scarlet, gold, rust, ochre, bronze, or brown in hue, though a few dragonborn with an stronger draconic heritage had scales resembling those of true dragons. Like dragons, dragonborn were often mistaken for reptiles, but were in fact warm-blooded draconic creatures.",
+      phrase: "Within our veins flows the essence of Ehx, the fire of ambition ignites our spirits, and with scales gleaming like gems, we rise as Dragonborn, protectors of legacy and seekers of untold glory.",
+      description: "Dragonborn are proud, draconic humanoids, known for their honor and strength, often seeking to prove their worth to their kin.",
       name: "dragonborn",
     },
     {
