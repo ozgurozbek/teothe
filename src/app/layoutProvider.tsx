@@ -122,7 +122,7 @@ export default function RootLayoutProvider({
           <CopyOutlined />
         </div>
         {displayCopyAlert &&
-        <div className="w-48 h-12 rounded-full fixed bottom-20 right-16 transition-all flex items-center justify-center text-3xl">
+        <div className="w-48 h-12 rounded-full fixed bottom-20 right-20 transition-all flex items-center justify-center text-3xl">
           <Alert message="Copied Page URL!" type="success" showIcon closable onClose={() => setDisplayCopyAlert(false)} />
         </div>}
       </Layout>
