@@ -1,11 +1,11 @@
-import { Typography, Avatar, Tooltip } from "antd";
+import { Typography, Avatar, Tooltip, Space, Divider, Card } from "antd";
 
 const { Title } = Typography;
 
 /**
  * Returns a domain image based on domain name.
  * @generator
- * @param name 
+ * @param name
  * @returns Tooltip(antd) > Avatar(antd)
  */
 function GetDomainObject(name: string) {
@@ -13,7 +13,6 @@ function GetDomainObject(name: string) {
     case "War":
       return (
         <Tooltip
-          className="float-right"
           placement="left"
           color={"#630436"}
           title={"War"}
@@ -26,14 +25,12 @@ function GetDomainObject(name: string) {
             alt={""}
             draggable={false}
             shape="square"
-            className="float-right"
           />
         </Tooltip>
       );
     case "Nature":
       return (
         <Tooltip
-          className="float-right"
           placement="left"
           color={"#630436"}
           title={"Nature"}
@@ -46,14 +43,12 @@ function GetDomainObject(name: string) {
             alt={""}
             draggable={false}
             shape="square"
-            className="float-right"
           />
         </Tooltip>
       );
     case "Trickery":
       return (
         <Tooltip
-          className="float-right"
           placement="left"
           color={"#630436"}
           title={"Trickery"}
@@ -66,14 +61,12 @@ function GetDomainObject(name: string) {
             alt={""}
             draggable={false}
             shape="square"
-            className="float-right"
           />
         </Tooltip>
       );
     case "Fundamental":
       return (
         <Tooltip
-          className="float-right"
           placement="left"
           color={"#630436"}
           title={"Fundamental"}
@@ -86,14 +79,12 @@ function GetDomainObject(name: string) {
             alt={""}
             draggable={false}
             shape="square"
-            className="float-right"
           />
         </Tooltip>
       );
     case "Knowledge":
       return (
         <Tooltip
-          className="float-right"
           placement="left"
           color={"#630436"}
           title={"Knowledge"}
@@ -106,14 +97,12 @@ function GetDomainObject(name: string) {
             alt={""}
             draggable={false}
             shape="square"
-            className="float-right"
           />
         </Tooltip>
       );
     case "Tempest":
       return (
         <Tooltip
-          className="float-right"
           placement="left"
           color={"#630436"}
           title={"Tempest"}
@@ -126,14 +115,12 @@ function GetDomainObject(name: string) {
             alt={""}
             draggable={false}
             shape="square"
-            className="float-right"
           />
         </Tooltip>
       );
     case "Life":
       return (
         <Tooltip
-          className="float-right"
           placement="left"
           color={"#630436"}
           title={"Life"}
@@ -146,14 +133,12 @@ function GetDomainObject(name: string) {
             alt={""}
             draggable={false}
             shape="square"
-            className="float-right"
           />
         </Tooltip>
       );
     case "Light":
       return (
         <Tooltip
-          className="float-right"
           placement="left"
           color={"#630436"}
           title={"Light"}
@@ -166,14 +151,12 @@ function GetDomainObject(name: string) {
             alt={""}
             draggable={false}
             shape="square"
-            className="float-right"
           />
         </Tooltip>
       );
     case "Death":
       return (
         <Tooltip
-          className="float-right"
           placement="left"
           color={"#630436"}
           title={"Death"}
@@ -186,7 +169,6 @@ function GetDomainObject(name: string) {
             alt={""}
             draggable={false}
             shape="square"
-            className="float-right"
           />
         </Tooltip>
       );
@@ -196,9 +178,9 @@ function GetDomainObject(name: string) {
 }
 
 /**
- * Splits multiple domains by ", " and pushes a GetDomainObject image into an array. Used for deities, some can have multiple domains. 
+ * Splits multiple domains by ", " and pushes a GetDomainObject image into an array. Used for deities, some can have multiple domains.
  * @generator
- * @param data 
+ * @param data
  * @returns array
  */
 function GetDomains(data: string) {
@@ -225,20 +207,28 @@ export default function Deity({
   descriptionProps: { title: string; body: string; domain: string };
 }) {
   return (
-    <div className="inline-flex w-full py-4">
-      <Avatar
-        size={{ xs: 64, sm: 64, md: 64, lg: 80, xl: 100, xxl: 120 }}
-        src={imageSrc}
-        alt={descriptionProps.title}
-        draggable={false}
-        onClick={() => window.open(imageSrc, "_blank")}
-        className="cursor-pointer"
-      />
-      <div className="px-4 w-[75%]">
-        <Title level={2}>{descriptionProps.title}</Title>
-        <p>{descriptionProps.body}</p>
+    <div className="h-full p-2">
+    <Card className="w-full h-full">
+      <Space size="middle" className="mb-2">
+        <Avatar
+          size={{ xs: 64, sm: 64, md: 64, lg: 80, xl: 100, xxl: 120 }}
+          src={imageSrc}
+          alt={descriptionProps.title}
+          draggable={false}
+          onClick={() => window.open(imageSrc, "_blank")}
+          className="cursor-pointer"
+        />
+          <Title level={3}>{descriptionProps.title}</Title>
+      </Space>
+      <div>
+        <Space size="large" direction="vertical">
+          <p>{descriptionProps.body}</p>
+          <i>
+            {GetDomains(descriptionProps.domain)}
+          </i>
+        </Space>
       </div>
-      <i className="w-[15%] ml-[auto]">{GetDomains(descriptionProps.domain)}</i>
+    </Card>
     </div>
   );
 }
