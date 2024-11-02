@@ -1,8 +1,9 @@
 "use client";
-import { Button, Card, Divider, Empty, Skeleton } from "antd";
+import { Button, Card, Divider, Empty, Skeleton, Space } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import { useState } from "react";
 import SimpleContent from "@/components/SimpleCon";
+import Title from "antd/es/typography/Title";
 /**
  * React component for rendering a Quest Idea Generator interface.
  * The component includes a button that, when clicked, conditionally fetches data from an API using the useSWR hook.
@@ -41,31 +42,59 @@ function GetQuestIdea() {
 
   return (
     <>
-      <Button onClick={handleButtonClick}>
+      <Title>
+        Create Unique D&D Adventures with an AI Quest Idea Generator for the
+        Teothe Campaign Setting
+      </Title>
+      <Divider />
+      <Button onClick={handleButtonClick} className="mb-2">
         {displayEmpty ? "Generate Quest Idea" : "Generate New Quest Idea"}
       </Button>
+      <Card>
+        {displayEmpty ? <Empty /> : <Title level={2}>{innerText}</Title>}
+      </Card>
       <Divider />
-      {loading ? (
-        <Skeleton active />
-      ) : displayEmpty ? (
-        <Empty />
-      ) : (
-        <SimpleContent
-          contentProps={{
-            title: innerText,
-            text: [
-              "Xeculus' Quest Idea Generator for D&D is a tool that uses artificial intelligence to create high-quality, unique content based on keywords or phrases from many sources. With some human intervention, you can use it to create new quest lines, item and character descriptions, unique story points, etc. This AI-generated content writing tool ingest a lot of example data that train its algorithms to produce content. Quest Idea Generator is designed to take that example data and create something new, not rehash what’s already out there. Compared against human structural quest analysis, the current generator was found to be able to replicate the elaborate quest structures found in commercial video game quests.",
-              "The Quest Idea Generator system is designed to generate unique stories and quests for players to play through. The system uses the rules of Dungeons & Dragons 5th edition and its associated books to create a series of events that occur over time. It also uses a set of pre-defined rules and algorithms to determine what makes an interesting quest. The system is designed to allow users to create their own unique stories and quests using the same basic structure. The whole of Xeculus' creative app includes a number of different components including a simple NPC naming and detailing tool, a quest design tool, and an API for developers.",
-              "You, the user, should evaluate quests through the classification of the motivations behind the quests, based on the sequences of actions required to complete the quests. Also, compare different world descriptions and analyze the difference in motivations for the quests produced by the generator. That’s how Xeculus' Quest Idea Generator comes in handy! Provided tools can help you brainstorm new quest ideas and storylines, and can even help you write the story itself! AI story generators can help you create engaging characters, great plots (including plots with a three-act story structure), and help make sure that you include all the essential story elements!",
-              "Remember that any RPG is a game, in which the players are the main focus. Each encounter is part of a larger puzzle, and so of course there are different stories, dungeons and quests. The proposed quests are composed entirely of some number of challenges, allowing for a unique story, as well as a number of problems to solve, allowing for a unique experience.",
-              "The quest generator is designed to help authors create unique stories and quests for the player characters to experience. The system proposes a series of events that may happen over time and requires the user to make decisions about how those events will unfold. Quest Idea Generator also tries to help authors build a narrative and plot out their story, to help designers plan out the layout of their dungeon, add traps, monsters, loot, and items.",
-              "In order to gain the most advanced tools for creating content, writers may find it useful to modify their world and equipment as an active part of the creative interpretation process. With all its different characteristics, like the different monsters, the various spells and the various bonuses, the generated quest is not final. Additionally, it is very important that players choose to invest in the quest if they wish to improve the overall experience, as such it is necessary to create a game that is extremely enjoyable as this type of experience is also very important. Quest Idea Generator, while it is a simple generator, it is very powerful as writers will not care much about the level or difficulty of previous game content generation since they are eventually the ones narrating it.",
-              "Here are some text generators I used to help me write this, and you could use them to iterate on quests or descriptions too:",
-              "The images in this orb are so strange and foreign that you can't help but feel a sense of awe at their beauty. Their colors and shapes speak to your soul and leave you feeling peaceful and refreshed. Your thoughts wander. What wonders await you when you look deeper? With a glazed stare, you watch and ponder what you see in the orb: random images from all around the world. You gaze into the globe and contemplate what these images mean to you. A forest, an ocean, a desert, a mountain range... you spend countless hours staring at the image, pondering its meaning.",
-            ],
-          }}
-        />
-      )}
+      <Space direction="vertical">
+        <p>
+          Elevate your Dungeons & Dragons sessions with an innovative AI-powered
+          quest idea generator tailored specifically for the Teothe campaign
+          setting. This tool generates original, high-quality quest ideas,
+          character descriptions, and item details based on your keywords and
+          phrases, making it easier than ever to craft engaging adventures for
+          your players.
+        </p>
+        <p>
+          What sets this AI quest idea generator apart is its ability to produce
+          fresh content rather than recycling existing material. Its algorithms
+          are trained to create intricate storylines that mirror the elaborate
+          quests found in popular video games, ensuring your campaigns are
+          filled with excitement and depth. By using the core rules of Dungeons
+          & Dragons 5th Edition, it crafts thrilling events and challenges that
+          can enhance any main quest or side mission, offering endless
+          possibilities for your storytelling in the Teothe setting.
+        </p>
+        <p>
+          Using an AI quest generator can significantly streamline your game
+          preparation, allowing you to brainstorm fresh ideas and develop
+          captivating narratives. You can analyze quests based on the
+          motivations behind them, fostering deeper storytelling and creating
+          unique experiences for your players. D&D is all about engagement, and
+          each encounter serves as a piece of a larger story, making it
+          essential to create quests filled with challenges and mysteries.
+        </p>
+        <p>
+          With this tool, crafting narratives becomes effortless. You can adapt
+          generated ideas to suit your players’ choices and customize various
+          elements, including monsters, spells, and items, enriching your
+          storytelling experience.
+        </p>
+        <p>
+          Transform your Dungeons & Dragons sessions in the Teothe campaign
+          setting into unforgettable adventures. Harness the power of an AI
+          quest idea generator to create unique quests that immerse your players
+          in a world of creativity and excitement today!
+        </p>
+      </Space>
     </>
   );
 }
