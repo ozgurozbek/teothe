@@ -98,12 +98,8 @@ function GetSpecies() {
         "Life's truest treasures lie not in grand quests or towering achievements, but in the embrace of family, the bonds of kinship, and the curious pursuit of simple pleasures that weave the tapestry of our Halfling hearts.",
     },
     {
-      phrase:
-        "Oh, the Material Plane, a delightful canvas for my mischievous play!",
-      homebrew:
-        "They are awfully joyful, having a personal characteristic that resembles a young halfling with more bravery towards the unknown. They are perfect companions for any joyful task._Hailing from the Feywild, the wondrous and mystical plane of existence, the Fairy exude an ethereal allure and possess an inherent affinity for the arcane arts. They love illusions and glamours, allowing them to manipulate perception and create mesmerizing visual displays._As tricksters, they are often associated with a mischievous streak, delighting in pranks and tricks.",
-      description:
-        "The Feywild is home to many fantastic peoples, including fairies. Fairies are a wee folk, but not nearly as much so as their pixie and sprite friends. The first fairies spoke Elvish, Goblin, or Sylvan, and encounters with human visitors prompted many of them to learn Common as well._Infused with the magic of the Feywild, most fairies look like small elves with insectile wings, but each fairy has a special physical characteristic that sets the fairy apart. Fairies share a few commonalities with one another but can differ widely in appearance, behavior, and attitude.",
+      phrase: "Oh, the Material Plane, a delightful canvas for my mischievous play!",
+      description: "Fairies are tiny, magical creatures with wings, embodying whimsy and playfulness, often involved in the affairs of nature.",
       name: "fairy",
     },
     {
