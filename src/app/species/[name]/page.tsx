@@ -14,6 +14,7 @@ const speciesComponents: Record<string, ComponentType<{}>> = {
   dwarf: dynamic(() => import('@/components/species/subpages/dwarf')),
   elf: dynamic(() => import('@/components/species/subpages/elf')),
   fairy: dynamic(() => import('@/components/species/subpages/fairy')),
+  goliath: dynamic(() => import('@/components/species/subpages/goliath')),
   // Add additional species components here
 };
 
