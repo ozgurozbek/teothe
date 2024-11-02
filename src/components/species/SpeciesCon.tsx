@@ -15,26 +15,9 @@ export default function SpeciesCon({
   SpeciesPic: { src: string; alt: string; phrase: string };
   DescriptionText: {
     title: string;
-    paragraph: string | string[];
-    homebrew?: string | string[];
+    paragraph: string;
   };
 }) {
-  let speciesDesc = [];
-
-  for (let i = 0; i < DescriptionText.paragraph.length; i++) {
-    if (DescriptionText.paragraph[i] != "") {
-      speciesDesc.push(<p className="mb-1">{DescriptionText.paragraph[i]}</p>);
-    }
-  }
-
-  if (DescriptionText.homebrew) {
-    for (let i = 0; i < DescriptionText.homebrew.length; i++) {
-      speciesDesc.push(
-        <p className="text-pink-600"> {DescriptionText.homebrew[i]}</p>
-      );
-    }
-  }
-
   return (
     <Col xs={24} sm={24} md={12} lg={6} xl={6} xxl={6} className="p-2">
       <Col span={24} className="h-full flex flex-col">
@@ -44,7 +27,7 @@ export default function SpeciesCon({
           rootClassName="w-full"
         />
         <Title className="capitalize">{DescriptionText.title}</Title>
-        {speciesDesc}
+        {DescriptionText.paragraph}
         <p className="italic pl-2 border-l-[#630436] border-l-2 text-lg text-gray-400">
           {SpeciesPic.phrase}
         </p>

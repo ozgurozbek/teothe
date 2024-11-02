@@ -24,6 +24,11 @@ const speciesComponents: Record<string, ComponentType<{}>> = {
   kenku: dynamic(() => import('@/components/species/subpages/kenku')),
   loxodon: dynamic(() => import('@/components/species/subpages/loxodon')),
   leonin: dynamic(() => import('@/components/species/subpages/leonin')),
+  svirfneblin: dynamic(() => import('@/components/species/subpages/svirfneblin')),
+  warforged: dynamic(() => import('@/components/species/subpages/warforged')),
+  tiefling: dynamic(() => import('@/components/species/subpages/tiefling')),
+  tortle: dynamic(() => import('@/components/species/subpages/tortle')),
+  shifter: dynamic(() => import('@/components/species/subpages/shifter')),
   // Add additional species components here
 };
 
