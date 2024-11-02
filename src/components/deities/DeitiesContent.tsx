@@ -68,6 +68,7 @@ export default function DeitiesContent() {
             ],
           }}
         />
+        <Divider />
         <SimpleContent
           contentProps={{
             title: "Overdeities",

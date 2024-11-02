@@ -12,15 +12,11 @@ function GetDomainObject(name: string) {
   switch (name) {
     case "War":
       return (
-        <Tooltip
-          placement="left"
-          color={"#630436"}
-          title={"War"}
-        >
+        <Tooltip placement="left" color={"#630436"} title={"War"}>
           {" "}
           <Avatar
             // title="War"
-            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
             src={"./Icons/Domains/war.png"}
             alt={""}
             draggable={false}
@@ -30,15 +26,11 @@ function GetDomainObject(name: string) {
       );
     case "Nature":
       return (
-        <Tooltip
-          placement="left"
-          color={"#630436"}
-          title={"Nature"}
-        >
+        <Tooltip placement="left" color={"#630436"} title={"Nature"}>
           {" "}
           <Avatar
             // title="Nature"
-            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
             src={"./Icons/Domains/nature.png"}
             alt={""}
             draggable={false}
@@ -48,15 +40,11 @@ function GetDomainObject(name: string) {
       );
     case "Trickery":
       return (
-        <Tooltip
-          placement="left"
-          color={"#630436"}
-          title={"Trickery"}
-        >
+        <Tooltip placement="left" color={"#630436"} title={"Trickery"}>
           {" "}
           <Avatar
             // title="Trickery"
-            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
             src={"./Icons/Domains/trickery.png"}
             alt={""}
             draggable={false}
@@ -66,15 +54,11 @@ function GetDomainObject(name: string) {
       );
     case "Fundamental":
       return (
-        <Tooltip
-          placement="left"
-          color={"#630436"}
-          title={"Fundamental"}
-        >
+        <Tooltip placement="left" color={"#630436"} title={"Fundamental"}>
           {" "}
           <Avatar
             // title="Fundamental"
-            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
             src={"./Icons/Domains/fundamental.png"}
             alt={""}
             draggable={false}
@@ -84,15 +68,11 @@ function GetDomainObject(name: string) {
       );
     case "Knowledge":
       return (
-        <Tooltip
-          placement="left"
-          color={"#630436"}
-          title={"Knowledge"}
-        >
+        <Tooltip placement="left" color={"#630436"} title={"Knowledge"}>
           {" "}
           <Avatar
             // title="Knowledge"
-            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
             src={"./Icons/Domains/knowledge.png"}
             alt={""}
             draggable={false}
@@ -102,15 +82,11 @@ function GetDomainObject(name: string) {
       );
     case "Tempest":
       return (
-        <Tooltip
-          placement="left"
-          color={"#630436"}
-          title={"Tempest"}
-        >
+        <Tooltip placement="left" color={"#630436"} title={"Tempest"}>
           {" "}
           <Avatar
             // title="Tempest"
-            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
             src={"./Icons/Domains/tempest.png"}
             alt={""}
             draggable={false}
@@ -120,15 +96,11 @@ function GetDomainObject(name: string) {
       );
     case "Life":
       return (
-        <Tooltip
-          placement="left"
-          color={"#630436"}
-          title={"Life"}
-        >
+        <Tooltip placement="left" color={"#630436"} title={"Life"}>
           {" "}
           <Avatar
             // title="Life"
-            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
             src={"./Icons/Domains/life.png"}
             alt={""}
             draggable={false}
@@ -138,15 +110,11 @@ function GetDomainObject(name: string) {
       );
     case "Light":
       return (
-        <Tooltip
-          placement="left"
-          color={"#630436"}
-          title={"Light"}
-        >
+        <Tooltip placement="left" color={"#630436"} title={"Light"}>
           {" "}
           <Avatar
             // title="Light"
-            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
             src={"./Icons/Domains/light.png"}
             alt={""}
             draggable={false}
@@ -156,15 +124,11 @@ function GetDomainObject(name: string) {
       );
     case "Death":
       return (
-        <Tooltip
-          placement="left"
-          color={"#630436"}
-          title={"Death"}
-        >
+        <Tooltip placement="left" color={"#630436"} title={"Death"}>
           {" "}
           <Avatar
             // title="Death"
-            size={{ xs: 32, sm: 32, md: 32, lg: 60, xl: 60, xxl: 60 }}
+            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
             src={"./Icons/Domains/death.png"}
             alt={""}
             draggable={false}
@@ -208,27 +172,25 @@ export default function Deity({
 }) {
   return (
     <div className="h-full p-2">
-    <Card className="w-full h-full">
-      <Space size="middle" className="mb-2">
-        <Avatar
-          size={{ xs: 64, sm: 64, md: 64, lg: 80, xl: 100, xxl: 120 }}
-          src={imageSrc}
-          alt={descriptionProps.title}
-          draggable={false}
-          onClick={() => window.open(imageSrc, "_blank")}
-          className="cursor-pointer"
-        />
+      <Card className="w-full h-full relative pb-16">
+        {" "}
+        {/* Add `relative` and padding-bottom */}
+        <Space size="small" className="mb-2">
+          <Avatar
+            size={{ xs: 64, sm: 64, md: 64, lg: 80, xl: 100, xxl: 120 }}
+            src={imageSrc}
+            alt={descriptionProps.title}
+            draggable={false}
+            onClick={() => window.open(imageSrc, "_blank")}
+            className="cursor-pointer"
+          />
           <Title level={3}>{descriptionProps.title}</Title>
-      </Space>
-      <div>
-        <Space size="large" direction="vertical">
-          <p>{descriptionProps.body}</p>
-          <i>
-            {GetDomains(descriptionProps.domain)}
-          </i>
         </Space>
-      </div>
-    </Card>
+        <p>{descriptionProps.body}</p>
+        <div className="absolute bottom-0 my-4">
+          {GetDomains(descriptionProps.domain)}
+        </div>
+      </Card>
     </div>
   );
 }
