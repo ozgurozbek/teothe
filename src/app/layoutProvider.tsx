@@ -34,6 +34,9 @@ export default function RootLayoutProvider({
     <ConfigProvider
       theme={{
         algorithm: theme.darkAlgorithm,
+        token: {
+          fontSize: 16, // set global font size
+        },
       }}
     >
       <Layout style={{ minHeight: "100vh" }}>
