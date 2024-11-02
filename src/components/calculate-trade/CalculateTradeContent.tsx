@@ -509,7 +509,13 @@ export default function CalculateTradeContent() {
           of
           <Dropdown
             menu={resourceProps}
-            overlayClassName={"max-h-64 overflow-auto"}
+            dropdownRender={(menu) => (
+              <div className="max-h-64 overflow-y-scroll no-scrollbar">{menu}</div>
+            )}
+            overlayStyle={{
+              scrollbarWidth: "thin",
+              scrollBehavior: "smooth",
+            }}
           >
             <Button className="w-full">
               <Space>
