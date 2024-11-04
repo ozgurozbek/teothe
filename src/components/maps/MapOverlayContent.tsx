@@ -178,7 +178,7 @@ export default function MapOverlayContent() {
         </Space>
         <div className="relative mt-4">
           <Image
-            rootClassName="absolute"
+            rootClassName="relative"
             preview={false}
             draggable={false}
             src={"./Maps/Base.png"}
