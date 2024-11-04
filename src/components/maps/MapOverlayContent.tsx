@@ -33,7 +33,7 @@ export default function MapOverlayContent() {
   return (
     <section>
       <GetCrumbs path={"Teothe,Map Overlay"} />
-      <Card bordered={false} className="w-full min-h-[110vh]">
+      <Card bordered={false} className="w-full">
         <SimpleContent
           contentProps={{
             title: "Map Overlay",
@@ -178,14 +178,7 @@ export default function MapOverlayContent() {
         </Space>
         <div className="relative mt-4">
           <Image
-            rootClassName="absolute"
-            preview={false}
-            draggable={false}
-            src={"./Maps/Base.png"}
-            alt={"Base"}
-          />
-          <Image
-            rootClassName="absolute invisible"
+            rootClassName="absolute invisible z-10"
             preview={false}
             draggable={false}
             src={"./Maps/Campuses.png"}
@@ -193,7 +186,7 @@ export default function MapOverlayContent() {
             id={"Campuses"}
           />
           <Image
-            rootClassName="absolute invisible"
+            rootClassName="absolute invisible z-10"
             preview={false}
             draggable={false}
             src={"./Maps/Climates.png"}
@@ -201,7 +194,7 @@ export default function MapOverlayContent() {
             id={"Climates"}
           />
           <Image
-            rootClassName="absolute invisible"
+            rootClassName="absolute invisible z-10"
             preview={false}
             draggable={false}
             src={"./Maps/Compass.png"}
@@ -209,7 +202,7 @@ export default function MapOverlayContent() {
             id={"Compass"}
           />
           <Image
-            rootClassName="absolute invisible"
+            rootClassName="absolute invisible z-10"
             preview={false}
             draggable={false}
             src={"./Maps/Continents.png"}
@@ -217,7 +210,7 @@ export default function MapOverlayContent() {
             id={"Continents"}
           />
           <Image
-            rootClassName="absolute invisible"
+            rootClassName="absolute invisible z-10"
             preview={false}
             draggable={false}
             src={"./Maps/Echoes.png"}
@@ -225,7 +218,7 @@ export default function MapOverlayContent() {
             id={"Echoes"}
           />
           <Image
-            rootClassName="absolute invisible"
+            rootClassName="absolute invisible z-10"
             preview={false}
             draggable={false}
             src={"./Maps/Kingdoms.png"}
@@ -233,7 +226,7 @@ export default function MapOverlayContent() {
             id={"Kingdoms"}
           />
           <Image
-            rootClassName="absolute invisible"
+            rootClassName="absolute invisible z-10"
             preview={false}
             draggable={false}
             src={"./Maps/Places.png"}
@@ -241,7 +234,7 @@ export default function MapOverlayContent() {
             id={"Places"}
           />
           <Image
-            rootClassName="absolute invisible"
+            rootClassName="absolute invisible z-10"
             preview={false}
             draggable={false}
             src={"./Maps/Resources.png"}
@@ -249,7 +242,7 @@ export default function MapOverlayContent() {
             id={"Resources"}
           />
           <Image
-            rootClassName="absolute invisible"
+            rootClassName="absolute invisible z-10"
             preview={false}
             draggable={false}
             src={"./Maps/Steamcart.png"}
@@ -257,7 +250,7 @@ export default function MapOverlayContent() {
             id={"Steamcart"}
           />
           <Image
-            rootClassName="absolute invisible"
+            rootClassName="absolute invisible z-10"
             preview={false}
             draggable={false}
             src={"./Maps/Trade.png"}
@@ -265,12 +258,19 @@ export default function MapOverlayContent() {
             id={"Trade"}
           />
           <Image
-            rootClassName="absolute invisible"
+            rootClassName="absolute invisible z-10"
             preview={false}
             draggable={false}
             src={"./Maps/Travel.png"}
             alt={"Travel"}
             id={"Travel"}
+          />
+          <Image
+            rootClassName="relative -z-0"
+            preview={false}
+            draggable={false}
+            src={"./Maps/Base.png"}
+            alt={"Base"}
           />
         </div>
       </Card>
