@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { Menu, Image, Drawer, Button} from "antd";
+import { Menu, Image, Drawer, Button } from "antd";
 import type { MenuProps } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 import NextImage from "next/image"; //Because its not default I can rename my import. So good.
@@ -113,7 +113,7 @@ export default function Navbar() {
   useEffect(() => {
     setselectedKeys([loadPageURL(window.location.pathname.substring(1))]);
   }, []); // Empty dependency to make it run once
-  
+
   const menuItems = [
     getItem("Common Lore", "1", "common-lore", getIcon("CommonLore")),
     getItem("Deities", "3", "deities", getIcon("Deities")),
@@ -129,11 +129,21 @@ export default function Navbar() {
       getItem("Homebrews", "9", "homebrews", getIcon("Homebrews")),
       getItem("Map Legend", "11", "map-legend", getIcon("MapLegend")),
       getItem("Languages", "13", "languages", getIcon("Languages")),
-      getItem("Calculate Trade", "17", "calculate-trade", getIcon("ResourceValueCalculator")),
+      getItem(
+        "Calculate Trade",
+        "17",
+        "calculate-trade",
+        getIcon("ResourceValueCalculator")
+      ),
       getItem("Achievements", "16", "achievements", getIcon("Achievements")),
     ]),
     getItem("Generators", "-1", undefined, getIcon("Generators"), undefined, [
-      getItem("Quest Idea", "14", "generators/quest-idea", getIcon("QuickIdea")),
+      getItem(
+        "Quest Idea",
+        "14",
+        "generators/quest-idea",
+        getIcon("QuickIdea")
+      ),
       getItem("Quick NPC", "15", "generators/quick-npc", getIcon("QuickNPC")),
     ]),
   ];
@@ -168,7 +178,7 @@ export default function Navbar() {
             marginRight: "10px",
           }}
         />
-         {/* New Mobile Menu drawer*/}
+        {/* New Mobile Menu drawer*/}
         <Drawer
           title="Menu"
           placement="right"
@@ -188,7 +198,7 @@ export default function Navbar() {
           />
         </Drawer>
 
-         {/* Normal menu (destop)*/}
+        {/* Normal menu (destop)*/}
         <Menu
           onClick={(e) => setselectedKeys([e.key])}
           selectedKeys={selectedKeys}
