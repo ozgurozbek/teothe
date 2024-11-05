@@ -176,6 +176,9 @@ export default function Navbar() {
             fontSize: "24px",
             marginLeft: "auto",
             marginRight: "10px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           }}
         />
         {/* New Mobile Menu drawer*/}
