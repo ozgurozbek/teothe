@@ -75,6 +75,13 @@ li:active,
     rgba(99, 4, 54, 1) 90%
   ) !important;
 }
+@media (max-width: 768px) {
+  .ant-menu-submenu-popup {
+    left: 0 !important;
+    right: auto !important;
+    max-width: 100vw;
+  }
+}
 h1,
 h2,
 h3 {
