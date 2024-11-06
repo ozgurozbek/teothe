@@ -1,9 +1,7 @@
 "use client";
 import GetCrumbs from "@/components/NavigationCrumb";
 import GetBook from "@/components/library/GetBook";
-import { Typography, Card, Divider } from "antd";
-import "App/books.css";
-import Script from "next/script";
+import { Typography, Card, Divider, Row } from "antd";
 const { Title } = Typography;
 
 /**
@@ -16,213 +14,262 @@ const { Title } = Typography;
 export default function LibraryContent() {
   return (
     <section>
-      <Script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></Script>
-      <Script src="https://booksjs.github.io/books/js/books.min.js"></Script>
-      <link
-        rel="stylesheet"
-        href="https://booksjs.github.io/books/css/booksjs.css"
-      ></link>
-
       <GetCrumbs path={"Teothe,Library"} />
       <Card bordered={false} className="w-full h-full">
         <Title>Library</Title>
         <Title level={2}>General</Title>
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/TheseClovers.pdf",
-            name: "What are these clovers?",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/SeraBook.pdf",
-            name: "We are Pathetic, the Helpless in the eyes of the Divine",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/SteramBook.pdf",
-            name: "Literature review: Legend of W. Steram",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/DivineTales1.pdf",
-            name: "Divine Tales 1",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/AncientSummary.pdf",
-            name: "Summary On Ancients",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/Reform.pdf",
-            name: "General Jet's Reform",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/UnderdarkGuide.pdf",
-            name: "Adventurer's Guide to Underdark Collection",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/LastAncientMagic.pdf",
-            name: "Last Ancient Magic",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/KnownHalfAncients.pdf",
-            name: "Known Half-Ancients",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/ComplexCosmology.pdf",
-            name: "Complex Cosmology",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/Johken.pdf",
-            name: "The Johken",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/UnderstandingOfDivine1.pdf",
-            name: "Understanding Of Divine 1",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/DatedMythOfCreation.pdf",
-            name: "Dated; Myth of Creation",
-          }}
-        />
+        <Row>
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              author: "John",
+              name: "What are these clovers?",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              author: "Jane",
+              name: "We are Pathetic, the Helpless in the eyes of the Divine",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              author: "Margaret",
+              name: "Literature review: Legend of W. Steram",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              author: "Chris",
+              name: "Divine Tales 1",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              author: "CJ",
+              name: "Summary On Ancients",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              author:
+                "Really long author name & someone else co-authoring it lol",
+              name: "General Jet's Reform",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              author: "Random",
+              name: "Adventurer's Guide to Underdark Collection",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              author: "Random",
+              name: "Last Ancient Magic",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              author: "Random",
+              name: "Known Half-Ancients",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              author: "Random",
+              name: "Complex Cosmology",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              author: "Random",
+              name: "The Johken",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              author: "Next one is blank author!",
+              name: "Understanding Of Divine 1",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              author: "",
+              name: "Dated; Myth of Creation",
+            }}
+          />
+        </Row>
         <Divider />
         <Title level={2}>Teothe</Title>
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/FishermenUprising.pdf",
-            name: "Fishermen Uprising",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/MujinaArmy.pdf",
-            name: "Mujina Army and the Serpents",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/FMK.pdf",
-            name: "Fuck, Marry, Kill",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/ClockworkDreams.pdf",
-            name: "Clockwork Dreams",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/AssassinationNarra.pdf",
-            name: "Assassination of Narra",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/WarriorsGuildRedArmy.pdf",
-            name: "Warrior's Guild & The Red Army",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/ShockCollection.pdf",
-            name: "What is Shock? Collection",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/AkashPoem.pdf",
-            name: "Poem on Akash",
-          }}
-        />
+        <Row>
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              name: "Fishermen Uprising",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              name: "Mujina Army and the Serpents",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              name: "Fuck, Marry, Kill",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              name: "Clockwork Dreams",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              name: "Assassination of Narra",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              name: "Warrior's Guild & The Red Army",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              name: "What is Shock? Collection",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              name: "Poem on Akash",
+            }}
+          />
+        </Row>
         <Divider />
         <Title level={2}>Fiction</Title>
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/HTTFBAPWDKTABBTATTKEBIRTDANAATIEWYANTLTMVCRN.pdf",
-            name: "HTTFBAPWDKTABBTATTKEBIRTDANAATIEWYANTLTMVCRN",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/Magnus.pdf",
-            name: "Rise of Magnus",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/AkinGoldStatue.pdf",
-            name: "Akin and the Golden Statue",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/LegendOfRerartif.pdf",
-            name: "Legend of Rerartif",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/SongOfCatastrophe.pdf",
-            name: "Song Of Catastrophe",
-          }}
-        />
+        <Row>
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              name: "HTTFBAPWDKTABBTATTKEBIRTDANAATIEWYANTLTMVCRN",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              name: "Rise of Magnus",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              name: "Akin and the Golden Statue",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              name: "Legend of Rerartif",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              name: "Song Of Catastrophe",
+            }}
+          />
+        </Row>
         <Divider />
         <Title level={2}>Epipremnum</Title>
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/Epipremnum.pdf",
-            name: "Epipremnum",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/MirrorOfErised.pdf",
-            name: "Mirror of Erised",
-          }}
-        />
+        <Row>
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              name: "Epipremnum",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              name: "Mirror of Erised",
+            }}
+          />
+        </Row>
         <Divider />
         <Title level={2}>Thaum</Title>
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/DufreneNotes.pdf",
-            name: "Dufrene's Notebook",
-          }}
-        />
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/JeremiahRecipes.pdf",
-            name: "Jeremiah's Cookbook",
-          }}
-        />
+        <Row>
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              name: "Dufrene's Notebook",
+            }}
+          />
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              name: "Jeremiah's Cookbook",
+            }}
+          />
+        </Row>
         <Divider />
         <Title level={2}>Choll</Title>
-        <GetBook
-          bookProps={{
-            url: "https://ozgurozbek.github.io/dnd/books/Choll.pdf",
-            name: "My Study of Choll",
-          }}
-        />
+        <Row>
+          <GetBook
+            bookProps={{
+              url: "teothe.com",
+              image: "https://picsum.photos/300/400",
+              name: "My Study of Choll",
+            }}
+          />
+        </Row>
       </Card>
     </section>
   );
