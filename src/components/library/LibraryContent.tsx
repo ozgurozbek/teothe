@@ -21,7 +21,7 @@ export default function LibraryContent() {
         <Row>
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/what-are-these-clovers",
               author: "John",
               name: "What are these clovers?",
             }}
