@@ -164,15 +164,17 @@ export default function Navbar() {
         />
       </Link>
 
-      {/* Hamburger İkon for mobil */}
+      {/* Hamburger icon for mobile */}
       <Button
+        icon={<MenuOutlined style={{ fontSize: "2rem", color: "white" }} />}
         type="text"
-        icon={<MenuOutlined style={{ fontSize: "1.5rem", color: "white" }} />}
+        size="large"
         onClick={toggleDrawer}
-        className="ml-auto lg:hidden"
+        className="ml-auto p-0 lg:hidden"
+        style={{ border:"none", backgroundColor:"#090d12" }}
       />
 
-      {/* Normal Menu for Desktop */}
+      {/* Normal menu for desktop */}
       <Menu
         onClick={(e) => setselectedKeys([e.key])}
         selectedKeys={selectedKeys}
@@ -190,7 +192,7 @@ export default function Navbar() {
         closable={true}
         onClose={toggleDrawer}
         open={isDrawerVisible}
-        bodyStyle={{ padding: 0 }}
+        styles={{ body: { padding:0, backgroundColor:"#090d12" }, header: { backgroundColor:"#630436"}}}
       >
         <Menu
           onClick={(e) => {
