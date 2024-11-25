@@ -25,7 +25,7 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Next.JS
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -34,11 +34,9 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## CodeQL
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+CodeQL is disabled because it is a hassle to go check them for every PR and Merge. If it is enabled, get MS-SarifVSCode.sarif-viewer extension for VSCode to see SARIF files.
 
 ## Prettier for VSCODE
 
@@ -65,3 +63,7 @@ Install Prettier, F1 > settings.json > User Settings and paste the following:
 ```
 
 After that, F1 again and type `Format` in the search area. Then, tick `Editor: Format on Save`.
+
+## Tests
+
+Testing can be done by running `npm run test` and results could be checked in terminal. Automatically, these tests are also being run and will prevent builds from passing if tests fail. You are encouraged to write more tests under `/src/__tests__`.
