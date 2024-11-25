@@ -2,6 +2,7 @@
 import GetCrumbs from "@/components/NavigationCrumb";
 import GetBook from "@/components/library/GetBook";
 import { Typography, Card, Divider, Row } from "antd";
+import SimpleContent from "../SimpleCon";
 const { Title } = Typography;
 
 /**
@@ -16,7 +17,11 @@ export default function LibraryContent() {
     <section>
       <GetCrumbs path={"Teothe,Library"} />
       <Card bordered={false} className="w-full h-full">
-        <Title>Library</Title>
+        <SimpleContent contentProps={{
+          title: "Library",
+          text: ["SEO friendly text describing the massive list of libraries. This existing violates the design document but nothing to do there, we need it."]
+        }} />
+        <Divider />
         <Title level={2}>General</Title>
         <Row>
           <GetBook
