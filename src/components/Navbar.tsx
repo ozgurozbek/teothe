@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { Menu, Image } from "antd";
+import { Menu, Image, Drawer, Button } from "antd";
+import { MenuOutlined } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import NextImage from "next/image"; //Because its not default I can rename my import. So good.
 import Link from "next/link";
@@ -107,69 +108,103 @@ const loadPageURL = (menuItem: any) => {
  */
 export default function Navbar() {
   const [selectedKeys, setselectedKeys] = useState<Array<string>>([]);
+  const [isDrawerVisible, setIsDrawerVisible] = useState(false);
 
   useEffect(() => {
     setselectedKeys([loadPageURL(window.location.pathname.substring(1))]);
   }, []); // Empty dependency to make it run once
 
+  const toggleDrawer = () => {
+    setIsDrawerVisible(!isDrawerVisible);
+  };
+
+  const menuItems: MenuItem[] = [
+    getItem("Common Lore", "1", "common-lore", getIcon("CommonLore")),
+    getItem("Deities", "3", "deities", getIcon("Deities")),
+    getItem("Species", "4", "species", getIcon("Species")),
+    getItem("Library", "6", "library", getIcon("Library")),
+    getItem("Tables", "5", "tables", getIcon("Tables")),
+    getItem("Map Overlay", "10", "map-overlay", getIcon("MapOverlay")),
+    getItem("Calendar", "12", "calendar", getIcon("Calendar")),
+    getItem("DM's Works", "-2", undefined, getIcon("DMworks"), undefined, [
+      getItem("Planes", "2", "planes", getIcon("Locations")),
+      getItem("Tools", "8", "tools", getIcon("Tools")),
+      getItem("Pricing", "7", "pricing", getIcon("Pricing")),
+      getItem("Homebrews", "9", "homebrews", getIcon("Homebrews")),
+      getItem("Map Legend", "11", "map-legend", getIcon("MapLegend")),
+      getItem("Languages", "13", "languages", getIcon("Languages")),
+      getItem(
+        "Calculate Trade",
+        "17",
+        "calculate-trade",
+        getIcon("ResourceValueCalculator")
+      ),
+      getItem("Achievements", "16", "achievements", getIcon("Achievements")),
+    ]),
+    getItem("Generators", "-1", undefined, getIcon("Generators"), undefined, [
+      getItem(
+        "Quest Idea",
+        "14",
+        "generators/quest-idea",
+        getIcon("QuickIdea")
+      ),
+      getItem("Quick NPC", "15", "generators/quick-npc", getIcon("QuickNPC")),
+    ]),
+  ];
+
   return (
-    <div className="bg-[#090d12] w-full inline-flex h-16">
-      <div className="flex w-full">
-        <Link
-          href={"/"}
-          onClick={() => {
-            setselectedKeys([]);
-          }}
-        >
-          <Image
-            src="/teothe3K.png"
-            alt=" Teothe Icon"
-            style={{
-              width: "120px",
-              padding: "4px",
-              marginTop: "0.5rem",
-            }}
-            preview={false}
-          />
-        </Link>
+    <div className="bg-[#090d12] w-full h-16 flex items-center px-4">
+      {/* Logo */}
+      <Link href={"/"} onClick={() => setselectedKeys([])}>
+        <Image
+          src="/teothe3K.png"
+          alt="Teothe Icon"
+          style={{ width: "120px", padding: "4px", marginTop: "0.5rem" }}
+          preview={false}
+        />
+      </Link>
+
+      {/* Hamburger icon for mobile */}
+      <Button
+        icon={<MenuOutlined style={{ fontSize: "2rem", color: "white" }} />}
+        type="text"
+        size="large"
+        onClick={toggleDrawer}
+        className="ml-auto p-0 lg:hidden"
+        style={{ border:"none", backgroundColor:"#090d12" }}
+      />
+
+      {/* Normal menu for desktop */}
+      <Menu
+        onClick={(e) => setselectedKeys([e.key])}
+        selectedKeys={selectedKeys}
+        theme="dark"
+        mode="horizontal"
+        className="hidden lg:flex flex-auto"
+        style={{ fontSize: "1rem", userSelect: "none" }}
+        items={menuItems}
+      />
+
+      {/* Drawer for Mobile Menu */}
+      <Drawer
+        title="Menu"
+        placement="right"
+        closable={true}
+        onClose={toggleDrawer}
+        open={isDrawerVisible}
+        styles={{ body: { padding:0, backgroundColor:"#090d12" }, header: { backgroundColor:"#630436"}}}
+      >
         <Menu
           onClick={(e) => {
             setselectedKeys([e.key]);
+            setIsDrawerVisible(false);
           }}
           selectedKeys={selectedKeys}
+          mode="inline"
           theme="dark"
-          mode="horizontal"
-          style={{
-            flex: "auto",
-            minWidth: 0,
-            fontSize: "1rem",
-            userSelect: "none",
-          }}
-          items={[
-            getItem("Common Lore", "1", "common-lore", getIcon("CommonLore")),
-            getItem("Deities", "3", "deities", getIcon("Deities")),
-            getItem("Species", "4", "species", getIcon("Species")),
-            getItem("Library", "6", "library", getIcon("Library")),
-            getItem("Tables", "5", "tables", getIcon("Tables")),
-            getItem("Map Overlay", "10", "map-overlay", getIcon("MapOverlay")),
-            getItem("Calendar", "12", "calendar", getIcon("Calendar")),
-            getItem("DM's Works", "-2", undefined, getIcon("DMworks"), undefined, [ //undefined for href & Element
-              getItem("Planes", "2", "planes", getIcon("Locations")),
-              getItem("Tools", "8", "tools", getIcon("Tools")),
-              getItem("Pricing", "7", "pricing", getIcon("Pricing")),
-              getItem("Homebrews", "9", "homebrews", getIcon("Homebrews")),
-              getItem("Map Legend", "11", "map-legend", getIcon("MapLegend")),
-              getItem("Languages", "13", "languages", getIcon("Languages")),
-              getItem("Calculate Trade", "17", "calculate-trade", getIcon("ResourceValueCalculator")),
-              getItem("Achievements", "16","achievements",getIcon("Achievements")),
-            ]),
-            getItem("Generators", "-1", undefined, getIcon("Generators"), undefined, [ //undefined for href & Element
-              getItem("Quest Idea", "14", "generators/quest-idea", getIcon("QuickIdea")), //undefined for Icon
-              getItem("Quick NPC", "15", "generators/quick-npc", getIcon("QuickNPC")), //undefined for Icon
-            ]),
-          ]}
+          items={menuItems}
         />
-      </div>
+      </Drawer>
     </div>
   );
 }

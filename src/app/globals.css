@@ -87,7 +87,7 @@ h3 {
 .ant-card {
   background-color: rgba(102, 102, 102, 0.13) !important;
 }
-.ant-btn,
+.ant-btn-default,
 .ant-input,
 .ant-input-number {
   color: white !important;
