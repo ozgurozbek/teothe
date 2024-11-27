@@ -34,6 +34,20 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
+## UI
+
+This project uses Ant Design (AntD) for UI components and styling. 
+
+[Ant Design Documentation](https://ant.design/) - learn about Antd features.
+
+Also this project integrates AntD Drawer component for mobile, if you are new to AntD, you can refer to the documentation about is usage. 
+
+[Drawer Documentation](https://ant.design/components/drawer)
+
+Tip with AntD, if you encounter layout or styling issues, ensure that the CSS is properly imported in globals.css or your component-specific styles.
+
+If the styling does not work as intended, check if there are conflicting styles in globals.css or other global overrides that might be blocking or overriding the AntD styles. 
+
 ## CodeQL
 
 CodeQL is disabled because it is a hassle to go check them for every PR and Merge. If it is enabled, get MS-SarifVSCode.sarif-viewer extension for VSCode to see SARIF files.
