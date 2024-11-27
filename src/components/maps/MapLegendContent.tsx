@@ -66,10 +66,10 @@ export default function MapLegendContent() {
         />
         {GetMapLegend()}
         <br />
-        <Space>
+        <Space size={[8,16]} wrap>
           <Button target="_blank" href="./Trading_Doc.pdf">
             <span>
-              Teothe Map Resources Supplement Document <DoubleRightOutlined />
+              Teothe Map Resources Supplement <DoubleRightOutlined />
             </span>
           </Button>
           <Button href="/calculate-trade">
