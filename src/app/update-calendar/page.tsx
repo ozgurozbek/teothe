@@ -27,7 +27,7 @@ export default function CalendarNoteUpdatePage() {
   const [yearCount, setYearCount] = useState<number>(27);
   const [dayNumber, setDayNumber] = useState(0);
   const [textInputText, setTextInputText] = useState<string>("");
-  const [userName, setUserName] = useState<string>("");
+  const [userSecret, setUserSecret] = useState<string>("");
 
   const handleMonthClick: MenuProps["onClick"] = (e) => {
     setMonthName(e.key);
@@ -91,7 +91,7 @@ export default function CalendarNoteUpdatePage() {
 
   const handleSubmit = async () => {
     if (
-      userName.replaceAll(" ", "") != "" &&
+      userSecret.replaceAll(" ", "") != "" &&
       tableNo != "Select Table" &&
       yearCount &&
       monthName != "" &&
@@ -100,14 +100,14 @@ export default function CalendarNoteUpdatePage() {
       dayNumber <= 48 &&
       textInputText
     ) {
-      const endpoint = `https://teothe.pythonanywhere.com/setSessionNotes?table=${tableNo}&year=${yearCount}&month=${monthName}&date=${dayNumber}&entry=${encodeURIComponent(
-        textInputText.replaceAll(" ", "_") + "_---_" + userName //_---_ is being split in the FE when fetching from BE on main Calendar page to generate titles on hover.
+      const endpoint = `https://teothe.pythonanywhere.com/setSessionNotes?key=${userSecret}&table=${tableNo}&year=${yearCount}&month=${monthName}&date=${dayNumber}&entry=${encodeURIComponent(
+        textInputText.replaceAll(" ", "_") + "_---_" + userSecret //_---_ is being split in the FE when fetching from BE on main Calendar page to generate titles on hover. userSecret will validate and then do the DB operation.
       )}`;
 
       try {
         const response = await fetch(endpoint);
         if (response.ok) {
-          alert("Data updated successfully");
+          alert("Communicated successfully");
         } else {
           alert("Failed to update data");
         }
@@ -186,8 +186,8 @@ export default function CalendarNoteUpdatePage() {
         <Space size={4} wrap={true}>
           <Input
             addonBefore="User"
-            placeholder="Your Name"
-            onChange={(e) => setUserName(e.target.value)}
+            placeholder="Your Secret"
+            onChange={(e) => setUserSecret(e.target.value)}
           />
           <Dropdown menu={tableProps}>
             <Button className="w-full">
