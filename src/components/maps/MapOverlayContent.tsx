@@ -266,7 +266,8 @@ export default function MapOverlayContent() {
             id={"Travel"}
           />
           <Image
-            rootClassName="relative -z-0"
+            data-testid="map-overlay-test"
+            rootClassName="relative -z-0 "
             preview={false}
             draggable={false}
             src={"./Maps/Base.png"}
