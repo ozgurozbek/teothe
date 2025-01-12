@@ -27,31 +27,30 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/what-are-these-clovers",
-              author: "John",
+              author: "Idea by Sera Krautek",
               name: "What are these clovers?",
             }}
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
-              image: "https://picsum.photos/300/400",
-              author: "Jane",
+              url: "library/we-are-pathetic-the-helpless-in-the-eyes-of-the-divine",
+              author: "Sera Krautek Adapted from Dwarvish",
               name: "We are Pathetic, the Helpless in the eyes of the Divine",
             }}
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
-              image: "https://picsum.photos/300/400",
-              author: "Margaret",
+              url: "library/legend-of-w-steram",
+              image: "/Books/legend-of-w-steram.jpeg",
+              author: "From Jig Sunny's Dictation",
               name: "Literature review: Legend of W. Steram",
             }}
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
-              image: "https://picsum.photos/300/400",
-              author: "Chris",
+              url: "library/divine-tales-1",
+              image: "/Books/divine-tales-1.jpg",
+              author: "Unknown, Altered and Adapted",
               name: "Divine Tales 1",
             }}
           />

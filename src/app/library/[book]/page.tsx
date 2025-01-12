@@ -5,6 +5,9 @@ import { ComponentType } from 'react';
 // Define a mapping of book names to their corresponding components
 const booksComponents: Record<string, ComponentType<{}>> = {
   "what-are-these-clovers": dynamic(() => import('@/components/library/books/what-are-these-clovers')),
+  "we-are-pathetic-the-helpless-in-the-eyes-of-the-divine": dynamic(() => import('@/components/library/books/we-are-pathetic-the-helpless-in-the-eyes-of-the-divine')),
+  "legend-of-w-steram": dynamic(() => import('@/components/library/books/legend-of-w-steram')),
+  "divine-tales-1": dynamic(() => import('@/components/library/books/divine-tales-1')),
   // Add additional book components here
 };
 
@@ -23,6 +26,18 @@ export const generateMetadata = async ({ params }: { params: { book: string } })
       title: "What Are These Clovers",
       description: "A book detailing the odd clovers making or ruining the day of adventurers.",
     },
+    "we-are-pathetic-the-helpless-in-the-eyes-of-the-divine": {
+      title: "We Are Pathetic, The Helpless in the Eyes of The Divine",
+      description: "This book explores the human condition, our relationship with divinity and authority, and advocates for communal sharing, mutual aid, and equality as a path to fulfillment and societal harmony.",
+    },
+    "legend-of-w-steram": {
+      title: "Legend of W. Steram",
+      description: "This book critiques the legend of Steram, analyzing his heroic journey to seal ancient magical gates while exploring Teothe, themes of flawed heroism, destiny, and the cultural significance of myth in shaping mortal and immortal narratives.",
+    },
+    "divine-tales-1": {
+      title: "Divine Tales 1",
+      description: "A collection of tomes detailing the stories of certain divinity.",
+    },
     // Add metadata for other books as needed
   };
 
@@ -32,7 +47,7 @@ export const generateMetadata = async ({ params }: { params: { book: string } })
 
 // This function generates static paths at build time
 export const generateStaticParams = async () => {
-  const booksList = ['what-are-these-clovers']; // Add all dynamic book names here
+  const booksList = ['what-are-these-clovers','we-are-pathetic-the-helpless-in-the-eyes-of-the-divine','legend-of-w-steram','divine-tales-1']; // Add all dynamic book names here
 
   return booksList.map(book => ({
     book,

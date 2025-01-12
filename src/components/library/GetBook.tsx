@@ -19,11 +19,11 @@ export default function GetBook({
           <div style={{backgroundImage: `url(${bookProps.image})`}} className="w-full h-[20rem] bg-cover bg-center">
             <div className="w-full h-full bg-gradient-to-b from-slate-800 p-4">
               <p className="font-semibold break-words">{bookProps.name}</p>
-              <p className="truncate"><i>{bookProps.author}</i></p>
+              <p><i>{bookProps.author}</i></p>
             </div>
           </div>
           <p className="text-center font-semibold break-words">{bookProps.name}</p>
-          <p className="text-center truncate"><i>{bookProps.author}</i></p>
+          <p className="text-center"><i>{bookProps.author}</i></p>
         </section>
       </a>
     </Col>
