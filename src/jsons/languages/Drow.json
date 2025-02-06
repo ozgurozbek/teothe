@@ -1,0 +1,1136 @@
+[
+  {
+    "homebrew": "False",
+    "translation": "These appear to be the words to a charm spell.",
+    "language": "Drow",
+    "word": "Angardh xorr feleal"
+  },
+  {
+    "homebrew": "False",
+    "translation": "translation of a term used to refer to a surface elf.",
+    "language": "Drow",
+    "word": "Faerie"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to cut or Catti-brie's sword Khazid'hea.",
+    "language": "Drow",
+    "word": "Khazid'hea"
+  },
+  {
+    "homebrew": "False",
+    "translation": "whip or lash",
+    "language": "Drow",
+    "word": "Neirt"
+  },
+  {
+    "homebrew": "False",
+    "translation": "whipping or lashing",
+    "language": "Drow",
+    "word": "Neirtarr"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a blasphemous jest meaning when Lolth giggles.",
+    "language": "Drow",
+    "word": "Phlar Lolth ssinssrickla"
+  },
+  {
+    "homebrew": "False",
+    "translation": "the Goddess (Lolth).",
+    "language": "Drow",
+    "word": "Quarvalsharess"
+  },
+  {
+    "homebrew": "False",
+    "translation": "chosen one (High Drow). The word comes from yorn, meaning servant of the goddess, and orthae, meaning sacred.",
+    "language": "Drow",
+    "word": "Yor'thae"
+  },
+  {
+    "homebrew": "False",
+    "translation": "ally, not-enemy.",
+    "language": "Drow",
+    "word": "abban"
+  },
+  {
+    "homebrew": "False",
+    "translation": "trusted friend or trusted comrade. Largely an oxymoron based in cynicism since there are no real concepts of the word trust or friend in drow society even among family members.",
+    "language": "Drow",
+    "word": "abbil"
+  },
+  {
+    "homebrew": "False",
+    "translation": "group.",
+    "language": "Drow",
+    "word": "akh"
+  },
+  {
+    "homebrew": "False",
+    "translation": "superior.",
+    "language": "Drow",
+    "word": "alur"
+  },
+  {
+    "homebrew": "False",
+    "translation": "unselfish, deep love.",
+    "language": "Drow",
+    "word": "alurlssrin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "in front.",
+    "language": "Drow",
+    "word": "alust"
+  },
+  {
+    "homebrew": "False",
+    "translation": "I/we leave you.",
+    "language": "Drow",
+    "word": "aluve"
+  },
+  {
+    "homebrew": "False",
+    "translation": "vengeance",
+    "language": "Drow",
+    "word": "araj"
+  },
+  {
+    "homebrew": "False",
+    "translation": "ambiguous word that means either likewise or of course. It can also mean as you wish.",
+    "language": "Drow",
+    "word": "asanque"
+  },
+  {
+    "homebrew": "False",
+    "translation": "doomed.",
+    "language": "Drow",
+    "word": "avinsin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a rare type of drow bardic magic.",
+    "language": "Drow",
+    "word": "bae'qeshel"
+  },
+  {
+    "homebrew": "False",
+    "translation": "about or around.",
+    "language": "Drow",
+    "word": "bauth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to dodge.",
+    "language": "Drow",
+    "word": "bautha"
+  },
+  {
+    "homebrew": "False",
+    "translation": "wealth, coinage or treasure.",
+    "language": "Drow",
+    "word": "belaern"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to give.",
+    "language": "Drow",
+    "word": "belbau"
+  },
+  {
+    "homebrew": "False",
+    "translation": "gift.",
+    "language": "Drow",
+    "word": "belbol"
+  },
+  {
+    "homebrew": "False",
+    "translation": "term to describe something mysterious or intriguing. It indicates an unidentified item.",
+    "language": "Drow",
+    "word": "bol"
+  },
+  {
+    "homebrew": "False",
+    "translation": "surprise; plural is brorna.",
+    "language": "Drow",
+    "word": "brorn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "food.",
+    "language": "Drow",
+    "word": "caballin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "path or known way.",
+    "language": "Drow",
+    "word": "colbauth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "non-drow.",
+    "language": "Drow",
+    "word": "colnbluth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "high ones.",
+    "language": "Drow",
+    "word": "crinti"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a calamari-based meal.",
+    "language": "Drow",
+    "word": "crintishik"
+  },
+  {
+    "homebrew": "False",
+    "translation": "from.",
+    "language": "Drow",
+    "word": "dal"
+  },
+  {
+    "homebrew": "False",
+    "translation": "surface elves, traitors.",
+    "language": "Drow",
+    "word": "darthiir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "of.",
+    "language": "Drow",
+    "word": "del"
+  },
+  {
+    "homebrew": "False",
+    "translation": "outcast.",
+    "language": "Drow",
+    "word": "dobluth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "you.",
+    "language": "Drow",
+    "word": "dos"
+  },
+  {
+    "homebrew": "False",
+    "translation": "your, yours.",
+    "language": "Drow",
+    "word": "dosst"
+  },
+  {
+    "homebrew": "False",
+    "translation": "yourself.",
+    "language": "Drow",
+    "word": "dosstan"
+  },
+  {
+    "homebrew": "False",
+    "translation": "two.",
+    "language": "Drow",
+    "word": "draa"
+  },
+  {
+    "homebrew": "False",
+    "translation": "second.",
+    "language": "Drow",
+    "word": "draada"
+  },
+  {
+    "homebrew": "False",
+    "translation": "deep bat.",
+    "language": "Drow",
+    "word": "draghazar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "life, to be alive.",
+    "language": "Drow",
+    "word": "dro"
+  },
+  {
+    "homebrew": "False",
+    "translation": "unholy executioner.",
+    "language": "Drow",
+    "word": "duk-tak"
+  },
+  {
+    "homebrew": "False",
+    "translation": "secret advisor.",
+    "language": "Drow",
+    "word": "duvall"
+  },
+  {
+    "homebrew": "False",
+    "translation": "destiny, the will of Lolth.",
+    "language": "Drow",
+    "word": "elamshin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "usual or traditional.",
+    "language": "Drow",
+    "word": "elend"
+  },
+  {
+    "homebrew": "False",
+    "translation": "continue, continued, continuing or enduring.",
+    "language": "Drow",
+    "word": "elendar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "death, destroy, kill or slay.",
+    "language": "Drow",
+    "word": "elgg"
+  },
+  {
+    "homebrew": "False",
+    "translation": "the destroyer.",
+    "language": "Drow",
+    "word": "elgg-hor"
+  },
+  {
+    "homebrew": "False",
+    "translation": "death.",
+    "language": "Drow",
+    "word": "elgghinn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "magic.",
+    "language": "Drow",
+    "word": "faer"
+  },
+  {
+    "homebrew": "False",
+    "translation": "magical item.",
+    "language": "Drow",
+    "word": "faerbol"
+  },
+  {
+    "homebrew": "False",
+    "translation": "magical.",
+    "language": "Drow",
+    "word": "faerl"
+  },
+  {
+    "homebrew": "False",
+    "translation": "magic worker or wizard",
+    "language": "Drow",
+    "word": "faern"
+  },
+  {
+    "homebrew": "False",
+    "translation": "goblin; plural is goln.",
+    "language": "Drow",
+    "word": "gol"
+  },
+  {
+    "homebrew": "False",
+    "translation": "ruse, trap or trick.",
+    "language": "Drow",
+    "word": "golhyrr"
+  },
+  {
+    "homebrew": "False",
+    "translation": "The Dream Trap, strange nightmare dreams given out by the giant fungus Araumycos (post-Spellplague) involving the comfort of the mass and the hopeless chaos of individuality.",
+    "language": "Drow",
+    "word": "golhyrrl' fhaazht"
+  },
+  {
+    "homebrew": "False",
+    "translation": "down, under or below.",
+    "language": "Drow",
+    "word": "harl"
+  },
+  {
+    "homebrew": "False",
+    "translation": "kneel.",
+    "language": "Drow",
+    "word": "harl'il'cik"
+  },
+  {
+    "homebrew": "False",
+    "translation": "illithid; plural is haszakkin.",
+    "language": "Drow",
+    "word": "haszak"
+  },
+  {
+    "homebrew": "False",
+    "translation": "bravery, calm, clear thinking or good behaviour.",
+    "language": "Drow",
+    "word": "honglath"
+  },
+  {
+    "homebrew": "False",
+    "translation": "offal, excrement Often used when referring to humans as well as other non-drow species. Can be used as an insult.",
+    "language": "Drow",
+    "word": "iblith"
+  },
+  {
+    "homebrew": "False",
+    "translation": "mother.",
+    "language": "Drow",
+    "word": "ilhar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "matron; plural is ilharressen.",
+    "language": "Drow",
+    "word": "ilharess"
+  },
+  {
+    "homebrew": "False",
+    "translation": "patron.",
+    "language": "Drow",
+    "word": "ilharn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "aim, goal or hoped for event.",
+    "language": "Drow",
+    "word": "ilindith"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a formal dance sometimes involving costumes.",
+    "language": "Drow",
+    "word": "illiyitrii"
+  },
+  {
+    "homebrew": "False",
+    "translation": "plan, scheme or strategem.",
+    "language": "Drow",
+    "word": "inth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "agreement or treaty.",
+    "language": "Drow",
+    "word": "inthigg"
+  },
+  {
+    "homebrew": "False",
+    "translation": "as.",
+    "language": "Drow",
+    "word": "izil"
+  },
+  {
+    "homebrew": "False",
+    "translation": "master.",
+    "language": "Drow",
+    "word": "jabbuk"
+  },
+  {
+    "homebrew": "False",
+    "translation": "all.",
+    "language": "Drow",
+    "word": "jal"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to play; to play a game, or have other amusement or fun.",
+    "language": "Drow",
+    "word": "jivvin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "torture until death, apparently a cynical distortion of the term for fun.",
+    "language": "Drow",
+    "word": "jivvin quui'elghinn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "my trusted comrade.",
+    "language": "Drow",
+    "word": "khal'abbil"
+  },
+  {
+    "homebrew": "False",
+    "translation": "meaning trust or a drow game called Khaless. Because trust is so lacking in drow society, it is often used in an ironic sense to mean misplaced trust.",
+    "language": "Drow",
+    "word": "khaless"
+  },
+  {
+    "homebrew": "False",
+    "translation": "trust no one more than yourself",
+    "language": "Drow",
+    "word": "khaless nau uss mzild taga dosstan"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to pull the legs off a spider, an arcane phrase and idiom.",
+    "language": "Drow",
+    "word": "kolsen'shea orbb"
+  },
+  {
+    "homebrew": "False",
+    "translation": "blockage, hitch or snag.",
+    "language": "Drow",
+    "word": "kulg"
+  },
+  {
+    "homebrew": "False",
+    "translation": "deliberate rampart or shield.",
+    "language": "Drow",
+    "word": "kulggen"
+  },
+  {
+    "homebrew": "False",
+    "translation": "alert/alerty, careful/carefully, wary/warily.",
+    "language": "Drow",
+    "word": "kyone"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to watch.",
+    "language": "Drow",
+    "word": "kyorl"
+  },
+  {
+    "homebrew": "False",
+    "translation": "guarding, waiting, watching.",
+    "language": "Drow",
+    "word": "kyorlin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "term used when referring to a spider that the speaker considers to be dangerous; plural is lhorbbyth",
+    "language": "Drow",
+    "word": "lhorb"
+  },
+  {
+    "homebrew": "False",
+    "translation": "the.",
+    "language": "Drow",
+    "word": "lil"
+  },
+  {
+    "homebrew": "False",
+    "translation": "three.",
+    "language": "Drow",
+    "word": "llar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "third.",
+    "language": "Drow",
+    "word": "llarnbuss"
+  },
+  {
+    "homebrew": "False",
+    "translation": "and.",
+    "language": "Drow",
+    "word": "lueth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "act of love (sacrificial or noble deed).",
+    "language": "Drow",
+    "word": "lurraggath"
+  },
+  {
+    "homebrew": "False",
+    "translation": "cast, hurl or throw.",
+    "language": "Drow",
+    "word": "luth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "alone, apart.",
+    "language": "Drow",
+    "word": "maglust"
+  },
+  {
+    "homebrew": "False",
+    "translation": "honored or honored one.",
+    "language": "Drow",
+    "word": "malla"
+  },
+  {
+    "homebrew": "False",
+    "translation": "guide, key or inspiration.",
+    "language": "Drow",
+    "word": "mrimm"
+  },
+  {
+    "homebrew": "False",
+    "translation": "more.",
+    "language": "Drow",
+    "word": "mzild"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a/an.",
+    "language": "Drow",
+    "word": "natha"
+  },
+  {
+    "homebrew": "False",
+    "translation": "no.",
+    "language": "Drow",
+    "word": "nau"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a frenzied dance competition favored in Menzoberranzan.",
+    "language": "Drow",
+    "word": "neideirra"
+  },
+  {
+    "homebrew": "False",
+    "translation": "they, them, their, theirs.",
+    "language": "Drow",
+    "word": "nind"
+  },
+  {
+    "homebrew": "False",
+    "translation": "those.",
+    "language": "Drow",
+    "word": "nindyn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "lost, unknown or wanderer.",
+    "language": "Drow",
+    "word": "noamuth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "opening, door.",
+    "language": "Drow",
+    "word": "obsul"
+  },
+  {
+    "homebrew": "False",
+    "translation": "enemy.",
+    "language": "Drow",
+    "word": "ogglin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "stealth.",
+    "language": "Drow",
+    "word": "olist"
+  },
+  {
+    "homebrew": "False",
+    "translation": "darkness.",
+    "language": "Drow",
+    "word": "oloth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "spider; plural is orbb",
+    "language": "Drow",
+    "word": "orb"
+  },
+  {
+    "homebrew": "False",
+    "translation": "spiderweb.",
+    "language": "Drow",
+    "word": "orbbcress"
+  },
+  {
+    "homebrew": "False",
+    "translation": "sacred.",
+    "language": "Drow",
+    "word": "orthae"
+  },
+  {
+    "homebrew": "False",
+    "translation": "male playmate who is not the house patron.",
+    "language": "Drow",
+    "word": "parzdiamo"
+  },
+  {
+    "homebrew": "False",
+    "translation": "scapegoat.",
+    "language": "Drow",
+    "word": "pera'dene"
+  },
+  {
+    "homebrew": "False",
+    "translation": "battle-marker or grave.",
+    "language": "Drow",
+    "word": "phalar-"
+  },
+  {
+    "homebrew": "False",
+    "translation": "non-intelligent monster.",
+    "language": "Drow",
+    "word": "phindar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "on, upon.",
+    "language": "Drow",
+    "word": "pholar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "are.",
+    "language": "Drow",
+    "word": "phuul"
+  },
+  {
+    "homebrew": "False",
+    "translation": "take or to seize.",
+    "language": "Drow",
+    "word": "plynn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a small, fierce fish with sharp teeth and powerful jaws; a treasured delicacy in Menzoberranzan.",
+    "language": "Drow",
+    "word": "pyrimo"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a type of drow wine made from fermented mushrooms.",
+    "language": "Drow",
+    "word": "qilovestualt"
+  },
+  {
+    "homebrew": "False",
+    "translation": "house.",
+    "language": "Drow",
+    "word": "qu'ellar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "blood.",
+    "language": "Drow",
+    "word": "qu'lith"
+  },
+  {
+    "homebrew": "False",
+    "translation": "guts.",
+    "language": "Drow",
+    "word": "qu'uente"
+  },
+  {
+    "homebrew": "False",
+    "translation": "argument or disagreement.",
+    "language": "Drow",
+    "word": "qual'laelay"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to command, used as part of an order.",
+    "language": "Drow",
+    "word": "quarth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "commanded or ordered.",
+    "language": "Drow",
+    "word": "quarthen"
+  },
+  {
+    "homebrew": "False",
+    "translation": "discover, find or uncover.",
+    "language": "Drow",
+    "word": "ragar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "act of lovemaking.",
+    "language": "Drow",
+    "word": "raggath"
+  },
+  {
+    "homebrew": "False",
+    "translation": "back.",
+    "language": "Drow",
+    "word": "rath"
+  },
+  {
+    "homebrew": "False",
+    "translation": "backs.",
+    "language": "Drow",
+    "word": "ratha"
+  },
+  {
+    "homebrew": "False",
+    "translation": "behind.",
+    "language": "Drow",
+    "word": "rathrae"
+  },
+  {
+    "homebrew": "False",
+    "translation": "human; plural is rivvin.",
+    "language": "Drow",
+    "word": "rivvil"
+  },
+  {
+    "homebrew": "False",
+    "translation": "skill at arms.",
+    "language": "Drow",
+    "word": "sargh"
+  },
+  {
+    "homebrew": "False",
+    "translation": "drow warrior.",
+    "language": "Drow",
+    "word": "sargtlin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "beware or warning.",
+    "language": "Drow",
+    "word": "sarn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a game popular among drow.",
+    "language": "Drow",
+    "word": "sava"
+  },
+  {
+    "homebrew": "False",
+    "translation": "final, last.",
+    "language": "Drow",
+    "word": "shavrak"
+  },
+  {
+    "homebrew": "False",
+    "translation": "lower ones.",
+    "language": "Drow",
+    "word": "shebali"
+  },
+  {
+    "homebrew": "False",
+    "translation": "danger.",
+    "language": "Drow",
+    "word": "sreen"
+  },
+  {
+    "homebrew": "False",
+    "translation": "physical lust or selfish greed; passion, longing.",
+    "language": "Drow",
+    "word": "ssinssrigg"
+  },
+  {
+    "homebrew": "False",
+    "translation": "brightness or light.",
+    "language": "Drow",
+    "word": "ssussun"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to die in the service of Lolth. or suicide.",
+    "language": "Drow",
+    "word": "streea"
+  },
+  {
+    "homebrew": "False",
+    "translation": "fearless(ness) or reckless(ness).",
+    "language": "Drow",
+    "word": "streeaka"
+  },
+  {
+    "homebrew": "False",
+    "translation": "phrase meaning mad dragon.",
+    "language": "Drow",
+    "word": "streeaka droc'uh"
+  },
+  {
+    "homebrew": "False",
+    "translation": "consider or to think.",
+    "language": "Drow",
+    "word": "talinth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "council or meeting.",
+    "language": "Drow",
+    "word": "talthalra"
+  },
+  {
+    "homebrew": "False",
+    "translation": "war.",
+    "language": "Drow",
+    "word": "thalack"
+  },
+  {
+    "homebrew": "False",
+    "translation": "attack from afar or raid.",
+    "language": "Drow",
+    "word": "thalackz'hind"
+  },
+  {
+    "homebrew": "False",
+    "translation": "encounter or meet.",
+    "language": "Drow",
+    "word": "thalra"
+  },
+  {
+    "homebrew": "False",
+    "translation": "promise of a fungal pie. It referred to something used to 'sweeten the deal'; fungal pie was a delicious delicacy.",
+    "language": "Drow",
+    "word": "tinguin lal'o shrome'cak"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to be.",
+    "language": "Drow",
+    "word": "tlu"
+  },
+  {
+    "homebrew": "False",
+    "translation": "both.",
+    "language": "Drow",
+    "word": "tuth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "destiny.",
+    "language": "Drow",
+    "word": "ul-Ilindith"
+  },
+  {
+    "homebrew": "False",
+    "translation": "liar.",
+    "language": "Drow",
+    "word": "uln'hyrr"
+  },
+  {
+    "homebrew": "False",
+    "translation": "conqueror, highest or supreme.",
+    "language": "Drow",
+    "word": "ultrin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "phrase meaning supreme warrior.",
+    "language": "Drow",
+    "word": "ultrin sargtlin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "supreme goddess (Lolth).",
+    "language": "Drow",
+    "word": "ultrine"
+  },
+  {
+    "homebrew": "False",
+    "translation": "conquering, victory, to win or prevail.",
+    "language": "Drow",
+    "word": "ultrinnan"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to.",
+    "language": "Drow",
+    "word": "ulu"
+  },
+  {
+    "homebrew": "False",
+    "translation": "one.",
+    "language": "Drow",
+    "word": "uss"
+  },
+  {
+    "homebrew": "False",
+    "translation": "I, me, or anything referring to oneself.",
+    "language": "Drow",
+    "word": "usstan"
+  },
+  {
+    "homebrew": "False",
+    "translation": "you arrogant fool.",
+    "language": "Drow",
+    "word": "usstan'sargh wael"
+  },
+  {
+    "homebrew": "False",
+    "translation": "first.",
+    "language": "Drow",
+    "word": "ust"
+  },
+  {
+    "homebrew": "False",
+    "translation": "queen. Used as a title to refer to Lolth or the most powerful matron mothers.",
+    "language": "Drow",
+    "word": "valsharess"
+  },
+  {
+    "homebrew": "False",
+    "translation": "who.",
+    "language": "Drow",
+    "word": "vel'uss"
+  },
+  {
+    "homebrew": "False",
+    "translation": "concealment or shadows. This is also a common, androgynous name.",
+    "language": "Drow",
+    "word": "veldrin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "hidden or invisible.",
+    "language": "Drow",
+    "word": "velkyn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "blade.",
+    "language": "Drow",
+    "word": "velve"
+  },
+  {
+    "homebrew": "False",
+    "translation": "lullaby (songs priestesses sang to young students at the Academy as they went into Reverie).",
+    "language": "Drow",
+    "word": "vidrinath"
+  },
+  {
+    "homebrew": "False",
+    "translation": "fool.",
+    "language": "Drow",
+    "word": "wael"
+  },
+  {
+    "homebrew": "False",
+    "translation": "foolish or unaware/unwary.",
+    "language": "Drow",
+    "word": "waela"
+  },
+  {
+    "homebrew": "False",
+    "translation": "in.",
+    "language": "Drow",
+    "word": "wun"
+  },
+  {
+    "homebrew": "False",
+    "translation": "among, into or within.",
+    "language": "Drow",
+    "word": "wund"
+  },
+  {
+    "homebrew": "False",
+    "translation": "may, might, perhaps.",
+    "language": "Drow",
+    "word": "xal"
+  },
+  {
+    "homebrew": "False",
+    "translation": "contest of arms to prove (or win) innocence.",
+    "language": "Drow",
+    "word": "xittalsh"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to accomplish or to work.",
+    "language": "Drow",
+    "word": "xun"
+  },
+  {
+    "homebrew": "False",
+    "translation": "effort, striving or work.",
+    "language": "Drow",
+    "word": "xund"
+  },
+  {
+    "homebrew": "False",
+    "translation": "acheivement or work completed.",
+    "language": "Drow",
+    "word": "xundus"
+  },
+  {
+    "homebrew": "False",
+    "translation": "temple.",
+    "language": "Drow",
+    "word": "yath"
+  },
+  {
+    "homebrew": "False",
+    "translation": "drow priestess.",
+    "language": "Drow",
+    "word": "yathrin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "high priestess.",
+    "language": "Drow",
+    "word": "yathtallar"
+  },
+  {
+    "homebrew": "True",
+    "translation": "mindless servant, flayed slave, a false thrall's servitude",
+    "language": "Drow",
+    "word": "yor'hyrr"
+  },
+  {
+    "homebrew": "False",
+    "translation": "power/servant/will of Lolth.",
+    "language": "Drow",
+    "word": "yorn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to ride.",
+    "language": "Drow",
+    "word": "z'har"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to walk.",
+    "language": "Drow",
+    "word": "z'hin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "expedition, to journey.",
+    "language": "Drow",
+    "word": "z'hind"
+  },
+  {
+    "homebrew": "False",
+    "translation": "climb.",
+    "language": "Drow",
+    "word": "z'orr"
+  },
+  {
+    "homebrew": "False",
+    "translation": "power or strength; to dominate by force of will.",
+    "language": "Drow",
+    "word": "z'ress"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Chosen of Lolth or avatar of Lolth; this was considered a sacred word.",
+    "language": "Drow",
+    "word": "zedrinset"
+  },
+  {
+    "homebrew": "False",
+    "translation": "is.",
+    "language": "Drow",
+    "word": "zhah"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to learn, to know.",
+    "language": "Drow",
+    "word": "zhaun"
+  },
+  {
+    "homebrew": "False",
+    "translation": "learning, wisdom or knowledge.",
+    "language": "Drow",
+    "word": "zhaunil"
+  },
+  {
+    "homebrew": "False",
+    "translation": "word.",
+    "language": "Drow",
+    "word": "zheel"
+  }
+]

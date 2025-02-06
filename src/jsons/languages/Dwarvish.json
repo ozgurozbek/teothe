@@ -1,0 +1,1004 @@
+[
+  {
+    "homebrew": "False",
+    "translation": "Great pillar cavern",
+    "language": "Dwarvish",
+    "word": "Araurilcaurak"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'Great Friend', a term of respect.",
+    "language": "Dwarvish",
+    "word": "Arausamman"
+  },
+  {
+    "homebrew": "False",
+    "translation": "dwarven philosophy of choices and consequences",
+    "language": "Dwarvish",
+    "word": "Korvikoum"
+  },
+  {
+    "homebrew": "False",
+    "translation": "place over enemy land",
+    "language": "Dwarvish",
+    "word": "Rrinnoroth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "broken, cracked, flawed",
+    "language": "Dwarvish",
+    "word": "Sabrak"
+  },
+  {
+    "homebrew": "False",
+    "translation": "orc bane",
+    "language": "Dwarvish",
+    "word": "Sarghathuld"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Shining River",
+    "language": "Dwarvish",
+    "word": "Splendarrllur"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Field of Broken Dreams",
+    "language": "Dwarvish",
+    "word": "Turlaghh"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Gods grant (approval, etc.)",
+    "language": "Dwarvish",
+    "word": "Vlandranna (pronounced: Vlan-DRAN)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Wild, unruly",
+    "language": "Dwarvish",
+    "word": "Vos"
+  },
+  {
+    "homebrew": "False",
+    "translation": "gold",
+    "language": "Dwarvish",
+    "word": "ae"
+  },
+  {
+    "homebrew": "False",
+    "translation": "gold-work",
+    "language": "Dwarvish",
+    "word": "aelin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "gold lust",
+    "language": "Dwarvish",
+    "word": "aetharn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "sword",
+    "language": "Dwarvish",
+    "word": "agland"
+  },
+  {
+    "homebrew": "False",
+    "translation": "battle-glory, valor",
+    "language": "Dwarvish",
+    "word": "alagh"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to cut, slash, lay open",
+    "language": "Dwarvish",
+    "word": "ar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "an edible fungus known to humans as ripplebark.",
+    "language": "Dwarvish",
+    "word": "arantym"
+  },
+  {
+    "homebrew": "False",
+    "translation": "great, huge, gigantic",
+    "language": "Dwarvish",
+    "word": "arau"
+  },
+  {
+    "homebrew": "False",
+    "translation": "ocean, sea",
+    "language": "Dwarvish",
+    "word": "arauglor"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to butcher",
+    "language": "Dwarvish",
+    "word": "arglar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "backbone, strength, shield",
+    "language": "Dwarvish",
+    "word": "barak"
+  },
+  {
+    "homebrew": "False",
+    "translation": "those who shield",
+    "language": "Dwarvish",
+    "word": "barakor"
+  },
+  {
+    "homebrew": "False",
+    "translation": "thunder",
+    "language": "Dwarvish",
+    "word": "barthoun"
+  },
+  {
+    "homebrew": "False",
+    "translation": "disbelief, lies, mistakes, exaggeration, distortion.",
+    "language": "Dwarvish",
+    "word": "bedorn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "treachery",
+    "language": "Dwarvish",
+    "word": "beldarak"
+  },
+  {
+    "homebrew": "False",
+    "translation": "treacherous creatures",
+    "language": "Dwarvish",
+    "word": "beldarakin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "trove",
+    "language": "Dwarvish",
+    "word": "brok"
+  },
+  {
+    "homebrew": "False",
+    "translation": "hidden",
+    "language": "Dwarvish",
+    "word": "brukk (pronounced: BRUH-k)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "way through, passage",
+    "language": "Dwarvish",
+    "word": "burakrin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "thief, miscreant, untrustworthy person",
+    "language": "Dwarvish",
+    "word": "calass"
+  },
+  {
+    "homebrew": "False",
+    "translation": "the flawed who aren't to be trusted",
+    "language": "Dwarvish",
+    "word": "calassabrak"
+  },
+  {
+    "homebrew": "False",
+    "translation": "illithid or mind flayer",
+    "language": "Dwarvish",
+    "word": "caradhak (ka-RAD-ack)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "mindstalker",
+    "language": "Dwarvish",
+    "word": "caradhaker (ka-RAD-ack-er)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "cavern",
+    "language": "Dwarvish",
+    "word": "caurak"
+  },
+  {
+    "homebrew": "False",
+    "translation": "spot, detect",
+    "language": "Dwarvish",
+    "word": "cauv (pronounced: CAW-vvh)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to kill",
+    "language": "Dwarvish",
+    "word": "corl"
+  },
+  {
+    "homebrew": "False",
+    "translation": "killer",
+    "language": "Dwarvish",
+    "word": "corlar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "familiar, known",
+    "language": "Dwarvish",
+    "word": "daern"
+  },
+  {
+    "homebrew": "False",
+    "translation": "celestial",
+    "language": "Dwarvish",
+    "word": "darsam"
+  },
+  {
+    "homebrew": "False",
+    "translation": "treasure, valuable",
+    "language": "Dwarvish",
+    "word": "dauble"
+  },
+  {
+    "homebrew": "False",
+    "translation": "daughter",
+    "language": "Dwarvish",
+    "word": "daul"
+  },
+  {
+    "homebrew": "False",
+    "translation": "mustard, spice",
+    "language": "Dwarvish",
+    "word": "deg"
+  },
+  {
+    "homebrew": "False",
+    "translation": "strong",
+    "language": "Dwarvish",
+    "word": "dek"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to descend, to go down",
+    "language": "Dwarvish",
+    "word": "deladar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to die in battle",
+    "language": "Dwarvish",
+    "word": "deladaraugh"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to dig",
+    "language": "Dwarvish",
+    "word": "delvar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "evil",
+    "language": "Dwarvish",
+    "word": "der"
+  },
+  {
+    "homebrew": "False",
+    "translation": "on",
+    "language": "Dwarvish",
+    "word": "dews"
+  },
+  {
+    "homebrew": "False",
+    "translation": "near",
+    "language": "Dwarvish",
+    "word": "dog"
+  },
+  {
+    "homebrew": "False",
+    "translation": "beside",
+    "language": "Dwarvish",
+    "word": "dogos"
+  },
+  {
+    "homebrew": "False",
+    "translation": "metal ore",
+    "language": "Dwarvish",
+    "word": "donnar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "iron",
+    "language": "Dwarvish",
+    "word": "dor"
+  },
+  {
+    "homebrew": "False",
+    "translation": "anvil",
+    "language": "Dwarvish",
+    "word": "dormark"
+  },
+  {
+    "homebrew": "False",
+    "translation": "king",
+    "language": "Dwarvish",
+    "word": "dornar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "city",
+    "language": "Dwarvish",
+    "word": "drukafaren"
+  },
+  {
+    "homebrew": "False",
+    "translation": "home",
+    "language": "Dwarvish",
+    "word": "drukar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "smart",
+    "language": "Dwarvish",
+    "word": "dug"
+  },
+  {
+    "homebrew": "False",
+    "translation": "You're so crazy that your farts are all wet dung!",
+    "language": "Dwarvish",
+    "word": "dumtharak bar-mathar! (DOOM-tharr-ack bar-MAY-tharr)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "underground lake",
+    "language": "Dwarvish",
+    "word": "dunglor"
+  },
+  {
+    "homebrew": "False",
+    "translation": "overlake",
+    "language": "Dwarvish",
+    "word": "dunglorrin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "underground river",
+    "language": "Dwarvish",
+    "word": "dunlur"
+  },
+  {
+    "homebrew": "False",
+    "translation": "shield",
+    "language": "Dwarvish",
+    "word": "dur"
+  },
+  {
+    "homebrew": "False",
+    "translation": "dragon",
+    "language": "Dwarvish",
+    "word": "durgarn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "dwarf",
+    "language": "Dwarvish",
+    "word": "dwar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "clan",
+    "language": "Dwarvish",
+    "word": "dwarkar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "cave",
+    "language": "Dwarvish",
+    "word": "endar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "home",
+    "language": "Dwarvish",
+    "word": "faern"
+  },
+  {
+    "homebrew": "False",
+    "translation": "divine favor, blessing, godly gift",
+    "language": "Dwarvish",
+    "word": "findal"
+  },
+  {
+    "homebrew": "False",
+    "translation": "good luck, good fortune, favorable chances",
+    "language": "Dwarvish",
+    "word": "findar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "empty-scabbard killer",
+    "language": "Dwarvish",
+    "word": "forak-erach-naek"
+  },
+  {
+    "homebrew": "False",
+    "translation": "the dwarven name for the bulette",
+    "language": "Dwarvish",
+    "word": "ghohlbrorn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "gems, including natural uncut stones",
+    "language": "Dwarvish",
+    "word": "glander"
+  },
+  {
+    "homebrew": "False",
+    "translation": "lake",
+    "language": "Dwarvish",
+    "word": "glor"
+  },
+  {
+    "homebrew": "False",
+    "translation": "gnome",
+    "language": "Dwarvish",
+    "word": "gnur"
+  },
+  {
+    "homebrew": "False",
+    "translation": "gods forfend!, gods, look at this!",
+    "language": "Dwarvish",
+    "word": "gordul"
+  },
+  {
+    "homebrew": "False",
+    "translation": "stone",
+    "language": "Dwarvish",
+    "word": "groht"
+  },
+  {
+    "homebrew": "False",
+    "translation": "gift",
+    "language": "Dwarvish",
+    "word": "halaur"
+  },
+  {
+    "homebrew": "False",
+    "translation": "hammer",
+    "language": "Dwarvish",
+    "word": "hamar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "hammer of ashes",
+    "language": "Dwarvish",
+    "word": "hamarhaast"
+  },
+  {
+    "homebrew": "False",
+    "translation": "halfling",
+    "language": "Dwarvish",
+    "word": "heng"
+  },
+  {
+    "homebrew": "False",
+    "translation": "human",
+    "language": "Dwarvish",
+    "word": "hurm"
+  },
+  {
+    "homebrew": "False",
+    "translation": "giant",
+    "language": "Dwarvish",
+    "word": "hurmfar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "payment",
+    "language": "Dwarvish",
+    "word": "hurnden"
+  },
+  {
+    "homebrew": "False",
+    "translation": "deal, agreement, trust in one's word or honor",
+    "language": "Dwarvish",
+    "word": "ilith"
+  },
+  {
+    "homebrew": "False",
+    "translation": "idiot, joker, also a term used for halflings",
+    "language": "Dwarvish",
+    "word": "jargh"
+  },
+  {
+    "homebrew": "False",
+    "translation": "bread",
+    "language": "Dwarvish",
+    "word": "klar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "axe",
+    "language": "Dwarvish",
+    "word": "kuld"
+  },
+  {
+    "homebrew": "False",
+    "translation": "axe idiot",
+    "language": "Dwarvish",
+    "word": "kuldjargh"
+  },
+  {
+    "homebrew": "False",
+    "translation": "gap, (mountain) pass",
+    "language": "Dwarvish",
+    "word": "lhar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "loose stone, bad to work or unsafe",
+    "language": "Dwarvish",
+    "word": "lhargh"
+  },
+  {
+    "homebrew": "False",
+    "translation": "large (wide) river",
+    "language": "Dwarvish",
+    "word": "llur"
+  },
+  {
+    "homebrew": "False",
+    "translation": "river or stream",
+    "language": "Dwarvish",
+    "word": "lur"
+  },
+  {
+    "homebrew": "False",
+    "translation": "marsh, fen",
+    "language": "Dwarvish",
+    "word": "lurgh"
+  },
+  {
+    "homebrew": "False",
+    "translation": "bog, muskeg (concealed waters)",
+    "language": "Dwarvish",
+    "word": "lurmurk"
+  },
+  {
+    "homebrew": "True",
+    "translation": "havoc, disaster",
+    "language": "Dwarvish",
+    "word": "macam"
+  },
+  {
+    "homebrew": "False",
+    "translation": "peak, height",
+    "language": "Dwarvish",
+    "word": "morndin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to climb",
+    "language": "Dwarvish",
+    "word": "mrin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to disagree",
+    "language": "Dwarvish",
+    "word": "mur"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to argue, to debate",
+    "language": "Dwarvish",
+    "word": "murmel"
+  },
+  {
+    "homebrew": "False",
+    "translation": "arguments, criticism, words of dissension",
+    "language": "Dwarvish",
+    "word": "murmelings"
+  },
+  {
+    "homebrew": "False",
+    "translation": "evil creatures, enemies, foes",
+    "language": "Dwarvish",
+    "word": "norogh"
+  },
+  {
+    "homebrew": "False",
+    "translation": "enemies: known",
+    "language": "Dwarvish",
+    "word": "noror"
+  },
+  {
+    "homebrew": "False",
+    "translation": "enemy lair, area",
+    "language": "Dwarvish",
+    "word": "noroth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "spider; plural is norskulla",
+    "language": "Dwarvish",
+    "word": "norskul"
+  },
+  {
+    "homebrew": "False",
+    "translation": "killing",
+    "language": "Dwarvish",
+    "word": "novlik"
+  },
+  {
+    "homebrew": "False",
+    "translation": "magic, magical power or items",
+    "language": "Dwarvish",
+    "word": "ol"
+  },
+  {
+    "homebrew": "False",
+    "translation": "natural magic, not used or influenced beings",
+    "language": "Dwarvish",
+    "word": "olara"
+  },
+  {
+    "homebrew": "False",
+    "translation": "magical peaks",
+    "language": "Dwarvish",
+    "word": "olaramorndin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "world, all lands, the entire territory of Toril seen by, and known to, dwarves",
+    "language": "Dwarvish",
+    "word": "olor"
+  },
+  {
+    "homebrew": "False",
+    "translation": "clothing, especially usual or expected adornment",
+    "language": "Dwarvish",
+    "word": "parlyn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "death, an ending, it's over",
+    "language": "Dwarvish",
+    "word": "raugh"
+  },
+  {
+    "homebrew": "False",
+    "translation": "pillar",
+    "language": "Dwarvish",
+    "word": "ril"
+  },
+  {
+    "homebrew": "False",
+    "translation": "destruction, devastation, war",
+    "language": "Dwarvish",
+    "word": "rorn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "battlefield",
+    "language": "Dwarvish",
+    "word": "rorntyn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "over, above",
+    "language": "Dwarvish",
+    "word": "rrin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "familiar, known",
+    "language": "Dwarvish",
+    "word": "rune"
+  },
+  {
+    "homebrew": "False",
+    "translation": "familiar place, haven, home",
+    "language": "Dwarvish",
+    "word": "runedar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "trusted friend, shield brother, battle companion",
+    "language": "Dwarvish",
+    "word": "saman"
+  },
+  {
+    "homebrew": "False",
+    "translation": "trustworthy, honest, honorable, or bearable",
+    "language": "Dwarvish",
+    "word": "samryn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "disgusting thing or occurrence, orcs or Orc-work",
+    "language": "Dwarvish",
+    "word": "sargh"
+  },
+  {
+    "homebrew": "False",
+    "translation": "good stone",
+    "language": "Dwarvish",
+    "word": "sonn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "bright, shining, hopeful, beautiful",
+    "language": "Dwarvish",
+    "word": "splendarr"
+  },
+  {
+    "homebrew": "False",
+    "translation": "love, true love, deep love",
+    "language": "Dwarvish",
+    "word": "taerin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'place of happy gathering' in the Deep Realm dialect",
+    "language": "Dwarvish",
+    "word": "tarjteir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "kindness, caring, good deed",
+    "language": "Dwarvish",
+    "word": "thalorn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "an oil used as a preservative and rust remover",
+    "language": "Dwarvish",
+    "word": "thaolet"
+  },
+  {
+    "homebrew": "False",
+    "translation": "love, lust",
+    "language": "Dwarvish",
+    "word": "tharn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "bone",
+    "language": "Dwarvish",
+    "word": "thord"
+  },
+  {
+    "homebrew": "False",
+    "translation": "bones",
+    "language": "Dwarvish",
+    "word": "thorden"
+  },
+  {
+    "homebrew": "False",
+    "translation": "death, excrement, decay, carrion",
+    "language": "Dwarvish",
+    "word": "thork"
+  },
+  {
+    "homebrew": "False",
+    "translation": "those who endure",
+    "language": "Dwarvish",
+    "word": "thuldor"
+  },
+  {
+    "homebrew": "False",
+    "translation": "fate, doom, ill luck, or everyday cheery tidings or good fortune (spoken in irony)",
+    "language": "Dwarvish",
+    "word": "thulduk"
+  },
+  {
+    "homebrew": "False",
+    "translation": "clumsiness, clumsy work (especially smithcraft)",
+    "language": "Dwarvish",
+    "word": "tindul"
+  },
+  {
+    "homebrew": "False",
+    "translation": "hill, knoll",
+    "language": "Dwarvish",
+    "word": "tor"
+  },
+  {
+    "homebrew": "False",
+    "translation": "adventure, fun, welcomed danger",
+    "language": "Dwarvish",
+    "word": "torst"
+  },
+  {
+    "homebrew": "False",
+    "translation": "hold",
+    "language": "Dwarvish",
+    "word": "torune"
+  },
+  {
+    "homebrew": "False",
+    "translation": "field, open place",
+    "language": "Dwarvish",
+    "word": "tyn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "meeting place",
+    "language": "Dwarvish",
+    "word": "ultok"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'ford' (translates as 'meeting place over river')",
+    "language": "Dwarvish",
+    "word": "ultokrinlur"
+  },
+  {
+    "homebrew": "False",
+    "translation": "hope, future plan, strategy",
+    "language": "Dwarvish",
+    "word": "undivver"
+  },
+  {
+    "homebrew": "False",
+    "translation": "orecutter",
+    "language": "Dwarvish",
+    "word": "urdunnir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'mountain meadow' (high valley, especially a 'hanging valley' or alpine plateau)",
+    "language": "Dwarvish",
+    "word": "vallahir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'reveal' (as in 'laying bare')",
+    "language": "Dwarvish",
+    "word": "varra"
+  },
+  {
+    "homebrew": "False",
+    "translation": "romance, courtship, social games and manners",
+    "language": "Dwarvish",
+    "word": "veltel"
+  },
+  {
+    "homebrew": "False",
+    "translation": "hunted",
+    "language": "Dwarvish",
+    "word": "vikrik"
+  },
+  {
+    "homebrew": "False",
+    "translation": "blazers of fresh trails",
+    "language": "Dwarvish",
+    "word": "volamtar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'wood' (material)",
+    "language": "Dwarvish",
+    "word": "vruden"
+  },
+  {
+    "homebrew": "False",
+    "translation": "wooden, of wood",
+    "language": "Dwarvish",
+    "word": "vrudenla"
+  },
+  {
+    "homebrew": "False",
+    "translation": "wood, forest",
+    "language": "Dwarvish",
+    "word": "vudd"
+  },
+  {
+    "homebrew": "False",
+    "translation": "of the jungle",
+    "language": "Dwarvish",
+    "word": "vuddar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "woods stream",
+    "language": "Dwarvish",
+    "word": "vudlur"
+  },
+  {
+    "homebrew": "False",
+    "translation": "ugliness, ugly thing/being",
+    "language": "Dwarvish",
+    "word": "wurgym"
+  },
+  {
+    "homebrew": "False",
+    "translation": "current, racing water (dangerous)",
+    "language": "Dwarvish",
+    "word": "wurlur"
+  },
+  {
+    "homebrew": "False",
+    "translation": "water (especially useful or drinking water)",
+    "language": "Dwarvish",
+    "word": "wurn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "knowledge (especially dwarf-lore and secret or special knowledge)",
+    "language": "Dwarvish",
+    "word": "xoth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "secrets, dark deeds, treasure-talk",
+    "language": "Dwarvish",
+    "word": "xunder"
+  },
+  {
+    "homebrew": "False",
+    "translation": "secret trove",
+    "language": "Dwarvish",
+    "word": "xunderbrok"
+  },
+  {
+    "homebrew": "False",
+    "translation": "A known danger, hazard, or peril.",
+    "language": "Dwarvish",
+    "word": "yau"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a climb",
+    "language": "Dwarvish",
+    "word": "yaugh"
+  },
+  {
+    "homebrew": "False",
+    "translation": "stairs, steps",
+    "language": "Dwarvish",
+    "word": "yaughadar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "A spider that was known to be particularly dangerous (literally 'peril-spider')",
+    "language": "Dwarvish",
+    "word": "yaunorsk"
+  },
+  {
+    "homebrew": "False",
+    "translation": "rope",
+    "language": "Dwarvish",
+    "word": "yauthlin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "handholds, no clear way",
+    "language": "Dwarvish",
+    "word": "yauthmair"
+  },
+  {
+    "homebrew": "False",
+    "translation": "elevator (non-magical; a magical elevator is olyauthil)",
+    "language": "Dwarvish",
+    "word": "yauthtil"
+  },
+  {
+    "homebrew": "False",
+    "translation": "see, observe, watch",
+    "language": "Dwarvish",
+    "word": "yulcauv (pronounced: YULL-caw-vvh)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "watchfulness, vigilance, standing guard",
+    "language": "Dwarvish",
+    "word": "yuldam"
+  },
+  {
+    "homebrew": "False",
+    "translation": "adventurer, rogue, foolish youth, happy-go-lucky, reckless being",
+    "language": "Dwarvish",
+    "word": "zander"
+  }
+]
