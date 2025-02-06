@@ -1,0 +1,26 @@
+[
+  {
+    "homebrew": "False",
+    "translation": "House Baenre will prevail",
+    "language": "Abyssal",
+    "word": "Baenre cok diemrey nocutero"
+  },
+  {
+    "homebrew": "True",
+    "translation": "Void, Nothingness, Emptiness, Zero",
+    "language": "Abyssal",
+    "word": "Faraagzio"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Destiny's Last Hope",
+    "language": "Abyssal",
+    "word": "Karreth Edittorn"
+  },
+  {
+    "homebrew": "True",
+    "translation": "Devour",
+    "language": "Abyssal",
+    "word": "Yabtorar"
+  }
+]

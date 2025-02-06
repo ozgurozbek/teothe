@@ -1,0 +1,1250 @@
+[
+  {
+    "homebrew": "True",
+    "translation": "Refers to a situation where someone offers or mentions a potentially powerful potion or item, but then doesn't deliver on its promised effects or availability.",
+    "language": "Common",
+    "word": "Arcanease"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Arcane magic and its mastery.",
+    "language": "Common",
+    "word": "Art or The Art"
+  },
+  {
+    "homebrew": "True",
+    "translation": "When a bard incorporates clever and suggestive wordplay into their performances or songs, evoking amusement and laughter from the audience without crossing any explicit boundaries.",
+    "language": "Common",
+    "word": "Bardic innuendo"
+  },
+  {
+    "homebrew": "True",
+    "translation": "A remarkable or extraordinary sword, known for its exceptional craftsmanship or enchanted properties.",
+    "language": "Common",
+    "word": "Blimeyblade"
+  },
+  {
+    "homebrew": "True",
+    "translation": "Refers to an unexpected and explosive magical spell or attack executed by an elf, often catching enemies off guard.",
+    "language": "Common",
+    "word": "Elfbomb"
+  },
+  {
+    "homebrew": "True",
+    "translation": "Refers to a cozy and secretive gathering place where individuals go to engage in discreet conversations, share secrets, or indulge in harmless gossip.",
+    "language": "Common",
+    "word": "Featherwhisper lounge"
+  },
+  {
+    "homebrew": "True",
+    "translation": "A phrase used to express frustration or annoyance with mischievous or unpredictable fae creatures and their antics.",
+    "language": "Common",
+    "word": "Fey'd up"
+  },
+  {
+    "homebrew": "True",
+    "translation": "Describes someone who is quick-witted and cunning, able to outsmart others using clever tactics or guile.",
+    "language": "Common",
+    "word": "Feywitted"
+  },
+  {
+    "homebrew": "True",
+    "translation": "When a male's mind or behavior becomes eccentric or nonsensical, often due to exposure to magical or supernatural influences.",
+    "language": "Common",
+    "word": "Flaflad"
+  },
+  {
+    "homebrew": "True",
+    "translation": "When a female's mind or behavior becomes eccentric or nonsensical, often due to exposure to magical or supernatural influences.",
+    "language": "Common",
+    "word": "Flaflass"
+  },
+  {
+    "homebrew": "True",
+    "translation": "Describes a halfling known for their exceptional cooking and culinary skills, often bringing warmth, comfort, and joy to others through their delicious meals.",
+    "language": "Common",
+    "word": "Hearthhugger"
+  },
+  {
+    "homebrew": "True",
+    "translation": "Refers to a tiefling with a mischievous or devilish smile, often accompanied by a wicked sense of humor or playful trickery.",
+    "language": "Common",
+    "word": "Hellfire Grin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "The standard magical script used by wizards for recording spells in spellbooks and scrolls.",
+    "language": "Common",
+    "word": "High Tongue"
+  },
+  {
+    "homebrew": "True",
+    "translation": "Describes a mesmerizing and captivating style of tiefling dancing, often incorporating flickering flames or illusions of fire into the movements.",
+    "language": "Common",
+    "word": "Infernodance"
+  },
+  {
+    "homebrew": "True",
+    "translation": "A term used to describe someone who is exceptionally skilled or proficient in their chosen craft or profession.",
+    "language": "Common",
+    "word": "Mithraler"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Divine magic.",
+    "language": "Common",
+    "word": "Power or the Power"
+  },
+  {
+    "homebrew": "True",
+    "translation": "Refers to a person who embraces and celebrates their own diverse spectrum of identities, representing the colorful nature of their heart and the richness of their experiences.",
+    "language": "Common",
+    "word": "Prismheart"
+  },
+  {
+    "homebrew": "True",
+    "translation": "Refers to a delicious or refreshing beverage, often associated with potions or elixirs that provide beneficial effects.",
+    "language": "Common",
+    "word": "Quaffable"
+  },
+  {
+    "homebrew": "False",
+    "translation": "women's periods.",
+    "language": "Common",
+    "word": "Sel\u00fbne's kiss"
+  },
+  {
+    "homebrew": "True",
+    "translation": "Describes someone who captivates others with their charming personality or magical aura, often leading to playful and innocent romantic interactions.",
+    "language": "Common",
+    "word": "Spellbound-flirt"
+  },
+  {
+    "homebrew": "True",
+    "translation": "Describes an elf renowned for their exceptional agility and grace, capable of moving effortlessly and swiftly like a shooting star.",
+    "language": "Common",
+    "word": "Starstrider"
+  },
+  {
+    "homebrew": "True",
+    "translation": "When someone boasts about the rare and powerful abilities they possess or have access to, showing off their magical prowess.",
+    "language": "Common",
+    "word": "Weaflexer"
+  },
+  {
+    "homebrew": "True",
+    "translation": "Describes someone that is only attracted to spellcasters.",
+    "language": "Common",
+    "word": "Weave fever"
+  },
+  {
+    "homebrew": "True",
+    "translation": "A drow",
+    "language": "Common",
+    "word": "Webwalker"
+  },
+  {
+    "homebrew": "True",
+    "translation": "When someone is left in a state of shock or disarray after encountering a powerful dragon, symbolizing a significant disruption or upheaval in their life.",
+    "language": "Common",
+    "word": "Wyrm-wrecked"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'Fortunate Meeting'. A contraction of an elven phrase. It was a greeting and reassurance of peaceful intentions between travelers in the southern and eastern coast lands around the Sea of Fallen Stars. It became a common greeting across all Faer\u00fbn during the 15th century DR.",
+    "language": "Common",
+    "word": "alae (pronounced: ah-LAY)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'May your skill prevail'. A common farewell among the Red Wizards of Thay.",
+    "language": "Common",
+    "word": "alavairthae (pronounced: al-ah-VARE-thay)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "tavern.",
+    "language": "Common",
+    "word": "alehouse"
+  },
+  {
+    "homebrew": "False",
+    "translation": "(pronounced: ah-mah-RAST) 'Fare well until next we meet!'. A common farewell among the sailors of the South, originally a word from Turmic.",
+    "language": "Common",
+    "word": "amarast"
+  },
+  {
+    "homebrew": "False",
+    "translation": "anyhow, anyway.",
+    "language": "Common",
+    "word": "anyhail"
+  },
+  {
+    "homebrew": "False",
+    "translation": "hogwash, nonsense, etc. It originated in the Western Heartlands, but in the late 14th century DR its usage crept into Cormyr, the Dalelands, the Moonsea, and Sembia.",
+    "language": "Common",
+    "word": "badaulder"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'dyke' (derogatory)",
+    "language": "Common",
+    "word": "battlebud"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'You are weak or wrong or stupid or rash enough to be easily bound by a mortal, and fittingly bound' (an expletive used by devils)",
+    "language": "Common",
+    "word": "bindworthy"
+  },
+  {
+    "homebrew": "False",
+    "translation": "the essence or nature of what it is to steal for a living. ",
+    "language": "Common",
+    "word": "blood of the night"
+  },
+  {
+    "homebrew": "False",
+    "translation": "tuna",
+    "language": "Common",
+    "word": "bluefin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "grouse",
+    "language": "Common",
+    "word": "blusterwing"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a small loaf of bread with a hard crust and fireseared herbs and greens inserted for flavor. Often used as a bowl for soup or stew when dining away from civilization.",
+    "language": "Common",
+    "word": "blynndur"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a pair who are courting but not necessarily intimate.",
+    "language": "Common",
+    "word": "brightbirds"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a successful and socially rising person. Can be turned to an insult by combination with other words that give context.",
+    "language": "Common",
+    "word": "brightcoin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "the person your heart is set upon after courting in public.",
+    "language": "Common",
+    "word": "brightheart"
+  },
+  {
+    "homebrew": "False",
+    "translation": "great, exciting, pleasing, marvelous, or superb.",
+    "language": "Common",
+    "word": "brightstar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a wild mushroom.",
+    "language": "Common",
+    "word": "browncap"
+  },
+  {
+    "homebrew": "False",
+    "translation": "an opportunistic thug for hire, often hired in gangs.",
+    "language": "Common",
+    "word": "bullyblade"
+  },
+  {
+    "homebrew": "False",
+    "translation": "trout",
+    "language": "Common",
+    "word": "burslake (or simply slake)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "turkey",
+    "language": "Common",
+    "word": "bustard"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a bed paired with a table and an oil lamp.",
+    "language": "Common",
+    "word": "candle-cup"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Moonshae term for a village, town, or other settled community.",
+    "language": "Common",
+    "word": "cantrev"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a vandal.",
+    "language": "Common",
+    "word": "cask-smasher"
+  },
+  {
+    "homebrew": "False",
+    "translation": "the act of vandalizing.",
+    "language": "Common",
+    "word": "casking"
+  },
+  {
+    "homebrew": "False",
+    "translation": "an employee of a small inn.",
+    "language": "Common",
+    "word": "chamberjack or chambermaid, informally jack or maid"
+  },
+  {
+    "homebrew": "False",
+    "translation": "gossip, rumors, news, or current affairs. For example, 'I'll relate one snippet of such current clack.' This word originated in the Dalelands.",
+    "language": "Common",
+    "word": "clack"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a know-it-all. The first word refers to men, the second to women.",
+    "language": "Common",
+    "word": "clevershanks or clevertongue"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'Casanova', 'tireless woman-chaser' (derogatory)",
+    "language": "Common",
+    "word": "cod-loose winker"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'male prostitute'",
+    "language": "Common",
+    "word": "coin-lad"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'female prostitute'",
+    "language": "Common",
+    "word": "coin-lass"
+  },
+  {
+    "homebrew": "True",
+    "translation": "A skilled individual who has a knack for turning the tide in combat.",
+    "language": "Common",
+    "word": "critwhisper"
+  },
+  {
+    "homebrew": "False",
+    "translation": "an isolated farmstead.",
+    "language": "Common",
+    "word": "croft"
+  },
+  {
+    "homebrew": "False",
+    "translation": "the owner of a croft, or a worker of said croft (usually, kin to the owner). Can also be used as a substitute for farmer.",
+    "language": "Common",
+    "word": "crofter"
+  },
+  {
+    "homebrew": "False",
+    "translation": "angry.",
+    "language": "Common",
+    "word": "darburl (pronounced: DAR-burl)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "suites of linked rooms in a house, usually three.",
+    "language": "Common",
+    "word": "darchains"
+  },
+  {
+    "homebrew": "False",
+    "translation": "meat from rodents (rats, voles, sometimes mice, weasels, or mink) fried and served on a needle of wood with onion.",
+    "language": "Common",
+    "word": "darkback skewer"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a mercenary with dubious morals and/or loyalty.",
+    "language": "Common",
+    "word": "darkblade"
+  },
+  {
+    "homebrew": "False",
+    "translation": "any rundown house.",
+    "language": "Common",
+    "word": "darkhall"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'male homosexual'",
+    "language": "Common",
+    "word": "dathna"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a novice thief, who 'doesn't have the blood of the night in them'.",
+    "language": "Common",
+    "word": "dayblood"
+  },
+  {
+    "homebrew": "False",
+    "translation": "midnight.",
+    "language": "Common",
+    "word": "deepnight"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a guard that guards a doorway of a building.",
+    "language": "Common",
+    "word": "doorsword"
+  },
+  {
+    "homebrew": "True",
+    "translation": "A racial slur for Dragonborn",
+    "language": "Common",
+    "word": "dragonboned"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'peace'. A corrupted form of the orcish greeting 'Durgreos'. Used by mongrelmen and human slavers. In the 15th century DR, it as also a popular greeting among dragonborn, and traders and sailors of all species.",
+    "language": "Common",
+    "word": "durgos (pronounced: DUR-ghosz)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'masochistic man' (derogatory)",
+    "language": "Common",
+    "word": "dusk"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'masochistic woman'",
+    "language": "Common",
+    "word": "dusk rose"
+  },
+  {
+    "homebrew": "False",
+    "translation": "late morning.",
+    "language": "Common",
+    "word": "elsun"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a Calishite dish made from small green fish, squid, snails, and mussels, all chopped together, hotly spiced, and pickled.",
+    "language": "Common",
+    "word": "emerald eyes"
+  },
+  {
+    "homebrew": "False",
+    "translation": "dinner.",
+    "language": "Common",
+    "word": "evenfeast"
+  },
+  {
+    "homebrew": "False",
+    "translation": "gloaming.",
+    "language": "Common",
+    "word": "eventide"
+  },
+  {
+    "homebrew": "False",
+    "translation": "vegetables (mainly cabbage, leeks, parsnips, and potatoes, but also carrots, onions, and radishes)",
+    "language": "Common",
+    "word": "fieldings"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a dainty food item, picnic, or feast; for example, 'a fine filidar it was, too'. Derived from the name of Prince Filidar.",
+    "language": "Common",
+    "word": "filidar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "grilled",
+    "language": "Common",
+    "word": "fireseared"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a sweet peach jelly made with zzar and red-pepper spices from Calimshan.",
+    "language": "Common",
+    "word": "flame in the belly"
+  },
+  {
+    "homebrew": "False",
+    "translation": "seared",
+    "language": "Common",
+    "word": "flamed"
+  },
+  {
+    "homebrew": "False",
+    "translation": "an incompetent or clumsy thief.",
+    "language": "Common",
+    "word": "fumblehands"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Heartlands word meaning something akin to 'I'm astonished!'",
+    "language": "Common",
+    "word": "galad"
+  },
+  {
+    "homebrew": "False",
+    "translation": "bathroom. Another term for a bathroom was jakes. Outdoor bathrooms were called privies, thunderthrones, or gloryhouses.",
+    "language": "Common",
+    "word": "garderobe"
+  },
+  {
+    "homebrew": "False",
+    "translation": "something beautiful or flashy.",
+    "language": "Common",
+    "word": "glim/glimmer"
+  },
+  {
+    "homebrew": "False",
+    "translation": "predawn.",
+    "language": "Common",
+    "word": "godswake"
+  },
+  {
+    "homebrew": "False",
+    "translation": "saut\u00e9ed.",
+    "language": "Common",
+    "word": "goldenpanned"
+  },
+  {
+    "homebrew": "True",
+    "translation": "Refers to someone who is obsessed with accumulating wealth and treasures, often at the expense of others.",
+    "language": "Common",
+    "word": "goldgrubber"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a polite greeting, usually used with strangers.",
+    "language": "Common",
+    "word": "goodsir and goodwoman, or sometimes fairlady"
+  },
+  {
+    "homebrew": "False",
+    "translation": "any edible snake. Typically served chopped into chunks and fried.",
+    "language": "Common",
+    "word": "groundsnake"
+  },
+  {
+    "homebrew": "True",
+    "translation": "magically exhausted, ran out of spell slots, can't access weave",
+    "language": "Common",
+    "word": "gruffed"
+  },
+  {
+    "homebrew": "False",
+    "translation": "beer or wine that isn't pleasant to drink, but doesn't cause illness, either.",
+    "language": "Common",
+    "word": "gulletfire"
+  },
+  {
+    "homebrew": "False",
+    "translation": "office worker.",
+    "language": "Common",
+    "word": "haelhard"
+  },
+  {
+    "homebrew": "False",
+    "translation": "hand-sized pastry filled with meat (usually bustard with other game) and a strip of boar fat (boar bacon). Baked.",
+    "language": "Common",
+    "word": "hand-tart"
+  },
+  {
+    "homebrew": "False",
+    "translation": "full morning.",
+    "language": "Common",
+    "word": "harbright"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a garrulous regular of a tavern; a barfly.",
+    "language": "Common",
+    "word": "hardjaw"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'butch' (derogatory)",
+    "language": "Common",
+    "word": "harnor"
+  },
+  {
+    "homebrew": "False",
+    "translation": "god-damnit. It was an all-faith polite insult.",
+    "language": "Common",
+    "word": "haularake (pronounced: HAH-rake)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a man who always yelled or was nastier or more aggressive than prudent or necessary.",
+    "language": "Common",
+    "word": "hawksnarl"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a hick. Bumpkin is also used for this term.",
+    "language": "Common",
+    "word": "hay-nose"
+  },
+  {
+    "homebrew": "True",
+    "translation": "Used to describe someone who seems to have a constant string of bad luck or is cursed by unfortunate circumstances.",
+    "language": "Common",
+    "word": "hexjinxed"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a noble. The second word was a pejorative.",
+    "language": "Common",
+    "word": "highborn or high-nose"
+  },
+  {
+    "homebrew": "False",
+    "translation": "someone who is politely haughty and superior, rather than rude. A compliment to their manners and bearing.",
+    "language": "Common",
+    "word": "highmantle"
+  },
+  {
+    "homebrew": "False",
+    "translation": "noon.",
+    "language": "Common",
+    "word": "highsun"
+  },
+  {
+    "homebrew": "False",
+    "translation": "lunch.",
+    "language": "Common",
+    "word": "highsunfeast"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a mercenary.",
+    "language": "Common",
+    "word": "hiresword"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a fortified homestead.",
+    "language": "Common",
+    "word": "hold"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a priest. A mildly-offensive term.",
+    "language": "Common",
+    "word": "holy-nose"
+  },
+  {
+    "homebrew": "True",
+    "translation": "Refers to a person who has a natural affinity for communicating with or controlling animals.",
+    "language": "Common",
+    "word": "horseline"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a non-deity-specific 'damn'.",
+    "language": "Common",
+    "word": "hrast (pronounced: hur-RAST or hrammar (pronounced: hur-RAM-uh in the south"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a mild form of stlarning; different meaning to hrast.",
+    "language": "Common",
+    "word": "hrasting (pronounced: hur-RAST-ing"
+  },
+  {
+    "homebrew": "False",
+    "translation": "prance. It is used by satyrs as a parting word. It is frequently used by elven or half-elven poets. Orcs are known to use the term in battle.",
+    "language": "Common",
+    "word": "hykyath (pronounced: Hik-ah-YATH)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a cut of meat.",
+    "language": "Common",
+    "word": "joint"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a male waiter or other serving staff.",
+    "language": "Common",
+    "word": "keghand"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to try. It was a derisive, cynical or disbelieving word, used only when the thing you were trying to do seemed to be impossible. Kell never changed due to tense.",
+    "language": "Common",
+    "word": "kell"
+  },
+  {
+    "homebrew": "False",
+    "translation": "brussels sprout",
+    "language": "Common",
+    "word": "knuckle or thumbknuckle"
+  },
+  {
+    "homebrew": "False",
+    "translation": "agile, sleek or lithe, often used to describe female dancers whose beauty was accentuated by their movements.",
+    "language": "Common",
+    "word": "lalandath"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'Fortune find you.' Parting used in Essembra and the surrounding lands (except Sembia, as they see it as a word only used by bumpkins).",
+    "language": "Common",
+    "word": "lammath drios (pronounced: lham-math-DREE-ohs)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "women's periods.",
+    "language": "Common",
+    "word": "lifeblood"
+  },
+  {
+    "homebrew": "True",
+    "translation": "Describes a situation where the expected treasure or reward turns out to be disappointing or underwhelming.",
+    "language": "Common",
+    "word": "lootfizzle"
+  },
+  {
+    "homebrew": "True",
+    "translation": "A derogatory term for someone who has a strong dislike or fear of magic-users, often due to past negative experiences.",
+    "language": "Common",
+    "word": "magebane"
+  },
+  {
+    "homebrew": "False",
+    "translation": "seeds (presumably of the marrado plant) that resembled kidney beans except blood-red in color, typically dried for export from Tethyr and eastern Amn.",
+    "language": "Common",
+    "word": "marrado beans"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Get gone, NOW, to being a lemure or a worm on some other plane!",
+    "language": "Common",
+    "word": "marraskh"
+  },
+  {
+    "homebrew": "False",
+    "translation": "perhaps.",
+    "language": "Common",
+    "word": "mayhap"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a hand-tart with a concealed message inside, usually engraved on a clay disk to survive the baking process.",
+    "language": "Common",
+    "word": "message tart"
+  },
+  {
+    "homebrew": "False",
+    "translation": "women's periods.",
+    "language": "Common",
+    "word": "moonblood"
+  },
+  {
+    "homebrew": "False",
+    "translation": "breakfast.",
+    "language": "Common",
+    "word": "morningfeast"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a standath without cellars.",
+    "language": "Common",
+    "word": "murdath"
+  },
+  {
+    "homebrew": "False",
+    "translation": "my house. A term usually used to refer to a cottage.",
+    "language": "Common",
+    "word": "my hearth"
+  },
+  {
+    "homebrew": "True",
+    "translation": "inhaling mushrooms to get high",
+    "language": "Common",
+    "word": "mycon"
+  },
+  {
+    "homebrew": "True",
+    "translation": "someone that is high on mushrooms (by inhaling)",
+    "language": "Common",
+    "word": "myconed"
+  },
+  {
+    "homebrew": "False",
+    "translation": "dung (exclamation).",
+    "language": "Common",
+    "word": "naeth (pronounced: naythh, drawn-out 'th') or naed (pronounced: nayd in the south"
+  },
+  {
+    "homebrew": "False",
+    "translation": "something mediocre. Usually used to bicker over prices.",
+    "language": "Common",
+    "word": "nandra"
+  },
+  {
+    "homebrew": "False",
+    "translation": "catfish",
+    "language": "Common",
+    "word": "navalar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a newly-wealthy person who spends to show off. A pejorative.",
+    "language": "Common",
+    "word": "newcoin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a general term for a professional thief.",
+    "language": "Common",
+    "word": "nightblood"
+  },
+  {
+    "homebrew": "False",
+    "translation": "dusk.",
+    "language": "Common",
+    "word": "nightfall"
+  },
+  {
+    "homebrew": "False",
+    "translation": "an employee of a large inn.",
+    "language": "Common",
+    "word": "nightjack or nightmaid, informally potjack and potmaid"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'Well met' or 'Good day'. A common greeting in the lands surrounding the Sea of Fallen Stars.",
+    "language": "Common",
+    "word": "olor\u00e9 (pronounced: oh-LOR-ay about this audio file listen)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "tomorrow.",
+    "language": "Common",
+    "word": "on the morrow"
+  },
+  {
+    "homebrew": "False",
+    "translation": "the Shining South equivalent of naeth.",
+    "language": "Common",
+    "word": "orbal (pronounced: OR-ball)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a foreigner.",
+    "language": "Common",
+    "word": "outlander"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a swear word used as an adjective ('Parharding wizard!')",
+    "language": "Common",
+    "word": "parharding"
+  },
+  {
+    "homebrew": "False",
+    "translation": "squab (young pigeon).",
+    "language": "Common",
+    "word": "plounce"
+  },
+  {
+    "homebrew": "False",
+    "translation": "term used to refer to an individual in the process of transitioning between genders.",
+    "language": "Common",
+    "word": "poised"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a small basket made of rushes used as a unit for selling vegetables",
+    "language": "Common",
+    "word": "punnet"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'ride high'. Greeting used by Shaaryan nomads and the inhabitants of Elfharrow.",
+    "language": "Common",
+    "word": "rhambukkya (pronounced: ram-BOO-kh-yah)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "smitten, in love, lusty. As in 'I'm rivvim for her'.",
+    "language": "Common",
+    "word": "rivvim"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a dilapidated house.",
+    "language": "Common",
+    "word": "roofwrack"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'submissive female'",
+    "language": "Common",
+    "word": "rose"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'run free.' A parting used by centaurs, and by many nomads and riders of many species.",
+    "language": "Common",
+    "word": "sabbas (pronounced: sab-BAS)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'Get lost' or harsher similar words.",
+    "language": "Common",
+    "word": "sabruin (pronounced: sah-BROO-in)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "sir, goodsir.",
+    "language": "Common",
+    "word": "saer"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a more offensive form of haularake.",
+    "language": "Common",
+    "word": "sark (pronounced: ssark, drawn-out 's')"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a woman who always yelled or was nastier or more aggressive than prudent or necessary. Sometimes, it was used to refer to both genders.",
+    "language": "Common",
+    "word": "scorchkettle"
+  },
+  {
+    "homebrew": "False",
+    "translation": "An erotic dream.",
+    "language": "Common",
+    "word": "screamdream"
+  },
+  {
+    "homebrew": "True",
+    "translation": "The act of quickly browsing through magical scrolls or spellbooks to find a specific spell or incantation, often done in the heat of battle or urgent situations.",
+    "language": "Common",
+    "word": "scroll-surfing"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a well-established or veteran mercenary.",
+    "language": "Common",
+    "word": "sellsword"
+  },
+  {
+    "homebrew": "True",
+    "translation": "a sex companion with a higher appeal than the person.",
+    "language": "Common",
+    "word": "sexcellence"
+  },
+  {
+    "homebrew": "False",
+    "translation": "minnow",
+    "language": "Common",
+    "word": "shaeling"
+  },
+  {
+    "homebrew": "False",
+    "translation": "bass",
+    "language": "Common",
+    "word": "sheelie"
+  },
+  {
+    "homebrew": "False",
+    "translation": "pastry crust",
+    "language": "Common",
+    "word": "shield (food)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "used before a term to express antipathy, or intensify something already bad. 'It's broken. It's shitting broken.'",
+    "language": "Common",
+    "word": "shitting"
+  },
+  {
+    "homebrew": "False",
+    "translation": "an Elven loan-word, this term referred to individuals that had settled into a gender other than their birth gender.",
+    "language": "Common",
+    "word": "sildur"
+  },
+  {
+    "homebrew": "False",
+    "translation": "whitefish",
+    "language": "Common",
+    "word": "silverfin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'effeminate male homosexual' (derogatory)",
+    "language": "Common",
+    "word": "simpering man-lover"
+  },
+  {
+    "homebrew": "False",
+    "translation": "restaurant",
+    "language": "Common",
+    "word": "skaether"
+  },
+  {
+    "homebrew": "False",
+    "translation": "trout",
+    "language": "Common",
+    "word": "slake"
+  },
+  {
+    "homebrew": "False",
+    "translation": "an expletive used by devils",
+    "language": "Common",
+    "word": "sleer"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a veteran, skilled thief.",
+    "language": "Common",
+    "word": "softshadow"
+  },
+  {
+    "homebrew": "False",
+    "translation": "salmon",
+    "language": "Common",
+    "word": "sorn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Asparagus",
+    "language": "Common",
+    "word": "spear (food), also known as greenneedles"
+  },
+  {
+    "homebrew": "True",
+    "translation": "A term used to describe someone who can't cast spells properly, often due to a lack of training or skill.",
+    "language": "Common",
+    "word": "spellchuck"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a good-looking man or woman with a spectacular figure.",
+    "language": "Common",
+    "word": "spurnarmor"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a rectangular stone building with cellars. Common across the Dragon Reach and Moonsea.",
+    "language": "Common",
+    "word": "standath"
+  },
+  {
+    "homebrew": "False",
+    "translation": "an isolated farm.",
+    "language": "Common",
+    "word": "steading"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'Gods-power keep you well.' A formal, peaceful greeting and parting among merchants in southern Faer\u00fbn and in Laerakond.",
+    "language": "Common",
+    "word": "stettar voh (stet-tar VOH)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "polite equivalent of F-word. About as blasphemous as 'darn' used where we might say 'screw' or 'screwing' (stlarning).",
+    "language": "Common",
+    "word": "stlarn (pronounced: stuh-LARN)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a lidless, small clay pot with a long handle, often sealed with wax and used for selling, storing, and transporting food items.",
+    "language": "Common",
+    "word": "stonebolt"
+  },
+  {
+    "homebrew": "False",
+    "translation": "something akin 'go kill yourself, right now and painfully.'",
+    "language": "Common",
+    "word": "straek (pronounced: strrake, drawn-out 'r')"
+  },
+  {
+    "homebrew": "True",
+    "translation": "to receive news information",
+    "language": "Common",
+    "word": "summerear"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a tall, narrow, tenement-like building sharing side walls with adjacent buildings.",
+    "language": "Common",
+    "word": "tallhouse"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a common greeting in the North and among the worshipers of Waukeen, meaning 'peace, and hello,' a greeting of joy, given with devotion.",
+    "language": "Common",
+    "word": "tantam (pronounced: TAN-tam)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'bisexual man'",
+    "language": "Common",
+    "word": "tasmar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "an innkeeper or the owner of a tavern.",
+    "language": "Common",
+    "word": "tavernmaster or tankard-tender"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a ten day period, analogous to a week.",
+    "language": "Common",
+    "word": "tenday"
+  },
+  {
+    "homebrew": "False",
+    "translation": "glad, pleasant or heart-lifting.",
+    "language": "Common",
+    "word": "thael"
+  },
+  {
+    "homebrew": "False",
+    "translation": "sweet syrup made by adding diced apples and walnuts to molasses. Used in desserts.",
+    "language": "Common",
+    "word": "thargur"
+  },
+  {
+    "homebrew": "False",
+    "translation": "late afternoon.",
+    "language": "Common",
+    "word": "tharsun"
+  },
+  {
+    "homebrew": "False",
+    "translation": "tonight.",
+    "language": "Common",
+    "word": "this night"
+  },
+  {
+    "homebrew": "False",
+    "translation": "see, gulletfire. A healthy and thirst-quenching drink that wasn't particularly pleasant.",
+    "language": "Common",
+    "word": "throatslake"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'lesbian'",
+    "language": "Common",
+    "word": "thruss"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a tireless social-climber. May imply a willingness to demean themselves or perform dark deeds.",
+    "language": "Common",
+    "word": "thruster"
+  },
+  {
+    "homebrew": "False",
+    "translation": "early afternoon.",
+    "language": "Common",
+    "word": "thulsun"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a match",
+    "language": "Common",
+    "word": "tindertwig"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a stronger form of sabruin.",
+    "language": "Common",
+    "word": "tluin (pronounced: tuh-LOO-in)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "polite cormyrean term for bastard.",
+    "language": "Common",
+    "word": "turnshield"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'Fortune bring you joy' or 'May your fortune bring you joy'. Used by elves and half-elves as an informal greeting or parting.",
+    "language": "Common",
+    "word": "uluvathae (pronounced: Oo-loo-VAW-thay)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "can be said of a woman during her menstruation.",
+    "language": "Common",
+    "word": "under the moon"
+  },
+  {
+    "homebrew": "False",
+    "translation": "horsemeat.",
+    "language": "Common",
+    "word": "vasark"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'Gods grant'. Used in conjunction with whatever you wanted the gods to grant you. A corrupted Dwarven word used by those living on and around the Sea of Fallen Stars.",
+    "language": "Common",
+    "word": "vlandranna (pronounced: vlan-DRANNA)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "equivalent to 'Hey there!'.",
+    "language": "Common",
+    "word": "waelo"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'promiscuous female' (derogatory)",
+    "language": "Common",
+    "word": "wanton"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a barmaid or a waitress.",
+    "language": "Common",
+    "word": "wench"
+  },
+  {
+    "homebrew": "False",
+    "translation": "someone who did light metalwork.",
+    "language": "Common",
+    "word": "whitesmith"
+  },
+  {
+    "homebrew": "False",
+    "translation": "an insult, probably a contraction of 'whore's son'",
+    "language": "Common",
+    "word": "whorson"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'someone who enjoys having (shapechanging) spells cast upon them as part of sexual play' (derogatory)",
+    "language": "Common",
+    "word": "wild one"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'lecher' (derogatory)",
+    "language": "Common",
+    "word": "winker"
+  },
+  {
+    "homebrew": "False",
+    "translation": "ice wine.",
+    "language": "Common",
+    "word": "zzar"
+  }
+]

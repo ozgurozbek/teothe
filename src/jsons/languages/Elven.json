@@ -1,0 +1,764 @@
+[
+  {
+    "homebrew": "False",
+    "translation": "You hold my heart forever.",
+    "language": "Elven",
+    "word": "Ai armiel telere maenen hir."
+  },
+  {
+    "homebrew": "False",
+    "translation": "'Army of the Art', collective term for the magical military of Cormanthyr used during the Fall of Myth Drannor. Singular: Akh'Faern.",
+    "language": "Elven",
+    "word": "Akh'Faer"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'Army of Arms', collective term for the standard military of Cormanthyr used during the Fall of Myth Drannor. Singular: Akh'Velahrn.",
+    "language": "Elven",
+    "word": "Akh'Velahr"
+  },
+  {
+    "homebrew": "False",
+    "translation": "A true friend, as the trees and the water are true friends.",
+    "language": "Elven",
+    "word": "Al hond ebrath, uol tath shantar en tath lalala ol hond ebrath."
+  },
+  {
+    "homebrew": "False",
+    "translation": "'Fortunate meeting'. A greeting between travelers, used near the southern and eastern coastlands of the Sea of Fallen Stars.",
+    "language": "Elven",
+    "word": "AlaE (pronounced: ah-LAY)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'The Great Art of the People', meaning Elven High Magic.",
+    "language": "Elven",
+    "word": "Arselu'Tel'Quess"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'Winterbreeze', an old elvish surname.",
+    "language": "Elven",
+    "word": "Auglathla"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'It is Good to be Alive', a religious hymn of celebration.",
+    "language": "Elven",
+    "word": "Bwaelan Dro"
+  },
+  {
+    "homebrew": "False",
+    "translation": "The Day of Corellon's Peace, or Shieldmeet",
+    "language": "Elven",
+    "word": "Cinnaelos'Cor"
+  },
+  {
+    "homebrew": "False",
+    "translation": "crystal tower",
+    "language": "Elven",
+    "word": "Cryshal-Tirith"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Forest of Twilight",
+    "language": "Elven",
+    "word": "Durmista"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'one land' in old elven",
+    "language": "Elven",
+    "word": "Faer\u00fbn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'the Many-Splendored', the Elven name of Crescent Grove, Corellon's palace in Arvandor.",
+    "language": "Elven",
+    "word": "Gwyllachaightaeryll"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Creator Races",
+    "language": "Elven",
+    "word": "Iqua'Tel'Quessir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "the Thunder Peaks mountain range.",
+    "language": "Elven",
+    "word": "Kirthol Erdel"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'Regal lady', a title used by female rulers of Ardeep.",
+    "language": "Elven",
+    "word": "Laranlas"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'Regal lord', a title used by male rulers of Ardeep.",
+    "language": "Elven",
+    "word": "Laranlors"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'Not-people'. A derogatory term elves use to describe non-elves.",
+    "language": "Elven",
+    "word": "N'Tel'Quess"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Shadow soldiers. Singular: N'Vaelharn.",
+    "language": "Elven",
+    "word": "N'Vaelhar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Darkness in Light",
+    "language": "Elven",
+    "word": "N'landroshien"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Legacy of the North",
+    "language": "Elven",
+    "word": "Noromath"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Darkness slays light.",
+    "language": "Elven",
+    "word": "Oloth elgg ssussun."
+  },
+  {
+    "homebrew": "False",
+    "translation": "spider; plural is obra",
+    "language": "Elven",
+    "word": "Orbryn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "High lore gems.",
+    "language": "Elven",
+    "word": "Selu'Kiira"
+  },
+  {
+    "homebrew": "False",
+    "translation": "High Caster, The Art's Disciples, i.e., High Mages.",
+    "language": "Elven",
+    "word": "Selu'Taar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "at rest after changing. Referred to an animal, insect, or plant having reached maturity after passing through a life-cycle of changes. Was later borrowed by Common as a term for transgender individuals.",
+    "language": "Elven",
+    "word": "Sildur"
+  },
+  {
+    "homebrew": "False",
+    "translation": "the collective name elves use for their species. translates into common to mean, 'The People'.",
+    "language": "Elven",
+    "word": "Tel'Quessir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "(May your) fortune bring you joy. An informal greeting or parting used amongst individuals which enjoyed each other's company. Used amongst close friends, it was either seen as an insult, or as a warning that a third party was listening.",
+    "language": "Elven",
+    "word": "Uluvathae (pronounced: Oo-lou-VAW-thay)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Traveler's Star",
+    "language": "Elven",
+    "word": "Y'landrothiel"
+  },
+  {
+    "homebrew": "False",
+    "translation": "The Far Star",
+    "language": "Elven",
+    "word": "Y'tellarien"
+  },
+  {
+    "homebrew": "False",
+    "translation": "sun-follower, a breed of horse.",
+    "language": "Elven",
+    "word": "Yyllethyn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "shield guardian",
+    "language": "Elven",
+    "word": "aegiskeryn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'when peace meets', a collective term for a period of four years (interchangeable with pyesigen). Plural: aeloulaeva.",
+    "language": "Elven",
+    "word": "aeloulaev"
+  },
+  {
+    "homebrew": "False",
+    "translation": "teacher",
+    "language": "Elven",
+    "word": "aerister"
+  },
+  {
+    "homebrew": "False",
+    "translation": "hunted",
+    "language": "Elven",
+    "word": "aes"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'others', modern elven slang for non-elves.",
+    "language": "Elven",
+    "word": "aethen"
+  },
+  {
+    "homebrew": "False",
+    "translation": "place of duty.",
+    "language": "Elven",
+    "word": "akhiilor"
+  },
+  {
+    "homebrew": "False",
+    "translation": "cup (drinking vessel)",
+    "language": "Elven",
+    "word": "aloun"
+  },
+  {
+    "homebrew": "False",
+    "translation": "gem flower",
+    "language": "Elven",
+    "word": "amakiir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "star flower",
+    "language": "Elven",
+    "word": "amastacia"
+  },
+  {
+    "homebrew": "False",
+    "translation": "cloud, clouds",
+    "language": "Elven",
+    "word": "ammur"
+  },
+  {
+    "homebrew": "False",
+    "translation": "memory",
+    "language": "Elven",
+    "word": "ansrivarr"
+  },
+  {
+    "homebrew": "False",
+    "translation": "tree warden, one who protects the forest",
+    "language": "Elven",
+    "word": "arakhor"
+  },
+  {
+    "homebrew": "False",
+    "translation": "word suffix 'of' that always was contracted when used in combination with other words",
+    "language": "Elven",
+    "word": "aren"
+  },
+  {
+    "homebrew": "False",
+    "translation": "silver fox",
+    "language": "Elven",
+    "word": "arita"
+  },
+  {
+    "homebrew": "False",
+    "translation": "lovemaking.",
+    "language": "Elven",
+    "word": "arkhlavae"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Contraction of a longer phrase with the meaning 'those who have their being in the sea haunted by the true dream'; name of a group of sea-related deities.",
+    "language": "Elven",
+    "word": "asathalfinare"
+  },
+  {
+    "homebrew": "False",
+    "translation": "wake",
+    "language": "Elven",
+    "word": "be-inway"
+  },
+  {
+    "homebrew": "False",
+    "translation": "young human male (slang)",
+    "language": "Elven",
+    "word": "bhin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "garbage, used as an insult against those of half-elven and human heritage.",
+    "language": "Elven",
+    "word": "biir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "cup (one's hands, to hold)",
+    "language": "Elven",
+    "word": "calann"
+  },
+  {
+    "homebrew": "False",
+    "translation": "not, used as a prefix that means not, as in 'Colson' meaning 'not-son' (i.e., 'daughter').",
+    "language": "Elven",
+    "word": "col"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a term of endearment directed to sweethearts or children",
+    "language": "Elven",
+    "word": "damia"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Rabies",
+    "language": "Elven",
+    "word": "darrdartha"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'traitor', etymological precursor to 'drow'.",
+    "language": "Elven",
+    "word": "dhaerow"
+  },
+  {
+    "homebrew": "False",
+    "translation": "killing",
+    "language": "Elven",
+    "word": "eisliesen"
+  },
+  {
+    "homebrew": "False",
+    "translation": "love, absence of malice.",
+    "language": "Elven",
+    "word": "evae"
+  },
+  {
+    "homebrew": "False",
+    "translation": "fire",
+    "language": "Elven",
+    "word": "fete"
+  },
+  {
+    "homebrew": "False",
+    "translation": "moon whisper",
+    "language": "Elven",
+    "word": "galanodel"
+  },
+  {
+    "homebrew": "False",
+    "translation": "shadow",
+    "language": "Elven",
+    "word": "guenhwyvar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "big storm",
+    "language": "Elven",
+    "word": "hethtalos"
+  },
+  {
+    "homebrew": "False",
+    "translation": "diamond dew",
+    "language": "Elven",
+    "word": "holimion"
+  },
+  {
+    "homebrew": "False",
+    "translation": "true friend(s)",
+    "language": "Elven",
+    "word": "hond ebrath"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'monstrous spider'; plural is horbra",
+    "language": "Elven",
+    "word": "horb"
+  },
+  {
+    "homebrew": "False",
+    "translation": "storm",
+    "language": "Elven",
+    "word": "huan"
+  },
+  {
+    "homebrew": "False",
+    "translation": "stormclouds or stormfront",
+    "language": "Elven",
+    "word": "huthammur"
+  },
+  {
+    "homebrew": "False",
+    "translation": "cold illumination of the moon",
+    "language": "Elven",
+    "word": "illunathros"
+  },
+  {
+    "homebrew": "False",
+    "translation": "gem blossom",
+    "language": "Elven",
+    "word": "ilphelkiir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "familial love, loyalty to kin and family.",
+    "language": "Elven",
+    "word": "immaea"
+  },
+  {
+    "homebrew": "False",
+    "translation": "act or demonstration of love (deed, testimonial or honour, not lovemaking).",
+    "language": "Elven",
+    "word": "immeeira"
+  },
+  {
+    "homebrew": "False",
+    "translation": "ruby",
+    "language": "Elven",
+    "word": "iriador"
+  },
+  {
+    "homebrew": "False",
+    "translation": "forsaken (used as a derisive term by surface elves to refer to Drow)",
+    "language": "Elven",
+    "word": "irinal"
+  },
+  {
+    "homebrew": "False",
+    "translation": "lily",
+    "language": "Elven",
+    "word": "ithlil"
+  },
+  {
+    "homebrew": "False",
+    "translation": "boy filled with brightness",
+    "language": "Elven",
+    "word": "ivaebhin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "blade (as in blade made of steel) or sword.",
+    "language": "Elven",
+    "word": "kerym"
+  },
+  {
+    "homebrew": "False",
+    "translation": "(formally, tel'kiira) 'lore gem'.",
+    "language": "Elven",
+    "word": "kiira"
+  },
+  {
+    "homebrew": "False",
+    "translation": "flawless.",
+    "language": "Elven",
+    "word": "kyre"
+  },
+  {
+    "homebrew": "False",
+    "translation": "silver frond",
+    "language": "Elven",
+    "word": "liadon"
+  },
+  {
+    "homebrew": "False",
+    "translation": "homosexual male (slang)",
+    "language": "Elven",
+    "word": "liyan"
+  },
+  {
+    "homebrew": "False",
+    "translation": "sky",
+    "language": "Elven",
+    "word": "lurleath"
+  },
+  {
+    "homebrew": "False",
+    "translation": "perhaps, modern elven slang",
+    "language": "Elven",
+    "word": "maethe"
+  },
+  {
+    "homebrew": "False",
+    "translation": "changeling (based on the term for a mutant sahuagin who resembles an aquatic elf)",
+    "language": "Elven",
+    "word": "malenti"
+  },
+  {
+    "homebrew": "False",
+    "translation": "oaken heel",
+    "language": "Elven",
+    "word": "meliamne"
+  },
+  {
+    "homebrew": "False",
+    "translation": "white dust",
+    "language": "Elven",
+    "word": "mithardir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "night breeze",
+    "language": "Elven",
+    "word": "na\u00eflo"
+  },
+  {
+    "homebrew": "False",
+    "translation": "love, essence of passion.",
+    "language": "Elven",
+    "word": "nor"
+  },
+  {
+    "homebrew": "False",
+    "translation": "whip, lash",
+    "language": "Elven",
+    "word": "nyrhlas"
+  },
+  {
+    "homebrew": "False",
+    "translation": "whipping, lashing",
+    "language": "Elven",
+    "word": "nyrtlassa"
+  },
+  {
+    "homebrew": "False",
+    "translation": "four snows:, a collective term for a period of four years (interchangeable with aeloulaev). Plural: pyesigeni.",
+    "language": "Elven",
+    "word": "pyesigen"
+  },
+  {
+    "homebrew": "False",
+    "translation": "unicorn",
+    "language": "Elven",
+    "word": "raer"
+  },
+  {
+    "homebrew": "False",
+    "translation": "bear",
+    "language": "Elven",
+    "word": "re"
+  },
+  {
+    "homebrew": "False",
+    "translation": "refuge",
+    "language": "Elven",
+    "word": "relthwin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "west",
+    "language": "Elven",
+    "word": "ren"
+  },
+  {
+    "homebrew": "False",
+    "translation": "spear",
+    "language": "Elven",
+    "word": "rid"
+  },
+  {
+    "homebrew": "False",
+    "translation": "dream",
+    "language": "Elven",
+    "word": "ru"
+  },
+  {
+    "homebrew": "False",
+    "translation": "star",
+    "language": "Elven",
+    "word": "rua"
+  },
+  {
+    "homebrew": "False",
+    "translation": "starwing, a type of spelljammer ship controlled by the Evermeet elves.",
+    "language": "Elven",
+    "word": "ruathimaer"
+  },
+  {
+    "homebrew": "False",
+    "translation": "meadow",
+    "language": "Elven",
+    "word": "rum"
+  },
+  {
+    "homebrew": "False",
+    "translation": "jade",
+    "language": "Elven",
+    "word": "ry"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a span of important time or a generation, depending on its context. Usually, it is used to measure the reign of a specific elven ruler. Rysar are further broken down by aeloulaeva, pyesigeni, or a particular ruler's reign.",
+    "language": "Elven",
+    "word": "rysar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "crossdresser (slang)",
+    "language": "Elven",
+    "word": "saece"
+  },
+  {
+    "homebrew": "False",
+    "translation": "drifting (on water)",
+    "language": "Elven",
+    "word": "sathu"
+  },
+  {
+    "homebrew": "False",
+    "translation": "murderer",
+    "language": "Elven",
+    "word": "savalir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "elf-friend",
+    "language": "Elven",
+    "word": "sha'Quessir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "bisexual female (slang, derogatory)",
+    "language": "Elven",
+    "word": "shaeda"
+  },
+  {
+    "homebrew": "False",
+    "translation": "moon brook",
+    "language": "Elven",
+    "word": "siannodel"
+  },
+  {
+    "homebrew": "False",
+    "translation": "pig (literally 'mud-wallowing-dogs'). Sometimes used as a derogatory term for orcs.",
+    "language": "Elven",
+    "word": "slaugh"
+  },
+  {
+    "homebrew": "False",
+    "translation": "warm light of the sun",
+    "language": "Elven",
+    "word": "solicallor"
+  },
+  {
+    "homebrew": "False",
+    "translation": "bluebonnet",
+    "language": "Elven",
+    "word": "sormrel"
+  },
+  {
+    "homebrew": "False",
+    "translation": "promiscuous female (slang, derogatory)",
+    "language": "Elven",
+    "word": "sreea"
+  },
+  {
+    "homebrew": "False",
+    "translation": "beautiful, only applied to things of natural beauty not to people",
+    "language": "Elven",
+    "word": "srendaen"
+  },
+  {
+    "homebrew": "False",
+    "translation": "the veiled one. referring to the creature whose future is unclear and cannot be divined.",
+    "language": "Elven",
+    "word": "talibund"
+  },
+  {
+    "homebrew": "False",
+    "translation": "cauldron",
+    "language": "Elven",
+    "word": "tammin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "gift",
+    "language": "Elven",
+    "word": "taran"
+  },
+  {
+    "homebrew": "False",
+    "translation": "legendary moon horse of Evermeet.",
+    "language": "Elven",
+    "word": "teu-kelytha"
+  },
+  {
+    "homebrew": "False",
+    "translation": "someone who enjoys having (shapechanging) spells cast upon them as part of sexual play (slang, derogatory)",
+    "language": "Elven",
+    "word": "thaethiira"
+  },
+  {
+    "homebrew": "False",
+    "translation": "living tree homes.",
+    "language": "Elven",
+    "word": "trazaethe"
+  },
+  {
+    "homebrew": "False",
+    "translation": "reborn in life's bright struggles",
+    "language": "Elven",
+    "word": "vaendaan-naes"
+  },
+  {
+    "homebrew": "False",
+    "translation": "fatigued by life's dark trials",
+    "language": "Elven",
+    "word": "vaendin-thiil"
+  },
+  {
+    "homebrew": "False",
+    "translation": "fern",
+    "language": "Elven",
+    "word": "vaerevven"
+  },
+  {
+    "homebrew": "False",
+    "translation": "freshwater shallows",
+    "language": "Elven",
+    "word": "vaerve"
+  },
+  {
+    "homebrew": "False",
+    "translation": "drifting (on air)",
+    "language": "Elven",
+    "word": "vra"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a vile curse or an insult, in reference to the Vyshaan clan.",
+    "language": "Elven",
+    "word": "vyshaan"
+  },
+  {
+    "homebrew": "False",
+    "translation": "drifting (adrift/lost/directionless)",
+    "language": "Elven",
+    "word": "wael"
+  },
+  {
+    "homebrew": "False",
+    "translation": "lynx of approaching dusk",
+    "language": "Elven",
+    "word": "walaxyrvaan"
+  },
+  {
+    "homebrew": "False",
+    "translation": "gold petal",
+    "language": "Elven",
+    "word": "xiloscient"
+  },
+  {
+    "homebrew": "False",
+    "translation": "less than half. Used as an insult to humans born to a half-elven parent.",
+    "language": "Elven",
+    "word": "zenar"
+  }
+]
