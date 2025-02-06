@@ -7,12 +7,10 @@ import {
   Empty,
   InputNumber,
   MenuProps,
-  Skeleton,
   Space,
   Table,
 } from "antd";
 import SimpleContent from "@/components/SimpleCon";
-import useSWR from "swr";
 import GetCrumbs from "Comp/NavigationCrumb";
 import CalendarTable from "@/components/calendar/CalendarTable";
 import { useState } from "react";
@@ -30,16 +28,24 @@ function GetAPICalendar() {
    * @param args - RequestInfo object containing information about the request.
    * @returns Promise resolving to the parsed JSON response.
    */
-  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
-  const { data, error } = useSWR(
-    "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getTables?tab=calendar",
-    fetcher
-  );
-  if (error) {
-    console.log(error);
-    return <div>Failed to access API</div>;
-  }
-  if (!data) return <Skeleton active />;
+  const data = {
+    tableDescription: {
+      description:
+        "Every day is 24 hours, 8 days a week, 8 weeks, 48 days long months. In total there are 384 days.",
+      columns: ["month", "name", "season"],
+      tabName: "calendar",
+    },
+    tableData: [
+      { season: "Spring", name: "Buibus", month: "1" },
+      { season: "Spring", name: "Ukeus", month: "2" },
+      { season: "Summer", name: "Verus", month: "3" },
+      { season: "Summer", name: "Vihus", month: "4" },
+      { season: "Fall", name: "Fexyius", month: "5" },
+      { season: "Fall", name: "Vesius", month: "6" },
+      { season: "Winter", name: "Cyaxus", month: "7" },
+      { season: "Winter", name: "Radus", month: "8" },
+    ],
+  };
 
   function titleCase(text: string) {
     return text
