@@ -250,8 +250,9 @@ export default function LibraryContent() {
         <Row>
           <GetBook
             bookProps={{
-              url: "teothe.com",
-              image: "https://picsum.photos/300/400",
+              url: "library/dufrene-s-notes",
+              image: "/Books/dufrene-s-notes.jpg",
+              author: "Sonny Dufrene",
               name: "Dufrene's Notebook",
             }}
           />

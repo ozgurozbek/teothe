@@ -8,6 +8,7 @@ const booksComponents: Record<string, ComponentType<{}>> = {
   "we-are-pathetic-the-helpless-in-the-eyes-of-the-divine": dynamic(() => import('@/components/library/books/we-are-pathetic-the-helpless-in-the-eyes-of-the-divine')),
   "legend-of-w-steram": dynamic(() => import('@/components/library/books/legend-of-w-steram')),
   "divine-tales-1": dynamic(() => import('@/components/library/books/divine-tales-1')),
+  "dufrene-s-notes": dynamic(() => import('@/components/library/books/dufrene-s-notes')),
   // Add additional book components here
 };
 
@@ -38,6 +39,10 @@ export const generateMetadata = async ({ params }: { params: { book: string } })
       title: "Divine Tales 1",
       description: "A collection of tomes detailing the stories of certain divinity.",
     },
+    "dufrene-s-notes": {
+      title: "Dufrene's Notes",
+      description: "An adventure journal of Sonny Dufrene and his company.",
+    },
     // Add metadata for other books as needed
   };
 
@@ -47,7 +52,7 @@ export const generateMetadata = async ({ params }: { params: { book: string } })
 
 // This function generates static paths at build time
 export const generateStaticParams = async () => {
-  const booksList = ['what-are-these-clovers','we-are-pathetic-the-helpless-in-the-eyes-of-the-divine','legend-of-w-steram','divine-tales-1']; // Add all dynamic book names here
+  const booksList = ['what-are-these-clovers','we-are-pathetic-the-helpless-in-the-eyes-of-the-divine','legend-of-w-steram','divine-tales-1','dufrene-s-notes']; // Add all dynamic book names here
 
   return booksList.map(book => ({
     book,
