@@ -1,0 +1,117 @@
+{
+  "tableDescription": {
+    "description": "Every adventurer has one slot available for potions ready to use. Rest will be in your backpack. Consult with your DM before using Spell Storing Potions. The value of a consumable item, such as a potion or scroll, is typically half the value of a permanent item of the same rarity.",
+    "columns": ["name", "description", "rarity"],
+    "tabName": "alchemy"
+  },
+  "tableData": [
+    {
+      "description": "Lasts for a minute. Can be used twice. Additional 1d6 damage on chosen element (excludes radiant, necrotic etc.).",
+      "id": "17",
+      "name": "Elemental Oil",
+      "rarity": "Rare"
+    },
+    {
+      "description": "When you drink this potion, you magically emit light 30ft around you.",
+      "id": "1",
+      "name": "Light Emitting Potion",
+      "rarity": "Uncommon"
+    },
+    {
+      "description": "DC 16 DEX, or makes everyone in radius fall prone. Lubricant.",
+      "id": "11",
+      "name": "Lubricating Oil",
+      "rarity": "Common"
+    },
+    {
+      "description": "Can melt through solid stone. Deals 2d10 amounts of damage per every round start in combat.",
+      "id": "10",
+      "name": "Fast Acting Acid",
+      "rarity": "Rare"
+    },
+    {
+      "description": "Required for Waystones to operate. You can also make it with Powdered Silver, Powdered Diamond, Charcoal & Magic Infused Liquid",
+      "id": "16",
+      "name": "Teleportation Dust",
+      "rarity": "Uncommon"
+    },
+    {
+      "description": "Consult with your DM before using Spell Storing Potions.",
+      "id": "8",
+      "name": "Level 3 Spell Storing Potion",
+      "rarity": "VeryRare"
+    },
+    {
+      "description": "A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or take 4 (1d6) poison damage, and must repeat the saving throw for each second it is affected by the poison.",
+      "id": "3",
+      "name": "Divine Radiance Poison (Inhaled)",
+      "rarity": "Artifact"
+    },
+    {
+      "description": "A creature that ingests this poison must succeed on a DC 13 Constitution save or is paralysed for 10 minutes.",
+      "id": "4",
+      "name": "Paralysis Poison (Ingested)",
+      "rarity": "Uncommon"
+    },
+    {
+      "description": "Lasts for a minute. Can be used twice. Upon attacking against undead, demon, devil etc, grants 1d8 radiant damage and advantage.",
+      "id": "18",
+      "name": "Silver Oil",
+      "rarity": "VeryRare"
+    },
+    {
+      "description": "Deals 2d8 select element damage.",
+      "id": "15",
+      "name": "Dust of Dragon Breath",
+      "rarity": "Rare"
+    },
+    {
+      "description": "A creature subjected to this poison must make a DC 19 Constitution saving throw, taking 56 (16d6) poison damage on a failed save, or half as much damage on a successful one.",
+      "id": "2",
+      "name": "Aboleth Blood Poison (Injury)",
+      "rarity": "VeryRare"
+    },
+    {
+      "description": "Consult with your DM before using Spell Storing Potions.",
+      "id": "7",
+      "name": "Level 2 Spell Storing Potion",
+      "rarity": "Rare"
+    },
+    {
+      "description": "Makes 10m radius area flammable.",
+      "id": "14",
+      "name": "Dust of Heat",
+      "rarity": "Common"
+    },
+    {
+      "description": "Consult with your DM before using Spell Storing Potions.",
+      "id": "6",
+      "name": "Level 1 Spell Storing Potion",
+      "rarity": "Uncommon"
+    },
+    {
+      "description": "A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or be blinded for the duration it is influenced.",
+      "id": "5",
+      "name": "Retinopathy Poison (Inhaled)",
+      "rarity": "Uncommon"
+    },
+    {
+      "description": "+2 to select stat for 3 minutes. High chance of addiction. You may never be able benefit from the use of this drug with 75% chance. You roll this die as you swallow the drug.",
+      "id": "12",
+      "name": "Enhancement Drug",
+      "rarity": "Legendary"
+    },
+    {
+      "description": "DC 20 CON save, flammable, drinking it whole might cause indefinite physical damage.",
+      "id": "9",
+      "name": "Strong Alcohol (Ingested)",
+      "rarity": "Common"
+    },
+    {
+      "description": "Reveals creatures within 10m radius.",
+      "id": "13",
+      "name": "Dust of Appearance",
+      "rarity": "Common"
+    }
+  ]
+}

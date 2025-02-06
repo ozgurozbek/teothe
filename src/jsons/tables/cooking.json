@@ -1,0 +1,191 @@
+{
+  "tableDescription": {
+    "description": "A rewamped simplified cooking table. Some entries are subject to change.",
+    "columns": ["entry", "type", "size", "effect"],
+    "tabName": "cooking"
+  },
+  "tableData": [
+    {
+      "size": "Small",
+      "id": "5",
+      "entry": "04",
+      "effect": "You are targeted by an Aasimar. Make a DC 15 Wisdom saving throw. On success, gain +2 hit points for every hit die used during a short rest. On a failure, take 2d6 radiant damage.",
+      "type": "Celestials"
+    },
+    {
+      "size": "Medium",
+      "id": "23",
+      "entry": "22",
+      "effect": "Make a DC 15 Constitution saving throw. On a success, you gain advantage on Strength-based ability checks for 4 hours. On a failure, take 2d6 poison damage.",
+      "type": "Monstrosities"
+    },
+    {
+      "size": "Large",
+      "id": "19",
+      "entry": "18",
+      "effect": "You are targeted by a Fallen Aasimar. Gain one casting of Summon Abyssal Incursion as a 6th-level spell, which can be used within the next 24 hours. The summoned abyssal forces fight on your side for 1 hour before returning to their plane of existence.",
+      "type": "Fiends"
+    },
+    {
+      "size": "Large",
+      "id": "3",
+      "entry": "02",
+      "effect": "Make a DC 20 Wisdom saving throw. On success, gain 1.5x HP per hit die on rest. On a failure, take 3d6 psychic damage. You also gain advantage on Intelligence-based ability checks for 24 hours.",
+      "type": "Aberrations"
+    },
+    {
+      "size": "Small",
+      "id": "17",
+      "entry": "16",
+      "effect": "Gain one casting of Summon Lesser Demon as a 2nd-level spell, which can be used within the next 24 hours. The demon is hostile and lasts for 1 hour.",
+      "type": "Fiends"
+    },
+    {
+      "size": "Small",
+      "id": "14",
+      "entry": "13",
+      "effect": "You are attracted to Shadowfell. Gain 1 spell slots for a 1st level spell slot during a short rest. You gain one casting of Misty Step to be used within the next 24 hours.",
+      "type": "Fey"
+    },
+    {
+      "size": "Large",
+      "id": "7",
+      "entry": "06",
+      "effect": "You are targeted by an Aasimar. Gain +4 hit points for every hit die used during a short rest. You gain a number of temporary hit points equal to twice your level, and your alignment changes to evil. Additionally, you can cast Banishment once as a 5th-level spell within the next 1 hour, this also banishes you to your target destination.",
+      "type": "Celestials"
+    },
+    {
+      "size": "Medium",
+      "id": "6",
+      "entry": "05",
+      "effect": "You are targeted by an Aasimar. Gain +3 hit points for every hit die used during a short rest. You gain a number of temporary hit points equal to your level, and your alignment changes to evil.",
+      "type": "Celestials"
+    },
+    {
+      "size": "Any",
+      "id": "25",
+      "entry": "24",
+      "effect": "Make a DC 15 Constitution saving throw. On success, you gain resistance to acid damage for 4 hours. On a failure, take 4d6 acid damage. You are blinded and deafened until treated.",
+      "type": "Oozes"
+    },
+    {
+      "size": "Small",
+      "id": "9",
+      "entry": "08",
+      "effect": "You now have a distinct smell that Dragonborn and Dragons can tell you ate their kin. Gain a one-use breath weapon equivalent to the dragonborn breath weapon of the same color, if the dragon is a true dragon.",
+      "type": "Dragons"
+    },
+    {
+      "size": "Small",
+      "id": "1",
+      "entry": "00",
+      "effect": "Make a DC 10 Wisdom saving throw. On success, gain 1/2 HP per hit die on rest. On a failure, take 1d6 psychic damage.",
+      "type": "Aberrations"
+    },
+    {
+      "size": "Large",
+      "id": "24",
+      "entry": "23",
+      "effect": "Make a DC 20 Constitution saving throw. On a success, you gain resistance to poison damage for 4 hours and also gain advantage on Strength-based ability checks for 4 hours. On a failure, take 6d6 poison damage and are poisoned.",
+      "type": "Monstrosities"
+    },
+    {
+      "size": "Any",
+      "id": "20",
+      "entry": "19",
+      "effect": "Gain +2 hit points for every hit die used during a short rest. You gain one casting of Enlarge/Reduce to be used within the next 24 hours. Roll a D20, on a 15 or more, you have advantage on Constitution-based ability checks for 4 hours.",
+      "type": "Giants"
+    },
+    {
+      "size": "Any",
+      "id": "27",
+      "entry": "26",
+      "effect": "Make a DC 15 Constitution saving throw. On success, you are resistant to necrotic damage and vulnerable to radiant damage. On a failure, take 2d6 necrotic and 2d6 poison damage.",
+      "type": "Undead"
+    },
+    {
+      "size": "N/A",
+      "id": "8",
+      "entry": "07",
+      "effect": "Inedible.",
+      "type": "Constructs"
+    },
+    {
+      "size": "Medium",
+      "id": "2",
+      "entry": "01",
+      "effect": "Make a DC 15 Wisdom saving throw. On success, gain 1 HP per hit die on rest. On a failure, take 2d6 psychic damage.",
+      "type": "Aberrations"
+    },
+    {
+      "size": "Large",
+      "id": "11",
+      "entry": "11",
+      "effect": "You now have a distinct smell that Dragonborn and Dragons can tell you ate their kin. Regain all hit points, gain a one-use breath weapon equivalent to the dragonborn breath weapon of the same color, and gain resistance to the dragon's damage type, if the dragon is a true dragon.",
+      "type": "Dragons"
+    },
+    {
+      "size": "Any",
+      "id": "4",
+      "entry": "03",
+      "effect": "Gain 1 HP per hit die on rest.",
+      "type": "Beasts"
+    },
+    {
+      "size": "Any",
+      "id": "21",
+      "entry": "20",
+      "effect": "You gain one additional hit die to be used during your next long rest.",
+      "type": "Humanoids"
+    },
+    {
+      "size": "Small",
+      "id": "22",
+      "entry": "21",
+      "effect": "Make a DC 10 Constitution saving throw. On a failure, take 1d6 poison damage.",
+      "type": "Monstrosities"
+    },
+    {
+      "size": "Any",
+      "id": "26",
+      "entry": "25",
+      "effect": "No effect.",
+      "type": "Plants"
+    },
+    {
+      "size": "N/A",
+      "id": "13",
+      "entry": "12",
+      "effect": "Inedible.",
+      "type": "Elementals"
+    },
+    {
+      "size": "Medium",
+      "id": "18",
+      "entry": "17",
+      "effect": "You are targeted by a Fallen Aasimar. Gain one casting of Summon Greater Demon as a 4th-level spell, which must be used within the next 24 hours. The demon is hostile and lasts for 1 hour.",
+      "type": "Fiends"
+    },
+    {
+      "size": "Large",
+      "id": "16",
+      "entry": "15",
+      "effect": "You are attracted to Shadowfell. Gain 3 spell slots for a 2nd 3rd or 4th level spell slot during a short rest. You gain one casting of Polymorph to be used within the next 24 hours. Additionally, you have advantage on Charisma-based ability checks for 4 hours.",
+      "type": "Fey"
+    },
+    {
+      "size": "Medium",
+      "id": "15",
+      "entry": "14",
+      "effect": "You are attracted to Shadowfell. Gain 2 spell slots for a 1st or 2nd level spell slot during a short rest. You gain one casting of Faerie Fire to be used within the next 24 hours.",
+      "type": "Fey"
+    },
+    {
+      "size": "Medium",
+      "id": "10",
+      "entry": "09",
+      "effect": "You now have a distinct smell that Dragonborn and Dragons can tell you ate their kin. Regain 1/2 of your hit points and gain a one-use breath weapon equivalent to the dragonborn breath weapon of the same color, if the dragon is a true dragon.",
+      "type": "Dragons"
+    }
+  ]
+}
