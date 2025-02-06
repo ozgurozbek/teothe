@@ -1,0 +1,51 @@
+{
+  "tableDescription": {
+    "description": "Is a Performance Check. Kinks give bonuses based on Performance proficiency.",
+    "columns": ["material", "price", "check", "effectiveness"],
+    "tabName": "adultry"
+  },
+  "tableData": [
+    {
+      "effectiveness": "3%",
+      "price": "0",
+      "id": "6",
+      "material": "Pulling out",
+      "check": "None"
+    },
+    {
+      "effectiveness": "7%",
+      "price": "0",
+      "id": "5",
+      "material": "Resistance",
+      "check": "None"
+    },
+    {
+      "effectiveness": "46%",
+      "price": "4",
+      "id": "3",
+      "material": "Goblin Digested Fruit Seeds",
+      "check": "None"
+    },
+    {
+      "effectiveness": "90%",
+      "price": "20",
+      "id": "1",
+      "material": "Wildplant Seed Infusion",
+      "check": "Arcana (DC24)"
+    },
+    {
+      "effectiveness": "72%",
+      "price": "60",
+      "id": "2",
+      "material": "Non-latex Barrier",
+      "check": "Intelligence (DC20)"
+    },
+    {
+      "effectiveness": "44%",
+      "price": "0",
+      "id": "4",
+      "material": "Mage Armor",
+      "check": "None"
+    }
+  ]
+}
