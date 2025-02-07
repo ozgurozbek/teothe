@@ -34,10 +34,6 @@ import dwarvish from "@/jsons/languages/Dwarvish.json";
 
 /**
  * Functional component for the LanguagesDropdown.
- * @param curLang - The current language.
- * @param langList - List of languages.
- * @param handleLangClick - Click event handler for language selection.
- * @returns JSX elements representing the LanguagesDropdown.
  */
 function LanguagesDropdown({
   curLang,
@@ -48,34 +44,11 @@ function LanguagesDropdown({
   langList: MenuProps["items"];
   handleLangClick: MenuProps["onClick"];
 }) {
-  const langProps = {
-    items: langList,
-    onClick: handleLangClick,
-  };
-  langList = [
-    "elven",
-    "gith",
-    "giant",
-    "draconic",
-    "halfancient",
-    "goblin",
-    "orcish",
-    "drow",
-    "aokin",
-    "undercommon",
-    "yuanti",
-    "sylvan",
-    "common",
-    "gnoll",
-    "gnome",
-    "abyssal",
-    "dwarvish",
-  ];
   return (
     <Space className="mb-4">
       Language:{" "}
       <Dropdown
-        menu={langProps}
+        menu={{ items: langList, onClick: handleLangClick }}
         autoFocus={true}
         dropdownRender={(menu) => (
           <div className="max-h-64 overflow-y-scroll no-scrollbar">{menu}</div>
@@ -92,9 +65,6 @@ function LanguagesDropdown({
           </Space>
         </Button>
       </Dropdown>
-      {!langProps.items && (
-        <Button onClick={() => window.location.reload()}>Refresh Page</Button>
-      )}
     </Space>
   );
 }
@@ -106,42 +76,48 @@ function LanguagesDropdown({
  * @returns JSX elements representing the LanguagesPage.
  */
 export default function LanguagesContent() {
-  const [curLang, setCurLang] = useState("Elven");
-  const [data, setData] = useState([]);
+  const [curLang, setCurLang] = useState("Common");
+  const [data, setData] = useState<any[]>([]);
 
-  const handleLangClick = (e: any) => {
+  const handleLangClick: MenuProps["onClick"] = (e) => {
     setCurLang(e.key);
   };
 
-  const langData: any = {
-    elven,
-    gith,
-    giant,
-    draconic,
-    halfancient,
-    goblin,
-    orcish,
-    drow,
-    aokin,
-    undercommon,
-    yuanti,
-    sylvan,
-    common,
-    gnoll,
-    gnome,
-    abyssal,
-    dwarvish,
+  const langData: Record<string, any[]> = {
+    Elven: elven,
+    Gith: gith,
+    Giant: giant,
+    Draconic: draconic,
+    "Half-Ancient": halfancient,
+    Goblin: goblin,
+    Orcish: orcish,
+    Drow: drow,
+    Aokin: aokin,
+    Undercommon: undercommon,
+    "Yuan-ti": yuanti,
+    Sylvan: sylvan,
+    Common: common,
+    Gnoll: gnoll,
+    Gnome: gnome,
+    Abyssal: abyssal,
+    Dwarvish: dwarvish,
   };
 
+  const langList = Object.keys(langData).map((lang) => ({
+    key: lang,
+    label: lang,
+  }));
+
+  // Update data when language changes
   useEffect(() => {
-    setData(langData[curLang]); // Retrieve the correct dataset from the object
+    setData(langData[curLang] || []);
   }, [curLang]);
 
   if (data.length === 0) {
     return <Skeleton active />;
   }
 
-  const renderedLanguages = data.map((item: any, index) => (
+  const renderedLanguages = data.map((item, index) => (
     <Language
       key={index}
       languageProps={{
