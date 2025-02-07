@@ -1,0 +1,87 @@
+{
+  "tableDescription": {
+    "description": "Runes can be found and only be applied by a deity if multiple variables align. This alignment depends on the rune, and the current month we are in. For example a good aligned rune can not be applied if we are in a month named after a bad aligned deity. This alignment also differs for the Runemaster's own religion. Evil aligned deities to themselves are good.",
+    "columns": ["name", "description", "alignment"],
+    "tabName": "runes"
+  },
+  "tableData": [
+    {
+      "alignment": "Good",
+      "description": "When charging, gain additional attack.",
+      "id": "2",
+      "name": "Juggernaut"
+    },
+    {
+      "alignment": "Neutral",
+      "description": "Any attacks that succeed without moving grants you another attack. You can't change targets or move.",
+      "id": "7",
+      "name": "Fury"
+    },
+    {
+      "alignment": "Evil",
+      "description": "You restore 8HP per every skull you crush with this item.",
+      "id": "10",
+      "name": "Skull"
+    },
+    {
+      "alignment": "Evil",
+      "description": "Per long rest, grants invisibility for a while.",
+      "id": "13",
+      "name": "Shadow"
+    },
+    {
+      "alignment": "Neutral",
+      "description": "Once per battle, if you get knocked unconcious, gain your CON amounts of HP.",
+      "id": "8",
+      "name": "Guts"
+    },
+    {
+      "alignment": "Good",
+      "description": "Deity blessed this item can protect it or make way for its attack.",
+      "id": "1",
+      "name": "Divinity"
+    },
+    {
+      "alignment": "Evil",
+      "description": "Poison applied to this item will deal double the amounts of poison damage.",
+      "id": "9",
+      "name": "Toxic"
+    },
+    {
+      "alignment": "Evil",
+      "description": "Can teleport to the item on line of sight unless bound or blocked by magic.",
+      "id": "12",
+      "name": "Blink"
+    },
+    {
+      "alignment": "Good",
+      "description": "Grants animal companion +5 to hit and damage on a target that you've marked.",
+      "id": "4",
+      "name": "Prey"
+    },
+    {
+      "alignment": "Neutral",
+      "description": "As you draw this weapon, you and your allies gain Nd12 temporary HP for this battle, once a week. N is decided by your level. One for 4,8,12,16,20 leves.",
+      "id": "6",
+      "name": "Heroic"
+    },
+    {
+      "alignment": "Evil",
+      "description": "Attacks on prone enemies don't end your attack phase for once in a turn.",
+      "id": "11",
+      "name": "Impale"
+    },
+    {
+      "alignment": "Good",
+      "description": "If not moved for a turn in combat, gain +3 AC.",
+      "id": "3",
+      "name": "Wall"
+    },
+    {
+      "alignment": "Good",
+      "description": "Your initiative counts as 20, if you want.",
+      "id": "5",
+      "name": "Dervish"
+    }
+  ]
+}

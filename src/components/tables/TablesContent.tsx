@@ -1,11 +1,17 @@
 "use client";
 
-import { Button, Card, Divider, Empty, Skeleton, Space } from "antd";
+import { Button, Card, Divider, Table, Space } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
-import useSWR from "swr";
-import { Table } from "antd";
 import { useState } from "react";
 import SimpleContent from "@/components/SimpleCon";
+import adultry from "@/jsons/tables/adultry.json";
+import alchemy from "@/jsons/tables/alchemy.json";
+import cooking from "@/jsons/tables/cooking.json";
+import enhancements from "@/jsons/tables/enhancements.json";
+import material from "@/jsons/tables/material.json";
+import resurrection from "@/jsons/tables/resurrection.json";
+import runes from "@/jsons/tables/runes.json";
+import scroll from "@/jsons/tables/scroll.json";
 
 /**
  * Function to fetch and display data for different tables.
@@ -15,7 +21,26 @@ import SimpleContent from "@/components/SimpleCon";
 function GetTableData() {
   const [curTable, setCurTable] = useState("resurrection");
   const [displayEmpty, setDisplayEmpty] = useState(true);
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState("Resurrection");
+
+  const tables = {
+    material,
+    alchemy,
+    resurrection,
+    enhancements,
+    runes,
+    adultry,
+    cooking,
+    scroll,
+  } as const;
+
+  // Make sure that 'curTable' is a key of 'tables'
+  const currentTableData = tables[curTable as keyof typeof tables];
+
+  // If there's no data, return empty state
+  if (!currentTableData) {
+    return <div>No data found for this table.</div>;
+  }
 
   function TablesNavigator() {
     return (
@@ -25,7 +50,7 @@ function GetTableData() {
             onClick={() => {
               setDisplayEmpty(false);
               setCurTable("material");
-              setQuery("Material Variants")
+              setQuery("Material Variants");
             }}
           >
             Material Variants
@@ -34,7 +59,7 @@ function GetTableData() {
             onClick={() => {
               setDisplayEmpty(false);
               setCurTable("alchemy");
-              setQuery("Alchemy")
+              setQuery("Alchemy");
             }}
           >
             Alchemy
@@ -43,7 +68,7 @@ function GetTableData() {
             onClick={() => {
               setDisplayEmpty(false);
               setCurTable("resurrection");
-              setQuery("Resurrection")
+              setQuery("Resurrection");
             }}
           >
             Resurrection
@@ -52,7 +77,7 @@ function GetTableData() {
             onClick={() => {
               setDisplayEmpty(false);
               setCurTable("enhancements");
-              setQuery("Enhancements")
+              setQuery("Enhancements");
             }}
           >
             Enhancements
@@ -61,7 +86,7 @@ function GetTableData() {
             onClick={() => {
               setDisplayEmpty(false);
               setCurTable("runes");
-              setQuery("Runes")
+              setQuery("Runes");
             }}
           >
             Runes
@@ -70,7 +95,7 @@ function GetTableData() {
             onClick={() => {
               setDisplayEmpty(false);
               setCurTable("adultry");
-              setQuery("Adultry")
+              setQuery("Adultry");
             }}
           >
             Adultry
@@ -79,7 +104,7 @@ function GetTableData() {
             onClick={() => {
               setDisplayEmpty(false);
               setCurTable("cooking");
-              setQuery("Cooking")
+              setQuery("Cooking");
             }}
           >
             Cooking
@@ -88,7 +113,7 @@ function GetTableData() {
             onClick={() => {
               setDisplayEmpty(false);
               setCurTable("scroll");
-              setQuery("Scrolls")
+              setQuery("Scrolls");
             }}
           >
             Scrolls
@@ -98,34 +123,8 @@ function GetTableData() {
     );
   }
 
-  /**
-   * Fetcher function for API requests.
-   * @param args - RequestInfo object containing information about the request.
-   * @returns Promise resolving to the parsed JSON response.
-   */
-  const fetcher = (args: RequestInfo) => fetch(args).then((res) => res.json());
-  const { data, error } = useSWR(
-    "https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getTables?tab=" +
-    curTable,
-    fetcher
-  );
-  if (error) {
-    console.log(error);
-    return <div>Failed to access API</div>;
-  }
-  if (!data) return <Skeleton active />;
-
-  if (displayEmpty) {
-    return (
-      <>
-        <TablesNavigator />
-        <Divider />
-        <Empty />
-      </>
-    );
-  }
-
   function titleCase(text: string) {
+    if (!text) return ""; // Return an empty string if text is invalid (null, undefined, or empty)
     return text
       .split(" ")
       .map((w) => w[0].toUpperCase() + w.substring(1).toLowerCase())
@@ -133,17 +132,21 @@ function GetTableData() {
   }
 
   //dataSource, columns
+  const { tableDescription, tableData } = currentTableData;
+
   let columns = [];
-  for (let j = 0; j < data.tableDescription.columns.length; j++) {
-    columns.push({
-      title: titleCase(data.tableDescription.columns[j]),
-      dataIndex: data.tableDescription.columns[j],
-      key: data.tableDescription.columns[j],
-    });
+  if (tableDescription?.columns) {
+    for (let j = 0; j < tableDescription.columns.length; j++) {
+      columns.push({
+        title: titleCase(tableDescription.columns[j]),
+        dataIndex: tableDescription.columns[j],
+        key: tableDescription.columns[j],
+      });
+    }
   }
 
   let dataSource = [];
-  for (let rowData of data.tableData) {
+  for (let rowData of tableData) {
     dataSource.push(rowData);
   }
   dataSource.sort((a, b) => parseInt(a.id) - parseInt(b.id));
@@ -155,7 +158,7 @@ function GetTableData() {
       <SimpleContent
         contentProps={{
           title: titleCase(query),
-          text: [data.tableDescription.description],
+          text: [tableDescription.description],
         }}
       />
       <Table

@@ -1,0 +1,65 @@
+{
+  "tableDescription": {
+    "description": "You can have 3 points worth of enhancements on your armor.",
+    "columns": ["name", "price", "description", "cost"],
+    "tabName": "enhancements"
+  },
+  "tableData": [
+    {
+      "cost": "2",
+      "price": "100 gp",
+      "description": "Inflicts STR mod amounts of damage on grapple.",
+      "id": "6",
+      "name": "Bladed"
+    },
+    {
+      "cost": "1",
+      "price": "15 gp",
+      "description": "Armor is much more comfortable to sleep in.",
+      "id": "2",
+      "name": "Comfort"
+    },
+    {
+      "cost": "2",
+      "price": "100 gp",
+      "description": "Does not reduce movement speed from STR requirement.",
+      "id": "8",
+      "name": "Light"
+    },
+    {
+      "cost": "1",
+      "price": "15 gp",
+      "description": "Armor is self cleaning.",
+      "id": "3",
+      "name": "Cleaning"
+    },
+    {
+      "cost": "0",
+      "price": "5 gp",
+      "description": "Armor resizes to fit the user. Magical items automatically do this.",
+      "id": "1",
+      "name": "Fitting"
+    },
+    {
+      "cost": "1",
+      "price": "25 gp",
+      "description": "Armor shines significantly, every detail pop-up. Disadvantage on stealth checks, advantage on social checks.",
+      "id": "4",
+      "name": "Shiny"
+    },
+    {
+      "cost": "2",
+      "price": "100 gp",
+      "description": "Does not grant disadvantage on stealth checks.",
+      "id": "7",
+      "name": "Suppressed"
+    },
+    {
+      "cost": "1",
+      "price": "25 gp",
+      "description": "Armor is unnoticable and appears simple upon short inspection.",
+      "id": "5",
+      "name": "Dull"
+    }
+  ]
+}

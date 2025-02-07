@@ -1,0 +1,65 @@
+{
+  "tableDescription": {
+    "description": "RAW resurrection spells such as ''Revivify'' are not allowed besides this table. There are penalties for consecutive resurrections, ask DM. Materials are consumed by the spell. Keep in mind you'll need a body, or a part of it in most cases.",
+    "columns": ["name", "material", "class", "deadline", "restoration"],
+    "tabName": "resurrection"
+  },
+  "tableData": [
+    {
+      "deadline": "10 minutes",
+      "id": "1",
+      "name": "Expenditure",
+      "class": "Bard, Cleric, Paladin",
+      "material": "10 HP Vouch (Max 20, DC-10 each)",
+      "restoration": "No"
+    },
+    {
+      "deadline": "200 years",
+      "id": "7",
+      "name": "Existance",
+      "class": "Bard",
+      "material": "Diamond worth 25000 gp",
+      "restoration": "Yes, roll new species"
+    },
+    {
+      "deadline": "200 years",
+      "id": "6",
+      "name": "True Resurrection",
+      "class": "Cleric, Druid",
+      "material": "Holy water & Diamond worth 25000 gp",
+      "restoration": "Yes"
+    },
+    {
+      "deadline": "1 minute",
+      "id": "2",
+      "name": "Revivify",
+      "class": "Cleric, Paladin, Artificer",
+      "material": "Diamond worth 300 gp",
+      "restoration": "No"
+    },
+    {
+      "deadline": "10 days",
+      "id": "4",
+      "name": "Reincarnate",
+      "class": "Druid",
+      "material": "Rare oils worth 1000 gp",
+      "restoration": "Yes, roll new species"
+    },
+    {
+      "deadline": "10 days",
+      "id": "3",
+      "name": "Raise Dead",
+      "class": "Bard, Cleric, Paladin",
+      "material": "Diamond worth 500 gp",
+      "restoration": "No"
+    },
+    {
+      "deadline": "100 years",
+      "id": "5",
+      "name": "Resurrection",
+      "class": "Bard, Cleric",
+      "material": "Diamond worth 1000 gp",
+      "restoration": "Yes, except magical"
+    }
+  ]
+}

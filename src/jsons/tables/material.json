@@ -1,0 +1,124 @@
+{
+  "tableDescription": {
+    "description": "Your gear can only be infused once. Mithral & Adamantine can be used as is.",
+    "columns": ["name", "description"],
+    "tabName": "material"
+  },
+  "tableData": [
+    {
+      "description": "Whatever material you are using in your armor is tainted with other metals, or was crafted with poor skills. -1 AC on armors. Prone to breaking.",
+      "id": "3",
+      "name": "Lesser Variant"
+    },
+    {
+      "description": "Infernal iron was a metallic substance that was found in the Nine Hells. This type of metal was used to forge a variety of hellish items. Some of the locations where infernal iron was known to be mined was Cania, the 8th layer of the Nine Hells and Dis, the 2nd layer.",
+      "id": "16",
+      "name": "Infernal Iron"
+    },
+    {
+      "description": "The item is an artifact. Consult with your DM.",
+      "id": "23",
+      "name": "Blessed"
+    },
+    {
+      "description": "Phosite, a pitch black and exceedingly volatile liquid, envelops any metal it touches, leaving behind a perilous residue. Its toxicity poses significant danger. Armor becomes impervious to both conventional and magical assaults, while weapons seamlessly slice through armor, bypassing enemy defenses with impunity.",
+      "id": "8",
+      "name": "Phosite"
+    },
+    {
+      "description": "Skyforge metal is a liquid metal found naturally. It is then plated on steel weapons or armor with the help of a huge water-cog and a built copper circle around magnets under salt water. Coating grants +3 to hit on weapons as they become extremely sharp.",
+      "id": "5",
+      "name": "Skyforge Metal"
+    },
+    {
+      "description": "Darksteel had a silvery hue when it was cut or polished, while its exposed surfaces bore a deep purple gleaming luster. Almost as hard as adamantine and nigh-unbreakable, original darksteel was more durable and lighter than steel. Darksteel items were resistant to damage of all kinds, being unaffected by dropping and by natural flames, cold, or electricity; resistant to acid, magical fire, crushing, and even disintegration; and highly resistant to lightning. Moreover, a darksteel item took on new magical enchantments with relative ease, no matter how many enchantments it already carried. Most notably, melting it did not ruin, and only rarely altered, any enchantments already on the metal. It was recommended to clean a darksteel blade with boiled linseed oil once every week or so to avoid rusting. For its special properties, a mass of darksteel was worth about 10-12 times the same mass of gold. A weapon forged from darksteel cost an extra 1500 gp, while a suit of metal armor cost an additional 2000 gp. Due to the secrecy surrounding the techniques of its creation, the process of making darksteel was thought to be have been lost, and it was considered impossible to find any new-forged darksteel items. These newfound ingots could fetch over 7000 gp from certain smiths.",
+      "id": "13",
+      "name": "Darksteel"
+    },
+    {
+      "description": "Dlarun, also known as icesteel, was a non-natural white metal that was unknown to most peoples, save for select groups of halflings. The 'good folk' were quite secretive about their knowledge of dlarun, often giving misleading descriptions or feigning ignorance if it was ever brought up in conversation. This lightweight metal was bone white in color with a high polish that shone green when illuminated by candles or magical sources of light. Considering it was a more esoteric substance, it could easily be mistaken for ivory. Dlarun was often used in the creation of small figurines, engraved plates, or the pommels of weapons, often in the shape of an acorn, claw, or other symbols of nature. It was also used to make weed pipes. If a piece of magical jewelry or other decorative item made from dlarun came into contact with the wearer's skin, it would confer to the wearer a limited ability allowing them to see through illusions and ignore certain psionic effects. Armor crafted from the metal offered limited protection from fire, and weapons would strike with an icy frost. This unique metal was not suited for the creation of items that were intended to carry an enchantment related to flame. The formation of dlarun involved digging up clay from certain river beds located throughout earth, heating them up in a crucible and mixing the resulting white flakes with certain oils. The soft, malleable metal was then heated again in a fire whose fuel included specific, secret elements.",
+      "id": "14",
+      "name": "Dlarun"
+    },
+    {
+      "description": "Hizagkuur was an extremely rare metal that was derived from mud-like clumps found deep within the Underdark. The method to refine the metal from its naturally-occurring clay-like form was a meticulous process, known to only a select few dwarven craftspeople. In its natural state, Hizagkuur appeared as a light, greenish-gray flecked ore that had the consistency of clay. Once it was appropriately processed, it appeared as a pale silvery metal, that weighed the same as steel. When finished, this metal had the astonishing effect of reflecting back electricity as well as any and all magical energy directed at its surface. The process to refine raw hizagkuur was a complicated and unforgiving process. If a single mistake was made during its creation and forging, it remained as dormant mud. Once the metal was prepared in its molten form, it had to be cast or forged within 24 hours it was rendered inert and was completely useless to a smith. Only a properly worded wish or limited wish spell could make a botched mass of hizagkuur usable again. Due to its unique properties, hizagkuur could not be used to craft magical items. It was however, perfect for the forging of vital safeguards, such as vault doors, chest seals and locks or anything else that held items of great importance.",
+      "id": "15",
+      "name": "Hizagkuur"
+    },
+    {
+      "description": "Cold iron was a type of iron mined deep underground. It was forged using a special process at lower temperatures than normal iron or steel in order to preserve its delicate properties. It was famed for its efficacy against fey creatures. Some sources stated that ghasts were more easily harmed from cold iron weapons. Cold iron was known to be forged into thick manacles, used to restrain wizards, containing their magical abilities. Such manacles were also known to be used on fey, preventing them from teleporting. Cold iron weapons normally cost twice as much as their standard counterparts, and enchanting them cost an extra 2000 gold pieces. The north or Teothe was a major source of cold iron before it was infected.",
+      "id": "12",
+      "name": "Cold Iron"
+    },
+    {
+      "description": "Demonic Tungsten is found naturally and processed in hellish flames. Only infernal species can work with it. Item's owner is also required to donate blood and other materials to make the link with the demonic tungsten, hence the name. Demonic Tungsten armor and weapons glow with a dark hue and are hungry for blood. Armor might damage the wearer upon taking damage (5%, crit), weapons heal the owner for half the damage 25% of the time.",
+      "id": "6",
+      "name": "Demonic Tungsten"
+    },
+    {
+      "description": "Celestial steel was a type of heavenly metal. The weapon forged from celestial steel would constantly emit a faint humming sound as well as luminescence.",
+      "id": "11",
+      "name": "Celestial Steel"
+    },
+    {
+      "description": "Arandur was a blue-green streaked metal that appeared within pockets of hyaline glass. After refinement and final forging, it turned a silver-blue color with a green reflective radiance. Refined arandur had the same weight as steel. The metal bonded extremely well with others. To prevent arandur from being brittle after it was mined, it was tempered with the blood of either red or blue dragons. As such, the extremely skilled smiths that were capable of working with the metal, used it in a diverse selection of items, from gnomish locks and tackle to the legendary elven warblades. The process of refining arandur ore was previously a secret of the gnomes.",
+      "id": "10",
+      "name": "Arandur"
+    },
+    {
+      "description": "Hexed Jade, a rare magical gem, is finely crushed and fused with steel through ancient ritual, gifting the alloy its mystic essence. Crafted weapons gain a unique bond with magic, slicing through arcane barriers. Master artisans across generations craft Hexed Jade-infused steel into legendary weapons and armor, each artifact resonating with the gem's enchantment and hidden realm origins. Hexed alloy armor cannot be damaged by normal attacks, and is vulnerable to magical damage only.",
+      "id": "7",
+      "name": "Hexed Jade"
+    },
+    {
+      "description": "Adamantine alloy, made from pure adamant found extremely deep in Underdark or adamantite ore found in volcanic veins, was extremely rare and came in brown-gold, blue-silver, and green-silver. Crafting it required high temperatures and delicate techniques, often handled by dwarf smiths. Some sources mention combining adamantine ores with mithral to produce the alloy. While other, more mystical methods were suggested, they were met with skepticism or laughter from dwarves and later sages. Five adamantine alloy types existed, known for their magic conductivity and durability. Among them, adamantine was the most durable. While its smelting process was costly, weapons made from it proved effective against opponents' gear and armor made of almost any other material. The alloy was also employed for striking objects, crafting enchanted weapons, extremely tough manacles, and creating magic staves. Drow created specialized alloys using radiation-soaked adamantine in areas rich with the metal and faerzress, and they only mined the darker ores. These alloys lost potency under sunlight. Notably, cobalt dragons possessed the ability to sniff this metal. Any critical hit to your armor when wearing adamantine becomes a normal hit.",
+      "id": "2",
+      "name": "Adamantine"
+    },
+    {
+      "description": "The item belongs to a Warlock Patron. Consult with your DM.",
+      "id": "22",
+      "name": "Cursed"
+    },
+    {
+      "description": "Telstang, also known as truesilver, was an alloy of metals that was originally formulated by the gnomes. While the exact specifications of its creation were known only to a select few, its use spread to certain groups of halflings, elves, and orcs. This alloy comprised a mixture of copper, mithral, platinum and silver. While it could be readily forged, the end product tended to be quite brittle and was prone to shattering. Due to its lack of oxidation, telstang could theoretically last forever so long as it was not struck or damaged. It had a dull silver color that resembled pewter. When struck, it emitted a clear and distinct sound that resembled a bell being rung. Telstang's most unique and valuable property was that it, along with any organic material with which it came into contact, could not be altered in form or other state; e.g., an individual wearing a telstang amulet that rested on their bare skin could not be paralyzed, polymorphed, disintegrated, petrified, or otherwise have their shape changed in any matter. However, they could not be the beneficiary of any magic that altered their body in a favorable way, such as in the case of the spell spider climb. Items crafted from telstang were immune to damage by the natural elements of fire, cold, and electricity and were highly resistant to acid, disintegration, and magical fire and lightning.",
+      "id": "19",
+      "name": "Telstang"
+    },
+    {
+      "description": "Arambarium was an extremely rare metal that resembled polished silver. It was tuned to primordial and elemental energy and could amplify magical effects.",
+      "id": "9",
+      "name": "Arambarium"
+    },
+    {
+      "description": "Zardazil was a rare soft-metal used to create alloyed weapons that were undetectable and could be easily 'hidden inside' a person. Because of the unique properties of zardazil-alloy weapons, they could be phased within a person and carried under complete concealment. In its raw state, zardazil was an amber to red color, similar to raw iron in some respects. It was also rather soft for a metal but extremely durable. This metal was scarce. Any item partially or wholly composed of zardazil became intangible to the first being whose blood it spilled, similar to the ironguard spell. When this was done deliberately, it allowed a person to carry it without detection, typically attached to a non-metallic necklace. While it was in this state it did not harm the 'carrier' and could not be affected by any spells such as heat metal or enlarge in an attempt to damage their person.",
+      "id": "20",
+      "name": "Zardazil"
+    },
+    {
+      "description": "Frostforge steel, a rare and extraordinary metal, is extracted from icicle mines and occasionally harvested from mountain summits, where adept dwarves hold the ancient knowledge to ignite cold fires. Once sourced, it undergoes refinement within these frigid flames, a process exclusively orchestrated by the hands of Dwarves due to its mystic nature and intricate properties. Mining frostforge is highly respected by Dwarves, as the miners sacrifice their lives to mine it for a decade, and grow frostborne icicles on their bodies. Provides +1 AC on armors when coated. This coating is vulnerable to fire. Weapons deal magical cold damage instead of their physical damage.",
+      "id": "4",
+      "name": "Frostforge Steel"
+    },
+    {
+      "description": "Known as truemetal among the dwarves, was a precious metal produced from ore found in the Underdark as well as mountain ranges in certain areas. Mithral ore appeared as a silver-and-black mineral in its natural form, and became a shining silvery-blue when it was forged. Mithral was produced through a process similar to that of steel-smelting. Since pieces of armor made from this valuable metal were very light, they allowed the wearer to make better use of their natural agility and were less restrictive on spellcasting. No strength requirement, disadvantage on stealth or light armor proficiency requirement.",
+      "id": "1",
+      "name": "Mithral"
+    },
+    {
+      "description": "Star metal was the leftover material from the impact of an object fallen from space. It was extremely rare and in high demand because it could be forged with common metals to make durable weapons of great strength. A chunk of star metal weighing 500gr, was valued at about 100 pp. Alloyed with common metals, this material increased the strength, sharpness, flexibility, and durability of weapons, making them ideal for enchantment.",
+      "id": "18",
+      "name": "Star Metal"
+    },
+    {
+      "description": "Stainless Neobium, a fusion of stainless steel and neobium, stands as a symbol of innovation. Its remarkable anti-corrosion properties defy time, maintaining a lasting shine. Craftsmen harness its malleability to create both functional and elegant designs, showcasing a harmonious blend of tradition and advanced material science. Tools inlaid with Stainless Neobium have been proven effective against corrosion monsters, and acid.",
+      "id": "21",
+      "name": "Stainless Niobium"
+    },
+    {
+      "description": "Orcslayer, or blood-metal, was an alloy of steel that was poisonous to orcs. Orcslayer was a dull gray metal. dwarves were determinedly expanding into the orcish kingdom, and attacking the orcs. Working secretly with a few humans and elves, they sought to develop a steel toxic to orcs, and succeeded with the metal they called 'orcslayer'. The sage feared that it would lead to the development of other alloys toxic to many species, and spread death and destruction. Fortunately, the art of making orcslayer metals was long lost.",
+      "id": "17",
+      "name": "Orcslayer"
+    }
+  ]
+}

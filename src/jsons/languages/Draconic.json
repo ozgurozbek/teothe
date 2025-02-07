@@ -1,0 +1,1538 @@
+[
+  {
+    "homebrew": "False",
+    "translation": "shadowborn",
+    "language": "Draconic",
+    "word": "Umbraxakar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "food",
+    "language": "Draconic",
+    "word": "achthend"
+  },
+  {
+    "homebrew": "False",
+    "translation": "green; pronounced ashuak in Tymantheran dialect",
+    "language": "Draconic",
+    "word": "achuak"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'wyrmling green', an insult toward green dragons.",
+    "language": "Draconic",
+    "word": "achuakosj"
+  },
+  {
+    "homebrew": "False",
+    "translation": "female",
+    "language": "Draconic",
+    "word": "aesthyr"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Tymantheran dialect: dung (expletive)",
+    "language": "Draconic",
+    "word": "aithyas"
+  },
+  {
+    "homebrew": "False",
+    "translation": "genitive prefix: my, of mine, of -ir (suffix) in Tymantheran dialect.",
+    "language": "Draconic",
+    "word": "ar(i)-"
+  },
+  {
+    "homebrew": "False",
+    "translation": "magic",
+    "language": "Draconic",
+    "word": "arcaniss"
+  },
+  {
+    "homebrew": "False",
+    "translation": "spellscale",
+    "language": "Draconic",
+    "word": "arcath"
+  },
+  {
+    "homebrew": "False",
+    "translation": "poisonous spider or giant spider; plural is arklajan.",
+    "language": "Draconic",
+    "word": "arklajus"
+  },
+  {
+    "homebrew": "False",
+    "translation": "valley; pronounced arush in Tymantheran dialect.",
+    "language": "Draconic",
+    "word": "arux"
+  },
+  {
+    "homebrew": "False",
+    "translation": "war",
+    "language": "Draconic",
+    "word": "aryte"
+  },
+  {
+    "homebrew": "False",
+    "translation": "warrior",
+    "language": "Draconic",
+    "word": "arytiss"
+  },
+  {
+    "homebrew": "False",
+    "translation": "noun: celestial",
+    "language": "Draconic",
+    "word": "athear"
+  },
+  {
+    "homebrew": "False",
+    "translation": "bronze",
+    "language": "Draconic",
+    "word": "aujir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "gold",
+    "language": "Draconic",
+    "word": "aurix"
+  },
+  {
+    "homebrew": "False",
+    "translation": "white",
+    "language": "Draconic",
+    "word": "aussir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to fly",
+    "language": "Draconic",
+    "word": "austrat"
+  },
+  {
+    "homebrew": "False",
+    "translation": "yes; pronounced akison in Tymantheran dialect.",
+    "language": "Draconic",
+    "word": "axun"
+  },
+  {
+    "homebrew": "False",
+    "translation": "animal",
+    "language": "Draconic",
+    "word": "baeshra"
+  },
+  {
+    "homebrew": "False",
+    "translation": "military rank : private",
+    "language": "Draconic",
+    "word": "baka"
+  },
+  {
+    "homebrew": "False",
+    "translation": "military rank : leader or high knight",
+    "language": "Draconic",
+    "word": "barb"
+  },
+  {
+    "homebrew": "False",
+    "translation": "savior of",
+    "language": "Draconic",
+    "word": "bejik"
+  },
+  {
+    "homebrew": "False",
+    "translation": "good; pronounced bensvenk in Tymantheran dialect.",
+    "language": "Draconic",
+    "word": "bensvelk"
+  },
+  {
+    "homebrew": "False",
+    "translation": "forest",
+    "language": "Draconic",
+    "word": "caesin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "sword",
+    "language": "Draconic",
+    "word": "caex"
+  },
+  {
+    "homebrew": "False",
+    "translation": "tavern",
+    "language": "Draconic",
+    "word": "chaorkartel"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a root",
+    "language": "Draconic",
+    "word": "charchuka"
+  },
+  {
+    "homebrew": "False",
+    "translation": "red",
+    "language": "Draconic",
+    "word": "charir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a Thymari sedative",
+    "language": "Draconic",
+    "word": "chmertehoschta"
+  },
+  {
+    "homebrew": "False",
+    "translation": "take",
+    "language": "Draconic",
+    "word": "clax"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a pormanteu of 'har' and 'hlar' it is the collective polite term for dragonborn.",
+    "language": "Draconic",
+    "word": "darahar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "dragon",
+    "language": "Draconic",
+    "word": "darastrix"
+  },
+  {
+    "homebrew": "False",
+    "translation": "dragonblood",
+    "language": "Draconic",
+    "word": "darastrixethe"
+  },
+  {
+    "homebrew": "False",
+    "translation": "half-dragon",
+    "language": "Draconic",
+    "word": "darasv"
+  },
+  {
+    "homebrew": "False",
+    "translation": "the collective impolite term for dragonborn. Lit. 'no-dragon.'",
+    "language": "Draconic",
+    "word": "darathric"
+  },
+  {
+    "homebrew": "False",
+    "translation": "draconic creature",
+    "language": "Draconic",
+    "word": "darss"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to hate",
+    "language": "Draconic",
+    "word": "dartak"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Tymantheran dialect: clanhold",
+    "language": "Draconic",
+    "word": "djerad"
+  },
+  {
+    "homebrew": "False",
+    "translation": "'two-leggers', a generic term for humanoids.",
+    "language": "Draconic",
+    "word": "dokaal"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to bribe",
+    "language": "Draconic",
+    "word": "durah"
+  },
+  {
+    "homebrew": "False",
+    "translation": "tomorrow",
+    "language": "Draconic",
+    "word": "earenk"
+  },
+  {
+    "homebrew": "False",
+    "translation": "earth",
+    "language": "Draconic",
+    "word": "edar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "prep. : to",
+    "language": "Draconic",
+    "word": "ekess"
+  },
+  {
+    "homebrew": "False",
+    "translation": "year",
+    "language": "Draconic",
+    "word": "eorikc"
+  },
+  {
+    "homebrew": "False",
+    "translation": "possessive prefix: my (used for relationships)",
+    "language": "Draconic",
+    "word": "er- (ethe-)"
+  },
+  {
+    "homebrew": "False",
+    "translation": "prep. : through",
+    "language": "Draconic",
+    "word": "erekess"
+  },
+  {
+    "homebrew": "False",
+    "translation": "coward",
+    "language": "Draconic",
+    "word": "faessi"
+  },
+  {
+    "homebrew": "False",
+    "translation": "serve",
+    "language": "Draconic",
+    "word": "faestir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "military rank : sergeant",
+    "language": "Draconic",
+    "word": "farang"
+  },
+  {
+    "homebrew": "False",
+    "translation": "griddled bread",
+    "language": "Draconic",
+    "word": "farothai"
+  },
+  {
+    "homebrew": "False",
+    "translation": "slayer of",
+    "language": "Draconic",
+    "word": "fintir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "breathe",
+    "language": "Draconic",
+    "word": "frahr"
+  },
+  {
+    "homebrew": "False",
+    "translation": "breath weapon",
+    "language": "Draconic",
+    "word": "frahraek"
+  },
+  {
+    "homebrew": "False",
+    "translation": "axe",
+    "language": "Draconic",
+    "word": "garurt"
+  },
+  {
+    "homebrew": "False",
+    "translation": "quest",
+    "language": "Draconic",
+    "word": "geth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "prep.: to go",
+    "language": "Draconic",
+    "word": "gethrisj"
+  },
+  {
+    "homebrew": "False",
+    "translation": "prep.: after",
+    "language": "Draconic",
+    "word": "ghent"
+  },
+  {
+    "homebrew": "False",
+    "translation": "orc",
+    "language": "Draconic",
+    "word": "ghik"
+  },
+  {
+    "homebrew": "False",
+    "translation": "ogre",
+    "language": "Draconic",
+    "word": "ghontix"
+  },
+  {
+    "homebrew": "False",
+    "translation": "prep.: before",
+    "language": "Draconic",
+    "word": "ghoros"
+  },
+  {
+    "homebrew": "False",
+    "translation": "claw",
+    "language": "Draconic",
+    "word": "gix"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to disembowel",
+    "language": "Draconic",
+    "word": "gixustrat"
+  },
+  {
+    "homebrew": "False",
+    "translation": "wood",
+    "language": "Draconic",
+    "word": "grovisv"
+  },
+  {
+    "homebrew": "False",
+    "translation": "echo",
+    "language": "Draconic",
+    "word": "har"
+  },
+  {
+    "homebrew": "False",
+    "translation": "fate; pronounced chaubask in Tymantheran dialect",
+    "language": "Draconic",
+    "word": "haurach"
+  },
+  {
+    "homebrew": "False",
+    "translation": "military rank : corporal",
+    "language": "Draconic",
+    "word": "hengot"
+  },
+  {
+    "homebrew": "False",
+    "translation": "lit. unhatched, rotten egg; more commonly translated as bastard. Pronounced henish in Tymantheran dialect.",
+    "language": "Draconic",
+    "word": "henich"
+  },
+  {
+    "homebrew": "False",
+    "translation": "water",
+    "language": "Draconic",
+    "word": "hesjing"
+  },
+  {
+    "homebrew": "False",
+    "translation": "roar",
+    "language": "Draconic",
+    "word": "hlar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "fortress",
+    "language": "Draconic",
+    "word": "hurthi"
+  },
+  {
+    "homebrew": "False",
+    "translation": "blood",
+    "language": "Draconic",
+    "word": "iejir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "century",
+    "language": "Draconic",
+    "word": "ierikc"
+  },
+  {
+    "homebrew": "False",
+    "translation": "prep.: for",
+    "language": "Draconic",
+    "word": "ihk"
+  },
+  {
+    "homebrew": "False",
+    "translation": "holy",
+    "language": "Draconic",
+    "word": "ioth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "one",
+    "language": "Draconic",
+    "word": "ir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "heal",
+    "language": "Draconic",
+    "word": "irisv"
+  },
+  {
+    "homebrew": "False",
+    "translation": "adj. and noun: enemy",
+    "language": "Draconic",
+    "word": "irlym"
+  },
+  {
+    "homebrew": "False",
+    "translation": "knowledge",
+    "language": "Draconic",
+    "word": "irthir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "lit. little secret; more commonly translated as 'baby' (in a romantic connotation)",
+    "language": "Draconic",
+    "word": "irthiski"
+  },
+  {
+    "homebrew": "False",
+    "translation": "secret",
+    "language": "Draconic",
+    "word": "irthos"
+  },
+  {
+    "homebrew": "False",
+    "translation": "star",
+    "language": "Draconic",
+    "word": "isk"
+  },
+  {
+    "homebrew": "False",
+    "translation": "secret star",
+    "language": "Draconic",
+    "word": "iskirthos"
+  },
+  {
+    "homebrew": "False",
+    "translation": "fire",
+    "language": "Draconic",
+    "word": "ixen"
+  },
+  {
+    "homebrew": "False",
+    "translation": "blessings",
+    "language": "Draconic",
+    "word": "janklee"
+  },
+  {
+    "homebrew": "False",
+    "translation": "hammer",
+    "language": "Draconic",
+    "word": "jhank"
+  },
+  {
+    "homebrew": "False",
+    "translation": "undead",
+    "language": "Draconic",
+    "word": "kaegro"
+  },
+  {
+    "homebrew": "False",
+    "translation": "far",
+    "language": "Draconic",
+    "word": "karif"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Tymantheran dialect: strong expletive Adj. : karshoji",
+    "language": "Draconic",
+    "word": "karshoj"
+  },
+  {
+    "homebrew": "False",
+    "translation": "day",
+    "language": "Draconic",
+    "word": "kear"
+  },
+  {
+    "homebrew": "False",
+    "translation": "storm",
+    "language": "Draconic",
+    "word": "kepesk"
+  },
+  {
+    "homebrew": "False",
+    "translation": "gem",
+    "language": "Draconic",
+    "word": "kethend"
+  },
+  {
+    "homebrew": "False",
+    "translation": "an acquired taste",
+    "language": "Draconic",
+    "word": "kiskartchi"
+  },
+  {
+    "homebrew": "False",
+    "translation": "spider; plural is klajan.",
+    "language": "Draconic",
+    "word": "klajus"
+  },
+  {
+    "homebrew": "False",
+    "translation": "nest or colony of spiders.",
+    "language": "Draconic",
+    "word": "klood"
+  },
+  {
+    "homebrew": "False",
+    "translation": "danger",
+    "language": "Draconic",
+    "word": "korth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Tymantheran dialect: dowry",
+    "language": "Draconic",
+    "word": "koshqal"
+  },
+  {
+    "homebrew": "False",
+    "translation": "small",
+    "language": "Draconic",
+    "word": "kosj"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Tymantheran dialect: lit. Mother's child. As in raising a child of another person. Refers to dragonborn raised by their mother's clan.",
+    "language": "Draconic",
+    "word": "kosjmyrni"
+  },
+  {
+    "homebrew": "False",
+    "translation": "shrink",
+    "language": "Draconic",
+    "word": "kosjth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "demon",
+    "language": "Draconic",
+    "word": "kothar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "river",
+    "language": "Draconic",
+    "word": "kuhri"
+  },
+  {
+    "homebrew": "False",
+    "translation": "slaughter",
+    "language": "Draconic",
+    "word": "kurik"
+  },
+  {
+    "homebrew": "False",
+    "translation": "weapon",
+    "language": "Draconic",
+    "word": "laraek"
+  },
+  {
+    "homebrew": "False",
+    "translation": "few",
+    "language": "Draconic",
+    "word": "lauth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "military rank : general",
+    "language": "Draconic",
+    "word": "legatus"
+  },
+  {
+    "homebrew": "False",
+    "translation": "near",
+    "language": "Draconic",
+    "word": "leirith"
+  },
+  {
+    "homebrew": "False",
+    "translation": "wizard; pronounced lefanthish in Tymantheran dialect",
+    "language": "Draconic",
+    "word": "levethix"
+  },
+  {
+    "homebrew": "False",
+    "translation": "enchanted",
+    "language": "Draconic",
+    "word": "levex"
+  },
+  {
+    "homebrew": "False",
+    "translation": "word",
+    "language": "Draconic",
+    "word": "lex"
+  },
+  {
+    "homebrew": "False",
+    "translation": "speaker",
+    "language": "Draconic",
+    "word": "lexi"
+  },
+  {
+    "homebrew": "False",
+    "translation": "armor",
+    "language": "Draconic",
+    "word": "litrix"
+  },
+  {
+    "homebrew": "False",
+    "translation": "pain",
+    "language": "Draconic",
+    "word": "loerchik"
+  },
+  {
+    "homebrew": "False",
+    "translation": "dead",
+    "language": "Draconic",
+    "word": "loex"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to die",
+    "language": "Draconic",
+    "word": "loreat"
+  },
+  {
+    "homebrew": "False",
+    "translation": "prophecy",
+    "language": "Draconic",
+    "word": "lorsvek"
+  },
+  {
+    "homebrew": "False",
+    "translation": "the head servant of a taaldarax",
+    "language": "Draconic",
+    "word": "lovac"
+  },
+  {
+    "homebrew": "False",
+    "translation": "leader (as in ruler)",
+    "language": "Draconic",
+    "word": "maekrix"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to give",
+    "language": "Draconic",
+    "word": "majak"
+  },
+  {
+    "homebrew": "False",
+    "translation": "adj.: evil",
+    "language": "Draconic",
+    "word": "malsvir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "peace; pronounced martifyr in Tymantheran dialect",
+    "language": "Draconic",
+    "word": "martivir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to breed",
+    "language": "Draconic",
+    "word": "maurg"
+  },
+  {
+    "homebrew": "False",
+    "translation": "song",
+    "language": "Draconic",
+    "word": "miirik"
+  },
+  {
+    "homebrew": "False",
+    "translation": "skin (hide)",
+    "language": "Draconic",
+    "word": "molik"
+  },
+  {
+    "homebrew": "False",
+    "translation": "military rank : lieutenant",
+    "language": "Draconic",
+    "word": "morikar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "with",
+    "language": "Draconic",
+    "word": "mrith"
+  },
+  {
+    "homebrew": "False",
+    "translation": "normal",
+    "language": "Draconic",
+    "word": "munth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "human; pronounced maunthrek in Tymantheran dialect",
+    "language": "Draconic",
+    "word": "munthrek"
+  },
+  {
+    "homebrew": "False",
+    "translation": "moon",
+    "language": "Draconic",
+    "word": "nannan"
+  },
+  {
+    "homebrew": "False",
+    "translation": "you're welcome",
+    "language": "Draconic",
+    "word": "nar viraka"
+  },
+  {
+    "homebrew": "False",
+    "translation": "spear",
+    "language": "Draconic",
+    "word": "ner"
+  },
+  {
+    "homebrew": "False",
+    "translation": "wealth",
+    "language": "Draconic",
+    "word": "noach"
+  },
+  {
+    "homebrew": "False",
+    "translation": "lit. little treasure; more commonly translated as 'my dear'",
+    "language": "Draconic",
+    "word": "noachi"
+  },
+  {
+    "homebrew": "False",
+    "translation": "ugly",
+    "language": "Draconic",
+    "word": "nurh"
+  },
+  {
+    "homebrew": "False",
+    "translation": "unfashionable",
+    "language": "Draconic",
+    "word": "nurthul"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a plant native to Tymanther",
+    "language": "Draconic",
+    "word": "nychaki"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to see",
+    "language": "Draconic",
+    "word": "ocuir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "home",
+    "language": "Draconic",
+    "word": "okarthel"
+  },
+  {
+    "homebrew": "False",
+    "translation": "name",
+    "language": "Draconic",
+    "word": "ominak"
+  },
+  {
+    "homebrew": "False",
+    "translation": "under",
+    "language": "Draconic",
+    "word": "onureth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "rain",
+    "language": "Draconic",
+    "word": "oposs"
+  },
+  {
+    "homebrew": "False",
+    "translation": "silver",
+    "language": "Draconic",
+    "word": "orn"
+  },
+  {
+    "homebrew": "False",
+    "translation": "travel",
+    "language": "Draconic",
+    "word": "ossalur"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to flee; pronounced oshvith in Tymantheran dialect",
+    "language": "Draconic",
+    "word": "osvith"
+  },
+  {
+    "homebrew": "False",
+    "translation": "tooth",
+    "language": "Draconic",
+    "word": "oth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "smart",
+    "language": "Draconic",
+    "word": "othokent"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a distinctive spice from Tymanther used in sauces",
+    "language": "Draconic",
+    "word": "panjar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "in",
+    "language": "Draconic",
+    "word": "persvek"
+  },
+  {
+    "homebrew": "False",
+    "translation": "kobold",
+    "language": "Draconic",
+    "word": "petisse"
+  },
+  {
+    "homebrew": "False",
+    "translation": "stop",
+    "language": "Draconic",
+    "word": "pok"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Tymantheran dialect: dummy.",
+    "language": "Draconic",
+    "word": "pothachi"
+  },
+  {
+    "homebrew": "False",
+    "translation": "stupid; pronounced pothac in Tymantheran dialect",
+    "language": "Draconic",
+    "word": "pothoc"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to forgive",
+    "language": "Draconic",
+    "word": "potvych"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Tymantheran dialect: a bride/groom",
+    "language": "Draconic",
+    "word": "qal"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Tymantheran dialect: a marriage agreement",
+    "language": "Draconic",
+    "word": "qallim"
+  },
+  {
+    "homebrew": "False",
+    "translation": "copper",
+    "language": "Draconic",
+    "word": "rach"
+  },
+  {
+    "homebrew": "False",
+    "translation": "treasure",
+    "language": "Draconic",
+    "word": "rasvim"
+  },
+  {
+    "homebrew": "False",
+    "translation": "halfling",
+    "language": "Draconic",
+    "word": "rauhiss"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to speak",
+    "language": "Draconic",
+    "word": "renthisj"
+  },
+  {
+    "homebrew": "False",
+    "translation": "meat",
+    "language": "Draconic",
+    "word": "rhyaex"
+  },
+  {
+    "homebrew": "False",
+    "translation": "bleed",
+    "language": "Draconic",
+    "word": "rhyisj"
+  },
+  {
+    "homebrew": "False",
+    "translation": "cow",
+    "language": "Draconic",
+    "word": "rhyvos"
+  },
+  {
+    "homebrew": "False",
+    "translation": "eye",
+    "language": "Draconic",
+    "word": "sauriv"
+  },
+  {
+    "homebrew": "False",
+    "translation": "prep.: on",
+    "language": "Draconic",
+    "word": "shafaer"
+  },
+  {
+    "homebrew": "False",
+    "translation": "conj.: but",
+    "language": "Draconic",
+    "word": "shar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Tymantheran dialect: a potential bride/groom",
+    "language": "Draconic",
+    "word": "shuk-qalli"
+  },
+  {
+    "homebrew": "False",
+    "translation": "shadow",
+    "language": "Draconic",
+    "word": "sjach"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Tymantheran dialect: subtler, trickier",
+    "language": "Draconic",
+    "word": "sjashukri"
+  },
+  {
+    "homebrew": "False",
+    "translation": "conj.: if",
+    "language": "Draconic",
+    "word": "sjek"
+  },
+  {
+    "homebrew": "False",
+    "translation": "yet",
+    "language": "Draconic",
+    "word": "sjerit"
+  },
+  {
+    "homebrew": "False",
+    "translation": "scroll",
+    "language": "Draconic",
+    "word": "sjir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "prolong",
+    "language": "Draconic",
+    "word": "ssearth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "silent",
+    "language": "Draconic",
+    "word": "ssej"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to rest",
+    "language": "Draconic",
+    "word": "ssifisv"
+  },
+  {
+    "homebrew": "False",
+    "translation": "ruler",
+    "language": "Draconic",
+    "word": "ssissth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "male",
+    "language": "Draconic",
+    "word": "sthyr"
+  },
+  {
+    "homebrew": "False",
+    "translation": "invigorate",
+    "language": "Draconic",
+    "word": "strix"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Tymantheran dialect: a term for dragonborn in a pejorative sense. Lit. 'Little imposters.'",
+    "language": "Draconic",
+    "word": "strixiki"
+  },
+  {
+    "homebrew": "False",
+    "translation": "thanks, thank you",
+    "language": "Draconic",
+    "word": "sukriya"
+  },
+  {
+    "homebrew": "False",
+    "translation": "cleric",
+    "language": "Draconic",
+    "word": "sunathaer"
+  },
+  {
+    "homebrew": "False",
+    "translation": "bravery",
+    "language": "Draconic",
+    "word": "sveargith"
+  },
+  {
+    "homebrew": "False",
+    "translation": "arrow; to kill",
+    "language": "Draconic",
+    "word": "svent"
+  },
+  {
+    "homebrew": "False",
+    "translation": "darkvision",
+    "language": "Draconic",
+    "word": "sverak"
+  },
+  {
+    "homebrew": "False",
+    "translation": "prep.: above",
+    "language": "Draconic",
+    "word": "svern"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a player of the xorvintaal",
+    "language": "Draconic",
+    "word": "taaldarax"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a resin from the nychaki plant",
+    "language": "Draconic",
+    "word": "talsch"
+  },
+  {
+    "homebrew": "False",
+    "translation": "stone",
+    "language": "Draconic",
+    "word": "ternesj"
+  },
+  {
+    "homebrew": "False",
+    "translation": "gnome",
+    "language": "Draconic",
+    "word": "terunt"
+  },
+  {
+    "homebrew": "False",
+    "translation": "pillage",
+    "language": "Draconic",
+    "word": "thadarsh"
+  },
+  {
+    "homebrew": "False",
+    "translation": "military rank : major",
+    "language": "Draconic",
+    "word": "thaenar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "air",
+    "language": "Draconic",
+    "word": "thrae"
+  },
+  {
+    "homebrew": "False",
+    "translation": "no; pronounced thrik in Tymantheran dialect",
+    "language": "Draconic",
+    "word": "thric"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Tymantheran dialect: lit. nameless; more commonly translated as clanless.",
+    "language": "Draconic",
+    "word": "thrikominaki"
+  },
+  {
+    "homebrew": "False",
+    "translation": "many",
+    "language": "Draconic",
+    "word": "throden"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to improve; to build on what your ancestor had done and pay honor to them by improving their work.",
+    "language": "Draconic",
+    "word": "throtominarr"
+  },
+  {
+    "homebrew": "False",
+    "translation": "fashionable",
+    "language": "Draconic",
+    "word": "thul"
+  },
+  {
+    "homebrew": "False",
+    "translation": "nor",
+    "language": "Draconic",
+    "word": "thur"
+  },
+  {
+    "homebrew": "False",
+    "translation": "crippled; pronounced thurgiesh in Tymantheran dialect",
+    "language": "Draconic",
+    "word": "thurgix"
+  },
+  {
+    "homebrew": "False",
+    "translation": "friend; friendly",
+    "language": "Draconic",
+    "word": "thurirl"
+  },
+  {
+    "homebrew": "False",
+    "translation": "night",
+    "language": "Draconic",
+    "word": "thurkear"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Tymantheran dialect: lit. like Tiamat; more commonly translated as asshole.",
+    "language": "Draconic",
+    "word": "tiamash"
+  },
+  {
+    "homebrew": "False",
+    "translation": "spawn of Tiamat",
+    "language": "Draconic",
+    "word": "tiathar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "born as",
+    "language": "Draconic",
+    "word": "tibur"
+  },
+  {
+    "homebrew": "False",
+    "translation": "adventurer",
+    "language": "Draconic",
+    "word": "toovir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "protect",
+    "language": "Draconic",
+    "word": "troth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "dwarf",
+    "language": "Draconic",
+    "word": "tundar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "want",
+    "language": "Draconic",
+    "word": "tuor"
+  },
+  {
+    "homebrew": "False",
+    "translation": "big",
+    "language": "Draconic",
+    "word": "turalisj"
+  },
+  {
+    "homebrew": "False",
+    "translation": "expand",
+    "language": "Draconic",
+    "word": "turalisjth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "book",
+    "language": "Draconic",
+    "word": "turasjir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a sort of pickle made from gourds, pepper, charchuka root, lemon, and herbs and spices",
+    "language": "Draconic",
+    "word": "t\u00fcrkhaari"
+  },
+  {
+    "homebrew": "False",
+    "translation": "talk",
+    "language": "Draconic",
+    "word": "ukris"
+  },
+  {
+    "homebrew": "False",
+    "translation": "blue",
+    "language": "Draconic",
+    "word": "ulhar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "prep.: beside",
+    "language": "Draconic",
+    "word": "unsinti"
+  },
+  {
+    "homebrew": "False",
+    "translation": "deity",
+    "language": "Draconic",
+    "word": "urathear"
+  },
+  {
+    "homebrew": "False",
+    "translation": "iron",
+    "language": "Draconic",
+    "word": "usk"
+  },
+  {
+    "homebrew": "False",
+    "translation": "conj.: or",
+    "language": "Draconic",
+    "word": "usv"
+  },
+  {
+    "homebrew": "False",
+    "translation": "platinum",
+    "language": "Draconic",
+    "word": "ux"
+  },
+  {
+    "homebrew": "False",
+    "translation": "dragonborn of Bahamut",
+    "language": "Draconic",
+    "word": "ux Bahamuti"
+  },
+  {
+    "homebrew": "False",
+    "translation": "elf",
+    "language": "Draconic",
+    "word": "vaecaesin"
+  },
+  {
+    "homebrew": "False",
+    "translation": "dance; to dance",
+    "language": "Draconic",
+    "word": "vaeri"
+  },
+  {
+    "homebrew": "False",
+    "translation": "arrow",
+    "language": "Draconic",
+    "word": "vaess"
+  },
+  {
+    "homebrew": "False",
+    "translation": "bow (weapon)",
+    "language": "Draconic",
+    "word": "vaex"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to bleed",
+    "language": "Draconic",
+    "word": "valeij"
+  },
+  {
+    "homebrew": "False",
+    "translation": "to burn",
+    "language": "Draconic",
+    "word": "valignat"
+  },
+  {
+    "homebrew": "False",
+    "translation": "battle",
+    "language": "Draconic",
+    "word": "vargach"
+  },
+  {
+    "homebrew": "False",
+    "translation": "military rank : captain",
+    "language": "Draconic",
+    "word": "vargus"
+  },
+  {
+    "homebrew": "False",
+    "translation": "Tymantheran dialect: lit. Ash-Marked Ones. Is how Tymantheran dragonborn refer to themselves.",
+    "language": "Draconic",
+    "word": "vayemniri"
+  },
+  {
+    "homebrew": "False",
+    "translation": "powerful",
+    "language": "Draconic",
+    "word": "versel"
+  },
+  {
+    "homebrew": "False",
+    "translation": "strong",
+    "language": "Draconic",
+    "word": "versvesh"
+  },
+  {
+    "homebrew": "False",
+    "translation": "mountain; pronounced verthisa in Tymantheran dialect",
+    "language": "Draconic",
+    "word": "verthicha"
+  },
+  {
+    "homebrew": "False",
+    "translation": "replenish",
+    "language": "Draconic",
+    "word": "veschik"
+  },
+  {
+    "homebrew": "False",
+    "translation": "possessive prefix: my (used for items owned)",
+    "language": "Draconic",
+    "word": "veth(i)-"
+  },
+  {
+    "homebrew": "False",
+    "translation": "prep.: below",
+    "language": "Draconic",
+    "word": "vhir"
+  },
+  {
+    "homebrew": "False",
+    "translation": "ash; pronounced vayem in Tymantheran dialect",
+    "language": "Draconic",
+    "word": "vignar"
+  },
+  {
+    "homebrew": "False",
+    "translation": "thief",
+    "language": "Draconic",
+    "word": "virlym"
+  },
+  {
+    "homebrew": "False",
+    "translation": "victory; pronounced vivesh in Tymantheran dialect",
+    "language": "Draconic",
+    "word": "vivex"
+  },
+  {
+    "homebrew": "False",
+    "translation": "learn",
+    "language": "Draconic",
+    "word": "vor"
+  },
+  {
+    "homebrew": "False",
+    "translation": "sorcerer",
+    "language": "Draconic",
+    "word": "vorastrix"
+  },
+  {
+    "homebrew": "False",
+    "translation": "beautiful",
+    "language": "Draconic",
+    "word": "vorel"
+  },
+  {
+    "homebrew": "False",
+    "translation": "you are beautiful",
+    "language": "Draconic",
+    "word": "vorellim"
+  },
+  {
+    "homebrew": "False",
+    "translation": "child",
+    "language": "Draconic",
+    "word": "vrak"
+  },
+  {
+    "homebrew": "False",
+    "translation": "conj.: and",
+    "language": "Draconic",
+    "word": "vur"
+  },
+  {
+    "homebrew": "False",
+    "translation": "black",
+    "language": "Draconic",
+    "word": "vutha"
+  },
+  {
+    "homebrew": "False",
+    "translation": "steel",
+    "language": "Draconic",
+    "word": "vyth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "cave",
+    "language": "Draconic",
+    "word": "waere"
+  },
+  {
+    "homebrew": "False",
+    "translation": "bag",
+    "language": "Draconic",
+    "word": "waeth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "pron. : you",
+    "language": "Draconic",
+    "word": "wux"
+  },
+  {
+    "homebrew": "False",
+    "translation": "the Great Game",
+    "language": "Draconic",
+    "word": "xorvintaal"
+  },
+  {
+    "homebrew": "False",
+    "translation": "pron. : I",
+    "language": "Draconic",
+    "word": "ya"
+  },
+  {
+    "homebrew": "False",
+    "translation": "salad",
+    "language": "Draconic",
+    "word": "yochit"
+  },
+  {
+    "homebrew": "False",
+    "translation": "yellow",
+    "language": "Draconic",
+    "word": "yrev"
+  },
+  {
+    "homebrew": "False",
+    "translation": "a traditional Thymari medicine for hangovers",
+    "language": "Draconic",
+    "word": "yrisfexirji"
+  },
+  {
+    "homebrew": "False",
+    "translation": "we",
+    "language": "Draconic",
+    "word": "yth"
+  },
+  {
+    "homebrew": "False",
+    "translation": "prep.: behind",
+    "language": "Draconic",
+    "word": "zara"
+  },
+  {
+    "homebrew": "False",
+    "translation": "conj. : so",
+    "language": "Draconic",
+    "word": "zyak"
+  }
+]
