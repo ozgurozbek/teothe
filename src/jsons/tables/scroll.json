@@ -1,6 +1,6 @@
 {
   "tableDescription": {
-    "description": " ",
+    "description": "The table shows the time, cost, and complexity for crafting spell scrolls in Teothe, increasing with higher-level spells.",
     "columns": ["level", "time", "cost", "complexity"],
     "tabName": "scroll"
   },
