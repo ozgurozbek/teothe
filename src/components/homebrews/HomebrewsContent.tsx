@@ -136,6 +136,8 @@ function GetHomebrews(category: string) {
         "Retainer spells and bonuses are not loyal to 5E sourcebooks.",
       tag: "General",
     },
+    { description: "When you roll a 20 on a skill check, you get inspired if you describe why.", tag: "General" },
+    { description: "You'll know of an individual if you end the session with a lucky clover on you, or you've pulled a Zeandil.", tag: "General" },
   ];
   let renderedEntries = [];
   let first: boolean = true;
