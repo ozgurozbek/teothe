@@ -73,6 +73,10 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
+      # Add test step here
+      - name: Run Tests
+        run: ${{ steps.detect-package-manager.outputs.runner }} jest
+
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
 

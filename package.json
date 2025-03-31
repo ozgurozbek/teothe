@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm update npc-generator-teothe && next build",
+    "build": "npm install git+ssh://git@github.com/ozgurozbek/npc-generator.git#teothe && next build",
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
