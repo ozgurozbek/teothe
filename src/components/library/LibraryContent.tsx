@@ -56,7 +56,7 @@ export default function LibraryContent() {
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/summary-on-ancients",
               image: "https://picsum.photos/300/400",
               author: "CJ",
               name: "Summary On Ancients",
@@ -64,7 +64,7 @@ export default function LibraryContent() {
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/general-jets-reform",
               image: "https://picsum.photos/300/400",
               author:
                 "Really long author name & someone else co-authoring it lol",
@@ -73,7 +73,7 @@ export default function LibraryContent() {
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/adventurers-guide-to-underdark-collection",
               image: "https://picsum.photos/300/400",
               author: "Random",
               name: "Adventurer's Guide to Underdark Collection",
@@ -81,7 +81,7 @@ export default function LibraryContent() {
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/last-ancient-magic",
               image: "https://picsum.photos/300/400",
               author: "Random",
               name: "Last Ancient Magic",
@@ -89,7 +89,7 @@ export default function LibraryContent() {
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/known-half-ancients",
               image: "https://picsum.photos/300/400",
               author: "Random",
               name: "Known Half-Ancients",
@@ -97,7 +97,7 @@ export default function LibraryContent() {
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/complex-cosmology",
               image: "https://picsum.photos/300/400",
               author: "Random",
               name: "Complex Cosmology",
@@ -105,7 +105,7 @@ export default function LibraryContent() {
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/johken",
               image: "https://picsum.photos/300/400",
               author: "Random",
               name: "The Johken",
@@ -113,7 +113,7 @@ export default function LibraryContent() {
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/understanding-of-divine",
               image: "https://picsum.photos/300/400",
               author: "Next one is blank author!",
               name: "Understanding Of Divine 1",
@@ -121,7 +121,7 @@ export default function LibraryContent() {
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/dated-myth-of-creation",
               image: "https://picsum.photos/300/400",
               author: "",
               name: "Dated; Myth of Creation",
@@ -133,56 +133,56 @@ export default function LibraryContent() {
         <Row>
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/fisherman-uprising",
               image: "https://picsum.photos/300/400",
               name: "Fishermen Uprising",
             }}
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/mujina-army-and-serpents",
               image: "https://picsum.photos/300/400",
-              name: "Mujina Army and the Serpents",
+              name: "Mujina Army and Serpents",
             }}
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/fuck-marry-kill",
               image: "https://picsum.photos/300/400",
               name: "Fuck, Marry, Kill",
             }}
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/clockwork-dreams",
               image: "https://picsum.photos/300/400",
               name: "Clockwork Dreams",
             }}
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/assassination-of-narra",
               image: "https://picsum.photos/300/400",
               name: "Assassination of Narra",
             }}
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/warriors-guild-and-the-red-army",
               image: "https://picsum.photos/300/400",
               name: "Warrior's Guild & The Red Army",
             }}
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/what-is-shock-collection",
               image: "https://picsum.photos/300/400",
               name: "What is Shock? Collection",
             }}
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/poem-on-akash",
               image: "https://picsum.photos/300/400",
               name: "Poem on Akash",
             }}
@@ -193,35 +193,35 @@ export default function LibraryContent() {
         <Row>
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/HTTFBAPWDKTABBTATTKEBIRTDANAATIEWYANTLTMVCRN",
               image: "https://picsum.photos/300/400",
               name: "HTTFBAPWDKTABBTATTKEBIRTDANAATIEWYANTLTMVCRN",
             }}
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/rise-of-magnus",
               image: "https://picsum.photos/300/400",
               name: "Rise of Magnus",
             }}
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/akin-and-the-gold-statue",
               image: "https://picsum.photos/300/400",
               name: "Akin and the Golden Statue",
             }}
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/legend-of-rerartif",
               image: "https://picsum.photos/300/400",
               name: "Legend of Rerartif",
             }}
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/song-of-catastrophe",
               image: "https://picsum.photos/300/400",
               name: "Song Of Catastrophe",
             }}
@@ -239,7 +239,7 @@ export default function LibraryContent() {
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/mirror-of-erised",
               image: "https://picsum.photos/300/400",
               name: "Mirror of Erised",
             }}
@@ -258,7 +258,7 @@ export default function LibraryContent() {
           />
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/jeremiahs-cookbook",
               image: "https://picsum.photos/300/400",
               name: "Jeremiah's Cookbook",
             }}
@@ -269,7 +269,7 @@ export default function LibraryContent() {
         <Row>
           <GetBook
             bookProps={{
-              url: "teothe.com",
+              url: "library/my-study-of-choll",
               image: "https://picsum.photos/300/400",
               name: "My Study of Choll",
             }}
