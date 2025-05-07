@@ -8,7 +8,7 @@ import { DoubleRightOutlined } from "@ant-design/icons";
 export default function FuckMarryKillContent() {
   return (
     <section>
-      <GetCrumbs path={"Teothe,Books,Fuck Marry Kill"} />
+      <GetCrumbs path={"Teothe,Books,Fuck; Marry; Kill"} />
       <Card
         bordered={false}
         className="w-full bg-[url('/books/main.svg')] bg-cover bg-center"
@@ -16,7 +16,7 @@ export default function FuckMarryKillContent() {
         <article className="h-[70vh] overflow-y-scroll no-scrollbar m-auto max-w-[50rem] [&>.mb-2]:{text-justify} px-8 py-2 backdrop-blur-lg">
           <SimpleBookContent
             contentProps={{
-              title: "Fuck, Marry, Kill",
+              title: "Fuck; Marry; Kill",
               text: [
                 "Co-Authored by Quebec",
                 "The three paths to complete life. Accomplishing any of these three feats before you die is noteworthy. But for Bann Jacket, noteworthy just wasn't good enough.",

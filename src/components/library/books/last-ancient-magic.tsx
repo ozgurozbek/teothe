@@ -8,7 +8,7 @@ import { DoubleRightOutlined } from "@ant-design/icons";
 export default function TheLastAncientMagicContent() {
   return (
     <section>
-      <GetCrumbs path={"Teothe,Books,The Last Ancient Magic"} />
+      <GetCrumbs path={"Teothe,Books,Last Ancient Magic"} />
       <Card
         bordered={false}
         className="w-full bg-[url('/books/main.svg')] bg-cover bg-center"
@@ -16,7 +16,7 @@ export default function TheLastAncientMagicContent() {
         <article className="h-[70vh] overflow-y-scroll no-scrollbar m-auto max-w-[50rem] [&>.mb-2]:{text-justify} px-8 py-2 backdrop-blur-lg">
           <SimpleBookContent
             contentProps={{
-              title: "The Last Ancient Magic",
+              title: "Last Ancient Magic",
               text: [
                 "The world of Teothe was once ruled by the powerful and advanced civilization of the Ancients. They had unlocked the secrets of immortality and harnessed the power of magic in ways that were beyond the understanding of any other race. But as they grew older and more powerful, they began to realize that immortality was not the blessing they had thought it to be.",
                 "They became disillusioned with their own existence, and with their last magic, they left a warning for the future, though it was unfortunately too difficult for anyone to grasp.",

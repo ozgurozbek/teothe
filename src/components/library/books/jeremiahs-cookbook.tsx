@@ -8,7 +8,7 @@ import { DoubleRightOutlined } from "@ant-design/icons";
 export default function BookByJeremiahWuxia() {
   return (
     <section>
-      <GetCrumbs path={"Jeremiah Wuxia,Books,10 Signatures of Thaum"} />
+      <GetCrumbs path={"Teothe,Books,10 Signatures of Thaum"} />
       <Card
         bordered={false}
         className="w-full bg-[url('/books/main.svg')] bg-cover bg-center"

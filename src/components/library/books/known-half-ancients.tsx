@@ -8,7 +8,7 @@ import { DoubleRightOutlined } from "@ant-design/icons";
 export default function KnownHalfAncientsContent() {
   return (
     <section>
-      <GetCrumbs path={"Teothe,Books,Known Half Ancients"} />
+      <GetCrumbs path={"Teothe,Books,Known Half-Ancients"} />
       <Card
         bordered={false}
         className="w-full bg-[url('/books/main.svg')] bg-cover bg-center"
@@ -16,7 +16,7 @@ export default function KnownHalfAncientsContent() {
         <article className="h-[70vh] overflow-y-scroll no-scrollbar m-auto max-w-[50rem] text-justify px-8 py-2 backdrop-blur-lg">
           <SimpleBookContent
             contentProps={{
-              title: "Known Half Ancients",
+              title: "Known Half-Ancients",
               text: [
 `All of these are written based on rumors and
 even if they are true most of these entities

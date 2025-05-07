@@ -19,7 +19,7 @@ export default function LibraryContent() {
       <Card bordered={false} className="w-full h-full">
         <SimpleContent contentProps={{
           title: "Library",
-          text: ["SEO friendly text describing the massive list of libraries. This existing violates the design document but nothing to do there, we need it."]
+          text: ["Discover the vast library of Teothe, the central material plane in a rich and ancient cosmology. Filled with books, stories, and sacred texts, this archive preserves the entire spectrum of Teothe Lore, spanning realms, planes, and divine histories. From the origins of creation to forgotten legends, the knowledge of the cosmos begins here."]
         }} />
         <Divider />
         <Title level={2}>General</Title>
@@ -27,6 +27,7 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/what-are-these-clovers",
+              image: "/Books/what-are-these-clovers.webp",
               author: "Idea by Sera Krautek",
               name: "What are these clovers?",
             }}
@@ -34,6 +35,7 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/we-are-pathetic-the-helpless-in-the-eyes-of-the-divine",
+              image: "/Books/we-are-pathetic.png",
               author: "Sera Krautek Adapted from Dwarvish",
               name: "We are Pathetic, the Helpless in the eyes of the Divine",
             }}
@@ -49,80 +51,79 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/divine-tales-1",
-              image: "/Books/divine-tales-1.jpg",
-              author: "Unknown, Altered and Adapted",
+              image: "/Books/divine-tales-1.webp",
+              author: "Unknown; Altered and Adapted",
               name: "Divine Tales 1",
             }}
           />
           <GetBook
             bookProps={{
               url: "library/summary-on-ancients",
-              image: "https://picsum.photos/300/400",
-              author: "CJ",
+              image: "/Books/summary-on-ancients.webp",
+              author: "",
               name: "Summary On Ancients",
             }}
           />
           <GetBook
             bookProps={{
               url: "library/general-jets-reform",
-              image: "https://picsum.photos/300/400",
-              author:
-                "Really long author name & someone else co-authoring it lol",
+              image: "/Books/general-jets-reform.png",
+              author: "Arcanum Alliance Archives",
               name: "General Jet's Reform",
             }}
           />
           <GetBook
             bookProps={{
               url: "library/adventurers-guide-to-underdark-collection",
-              image: "https://picsum.photos/300/400",
-              author: "Random",
+              image: "/Books/adventurers-guide-to-underdark-collection.webp",
+              author: "Unknown; A Collection of 4 Iterations",
               name: "Adventurer's Guide to Underdark Collection",
             }}
           />
           <GetBook
             bookProps={{
               url: "library/last-ancient-magic",
-              image: "https://picsum.photos/300/400",
-              author: "Random",
+              image: "/Books/last-ancient-magic.webp",
+              author: "Unknown; Fiction",
               name: "Last Ancient Magic",
             }}
           />
           <GetBook
             bookProps={{
               url: "library/known-half-ancients",
-              image: "https://picsum.photos/300/400",
-              author: "Random",
+              image: "",
+              author: "A Collection of Tomes, Co-Authored by Yenn",
               name: "Known Half-Ancients",
             }}
           />
           <GetBook
             bookProps={{
               url: "library/complex-cosmology",
-              image: "https://picsum.photos/300/400",
-              author: "Random",
+              image: "",
+              author: "",
               name: "Complex Cosmology",
             }}
           />
           <GetBook
             bookProps={{
               url: "library/johken",
-              image: "https://picsum.photos/300/400",
-              author: "Random",
+              image: "/Books/johken.jpg",
+              author: "",
               name: "The Johken",
             }}
           />
           <GetBook
             bookProps={{
               url: "library/understanding-of-divine",
-              image: "https://picsum.photos/300/400",
-              author: "Next one is blank author!",
+              image: "",
+              author: "",
               name: "Understanding Of Divine 1",
             }}
           />
           <GetBook
             bookProps={{
               url: "library/dated-myth-of-creation",
-              image: "https://picsum.photos/300/400",
+              image: "",
               author: "",
               name: "Dated; Myth of Creation",
             }}
@@ -134,56 +135,64 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/fisherman-uprising",
-              image: "https://picsum.photos/300/400",
+              image: "",
+              author: "Co-Authored by Koffe",
               name: "Fishermen Uprising",
             }}
           />
           <GetBook
             bookProps={{
-              url: "library/mujina-army-and-serpents",
-              image: "https://picsum.photos/300/400",
-              name: "Mujina Army and Serpents",
+              url: "library/mujina-army-and-the-serpents",
+              image: "",
+              author: "Co-Authored by Koffe",
+              name: "Mujina Army & The Serpents",
             }}
           />
           <GetBook
             bookProps={{
               url: "library/fuck-marry-kill",
-              image: "https://picsum.photos/300/400",
-              name: "Fuck, Marry, Kill",
+              image: "",
+              author: "Co-Authored by Quebec",
+              name: "Fuck; Marry; Kill",
             }}
           />
           <GetBook
             bookProps={{
               url: "library/clockwork-dreams",
-              image: "https://picsum.photos/300/400",
+              image: "",
+              author: "Fiction based on Sera Krautek's Manifesto",
               name: "Clockwork Dreams",
             }}
           />
           <GetBook
             bookProps={{
               url: "library/assassination-of-narra",
-              image: "https://picsum.photos/300/400",
+              image: "",
+              author: "Co-Authored by Mermaid",
               name: "Assassination of Narra",
             }}
           />
           <GetBook
             bookProps={{
               url: "library/warriors-guild-and-the-red-army",
-              image: "https://picsum.photos/300/400",
+              image: "",
+              author: "Co-Authored by Gregor",
               name: "Warrior's Guild & The Red Army",
             }}
           />
           <GetBook
             bookProps={{
               url: "library/what-is-shock-collection",
-              image: "https://picsum.photos/300/400",
+              image: "",
+              author: "By Patrick Goldgrain; An Unfortunate Propaganda Co-Authored by Sera & Isaac",
               name: "What is Shock? Collection",
             }}
           />
           <GetBook
             bookProps={{
               url: "library/poem-on-akash",
-              image: "https://picsum.photos/300/400",
+              image: "",
+              author: "",
               name: "Poem on Akash",
             }}
           />
@@ -194,35 +203,40 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/HTTFBAPWDKTABBTATTKEBIRTDANAATIEWYANTLTMVCRN",
-              image: "https://picsum.photos/300/400",
+              image: "",
+              author: "Authored by Batu",
               name: "HTTFBAPWDKTABBTATTKEBIRTDANAATIEWYANTLTMVCRN",
             }}
           />
           <GetBook
             bookProps={{
               url: "library/rise-of-magnus",
-              image: "https://picsum.photos/300/400",
+              image: "",
+              author: "Unknown, Fiction",
               name: "Rise of Magnus",
             }}
           />
           <GetBook
             bookProps={{
               url: "library/akin-and-the-gold-statue",
-              image: "https://picsum.photos/300/400",
+              image: "",
+              author: "Unknown; In Malphas' Memory",
               name: "Akin and the Golden Statue",
             }}
           />
           <GetBook
             bookProps={{
               url: "library/legend-of-rerartif",
-              image: "https://picsum.photos/300/400",
+              image: "",
+              author: "Co-Authored by Sera the Pope",
               name: "Legend of Rerartif",
             }}
           />
           <GetBook
             bookProps={{
               url: "library/song-of-catastrophe",
-              image: "https://picsum.photos/300/400",
+              image: "",
+              author: "",
               name: "Song Of Catastrophe",
             }}
           />
@@ -232,15 +246,17 @@ export default function LibraryContent() {
         <Row>
           <GetBook
             bookProps={{
-              url: "teothe.com",
-              image: "https://picsum.photos/300/400",
+              url: "library/epipremnum",
+              image: "/Books/epipremnum.jpg",
+              author: "Academica Epipremnum Authoring Club",
               name: "Epipremnum",
             }}
           />
           <GetBook
             bookProps={{
               url: "library/mirror-of-erised",
-              image: "https://picsum.photos/300/400",
+              image: "/Books/mirror-of-erised.jpg",
+              author: "Academica Epipremnum Authoring Club; Fiction",
               name: "Mirror of Erised",
             }}
           />
@@ -259,7 +275,8 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/jeremiahs-cookbook",
-              image: "https://picsum.photos/300/400",
+              image: "/Books/jeremiahs-cookbook.png",
+              author: "Jeremiah Wuxia",
               name: "Jeremiah's Cookbook",
             }}
           />
@@ -270,7 +287,8 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/my-study-of-choll",
-              image: "https://picsum.photos/300/400",
+              image: "/Books/my-study-of-choll.png",
+              author: "From Anelin Elimare's Dictation",
               name: "My Study of Choll",
             }}
           />

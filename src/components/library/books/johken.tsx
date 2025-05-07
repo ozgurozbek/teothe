@@ -8,7 +8,7 @@ import { DoubleRightOutlined } from "@ant-design/icons";
 export default function TheJohkenContent() {
   return (
     <section>
-      <GetCrumbs path={"Teothe,Books,The Johken"} />
+      <GetCrumbs path={"Teothe,Books,Johken"} />
       <Card
         bordered={false}
         className="w-full bg-[url('/books/main.svg')] bg-cover bg-center"
@@ -16,7 +16,7 @@ export default function TheJohkenContent() {
         <article className="h-[70vh] overflow-y-scroll no-scrollbar m-auto max-w-[50rem] [&>.mb-2]:{text-justify} px-8 py-2 backdrop-blur-lg">
           <SimpleBookContent
             contentProps={{
-              title: "The Johken",
+              title: "Johken",
               text: [
                 "Also; Johkefolk, Iyiyohken, Iyijohken, Wiobfolk, Cardinals, Johk",
                 "In a small time that encapsulates the struggles of the gods before Mceeju's intervention and the casting of the Black Rain, there existed a people known as the Johke. Despite being commonly depicted as humans, they were more akin to Genasi. Their world was divided and transformed into the Inner Planes, and fragments of their history can be found scattered throughout, albeit faint and incomprehensible.",

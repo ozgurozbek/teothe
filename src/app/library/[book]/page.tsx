@@ -25,7 +25,7 @@ const booksComponents: Record<string, ComponentType<{}>> = {
   "last-ancient-magic": dynamic(() => import('@/components/library/books/last-ancient-magic')),
   "legend-of-rerartif": dynamic(() => import('@/components/library/books/legend-of-rerartif')),
   "mirror-of-erised": dynamic(() => import('@/components/library/books/mirror-of-erised')),
-  "mujina-army-and-serpents": dynamic(() => import('@/components/library/books/mujina-army-and-serpents')),
+  "mujina-army-and-the-serpents": dynamic(() => import('@/components/library/books/mujina-army-and-the-serpents')),
   "my-study-of-choll": dynamic(() => import('@/components/library/books/my-study-of-choll')),
   "poem-on-akash": dynamic(() => import('@/components/library/books/poem-on-akash')),
   "rise-of-magnus": dynamic(() => import('@/components/library/books/rise-of-magnus')),
@@ -34,6 +34,7 @@ const booksComponents: Record<string, ComponentType<{}>> = {
   "understanding-of-divine": dynamic(() => import('@/components/library/books/understanding-of-divine')),
   "warriors-guild-and-the-red-army": dynamic(() => import('@/components/library/books/warriors-guild-and-the-red-army')),
   "what-is-shock-collection": dynamic(() => import('@/components/library/books/what-is-shock-collection')),
+  "epipremnum": dynamic(() => import('@/components/library/books/epipremnum')),
   // Add additional book components here
 };
 
@@ -132,7 +133,7 @@ export const generateMetadata = async ({ params }: { params: { book: string } })
       title: "Mirror of Erised",
       description: "An adventure of Epipremnum's students that lead to discovery, but at what cost?"
     },
-    "mujina-army-and-serpents": {
+    "mujina-army-and-the-serpents": {
       title: "Mujina Army and Serpents",
       description: "History of Mujina Army, and the horror that is in Dyatlov Pass."
     },
@@ -167,6 +168,10 @@ export const generateMetadata = async ({ params }: { params: { book: string } })
     "what-is-shock-collection": {
       title: "What Is Shock? Collection",
       description: "A collection of short stories examining the strange effects of Shock."
+    },
+    "epipremnum": {
+      title: "Epipremnum",
+      description: "Dive into the great magic school: Academica Epipremnum!"
     }
     // Add metadata for other books as needed
   };
@@ -180,8 +185,8 @@ export const generateStaticParams = async () => {
   const booksList = ['what-are-these-clovers','we-are-pathetic-the-helpless-in-the-eyes-of-the-divine','legend-of-w-steram','divine-tales-1','dufrene-s-notes',
     'adventurers-guide-to-underdark-collection','akin-and-the-gold-statue','assassination-of-narra','clockwork-dreams','complex-cosmology',
     'dated-myth-of-creation','fisherman-uprising','fuck-marry-kill','general-jets-reform','HTTFBAPWDKTABBTATTKEBIRTDANAATIEWYANTLTMVCRN','jeremiahs-cookbook',
-    'johken','known-half-ancients','last-ancient-magic','legend-of-rerartif','mirror-of-erised','mujina-army-and-serpents','my-study-of-choll','poem-on-akash','rise-of-magnus',
-    'song-of-catastrophe','summary-on-ancients','understanding-of-divine','warriors-guild-and-the-red-army','what-is-shock-collection'
+    'johken','known-half-ancients','last-ancient-magic','legend-of-rerartif','mirror-of-erised','mujina-army-and-the-serpents','my-study-of-choll','poem-on-akash','rise-of-magnus',
+    'song-of-catastrophe','summary-on-ancients','understanding-of-divine','warriors-guild-and-the-red-army','what-is-shock-collection','epipremnum'
   ]; // Add all dynamic book names here
 
   return booksList.map(book => ({

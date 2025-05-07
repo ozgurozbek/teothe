@@ -8,7 +8,7 @@ import { DoubleRightOutlined } from "@ant-design/icons";
 export default function BraveMenOfDaonContent() {
   return (
     <section>
-      <GetCrumbs path={"Teothe,Books,Brave Men of Daon"} />
+      <GetCrumbs path={"Teothe,Books,Poem on Akash"} />
       <Card
         bordered={false}
         className="w-full bg-[url('/books/main.svg')] bg-cover bg-center"
@@ -16,7 +16,7 @@ export default function BraveMenOfDaonContent() {
         <article className="h-[70vh] overflow-y-scroll no-scrollbar m-auto max-w-[50rem] [&>.mb-2]:{text-justify} px-8 py-2 backdrop-blur-lg">
           <SimpleBookContent
             contentProps={{
-              title: "Brave Men of Daon",
+              title: "Poem on Akash",
               text: [
                 "Under the mighty hills lived brave men,",
                 "Men of Daon, of the inseparable union.",

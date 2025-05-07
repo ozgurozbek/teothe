@@ -8,7 +8,7 @@ import { DoubleRightOutlined } from "@ant-design/icons";
 export default function HTTFBAPWDKTABBTATTKEBIRTDANAATIEWYANTLTMVCRNContent() {
   return (
     <section>
-      <GetCrumbs path={"Teothe,Books,How to Teleport for Beginners and People Who Doesn't Know They Are Beginners Because They Always Think They Know Everything But in Reality They Don't At Least Not Always and That Is Exactly Why You All Need to Listen to Me Very Carefully Right Now"} />
+      <GetCrumbs path={"Teothe,Books,HTTFBAPWDKTABBTATTKEBIRTDANAATIEWYANTLTMVCRN"} />
       <Card
         bordered={false}
         className="w-full bg-[url('/books/main.svg')] bg-cover bg-center"

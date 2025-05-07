@@ -8,7 +8,7 @@ import { DoubleRightOutlined } from "@ant-design/icons";
 export default function MirrorOfErisedContent() {
   return (
     <section>
-      <GetCrumbs path={"Epipremnum,Books,Mirror of Erised"} />
+      <GetCrumbs path={"Teothe,Books,Mirror of Erised"} />
       <Card
         bordered={false}
         className="w-full bg-[url('/books/main.svg')] bg-cover bg-center"
