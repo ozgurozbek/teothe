@@ -97,6 +97,8 @@ const loadPageURL = (menuItem: any) => {
       return "16";
     case "calculate-trade":
       return "17";
+    case "codex":
+      return "18";
     default:
       return "0";
   }
@@ -140,6 +142,7 @@ export default function Navbar() {
         getIcon("ResourceValueCalculator")
       ),
       getItem("Achievements", "16", "achievements", getIcon("Achievements")),
+      getItem("Codex", "18", "codex", getIcon("Codex")),
     ]),
     getItem("Generators", "-1", undefined, getIcon("Generators"), undefined, [
       getItem(
