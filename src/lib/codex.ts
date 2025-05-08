@@ -11,10 +11,18 @@ type PostMeta = {
   date: string;
   description?: string;
   category?: string;
+  authorName?: string;
+  contentWarning?: string;
 };
 
+function isValidMarkdown(filename: string) {
+  return filename.endsWith('.md') && filename !== '_DEV.md';
+}
+
 export function getSortedPosts() {
-  const filenames = fs.readdirSync(postsDirectory);
+  const filenames = fs
+    .readdirSync(postsDirectory)
+    .filter(isValidMarkdown);
 
   const posts = filenames.map((filename) => {
     const slug = filename.replace(/\.md$/, '');
@@ -33,7 +41,10 @@ export function getSortedPosts() {
 }
 
 export function getAllSlugs() {
-  const filenames = fs.readdirSync(postsDirectory);
+  const filenames = fs
+    .readdirSync(postsDirectory)
+    .filter(isValidMarkdown);
+
   return filenames.map((filename) => ({
     slug: filename.replace(/\.md$/, ''),
   }));
@@ -54,9 +65,8 @@ export async function getPostBySlug(slug: string) {
   };
 }
 
-export function getPreviousPostsByCategory(currentSlug: string, category: string, count: number = 3) {
+export function getPreviousPostsByCategory(currentSlug: string, category: string, count: number = 2) {
   const posts = getSortedPosts();
-
   const index = posts.findIndex((post) => post.slug === currentSlug);
   if (index === -1) return [];
 
@@ -73,9 +83,14 @@ export function getMostRecentPost(currentSlug: string) {
 
 export function getMostRecentPostInCategory(currentSlug: string, category: string) {
   const posts = getSortedPosts();
-  return (
-    posts.find(
-      (post) => post.category === category && post.slug !== currentSlug
-    ) || null
-  );
+  return posts.find(
+    (post) => post.category === category && post.slug !== currentSlug
+  ) || null;
+}
+
+export function getRecentPostsByAuthor(currentSlug: string, authorName: string, count: number = 3) {
+  const posts = getSortedPosts();
+  return posts
+    .filter((post) => post.authorName === authorName && post.slug !== currentSlug)
+    .slice(0, count);
 }
