@@ -265,6 +265,11 @@ export default function MapLegendContent() {
               Teothe Map Resources Trade Calculator <DoubleRightOutlined />
             </span>
           </Button>
+          <Button href="https://civilization.fandom.com/wiki/Category:Resource_icons_(Civ6)" target="_blank">
+            <span>
+              Resource Icons <DoubleRightOutlined />
+            </span>
+          </Button>
         </Space>
       </Card>
     </section>
