@@ -6,7 +6,7 @@ import GetCrumbs from "@/components/NavigationCrumb";
 
 const { Title } = Typography;
 
-export default function BlogPostClient({
+export default function CodexPostClient({
   post,
   mostRecentPost,
   mostRecentCategoryPost,
@@ -21,7 +21,7 @@ export default function BlogPostClient({
 
   return (
     <>
-      <GetCrumbs path={"Teothe,Common Lore"} />
+      <GetCrumbs path={"Teothe,"+post.title.replaceAll(",","")} />
       <Card bordered={false} className="w-full">
         <Title
           data-testid="simplecon-title"
