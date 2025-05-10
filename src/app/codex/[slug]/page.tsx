@@ -5,9 +5,9 @@ import {
   getMostRecentPost,
   getMostRecentPostInCategory,
   getRecentPostsByAuthor,
+  getNextPostInSeries,
 } from '@/lib/codex';
 import { notFound } from 'next/navigation';
-import Link from 'next/link';
 import CodexPostClient from '@/components/codex/CodexPostClient';
 
 export async function generateStaticParams() {
@@ -26,6 +26,11 @@ export default async function CodexPost({ params }: { params: { slug: string } }
     ? getMostRecentPostInCategory(slug, category)
     : null;
 
+  const nextInSeries =
+  post.category && post.authorName
+    ? getNextPostInSeries(post.slug, post.category, post.authorName)
+    : null;
+
   const previousCategoryPosts = category
     ? getPreviousPostsByCategory(slug, category)
     : [];
@@ -38,6 +43,7 @@ export default async function CodexPost({ params }: { params: { slug: string } }
   const shownSlugs = new Set([slug]);
   if (mostRecentPost) shownSlugs.add(mostRecentPost.slug);
   if (mostRecentCategoryPost) shownSlugs.add(mostRecentCategoryPost.slug);
+  if (nextInSeries) shownSlugs.add(nextInSeries.slug);
 
   const filteredPreviousCategoryPosts = previousCategoryPosts.filter(
     (p) => !shownSlugs.has(p.slug)
@@ -50,7 +56,8 @@ export default async function CodexPost({ params }: { params: { slug: string } }
 
   return (
     <section>
-      <CodexPostClient post={post} mostRecentPost={mostRecentPost} mostRecentCategoryPost={mostRecentCategoryPost} previousPosts={filteredPreviousCategoryPosts}/>
+      <CodexPostClient post={post} author={authorName} mostRecentPost={mostRecentPost} mostRecentCategoryPost={mostRecentCategoryPost}
+      previousPosts={filteredPreviousCategoryPosts} recentAuthorPosts={filteredAuthorPosts} nextInSeries={nextInSeries}/>
     </section>
   );
 }

@@ -88,6 +88,25 @@ export function getMostRecentPostInCategory(currentSlug: string, category: strin
   ) || null;
 }
 
+export function getNextPostInSeries(currentSlug: string, category: string, authorName: string) {
+  const posts = getSortedPosts();
+
+  const index = posts.findIndex((post) => post.slug === currentSlug);
+  if (index === -1) return null;
+
+  // Look earlier in the list (since it's sorted descending)
+  const nextPost = posts
+    .slice(0, index) // only newer posts
+    .findLast(
+      (post) =>
+        post.category === category &&
+        post.authorName === authorName &&
+        post.slug !== currentSlug
+    );
+
+  return nextPost || null;
+}
+
 export function getRecentPostsByAuthor(currentSlug: string, authorName: string, count: number = 3) {
   const posts = getSortedPosts();
   return posts
