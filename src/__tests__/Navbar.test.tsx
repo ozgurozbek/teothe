@@ -61,8 +61,8 @@ describe('Navbar Component', () => {
     expect(screen.getByText('Library')).toBeInTheDocument();
     expect(screen.getByText('Tables')).toBeInTheDocument();
     expect(screen.getByText('Map Overlay')).toBeInTheDocument();
-    expect(screen.getByText("DM's Works")).toBeInTheDocument();
-    expect(screen.getByText('Generators')).toBeInTheDocument();
+    expect(screen.getByText("DM's Works ▼")).toBeInTheDocument();
+    expect(screen.getByText('Generators ▼')).toBeInTheDocument();
   });
 
   test('sets the selected key based on the current path', () => {
