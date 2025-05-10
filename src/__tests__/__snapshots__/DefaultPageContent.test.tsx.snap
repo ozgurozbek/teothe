@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DefaultPageContent matches snapshot 1`] = `
+<DocumentFragment>
+  <section>
+    <span
+      class="text-slate-400"
+    >
+       / Teothe
+    </span>
+    <div
+      class="ant-card w-full css-dev-only-do-not-override-1xg9z9n"
+    >
+      <div
+        class="ant-card-body"
+      >
+        <section>
+          <h1
+            class="ant-typography css-dev-only-do-not-override-1xg9z9n"
+            data-testid="simplecon-title"
+            id="teothe-campaign-setting"
+          >
+            Teothe Campaign Setting
+          </h1>
+          <div
+            data-testid="simplecon-paragraph"
+          >
+            <p
+              class="mb-2"
+            >
+              Welcome to the world of Teothe, a universe of darkness and light, where planetary planes and endless possibilities intertwine. Once, the Astral Sea was reformed, and the gods favored their divinity upon the land, leading the people to prosper and thrive. Adventurers formed groups and traversed other nations, sparking cultural renaissances across history, religion, politics, and technology. The people reached such heights that they questioned the necessity of the gods themselves. With waning faith, the gods starved, and to prevent their demise, domains united. But as different philosophies collided, warped concepts merged, and the ties between planes were severed, setting the cogs of fate into motion.
+            </p>
+            <p
+              class="mb-2"
+            >
+              During this tumultuous era, the world witnessed the catastrophic 'Corrosion of Rods', an event that saw the clash of the Underworld and Overworld forces. In the aftermath of this clash, the divine rods that once connected the Material Planes were shattered, and the remnants formed a mysterious 'Divine Curtain' that now veils the material realms.
+            </p>
+            <p
+              class="mb-2"
+            >
+              Amidst the turmoil, the last incomprehensible Ancient artifact, which had long stood atop Teothe's desert, vanished into nothingness, leading the magic-affiliated mourn the loss of the opportunity to grasp the past's inherited knowledge.
+            </p>
+            <p
+              class="mb-2"
+            >
+              Now, the world of Teothe stands at a crossroads of chaos and potential. The rage and confusion manifested into the very weave of reality, altering the fabric of existence itself. As a brave adventurer, you will navigate the layered planes, delve into the hidden corners of the universe, encounter diverse beings that ignore gods, time, and even reality. Secluded planes devoid of life await rediscovery, while forgotten ways between planes offer new mysteries to unravel. Embrace your destiny as you embark on an epic adventure that will leave an indelible mark on this ever-evolving universe. The corrosion of rods and the divine curtain have changed Teothe forever, and it is up to you to shape its destiny in the face of darkness and light. The fate of Teothe lies in your hands as the rage and confusion manifested into the weave... our story begins.
+            </p>
+            <p
+              class="mb-2"
+            >
+              Will you be the harbinger of unity, seeking to reunite the gods' domains and breathe life back into faith, or will you embrace the wild currents of chaos and carve your unique path through the enigmatic realms? Delve into the annals of time, unearthing ancient knowledge to guide the people of Teothe towards magical wonders, or thread the path of logic, inventing technological marvels that defy the limits of imagination? Will you weave yourself into the tapestry of the people, embracing their hopes and dreams, or shall you embrace cunning stratagems, manipulating them all for personal gain? Face the dark corners of existence, cleansing the malevolent planes, and bringing radiant light into the shadows, or grasp dominion, seizing control to shape the fate of entire realms? Amidst these momentous choices, will you chase the elusive promises of eternity or humbly submit to the raw power of elemental forces?
+            </p>
+            <p
+              class="mb-2"
+            >
+              Teothe awaits your decisions, and with each step, the universe reshapes in the wake of your actions, weaving a story of epic proportions that echoes through the ages.
+            </p>
+          </div>
+        </section>
+        <a
+          class="ant-btn css-dev-only-do-not-override-1xg9z9n ant-btn-default"
+          href="/common-lore"
+          tabindex="0"
+        >
+          <span>
+            See Common Lore 
+            <span
+              aria-label="double-right"
+              class="anticon anticon-double-right"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="double-right"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M533.2 492.3L277.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H188c-6.7 0-10.4 7.7-6.3 12.9L447.1 512 181.7 851.1A7.98 7.98 0 00188 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5zm304 0L581.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H492c-6.7 0-10.4 7.7-6.3 12.9L751.1 512 485.7 851.1A7.98 7.98 0 00492 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5z"
+                />
+              </svg>
+            </span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
