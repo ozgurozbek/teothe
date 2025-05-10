@@ -97,6 +97,8 @@ const loadPageURL = (menuItem: any) => {
       return "16";
     case "calculate-trade":
       return "17";
+    case "codex":
+      return "18";
     default:
       return "0";
   }
@@ -126,7 +128,8 @@ export default function Navbar() {
     getItem("Tables", "5", "tables", getIcon("Tables")),
     getItem("Map Overlay", "10", "map-overlay", getIcon("MapOverlay")),
     getItem("Calendar", "12", "calendar", getIcon("Calendar")),
-    getItem("DM's Works", "-2", undefined, getIcon("DMworks"), undefined, [
+    getItem("Codex", "18", "codex", getIcon("Codex")),
+    getItem("DM's Works ▼", "-2", undefined, getIcon("DMworks"), undefined, [
       getItem("Planes", "2", "planes", getIcon("Locations")),
       getItem("Tools", "8", "tools", getIcon("Tools")),
       getItem("Pricing", "7", "pricing", getIcon("Pricing")),
@@ -141,7 +144,7 @@ export default function Navbar() {
       ),
       getItem("Achievements", "16", "achievements", getIcon("Achievements")),
     ]),
-    getItem("Generators", "-1", undefined, getIcon("Generators"), undefined, [
+    getItem("Generators ▼", "-1", undefined, getIcon("Generators"), undefined, [
       getItem(
         "Quest Idea",
         "14",

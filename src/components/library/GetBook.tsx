@@ -1,4 +1,4 @@
-import { Button, Card, Col, Image } from "antd";
+import { Col } from "antd";
 
 /**
  * Generates book preview component
@@ -16,7 +16,7 @@ export default function GetBook({
     <Col xs={24} sm={12} md={8} lg={6} xl={4} xxl={4} className="p-2">
       <a style={{textDecoration: "none", color: "inherit"}} href={bookProps.url} target="_blank"> {/* Ignore the cheesy implementation, no idea how to make it accessible otherwise */}
         <section className="p-2 h-full hover:bg-opacity-20 hover:bg-white">
-          <div style={{backgroundImage: `url(${bookProps.image})`}} className="w-full h-[20rem] bg-cover bg-center">
+          <div style={{backgroundImage: `url(${bookProps.image})`}} className="w-full h-[26rem] sm:h-[18rem] md:h-[18rem] lg:h-[18rem] xl:h-[18rem] bg-cover bg-center">
             <div className="w-full h-full bg-gradient-to-b from-slate-800 p-4">
               <p className="font-semibold break-words">{bookProps.name}</p>
               <p><i>{bookProps.author}</i></p>
