@@ -9,6 +9,24 @@ import {
 } from '@/lib/codex';
 import { notFound } from 'next/navigation';
 import CodexPostClient from '@/components/codex/CodexPostClient';
+import { Metadata } from 'next';
+
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const post = await getPostBySlug(params.slug);
+
+  if (!post) {
+    return {
+      title: 'Post Not Found',
+      description: 'The requested post could not be found.',
+    };
+  }
+
+  return {
+    title: post.title,
+    description: post.description || 'Explore this post in our library.',
+  };
+}
+
 
 export async function generateStaticParams() {
   const slugs = getAllSlugs();

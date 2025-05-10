@@ -1,4 +1,4 @@
-import { Button, Card, Col, Image } from "antd";
+import { Col } from "antd";
 
 /**
  * Generates book preview component
