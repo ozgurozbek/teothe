@@ -1,6 +1,6 @@
 ---
 title: "If Yer Drinkin' Anything Else, Yer Wastin' Yer Life"
-date: "2025-02-10"
+date: "2025-05-08"
 description: "A bold dwarven take on tradition, ale, and why VioletCraft is the only brew worth spilling."
 category: "Tradition"
 contentWarning: ""

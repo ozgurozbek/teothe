@@ -1,6 +1,6 @@
 ---
 title: "A Farmer's Glimpse Into Adventure"
-date: "2025-08-16"
+date: "2025-05-10"
 description: "A wandering farmer shares reflections on rumors and sightings of a famed adventuring party, sparking her conflicted yearning to leave the fields behind"
 category: "Journal"
 contentWarning: "Death"
