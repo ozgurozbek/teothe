@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Card, Typography } from "antd";
+import { Card, Divider, Typography } from "antd";
 import GetCrumbs from "@/components/NavigationCrumb";
 
 const { Title } = Typography;
@@ -35,13 +35,14 @@ export default function CodexPostClient({
         >
           {post.title}
         </Title>
-        <p className="text-sm text-gray-500 mb-2">{post.date}</p>
+        
+        {author && (<i className="text-sm text-gray-500 mb-6 font-semibold">{author+"; "}</i>)}{category && (<i className="text-sm text-gray-500 mb-6 font-semibold">{category+", "}</i>)}<i className="text-sm text-gray-500 mb-2">{post.date}</i>
+        
+        <Divider/>
+        
+        <article dangerouslySetInnerHTML={{ __html: post.contentHtml }} /> {/* MUST FIX */}
 
-        {category && (
-          <p className="text-sm text-gray-500 mb-6 font-semibold">{category}</p>
-        )}
-
-        <article dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+        <Divider/>
         
         {mostRecentPost && (
           <div className="mt-10">
