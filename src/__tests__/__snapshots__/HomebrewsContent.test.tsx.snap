@@ -1,0 +1,242 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomebrewsContent matches snapshot 1`] = `
+<DocumentFragment>
+  <section>
+    <span
+      class="text-slate-400"
+    >
+       / Teothe
+    </span>
+    <span>
+       / Homebrews
+    </span>
+    <div
+      class="ant-card w-full css-dev-only-do-not-override-1xg9z9n"
+    >
+      <div
+        class="ant-card-body"
+      >
+        <section>
+          <h1
+            class="ant-typography css-dev-only-do-not-override-1xg9z9n"
+            data-testid="simplecon-title"
+            id="character"
+          >
+            Character
+          </h1>
+          <div
+            data-testid="simplecon-paragraph"
+          />
+        </section>
+        <ul>
+          <li
+            class="hover:bg-[#630436] py-4"
+          >
+            Learning a language or a tool proficiency during offtime takes (15 - Intelligence Modifier) * 8 actions.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            For classes besides Wizard, you can cast unprepared ritual spells but they take considerably longer, 30 minutes instead of 10 and require concentration during casting.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            If we roll for HP, Minimum HP gain when leveled up is 1. If you roll a 2 and your CON MOD is -5, you still gain 1 HP.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            You freely teleport from circles using teleportation runes as long as its noted, if its not noted or not to a circle, roll from teleportation fumble table.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            Learning spells take 2 hours and costs 50 GP per spell level if the source is written. If not, the time and cost multiplies by spell level.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            You gain points equal to your INT modifier. Per one point, you can become proficient on something or learn a new language. Per three points, you can become an expert on something.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            Spell components are required to be bought if they are rare once when they are learned, and if they are consumed, GP is consumed instead.
+          </li>
+        </ul>
+        <div
+          class="ant-divider css-dev-only-do-not-override-1xg9z9n ant-divider-horizontal"
+          role="separator"
+        />
+        <section>
+          <h1
+            class="ant-typography css-dev-only-do-not-override-1xg9z9n"
+            data-testid="simplecon-title"
+            id="general"
+          >
+            General
+          </h1>
+          <div
+            data-testid="simplecon-paragraph"
+          />
+        </section>
+        <ul>
+          <li
+            class="hover:bg-[#630436] py-4"
+          >
+            Map based resources use map based skills. You can find them in Map Resources.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            Dealing One-Shot amounts of damage (MAX HP + 1) in healing also kills the person with Radiant damage. Radiant immunity and resistance, including species benefits, are applied.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            Public Teleportation happens via Waystones (Circles), Teleportation Pillars or by using Scrolls or Teleportation Dust on landmarks.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            Beasts and Humanoids that have equal to or less than 8 Constitution score has vulnerability to poison damage, due to their fragile body health. This does not apply to PCs.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            Additional AC from custom table items are capped with +3 AC.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            You get the Lucky Clover item for every session once. You have to use it that session or it is discarded.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            Monster cooking is a thing.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            Long rest is only allowed in safe places.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            Magic Item Shop™ does not sell Wondrous items and Artifacts, if you see one.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            Fall damage is not capped.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            Retainer spells and bonuses are not loyal to 5E sourcebooks.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            When you roll a 20 on a skill check, you get inspired if you describe why.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            You'll know of an individual if you end the session with a lucky clover on you, or you've pulled a Zeandil.
+          </li>
+        </ul>
+        <div
+          class="ant-divider css-dev-only-do-not-override-1xg9z9n ant-divider-horizontal"
+          role="separator"
+        />
+        <section>
+          <h1
+            class="ant-typography css-dev-only-do-not-override-1xg9z9n"
+            data-testid="simplecon-title"
+            id="social"
+          >
+            Social
+          </h1>
+          <div
+            data-testid="simplecon-paragraph"
+          />
+        </section>
+        <ul>
+          <li
+            class="hover:bg-[#630436] py-4"
+          >
+            Property prices use D&D5eDM's Guild resource prices. Housing etc use basic math based on potential and size.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            PCs can own property and work businesses. Property and business related stuff use influence skill, there is also a feat.
+          </li>
+        </ul>
+        <div
+          class="ant-divider css-dev-only-do-not-override-1xg9z9n ant-divider-horizontal"
+          role="separator"
+        />
+        <section>
+          <h1
+            class="ant-typography css-dev-only-do-not-override-1xg9z9n"
+            data-testid="simplecon-title"
+            id="combat"
+          >
+            Combat
+          </h1>
+          <div
+            data-testid="simplecon-paragraph"
+          />
+        </section>
+        <ul>
+          <li
+            class="hover:bg-[#630436] py-4"
+          >
+            Minions from 3E are used for monsters.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            AoE and Cancel effects are DoT, meaning you won't turn into a stone statue from Medusa's Mark in a single turn, having multiple chances to avoid.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            Mounted Combat respects the Move or Attack interpret ruling.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            Move or Attack can interpret each other. So you can Move a bit, Attack, and Move a bit again.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            Retainer cards from 4.5E are used for NPCs.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            Elites from 3E are uncommon but used for monsters.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            Two weapon fighting and any other multiattack rolls for each if not stated otherwise.
+          </li>
+          <li
+            class="hover:bg-[#630436] py-4 border-t border-[#33373b]"
+          >
+            AoE and Cancel effects are rarely used.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
