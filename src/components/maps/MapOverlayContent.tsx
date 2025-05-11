@@ -10,6 +10,7 @@ import {
   ExclamationCircleOutlined,
   ExclamationCircleFilled,
 } from "@ant-design/icons";
+//@ts-ignore
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
@@ -19,7 +20,8 @@ const MAP_LAYERS = [
   "Compass",
   "Continents",
   "Echoes",
-  "Kingdoms",
+  "Kingdoms3K",
+  "KingdomsMC",
   "Places",
   "Resources",
   "Steamcart",
@@ -48,7 +50,7 @@ export default function MapOverlayContent() {
         zoomSnap: 0.05,
         center: [imageHeight / 2, imageWidth / 2],
         zoom: -0.3,
-        scrollWheelZoom: true,
+        scrollWheelZoom: false,
         attributionControl: false,
       });
       mapRef.current = map;
@@ -103,7 +105,7 @@ export default function MapOverlayContent() {
             const bounds = makeBounds(x, y);
 
             // Add base layer
-            const baseOverlay = L.imageOverlay("/Maps/Base.png", bounds).addTo(map);
+            const baseOverlay = L.imageOverlay("/Maps/Base.webp", bounds).addTo(map);
             baseImageRefs.current[key] = baseOverlay;
 
             // Add each overlay map if active
@@ -164,7 +166,8 @@ export default function MapOverlayContent() {
             <Button onClick={() => handleMapVisibility("Compass")}><span>Compass <CheckCircleFilled /></span></Button>
           </Tooltip>
           <Button onClick={() => handleMapVisibility("Continents")}><span>Continents <CheckCircleOutlined /></span></Button>
-          <Button onClick={() => handleMapVisibility("Kingdoms")}><span>Kingdoms <CheckCircleOutlined /></span></Button>
+          <Button onClick={() => handleMapVisibility("Kingdoms3K")}><span>Kingdoms3K <CheckCircleOutlined /></span></Button>
+          <Button onClick={() => handleMapVisibility("KingdomsMC")}><span>KingdomsMC <CheckCircleOutlined /></span></Button>
           <Button onClick={() => handleMapVisibility("Places")}><span>Places <CheckCircleOutlined /></span></Button>
           <Divider type="vertical" style={{ borderColor: "white" }} />
           <Button onClick={() => handleMapVisibility("Climates")}><span>Climate <ExclamationCircleOutlined /></span></Button>
@@ -180,7 +183,7 @@ export default function MapOverlayContent() {
           </Tooltip>
           <Button onClick={() => handleMapVisibility("Travel")}><span>Travel Routes <ExclamationCircleOutlined /></span></Button>
         </Space>
-        <div className="relative mt-4 h-[80vh] w-full">
+        <div className="relative mt-4 h-[60vh] w-full">
           <div id="leaflet-map" className="absolute top-0 left-0 w-full h-full z-0" />
         </div>
       </Card>
