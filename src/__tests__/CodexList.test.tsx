@@ -1,6 +1,13 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import CodexList from '../components/codex/CodexList';
+
+// Mock CodexEntry to prevent antd/next import issues
+jest.mock('../components/codex/CodexEntry', () => {
+  return function MockedCodexEntry({ title }: { title: string }) {
+    return <li data-testid="codex-entry">{title}</li>;
+  };
+});
 
 const samplePosts = [
   {
@@ -35,15 +42,8 @@ describe('CodexList', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  test('renders post titles as links', () => {
-    const { getByText } = render(<CodexList posts={samplePosts} />);
-  });
-
-  test('renders content warning and staff pick badges', () => {
-    const { getByText, queryByText } = render(<CodexList posts={samplePosts} />);
-  });
-
-  test('renders post descriptions and metadata', () => {
-    const { getByText } = render(<CodexList posts={samplePosts} />);
+  test('renders post titles using mocked CodexEntry', () => {
+    render(<CodexList posts={samplePosts} />);
+    expect(screen.getAllByTestId('codex-entry')).toHaveLength(2);
   });
 });
