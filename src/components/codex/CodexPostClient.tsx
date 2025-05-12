@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Card, Divider, Typography } from "antd";
 import GetCrumbs from "@/components/NavigationCrumb";
+import CodexEntry from "./CodexEntry";
 
 const { Title } = Typography;
 
@@ -27,7 +28,7 @@ export default function CodexPostClient({
 
   return (
     <>
-      <GetCrumbs path={"Teothe," + post.title.replaceAll(",", "")} />
+      <GetCrumbs path={"Teothe,Codex," + post.title.replaceAll(",", "")} />
       <Card bordered={false} className="w-full">
         <Title
           data-testid="simplecon-title"
@@ -46,70 +47,32 @@ export default function CodexPostClient({
         
         {mostRecentPost && (
           <div className="mt-10">
-            <h3 className="text-xl font-semibold mb-2">Most Recent Post</h3>
-            <Link href={`/codex/${mostRecentPost.slug}`}>
-              <h4 className="text-lg text-blue-600 hover:underline">
-                {mostRecentPost.title}
-              </h4>
-            </Link>
-            {mostRecentPost.category && (
-              <p className="text-sm text-gray-500 italic">
-                {mostRecentPost.category}
-              </p>
-            )}
-            <p className="text-sm text-gray-500">
-              {mostRecentPost.description}
-            </p>
+            <Title level={2} className="text-xl font-semibold mb-2">Most Recent Post</Title>
+            <CodexEntry slug={mostRecentPost.slug} title={mostRecentPost.title} date={mostRecentPost.date} description={mostRecentPost.description} category={mostRecentPost.category} contentWarning={mostRecentPost.contentWarning} staffPick={mostRecentPost.staffPick} duration={mostRecentPost.duration} level={3}></CodexEntry>
           </div>
         )}
 
         {nextInSeries && (
           <div className="mt-10">
-            <h3 className="text-xl font-semibold mb-2">Next Post in Series</h3>
-            <Link href={`/blog/${nextInSeries.slug}`}>
-              <h4 className="text-lg text-blue-600 hover:underline">
-                {nextInSeries.title}
-              </h4>
-            </Link>
-            <p className="text-sm text-gray-500 italic">
-              {nextInSeries.category}
-            </p>
-            <p className="text-sm text-gray-500">{nextInSeries.description}</p>
+            <Title level={2} className="text-xl font-semibold mb-2">Next Post in Series</Title>
+            <CodexEntry slug={nextInSeries.slug} title={nextInSeries.title} date={nextInSeries.date} description={nextInSeries.description} category={nextInSeries.category} contentWarning={nextInSeries.contentWarning} staffPick={nextInSeries.staffPick} duration={nextInSeries.duration} level={3}></CodexEntry>
           </div>
         )}
 
         {mostRecentCategoryPost && (
           <div className="mt-10">
-            <h3 className="text-xl font-semibold mb-2">
-              Most Recent in {category}
-            </h3>
-            <Link href={`/codex/${mostRecentCategoryPost.slug}`}>
-              <h4 className="text-lg text-blue-600 hover:underline">
-                {mostRecentCategoryPost.title}
-              </h4>
-            </Link>
-            <p className="text-sm text-gray-500 italic">{category}</p>
-            <p className="text-sm text-gray-500">
-              {mostRecentCategoryPost.description}
-            </p>
+            <Title level={2} className="text-xl font-semibold mb-2">Most Recent in {category}</Title>
+            <CodexEntry slug={mostRecentCategoryPost.slug} title={mostRecentCategoryPost.title} date={mostRecentCategoryPost.date} description={mostRecentCategoryPost.description} category={mostRecentCategoryPost.category} contentWarning={mostRecentCategoryPost.contentWarning} staffPick={mostRecentCategoryPost.staffPick} duration={mostRecentCategoryPost.duration} level={3}></CodexEntry>
           </div>
         )}
 
         {recentAuthorPosts.length > 0 && (
           <div className="mt-10">
-            <h3 className="text-xl font-semibold mb-2">
-              Previous Posts by {author}
-            </h3>
+            <Title level={2} className="text-xl font-semibold mb-2">Previous Posts by {author}</Title>
             <ul className="mt-2">
               {recentAuthorPosts.map((p) => (
                 <li key={p.slug} className="mb-4">
-                  <Link href={`/codex/${p.slug}`}>
-                    <h4 className="text-lg text-blue-600 hover:underline">
-                      {p.title}
-                    </h4>
-                  </Link>
-                  <p className="text-sm text-gray-500 italic">{p.category}</p>
-                  <p className="text-sm text-gray-500">{p.description}</p>
+                  <CodexEntry slug={p.slug} title={p.title} date={p.date} description={p.description} category={p.category} contentWarning={p.contentWarning} staffPick={p.staffPick} duration={p.duration} level={3}></CodexEntry>
                 </li>
               ))}
             </ul>
@@ -118,20 +81,10 @@ export default function CodexPostClient({
 
         {previousPosts.length > 0 && (
           <div className="mt-10">
-            <h3 className="text-xl font-semibold mb-2">
-              Previous Posts in {category}
-            </h3>
+            <Title level={2} className="text-xl font-semibold mb-2">Previous Posts in {category}</Title>
             <ul className="mt-2">
               {previousPosts.map((p) => (
-                <li key={p.slug} className="mb-4">
-                  <Link href={`/codex/${p.slug}`}>
-                    <h4 className="text-lg text-blue-600 hover:underline">
-                      {p.title}
-                    </h4>
-                  </Link>
-                  <p className="text-sm text-gray-500 italic">{p.category}</p>
-                  <p className="text-sm text-gray-500">{p.description}</p>
-                </li>
+                <CodexEntry slug={p.slug} title={p.title} date={p.date} description={p.description} category={p.category} contentWarning={p.contentWarning} staffPick={p.staffPick} duration={p.duration} level={3}></CodexEntry>
               ))}
             </ul>
           </div>

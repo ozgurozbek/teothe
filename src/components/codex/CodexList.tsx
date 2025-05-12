@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { Card, Divider } from "antd";
 import SimpleContent from "@/components/SimpleCon";
 import GetCrumbs from "@/components/NavigationCrumb";
+import CodexEntry from "./CodexEntry";
 
 export default function CodexList({ posts }: { posts: any[] }) {
   return (
@@ -23,32 +23,7 @@ export default function CodexList({ posts }: { posts: any[] }) {
         <ul>
           {posts.map(
             ({ slug, title, date, description, category, contentWarning, staffPick, duration }) => (
-              <li key={slug} className="mb-4">
-                <Link
-                  href={`/codex/${slug}`}
-                  className="text-xl text-blue-600 hover:underline"
-                >
-                  {title}
-                </Link>
-                {contentWarning && (
-                  <span className="bg-[#30011a] px-2 py-1 rounded ml-2">
-                    ⚠️ {contentWarning}
-                  </span>
-                )}
-                {staffPick == "True" && (
-                  <span className="bg-[#49aa19] px-2 py-1 rounded ml-2">
-                    ❤️ Staff Favourite
-                  </span>
-                )}
-                <p>{description}</p>
-                <div>
-                  <i className="text-sm italic">{date + ", "}</i>
-                  {category && (
-                    <i className="text-sm italic">{category + " category, "}</i>
-                  )}
-                  {duration && (<i className="text-sm italic">{duration} {duration > 1 ? "minutes" : "minute"} to read</i>)}
-                </div>
-              </li>
+              <CodexEntry slug={slug} title={title} date={date} description={description} category={category} contentWarning={contentWarning} staffPick={staffPick} duration={duration}></CodexEntry>
             )
           )}
         </ul>
