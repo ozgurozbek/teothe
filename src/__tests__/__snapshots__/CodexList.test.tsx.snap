@@ -46,74 +46,14 @@ exports[`CodexList matches snapshot 1`] = `
         />
         <ul>
           <li
-            class="mb-4"
+            data-testid="codex-entry"
           >
-            <a
-              class="text-xl text-blue-600 hover:underline"
-              href="/codex/post-1"
-            >
-              Post 1
-            </a>
-            <span
-              class="bg-[#30011a] px-2 py-1 rounded ml-2"
-            >
-              ⚠️ Warning 1
-            </span>
-            <span
-              class="bg-[#49aa19] px-2 py-1 rounded ml-2"
-            >
-              ❤️ Staff Favourite
-            </span>
-            <p>
-              Description 1
-            </p>
-            <div>
-              <i
-                class="text-sm italic"
-              >
-                2025-05-10, 
-              </i>
-              <i
-                class="text-sm italic"
-              >
-                Category 1 category, 
-              </i>
-              <i
-                class="text-sm italic"
-              >
-                5 minutes to read
-              </i>
-            </div>
+            Post 1
           </li>
           <li
-            class="mb-4"
+            data-testid="codex-entry"
           >
-            <a
-              class="text-xl text-blue-600 hover:underline"
-              href="/codex/post-2"
-            >
-              Post 2
-            </a>
-            <p>
-              Description 2
-            </p>
-            <div>
-              <i
-                class="text-sm italic"
-              >
-                2025-05-09, 
-              </i>
-              <i
-                class="text-sm italic"
-              >
-                Category 2 category, 
-              </i>
-              <i
-                class="text-sm italic"
-              >
-                1 minute to read
-              </i>
-            </div>
+            Post 2
           </li>
         </ul>
       </div>
