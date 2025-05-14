@@ -1,7 +1,7 @@
 ---
-title: "SEO friendly title. Non NSFW. No trailing dots at any metadata field."
+title: "SEO friendly title. Non NSFW. No trailing dots at any metadata field. You are advised to write this as the character."
 date: "YYYY-MM-DD"
-description: "SEO friendly description. Non NSFW."
+description: "SEO friendly description. Non NSFW. You are advised to write this as the character."
 category: "Choose a category for the codexpost. Single word, starts with capital letter."
 contentWarning: "Leave empty or choose from, Adultry, Violence, Abuse, Self-harm, Suicide, Death, Pregnancy, Miscarriage, Blood, Mental-illness, Classism, Racism, Torture, Religious, Transphobia, Homophobia, Misogyny, Eating-disorder, Animal-cruelty, Sexual-assault, OTHER (specify)."
 authorName: "Input your character's name."
