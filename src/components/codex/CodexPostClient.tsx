@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { Card, Divider, Typography } from "antd";
 import GetCrumbs from "@/components/NavigationCrumb";
 import CodexEntry from "./CodexEntry";
+import ReactMarkdown from "react-markdown";
 
 const { Title } = Typography;
 
@@ -41,7 +41,14 @@ export default function CodexPostClient({
         
         <Divider/>
         
-        <article dangerouslySetInnerHTML={{ __html: post.contentHtml }} /> {/* MUST FIX */}
+        <article>
+          <ReactMarkdown
+            components={{
+              p: ({ node, ...props }) => <p className="mb-2" {...props} />,
+              h2: ({ node, ...props }) => <h2 className="mb-2 font-semibold text-xl" {...props} />
+            }}
+          >{post.contentMarkdown}</ReactMarkdown>
+        </article>
 
         <Divider/>
         
