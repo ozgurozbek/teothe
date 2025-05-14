@@ -23,7 +23,7 @@ export default function CodexList({ posts }: { posts: any[] }) {
         <ul>
           {posts.map(
             ({ slug, title, date, description, category, contentWarning, staffPick, duration }) => (
-              <CodexEntry slug={slug} title={title} date={date} description={description} category={category} contentWarning={contentWarning} staffPick={staffPick} duration={duration}></CodexEntry>
+              <CodexEntry key={slug} slug={slug} title={title} date={date} description={description} category={category} contentWarning={contentWarning} staffPick={staffPick} duration={duration}></CodexEntry>
             )
           )}
         </ul>
