@@ -11,26 +11,24 @@ export default function CodexEntry(
       >
         <Title level={level}>{title}</Title>
       </Link>
-      <div>
+      <p>{description}</p>
+      <div className="mt-2">
         {contentWarning && (
-          <span className="bg-[#30011a] px-2 py-1 rounded mr-2">
+          <span className="bg-[#30011a] text-sm px-2 py-1 rounded mr-2">
             ⚠️ {contentWarning}
           </span>
         )}
         {staffPick == "True" && (
-          <span className="bg-[#1a3001] p-1 rounded mr-2">
+          <span className="bg-[#013011] text-sm px-2 py-1 rounded mr-2">
             ❤️ Staff Favourite
           </span>
         )}
-      </div>
-      <p>{description}</p>
-      <div>
-        <i className="text-sm italic">{date + ", "}</i>
+        <i className="text-sm italic text-gray-400">{date + ", "}</i>
         {category && (
-          <i className="text-sm italic">{category + " category, "}</i>
+          <i className="text-sm italic text-gray-400">{category + " category, "}</i>
         )}
         {duration && (
-          <i className="text-sm italic">
+          <i className="text-sm italic text-gray-400">
             {duration} {duration > 1 ? "minutes" : "minute"} to read
           </i>
         )}

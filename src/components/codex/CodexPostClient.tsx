@@ -37,7 +37,7 @@ export default function CodexPostClient({
           {post.title}
         </Title>
         
-        {author && (<i className="text-sm text-gray-500 mb-6 font-semibold">{author+"; "}</i>)}{category && (<i className="text-sm text-gray-500 mb-6 font-semibold">{category+", "}</i>)}<i className="text-sm text-gray-500 mb-2">{post.date}</i>
+        {author && (<i className="text-sm text-gray-400 mb-6 font-semibold">{author+"; "}</i>)}{category && (<i className="text-sm text-gray-400 mb-6 font-semibold">{category+", "}</i>)}<i className="text-sm text-gray-400 mb-2">{post.date}</i>
         
         <Divider/>
         
