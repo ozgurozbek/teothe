@@ -4,6 +4,7 @@ import { Card, Divider, Typography } from "antd";
 import GetCrumbs from "@/components/NavigationCrumb";
 import CodexEntry from "./CodexEntry";
 import ReactMarkdown from "react-markdown";
+import { useEffect, useState } from "react";
 
 const { Title } = Typography;
 
@@ -25,6 +26,19 @@ export default function CodexPostClient({
   nextInSeries: any;
 }) {
   const { category } = post;
+  const [audioExists, setAudioExists] = useState(false);
+  const audioFileName = post.slug + ".mp3";
+  const audioPath = `/Codex/${audioFileName}`;
+
+  useEffect(() => {
+    fetch(audioPath, { method: "HEAD" })
+      .then((res) => {
+        if (res.ok) {
+          setAudioExists(true);
+        }
+      })
+      .catch(() => setAudioExists(false));
+  }, [audioPath]);
 
   return (
     <>
@@ -39,6 +53,14 @@ export default function CodexPostClient({
         
         {author && (<i className="text-sm text-gray-400 mb-6 font-semibold">{author+"; "}</i>)}{category && (<i className="text-sm text-gray-400 mb-6 font-semibold">{category+", "}</i>)}<i className="text-sm text-gray-400 mb-2">{post.date}</i>
         
+        {audioExists && (
+          <div className="my-6">
+            <audio controls className="w-full ">
+              <source src={audioPath} type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        )}
         <Divider/>
         
         <article>
