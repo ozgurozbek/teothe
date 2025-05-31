@@ -27,4 +27,4 @@ And for us, as Teothe team. We love creative writing, and we thought that this i
 
 In short, a codex brings Teothe to life, making it easier for everyone to jump in and enjoy.
 
-And we love the idea.
+*And we love the idea.*

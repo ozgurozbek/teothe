@@ -19,8 +19,8 @@ duration: "The average reader can read 238 words per minute. Count your words an
 
 Don't use H1 tags anywhere!
 
-Markdown text for the main content. This will be rendered to HTML.
+Markdown text for the main content. This will be rendered to HTML. This is a ***[link to the Codex](./)***
 
-You can utilise every markdown feature that is rendered in HTML, like lists, images, or tables. These will NOT follow the design of the website, so try to keep them minimal.
+You can utilise every markdown feature that is rendered in HTML; images, or tables. These will NOT follow the design of the website, so try to keep them minimal.
 
 *Outro text* is beneficial
