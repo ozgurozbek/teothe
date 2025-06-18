@@ -46,8 +46,8 @@ export default function Faction({
             {descriptionProps.factionAliases.join(", ")}
           </p>
         )}
-        {descriptionProps.factionAllies.length > 0 && <p>Allies: {descriptionProps.factionAllies}</p>}
-        {descriptionProps.factionEnemies.length > 0 && <p>Enemies: {descriptionProps.factionEnemies}</p>}
+        {descriptionProps.factionAllies.length > 0 && <p>Allies: {descriptionProps.factionAllies.join(", ")}</p>}
+        {descriptionProps.factionEnemies.length > 0 && <p>Enemies: {descriptionProps.factionEnemies.join(", ")}</p>}
         {descriptionProps.factionDeity && <p>Deity: {descriptionProps.factionDeity}</p>}
         {descriptionProps.factionHQ && <p>HQ: {descriptionProps.factionHQ}</p>}
         <Divider />
