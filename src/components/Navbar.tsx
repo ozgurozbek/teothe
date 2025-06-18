@@ -124,6 +124,7 @@ export default function Navbar() {
     getItem("Common Lore", "1", "common-lore", getIcon("CommonLore")),
     getItem("Deities", "3", "deities", getIcon("Deities")),
     getItem("Species", "4", "species", getIcon("Species")),
+    getItem("Factions", "19", "factions", getIcon("Factions")),
     getItem("Library", "6", "library", getIcon("Library")),
     getItem("Tables", "5", "tables", getIcon("Tables")),
     getItem("Map Overlay", "10", "map-overlay", getIcon("MapOverlay")),
