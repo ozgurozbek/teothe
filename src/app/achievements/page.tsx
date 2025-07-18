@@ -62,7 +62,7 @@ function GetAchievementsData() {
   useEffect(() => {
     setLoading(true); // true when fetching
     fetch(
-      `https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/getAchievements?key=${userSecret}`
+      `https://teothe.pythonanywhere.com/getAchievements?key=${userSecret}`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -171,7 +171,7 @@ function GetAchievementsData() {
             achievers: newAchievers,
             completed: !achievement.completed,
           };
-          fetch(`https://gi5vwiheg0.execute-api.eu-central-1.amazonaws.com/Stage/setAchievements?key=${userSecret}&id=${achievementsData.achievements[Number(key)].id}`, {
+          fetch(`https://teothe.pythonanywhere.com/setAchievements?key=${userSecret}&id=${achievementsData.achievements[Number(key)].id}`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
