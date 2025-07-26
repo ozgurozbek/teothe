@@ -284,7 +284,7 @@ function GetAchievementsData() {
               placeholder="Your Secret"
               onPressEnter={(e) => setUserSecret(e.currentTarget.value)}
             />
-            <Button type="primary" onClick={showModal}>
+            <Button onClick={showModal}>
               Show Leaderboard
             </Button>
           </Space>
@@ -323,7 +323,7 @@ function GetAchievementsData() {
 export default function AchievementsPageComponent() {
   return (
     <section>
-      <GetCrumbs path={"Teothe3K, Achievements"} />
+      <GetCrumbs path={"Teothe, Achievements"} />
       <Card bordered={false} className="w-full">
         {GetAchievementsData()}
       </Card>
