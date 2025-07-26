@@ -62,7 +62,7 @@ export default function TranslatorContent() {
       const encoded = processWordList(words, languageNumber, 0).join(" ");
       setOutputText(encoded);
     }
-  }, [languageNumber]);
+  }, [inputText, languageNumber]);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const text = e.target.value;
@@ -120,7 +120,7 @@ export default function TranslatorContent() {
           </Col>
         </Row>
         <Divider/>
-        <p>The Teothe Translator operates using an adapted form of the Caesar cipher, where each letter is shifted based on a combination of factors rather than a fixed value. Every character is first identified as either a vowel or a consonant. Then, a shift is calculated using the letter's position in the word, its index within its group, and a chosen language number that acts as a custom key. This creates a moving, position-aware cipher where each letter is transformed differently depending on context. Encoding shifts forward through the letter set, while decoding shifts in reverse, using modular arithmetic to ensure accuracy. The result is a reversible, evolving cipher that mimics the irregularities and complexity of a real-world language system.</p>
+        <p>The Teothe Translator operates using an adapted form of the Caesar cipher, where each letter is shifted based on a combination of factors rather than a fixed value. Every character is first identified as either a vowel or a consonant. Then, a shift is calculated using the letter&apos;s position in the word, its index within its group, and a chosen language number that acts as a custom key. This creates a moving, position-aware cipher where each letter is transformed differently depending on context. Encoding shifts forward through the letter set, while decoding shifts in reverse, using modular arithmetic to ensure accuracy. The result is a reversible, evolving cipher that mimics the irregularities and complexity of a real-world language system.</p>
       </Card>
     </section>
   );

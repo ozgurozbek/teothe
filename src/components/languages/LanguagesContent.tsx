@@ -111,7 +111,7 @@ export default function LanguagesContent() {
   // Update data when language changes
   useEffect(() => {
     setData(langData[curLang] || []);
-  }, [curLang]);
+  }, [langData, curLang]);
 
   if (data.length === 0) {
     return <Skeleton active />;

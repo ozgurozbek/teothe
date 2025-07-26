@@ -7,7 +7,7 @@ import { useRouter } from 'next/router';
 // Mock the next/image component
 jest.mock('next/image', () => ({
   __esModule: true,
-  //@ts-ignore
+  //@ts-ignore @next/next/no-img-element
   default: ({ src, alt }) => <img src={src} alt={alt} />
 }));
 
