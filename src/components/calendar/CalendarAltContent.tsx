@@ -65,7 +65,6 @@ function GetAPICalendar() {
 
 const CalendarPage: React.FC = () => {
   const [monthName, setMonthName] = useState<string>("");
-  const [yearCount, setYearCount] = useState<number>(27);
 
   const monthItems: MenuProps["items"] = calendarData.months.map((m) => ({ label: m, key: m }));
 
@@ -85,26 +84,13 @@ const CalendarPage: React.FC = () => {
               </Button>
             </Dropdown>
           </div>
-          <Divider type="vertical" style={{ borderColor: "white" }} />
-          <div className="flex items-center">
-            <p className="mr-2"> Year: </p>
-            <InputNumber
-              addonAfter="Blue Era"
-              defaultValue={27}
-              min={27}
-              precision={0}
-              keyboard={false}
-              onChange={(x) => x && setYearCount(x)}
-            />
-          </div>
         </Space>
 
         <Divider />
         {monthName ? (
           <CalendarAltTable
             calendarProps={{
-              monthName,
-              year: yearCount,
+              monthName
             }}
             monthLength={monthLength}
           />

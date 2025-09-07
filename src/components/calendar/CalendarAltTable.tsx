@@ -1,7 +1,7 @@
 "use client";
 
 import { Col, Row } from "antd";
-import CalendarCell from "./CalendarCell";
+import CalendarAltCell from "./CalendarAltCell";
 
 // Static holidays
 const holidays: { [key: string]: string[] } = {
@@ -59,7 +59,7 @@ export default function CalendarAltTable({
   calendarProps,
   monthLength,
 }: {
-  calendarProps: { monthName: string; year: number };
+  calendarProps: { monthName: string };
   monthLength: number;
 }) {
   const tableMain = [];
@@ -74,10 +74,10 @@ export default function CalendarAltTable({
         lg={4}
         xl={3}
         xxl={3}
-        className="bg-[#171b20] h-60"
+        className="bg-[#171b20] h-32"
         style={{ boxShadow: "0px 0px 0px 1px #33373b" }}
       >
-        <CalendarCell
+        <CalendarAltCell
           cellProps={{
             dayNumber: day,
             moonPhase: getMoonPhaseDynamic(calendarProps.monthName, day),
@@ -88,5 +88,5 @@ export default function CalendarAltTable({
     );
   }
 
-  return <Row gutter={[8, 8]}>{tableMain}</Row>;
+  return <Row>{tableMain}</Row>;
 }
