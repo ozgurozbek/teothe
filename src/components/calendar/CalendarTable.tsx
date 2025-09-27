@@ -50,6 +50,9 @@ const holidays: { [key: string]: string[] } = {
   "Ukeus, 22": [
     "The Running*, An annual ritual where the drow went out to commit a massacre against a surface community.",
   ],
+  "Ukeus, 30": [
+    "Green Day*, An annual celebration where the cattle is driven between bonfires around cities, by the common farmer.",
+  ],
   "Ukeus, 48": ["Leaf day"],
   "Vesius, 27": ["Harvest"],
   "Cyaxus, 1": ["Sleep"],
