@@ -107,7 +107,7 @@ export default function RootLayoutProvider({
           >
             Forgotten Realms Wiki
           </a>
-          . 2016-2024.
+          . 2016-2026.
         </Footer>
         <div
           className="w-12 h-12 rounded-full bg-[#630436] hover:bg-[#30011a] fixed bottom-4 right-4 transition-all flex items-center justify-center text-4xl"
