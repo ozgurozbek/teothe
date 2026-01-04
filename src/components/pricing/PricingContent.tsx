@@ -4,6 +4,7 @@ import { Card, Skeleton } from "antd";
 import GetCrumbs from "Comp/NavigationCrumb";
 import { Table } from "antd";
 import type { ColumnsType } from "antd/es/table";
+import { SphereRadar } from "Comp/pricing/graphTest";
 
 interface DataType {
   key: React.Key;
@@ -138,6 +139,9 @@ export default function PricingContent() {
       <GetCrumbs path={"Teothe,Common Pricing"} />
       <Card bordered={false} className="w-full">
         {GetTableData()}
+      </Card>
+      <Card style={{width: "80vw", height: "80vh"}}>
+        <SphereRadar/>
       </Card>
     </section>
   );
