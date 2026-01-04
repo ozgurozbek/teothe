@@ -1,4 +1,5 @@
 import { Typography, Avatar, Tooltip, Space, Card, Divider } from "antd";
+import { AlignmentRadar } from "../AlignmentChart";
 
 const { Title } = Typography;
 
@@ -21,6 +22,8 @@ export default function Faction({
     factionKey: number;
   };
 }) {
+  const names = ['Good', 'Civil', 'Active', 'Lawful', 'Pragmatic', 'Progressive', 'Bad', 'Wild', 'Reactive', 'Chaotic', 'Perfectionist', 'Traditionalist'];
+  const values = [10, 8, 6, 8, 8, 1, 3, 4, 7, 10, 3, 6];
   return (
     <div className="h-full p-2" key={descriptionProps.factionKey}>
       <Card className="w-full h-full relative pb-12">
@@ -69,6 +72,9 @@ export default function Faction({
               shape="square"
             />
           </Tooltip></div>
+          
+          <AlignmentRadar names={names} values={values} />
+        <Divider />
       </Card>
     </div>
   );
