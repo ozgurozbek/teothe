@@ -210,14 +210,6 @@ export default function LibraryContent() {
           />
           <GetBook
             bookProps={{
-              url: "library/rise-of-magnus",
-              image: "",
-              author: "Unknown, Fiction",
-              name: "Rise of Magnus",
-            }}
-          />
-          <GetBook
-            bookProps={{
               url: "library/akin-and-the-gold-statue",
               image: "",
               author: "Unknown; In Malphas' Memory",
@@ -260,6 +252,14 @@ export default function LibraryContent() {
               name: "Mirror of Erised",
             }}
           />
+          <GetBook
+            bookProps={{
+              url: "library/rise-of-magnus",
+              image: "",
+              author: "Unknown, Fiction",
+              name: "Rise of Magnus",
+            }}
+          /> 
         </Row>
         <Divider />
         <Title level={2}>Thaum</Title>
