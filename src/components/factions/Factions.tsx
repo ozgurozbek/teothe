@@ -1,5 +1,7 @@
 import { Typography, Avatar, Tooltip, Space, Card, Divider } from "antd";
 import { AlignmentRadar } from "../AlignmentChart";
+// import JSON using require to avoid TS module errors for .json imports
+const alignmentData: Record<string, Record<string, number>> = require("src/jsons/factions/alignment.json");
 
 const { Title } = Typography;
 
@@ -23,7 +25,25 @@ export default function Faction({
   };
 }) {
   const names = ['Good', 'Civil', 'Active', 'Lawful', 'Pragmatic', 'Progressive', 'Bad', 'Wild', 'Reactive', 'Chaotic', 'Perfectionist', 'Traditionalist'];
-  const values = [10, 8, 6, 8, 8, 1, 3, 4, 7, 10, 3, 6];
+  const defaultValues = [0,0,0,0,0,0,0,0,0,0,0,0];
+  const key = descriptionProps.factionName;
+  const mapped = alignmentData[key] as Record<string, number> | undefined;
+  const values = mapped
+    ? [
+        mapped.good ?? 0,
+        mapped.civil ?? 0,
+        mapped.active ?? 0,
+        mapped.lawful ?? 0,
+        mapped.pragmatic ?? 0,
+        mapped.progressive ?? 0,
+        mapped.bad ?? 0,
+        mapped.wild ?? 0,
+        mapped.reactive ?? 0,
+        mapped.chaotic ?? 0,
+        mapped.perfectionist ?? 0,
+        mapped.traditionalist ?? 0,
+      ]
+    : defaultValues;
   return (
     <div className="h-full p-2" key={descriptionProps.factionKey}>
       <Card className="w-full h-full relative pb-12">

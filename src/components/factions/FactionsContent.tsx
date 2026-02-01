@@ -17,6 +17,7 @@ interface DataType {
   factionDetail: string[];
   factionHQ: string;
   factionKey: number;
+  alignmentValues?: number[];
 }
 
 enum FactionTypes {
