@@ -20,41 +20,42 @@ export const AlignmentRadar: React.FC<AlignmentRadarProps> = ({ names, values, c
     data,
     xField: 'item',
     yField: 'score',
-    coordinateType: 'polar',theme: {
-    type: 'dark',
-    components: {
-      axis: {
-        common: {
-          label: {
-            style: {
-              fill: '#ffcc00', // grid + axis text
+    coordinateType: 'polar',
+    theme: {
+      type: 'dark',
+      components: {
+        axis: {
+          common: {
+            label: {
+              style: {
+                fill: '#ffcc00', // grid + axis text
+              },
             },
-          },
-          title: {
-            style: {
-              fill: '#ffcc00',
-            },
-          },
-        },
-      },
-      legend: {
-        common: {
-          itemName: {
-            style: {
-              fill: '#ffcc00',
+            title: {
+              style: {
+                fill: '#ffcc00',
+              },
             },
           },
         },
-      },
-      tooltip: {
-        domStyles: {
-          'g2-tooltip': {
-            color: '#ffcc00',
+        legend: {
+          common: {
+            itemName: {
+              style: {
+                fill: '#ffcc00',
+              },
+            },
+          },
+        },
+        tooltip: {
+          domStyles: {
+            'g2-tooltip': {
+              color: '#ffcc00',
+            },
           },
         },
       },
     },
-  },
     axis: {
       x: {
         grid: true,
@@ -83,5 +84,5 @@ export const AlignmentRadar: React.FC<AlignmentRadarProps> = ({ names, values, c
     scale: { x: { padding: 0, margin: 0, align: 0 }, y: { tickCount: 5, min: 0, max: 80 } },
   };
 
-  return <Radar {...config} className={"rounded-2xl m-0 p-0 h-[20rem!important]"} />;
+  return <Radar {...config} className={"rounded-2xl m-[-2rem] p-0 h-[20rem!important]"} />;
 };

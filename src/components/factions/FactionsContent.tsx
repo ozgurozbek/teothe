@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, Col, Divider, Row, Typography } from "antd";
+import { Card, Col, Collapse, Divider, Row, Typography } from "antd";
 import Faction from "@/components/factions/Factions";
 import GetCrumbs from "Comp/NavigationCrumb";
 import SimpleContent from "Comp/SimpleCon";
@@ -478,6 +478,22 @@ export default function FactionsContent() {
             title: "Factions of Teothe",
             text: ["An overview of the various factions in the world of Teothe."],
           }}
+        />
+        <Collapse
+          items={[{ key: '1', label: 'Click for alignment radar descriptions', children: <section>
+            <p><b>Good:</b> Acts with intent to reduce harm and improve others’ lives, even at personal cost.</p>
+            <p><b>Civil:</b> Respects social norms, cooperation, and shared responsibility to keep society functioning.</p>
+            <p><b>Active:</b> Initiates change rather than waiting; believes action is better than inaction.</p>
+            <p><b>Lawful:</b> Values rules, structure, and consistency; order is seen as the foundation of stability.</p>
+            <p><b>Pragmatic:</b> Chooses what works over what is ideal; results matter more than principles.</p>
+            <p><b>Reformist:</b> Pushes for reform and adaptation; views change as necessary and generally beneficial.</p>
+            <p><b>Evil:</b> Willing to cause harm or suffering to achieve goals, with little regard for others.</p>
+            <p><b>Wild:</b> Driven by instinct, impulse, or nature; resists control and imposed structure.</p>
+            <p><b>Reactive:</b> Responds to events rather than planning ahead; shaped by circumstance and pressure.</p>
+            <p><b>Chaotic:</b> Rejects order and predictability; values freedom, disruption, or personal expression.</p>
+            <p><b>Precise:</b> Demands precision and high standards; flaws are problems to be eliminated, not tolerated.</p>
+            <p><b>Traditional:</b> Defends established customs and inherited systems; trusts what has endured over time.</p>
+          </section> }]}
         />
         <Divider />
         <Title level={2}>Common Factions</Title>
