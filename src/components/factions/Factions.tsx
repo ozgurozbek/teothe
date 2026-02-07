@@ -36,13 +36,13 @@ export default function Faction({
         mapped.active ?? 0,
         mapped.lawful ?? 0,
         mapped.pragmatic ?? 0,
-        mapped.progressive ?? 0, //Now "Reformist"
-        mapped.bad ?? 0, //Now "Evil"
+        mapped.reformist ?? 0,
+        mapped.evil ?? 0,
         mapped.wild ?? 0,
         mapped.reactive ?? 0,
         mapped.chaotic ?? 0,
-        mapped.perfectionist ?? 0, //Now "Precise"
-        mapped.traditionalist ?? 0, //Now "Traditional"
+        mapped.precise ?? 0,
+        mapped.traditional ?? 0,
       ]
     : defaultValues;
   return (
