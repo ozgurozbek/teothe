@@ -1,4 +1,5 @@
 import { Typography, Avatar, Tooltip, Space, Card, Divider } from "antd";
+import DeityPopover from "@/components/deities/DeityPopover";
 import { AlignmentRadar } from "../AlignmentChart";
 // import JSON using require to avoid TS module errors for .json imports
 // use a relative path so Next.js module resolution can find the file
@@ -72,7 +73,11 @@ export default function Faction({
         )}
         {descriptionProps.factionAllies.length > 0 && <p>Allies: {descriptionProps.factionAllies.join(", ")}</p>}
         {descriptionProps.factionEnemies.length > 0 && <p>Enemies: {descriptionProps.factionEnemies.join(", ")}</p>}
-        {descriptionProps.factionDeity && <p>Deity: {descriptionProps.factionDeity}</p>}
+        {descriptionProps.factionDeity && (
+          <p>
+            Deity: <DeityPopover name={descriptionProps.factionDeity} />
+          </p>
+        )}
         {descriptionProps.factionHQ && <p>HQ: {descriptionProps.factionHQ}</p>}
         <Divider />
         {descriptionProps.factionDetail.map((line, index) => (
