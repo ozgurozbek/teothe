@@ -1,4 +1,9 @@
 import { Typography, Avatar, Tooltip, Space, Card, Divider } from "antd";
+import DeityPopover from "@/components/deities/DeityPopover";
+import { AlignmentRadar } from "../AlignmentChart";
+// import JSON using require to avoid TS module errors for .json imports
+// use a relative path so Next.js module resolution can find the file
+const alignmentData: Record<string, Record<string, number>> = require("../../jsons/factions/alignment.json");
 
 const { Title } = Typography;
 
@@ -21,9 +26,29 @@ export default function Faction({
     factionKey: number;
   };
 }) {
+  const names = ['Good', 'Civil', 'Active', 'Lawful', 'Pragmatic', 'Reformist', 'Evil', 'Wild', 'Reactive', 'Chaotic', 'Precise', 'Traditional'];
+  const defaultValues = [0,0,0,0,0,0,0,0,0,0,0,0];
+  const key = descriptionProps.factionName;
+  const mapped = alignmentData[key] as Record<string, number> | undefined;
+  const values = mapped
+    ? [
+        mapped.good ?? 0,
+        mapped.civil ?? 0,
+        mapped.active ?? 0,
+        mapped.lawful ?? 0,
+        mapped.pragmatic ?? 0,
+        mapped.reformist ?? 0,
+        mapped.evil ?? 0,
+        mapped.wild ?? 0,
+        mapped.reactive ?? 0,
+        mapped.chaotic ?? 0,
+        mapped.precise ?? 0,
+        mapped.traditional ?? 0,
+      ]
+    : defaultValues;
   return (
     <div className="h-full p-2" key={descriptionProps.factionKey}>
-      <Card className="w-full h-full relative pb-12">
+      <Card className="w-full h-full relative pb-80">
         <Space size="small" className="mb-2">
           <Avatar
             size={{ xs: 64, sm: 64, md: 64, lg: 80, xl: 100, xxl: 120 }}
@@ -48,13 +73,19 @@ export default function Faction({
         )}
         {descriptionProps.factionAllies.length > 0 && <p>Allies: {descriptionProps.factionAllies.join(", ")}</p>}
         {descriptionProps.factionEnemies.length > 0 && <p>Enemies: {descriptionProps.factionEnemies.join(", ")}</p>}
-        {descriptionProps.factionDeity && <p>Deity: {descriptionProps.factionDeity}</p>}
+        {descriptionProps.factionDeity && (
+          <p>
+            Deity: <DeityPopover name={descriptionProps.factionDeity} />
+          </p>
+        )}
         {descriptionProps.factionHQ && <p>HQ: {descriptionProps.factionHQ}</p>}
         <Divider />
         {descriptionProps.factionDetail.map((line, index) => (
           <p key={index}>{line}</p>
         ))}
-        <Divider />
+        <div className="absolute bottom-20 left-0 w-full p-2">
+          <AlignmentRadar names={names} values={values} />
+        </div>
         <div className="absolute bottom-0 my-4">
           <Tooltip
             placement="left"
@@ -69,6 +100,7 @@ export default function Faction({
               shape="square"
             />
           </Tooltip></div>
+        <Divider />
       </Card>
     </div>
   );
