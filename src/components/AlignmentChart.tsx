@@ -28,12 +28,12 @@ export const AlignmentRadar: React.FC<AlignmentRadarProps> = ({ names, values, c
           common: {
             label: {
               style: {
-                fill: '#ffcc00', // grid + axis text
+                fill: '#ffffff', // grid + axis text
               },
             },
             title: {
               style: {
-                fill: '#ffcc00',
+                fill: '#ffffff',
               },
             },
           },
@@ -42,7 +42,7 @@ export const AlignmentRadar: React.FC<AlignmentRadarProps> = ({ names, values, c
           common: {
             itemName: {
               style: {
-                fill: '#ffcc00',
+                fill: '#ffffff',
               },
             },
           },
@@ -50,7 +50,7 @@ export const AlignmentRadar: React.FC<AlignmentRadarProps> = ({ names, values, c
         tooltip: {
           domStyles: {
             'g2-tooltip': {
-              color: '#ffcc00',
+              color: '#ffffff',
             },
           },
         },

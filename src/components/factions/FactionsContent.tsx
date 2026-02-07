@@ -1,6 +1,8 @@
 "use client";
 
 import { Card, Col, Collapse, Divider, Row, Typography } from "antd";
+import { Column } from '@ant-design/plots';
+import alignmentJSON from '@/jsons/factions/alignment.json';
 import Faction from "@/components/factions/Factions";
 import GetCrumbs from "Comp/NavigationCrumb";
 import SimpleContent from "Comp/SimpleCon";
@@ -469,6 +471,57 @@ function AllFactions() {
 
 // Page component
 export default function FactionsContent() {
+  // Prepare chart data by summing alignment values across all factions
+  const alignmentKeyMap: Record<string, string> = {
+    good: 'Good',
+    civil: 'Civil',
+    active: 'Active',
+    lawful: 'Lawful',
+    pragmatic: 'Pragmatic',
+    progressive: 'Reformist',
+    bad: 'Evil',
+    wild: 'Wild',
+    reactive: 'Reactive',
+    chaotic: 'Chaotic',
+    perfectionist: 'Precise',
+    traditionalist: 'Traditional',
+  };
+
+  const chartData = Object.keys(alignmentKeyMap).map((k) => ({
+    alignment: alignmentKeyMap[k],
+    value: Object.values(alignmentJSON as Record<string, Record<string, number>>).reduce((sum: number, faction: any) => sum + (Number(faction[k]) || 0), 0),
+    color: '#630436',
+  }));
+
+  const columnConfig = {
+    data: chartData,
+    xField: 'alignment',
+    yField: 'value',
+    // ensure columns use the faction color — use a colorField mapped to a single-color scale
+    colorField: 'color',
+    scale: { color: { range: ['#630436'] } },
+    columnStyle: { fill: '#630436', stroke: '#630436' },
+    xAxis: { label: { autoRotate: false } },
+    // Use top labels ("middle" can be unsupported in some plot versions)
+    label: { position: 'top' as const, style: { fill: '#ffffff' } },
+    meta: { value: { alias: 'Total' } },
+    interactions: [{ type: 'active-region' }],
+    // hide legend to match AlignmentRadar styling
+    legend: false,
+    theme: {
+      type: 'dark',
+      components: {
+        axis: {
+          common: {
+            label: { style: { fill: '#ffffff' } },
+            title: { style: { fill: '#ffffff' } },
+          },
+        },
+        legend: { common: { itemName: { style: { fill: '#ffffff' } } } },
+        // tooltip: { domStyles: { 'g2-tooltip': { color: '#ffffff' } } },
+      },
+    },
+  };
   return (
     <section>
       <GetCrumbs path="Teothe,Factions" />
@@ -480,7 +533,8 @@ export default function FactionsContent() {
           }}
         />
         <Collapse
-          items={[{ key: '1', label: 'Click for alignment radar descriptions', children: <section>
+          items={[
+            { key: '1', label: 'Click for alignment radar descriptions', children: <section>
             <p><b>Good:</b> Acts with intent to reduce harm and improve others’ lives, even at personal cost.</p>
             <p><b>Civil:</b> Respects social norms, cooperation, and shared responsibility to keep society functioning.</p>
             <p><b>Active:</b> Initiates change rather than waiting; believes action is better than inaction.</p>
@@ -493,7 +547,9 @@ export default function FactionsContent() {
             <p><b>Chaotic:</b> Rejects order and predictability; values freedom, disruption, or personal expression.</p>
             <p><b>Precise:</b> Demands precision and high standards; flaws are problems to be eliminated, not tolerated.</p>
             <p><b>Traditional:</b> Defends established customs and inherited systems; trusts what has endured over time.</p>
-          </section> }]}
+          </section> },
+            { key: '2', label: 'Faction alignment chart', children: <div style={{ minHeight: 320 }}><Column {...columnConfig} /></div> },
+          ]}
         />
         <Divider />
         <Title level={2}>Common Factions</Title>
