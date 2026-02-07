@@ -538,7 +538,7 @@ export default function FactionsContent() {
         <Collapse
           items={[
             { key: '1', label: 'Radar axis descriptions', children: <section>
-              <p><b>Good:</b> Acts with intent to reduce harm and improve others' lives, even at personal cost.</p>
+              <p><b>Good:</b> Acts with intent to reduce harm and improve others&apos; lives, even at personal cost.</p>
               <p><b>Civil:</b> Respects social norms, cooperation, and shared responsibility to keep society functioning.</p>
               <p><b>Active:</b> Initiates change rather than waiting; believes action is better than inaction.</p>
               <p><b>Lawful:</b> Values rules, structure, and consistency; order is seen as the foundation of stability.</p>
@@ -550,9 +550,9 @@ export default function FactionsContent() {
               <p><b>Chaotic:</b> Rejects order and predictability; values freedom, disruption, or personal expression.</p>
               <p><b>Precise:</b> Demands precision and high standards; flaws are problems to be eliminated, not tolerated.</p>
               <p><b>Traditional:</b> Defends established customs and inherited systems; trusts what has endured over time.</p>
-              </section> },
+            </section> },
             { key: '2', label: 'How to read the charts?', children: <section>
-              <p><b>Radar:</b> The axes on this chart represent independent, non-exclusive tendencies of a faction. A high score on one axis does not negate others. For example, a faction with a score of 8 in "Good" can still have a score of 3 in "Evil". This means the faction strongly embodies good traits while also expressing some evil tendencies.</p>
+              <p><b>Radar:</b> The axes on this chart represent independent, non-exclusive tendencies of a faction. A high score on one axis does not negate others. For example, a faction with a score of 8 in &quot;Good&quot; can still have a score of 3 in &quot;Evil&quot;. This means the faction strongly embodies good traits while also expressing some evil tendencies.</p>
               <p><b>Column:</b> This chart shows the combined scores of all factions. It provides a reference point for the overall balance of the setting and can be used to align new factions or characters with the existing landscape.</p>
               </section> },
             { key: '3', label: 'Faction alignment chart', children: <div style={{ minHeight: 320 }}><Column {...columnConfig} /></div> },
