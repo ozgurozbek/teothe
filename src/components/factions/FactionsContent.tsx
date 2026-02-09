@@ -342,7 +342,7 @@ const factionsData: DataType[] = [
   "factionName": "Slayer's Take",
   "factionAliases": [],
   "factionDeity": "",
-  "factionEnemies": ["Guild of Dark Blood Witchers"],
+  "factionEnemies": ["Guild of Dark Blood Witchers","The Baked Beak"],
   "factionAllies": [],
   "factionDetail": [
     "A group of witchers and monster hunters. They scout potential, gather newcomers, search for jobs, and hunt. Includes traders, rogues, and wizards, but the majority are monster hunters.",
@@ -439,6 +439,19 @@ const factionsData: DataType[] = [
   ],
   "factionHQ": "N'Tiora Tree",
   "factionKey": 30
+},{
+  "factionType": FactionTypes.Secret,
+  "factionName": "The Baked Beak",
+  "factionAliases": ["Crows"],
+  "factionDeity": "",
+  "factionEnemies": ["Slayer's Take"],
+  "factionAllies": ["Horizon Conglomerate", "Crimson Caravan Company", "Meadowcrew", "Inthizilelgghinn", "Thieve's Guild"],
+  "factionDetail": [
+    "Guild for Druids who belong to a circle and have ventured to Du'Ora at least once. Members must agree with the guild's views on pollution, destruction, and preservation.",
+    "Includes branches such as the Kaio branch."
+  ],
+  "factionHQ": "",
+  "factionKey": 31
 }
 ];
 

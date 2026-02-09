@@ -418,5 +418,19 @@
     "chaotic": 7,
     "precise": 4,
     "traditional": 1
+  },
+  "The Baked Beak": {
+    "good": 4,
+    "civil": 2,
+    "active": 6,
+    "lawful": 1,
+    "pragmatic": 7,
+    "reformist": 5,
+    "evil": 7,
+    "wild": 1,
+    "reactive": 5,
+    "chaotic": 8,
+    "precise": 8,
+    "traditional": 8
   }
 }
