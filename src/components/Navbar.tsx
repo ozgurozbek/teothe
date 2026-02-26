@@ -154,6 +154,7 @@ export default function Navbar() {
       ),
       getItem("Quick NPC", "15", "generators/quick-npc", getIcon("QuickNPC")),
       getItem("Teothe Translator", "20", "generators/translator", getIcon("Translator")),
+      getItem("Offtime Form", "21", "generators/offtime-form", getIcon("OfftimeForm")),
     ]),
   ];
 
