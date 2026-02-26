@@ -1,5 +1,4 @@
-//@ts-nocheck
-// Vibe coded with chatgpt, author chatgpt, I just edited and fixed some small stuff incl styling and day logic.
+// Author ChatGPT, I just edited and fixed TS, styling and day logic.
 "use client";
 import React, { useState } from "react";
 import {
@@ -17,7 +16,7 @@ import GetCrumbs from "@/components/NavigationCrumb";
 const { TextArea } = Input;
 const { Text } = Typography;
 
-const DESCRIPTION = `Ne yapmak istediğinizi düşünüp nasıl yaptığınızı yazın ne olduğunu değil. Kısa offtime kötü değildir, soru sormam gerekirse sorarım. Yoktan bir şey var etmeyin. ChatGPT offtime YAZAMIYOR. Offtime solo session DEĞİL.`;
+const DESCRIPTION = `Think about what you want to do and write about how you do it. Short offtimes are not bad and I'll follow up with questions if necessary, after all an offtime is not a solo-session. Do not invent new places or characters. ChatGPT CAN NOT WRITE A GOOD OFFTIME.`;
 
 const WORD_LIMITS = {
   character: 5,
@@ -31,10 +30,16 @@ const WORD_LIMITS = {
   free: 4000,
 };
 
-const wordCount = (text) =>
+const wordCount = (text: string) =>
   text.trim() === "" ? 0 : text.trim().split(/\s+/).length;
 
-const WordLimitedInput = ({ label, placeholder, value, onChange, limit }) => {
+const WordLimitedInput: React.FC<{
+  label: string;
+  placeholder?: string;
+  value: string;
+  onChange: (v: string) => void;
+  limit: number;
+}> = ({ label, placeholder, value, onChange, limit }) => {
   const count = wordCount(value);
   const exceeded = count > limit;
 
@@ -68,12 +73,28 @@ let idCounter = 0;
 const newId = () => ++idCounter;
 
 export default function OfftimeForm() {
-  const [characterName, setCharacterName] = useState("");
-  const [goals, setGoals] = useState("");
-  const [blocks, setBlocks] = useState([]);
-  const [dragId, setDragId] = useState(null);
+  const [characterName, setCharacterName] = useState<string>("");
+  const [goals, setGoals] = useState<string>("");
+  type BlockType =
+    | "action"
+    | "composition"
+    | "travel"
+    | "rest"
+    | "day"
+    | "free"
+    | "nosleep"
+    | "conditional";
+  type Block = {
+    id: number;
+    type: BlockType;
+    day: number;
+    parentId: number | null;
+    content: { [key: string]: any };
+  };
+  const [blocks, setBlocks] = useState<Block[]>([]);
+  const [dragId, setDragId] = useState<number | null>(null);
 
-  const BLOCK_COST = {
+  const BLOCK_COST: Record<BlockType, number> = {
     action: 1,
     composition: 1,
     travel: 1,
@@ -84,7 +105,7 @@ export default function OfftimeForm() {
     conditional: 0,
   };
 
-  const recalcDays = (items) => {
+  const recalcDays = (items: { type: BlockType; [key: string]: any }[]) => {
     let currentDay = 1;
     let usedCapacity = 0;
     let capacity = 2;
@@ -110,7 +131,7 @@ export default function OfftimeForm() {
       }
 
       // Handle capacity consuming blocks
-      if (cost != 0) {
+      if (cost !== 0) {
         if (usedCapacity + cost > capacity) {
           currentDay++;
           usedCapacity = 0;
@@ -125,12 +146,12 @@ export default function OfftimeForm() {
     });
   };
 
-  const updateBlocks = (newBlocks) => {
-    setBlocks(recalcDays(newBlocks));
+  const updateBlocks = (newBlocks: Block[]) => {
+    setBlocks(recalcDays(newBlocks) as Block[]);
   };
 
-  const addBlock = (type) => {
-    const block = {
+  const addBlock = (type: BlockType) => {
+    const block: Block = {
       id: newId(),
       type,
       day: 1,
@@ -149,17 +170,18 @@ export default function OfftimeForm() {
     updateBlocks([...blocks, block]);
   };
 
-  const deleteBlock = (id) => {
+  const deleteBlock = (id: number) => {
     const filtered = blocks.filter((b) => b.id !== id);
     updateBlocks(filtered);
   };
 
-  const addConditional = (parentId) => {
-    const conditional = {
+  const addConditional = (parentId: number) => {
+    const conditional: Block = {
       id: newId(),
       type: "conditional",
       parentId,
       content: { if: "", else: "", regardless: "" },
+      day: 1,
     };
 
     const parentIndex = blocks.findIndex((b) => b.id === parentId);
@@ -171,11 +193,11 @@ export default function OfftimeForm() {
     updateBlocks(newBlocks);
   };
 
-  const onDragStart = (id) => {
+  const onDragStart = (id: number) => {
     setDragId(id);
   };
 
-  const onDrop = (targetId) => {
+  const onDrop = (targetId: number) => {
     if (dragId === null || dragId === targetId) return;
 
     const draggedIndex = blocks.findIndex((b) => b.id === dragId);
@@ -240,6 +262,7 @@ export default function OfftimeForm() {
         case "nosleep":
           md += `### I will not sleep\n\n`;
           break;
+
         default:
           break;
       }
