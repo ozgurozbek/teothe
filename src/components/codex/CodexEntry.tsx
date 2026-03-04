@@ -2,7 +2,17 @@ import Title from "antd/es/typography/Title";
 import Link from "next/link";
 
 export default function CodexEntry(
-    {slug, title, date, description, category, contentWarning, staffPick, duration, level=2}: {slug:string, title:string, date:string, description:string, category:string, contentWarning:string, staffPick:string, duration:number, level?:2 | 1 | 5 | 3 | 4 | undefined}) {
+  { slug, title, date, description, category, contentWarning, staffPick, duration, level = 2 }: { slug: string, title: string, date: string, description: string, category: string, contentWarning: string | string[], staffPick: string, duration: number, level?: 2 | 1 | 5 | 3 | 4 | undefined }) {
+
+  const rawArray = Array.isArray(contentWarning)
+    ? contentWarning
+    : String(contentWarning || "").split(",");
+
+  const warningsList = rawArray
+    .map(w => String(w).trim())
+    .filter(Boolean)
+    .sort();
+
   return (
     <li key={slug} className="mb-8">
       <Link
@@ -13,11 +23,11 @@ export default function CodexEntry(
       </Link>
       <p>{description}</p>
       <div className="mt-2">
-        {contentWarning && (
-          <span className="bg-[#30011a] text-sm px-2 py-1 rounded mr-2">
-            ⚠️ {contentWarning}
+        {warningsList.map((warning, index) => (
+          <span key={warning} className="bg-[#30011a] text-sm px-2 py-1 rounded mr-2 inline-block mb-2">
+            {index === 0 && "⚠️ "} {warning}
           </span>
-        )}
+        ))}
         {staffPick == "True" && (
           <span className="bg-[#013011] text-sm px-2 py-1 rounded mr-2">
             ❤️ Staff Favourite
