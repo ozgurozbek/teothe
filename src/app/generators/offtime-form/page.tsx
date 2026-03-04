@@ -45,7 +45,9 @@ const WordLimitedInput: React.FC<{
 
   return (
     <div style={{ marginBottom: 12 }}>
-      <Text strong>{label}</Text>
+      <div style={{ marginBottom: 4 }}>
+        <Text strong>{label}</Text>
+      </div>
       <TextArea
         placeholder={placeholder}
         value={value}
@@ -288,8 +290,8 @@ export default function OfftimeForm() {
     <section>
       <GetCrumbs path={"Teothe,Offtime"} />
       <Row gutter={16}>
-        <Col span={20}>
-          <Card>
+        <Col xs={{ span: 24, order: 2 }} md={{ span: 20, order: 1 }}>
+          <Card style={{ height: "100%" }}>
             <Typography.Paragraph>{DESCRIPTION}</Typography.Paragraph>
 
             <Row gutter={16}>
@@ -581,7 +583,7 @@ export default function OfftimeForm() {
           </Card>
         </Col>
 
-        <Col span={4}>
+        <Col xs={{ span: 24, order: 1 }} md={{ span: 4, order: 2 }}>
           <Space direction="vertical" style={{ width: "100%" }}>
             <Button className="w-full" onClick={() => addBlock("action")}>
               Add Action
