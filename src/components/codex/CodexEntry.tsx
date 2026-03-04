@@ -4,11 +4,14 @@ import Link from "next/link";
 export default function CodexEntry(
   { slug, title, date, description, category, contentWarning, staffPick, duration, level = 2 }: { slug: string, title: string, date: string, description: string, category: string, contentWarning: string | string[], staffPick: string, duration: number, level?: 2 | 1 | 5 | 3 | 4 | undefined }) {
 
-  const warningsList = Array.isArray(contentWarning)
-    ? contentWarning.map(w => String(w).trim()).sort()
-    : typeof contentWarning === "string"
-      ? contentWarning.split(",").map(w => w.trim()).sort()
-      : [];
+  const rawArray = Array.isArray(contentWarning)
+    ? contentWarning
+    : String(contentWarning || "").split(",");
+
+  const warningsList = rawArray
+    .map(w => String(w).trim())
+    .filter(Boolean)
+    .sort();
 
   return (
     <li key={slug} className="mb-8">
