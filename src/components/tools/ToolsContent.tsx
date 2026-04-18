@@ -260,7 +260,7 @@ export default function ToolsContent() {
   return (
     <section>
       <GetCrumbs path={"Teothe,Tools"} />
-      <Card bordered={false} className="w-full">
+      <Card variant="outlined" className="w-full">
         {GetTableData()}
       </Card>
     </section>

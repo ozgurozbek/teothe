@@ -324,7 +324,7 @@ export default function AchievementsPageComponent() {
   return (
     <section>
       <GetCrumbs path={"Teothe, Achievements"} />
-      <Card bordered={false} className="w-full">
+      <Card variant="outlined" className="w-full">
         {GetAchievementsData()}
       </Card>
     </section>

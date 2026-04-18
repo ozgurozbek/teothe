@@ -469,7 +469,7 @@ export default function CalculateTradeContent() {
   return (
     <section>
       <GetCrumbs path={"Teothe,Calculate Trade"} />
-      <Card bordered={false} className="w-full">
+      <Card variant="outlined" className="w-full">
         <SimpleContent
           contentProps={{
             title: "Map Resources Trade Calculator",

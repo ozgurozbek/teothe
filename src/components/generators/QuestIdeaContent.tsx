@@ -104,7 +104,7 @@ export default function QuestIdeaGeneratorContent() {
   return (
     <section>
       <GetCrumbs path={"Teothe,Generators,Quest Idea Generator"} />
-      <Card bordered={false} className="w-full">
+      <Card variant="outlined" className="w-full">
         {GetQuestIdea()}
       </Card>
     </section>

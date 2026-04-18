@@ -60,7 +60,7 @@ export default function DeitiesContent() {
   return (
     <section>
       <GetCrumbs path={"Teothe,Deities"} />
-      <Card bordered={false} className="w-full">
+      <Card variant="outlined" className="w-full">
         <SimpleContent
           contentProps={{
             title: "Deities of Teothe",

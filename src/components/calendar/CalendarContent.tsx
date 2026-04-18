@@ -171,7 +171,7 @@ export default function CalendarContent() {
   return (
     <section>
       <GetCrumbs path={"Teothe,Calendar"} />
-      <Card bordered={false} className="w-full">
+      <Card variant="outlined" className="w-full">
         <SimpleContent
           contentProps={{
             title: "Calendar",
@@ -193,7 +193,7 @@ export default function CalendarContent() {
               </Button>
             </Dropdown>
           </div>
-          <Divider type="vertical" style={{ borderColor: "white" }} />
+          <Divider orientation="vertical" style={{ borderColor: "white" }} />
           <div>
             Month:{" "}
             <Dropdown menu={monthProps}>
@@ -205,7 +205,7 @@ export default function CalendarContent() {
               </Button>
             </Dropdown>
           </div>
-          <Divider type="vertical" style={{ borderColor: "white" }} />
+          <Divider orientation="vertical" style={{ borderColor: "white" }} />
           <div className="flex items-center ">
             <p className="mr-2"> Year: </p>
             <InputNumber

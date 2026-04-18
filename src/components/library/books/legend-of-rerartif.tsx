@@ -10,7 +10,7 @@ export default function LegendOfRerartifContent() {
     <section>
       <GetCrumbs path={"Teothe,Books,Legend of Rerartif"} />
       <Card
-        bordered={false}
+        variant="outlined"
         className="w-full bg-[url('/books/main.svg')] bg-cover bg-center"
       >
         <article className="h-[70vh] overflow-y-scroll no-scrollbar m-auto max-w-[50rem] [&>.mb-2]:{text-justify} px-8 py-2 backdrop-blur-lg">

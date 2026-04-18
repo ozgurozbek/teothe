@@ -482,7 +482,7 @@ function GetQuickNPC() {
         </Button>
         {!displayEmpty && (
           <>
-            <Divider type="vertical" style={{ borderColor: "white" }} />
+            <Divider orientation="vertical" style={{ borderColor: "white" }} />
             <span>Copy </span>
             <Button
               onClick={() => handleFantasyGroundsClick("stat", teotheNPC)}
@@ -568,7 +568,7 @@ function GetQuickNPC() {
             </Space>
           </Button>
         </Dropdown>
-        <Divider type="vertical" style={{ borderColor: "white" }} />
+        <Divider orientation="vertical" style={{ borderColor: "white" }} />
         <Button onClick={() => handleButtonClick("spcf")}>
           {displayEmpty ? "Generate Specific NPC" : "Generate New Specific NPC"}
         </Button>
@@ -640,7 +640,7 @@ export default function QuickNPCGeneratorContent() {
   return (
     <section>
       <GetCrumbs path={"Teothe,Generators,Quick NPC Generator"} />
-      <Card bordered={false} className="w-full">
+      <Card variant="outlined" className="w-full">
         <SimpleContent
           contentProps={{
             title: "Quick NPC Generator",

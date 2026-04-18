@@ -15,7 +15,7 @@ export default function HalfOrcContent() {
   return (
     <section>
       <GetCrumbs path={"Teothe,Species,Half-Orc"} />
-      <Card bordered={false} className="w-full">
+      <Card variant="outlined" className="w-full">
         <Row justify="space-between">
           <Col xs={24} sm={24} md={12} lg={6} xl={6} xxl={6} className="pr-4">
             <Image

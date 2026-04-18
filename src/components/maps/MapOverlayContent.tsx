@@ -149,7 +149,7 @@ export default function MapOverlayContent() {
   return (
     <section>
       <GetCrumbs path={"Teothe,Map Overlay"} />
-      <Card bordered={false} className="w-full">
+      <Card variant="outlined" className="w-full">
         <SimpleContent
           contentProps={{
             title: "Map Overlay",
@@ -169,7 +169,7 @@ export default function MapOverlayContent() {
           <Button onClick={() => handleMapVisibility("Kingdoms3K")}><span>Kingdoms3K <CheckCircleOutlined /></span></Button>
           <Button onClick={() => handleMapVisibility("KingdomsMC")}><span>KingdomsMC <CheckCircleOutlined /></span></Button>
           <Button onClick={() => handleMapVisibility("Places")}><span>Places <CheckCircleOutlined /></span></Button>
-          <Divider type="vertical" style={{ borderColor: "white" }} />
+          <Divider orientation="vertical" style={{ borderColor: "white" }} />
           <Button onClick={() => handleMapVisibility("Climates")}><span>Climate <ExclamationCircleOutlined /></span></Button>
           <Tooltip title="Fear 😱, Joy 😊, Sorrow 😔, Love 😍, Anger 😠, Hope 🥺, Anxiety 😵, Awe 😨, Desire 😳, Abandonment 😒" color="#630436">
             <Button onClick={() => handleMapVisibility("Echoes")}><span>Emotional Echoes <ExclamationCircleFilled /></span></Button>

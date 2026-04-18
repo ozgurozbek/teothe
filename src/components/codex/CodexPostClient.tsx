@@ -43,7 +43,7 @@ export default function CodexPostClient({
   return (
     <>
       <GetCrumbs path={"Teothe,Codex," + post.title.replaceAll(",", "")} />
-      <Card bordered={false} className="w-full">
+      <Card variant="outlined" className="w-full">
         <Title
           data-testid="simplecon-title"
           id={post.title.replaceAll(" ", "-").toLowerCase()}

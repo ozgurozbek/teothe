@@ -136,7 +136,7 @@ export default function PricingContent() {
   return (
     <section>
       <GetCrumbs path={"Teothe,Common Pricing"} />
-      <Card bordered={false} className="w-full">
+      <Card variant="outlined" className="w-full">
         {GetTableData()}
       </Card>
     </section>

@@ -14,7 +14,7 @@ export default function DefaultPageContent() {
   return (
     <section>
       <GetCrumbs path="Teothe" />
-      <Card bordered={false} className="w-full">
+      <Card variant="outlined" className="w-full">
         <SimpleContent
           contentProps={{
             title: "Teothe Campaign Setting",

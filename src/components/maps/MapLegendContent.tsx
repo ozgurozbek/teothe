@@ -242,7 +242,7 @@ export default function MapLegendContent() {
   return (
     <section>
       <GetCrumbs path={"Teothe,Map Legend"} />
-      <Card bordered={false} className="w-full">
+      <Card variant="outlined" className="w-full">
         <SimpleContent
           contentProps={{
             title: "Map Legend",

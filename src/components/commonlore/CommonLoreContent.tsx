@@ -13,7 +13,7 @@ export default function CommonLoreContent() {
   return (
     <section>
       <GetCrumbs path={"Teothe,Common Lore"} />
-      <Card bordered={false} className="w-full">
+      <Card variant="outlined" className="w-full">
         <SimpleContent
           contentProps={{
             title: "Intro",

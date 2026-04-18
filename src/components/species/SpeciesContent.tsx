@@ -178,7 +178,7 @@ export default function SpeciesContent() {
   return (
     <section>
       <GetCrumbs path={"Teothe,Species"} />
-      <Card bordered={false}>{GetSpecies()}</Card>
+      <Card variant="outlined">{GetSpecies()}</Card>
     </section>
   );
 }

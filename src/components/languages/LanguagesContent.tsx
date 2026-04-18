@@ -132,7 +132,7 @@ export default function LanguagesContent() {
   return (
     <section>
       <GetCrumbs path={"Teothe,Languages"} />
-      <Card bordered={false} className="w-full">
+      <Card variant="outlined" className="w-full">
         <SimpleContent
           contentProps={{
             title: "Languages",

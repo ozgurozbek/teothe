@@ -16,7 +16,7 @@ export default function LibraryContent() {
   return (
     <section>
       <GetCrumbs path={"Teothe,Library"} />
-      <Card bordered={false} className="w-full h-full">
+      <Card variant="outlined" className="w-full h-full">
         <SimpleContent contentProps={{
           title: "Library",
           text: ["Discover the vast library of Teothe, the central material plane in a rich and ancient cosmology. Filled with books, stories, and sacred texts, this archive preserves the entire spectrum of Teothe Lore, spanning realms, planes, and divine histories. From the origins of creation to forgotten legends, the knowledge of the cosmos begins here."]

@@ -94,7 +94,7 @@ export default function TimelinePage() {
   return (
     <section>
       <GetCrumbs path={"Teothe,Timeline"} />
-      <Card bordered={false} className="w-full">
+      <Card variant="outlined" className="w-full">
         <SimpleContent
           contentProps={{
             title: "Timeline",

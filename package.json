@@ -3,7 +3,7 @@
   "version": "2.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --webpack",
     "build": "npm install git+ssh://git@github.com/ozgurozbek/npc-generator.git#teothe && next build --webpack",
     "start": "next start",
     "lint": "next lint",
@@ -15,7 +15,7 @@
     "@types/node": "20.3.1",
     "@types/react": "18.2.12",
     "@types/react-dom": "18.2.5",
-    "antd": "^5.14.1",
+    "antd": "^6.3.6",
     "autoprefixer": "10.4.14",
     "cookie": "^1.0.2",
     "eslint": "8.42.0",

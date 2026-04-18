@@ -83,7 +83,7 @@ export default function TranslatorContent() {
   return (
     <section>
       <GetCrumbs path={"Teothe,Generators,Teothe Translator"} />
-      <Card bordered={false} className="w-full">
+      <Card variant="outlined" className="w-full">
         <Title level={2}>Teothe Translator</Title>
         <p>
           This specific translator lets you encode and decode the ancient language of Teothe, used long before Common became the standard. Ideal for DMs, writers, and worldbuilders, it converts text using phonetic shifts based on consonants, vowels, and a customizable language number.

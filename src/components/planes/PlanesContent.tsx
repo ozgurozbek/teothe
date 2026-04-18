@@ -44,7 +44,7 @@ export default function LocationsContent() {
   return (
     <section>
       <GetCrumbs path={"Teothe,Planes of Existence"} />
-      <Card bordered={false} className=" w-full">
+      <Card variant="outlined" className=" w-full">
         {GetPlanes()}
       </Card>
     </section>
