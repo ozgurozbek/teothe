@@ -78,7 +78,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} jest
 
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        run: ${{ steps.detect-package-manager.outputs.runner }} next build --webpack
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
