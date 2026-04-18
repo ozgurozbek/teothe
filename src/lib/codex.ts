@@ -17,6 +17,15 @@ function isValidMarkdown(filename: string) {
   return filename.endsWith('.md') && filename !== '_DEV.md';
 }
 
+function parseContentWarnings(warningStr?: string): string[] {
+  if (!warningStr) return [];
+  return warningStr
+    .split(',')
+    .map(w => w.trim())
+    .filter(Boolean)
+    .sort((a, b) => a.localeCompare(b));
+}
+
 export function getSortedPosts() {
   const filenames = fs
     .readdirSync(postsDirectory)
@@ -27,16 +36,20 @@ export function getSortedPosts() {
     const fullPath = path.join(postsDirectory, filename);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
     const { data } = matter(fileContents);
+    const meta = data as PostMeta;
 
     return {
       slug,
-      ...(data as PostMeta),
+      contentWarnings: parseContentWarnings(meta.contentWarning),
+      ...meta,
     };
   });
 
   // Sort by date descending (most recent first)
   return posts.sort((a, b) => (a.date < b.date ? 1 : -1));
 }
+
+
 
 export function getAllSlugs() {
   const filenames = fs
@@ -53,12 +66,13 @@ export async function getPostBySlug(slug: string) {
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
   const { data, content } = matter(fileContents);
-  const contentMarkdown = content;
+  const meta = data as PostMeta;
 
   return {
     slug,
-    contentMarkdown,
-    ...(data as PostMeta),
+    contentMarkdown: content,
+    contentWarnings: parseContentWarnings(meta.contentWarning), // Attach parsed array
+    ...meta,
   };
 }
 
