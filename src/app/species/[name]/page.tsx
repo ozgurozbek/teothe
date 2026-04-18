@@ -32,16 +32,21 @@ const speciesComponents: Record<string, ComponentType<{}>> = {
   // Add additional species components here
 };
 
+type PageProps = {
+  params: Promise<{ name: string }>;
+};
+
 // The main species page component
-const SpeciesPage = ({ params }: { params: { name: string } }) => {
-  const { name } = params; // Extract name from params
-  const SpeciesContent = speciesComponents[name] || (() => <div>Species not found.</div>); // Fallback if the species doesn't exist
+const SpeciesPage = async ({ params }: PageProps) => {
+  const { name } = await params; // Resolve the promise to get the name
+  const SpeciesContent = speciesComponents[name] || (() => <div>Species not found.</div>);
 
   return <SpeciesContent />;
 };
 
 // Function to dynamically set the metadata based on species name
-export const generateMetadata = async ({ params }: { params: { name: string } }): Promise<Metadata> => {
+export const generateMetadata = async ({ params }: PageProps): Promise<Metadata> => {
+  const { name } = await params; // Resolve the promise here too
   const metadata: Record<string, Metadata> = {
     aarakocra: {
       title: "Aarakocra",
@@ -147,7 +152,7 @@ export const generateMetadata = async ({ params }: { params: { name: string } })
   };
 
   // Return the metadata for the current species or fallback if not found
-  return metadata[params.name] || { title: "Species Not Found", description: "This species does not exist." };
+  return metadata[name] || { title: "Species Not Found", description: "This species does not exist." };
 };
 
 // This function generates static paths at build time

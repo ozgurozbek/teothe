@@ -11,8 +11,13 @@ import { notFound } from 'next/navigation';
 import CodexPostClient from '@/components/codex/CodexPostClient';
 import { Metadata } from 'next';
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const post = await getPostBySlug(params.slug);
+// 1. Update the type to wrap params in a Promise
+type Props = { params: Promise<{ slug: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  // 2. Await the params
+  const { slug } = await params;
+  const post = await getPostBySlug(slug);
 
   if (!post) {
     return {
@@ -27,17 +32,19 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-
 export async function generateStaticParams() {
   const slugs = getAllSlugs();
   return slugs.map(({ slug }) => ({ slug }));
 }
 
-export default async function CodexPost({ params }: { params: { slug: string } }) {
-  const post = await getPostBySlug(params.slug);
+export default async function CodexPost({ params }: Props) {
+  // 3. Await the params here as well
+  const { slug } = await params;
+  
+  const post = await getPostBySlug(slug);
   if (!post) notFound();
 
-  const { slug, category, authorName } = post;
+  const { category, authorName } = post;
 
   const mostRecentPost = getMostRecentPost(slug);
   const mostRecentCategoryPost = category
@@ -45,9 +52,9 @@ export default async function CodexPost({ params }: { params: { slug: string } }
     : null;
 
   const nextInSeries =
-  post.category && post.authorName
-    ? getNextPostInSeries(post.slug, post.category, post.authorName)
-    : null;
+    post.category && post.authorName
+      ? getNextPostInSeries(post.slug, post.category, post.authorName)
+      : null;
 
   const previousCategoryPosts = category
     ? getPreviousPostsByCategory(slug, category)
@@ -74,8 +81,15 @@ export default async function CodexPost({ params }: { params: { slug: string } }
 
   return (
     <section>
-      <CodexPostClient post={post} author={authorName} mostRecentPost={mostRecentPost} mostRecentCategoryPost={mostRecentCategoryPost}
-      previousPosts={filteredPreviousCategoryPosts} recentAuthorPosts={filteredAuthorPosts} nextInSeries={nextInSeries}/>
+      <CodexPostClient 
+        post={post} 
+        author={authorName} 
+        mostRecentPost={mostRecentPost} 
+        mostRecentCategoryPost={mostRecentCategoryPost}
+        previousPosts={filteredPreviousCategoryPosts} 
+        recentAuthorPosts={filteredAuthorPosts} 
+        nextInSeries={nextInSeries}
+      />
     </section>
   );
 }

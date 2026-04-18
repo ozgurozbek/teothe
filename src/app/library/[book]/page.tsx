@@ -38,16 +38,21 @@ const booksComponents: Record<string, ComponentType<{}>> = {
   // Add additional book components here
 };
 
+type PageProps = {
+  params: Promise<{ book: string }>;
+};
+
 // The main books page component
-const BooksPage = ({ params }: { params: { book: string } }) => {
-  const { book } = params; // Extract name from params
-  const BooksContent = booksComponents[book] || (() => <div>Book not found.</div>); // Fallback if the books doesn't exist
+const BooksPage = async ({ params }: PageProps) => {
+  const { book } = await params; // Extract name from resolved params
+  const BooksContent = booksComponents[book] || (() => <div>Book not found.</div>);
 
   return <BooksContent />;
 };
 
 // Function to dynamically set the metadata based on book name
-export const generateMetadata = async ({ params }: { params: { book: string } }): Promise<Metadata> => {
+export const generateMetadata = async ({ params }: PageProps): Promise<Metadata> => {
+  const { book } = await params;
   const metadata: Record<string, Metadata> = {
     "what-are-these-clovers": {
       title: "What Are These Clovers",
@@ -177,7 +182,10 @@ export const generateMetadata = async ({ params }: { params: { book: string } })
   };
 
   // Return the metadata for the current book or fallback if not found
-  return metadata[params.book] || { title: "Book Not Found", description: "Stumbled upon a dusty corner of the library to find nothing..." };
+  return metadata[book] || { 
+    title: "Book Not Found", 
+    description: "Stumbled upon a dusty corner of the library to find nothing..." 
+  };
 };
 
 // This function generates static paths at build time
