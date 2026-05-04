@@ -262,7 +262,7 @@ export default function OfftimeForm() {
           break;
 
         case "nosleep":
-          md += `### I will not sleep\n\n`;
+          md += `### I will not sleep and be exhausted\n\n`;
           break;
 
         default:
@@ -322,7 +322,7 @@ export default function OfftimeForm() {
               return (
                 <React.Fragment key={b.id}>
                   {showDayHeader && (
-                    <Divider orientation="left">Day {b.day}</Divider>
+                    <Divider>Day {b.day}</Divider>
                   )}
 
                   <div
@@ -568,7 +568,7 @@ export default function OfftimeForm() {
                       )}
 
                       {b.type === "nosleep" && (
-                        <Text strong>I will not sleep</Text>
+                        <Text strong>I will not sleep and be exhausted</Text>
                       )}
                     </Card>
                   </div>
@@ -584,7 +584,7 @@ export default function OfftimeForm() {
         </Col>
 
         <Col xs={{ span: 24, order: 1 }} md={{ span: 4, order: 2 }}>
-          <Space direction="vertical" style={{ width: "100%" }}>
+          <Space orientation="vertical" style={{ width: "100%" }}>
             <Button className="w-full" onClick={() => addBlock("action")}>
               Add Action
             </Button>

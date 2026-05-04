@@ -54,7 +54,7 @@ function GetQuestIdea() {
         {displayEmpty ? <Empty /> : <Title level={2}>{innerText}</Title>}
       </Card>
       <Divider />
-      <Space direction="vertical">
+      <Space orientation="vertical">
         <p>
           Elevate your Dungeons & Dragons sessions with an innovative AI-powered
           quest idea generator tailored specifically for the Teothe campaign

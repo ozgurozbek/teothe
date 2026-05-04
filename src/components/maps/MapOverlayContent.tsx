@@ -19,6 +19,7 @@ const MAP_LAYERS = [
   "Climates",
   "Compass",
   "Continents",
+  "Rivers",
   "Echoes",
   "Kingdoms3K",
   "KingdomsMC",
@@ -166,6 +167,7 @@ export default function MapOverlayContent() {
             <Button onClick={() => handleMapVisibility("Compass")}><span>Compass <CheckCircleFilled /></span></Button>
           </Tooltip>
           <Button onClick={() => handleMapVisibility("Continents")}><span>Continents <CheckCircleOutlined /></span></Button>
+          <Button onClick={() => handleMapVisibility("Rivers")}><span>Rivers <CheckCircleOutlined /></span></Button>
           <Button onClick={() => handleMapVisibility("Kingdoms3K")}><span>Kingdoms3K <CheckCircleOutlined /></span></Button>
           <Button onClick={() => handleMapVisibility("KingdomsMC")}><span>KingdomsMC <CheckCircleOutlined /></span></Button>
           <Button onClick={() => handleMapVisibility("Places")}><span>Places <CheckCircleOutlined /></span></Button>
