@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, Divider } from "antd";
+import { Card, Divider, Row } from "antd";
 import SimpleContent from "@/components/SimpleCon";
 import GetCrumbs from "@/components/NavigationCrumb";
 import CodexEntry from "./CodexEntry";
@@ -20,10 +20,12 @@ export default function CodexList({ posts }: { posts: any[] }) {
           }}
         />
         <Divider />
-        <ul>
+        <ul className="grid md:grid-cols-3 xl:grid-cols-4 gap-4 w-full">
           {posts.map(
             ({ slug, title, date, description, category, contentWarnings, staffPick, duration }) => (
-              <CodexEntry key={slug} slug={slug} title={title} date={date} description={description} category={category} contentWarning={contentWarnings} staffPick={staffPick} duration={duration}></CodexEntry>
+              <Card>
+                <CodexEntry key={slug} slug={slug} title={title} date={date} description={description} category={category} contentWarning={contentWarnings} staffPick={staffPick} duration={duration}></CodexEntry>
+              </Card>
             )
           )}
         </ul>

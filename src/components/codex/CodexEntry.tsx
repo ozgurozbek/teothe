@@ -1,3 +1,4 @@
+import { Divider } from "antd";
 import Title from "antd/es/typography/Title";
 import Link from "next/link";
 
@@ -23,25 +24,26 @@ export default function CodexEntry(
       </Link>
       <p>{description}</p>
       <div className="mt-2">
-        {warningsList.map((warning, index) => (
-          <span key={warning} className="bg-[#30011a] text-sm px-2 py-1 rounded mr-2 inline-block mb-2">
-            {index === 0 && "⚠️ "} {warning}
-          </span>
-        ))}
-        {staffPick == "True" && (
-          <span className="bg-[#013011] text-sm px-2 py-1 rounded mr-2">
-            ❤️ Staff Favourite
-          </span>
-        )}
         <i className="text-sm italic text-gray-400">{date + ", "}</i>
         {category && (
-          <i className="text-sm italic text-gray-400">{category + " category, "}</i>
+          <i className="text-sm italic text-gray-400">{category + ", "}</i>
         )}
         {duration && (
           <i className="text-sm italic text-gray-400">
             {duration} {duration > 1 ? "minutes" : "minute"} to read
           </i>
         )}
+        <Divider/>
+        {staffPick == "True" && (
+          <span className="bg-[#013011] text-sm px-2 py-1 rounded mr-2">
+            ❤️<Divider orientation="vertical"/>Staff Favourite
+          </span>
+        )}
+        {warningsList.map((warning, index) => (
+          <span key={warning} className="bg-[#30011a] text-sm px-2 py-1 rounded mr-2 inline-block mb-2">
+            ⚠️<Divider orientation="vertical"/>{warning}
+          </span>
+        ))}
       </div>
     </li>
   );
