@@ -15,7 +15,7 @@ const booksComponents: Record<string, ComponentType<{}>> = {
   "clockwork-dreams": dynamic(() => import('@/components/library/books/clockwork-dreams')),
   "complex-cosmology": dynamic(() => import('@/components/library/books/complex-cosmology')),
   "dated-myth-of-creation": dynamic(() => import('@/components/library/books/dated-myth-of-creation')),
-  "fisherman-uprising": dynamic(() => import('@/components/library/books/fisherman-uprising')),
+  "fishermen-uprising": dynamic(() => import('@/components/library/books/fishermen-uprising')),
   "fuck-marry-kill": dynamic(() => import('@/components/library/books/fuck-marry-kill')),
   "general-jets-reform": dynamic(() => import('@/components/library/books/general-jets-reform')),
   "HTTFBAPWDKTABBTATTKEBIRTDANAATIEWYANTLTMVCRN": dynamic(() => import('@/components/library/books/HTTFBAPWDKTABBTATTKEBIRTDANAATIEWYANTLTMVCRN')),
@@ -98,8 +98,8 @@ export const generateMetadata = async ({ params }: PageProps): Promise<Metadata>
       title: "The Dated Myth of Creation",
       description: "A collection of ancient myths that offer different perspectives on the origins of the universe."
     },
-    "fisherman-uprising": {
-      title: "Fisherman Uprising",
+    "fishermen-uprising": {
+      title: "Fishermen Uprising",
       description: "A rebellion at sea that challenges the world's greatest empire."
     },
     "fuck-marry-kill": {
@@ -192,7 +192,7 @@ export const generateMetadata = async ({ params }: PageProps): Promise<Metadata>
 export const generateStaticParams = async () => {
   const booksList = ['what-are-these-clovers','we-are-pathetic-the-helpless-in-the-eyes-of-the-divine','legend-of-w-steram','divine-tales-1','dufrene-s-notes',
     'adventurers-guide-to-underdark-collection','akin-and-the-gold-statue','assassination-of-narra','clockwork-dreams','complex-cosmology',
-    'dated-myth-of-creation','fisherman-uprising','fuck-marry-kill','general-jets-reform','HTTFBAPWDKTABBTATTKEBIRTDANAATIEWYANTLTMVCRN','jeremiahs-cookbook',
+    'dated-myth-of-creation','fishermen-uprising','fuck-marry-kill','general-jets-reform','HTTFBAPWDKTABBTATTKEBIRTDANAATIEWYANTLTMVCRN','jeremiahs-cookbook',
     'johken','known-half-ancients','last-ancient-magic','legend-of-rerartif','mirror-of-erised','mujina-army-and-the-serpents','my-study-of-choll','poem-on-akash','rise-of-magnus',
     'song-of-catastrophe','summary-on-ancients','understanding-of-divine','warriors-guild-and-the-red-army','what-is-shock-collection','epipremnum'
   ]; // Add all dynamic book names here
