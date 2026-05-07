@@ -91,7 +91,7 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/known-half-ancients",
-              image: "",
+              image: "/Books/known-half-ancients.png",
               author: "A Collection of Tomes, Co-Authored by Yenn",
               name: "Known Half-Ancients",
             }}
@@ -99,7 +99,7 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/complex-cosmology",
-              image: "",
+              image: "/Books/complex-cosmology.png",
               author: "",
               name: "Complex Cosmology",
             }}
@@ -115,7 +115,7 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/understanding-of-divine",
-              image: "",
+              image: "/Books/understanding-of-divine.png",
               author: "",
               name: "Understanding Of Divine 1",
             }}
@@ -123,7 +123,7 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/dated-myth-of-creation",
-              image: "",
+              image: "/Books/dated-myth-of-creation.png",
               author: "",
               name: "Dated; Myth of Creation",
             }}
@@ -134,8 +134,8 @@ export default function LibraryContent() {
         <Row>
           <GetBook
             bookProps={{
-              url: "library/fisherman-uprising",
-              image: "",
+              url: "library/fishermen-uprising",
+              image: "/Books/fishermen-uprising.png",
               author: "Co-Authored by Koffe",
               name: "Fishermen Uprising",
             }}
@@ -143,7 +143,7 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/mujina-army-and-the-serpents",
-              image: "",
+              image: "/Books/mujina-army-and-the-serpents.png",
               author: "Co-Authored by Koffe",
               name: "Mujina Army & The Serpents",
             }}
@@ -151,7 +151,7 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/fuck-marry-kill",
-              image: "",
+              image: "/Books/fuck-marry-kill.png",
               author: "Co-Authored by Quebec",
               name: "Fuck; Marry; Kill",
             }}
@@ -159,7 +159,7 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/clockwork-dreams",
-              image: "",
+              image: "/Books/clockwork-dreams.png",
               author: "Fiction based on Sera Krautek's Manifesto",
               name: "Clockwork Dreams",
             }}
@@ -167,7 +167,7 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/assassination-of-narra",
-              image: "",
+              image: "/Books/assassination-of-narra.png",
               author: "Co-Authored by Mermaid",
               name: "Assassination of Narra",
             }}
@@ -175,7 +175,7 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/warriors-guild-and-the-red-army",
-              image: "",
+              image: "/Books/warriors-guild-and-the-red-army.png",
               author: "Co-Authored by Gregor",
               name: "Warrior's Guild & The Red Army",
             }}
@@ -183,7 +183,7 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/what-is-shock-collection",
-              image: "",
+              image: "/Books/what-is-shock-collection.png",
               author: "By Patrick Goldgrain; An Unfortunate Propaganda Co-Authored by Sera & Isaac",
               name: "What is Shock? Collection",
             }}
@@ -191,7 +191,7 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/poem-on-akash",
-              image: "",
+              image: "/Books/poem-on-akash.png",
               author: "",
               name: "Poem on Akash",
             }}
@@ -203,7 +203,7 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/HTTFBAPWDKTABBTATTKEBIRTDANAATIEWYANTLTMVCRN",
-              image: "",
+              image: "/Books/HTTFBAPWDKTABBTATTKEBIRTDANAATIEWYANTLTMVCRN.png",
               author: "Authored by Batu",
               name: "HTTFBAPWDKTABBTATTKEBIRTDANAATIEWYANTLTMVCRN",
             }}
@@ -211,7 +211,7 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/akin-and-the-gold-statue",
-              image: "",
+              image: "/Books/akin-and-the-gold-statue.png",
               author: "Unknown; In Malphas' Memory",
               name: "Akin and the Golden Statue",
             }}
@@ -219,7 +219,7 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/legend-of-rerartif",
-              image: "",
+              image: "/Books/legend-of-rerartif.png",
               author: "Co-Authored by Sera the Pope",
               name: "Legend of Rerartif",
             }}
@@ -227,7 +227,7 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/song-of-catastrophe",
-              image: "",
+              image: "/Books/song-of-catastrophe.png",
               author: "",
               name: "Song Of Catastrophe",
             }}
@@ -255,7 +255,7 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/rise-of-magnus",
-              image: "",
+              image: "/Books/rise-of-magnus.png",
               author: "Unknown, Fiction",
               name: "Rise of Magnus",
             }}
