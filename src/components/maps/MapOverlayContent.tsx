@@ -20,6 +20,7 @@ const MAP_LAYERS = [
   "Compass",
   "Continents",
   "Rivers",
+  "Grid",
   "Echoes",
   "Kingdoms3K",
   "KingdomsMC",
@@ -172,6 +173,9 @@ export default function MapOverlayContent() {
           <Button onClick={() => handleMapVisibility("KingdomsMC")}><span>KingdomsMC <CheckCircleOutlined /></span></Button>
           <Button onClick={() => handleMapVisibility("Places")}><span>Places <CheckCircleOutlined /></span></Button>
           <Divider orientation="vertical" style={{ borderColor: "white" }} />
+          <Tooltip title="Each hex represents 12 miles of travel, roughly half a day at normal pace. At a normal pace, a party travels 1 hex every 4 hours, covering 2 hexes in a standard 8 hour day. At a fast pace, movement increases to about 1 hex every 3 hours, allowing up to 3 hexes per day with fractional progress rounded down, but imposes a −5 penalty to passive Perception. At a slow pace, travel drops to 1 hex every 6 hours, or about 1 hex per day with fractional progress banked, while enabling stealth and careful searching. Extending travel beyond 8 hours in a day risks exhaustion. Terrain, mounts, and environmental conditions may further modify these rates." color="#630436">
+          <Button onClick={() => handleMapVisibility("Grid")}><span>Grid <ExclamationCircleFilled /></span></Button>
+          </Tooltip>
           <Button onClick={() => handleMapVisibility("Climates")}><span>Climate <ExclamationCircleOutlined /></span></Button>
           <Tooltip title="Fear 😱, Joy 😊, Sorrow 😔, Love 😍, Anger 😠, Hope 🥺, Anxiety 😵, Awe 😨, Desire 😳, Abandonment 😒" color="#630436">
             <Button onClick={() => handleMapVisibility("Echoes")}><span>Emotional Echoes <ExclamationCircleFilled /></span></Button>
