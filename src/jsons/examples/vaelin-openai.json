@@ -1,0 +1,70 @@
+{
+  "name": "Vaelin OpenAI (AI GENERATED)",
+  "appearance": "Vaelin is a broad-shouldered half-orc with weathered olive-grey skin, a broken tusk on the left side of his jaw, and long black hair tied into a rough braid behind his head. He wears layered traveler’s leathers reinforced with scavenged metal plates, and a faded green cloak stitched with symbols from old caravans he once guarded.",
+  "images": ["/Examples/openai.png"],
+  "base": {
+    "alignment": "Neutral Good",
+    "gender": "Male",
+    "eyes": "Dark Amber",
+    "size": "Medium",
+    "height": "193 cm",
+    "faith": "Cyaxo",
+    "hair": "Black",
+    "skin": "Olive-grey",
+    "age": "34",
+    "weight": "241 lbs"
+  },
+  "personality": {
+    "traits": [
+      "Constantly sharpens weapons while thinking.",
+      "Refuses to leave campsites without checking every trail twice.",
+      "Quietly repairs damaged gear belonging to companions during rests."
+    ],
+    "ideals": [
+      "Strength means protecting people who cannot protect themselves.",
+      "Every road hides truths worth uncovering.",
+      "Trust must be earned through actions, not titles."
+    ],
+    "bonds": [
+      "Still carries a broken compass gifted by his mentor, Garrik Vale.",
+      "Feels indebted to the Adventurer's Guild quartermaster who gave him honest work when nobody else would.",
+      "Secretly sends coin to a small orphanage in Oywego."
+    ],
+    "flaws": [
+      "Panics when trapped underground for too long.",
+      "Assumes betrayal before loyalty.",
+      "Has difficulty believing praise is genuine."
+    ]
+  },
+  "background": [
+    "Mercenary Veteran (Sword Coast Adventurer's Guide)"
+  ],
+  "relations": {
+    "organizations": [
+      "Adventurer's Guild",
+      "Thieve's Guild",
+      "Ashmark Couriers, a tiny independent smuggling crew operating along forgotten river routes."
+    ],
+    "allies": [
+      "Adventurer's Guild",
+      "Letha Morren, a one-eyed dwarf cartographer obsessed with abandoned roads."
+    ],
+    "enemies": [
+      "Obsidian Order",
+      "Velis Drae, a former information broker who believes Vaelin stole something priceless from him."
+    ]
+  },
+  "notes": [
+    "Vaelin owns a rusted music box that only plays when rain starts falling.",
+    "A nameless mage once paid him to deliver a sealed letter into the Feywild, but the recipient was already dead.",
+    "He has recurring dreams of standing in a battlefield where everyone else is frozen in time.",
+    "Several members of the Thieve's Guild recognize his caravan markings from an operation that officially never happened."
+  ],
+  "backstory": [
+    "Vaelin OpenAI was born near the trade roads outside Oywego to a human caravan scout named Brenn OpenAI and an orcish herbalist named Maela. His family spent most of their lives moving between settlements, surviving through escort work, barter, and repairing damaged wagons. Vaelin learned early that half-orcs were often treated like hired muscle before they were treated like people. His father disappeared during a storm crossing years ago, leaving behind only a snapped spear planted upright in the mud. Vaelin still remembers the last thing Brenn said before vanishing, 'Back before the second moonrise,' though nobody has ever understood what it meant.",
+    "As a young man, Vaelin joined the Ashmark Couriers, a small smuggling crew moving messages and relics through abandoned roads and forgotten tunnels. Their leader, Garrik Vale, saw potential in Vaelin beyond brute strength and taught him negotiation, route planning, and survival skills. During one disastrous delivery beneath Wukhim, the crew unknowingly transported a cursed object tied to agents of the Obsidian Order. Something attacked them deep underground, leaving Garrik maimed and another courier named Pell missing without a trace. Vaelin barely escaped and developed a severe fear of enclosed subterranean spaces afterward. The relic vanished after the attack, but rumors surrounding it never disappeared.",
+    "Eventually tired of criminal work, Vaelin drifted toward an Adventurer's Guild outpost where quartermaster Dain Arkwright offered him legitimate contracts guarding scholars and recovering stolen cargo. During one expedition he met Letha Morren, a dwarf cartographer obsessed with forgotten trade roads and hidden planar crossings. Together they uncovered fragments of maps pointing toward abandoned ruins touched by strange Feywild influence. One expedition ended after they found fresh campfires inside a supposedly abandoned fortress. Another collapsed after an unknown thief stole part of Letha's research without triggering a single trap. Vaelin suspects someone from the Ashmark Couriers survived longer than anyone realized.",
+    "Vaelin experienced his happiest years helping rebuild a burned riverside orphanage overseen by Sister Halwen, a weary but stubborn priestess devoted to Cyaxo. The children admired his stories and convinced him to carve small wooden animals for them during long evenings by the fire. One child named Tomas gave Vaelin a crude wooden hawk that he still keeps hidden in his pack. That peace shattered after Velis Drae resurfaced claiming Garrik Vale betrayed the Thieve's Guild before disappearing. Velis believes Garrik hid records exposing corruption within several guild operations and insists Vaelin knows where they are. Since then, several bounty hunters and thieves have pursued him for answers he genuinely does not possess.",
+    "Now Vaelin adventures because remaining stationary has become too dangerous. He seeks enough allies and resources to uncover what happened to his father, determine whether Pell survived the tunnels beneath Wukhim, and discover why the Obsidian Order still hunts remnants of the cursed relic. He also hopes to find Garrik Vale, dead or alive, before Velis Drae reaches him first. Recently, an exhausted courier delivered a sealed package bearing Vaelin's name written in his own handwriting despite the letter being dated six years in the future. He has not opened it yet."
+  ]
+}

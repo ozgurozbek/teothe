@@ -1,0 +1,70 @@
+{
+  "name": "Brakka Deepseek (AI GENERATED)",
+  "appearance": "A broad-shouldered human woman built like she was forged in the same furnaces she works. Her arms are thick with muscle and burn scars, and her artificer armor is layered with iron plating, rivets, and soot-stained leather reinforced for repeated blast exposure.",
+  "images": ["/Examples/deepseek.png"],
+  "base": {
+    "alignment": "Lawful Neutral",
+    "gender": "Female",
+    "eyes": "Smoky Grey",
+    "size": "Medium",
+    "height": "179 cm",
+    "faith": "Tsahnrad",
+    "hair": "Dark Iron Brown",
+    "skin": "Warm tan with soot-stained undertones",
+    "age": "33",
+    "weight": "215 lbs"
+  },
+  "personality": {
+    "traits": [
+      "Obsessively precise when working with mechanisms and explosives",
+      "Speaks in short, functional statements unless discussing craft",
+      "Treats machines as moral extensions of their creator’s intent"
+    ],
+    "ideals": [
+      "Craft is responsibility, not expression",
+      "Stability is earned through maintenance, not force"
+    ],
+    "bonds": [
+      "The Artificer's Union as a source of discipline and structure",
+      "A partially rebuilt steam golem she refuses to scrap despite its instability"
+    ],
+    "flaws": [
+      "Refuses to delegate dangerous mechanical work even when unfit",
+      "Distrusts magic-first solutions, even when efficient",
+      "Compulsively reopens completed projects to 'improve' them"
+    ]
+  },
+  "background": [
+    "Guild Artisan (Player’s Handbook)"
+  ],
+  "relations": {
+    "organizations": [
+      "Artificer's Union",
+      "The Ashen Fire",
+      "Artisan's Guild"
+    ],
+    "allies": [
+      "Slayer's Take",
+      "Brewer's Guild"
+    ],
+    "enemies": [
+      "Obsidian Order",
+      "Black Scripture"
+    ]
+  },
+  "notes": [
+    "Carries a modular prosthetic gauntlet built from salvaged firearm and forge parts",
+    "Keeps a registry of every failed prototype explosion and its mechanical cause",
+    "Believes her workshop is subtly influenced by residual arcane corruption from past experiments",
+    "Refuses to build anything that cannot be disassembled and repaired by a single trained artisan"
+  ],
+  "backstory": [
+    "Brakka Deepseek was born in Fireward, where the Artificer's Union and industrial guilds define both livelihood and hierarchy. From childhood she worked in foundries affiliated with Tsahnrad’s artisan traditions, learning early that precision in craft was not art but survival.",
+    "She was recruited into the Artificer's Union after demonstrating unusual resilience in repairing unstable steam mechanisms linked to early Ashen Fire prototypes. Her skill was valued, but her tendency to ignore safety protocols made her both useful and heavily supervised.",
+    "During a joint experimental project between the Union and the Ashen Fire, a containment failure triggered a chain explosion that killed several engineers and permanently scarred Brakka’s right arm. The incident left her with a deep aversion to uncontrolled automation and external oversight.",
+    "Following recovery, she began working alongside Slayer's Take contractors on field-repair missions involving damaged constructs and magical beasts, where her practical engineering often clashed with arcane-heavy methodologies. She developed a reputation for salvaging machines others deemed irreparable.",
+    "Brakka maintains strained but functional ties with the Artisan's Guild and occasional cooperative contracts with the Brewer's Guild for stabilizing alchemical pressure systems. She avoids direct dealings with the Obsidian Order after a failed infiltration attempt involving stolen schematics.",
+    "Her closest working relationship is with a salvaged steam golem she rebuilt over multiple contracts; the construct occasionally exhibits unpredictable behavior, which she insists is 'diagnostic, not defective.'",
+    "Open-ended events include: a missing Union blueprint suspected to be stolen by the Black Scripture, a destabilizing prototype reactor tied to The Ashen Fire, rumors of sabotage within Fireward workshops, a contract from Slayer's Take involving a corrupted construct in the wilds, a possible assassination attempt linked to Obsidian Order interference, a brewing dispute between Artisan's Guild and Artificer's Union over automation rights, a partially decoded ancient schematic from the Ancientry Preservation Union, and an unknown signal detected from her steam golem suggesting external influence."
+  ]
+}

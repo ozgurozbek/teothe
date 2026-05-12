@@ -1,0 +1,68 @@
+{
+  "name": "Ooze-with-No-Name (commonly called 'Kimi Gloop')",
+  "appearance": "A translucent, deep emerald-hued humanoid figure that occasionally ripples like disturbed water. They wear loose-fitting, weathered leather straps to hold a composite bow and a mossy cloak that seems to partially dissolve into their gelatinous shoulders.",
+  "images": [
+    "/Examples/kimi.png"
+  ],
+  "base": {
+    "alignment": "Neutral Good",
+    "gender": "Agender",
+    "eyes": "Glowing amber orbs suspended within their head",
+    "size": "Medium",
+    "height": "168 cm (variable)",
+    "faith": "Cyaxo (God of Forests and Nature)",
+    "hair": "None (smooth surface)",
+    "skin": "Translucent Emerald",
+    "age": "15 years (mature for a Plasmoid)",
+    "weight": "155 lbs"
+  },
+  "personality": {
+    "traits": [
+      "I often forget to maintain a humanoid shape when I'm relaxed, startling my companions.",
+      "I am fascinated by the 'solid' world and constantly poke new textures with a pseudopod."
+    ],
+    "ideals": [
+      "Balance: Nature provides for those who do not take more than they need.",
+      "Adaptability: Like water, one must flow around obstacles rather than breaking against them."
+    ],
+    "bonds": [
+      "I carry a petrified seed from the Great N'Tiora Tree; it is the only solid thing I truly treasure.",
+      "I owe my life to the ranger who found me in a drying puddle and taught me to track."
+    ],
+    "flaws": [
+      "I am terrified of extreme heat and fire, which causes me to lose my physical cohesion.",
+      "I struggle to understand the concept of 'personal property' if it isn't food or medicine."
+    ]
+  },
+  "background": [
+    "Outlander (Player's Handbook)"
+  ],
+  "relations": {
+    "organizations": [
+      "Wonderers of Du'Ora",
+      "Slayer's Take",
+      "The Moss-Keepers (A tiny, local circle of forest-dwelling outcasts)"
+    ],
+    "allies": [
+      "Meadowcrew",
+      "Elara Windstride (Elven Mentor)"
+    ],
+    "enemies": [
+      "Crimson Caravan Company",
+      "Hargrove the Burner (A pyromaniac poacher)"
+    ]
+  },
+  "notes": [
+    "Gloop's 'voice' is actually a series of vibrations and wet pops that roughly mimic Common.",
+    "They can absorb small, non-magical items into their body for storage, though finding them again takes a minute.",
+    "Gloop is currently tracking a strange 'metallic rot' spreading through the local flora.",
+    "They have a peculiar habit of 'tasting' the air by extending thin, vibrating filaments."
+  ],
+  "backstory": [
+    "Gloop began life as a mindless colonial organism in a subterranean pool beneath the underdark. Their awakening occurred when a surge of wild magic from the Mages' Crisis filtered down through the rock, granting them a singular consciousness and a curiosity that the dark caves could not satisfy. They spent years mimicking the shapes of cave-dwellers until they eventually followed a scent of pine and rain to the surface world. Emerging into the forests of Teothe, they were nearly killed by a brush fire started by the poacher **Hargrove the Burner**, an event that left them with a permanent, shivering fear of open flames.",
+    "Half-evaporated and dying, Gloop was discovered by **Elara Windstride**, a veteran ranger of the **Slayer's Take**. Instead of striking the 'monster,' Elara saw the flickering amber eyes of a sentient being. She used her knowledge of nature to soothe Gloop with cool spring water and shaded moss. This act of mercy is Gloop’s most cherished memory and the foundation of their bond with the forest. Elara taught Gloop how to hold a bow using their shifting form and introduced them to the faith of **Cyaxo**, showing them that even a being of fluid can have a solid purpose in the natural order.",
+    "To repay Elara's kindness, Gloop joined the **Wonderers of Du'Ora**, acting as a scout for the N'Tiora Tree. They became an expert at moving through undergrowth where 'solids' could not pass. During a mission to stop a logging operation, Gloop encountered **Baron Valerius**, a minor executive of the **Crimson Caravan Company**. Valerius saw Gloop not as a person, but as a 'novelty asset' to be captured and sold as a living lava lamp. Gloop escaped, but Valerius still holds a bounty on 'the green slime,' and agents of the company are often seen lurking near Gloop’s favorite hunting grounds.",
+    "While scouting, Gloop befriended a clumsy but stout treasure hunter named **Barnaby 'Barnacle' Potts** of the **Meadowcrew**. Barnaby once accidentally tried to use Gloop as an emergency waterskin, a misunderstanding that turned into a lasting friendship. Barnaby currently holds a map to a 'shimmering grotto' that Gloop believes might be the birthplace of their species. However, the path is blocked by a territory dispute between the Slayer's Take and a local warlord, leaving the quest for Gloop's origins in a state of perpetual delay.",
+    "Gloop’s need for adventuring stems from a desire to find a way to stabilize their form against the heat that once nearly killed them. They have heard rumors of a 'Chilled Heart' artifact held by the **Arcanum Alliance**, but as a creature of the wild, Gloop finds the city of Konark suffocating. For now, they remain with their companions, lending their unique physiology to the team—squeezing through keyholes to unlock doors or acting as a silent, camouflaged sentry. They seek a place where they truly belong, hoping that one day the forest will offer more answers than questions."
+  ]
+}

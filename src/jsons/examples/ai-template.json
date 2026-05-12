@@ -1,0 +1,43 @@
+{
+  "name": "Lazyman's Template - Provide an appropriate name for the character considering their species and gender.",
+  "appearance": "Describe a D&D character's appearance in 2 sentences. Medieval fantasy.",
+  "images": ["/Examples/chatgpt-1.png"],
+  "base": {
+    "alignment": "Choose an alignment for the character.",
+    "gender": "Choose a gender for the character. Keep in mind how certain lore interactions work.",
+    "eyes": "Choose an appropriate eye colour for the character.",
+    "size": "Medium",
+    "height": "Provide an appropriate height for the character's species and gender.",
+    "faith": "Do a web search: Go to teothe.com/deities and choose an appropriate deity.",
+    "hair": "Choose an appropriate hair colour for the character.",
+    "skin": "Choose an appropriate skin colour for the character.",
+    "age": "Provide an appropriate height in cm for the character's species and gender.",
+    "weight": "Provide an appropriate weight in lbs for the character's species and gender."
+  },
+  "personality": {
+    "traits": [
+      "Generate 1 to 3 traits suitable for this character's backstory."
+    ],
+    "ideals": [
+      "Generate 1 to 3 ideals suitable for this character's backstory."
+    ],
+    "bonds": [
+      "Generate 1 to 3 bonds suitable for this character's backstory."
+    ],
+    "flaws": [
+      "Generate 1 to 3 flaws suitable for this character's backstory."
+    ]
+  },
+  "background": ["Choose an appropriate RAW background from a published source and provide it's name and which book it's from."],
+  "relations": {
+    "organizations": ["Do a web search: Go to teothe.com/factions and choose 1 to 3 appropriate factions to be involved with. You can also create your own custom one, however, it must be an insignificant and small faction."],
+    "allies": ["Do a web search: Go to teothe.com/factions and choose 1 to 2 appropriate factions to be allies with. You can also come up with individual NPCs referenced in your backstory."],
+    "enemies": ["Do a web search: Go to teothe.com/factions and choose 1 to 2 appropriate factions to be enemies with. You can also come up with individual NPCs referenced in your backstory."]
+  },
+  "notes": [
+    "Create 1 to 4 wildcard entries that add further plot hooks and quirks to the character."
+  ],
+  "backstory": [
+    "Create a backstory for a D&D character that has 5 paragraphs, at least 7 open ended events that could turn into hooks, at least 5 named NPCs and the characters need for adventuring. It should connect all above entries together in a cohesive way, however the story lines should never be completed. The character must be a team player and not be involved with world altering events or powers. The character must have at least one trauma from their past that incite their flaws, and one happy event that is related to their bonds."
+  ]
+}

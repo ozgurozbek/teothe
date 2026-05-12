@@ -1,0 +1,70 @@
+{
+  "name": "Lothric",
+  "appearance": "Pale-skinned fairy man with short wavy black hair, sharp features, and large translucent insect-like wings. Usually wears dark high-collared robes or leather garments with an austere academic appearance. Often seen carrying books, grimoires, or arcane instruments. His expression is calm, observant, and emotionally distant.",
+  "images": ["/Examples/lothric-1.png"],
+  "base": {
+    "alignment": "Lawful Evil",
+    "gender": "Male",
+    "eyes": "Black",
+    "size": "Medium",
+    "height": "90 cm",
+    "faith": "Ayrugcumoak",
+    "hair": "Short wavy black hair",
+    "skin": "Pale",
+    "age": "32",
+    "weight": "66 lbs"
+  },
+  "personality": {
+    "traits": [
+      "I collect secrets the way others collect friends, and I trust knowledge far more than people.",
+      "I have a habit of observing before acting, especially when power or politics are involved."
+    ],
+    "ideals": [
+      "Short term: Rise up in the Academy.",
+      "Medium term: Master necromancy magic, and create new spells in that category.",
+      "Medium term: Find secret spells that may be lost to time, or in the wasteland outside of Epipremnum.",
+      "Long term: Become the archwizard of Epipremnum."
+    ],
+    "bonds": [
+      "Academica Epipremnum is my ladder out of the gutter and my path to shaping the city’s future. I will not let it fall into lesser hands.",
+      "Codex Obscura gives me access to truths the Academy fears. I need them, even if they one day need to be erased.",
+      "Lorin Shadowspark is one of the few people whose approval I genuinely want, and that makes her dangerous to me."
+    ],
+    "flaws": [
+      "I believe I am destined for greatness, and I quietly dismiss those who cannot keep up.",
+      "I fear death. Not because of pain, but because it would end my work before it is complete."
+    ]
+  },
+  "background": ["Feylost (WBtW)"],
+  "relations": {
+    "organizations": [
+      "Academica Epipremnum",
+      "The Hollow Veil",
+      "Codex Obscura"
+    ],
+    "allies": [
+      "Lorin Shadowspark",
+      "Maltus Duc Coll",
+      "Lucian"
+    ],
+    "enemies": [
+      "Gwen Moonbeam",
+      "Thalrion Maerel",
+      "The Scorchkin"
+    ]
+  },
+  "notes": [
+    "Lothric secretly wishes to become an archlich so he can rule Epipremnum forever.",
+    "The Scorchkin: They are a ruthless tribe of wasteland nomads who see fire as both destroyer and creator. They turned to the desolation beyond the city and built their lives around survival through flame. They scar and burn their own skin in ritual, wear scavenged armor, and ride alchemical engines that spit smoke and sparks across the ashy plains. The Scorchkin raid expeditions in service of what they call the Burning Heart - the Epipremnum Furnaces. To them, the wasteland is sacred, and Epiprenum is a cage where the weak hide from the truth that only fire can cleanse. Truth that the Holy City was one of it's kind.",
+    "Codex Obscura: A secret fellowship of scholars, mages, and lore-hunters who seek the knowledge the Academy has deemed too dangerous, heretical, or unstable to study. They believe magic itself is neither good nor evil. Only the will of the one who wields it matters. Operating covertly in Epiprenum’s undercity, Codex Obscura trades in lost manuscripts, stolen grimoires, half-burned scrolls scavenged from the wasteland and sometimes simply knowledge of the arcane. They either trade directly or make payments for tasks.",
+    "Lorin Shadowspark [IMAGE] A gnome wizard, also a member of the Codex Obscura. Lorin is an Order of the Scribes wizard. She isn’t evil per se, but definitely morally gray. Lothric met her in a library during one of his study sessions and she introduced her to the Codex Obscura. Lothric has a bit of a crush on her, and is currently trying to make her join the Academy with him.",
+    "Maltus Duc Coll [IMAGE] Maltus is the reason Lothric decided to become a wizard and a necromancer. He is running for archmage and is a prominent figure with deep underground connections. He and Lothric are in a deal where they help each other rise up in Epipremnum’s hierarchical ladder.",
+    "Gwen Moonbeam [IMAGE] She was the reason for Lothric to become interested in the arcane at the first place. Before she could turn Lothric into another one of her patron’s warlocks, Lothric met Maltus and decided to become a wizard. She and Lothric are in bad terms because Gwen thinks Lothric betrayed her, and her patron. She wants Lothric to obey to her master, or find another way to make up to them.",
+    "Lucian [IMAGE] Head of the Codex Obscura. Lothric met him during a banquet. Not much is known about him, but there are rumors about him being an Academy member in disguise. There isn’t really a hierarchy within the guild, but Lucian sometimes gives tasks to members in exchange of spells or knowledge. His tasks are usualy more complicated than the ones issued by members, but the rewards are also often higher.",
+    "Commander Guts [IMAGE] Leader of the Scorchkin. Lothric met Guts when he was captured by the Scorchkin during one of his expeditions. He is neutral towards Lothric for now, since Lothric “helped” him with an issue he had. But since the Scorchkin is a generally hostile faction, their neutrality is hanging on a thread. One wrong move could earn Lothric an enemy he can’t afford to deal with. Because of this Lothric tries to stay on their good side when he goes out for an expedition.",
+    "Thalrion Maerel [IMAGE] Thalrion was a classmate of Lothric. Probably because he envies Lothric’s academic success, Thalrion has always bullied Lothric and tried to undermine him. Thalrion is a wealthy guy and because of that he has a lot of sidekicks. Although he holds no political power, he often treats his sidekicks, so he is respected because of his money. He graduated 1 year after Lothric, and is also a researcher now. He still continues to trouble Lothric to this day."
+  ],
+  "backstory": [
+    "Lothric, although a fairy, was born in Epipremnum. He was the son of Valar and Aeled, but he knows them not. They are either dead or left Lothric in this damn hellhole, doesn’t make a difference. He was alone since he was a kid. He grew up on the streets of Epipremnum. He was agile and smart, so he drew the attention of The Hollow Veil. A warlock named Gwen Moonbeam from Hollow Veil, that is. She and Lothric undertook some small missions together for a while, allowing Lothric to gain some Street experience. But, through acquaintances, Lothric met Maltus Duc Coll. One of the wizards of Academica Epipremnum. He is a corrupt wizard with underground connections, and is in the process of becoming one of the archwizards of Epipremnum. He saw the brilliance in Lothric, and saved him from doing errands under Gwen. He thought Lothric about the fundamentals of necromancy magic. He was also the one to make Lothric veer away from petty crime and join the Academy as a student. During his studies at the Academy, Lothric went outside Epipremnum a couple of times and gained some combat and exploration experience. He also met a few people during his expeditions. Some friendly – others, not so much. After graduation Lothric continued at the Academy as a researcher. Now, Lothric tries to climb the Academy ladder to reach his goal of becoming the top wizard of Epipremnum to save the city, while still going on occasional expeditions."
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "name": "Pip 'Rattle-thimble' Gemini (AI GENERATED)",
+  "appearance": "Pip is a lithe halfling with vibrant, autumn-orange hair tied back in dozens of small braids adorned with copper thimbles. They wear a patchwork vest of colorful silks and sturdy leather breeches, always carrying a drum made from a hollowed tortoise shell.",
+  "images": ["/Examples/gemini.png"],
+  "base": {
+    "alignment": "Chaotic Good",
+    "gender": "Agender (Non-binary)",
+    "eyes": "Hazel",
+    "size": "Small",
+    "height": "91 cm",
+    "faith": "Buib",
+    "hair": "Autumn Orange",
+    "skin": "Sun-kissed Tan",
+    "age": "28 years",
+    "weight": "38 lbs"
+  },
+  "personality": {
+    "traits": [
+      "I have a joke for every occasion, especially when things get tense.",
+      "I find the rhythm in everything, from the dripping of rain to the clashing of swords."
+    ],
+    "ideals": [
+      "Freedom: No one should be shackled by the expectations of others.",
+      "Joy: A song in the heart is the best medicine for a weary soul."
+    ],
+    "bonds": [
+      "I carry a silver thimble given to me by my grandmother, the only thing I have left of my home.",
+      "I will do anything to protect the traveling troupe that took me in when I had nothing."
+    ],
+    "flaws": [
+      "I am terrified of silence; it reminds me of the night the music stopped.",
+      "I have a hard time trusting anyone in a position of authority."
+    ]
+  },
+  "background": ["Entertainer (Player's Handbook)"],
+  "relations": {
+    "organizations": [
+      "The Quartet",
+      "Adventurer's Guild",
+      "The Thimble-Prick Buskers"
+    ],
+    "allies": [
+      "Warrior's Guild",
+      "Mama Omi (Halfling Matriarch)"
+    ],
+    "enemies": [
+      "Pearl Plunderers",
+      "Captain Vane of the Iron Guard"
+    ]
+  },
+  "notes": [
+    "Pip's tortoise-shell drum occasionally hums with a faint, blue light during rainstorms.",
+    "They compulsively collect small metal objects to add to their braids for 'percussive flair.'",
+    "Pip is looking for the 'Lost Chord,' a melody rumored to cure magical muteness.",
+    "They have a habit of referring to themselves in the third person when performing."
+  ],
+  "backstory": [
+    "Pip grew up in the bustling markets of Arikna, the child of simple tailors. Their childhood was a symphony of clicking needles and humming customers until the 'Night of the Still Tongue,' when a local noble, Lord Alistair Thorne, used a cursed artifact to magically silence their neighborhood to stop a protest. Pip watched their parents try to scream for help in a silence so thick it felt like drowning—a trauma that left Pip with a permanent dread of quiet and a deep-seated loathing for tyrannical control.",
+    "Hope returned when a traveling troupe of **The Quartet** passed through the silenced district. A flamboyant bard named **Brio Softwhistle** noticed Pip drumming rhythms on old soup cans and realized the child was channeling the essence of **Buib**, the Goddess of Rain and Bards. Brio gifted Pip a tortoise-shell drum and taught them that music is a form of defiance. The day Pip successfully played their first 'Thunder-Clap' chord, the magical silence in their home finally shattered, marking the happiest moment of their life and cementing their bond to the art of performance.",
+    "As Pip matured, they joined the **Adventurer's Guild** to fund their travels and find a way to permanently restore the voices of those still afflicted by Thorne’s lingering curse. Along the way, they befriended a gruff blacksmith named **Kardum Ironfoot** from the **Warrior's Guild**, who helps repair Pip's percussive copper thimbles. Pip recently learned from a contact in the **Thieve's Guild**, a tiefling named **Silence**, that the **Pearl Plunderers** have been scouting for the same ancient musical artifacts Pip seeks, leading to several narrow escapes and a growing rivalry.",
+    "Pip’s adventures took a darker turn when they crossed paths with **Captain Vane**, a ruthless enforcer who believes bards are nothing more than spies and agitators. Vane confiscated Pip’s original songbook during a tavern brawl, and Pip is determined to get it back, as it contains the research they’ve gathered on the 'Lost Chord.' To keep a low profile, Pip often performs with the **The Thimble-Prick Buskers**, a tiny, informal group of street performers who share information on the movements of the tyrannical Underworld forces led by **Pwazo**.",
+    "Now, Pip travels with any party heading toward the Inner Planes, hoping to find the hero **Wiob** or a shard of his lunar light to empower their music. They are currently tracking a lead provided by a mysterious druid named **Leaf-on-Wind**, who claims the Pearl Plunderers are hiding a stolen relic in a nearby coastal cavern. Pip knows they aren't strong enough to take on the world alone, but as long as they have a team to provide the harmony, Pip is ready to provide the beat and find the melody that will keep the darkness—and the silence—at bay."
+  ]
+}

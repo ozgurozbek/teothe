@@ -1,0 +1,51 @@
+{
+  "name": "Teo Serna",
+  "appearance": "An Earth Genasi. Lean, more agile than imposing. Dark, shoulder-length coarse hair, often tied back, with faint streaks of polished obsidian. Grey eyes with a mineral sheen, shifting to muted amber in certain lights. Gem-like skin sometimes catches the light with an unnatural glow. Wears practical leathers with muted colours. Carries a stone pendant (the Genie Vessel) hanging from a simple chain on from his neck, its surface etched with near-faded runes.",
+  "images": ["/Examples/teo-1.png","/Examples/teo-2.png"],
+  "base": {
+    "alignment": "Lawful Neutral",
+    "gender": "Male",
+    "eyes": "Grey",
+    "size": "Medium",
+    "height": "180 cm",
+    "faith": "Ehx",
+    "hair": "Dark, coarse with faint straks of polished obsidian",
+    "skin": "Gem-like skin",
+    "age": "29",
+    "weight": "154 lbs"
+  },
+  "personality": {
+    "traits": [
+      "I prefer solutions that are practical and fair. (Pragmatic)"
+    ],
+    "ideals": [
+      "A contract is only as binding as its terms. There’s always a way out."
+    ],
+    "bonds": [
+      "Someone I loved vanished because me. That will never happen again."
+    ],
+    "flaws": [
+      "If there's a plan, I'll forget it. If I don't forget it, I'll ignore it."
+    ]
+  },
+  "background": ["Urban Bounty Hunter (SCAG)"],
+  "relations": {
+    "organizations": ["The Stonebound Concord", "Adventurer's Guild"],
+    "allies": ["Brevar X'ai", "Master Qiren Athril", "Morgen Willow"],
+    "enemies": ["Cariel Osha"]
+  },
+  "notes": [
+    "Teo’s relational web spans family, patrons, employers, rivals, informants, and criminal-adjacent networks. His family includes Alain Serna (also known as Eldan), his missing brother last linked to a suspicious ledger and possibly resurfaced in Wuzkwu under a new identity; Mireya Serna, his mother, a retired mercenary who now runs a smithy in Wukhim; and Rhoan Serna, his uncle, a former bounty hunter now completely unaccounted for. His professional and historical ties include Brevar X’ai, a cotton trader once protected by Teo’s family who later died after his business collapsed; Qiren Athril, an elf sorcerer and archivist who employed Teo as a scribe; and Vanelis, Qiren’s apprentice who remains dismissive of him. Teo is also bound to Ruhzazad, a Dao entity acting as a celestial record-keeper of unfulfilled contracts and functioning as his patron. Additional figures include Irven Byras, a former wealthy man found dead with a note naming Cariel Osha, whose identity remains unknown but is linked to fear and suspicion; Damie, a former ally and caravaneer tied to Irven’s debts who disappeared after his death, likely in Jidxhexi; Avalyn the Maskmaker, a trickster possibly captured under bounty hunter authority; Morqen Willow, a Concord bounty hunter who provided evidence against Avalyn; Luthan Brys, a meticulous archivist for the Stonebound Concord in Arikna; Vesper, a masked informant from Atioh; Imek Dhor, a Concord bounty killer who distrusts Teo; Kasda The Unfinished, a dwarven sculptor turned smuggler who reworks evidence in Haytie; Yezhavi Dol, a deposed noblewoman now leading a spy network from Jaksi Keep; Zekrin Ovendyf, a brutal debt collector operating loosely under Concord authority in Qudeyhig Keep; and Nirys Tahl, a traveling herbalist and poisoner based in Wukhim who alters memories of obligations.",
+    "Teo’s operational geography centers on four primary locations. Wukhim is his home city, tied to his mercenary lineage and current base of operations, including Mireya Serna, Nirys Tahl, and Qiren Athril’s scholarly work. Jidxhexi is a recurring site of unresolved events, notably Irven Byras’s death and Damie’s disappearance, marking it as a place of investigative and narrative instability. Wuzkwu is a major external destination where Alain Serna (Eldan) was last seen and where the Brass Archive operates, a concealed winehouse serving as a Stonebound Concord meeting point for contracts and enforcement coordination. The Brass Archive itself functions as a clandestine guild hub for debt enforcement and oath-keeping operations across Teothe, tying together figures such as Luthan Brys, Morqen Willow, Zekrin Ovendyf, and other Concord-affiliated agents."
+  ],
+  "backstory": [
+    "Teo Serna was raised in Wukhim to a family of mercenaries. As a distant descendant of an Earth Genasi Teo has a gem-like skin to the observant eye, but usually people just think he is an human. As a teen, Teo helped his brother Alain Serna with the protection of Brevar X'ai, a cotton trader in Wukhim. One day Teo found a ledger page and gave it to his brother. Alain was distraught and told him he was no longer bound to this job and sent him back home. Alain assured Teo he will take the ledger to Brevar and sort the issue, but then he vanished. The family was powerless. A week later, Brevar’s business collapsed, and he was found dead. Teo never believed it was that simple.",
+    "After this Teo started working for an elf sorcerer named Master Qiren Athril who had a vast amount of books in his library. Teo's job was to help him sort the books. He read aloud to the master, and annotate them. Later, Teo would find his notes would be written in a different handwriting or was answered by someone. There was sometimes new or missing chapters. Teo would ask Master Qiren about these and would get answers like *The human mind plays tricks when reading dense texts* with no further acknowledgement. His apprentice Vanelis would just ignore Teo's questions. Teo was able to learn many things about some mythical objects and history of Teothe working for Master Qiren. Qiren also gifted him a book on the history of different guilds from his library for him to keep which irked Vanelis. This book sometimes still has new chapters or notes on them which now amuses Teo.",
+    "During one night Teo dreamt of a big necropolis upon a sturdy mountain. The tombstones were not carved with names and dates but with the debts of the departed; favours unfulfilled, oaths broken, prices unpaid. A voice from afar echoed through the stone: Stone endures, debts persist. You are the hand that ensures both remain unbroken. Shaken, Teo woke and stepped outside to clear his mind. As he approached the great oak tree in the garden, he saw another tombstone. This one had his own name, alongside an offer. A presence stirred beyond the tree, and in his mind, the voice of Ruhzazad the Stalwart Ledger spoke again. The Dao, a celestial record-keeper of unfulfilled contracts, illuminated the presence hidden in the darkness. Teo was not commanded, only invited into an agreement. In exchange for power and resources, he would become an enforcer of balance, ensuring that debts, be they in coin, or vow, were paid. And unlike many warlocks, his service was not eternal. One day, the final debt would be collected. But whether that would be on Ruhzazad’s terms or his own remained uncertain.",
+    "After this agreement Teo started working for Ruhzazad who didn't seem to rely on him much. Sometimes, Teo would dream of Ruhzazad, and in the morning he would receive a name and a place engraved on a gravestone. Ruhzazad only wrote four names in 5 years upon this stone and Teo collected their debts. This was a suiting arrangement for an Earth Genasi like Teo who felt like he was serving his ancestors.",
+    "The Stonebound Concord was never an official guild, but an agreement amongst enforcers, debt collectors and oath-keepers across Teothe. The network ran through forgotten ledgers and coded messages. They were sometimes investigators but mostly collectors. Some secret places like The Brass Archive in Wuzkwu, Old Quarter Monolith in Konark, a winehouse, served the group for new jobs to collect. Teo became entangled with them by necessity. His work under Ruhzazad aligned with their principles.",
+    "Once, Teo witnessed an argument between an old man and an inn keeper in Jidxhexi. The raggedy old man, Irven Byras, was thrown out after not being able to pay the fee. He had many debts around the area and once was a wealthy man who now claimed he was wronged. Teo helped him work as a translator for his caravaneer friend Damie to settle some debts. Damie often updated Teo on his progress until Irven was found dead in a back alley, clutching a tattered note in his hand. It contained a single name, Cariel Osha, one Teo didn’t recognise, but Damie did. With visible fear, Damie warned Teo not to ask questions and cut off contact.",
+    "Years after Alain's disappearance, a letter came. Alain had fled to Wuzkwu, now living under the name Eldan. On the way to Wuzkwu, Teo came upon a bounty hunter on the job who binded a trickster maskmaker to a tree. *Avalyn the Maskmaker is my name, and I am innocent* she shouted as she asked for help. Teo wasn't sure if she was innocent. The bounty hunter, however, was someone he knew from The Stonebound Concord, a guy named Morqen Willow who was a famous bounty hunter in his city. He showed Teo a ledger unfulfilled by Avalyn and said this is the reason for the capture. Teo believed Morgen and continued his way sending a silent salute to Ruhzazad in his mind. That night he saw the ledger appear on a page of Qiren's book but instead of Avalyn his own name was written on it.",
+    "Teo encountered a playful pack of young Psittacosaurus one day while traveling through a dense forest. One of these younglings followed him for a day as Teo feigned ignorance. By night, it had become clear the Psittacosaurus wasn’t leaving anytime soon. Teo decided to let it stay and named it Pebble. Since then, this colourful creature has been his loyal companion, fluttering by his side or perched on his shoulder."
+  ]
+}

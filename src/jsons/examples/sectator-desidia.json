@@ -1,0 +1,99 @@
+{
+  "name": "Sectator Desidia",
+  "appearance": "Purple-skinned Tiefling woman with long platinum-blonde hair tied into twin ponytails, curved dark horns, elongated pointed ears, and glowing white eyes without visible pupils. Wears black armor with gold trim and a black choker. Has a constant sly smirk and an unnervingly confident expression.",
+  "images": ["/Examples/secta-1.png","/Examples/secta-2.png","/Examples/secta-3.png"],
+  "base": {
+    "alignment": "Lawful Evil",
+    "gender": "Female",
+    "eyes": "Pale white without an iris",
+    "size": "Medium",
+    "height": "170 cm",
+    "faith": "Pedi (Baalzebul)",
+    "hair": "Platinum blonde",
+    "skin": "Pale purple",
+    "age": "31",
+    "weight": "143 lbs"
+  },
+  "personality": {
+    "traits": [
+      "Deceit and careful manipulation are my favored weapons.",
+      "Sometimes I hid the truth just to fuck with people or see what happens.",
+      "I hate unclean, dirty places and disgusting creatures like rat's and bugs. They remind me of Maladomini and I despise it."
+    ],
+    "ideals": [
+      "Allies and friends in teothe are useful, but my only true allegiance is to Maladomini.",
+      "I will claw my way to the top, and If I fail, I'll at least fail trying.",
+      "I appear loyal to Baalzebul because he holds my leash, but true devotion is a currency I spend carefully. I’ll serve whoever brings me the greatest advantage in the end."
+    ],
+    "bonds": [
+      "Eknon, My Silver-Tongued Brother",
+      "Karon, My Lost Brother",
+      "Isabella, Our Infernal Caretaker",
+      "Baalzebul, The Lord of the Seventh",
+      "Neabaz, Herald of Lies",
+      "Barbatos, The Hidden Fiend(Marshal of Maladomini)",
+      "Shazer, Kilvenom, and Anitari, Former 'Circle of Help' Allies",
+      "Lilith, The Aspiring Queen of Maladomini",
+      "Derek, Balmar, and Clera, My Indebted Followers",
+      "Rival Fiendish Envoys, We aren’t so much allies or enemies as competing predators circling the same piece of prey.",
+      "Maladomini - The rotting domain of Baalzebul shaped me into the creature I am.",
+      "Sendai - where I orchestrated my first grand manipulation by toppling a local noble,It serves as a testament to my capability."
+    ],
+    "flaws": [
+      "Taint of Maladomini, My very presence might spread corruption. Crops fail, and a persistent plague of insects emerges wherever I linger too long.",
+      "Vermin and some other insects like me and they sometimes come to me.",
+      "My pride in my cunning can blind me to simpler solutions.",
+      "Baalzebul devil'lara yalan söyleyemediği için mortal'lara baya iyi yalan söylüyor.",
+      "When brute force is needed, I still attempt to outwit or negotiate, sometimes to my own peril."
+    ]
+  },
+  "background": [
+    "Rewarded (Teothe)"
+  ],
+  "relations": {
+    "organizations": [
+      "Maladomini",
+      "Circle of Help"
+    ],
+    "allies": [
+      "Eknon",
+      "Isabella",
+      "Neabaz",
+      "Barbatos",
+      "Shazer",
+      "Kilvenom",
+      "Anitari",
+      "Derek",
+      "Balmar",
+      "Clera"
+    ],
+    "enemies": [
+      "Rival Fiendish Envoys",
+      "Dispater Envoys",
+      "Mephistopheles Envoys",
+      "Lilith"
+    ]
+  },
+  "notes": [
+    "Because Baalzebul struggles to lie to other devils, Secta grew to follow him and became skilled at lying to mortals."
+  ],
+  "backstory": [
+    "“I am Sectator Desidia, Chosen of the Lord of Flies.”",
+    "That’s right Baalzebul himself selected me to represent Maladomini’s interests on the mortal plane of Teothe. You must be wondering, “Why me?” After all, any of the Nine Hells might send an unstoppable infernal champion. And yet, our esteemed Lord of the Seventh in his infinite wisdom (or so he claims), opted to dispatch a humble Tiefling illrigger like me, half-trained, and never tested in the fires of the Blood War.",
+    "Me and my brother's born in a noble family in Teothe but our family was targeted by a bloodcurse that made us born as tieflings, we were then cast aside as shame and send to hell where we belong. Or so Isabella told us, she was the devil that took care of us when we were baby's. She said this was not free of course she will ask something from each of us when the time is right, think it of as a emty contact with your name under it she said. I have no fucking idea what she want's to do tho, she could have made our souls bound to her ages ago, maybe she likes the freewill.  ",
+    "In my earlier years I and my two brother's Eknon and Karon were trying to make a name for ourself's, Nutah they called me allthough that name is forgotten to all except my closest. I was to go and join the bloodwar learn the unholy ways of a Illriger. Eknon had a silver tounge so he went right in to politics and learn delicate art of lying in order to bind mortal souls. Karon was still trying to figure himself out.  ",
+    "I was ready to join the bloodwar but learned that our lord never fully committed his legions to the cause. After my training I wandered Maladomini, trying to earn scarps, favors and knowledge. And watch my peers found their success, Karon fucked off to some other circle or maybe Isabella called her favor on him I don't know but I did not see him after some time like he vanished. And Eknon was a master manipulator who can take your underwear from you, and you would happily give it to him. And then I got called by the fucking over Lord himself.",
+    "“Nutah,” he said with his slimy tounge, “I have a… task for you.”",
+    "In a moment of divine clarity, he decided Maladomini must send an “envoy” to Teothe where the devils of all Nine Circles send someone for mortal souls, political influence, and secrets best left unspoken. My Master’s rivals send their greatest champions. Baalzebul? He sends me. Why? Perhaps he expects me to fail, to be a scapegoat if things go poorly. He might even be using me to sow confusion among the other devils’ plans. You can never be certain with that one; He can not lie but his schemes twist like the worm he is. Oh and he named me Sectator Desidia, the Chosen of the Lord of Flies… What a name huh. Still, I am the Chosen, and I will prove my worth.",
+    "When I first set foot on Teothe’s soil, the dreams started. Each night brought a feverish vision:I saw a handsome man with tiny pointed horns and transparent housefly wings, Neabaz. He said that he will hint at some tasks and 'opportunities' to help me achieve great power but the fucker is a Herald of Lies for a reason so I expect there is something for him.  ",
+    "Each time these nightmares ended, I’d wake in a cold sweat and sometimes discover a faintly glowing summoning circle etched into the ground nearby. On several occasions, an infernal trinket sat in the circle’s center. Once it was a small, buzzing amulet inscribed with the Lord of Flies’ seal; another time, a twisted rapier. Nothing Baalzebul or his herald bestows comes without strings, of course. Each item demanded a small sacrifice; my blood, or some secrets I have lerned. Sometimes it was simply an act of cruelty to prove my loyalty. The amulet’s power to command vermin, for instance, only awokeafterI quietly orchestrated the downfall of a local noble in Sendai. Every gift from Maladomini is a challenge.  ",
+    "In one of my Dreams I saw a Giant with crimson skin with green eyes in dark shadows.Ofcourse I immidietly knew it was barbatos trying to hide himself, he said some mortals knew how to summon him and he wants them gone. He said some rewars If I succed and told me to wait further instructions. Maybe I can learn how to summon him myself after I help him, he wont like it forsure but it can help in a pinch.",
+    "After some time, I discovered three other Tieflings with the same cunning glint in their eyes. Shazer, Kilvenom and Anitari. We joined forces as an adventuring party called'Circle of Help'. We created the party to become adventurer and help eachother, but the truth is, I am playing my own game, forging alliances, collecting favors, gleaning secrets. The mortals practically shower adventurers with privileges. This is how Baalzebul wants me to further his ends no doubt. After we became adventurer's we broke the party and went to our own ways. They had no I am the chosen of 7th circle.  ",
+    "While I was traveling I walked through a twisted wood clearing. Trees were fucked and ground was ruptured, desecreted. There was a rituel of worship. After looking around I noticed this is indeed a ritual and it is for Lilith done by witches, evil druids or some other occultists. The moment I understood that in the pentegram shadows started to gather. In the shadows a flaming portal then I see the most beautiful woman with crimson skin and white glowing eyes. It was Lilith.  ",
+    "I knew from my childhood that she want's Baalzebul's place and to rule Maladomini. I could see envy and sadism in her eyes and I felt trully powerless against it. I knew that only one hit from that god damn whip would end it all. When she saw I flinched she laughed and said; “So this is the mortal that has my fellow Lords aflutter. Are you truly worth all this clamor?” She let the question hang, her gaze roaming over me with predatory curiosity. “Fear not, little pawn of Maladomini. I don’t plan to break you… yet. But be careful where you pledge that trembling heart, my patience for Baalzebul’s pretenders is famously short.”  ",
+    "A flaming portal opened again on her back and she turned to the portal, She wore nothing, only shadows covered her private parts. She stopped before entering the portal and said; “Amuse me, servant of flies. Prove you’re more than a scrap on his table and we can work, or learn what happens to those who stand in the path of a true queen of the Hells.” Then she stepped in to the portal and disappeared… What the actual fuck just happened.  ",
+    "After that close call I continued my task, I’ve already acquired a small following of indebted locals around fex: a former smuggler with a gambling debt I purchased named Derek. A deckhand called Balmar who needed help finding his lost son. And a Potion seller named Clera needed some help gathering her ingreedients. They owe me now. They may not realize the depth of their indebtedness, but I’ll be sure to remind them when the time comes",
+    "The real danger, though, comes from rival fiendish delegates envoys of Dispater, Mephistopheles, and more. They’re not oblivious to my arrival, and they certainly won’t let me steal souls or blackmail lords without contest. More than once, I’ve found myself in the middle of a task, only to stumble into a swarm of devils loyal to my Master’s rivals. These encounters are not battles, and I am glad for it because they are stronger then me almost always, they are champions of their circle's after all. These encounter's are a stalemate of wits, where we circle each other, trade half-truths, and quietly sabotage each other’s leads.",
+    "Such is my life in Teothe: part wanderer, part envoy of the Seventh Hell, always looking over my shoulder for friend or foe. I carry the sting of the dreams, the hum of those infernal gifts, and a mounting list of favors owed and favors granted. I must prove my worth. After all, if I stumble, I know exactly who’ll catch me: Baalzebul, with a grin as cold and slippery as the rotted throne upon which he sits."
+  ]
+}

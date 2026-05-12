@@ -1,0 +1,82 @@
+{
+  "name": "Na’estte -!Xob Lebi Aiana",
+  "appearance": "Black-feathered kenku-like humanoid with a compact, rounded body and dense plumage. The figure has a dark avian face with a short beak, deep-set eyes, and an overall fluffy silhouette. Commonly associated with a slightly uncanny, heavy-feathered presence and multiple nicknames referencing its appearance and appetite. Carries a subtle predatory curiosity in posture and movement.",
+  "images": [
+    "/Examples/lebi-1.png",
+    "/Examples/lebi-2.png",
+    "/Examples/lebi-3.png"
+  ],
+  "base": {
+    "alignment": "Lawful Neutral",
+    "gender": "Male",
+    "eyes": "Gray",
+    "size": "Medium",
+    "height": "160 cm",
+    "faith": "Nmei / Lcaoc",
+    "hair": "",
+    "skin": "Feathers (midnight blue & black plumage with a few grays)",
+    "age": "32",
+    "weight": "132 lb"
+  },
+  "personality": {
+    "traits": [
+      "I'm probably smarter than everyone in the room. The vast knowledge that I earned from reading books is too great.",
+      "My goals are big but ı don't take shortcuts. I also don't meddle with powers too great.",
+      "I would never pay or accept a bribe. It's about having principles."
+    ],
+    "ideals": [
+      "I don't want to die. I2ve read so much about the history and I know how meaningless my lifespan is. I can't accept that.",
+      "In my quest to become immportal, I don't plan on making enemies. It's mandatory to not have enemies if you wanna live forever.",
+      "Because of my powerful memory and since I can mimic sounds and craftsmanship, I want to be living history.",
+      "I idolise some half-ancient for achieving what I want. From what I've read my favourite is Harutya."
+    ],
+    "bonds": [" "],
+    "flaws": [
+      "I can't help but argue with people when they start talking about the importance of honour.",
+      "I hold a grudge whenever a final plan is any different than what I suggested.",
+      "Even if I can handle a fight, I try to avoid it because I fear death.",
+      "I often fail to read a room"
+    ]
+  },
+  "background": ["Investigator (VRGtR)"],
+  "relations": {
+    "organizations": ["The Baked Beak"],
+    "allies": [
+      "The Bardresses",
+      "Gruieck Rerrehk Khuieqerk",
+      "Shirebelle",
+      "Rizzy Rockwell",
+      "Hothead Larry"
+    ],
+    "enemies": ["Cousin Okri: I try not to dwell too much on revenge. If my grudge is too big to be dismissed, I prefer my enemies less alive."]
+  },
+  "notes": [
+    "I have 6 siblings, 5 uncles, 4 aunts, 2 grandparents, 30 cousins and 7 nephews. Me and my cousins, who are the new adult generation, grew tired of it so we made an oath to have a children maximum each. Our family business is forging documents. All the family works in this organization in one way or the other. Some steal what will be duplicated, some duplicate it and some bargain with people of importance to turn it into coins. My role in the organization was to look at the duplicated letters/documents and discover the hidden meaning. My part of the organization mostly duplicated these documents without being noticed and put the original back into its place. This way the information we had wasn't declared compromised. When I decided to be an adventurer, I agreed that I'd still solve their puzzles whenever they reach out. (I didn't talk about my search for immortality)",
+    "Dad: He's a not-so-talented wizard. He does simple tricks at a moving circus. His appeal is that he is also a Kenku so it's mostly a freakshow. He also reports rumors back to The Baked Beak.",
+    "Mom: Proud Kenku. She is a bit racist and would never want me to marry a non-Kenku. She is especially good at forging unique cards some guilds use.",
+    "Cousin Chirper: Smart guy. A true go-getter. Currently Vice President of The Baked Beak. He is the one that supported me when I wanted to go venture into the world. For that I owe him.",
+    "Cousin Screechy: Great singer, she is currently working on a way to express hidden Auran messages while singing in Common. Her human lover Mary helps her by lending her voice.",
+    "Cousin Chirp-Chirp: Very attractive lady. When Cousin Girtna tried to court her she expressed her disgust of incest so I never shoot my chance. She is stealthy and often leaves for long missions.",
+    "Cousin Repepepepeater: Speaks 7 languages (Common, Auran, Elvish, Dwarvish, Giant, Aarakocra, Gnomish) Has the biggest vocal vocabulary from all the Kenku's I know (Large samples of sounds in single voice)",
+    "Cousin Go-o-go: Architect. A devout worshipper of Megm. Currently living and working in Horifell / Dwarven Union.",
+    "Nephew Ho-o-o: the kid is a prodigy. They're currently working on his passion for killing but his sneaking and stealing abilities are extreme.",
+    "Nephew Wo-o-o: She is the only person who knows about my quest for immortality in The Baked Beak. She plugged me with books so that I can learn spells.",
+    "Auntie Svalna: Head of Treasury. She is also the sole judge of marital and criminal decisions.",
+    "The Bardresses: 4 Bard women from various races and backgrounds.",
+    "Gruieck Rerrehk Khuieqerk: My Aarakocra mentor",
+    "Shirebelle: An elven wizard I respect and exchange knowledge with."
+  ],
+  "backstory": [
+    "I sought more than what my family had to offer so I started studying magic and history. My mentor was an Aarakocra named Gruieck Rerrehk Khuieqerk. His tower which contains all his research and books is in Uxibo. He is interested in the Underdark Library. Paladins Guild has sponsored his research thus far. A year ago he went into the Underdark. He knows the terrain and should be prepared for most things. He also has his group of adventurers. They used to be a party but they all retired.",
+    "I haven't heard from him ever since. I doubt he is dead but I don't think he is coming back either. He wanted the paladin's coin but he never intended to give them what they want. Before finalizing his research he dismissed me. At the time I didn't understand why but he just didn't want me involved when he fucked them over. I spent a lot of time around him and he knew many words. He spoke about basically everything. I use his voice as mine. Sometimes when I can't express myself in his voice, I reconsider what I want to say. If a wise man like him never needed to say that, maybe I don't need to either. I never openly mentioned that I plan on becoming immortal but I expressed my interest in defying death. I'll eventually have to find him or the library because that's where I think I should start.",
+    "Right before leaving the service of Mr. Khuieqerk I met an elf named Shirebelle. I then started adventuring. In our early days, Shirebelle was also studying the ways of the arcane so we spent some time together, teaching each other our learnings. With each other's guide learning the spells was easier and we spent enough time to make sense of each other's notes. We occasionally talk through sendings, we plan to meet and teach each other again once we both improve a bit more. Last time we spoke she told me that she was considering marrying a wealthy elf who approached her.",
+    "I value perceiving life a lot. Unkillable beings in confinement, strong gods in starvation and such concept are not what I consider living. I see the beauty in seeing things and my maturity in the concept can't be mentioned without giving credit to Bardresses. These 4 bard ladies once took care of me when I was falsely accused of stealing an expensive spellcasting focus. The situation happened so quickly, a few guards started searching me when I was minding my own business just shopping in Dwarven Union / Lifenhal. There was a sale because of a recent naval war. Guards came and asked to search me and found the orb on me. I still don't know if it was the guards or someone else that planted it. I can't imagine anyone having a motive to do such a thing either. I tried speaking some sense into the guards but they didn't answer to logic. At that moment these kind ladies interrupted the hasty guards. I got a fair trial and was proven innocent.",
+    "After that, I spent some time with them since they were also traveling to Elkian Dominion. Their lead was an Air Genasi named Wind Breeze (it translates terribly into common). She spoke Auran just like me and we enjoyed speaking our rare tongue. Their philosophy of experiencing everything; good and bad, pain and pleasure have changed me forever. They were private about their objective in Elkia which I respected. I mistakenly found out that they were traveling to Fex in specific, but I never mentioned it or tried to figure out why. That information wasn't for me to experience.",
+    "For a short time, I was hired to write a report about the living standards in Mnioer by Lord Patswips. They were hearing a lot of complaints from the residents and wanted to know why. My findings were not appreciated because of the possible costs to fix them and I was told to no longer pursue it. When I explained that I will no longer be evaluating the situation I expected an outrage from the locals but they were kind. They thanked me even though I haven't been able to change anything and gave me some gold and supplies as a parting gift.",
+    "One of the most interesting people I've met was a human named Hothead Larry. He has a huge mansion 1.5 days away from Uxibo and once hired me to help him capture some animal and transport it to his home. When we successfully got there, He showed me his collection. In different cages (Not small ones, most animals seemed to have enough space to run around) he had dozens of different animals. For some, he set up the temperature and humidity accordingly. There were things I have never seen before and I made note of their appearance and behavior. I plan on visiting him again once he reaches out to me for a job.",
+    "Once I applied to Pearl Plunderers because of their access to some items. I was planning on using their resources to strengthen myself. When we interviewed I learned that their conditions were too harsh. They wanted me to be way too devoted, take orders and go fight their wars. The person who was interviewing me was a strong wizard so I judged his ethics and called him a person with 'twisted morals' because his passion wasn't in a place I can respect. We argued and I left. I usually avoid getting in trouble but seeing such a successful sage not prioritizing the study of the arcane was upsetting. Luckily for me, he or the guild didn't cause me any trouble. At the time I didn't think about the potential threat to my life if they did, but I'm glad it didn't turn out that way.",
+    "There is a sightseer in Akairo. People say that it(?) can tell the future, your intentions and a lot more. I expected it to be a scam but such successful scams are interesting to me so I went there. Their cheapest package was 80 gold. I was baffled by how expensive it was but it(?) told me about my search for immortality. I couldn't believe my ears. This is such private information, I shared it with a handful of people at most and yet they knew it. I can't quite tell what they were because of the lack of lighting in the room, the smoke and the hood they were wearing. When I asked if I'll achieve that, they gave me a vague response about change. My memory isn't serving me right when I try to recall it but the main point was that my search would change me so much that the one to achieve immortality couldn't call itself me. My package didn't allow for further questioning so I went ahead and started saving some money for their most expensive sightseeing service. When I returned, the shop was no longer there and I couldn't find any leads.",
+    "I met Rizzy Rockwell at the Dwarven Union Train. We both wanted to see this miraculous technologic creation for our reasons. We got along well and we've been adventuring together since. He gained my trust so I told him about my quest to become immortal. We're a good and inseparable pair. We were hired by the Nelruon family to investigate their family's history. Specifically, they want us to discover the famous opera artist Amoroth. It's said that her last crescendo holds some great treasure. Whenever they find any hints of this composition, they reach out to us. It can be a number of different things; letters to old lovers, pages from diaries, oil paintings etc... We investigate these to find pieces of the said Last Crescendo.",
+    "Rizzy Rockwell and I once argued with a group of Frostforge miners. I commented on the fact that it's a waste to shorten their lives like this and Rizzy Rockwell didn't stay silent either. They got really angry and their chief in all seriousness said 'On my honor as a Frostforge Miner, I will have your lives'. They found us a few times and we tried to talk our way out of it. It seems that they're unconvinceable."
+  ]
+}
