@@ -17,7 +17,7 @@ export default function DeityPopover({ name }: { name: string }) {
       style={{
         maxWidth: 300,
         maxHeight: 300,
-        display: "block"
+        display: "block",
       }}
     />
   );
@@ -29,13 +29,11 @@ export default function DeityPopover({ name }: { name: string }) {
           content={imagePreview}
           trigger="hover"
           placement="right"
-          overlayInnerStyle={{ padding: 0 }}
+          styles={{
+            container: { padding: 0 },
+          }}
         >
-          <Avatar
-            size={64}
-            src={imageSrc}
-            style={{ cursor: "zoom-in" }}
-          />
+          <Avatar size={64} src={imageSrc} style={{ cursor: "zoom-in" }} />
         </Popover>
 
         <div>

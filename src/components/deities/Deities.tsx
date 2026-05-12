@@ -1,167 +1,52 @@
-import { Typography, Avatar, Tooltip, Space, Divider, Card } from "antd";
+import { Typography, Image, Tooltip, Space, Card } from "antd";
+import { useState } from "react";
 
 const { Title } = Typography;
 
+const domainIcons: Record<string, string> = {
+  War: "war",
+  Nature: "nature",
+  Trickery: "trickery",
+  Fundamental: "fundamental",
+  Knowledge: "knowledge",
+  Tempest: "tempest",
+  Life: "life",
+  Light: "light",
+  Death: "death",
+};
+
 /**
  * Returns a domain image based on domain name.
- * @generator
- * @param name
- * @returns Tooltip(antd) > Avatar(antd)
  */
-function GetDomainObject(name: string) {
-  switch (name) {
-    case "War":
-      return (
-        <Tooltip placement="left" color={"#630436"} title={"War"}>
-          {" "}
-          <Avatar
-            // title="War"
-            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
-            src={"./Icons/Domains/war.png"}
-            alt={""}
-            draggable={false}
-            shape="square"
-          />
-        </Tooltip>
-      );
-    case "Nature":
-      return (
-        <Tooltip placement="left" color={"#630436"} title={"Nature"}>
-          {" "}
-          <Avatar
-            // title="Nature"
-            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
-            src={"./Icons/Domains/nature.png"}
-            alt={""}
-            draggable={false}
-            shape="square"
-          />
-        </Tooltip>
-      );
-    case "Trickery":
-      return (
-        <Tooltip placement="left" color={"#630436"} title={"Trickery"}>
-          {" "}
-          <Avatar
-            // title="Trickery"
-            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
-            src={"./Icons/Domains/trickery.png"}
-            alt={""}
-            draggable={false}
-            shape="square"
-          />
-        </Tooltip>
-      );
-    case "Fundamental":
-      return (
-        <Tooltip placement="left" color={"#630436"} title={"Fundamental"}>
-          {" "}
-          <Avatar
-            // title="Fundamental"
-            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
-            src={"./Icons/Domains/fundamental.png"}
-            alt={""}
-            draggable={false}
-            shape="square"
-          />
-        </Tooltip>
-      );
-    case "Knowledge":
-      return (
-        <Tooltip placement="left" color={"#630436"} title={"Knowledge"}>
-          {" "}
-          <Avatar
-            // title="Knowledge"
-            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
-            src={"./Icons/Domains/knowledge.png"}
-            alt={""}
-            draggable={false}
-            shape="square"
-          />
-        </Tooltip>
-      );
-    case "Tempest":
-      return (
-        <Tooltip placement="left" color={"#630436"} title={"Tempest"}>
-          {" "}
-          <Avatar
-            // title="Tempest"
-            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
-            src={"./Icons/Domains/tempest.png"}
-            alt={""}
-            draggable={false}
-            shape="square"
-          />
-        </Tooltip>
-      );
-    case "Life":
-      return (
-        <Tooltip placement="left" color={"#630436"} title={"Life"}>
-          {" "}
-          <Avatar
-            // title="Life"
-            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
-            src={"./Icons/Domains/life.png"}
-            alt={""}
-            draggable={false}
-            shape="square"
-          />
-        </Tooltip>
-      );
-    case "Light":
-      return (
-        <Tooltip placement="left" color={"#630436"} title={"Light"}>
-          {" "}
-          <Avatar
-            // title="Light"
-            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
-            src={"./Icons/Domains/light.png"}
-            alt={""}
-            draggable={false}
-            shape="square"
-          />
-        </Tooltip>
-      );
-    case "Death":
-      return (
-        <Tooltip placement="left" color={"#630436"} title={"Death"}>
-          {" "}
-          <Avatar
-            // title="Death"
-            size={{ xs: 48, sm: 48, md: 48, lg: 60, xl: 60, xxl: 60 }}
-            src={"./Icons/Domains/death.png"}
-            alt={""}
-            draggable={false}
-            shape="square"
-          />
-        </Tooltip>
-      );
-    default:
-      return "Error";
-  }
+function GetDomainObject(name: keyof typeof domainIcons) {
+  return (
+    <Tooltip placement="left" color="#630436" title={name} key={name}>
+      <Image
+        src={`./Icons/Domains/${domainIcons[name]}.png`}
+        alt={name}
+        width={48}
+        height={48}
+        preview={false}
+        style={{
+          borderRadius: 6,
+          objectFit: "cover",
+        }}
+      />
+    </Tooltip>
+  );
 }
 
 /**
- * Splits multiple domains by ", " and pushes a GetDomainObject image into an array. Used for deities, some can have multiple domains.
- * @generator
- * @param data
- * @returns array
+ * Splits multiple domains by ", " and returns domain icons.
  */
 function GetDomains(data: string) {
-  let splitData = data.split(", ");
-  let result = [];
-  for (let i = 0; i < splitData.length; i++) {
-    result.push(GetDomainObject(splitData[i]));
-  }
-  return result;
+  return data
+    .split(", ")
+    .map((d) => GetDomainObject(d as keyof typeof domainIcons));
 }
 
 /**
- * Creates the inline deity entry on Deities page.
- * @tutorial
- * @param imageSrc
- * @param descriptionProps
- * @returns div
+ * Deity card component
  */
 export default function Deity({
   imageSrc,
@@ -170,24 +55,62 @@ export default function Deity({
   imageSrc: string;
   descriptionProps: { title: string; body: string; domain: string };
 }) {
+  const [previewOpen, setPreviewOpen] = useState(false);
+
+  const img = encodeURI(imageSrc);
+
   return (
     <div className="h-full p-2">
-      <Card className="w-full h-full relative pb-16">
-        {" "}
-        {/* Add `relative` and padding-bottom */}
-        <Space size="small" className="mb-2">
-          <Avatar
-            size={{ xs: 64, sm: 64, md: 64, lg: 80, xl: 100, xxl: 120 }}
-            src={imageSrc}
-            alt={descriptionProps.title}
-            draggable={false}
-            onClick={() => window.open(imageSrc, "_blank")}
-            className="cursor-pointer"
-          />
-          <Title level={3}>{descriptionProps.title}</Title>
-        </Space>
-        <p>{descriptionProps.body}</p>
-        <div className="absolute bottom-0 my-4">
+      <Card className="w-full h-full relative pb-16 overflow-hidden">
+        {/* Background image layer */}
+        <div
+          className="absolute inset-0 cursor-pointer"
+          onClick={() => setPreviewOpen(true)}
+          style={{
+            backgroundImage: `
+              linear-gradient(
+                to top left,
+                rgba(24, 28, 36, 0.15) 0%,
+                rgba(24, 28, 36, 0.65) 40%,
+                rgba(24, 28, 36, 0.92) 70%,
+                rgba(24, 28, 36, 1) 100%
+              ),
+              url("${img}")
+            `,
+            backgroundSize: "cover",
+            backgroundPosition: "bottom right",
+            backgroundRepeat: "no-repeat",
+            opacity: 0.45,
+          }}
+        />
+
+        {/* Content */}
+        <div className="relative">
+          <Space size="small" className="mb-2">
+            <Image
+              src={img}
+              alt={descriptionProps.title}
+              width={80}
+              height={80}
+              preview={{
+                mask: false,
+              }}
+              style={{
+                borderRadius: 8,
+                objectFit: "cover",
+                cursor: "pointer",
+              }}
+              onClick={() => setPreviewOpen(true)}
+            />
+
+            <Title level={3}>{descriptionProps.title}</Title>
+          </Space>
+
+          <p>{descriptionProps.body}</p>
+        </div>
+
+        {/* Domains */}
+        <div className="absolute bottom-0 my-4 flex gap-2">
           {GetDomains(descriptionProps.domain)}
         </div>
       </Card>
