@@ -73,7 +73,7 @@ const factionsData: DataType[] = [
   "factionEnemies": [],
   "factionAllies": ["Black Scripture","Artificer's Union"],
   "factionDetail": [
-    "They preserve whatever was left regarding Ancients of Teothe, mostly vague information from that time.",
+    "They preserve whatever was left regarding Pioneers of Teothe, mostly vague information from that time.",
     "Formed after Sivirron Paracix's guide and within the Blue Era."
   ],
   "factionHQ": "",

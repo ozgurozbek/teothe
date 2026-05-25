@@ -411,7 +411,7 @@ export default function WhatAreTheseCloversContent() {
               level: 2,
               text: [
                 "We finally arrived at Akuzar. Dergrog is in a horrible state and I honestly can't find anything to do, to help him. I've even done the ritual and contacted our lord, which ended as he belittled my efforts. Does he not want to save him? I thought Dergrog was one of us, dwarves are not known to cross with their beliefs, maybe he truly betrayed us?",
-                "First time I spoke with Khadgar today. We have been traveling together but he is such a depressed gnome scholar. His studies seem greater than mine, he even has an Ancient's Book. Good stuff. I asked for his input on Dergrog but he had none. Guess he's just not a well educated practitioner.",
+                "First time I spoke with Khadgar today. We have been traveling together but he is such a depressed gnome scholar. His studies seem greater than mine, he even has an Pioneer's Book. Good stuff. I asked for his input on Dergrog but he had none. Guess he's just not a well educated practitioner.",
               ],
             }}
           />

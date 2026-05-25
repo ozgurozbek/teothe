@@ -58,10 +58,10 @@ export default function LibraryContent() {
           />
           <GetBook
             bookProps={{
-              url: "library/summary-on-ancients",
-              image: "/Books/summary-on-ancients.webp",
+              url: "library/summary-on-pioneers",
+              image: "/Books/summary-on-pioneers.webp",
               author: "",
-              name: "Summary On Ancients",
+              name: "Summary On Pioneers",
             }}
           />
           <GetBook
@@ -82,18 +82,18 @@ export default function LibraryContent() {
           />
           <GetBook
             bookProps={{
-              url: "library/last-ancient-magic",
-              image: "/Books/last-ancient-magic.webp",
+              url: "library/last-pioneer-magic",
+              image: "/Books/last-pioneer-magic.webp",
               author: "Unknown; Fiction",
-              name: "Last Ancient Magic",
+              name: "Last Pioneer Magic",
             }}
           />
           <GetBook
             bookProps={{
-              url: "library/known-half-ancients",
-              image: "/Books/known-half-ancients.png",
+              url: "library/known-half-pioneers",
+              image: "/Books/known-half-pioneers.png",
               author: "A Collection of Tomes, Co-Authored by Yenn",
-              name: "Known Half-Ancients",
+              name: "Known Half-Pioneers",
             }}
           />
           <GetBook

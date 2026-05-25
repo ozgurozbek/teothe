@@ -21,8 +21,8 @@ const booksComponents: Record<string, ComponentType<{}>> = {
   "HTTFBAPWDKTABBTATTKEBIRTDANAATIEWYANTLTMVCRN": dynamic(() => import('@/components/library/books/HTTFBAPWDKTABBTATTKEBIRTDANAATIEWYANTLTMVCRN')),
   "jeremiahs-cookbook": dynamic(() => import('@/components/library/books/jeremiahs-cookbook')),
   "johken": dynamic(() => import('@/components/library/books/johken')),
-  "known-half-ancients": dynamic(() => import('@/components/library/books/known-half-ancients')),
-  "last-ancient-magic": dynamic(() => import('@/components/library/books/last-ancient-magic')),
+  "known-half-pioneers": dynamic(() => import('@/components/library/books/known-half-pioneers')),
+  "last-pioneer-magic": dynamic(() => import('@/components/library/books/last-pioneer-magic')),
   "legend-of-rerartif": dynamic(() => import('@/components/library/books/legend-of-rerartif')),
   "mirror-of-erised": dynamic(() => import('@/components/library/books/mirror-of-erised')),
   "mujina-army-and-the-serpents": dynamic(() => import('@/components/library/books/mujina-army-and-the-serpents')),
@@ -30,7 +30,7 @@ const booksComponents: Record<string, ComponentType<{}>> = {
   "poem-on-akash": dynamic(() => import('@/components/library/books/poem-on-akash')),
   "rise-of-magnus": dynamic(() => import('@/components/library/books/rise-of-magnus')),
   "song-of-catastrophe": dynamic(() => import('@/components/library/books/song-of-catastrophe')),
-  "summary-on-ancients": dynamic(() => import('@/components/library/books/summary-on-ancients')),
+  "summary-on-pioneers": dynamic(() => import('@/components/library/books/summary-on-pioneers')),
   "understanding-of-divine": dynamic(() => import('@/components/library/books/understanding-of-divine')),
   "warriors-guild-and-the-red-army": dynamic(() => import('@/components/library/books/warriors-guild-and-the-red-army')),
   "what-is-shock-collection": dynamic(() => import('@/components/library/books/what-is-shock-collection')),
@@ -64,7 +64,7 @@ export const generateMetadata = async ({ params }: PageProps): Promise<Metadata>
     },
     "legend-of-w-steram": {
       title: "Legend of W. Steram",
-      description: "This book critiques the legend of Steram, analyzing his heroic journey to seal ancient magical gates while exploring Teothe, themes of flawed heroism, destiny, and the cultural significance of myth in shaping mortal and immortal narratives.",
+      description: "This book critiques the legend of Steram, analyzing his heroic journey to seal Pioneer magical gates while exploring Teothe, themes of flawed heroism, destiny, and the cultural significance of myth in shaping mortal and immortal narratives.",
     },
     "divine-tales-1": {
       title: "Divine Tales 1",
@@ -96,7 +96,7 @@ export const generateMetadata = async ({ params }: PageProps): Promise<Metadata>
     },
     "dated-myth-of-creation": {
       title: "The Dated Myth of Creation",
-      description: "A collection of ancient myths that offer different perspectives on the origins of the universe."
+      description: "A collection of Pioneer myths that offer different perspectives on the origins of the universe."
     },
     "fishermen-uprising": {
       title: "Fishermen Uprising",
@@ -122,13 +122,13 @@ export const generateMetadata = async ({ params }: PageProps): Promise<Metadata>
       title: "Johken",
       description: "Tales of the ones that came before."
     },
-    "known-half-ancients": {
-      title: "Known Half-Ancients",
-      description: "A detailed study of the descendants of the Ancients, their history, and their struggles to find their place in a world that no longer remembers their power."
+    "known-half-pioneers": {
+      title: "Known Half-Pioneers",
+      description: "A detailed study of the descendants of the Pioneers, their history, and their struggles to find their place in a world that no longer remembers their power."
     },
-    "last-ancient-magic": {
-      title: "The Last Ancient Magic",
-      description: "The story of a young half-Ancient’s quest to uncover the forgotten secrets of immortality and the magic of her ancestors."
+    "last-pioneer-magic": {
+      title: "The Last Pioneer Magic",
+      description: "The story of a young half-Pioneer's quest to uncover the forgotten secrets of immortality and the magic of her ancestors."
     },
     "legend-of-rerartif": {
       title: "Legend of Rerartif",
@@ -158,9 +158,9 @@ export const generateMetadata = async ({ params }: PageProps): Promise<Metadata>
       title: "Song of Catastrophe",
       description: "A haunting melody that foretells a coming disaster."
     },
-    "summary-on-ancients": {
-      title: "Summary on Ancients",
-      description: "An in-depth summary of the ancient civilization, its downfall, and its legacy."
+    "summary-on-pioneers": {
+      title: "Summary on Pioneers",
+      description: "An in-depth summary of the Pioneer civilization, its downfall, and its legacy."
     },
     "understanding-of-divine": {
       title: "Understanding of the Divine",
@@ -193,8 +193,8 @@ export const generateStaticParams = async () => {
   const booksList = ['what-are-these-clovers','we-are-pathetic-the-helpless-in-the-eyes-of-the-divine','legend-of-w-steram','divine-tales-1','dufrene-s-notes',
     'adventurers-guide-to-underdark-collection','akin-and-the-gold-statue','assassination-of-narra','clockwork-dreams','complex-cosmology',
     'dated-myth-of-creation','fishermen-uprising','fuck-marry-kill','general-jets-reform','HTTFBAPWDKTABBTATTKEBIRTDANAATIEWYANTLTMVCRN','jeremiahs-cookbook',
-    'johken','known-half-ancients','last-ancient-magic','legend-of-rerartif','mirror-of-erised','mujina-army-and-the-serpents','my-study-of-choll','poem-on-akash','rise-of-magnus',
-    'song-of-catastrophe','summary-on-ancients','understanding-of-divine','warriors-guild-and-the-red-army','what-is-shock-collection','epipremnum'
+    'johken','known-half-pioneers','last-pioneer-magic','legend-of-rerartif','mirror-of-erised','mujina-army-and-the-serpents','my-study-of-choll','poem-on-akash','rise-of-magnus',
+    'song-of-catastrophe','summary-on-pioneers','understanding-of-divine','warriors-guild-and-the-red-army','what-is-shock-collection','epipremnum'
   ]; // Add all dynamic book names here
 
   return booksList.map(book => ({

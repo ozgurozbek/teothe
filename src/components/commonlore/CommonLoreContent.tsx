@@ -71,12 +71,12 @@ export default function CommonLoreContent() {
         <Divider />
         <SimpleContent
           contentProps={{
-            title: "Ancients",
+            title: "Pioneers",
             text: [
-              "Ancients all take their power from Mceeju so all are close to gods in power. People of Teothe, the ones who know about ancients, believe all of them to be perished over time. ",
+              "Pioneers all take their power from Mceeju so all are close to gods in power. People of Teothe, the ones who know about Pioneers, believe all of them to be perished over time. ",
               "An old civilization that has evolved and found great meaning in both magic and immortality. They made immortality possible and destroyed every meaning they've found within it. With their last magic, they left a warning for future, unfortunately too difficult to grasp, lacking their understanding of magic, life and time. They managed to process light, and believed to achieve a hive-mind society. Nobody knows how they disappeared.",
-              "Their offsprings from humans tend to get a disoriented body with partial ancient bodyparts. They live for about a millenia years without aging beyond their thirties, body-wise. They are sterile. Even though some were legends, no half-ancient have been spotted in Teothe in centuries.",
-              "The last Ancient Relic dwindled out of existance, causing the Blue Era in Teothe. Steram Wayogo, known as the last half-ancient embarked on a journey across countless marbles sealing Ancient Gates, that once provided a unique magical flow to the Material Planes.",
+              "Their offsprings from humans tend to get a disoriented body with partial pioneer bodyparts. They live for about a millenia years without aging beyond their thirties, body-wise. They are sterile. Even though some were legends, no half-Pioneer have been spotted in Teothe in centuries.",
+              "The last Pioneer Relic dwindled out of existance, causing the Blue Era in Teothe. Steram Wayogo, known as the last half-Pioneer embarked on a journey across countless marbles sealing Pioneer Gates, that once provided a unique magical flow to the Material Planes.",
             ],
           }}
         />

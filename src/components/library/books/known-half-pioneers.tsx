@@ -5,10 +5,10 @@ import SimpleBookContent from "@/components/library/SimpleBookCon";
 import { Card, Button } from "antd";
 import { DoubleRightOutlined } from "@ant-design/icons";
 
-export default function KnownHalfAncientsContent() {
+export default function KnownHalfPioneersContent() {
   return (
     <section>
-      <GetCrumbs path={"Teothe,Books,Known Half-Ancients"} />
+      <GetCrumbs path={"Teothe,Books,Known Half-Pioneers"} />
       <Card
         variant="outlined"
         className="w-full bg-[url('/books/main.svg')] bg-cover bg-center"
@@ -16,7 +16,7 @@ export default function KnownHalfAncientsContent() {
         <article className="h-[70vh] overflow-y-scroll no-scrollbar m-auto max-w-[50rem] text-justify px-8 py-2 backdrop-blur-lg">
           <SimpleBookContent
             contentProps={{
-              title: "Known Half-Ancients",
+              title: "Known Half-Pioneers",
               text: [
 `All of these are written based on rumors and
 even if they are true most of these entities
@@ -24,7 +24,7 @@ probably don't want to be encountered by
 adventurers. Just a reminder.
 Harutya: Most famous one. Travels between
 cities looking for odds and ends. Most cities
-banned her because she is half ancient. She
+banned her because she is Half-Pioneer. She
 camps outside cities and since folk is always
 interested in her she can manage to do some
 trade.
@@ -34,13 +34,13 @@ unknown place, some state in a plane called
 Thaum, little people come across him and none
 leave with their legs intact.
 Hemhapius: Jumped into a volcano and lost his
-non-ancient body parts. The way he looks is
+non-Pioneer body parts. The way he looks is
 disturbing even for the undead. It's believed that
 he has been into machinery for the last few
 hundred years and dungeons before that. He
 leaves light-made artifacts in machinery
 dungeons. Artifacts are so out of this world, it's
-no doubt that some ancient has done it.
+no doubt that some Pioneer has done it.
 Akalea: Great Faith Healer. Only appears when a
 newborn child is ill. Sometimes even before the
 family knows the child is sick. These children live
@@ -190,13 +190,13 @@ able to wield any weapon with deadly precision
 and to be able to survive even the most brutal of
 battles. Many young warriors seek out his
 tutelage in order to become as powerful as he is.
-Galenos: A half-ancient with the blood of a
+Galenos: A Half-Pioneer with the blood of a
 dragon and a human. He wields immense
 strength and can breathe fire. He is fiercely
 independent and often seen as a lone wolf, but
 his loyalty to those he cares about is unshakable.
 He is a powerful warrior and is feared by many.
-Niamh: A half-ancient with the blood of a
+Niamh: A Half-Pioneer with the blood of a
 mermaid and a human. She has the ability to
 breathe underwater and communicate with sea
 creatures. She is a skilled sorceress and uses her
@@ -204,7 +204,7 @@ powers to protect the oceans and its inhabitants.
 Niamh is a peaceful and compassionate being,
 but she can also be fiercely protective of her
 home and those she cares about.
-Cyprian: A half-ancient with the blood of a satyr
+Cyprian: A Half-Pioneer with the blood of a satyr
 and a human. He has the ability to control plants
 and animals, and can also manipulate the
 elements. He is known for his mischievous
@@ -212,7 +212,7 @@ nature and loves to play pranks on those around
 him. However, he also has a strong sense of
 justice and will use his powers to protect the
 innocent and fight against injustice.
-Surtur the Flame-Bringer: A powerful halfancient with a fiery disposition, Surtur is said to
+Surtur the Flame-Bringer: A powerful Half-Pioneer with a fiery disposition, Surtur is said to
 have been born from the union of a fire giant and
 a powerful elemental being. He wields a massive
 sword made of molten lava, and is said to have
@@ -226,7 +226,7 @@ in combat. He is also said to have a deep
 understanding of the elemental planes, and is
 able to summon and control powerful elemental
 creatures to do his bidding.
-Shadowblade: The half-ancient known as the
+Shadowblade: The Half-Pioneer known as the
 \"Shadowblade\" is a master of stealth and
 deception, able to move unseen and strike with
 deadly precision. They possess the ability to

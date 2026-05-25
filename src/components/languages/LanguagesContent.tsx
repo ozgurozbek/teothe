@@ -18,7 +18,7 @@ import elven from "@/jsons/languages/Elven.json";
 import gith from "@/jsons/languages/Gith.json";
 import giant from "@/jsons/languages/Giant.json";
 import draconic from "@/jsons/languages/Draconic.json";
-import halfancient from "@/jsons/languages/HalfAncient.json";
+import halfpioneer from "@/jsons/languages/HalfPioneer.json";
 import goblin from "@/jsons/languages/Goblin.json";
 import abyssal from "@/jsons/languages/Abyssal.json";
 import orcish from "@/jsons/languages/Orcish.json";
@@ -88,7 +88,7 @@ export default function LanguagesContent() {
     Gith: gith,
     Giant: giant,
     Draconic: draconic,
-    "Half-Ancient": halfancient,
+    "Half-Pioneer": halfpioneer,
     Goblin: goblin,
     Orcish: orcish,
     Drow: drow,
