@@ -39,7 +39,7 @@ export default function RootLayout({
         />
         <meta name="theme-color" content="#630436" />
         <meta name="apple-mobile-web-app-status-bar" content="#90cdf4" />
-        <link rel="apple-touch-icon" href="/dragon.png" />
+        <link rel="apple-touch-icon" href="/icon.png" />
       </head>
       <body
         id="layout-body"
