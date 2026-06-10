@@ -59,7 +59,7 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/summary-on-pioneers",
-              image: "/Books/summary-on-pioneers.webp",
+              image: "/Books/summary-on-pioneers.png",
               author: "",
               name: "Summary On Pioneers",
             }}
@@ -83,7 +83,7 @@ export default function LibraryContent() {
           <GetBook
             bookProps={{
               url: "library/last-pioneer-magic",
-              image: "/Books/last-pioneer-magic.webp",
+              image: "/Books/last-pioneer-magic.png",
               author: "Unknown; Fiction",
               name: "Last Pioneer Magic",
             }}
