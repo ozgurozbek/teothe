@@ -447,8 +447,7 @@ const factionsData: DataType[] = [
   "factionEnemies": ["Slayer's Take"],
   "factionAllies": ["Horizon Conglomerate", "Crimson Caravan Company", "Meadowcrew", "Inthizilelgghinn", "Thieve's Guild"],
   "factionDetail": [
-    "Guild for Druids who belong to a circle and have ventured to Du'Ora at least once. Members must agree with the guild's views on pollution, destruction, and preservation.",
-    "Includes branches such as the Kaio branch."
+    "Maintains an extensive forgery and intelligence operation. Kenku here secure influence, uncover secrets, and generate profit through careful negotiation and discreet dealings, providing expertise whenever particularly difficult ciphers or puzzles need to be solved."
   ],
   "factionHQ": "",
   "factionKey": 31
