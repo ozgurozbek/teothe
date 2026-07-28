@@ -18,11 +18,17 @@ const domainIcons: Record<string, string> = {
 /**
  * Returns a domain image based on domain name.
  */
-function GetDomainObject(name: keyof typeof domainIcons) {
+function GetDomainObject(name: string) {
+  const icon = domainIcons[name];
+
+  if (!icon) {
+    return null;
+  }
+
   return (
     <Tooltip placement="left" color="#630436" title={name} key={name}>
       <Image
-        src={`./Icons/Domains/${domainIcons[name]}.png`}
+        src={`./Icons/Domains/${icon}.png`}
         alt={name}
         width={48}
         height={48}
@@ -37,12 +43,10 @@ function GetDomainObject(name: keyof typeof domainIcons) {
 }
 
 /**
- * Splits multiple domains by ", " and returns domain icons.
+ * Returns domain icons from domain array.
  */
-function GetDomains(data: string) {
-  return data
-    .split(", ")
-    .map((d) => GetDomainObject(d as keyof typeof domainIcons));
+function GetDomains(data: string[]) {
+  return data.map((domain) => GetDomainObject(domain));
 }
 
 /**
@@ -53,7 +57,11 @@ export default function Deity({
   descriptionProps,
 }: {
   imageSrc: string;
-  descriptionProps: { title: string; body: string; domain: string };
+  descriptionProps: {
+    title: string;
+    body: string;
+    domains: string[];
+  };
 }) {
   const [previewOpen, setPreviewOpen] = useState(false);
 
@@ -111,7 +119,7 @@ export default function Deity({
 
         {/* Domains */}
         <div className="absolute bottom-0 my-4 flex gap-2">
-          {GetDomains(descriptionProps.domain)}
+          {GetDomains(descriptionProps.domains)}
         </div>
       </Card>
     </div>

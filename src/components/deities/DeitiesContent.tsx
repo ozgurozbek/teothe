@@ -1,65 +1,61 @@
 "use client";
 
-import { Card, Col, Divider, Row, Skeleton } from "antd";
+import { Col, Divider, Row, Card } from "antd";
 import Deity from "@/components/deities/Deities";
 import GetCrumbs from "Comp/NavigationCrumb";
 import SimpleContent from "Comp/SimpleCon";
-import useSWR from "swr";
 
-interface DataType {
-  deityDomains: string;
-  deityTitle: string;
-  deityName: string;
-  deityText: string;
-  deityId: number;
+import deities from "@/jsons/deities/deities.json";
+
+interface DeityData {
+  order: number;
+  id: string;
+  rank: string;
+  name: string;
+  image: string;
+  description: string;
+  domains: string[];
 }
 
-/**
- * Gets Deity data and passes the props to Deity component
- * @see Deity
- * @generator
- * @param rank The deity rank as string
- * @returns Deity component array
- */
 function GetDeities(rank: string) {
-  /**
-   * Fetcher function for API requests.
-   * @param args - RequestInfo object containing information about the request.
-   * @returns Promise resolving to the parsed JSON response.
-   */
-  // data is loaded from src/lib/deities to keep one canonical source
-  const data = require("@/lib/deities").DEITIES as DataType[];
+  const data = deities as DeityData[];
 
-  data.sort((a: DataType, b: DataType) => a.deityId - b.deityId);
+  const renderedDeities = data
+    .filter((item) => item.rank === rank)
+    .sort((a, b) => a.order - b.order)
+    .map((item) => (
+      <Col
+        key={item.id}
+        xs={24}
+        sm={24}
+        md={12}
+        lg={8}
+        xl={8}
+        xxl={6}
+      >
+        <Deity
+          imageSrc={
+            item.image
+              ? `./Deities/${item.image}`
+              : `./Deities/${item.name}.png`
+          }
+          descriptionProps={{
+            title: item.name,
+            body: item.description,
+            domains: item.domains,
+          }}
+        />
+      </Col>
+    ));
 
-  let renderedDeities = [];
-  for (let item of data) {
-    if (item.deityTitle === rank) {
-      renderedDeities.push(
-        <Col xs={24} sm={24} md={12} lg={8} xl={8} xxl={6}>
-          <Deity
-            imageSrc={"./Deities/" + item.deityName + ".png"}
-            descriptionProps={{
-              title: item.deityName,
-              body: item.deityText,
-              domain: item.deityDomains,
-            }}
-          />
-        </Col>
-      );
-    }
-  }
   return <Row>{renderedDeities}</Row>;
 }
 
-/**
- * Categorizes and displays deities with text describing each category
- * @returns SimpleContent and GetDeities response wrapped with Card(antd) in section
- */
 export default function DeitiesContent() {
   return (
     <section>
       <GetCrumbs path={"Teothe,Deities"} />
+
       <Card variant="outlined" className="w-full">
         <SimpleContent
           contentProps={{
@@ -69,7 +65,9 @@ export default function DeitiesContent() {
             ],
           }}
         />
+
         <Divider />
+
         <SimpleContent
           contentProps={{
             title: "Overdeities",
@@ -79,8 +77,11 @@ export default function DeitiesContent() {
             ],
           }}
         />
-        {GetDeities("Over")}
+
+        {GetDeities("Overdeity")}
+
         <Divider />
+
         <SimpleContent
           contentProps={{
             title: "Greater Deities",
@@ -90,8 +91,11 @@ export default function DeitiesContent() {
             ],
           }}
         />
-        {GetDeities("Greater")}
+
+        {GetDeities("Greater Deity")}
+
         <Divider />
+
         <SimpleContent
           contentProps={{
             title: "Higher Deities",
@@ -101,8 +105,11 @@ export default function DeitiesContent() {
             ],
           }}
         />
-        {GetDeities("Higher")}
+
+        {GetDeities("Higher Deity")}
+
         <Divider />
+
         <SimpleContent
           contentProps={{
             title: "Lesser Deities",
@@ -112,8 +119,11 @@ export default function DeitiesContent() {
             ],
           }}
         />
-        {GetDeities("Lesser")}
+
+        {GetDeities("Lesser Deity")}
+
         <Divider />
+
         <SimpleContent
           contentProps={{
             title: "Demi Deities",
@@ -123,7 +133,8 @@ export default function DeitiesContent() {
             ],
           }}
         />
-        {GetDeities("Demi")}
+
+        {GetDeities("Demi Deity")}
       </Card>
     </section>
   );
