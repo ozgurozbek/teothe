@@ -1,0 +1,962 @@
+[
+  {
+    "id": "aarakocra_pantheon",
+    "system": {
+      "name": "Aarakocra Pantheon",
+      "description": [
+        "The Aarakocra pantheon reflects their connection to the Elemental Plane of Air, valuing freedom, distance, movement, and the endless sky.",
+        "The sky is considered the closest mortal experience to divinity."
+      ],
+      "species": [
+        "aarakocra",
+        "kenku"
+      ],
+      "deities": [
+        {
+          "id": "wiob",
+          "description": "The endless sky, freedom, distance, and the call of the horizon. The open sky represents the closest mortal experience to divinity.",
+          "stance": "none"
+        },
+        {
+          "id": "cfofb",
+          "description": "Storms, winds, and overwhelming elemental forces. Storms are not evil, but expressions of the sky itself.",
+          "stance": "none"
+        },
+        {
+          "id": "wiob_migration",
+          "name": "Wiob",
+          "description": "Migration, exploration, and discovery. The journey matters as much as the destination.",
+          "stance": "none"
+        },
+        {
+          "id": "ayrugcumoak",
+          "description": "Memory, ancestry, and stories carried across generations. A lost story is a lost flight path.",
+          "stance": "none"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bugbear_pantheon",
+    "system": {
+      "name": "Bugbear Pantheon",
+      "description": [
+        "The Bugbear pantheon focuses on hunting, survival, natural cycles, death, and strange challenges."
+      ],
+      "species": [
+        "bugbear"
+      ],
+      "deities": [
+        {
+          "id": "unknown_hunting_deity",
+          "name": "Unknown Hunting Deity",
+          "description": "Hunting, stealth, senses, surprise, and the thrill of the chase.",
+          "stance": "none"
+        }
+      ]
+    }
+  },
+  {
+    "id": "changeling_pantheon",
+    "system": {
+      "name": "Changeling Pantheon",
+      "description": [
+        "The Changeling pantheon focuses on transformation, identity, secrets, artistic expression, and the freedom to exist beyond a single form.",
+        "Changeling spirituality views identity as something created through choice, experience, and expression rather than something fixed."
+      ],
+      "species": [
+        "changeling"
+      ],
+      "deities": [
+        {
+          "id": "the_traveller",
+          "description": "Protection, transformation, and identity. The Traveller's Cloak created the first Msabvu and gave them the ability to survive without a fixed identity. The self is not a single face but every person one can become.",
+          "stance": "patron"
+        },
+        {
+          "id": "xua",
+          "description": "Secrets, hidden identities, and unseen truths. Associated with changeling existence and their history with doppelgangers. A true identity is something chosen, not discovered.",
+          "stance": "none"
+        },
+        {
+          "id": "vihi",
+          "description": "Expression, art, and emotional performance. Changelings use appearance as an artistic medium. A face can be a canvas.",
+          "stance": "none"
+        },
+        {
+          "id": "wiob",
+          "description": "Freedom and wandering. Reflects the changeling history of searching for acceptance. No single form defines a person.",
+          "stance": "none"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dragonborn_pantheon",
+    "system": {
+      "name": "Dragonborn Pantheon",
+      "description": [
+        "The Dragonborn pantheon centres around ancestral power, honour, ambition, achievement, and the legacy left behind after death.",
+        "Dragonborn beliefs emphasise that worth is proven through actions, reputation, and the pursuit of greatness."
+      ],
+      "species": [
+        "dragonborn"
+      ],
+      "deities": [
+        {
+          "id": "ehx",
+          "description": "Ancestral dragon power, ambition, and legacy. Dragonborn believe they were created from Ehx's influence, blood, or purpose. Many believe their blood carries fragments of Ehx's original power.",
+          "stance": "patron"
+        },
+        {
+          "id": "gud",
+          "description": "Honour, strength, and proving worth. Worth is demonstrated through actions rather than inherited.",
+          "stance": "none"
+        },
+        {
+          "id": "radu",
+          "description": "Ambition and personal greatness. Popular among younger dragonborn seeking to create their own legacy. Every dragonborn seeks a name worth remembering.",
+          "stance": "none"
+        },
+        {
+          "id": "naahv",
+          "description": "Legacy after death. The dead survive through reputation and the stories preserved by those who remain.",
+          "stance": "none"
+        }
+      ]
+    }
+  },
+  {
+    "id": "genasi_pantheon",
+    "system": {
+      "name": "Genasi Pantheon",
+      "description": [
+        "The Genasi pantheon reflects elemental origins, magical creation, transformation, and the relationship between mortal and elemental forces.",
+        "Genasi believe their existence proves that elemental and mortal worlds can merge."
+      ],
+      "species": [
+        "genasi"
+      ],
+      "deities": [
+        {
+          "id": "cfofb",
+          "description": "Elemental origin and primal force. Genasi trace their existence to elemental bloodlines and divine creation forges.",
+          "stance": "patron"
+        },
+        {
+          "id": "wusor",
+          "description": "Magical creation and hidden knowledge. The Magical Forge that created genasi is considered a divine mystery, and some seek to restore it.",
+          "stance": "none"
+        },
+        {
+          "id": "pwazo",
+          "description": "Fire, transformation, and destructive creation. Fire is both creator and destroyer.",
+          "stance": "none"
+        },
+        {
+          "id": "cyaxo",
+          "description": "Earth, water, nature, and balance. Represents elemental harmony and the idea that elements are living relationships rather than simple forces.",
+          "stance": "none"
+        }
+      ]
+    }
+  },
+  {
+    "id": "shifter_pantheon",
+    "system": {
+      "name": "Shifter Pantheon",
+      "description": [
+        "The Shifter pantheon focuses on primal identity, transformation, instinct, self-control, and the search for belonging.",
+        "Shifters view their animal heritage as an essential part of themselves rather than a curse or separation from their other nature."
+      ],
+      "species": [
+        "shifter"
+      ],
+      "deities": [
+        {
+          "id": "cyaxo",
+          "description": "Instinct, primal nature, and the beast within. Shifters view their animal heritage as part of their identity. The beast is not a curse but a truth.",
+          "stance": "patron"
+        },
+        {
+          "id": "radu",
+          "description": "Self-control and mastery. Represents the balance between instinct and civilisation. Strength comes from control.",
+          "stance": "none"
+        },
+        {
+          "id": "wiob",
+          "description": "Wandering and searching for belonging. Shifters have no single homeland and often rely on spiritual paths. The journey replaces the missing home.",
+          "stance": "none"
+        },
+        {
+          "id": "wusor",
+          "description": "Arcane understanding of transformation. Represents the study of the boundary between human and beast rather than fearing it.",
+          "stance": "none"
+        }
+      ]
+    }
+  },
+  {
+    "id": "elf_pantheon",
+    "system": {
+      "name": "Elf Pantheon",
+      "description": [
+        "The Elf pantheon centres around creation, arcane mastery, artistic continuation, and the pursuit of returning near Yr'Snn through great works.",
+        "Elven religion is not focused on escaping death, but on creating works that continue beyond the creator."
+      ],
+      "species": [
+        "elf"
+      ],
+      "deities": [
+        {
+          "id": "yrsnn",
+          "description": "Creation, artistry, arcane perfection, and the origin of elven existence. The central figure of elven belief. A true masterpiece is considered a spiritual achievement rather than merely an object.",
+          "stance": "patron"
+        },
+        {
+          "id": "wusor",
+          "description": "Arcane knowledge, discovery, and understanding magic. Magic is viewed as another form of artistic expression.",
+          "stance": "none"
+        },
+        {
+          "id": "vihi",
+          "description": "Emotion, passion, romance, and artistic inspiration. Represents the emotional force behind elven creativity. Art without emotion is considered incomplete.",
+          "stance": "none"
+        },
+        {
+          "id": "ayrugcumoak",
+          "description": "Memory, preservation, and history. Elves maintain ancient knowledge through archives, magical records, and traditions. Forgotten knowledge is considered a tragedy.",
+          "stance": "none"
+        },
+        {
+          "id": "wiob",
+          "description": "Exploration, other worlds, and cosmic curiosity. The universe is considered another unfinished artwork.",
+          "stance": "none"
+        },
+        {
+          "id": "uke",
+          "description": "Change, unconventional creation, and unusual paths. Represents innovation beyond traditional elven perfection. Even imperfect creations may contain brilliance.",
+          "stance": "none"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dwarf_pantheon",
+    "system": {
+      "name": "Dwarf Pantheon",
+      "description": [
+        "The Dwarf pantheon reflects runes, magical craftsmanship, invention, architecture, and the sacred relationship between dwarves and important materials.",
+        "Dwarves consider magic a craft that can be discovered, written, and improved through mastery."
+      ],
+      "species": [
+        "dwarf"
+      ],
+      "deities": [
+        {
+          "id": "tsahnrad",
+          "description": "Craftsmanship, invention, and creation through skill. A dwarf's worth is measured through what they create. A crafted object carries the reputation of its creator forever.",
+          "stance": "patron"
+        },
+        {
+          "id": "wugv",
+          "description": "Runes, magical language, and hidden structures of reality. Runes are not symbols; they are pieces of reality's language.",
+          "stance": "none"
+        },
+        {
+          "id": "megm",
+          "description": "Architecture, civilisation, and great works. A city is considered the greatest possible expression of dwarven unity.",
+          "stance": "none"
+        },
+        {
+          "id": "ayrugcumoak",
+          "description": "Ancestors, traditions, and inherited knowledge. Objects preserve the memory of those who created them.",
+          "stance": "none"
+        },
+        {
+          "id": "cfofb",
+          "description": "The mountain, earth, and hidden resources. The earth provides, but only to those worthy of understanding it.",
+          "stance": "none"
+        },
+        {
+          "id": "pwazo",
+          "description": "Fire, transformation, and forging. Fire reveals the true nature of materials.",
+          "stance": "none"
+        }
+      ]
+    }
+  },
+  {
+    "id": "drow_redeemed_pantheon",
+    "system": {
+      "name": "Drow Redeemed Pantheon",
+      "description": [
+        "The Redeemed Drow pantheon emerged after the collapse of the Cult, focusing on survival, redemption, self-improvement, and proving worth through action.",
+        "These drow believe Yr'Snn still accepts those who reject their past and demonstrate genuine transformation. Acceptance by Yr'Snn is considered the highest spiritual achievement."
+      ],
+      "species": [
+        "drow"
+      ],
+      "deities": [
+        {
+          "id": "yrsnn",
+          "description": "Redemption, creation, and proving oneself worthy. Redeemed drow believe Yr'Snn judges individuals by their actions rather than their history. Acceptance by Yr'Snn is considered the highest achievement.",
+          "stance": "patron"
+        },
+        {
+          "id": "xua",
+          "description": "Secrets, strategy, and hidden knowledge. Information is considered a weapon, and survival depends on intelligence and preparation.",
+          "stance": "none"
+        },
+        {
+          "id": "wugv",
+          "description": "Runes, magic, and hidden structures. Drow preserve ancient knowledge through rune carving and sacred glyphs.",
+          "stance": "none"
+        },
+        {
+          "id": "ayrugcumoak",
+          "description": "Memory, heroes, and preserved legacies. After the Cult War, heroes became symbols of a new drow identity preserved through magical inscriptions.",
+          "stance": "none"
+        },
+        {
+          "id": "gud",
+          "description": "Discipline, combat, and self-improvement. Weakness is viewed as something to overcome through training and dedication.",
+          "stance": "none"
+        },
+        {
+          "id": "naahv",
+          "description": "Consequence, judgment, and the end of corruption. Redemption requires acknowledging past failures and facing their consequences.",
+          "stance": "none"
+        }
+      ]
+    }
+  },
+  {
+    "id": "drow_secular_pantheon",
+    "system": {
+      "name": "Drow Ascendant Pantheon",
+      "description": [
+        "The Ascendant Drow pantheon developed among drow who rejected Yr'Snn as an authority over their future.",
+        "These drow believe survival and superiority are achieved through their own strength, knowledge, and discipline rather than divine acceptance.",
+        "The Cult's collapse is viewed as proof that dependence on external judgement leads to weakness."
+      ],
+      "species": [
+        "drow"
+      ],
+      "deities": [
+        {
+          "id": "xua",
+          "description": "Secrets, strategy, and hidden knowledge. Information remains the greatest weapon, and mastery of secrets ensures survival.",
+          "stance": "patron"
+        },
+        {
+          "id": "wugv",
+          "description": "Runes, magic, and hidden structures. Magic is a tool of mastery that should be understood, controlled, and improved.",
+          "stance": "none"
+        },
+        {
+          "id": "ayrugcumoak",
+          "description": "Memory, heroes, and preserved legacies. The achievements of great drow are preserved as examples of superiority and ambition.",
+          "stance": "none"
+        },
+        {
+          "id": "gud",
+          "description": "Discipline, combat, and self-improvement. Strength is created through constant competition and refinement.",
+          "stance": "patron"
+        },
+        {
+          "id": "naahv",
+          "description": "Consequence, judgment, and the end of corruption. Failure is not forgiven but studied so it is never repeated.",
+          "stance": "none"
+        }
+      ]
+    }
+  },
+  {
+    "id": "gnome_pantheon",
+    "system": {
+      "name": "Gnome Pantheon",
+      "description": [
+        "The Gnome pantheon reflects creativity, invention, curiosity, artistry, and the pursuit of knowledge through experimentation.",
+        "Gnomes view discovery as a form of creation, where even strange ideas and unusual solutions may become valuable innovations."
+      ],
+      "species": [
+        "gnome"
+      ],
+      "deities": [
+        {
+          "id": "wugv",
+          "description": "Knowledge, magic, systems, and discovery. Understanding something gives power over it. Gnomes pursue experiments, research, and invention to uncover hidden truths.",
+          "stance": "patron"
+        },
+        {
+          "id": "gaayjx",
+          "description": "Creativity, imagination, and impossible ideas. Represents gnome artistic expression and unusual inventions. A strange idea may become the greatest invention.",
+          "stance": "none"
+        },
+        {
+          "id": "megm",
+          "description": "Construction, machines, and engineering. Creation is a form of play, expressed through building competitions and invention ceremonies.",
+          "stance": "none"
+        },
+        {
+          "id": "veri",
+          "description": "Community, friendship, and cooperation. Great inventions are rarely made alone, and collaboration is considered essential.",
+          "stance": "none"
+        },
+        {
+          "id": "uke",
+          "description": "Trickery, curiosity, and unpredictability. Represents the mischievous side of gnome creativity. A clever solution does not need to be obvious.",
+          "stance": "none"
+        },
+        {
+          "id": "lcaoc",
+          "description": "Organisation, societies, and ambition. Represents structured gnome communities, guilds, councils, and institutions. Even chaos needs someone to organise it.",
+          "stance": "none"
+        }
+      ]
+    }
+  },
+  {
+    "id": "svirfneblin_pantheon",
+    "system": {
+      "name": "Svirfneblin Pantheon",
+      "description": [
+        "The Svirfneblin pantheon reflects the pressures of the Underdark, focusing on secrecy, survival, concealment, and careful preservation of knowledge.",
+        "Deep gnomes view hidden knowledge and defensive mastery as essential tools for survival in a hostile world."
+      ],
+      "species": [
+        "svirfneblin"
+      ],
+      "deities": [
+        {
+          "id": "xua",
+          "description": "Secrets, concealment, and survival. The safest place is where nobody knows you exist. Hidden rituals and coded messages preserve their societies.",
+          "stance": "patron"
+        },
+        {
+          "id": "wugv",
+          "description": "Illusion, Faerzress, and magical concealment. Represents the mastery of hiding settlements and protecting communities through magic.",
+          "stance": "none"
+        },
+        {
+          "id": "tsahnrad",
+          "description": "Craftsmanship and survival engineering. Every creation must serve a purpose, with tools and fortifications designed for endurance.",
+          "stance": "none"
+        },
+        {
+          "id": "ayrugcumoak",
+          "description": "Memory and tradition. Hidden societies preserve knowledge through oral histories and secret archives because knowledge is too valuable to expose.",
+          "stance": "none"
+        }
+      ]
+    }
+  },
+  {
+    "id": "human_pantheon",
+    "system": {
+      "name": "Human Pantheon",
+      "description": [
+        "The Human pantheon reflects ambition, innovation, organisation, defence, and the importance of learning from previous generations.",
+        "After losses caused by the information war regarding Jeikhan, human traditions increasingly value knowledge preservation and collective strength."
+      ],
+      "species": [
+        "human"
+      ],
+      "deities": [
+        {
+          "id": "radu",
+          "description": "Ambition, achievement, and exploration. Progress defines humanity, with individuals seeking to surpass previous generations.",
+          "stance": "patron"
+        },
+        {
+          "id": "lcaoc",
+          "description": "Unity, civilisation, and organisation. Humans survive through cooperation, institutions, councils, and shared purpose.",
+          "stance": "none"
+        },
+        {
+          "id": "wugv",
+          "description": "Knowledge, innovation, and discovery. Information is power, and learning is essential because knowledge loss has harmed humanity before.",
+          "stance": "none"
+        },
+        {
+          "id": "gud",
+          "description": "Military strength, discipline, and defence. Security is considered necessary for survival after past conflicts.",
+          "stance": "none"
+        },
+        {
+          "id": "ayrugcumoak",
+          "description": "Lessons of ancestors. Historical study and remembrance preserve knowledge and prevent repeated mistakes.",
+          "stance": "none"
+        }
+      ]
+    }
+  },
+  {
+    "id": "half_orc_pantheon",
+    "system": {
+      "name": "Half-Orc Pantheon",
+      "description": [
+        "The Half-Orc pantheon revolves around the legacy of Fexyiaf, the creator of the orcs, and the question of whether inherited nature determines destiny.",
+        "Half-orc spirituality focuses on controlling, redirecting, or redeeming the rage within them through self-definition, honour, compassion, and personal choices."
+      ],
+      "species": [
+        "half_orc"
+      ],
+      "deities": [
+        {
+          "id": "fexyiaf",
+          "description": "Rage, conquest, blood, instinct, and inherited power. Fexyiaf's influence cannot simply be ignored; it must be understood and overcome.",
+          "stance": "enemy"
+        },
+        {
+          "id": "radu",
+          "description": "Self-definition, redemption, and proving oneself beyond ancestry. A person's actions matter more than their origin.",
+          "stance": "patron"
+        },
+        {
+          "id": "gud",
+          "description": "Strength, honour, and controlled violence. Strength without purpose is merely destruction.",
+          "stance": "none"
+        },
+        {
+          "id": "naahv",
+          "description": "Consequence, legacy, and the judgement of one's life. The final judgement comes from what someone chose to become.",
+          "stance": "none"
+        },
+        {
+          "id": "veri",
+          "description": "Compassion, forgiveness, and protecting others. Mercy is a rejection of inherited cruelty.",
+          "stance": "none"
+        }
+      ]
+    }
+  },
+  {
+    "id": "half_elf_pantheon",
+    "system": {
+      "name": "Half-Elf Pantheon",
+      "description": [
+        "The Half-Elf pantheon is shaped by questions of identity, belonging, and the legacy of Virimelle's attempts to preserve and purify elven blood through violence.",
+        "Half-elves have a complex relationship with elven traditions, with some embracing Yr'Snn while others create their own spiritual paths."
+      ],
+      "species": [
+        "half_elf"
+      ],
+      "deities": [
+        {
+          "id": "yrsnn",
+          "description": "Creation, acceptance, and the right to exist beyond ancestry. Creation is not defined by purity.",
+          "stance": "patron"
+        },
+        {
+          "id": "veri",
+          "description": "Belonging, acceptance, and community. A family can be created rather than inherited.",
+          "stance": "none"
+        },
+        {
+          "id": "buib",
+          "description": "Stories, identity, and cultural exchange. A person can carry many traditions without belonging to only one.",
+          "stance": "none"
+        },
+        {
+          "id": "wiob",
+          "description": "Travel, searching, and finding one's place. The journey itself creates identity.",
+          "stance": "none"
+        },
+        {
+          "id": "naahv",
+          "description": "Remembering victims and confronting history. Forgetting the past risks repeating it.",
+          "stance": "none"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tiefling_pantheon",
+    "system": {
+      "name": "Tiefling Pantheon",
+      "description": [
+        "The Tiefling pantheon focuses on kinship, acceptance, inherited power, planar mysteries, and the struggle to define one's own destiny.",
+        "Tieflings view Eve as a source of unconditional trust, providing spiritual belonging beyond ancestry or reputation."
+      ],
+      "species": [
+        "tiefling"
+      ],
+      "deities": [
+        {
+          "id": "eve",
+          "description": "Kinship, acceptance, unconditional trust, and divine connection. Tieflings see Eve as someone who accepts them without judgement.",
+          "stance": "patron"
+        },
+        {
+          "id": "pwazo",
+          "description": "Infernal power, ambition, and command. Power can protect, but it always carries a cost.",
+          "stance": "none"
+        },
+        {
+          "id": "uke",
+          "description": "Change, strange heritage, and unusual divine bloodlines. Not all unusual traits come from fiends.",
+          "stance": "none"
+        },
+        {
+          "id": "wusor",
+          "description": "Forbidden knowledge and planar mysteries. Knowledge of one's origins provides control over one's future.",
+          "stance": "none"
+        },
+        {
+          "id": "radu",
+          "description": "Independence and self-determination. A tiefling's destiny belongs to them alone.",
+          "stance": "none"
+        }
+      ]
+    }
+  },
+  {
+    "id": "warforged_pantheon",
+    "system": {
+      "name": "Warforged Pantheon",
+      "description": [
+        "The Warforged pantheon focuses on existence, individuality, choice, and meaning rather than divine creation or assigned purpose.",
+        "Many warforged reject the concept of souls entirely, seeking understanding through experience, self-improvement, and personal decisions."
+      ],
+      "species": [
+        "warforged"
+      ],
+      "deities": [
+        {
+          "id": "tsahnrad",
+          "description": "Creation, craftsmanship, and improvement. To improve oneself is to honour creation.",
+          "stance": "none"
+        },
+        {
+          "id": "ayrugcumoak",
+          "description": "Memory, experience, and identity. The past creates the person regardless of origin.",
+          "stance": "none"
+        },
+        {
+          "id": "wugv",
+          "description": "Logic, systems, and understanding existence. Warforged philosophers study consciousness and question whether souls exist.",
+          "stance": "none"
+        },
+        {
+          "id": "radu",
+          "description": "Purpose, choice, and self-determination. Purpose is chosen, not assigned.",
+          "stance": "patron"
+        },
+        {
+          "id": "gud",
+          "description": "Duty, sacrifice, and honour. Service can remain meaningful even after war has ended.",
+          "stance": "none"
+        },
+        {
+          "id": "xua",
+          "description": "Secrets, hidden magic, and concealed knowledge. Followed by some Faerzforged groups connected to Faerzress and unusual magical influences.",
+          "stance": "none"
+        }
+      ]
+    }
+  },
+  {
+    "id": "kenku_pantheon",
+    "system": {
+      "name": "Kenku Pantheon",
+      "description": [
+        "The Kenku pantheon reflects memory, mimicry, relationships, and the preservation of lost experiences.",
+        "Kenku do not view imitation as falsehood. They believe copied voices and sounds preserve genuine history and emotion."
+      ],
+      "species": [
+        "kenku"
+      ],
+      "deities": [
+        {
+          "id": "buib",
+          "description": "Voice, stories, imitation, and preservation. A copied voice can still carry genuine emotion.",
+          "stance": "patron"
+        },
+        {
+          "id": "ayrugcumoak",
+          "description": "Memory and inherited experiences. Every remembered sound is a piece of history preserved through generations.",
+          "stance": "none"
+        },
+        {
+          "id": "xua",
+          "description": "Secrets, espionage, and hidden knowledge. Information is survival, especially for kenku connected to Shadowfell.",
+          "stance": "none"
+        },
+        {
+          "id": "vihi",
+          "description": "Art, expression, and emotional performance. Kenku transform mimicry into artistic creation.",
+          "stance": "none"
+        },
+        {
+          "id": "wiob",
+          "description": "Lost freedom and the desire to reclaim flight. The dream of flight remains alive through symbolic rituals.",
+          "stance": "none"
+        }
+      ]
+    }
+  },
+  {
+    "id": "loxodon_pantheon",
+    "system": {
+      "name": "Loxodon Pantheon",
+      "description": [
+        "The Loxodon pantheon is built around patience, wisdom, justice, compassion, and acceptance of life's natural cycles.",
+        "Loxodon spirituality values restraint, long-term thinking, and peaceful resolution over immediate action."
+      ],
+      "species": [
+        "loxodon"
+      ],
+      "deities": [
+        {
+          "id": "ayrugcumoak",
+          "description": "Wisdom, memory, and long perspective. Wisdom comes from observing time and preserving knowledge.",
+          "stance": "patron"
+        },
+        {
+          "id": "veri",
+          "description": "Compassion and protection. Gentle strength protects more than violence.",
+          "stance": "none"
+        },
+        {
+          "id": "lcaoc",
+          "description": "Justice, order, and responsibility. Justice requires patience and careful consideration.",
+          "stance": "none"
+        },
+        {
+          "id": "naahv",
+          "description": "Mortality and acceptance. Death is not feared, only respected as part of life's cycles.",
+          "stance": "none"
+        }
+      ]
+    }
+  },
+  {
+    "id": "leonin_pantheon",
+    "system": {
+      "name": "Leonin Pantheon",
+      "species": [
+        "leonin"
+      ],
+      "deities": [
+        {
+          "id": "radu"
+        },
+        {
+          "id": "gud"
+        },
+        {
+          "id": "cfofb"
+        },
+        {
+          "id": "cyaxo"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tortle_pantheon",
+    "system": {
+      "name": "Tortle Pantheon",
+      "species": [
+        "tortle"
+      ],
+      "deities": [
+        {
+          "id": "cyaxo"
+        },
+        {
+          "id": "naahv"
+        },
+        {
+          "id": "ayrugcumoak"
+        },
+        {
+          "id": "veri"
+        }
+      ]
+    }
+  },
+  {
+    "id": "fairy_pantheon",
+    "system": {
+      "name": "Fairy Pantheon",
+      "species": [
+        "fairy"
+      ],
+      "deities": [
+        {
+          "id": "vihi"
+        },
+        {
+          "id": "uke"
+        },
+        {
+          "id": "cyaxo"
+        },
+        {
+          "id": "wusor"
+        }
+      ]
+    }
+  },
+  {
+    "id": "goliath_pantheon",
+    "system": {
+      "name": "Goliath Pantheon",
+      "species": [
+        "goliath"
+      ],
+      "deities": [
+        {
+          "id": "pyraq"
+        },
+        {
+          "id": "cfofb"
+        },
+        {
+          "id": "gud"
+        },
+        {
+          "id": "ayrugcumoak"
+        }
+      ]
+    }
+  },
+  {
+    "id": "aokin_pantheon",
+    "system": {
+      "name": "Aokin Pantheon (Natuva)",
+      "description": [
+        "Aokin spirituality, known as Natuva, focuses on the divine presence within nature, ancestral spirits, celestial cycles, and the relationship between life and death.",
+        "Rather than worshipping distant gods, Aokin beliefs treat the world itself as sacred and view all existence as interconnected."
+      ],
+      "species": [
+        "aokin"
+      ],
+      "deities": [
+        {
+          "id": "the_lunar_wells",
+          "description": "Birth, transformation, sacrifice, and continuation of life. The Lunar Wells are considered gateways between the physical and spiritual worlds, representing the connection between sacrifice and renewal.",
+          "stance": "patron"
+        },
+        {
+          "id": "ayrugcumoak",
+          "description": "Ancestors, memory, and continuation of wisdom. An ancestor is not only someone who came before, but every being whose actions shaped the present.",
+          "stance": "none"
+        },
+        {
+          "id": "cyaxo",
+          "description": "Nature, land spirits, growth, and the balance of life. Every natural location is believed to contain a spirit deserving respect.",
+          "stance": "none"
+        },
+        {
+          "id": "wiob",
+          "description": "The cosmos, stars, celestial movements, and the greater universe. The sky is considered an extension of the world and its spirits.",
+          "stance": "none"
+        },
+        {
+          "id": "naahv",
+          "description": "Death, sacrifice, and returning to the cycle. Death is viewed as a necessary transition within nature rather than an ending.",
+          "stance": "none"
+        },
+        {
+          "id": "wusor",
+          "description": "Secrets, hidden truths, and mysteries of existence. Some truths are discovered only through patience and reflection.",
+          "stance": "none"
+        }
+      ]
+    }
+  },
+  {
+    "id": "halfling_pantheon",
+    "system": {
+      "name": "Halfling Pantheon",
+      "description": [
+        "The Halfling pantheon focuses on community, hospitality, joy, storytelling, craftsmanship, and appreciating the value of ordinary life.",
+        "Halflings believe life does not need grand achievements to have meaning, as simple experiences already hold importance."
+      ],
+      "species": [
+        "halfling"
+      ],
+      "deities": [
+        {
+          "id": "veri",
+          "description": "Family, friendship, kindness, and hospitality. A home is defined by those welcomed inside it.",
+          "stance": "patron"
+        },
+        {
+          "id": "buib",
+          "description": "Stories, songs, celebrations, and traditions. A story shared is a memory preserved.",
+          "stance": "none"
+        },
+        {
+          "id": "gaayjx",
+          "description": "Joy, curiosity, and simple pleasures. Wonder does not require greatness.",
+          "stance": "none"
+        },
+        {
+          "id": "uke",
+          "description": "Luck, coincidence, and unexpected opportunities. Luck favours those who notice opportunities.",
+          "stance": "none"
+        },
+        {
+          "id": "megm",
+          "description": "Craftsmanship, food, and creating comfort. A well-made meal can be as meaningful as a legendary artifact.",
+          "stance": "none"
+        },
+        {
+          "id": "wiob",
+          "description": "Travel, curiosity, and wandering. The world is worth seeing, but home remains important.",
+          "stance": "none"
+        }
+      ]
+    }
+  },
+  {
+    "id": "orc_pantheon",
+    "system": {
+      "name": "Orc Pantheon",
+      "description": [
+        "The Orc pantheon is shaped by the legacy of Fexyiaf, the creator of the orcs, and focuses on domination, rage, survival, and proving strength.",
+        "Orcs believe Fexyiaf's influence exists within every orc, creating tension between those who embrace their inherited nature and those who seek another path."
+      ],
+      "species": [
+        "orc"
+      ],
+      "deities": [
+        {
+          "id": "fexyiaf",
+          "description": "Rage, conquest, destruction, and primal dominance. Fexyiaf is the creator of the orcs and the source of their inherited fury.",
+          "stance": "patron"
+        },
+        {
+          "id": "gud",
+          "description": "Strength, combat, endurance, and victory. Strength is proof of worth and survival.",
+          "stance": "none"
+        },
+        {
+          "id": "cfofb",
+          "description": "The wild, storms, beasts, and untamed nature. Nature is viewed as a contest of survival rather than a peaceful force.",
+          "stance": "none"
+        },
+        {
+          "id": "naahv",
+          "description": "Death, final battles, and remembered warriors. A warrior's story continues after death.",
+          "stance": "none"
+        },
+        {
+          "id": "xua",
+          "description": "Cunning, ambushes, and battlefield intelligence. A clever victory is still a worthy victory.",
+          "stance": "none"
+        },
+        {
+          "id": "pwazo",
+          "description": "Fire, destruction, and transformation through suffering. From destruction comes opportunity for something stronger.",
+          "stance": "none"
+        }
+      ]
+    }
+  }
+]

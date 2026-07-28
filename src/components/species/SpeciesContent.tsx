@@ -22,23 +22,24 @@ function GetSpecies() {
   const data = species as SpeciesData[];
 
   const renderedSpecies = [...data]
-  .sort((a, b) => a.id.localeCompare(b.id))
-  .map((item) => (
-    <SpeciesCon
-      key={item.id}
-      SpeciesPic={{
-        src: item.image
-          ? `./Species/${item.image}`
-          : `./Species/${item.id}.png`,
-        alt: `${item.id} image`,
-        phrase: item.quote,
-      }}
-      DescriptionText={{
-        title: item.id,
-        paragraph: item.content,
-      }}
-    />
-  ));
+    .sort((a, b) => a.id.localeCompare(b.id))
+    .map((item) => (
+      <SpeciesCon
+        key={item.id}
+        SpeciesId={item.id}
+        SpeciesPic={{
+          src: item.image
+            ? `./Species/${item.image}`
+            : `./Species/${item.id}.png`,
+          alt: `${item.id} image`,
+          phrase: item.quote,
+        }}
+        DescriptionText={{
+          title: item.id,
+          paragraph: item.content,
+        }}
+      />
+    ));
 
   return <Row>{renderedSpecies}</Row>;
 }

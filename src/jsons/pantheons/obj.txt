@@ -1,0 +1,17 @@
+{
+  "id": "string",
+  "system": {
+    "name": "string",
+    "description": ["string"],
+    "species": ["id"],
+    "deities": [
+      {
+        "id": "optional id",
+        "name": "optional override",
+        "image": "optional override",
+        "description": "optional override",
+        "stance": "patron,enemy,none"
+      }
+    ]
+  }
+}
