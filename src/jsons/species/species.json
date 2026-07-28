@@ -1,0 +1,152 @@
+[
+  {
+    "id": "aokin",
+    "image": "aokin.png",
+    "content": "The Aokin are nature-bound beings from Teothe, shaped by ancestral traditions and a deep connection to the cosmos.",
+    "quote": "Should we look? No, no... Stay silent."
+  },
+  {
+    "id": "aasimar",
+    "image": "",
+    "content": "Aasimar are mortals touched by celestial power, often driven to champion good and uphold justice.",
+    "quote": "With the divine light coursing through our veins, we, the embodiment of radiance, carry the flame of hope, serving justice against the foul."
+  },
+  {
+    "id": "aarakocra",
+    "image": "",
+    "content": "Aarakocra are avian beings with colorful feathers, known for their love of freedom and guardianship of the skies.",
+    "quote": "Sad it is, as we Aarakocra soar above earthly bounds amidst wind and cloud, finding sanctuary in mountains and guidance in the eternal sky, while those confined fail to witness how each flight unveils boundless wonders untold."
+  },
+  {
+    "id": "bugbear",
+    "image": "",
+    "content": "Bugbears are large, brutish creatures, blending surprising stealth with strength, often underestimated by their foes.",
+    "quote": "Night's terror is mine to wield."
+  },
+  {
+    "id": "changeling",
+    "image": "",
+    "content": "Changelings are shape-shifters, capable of altering their appearance at will, often hiding their true selves beneath a façade.",
+    "quote": "I had 100 mothers and each had 100 children, who are you gazing at single-skin?"
+  },
+  {
+    "id": "dragonborn",
+    "image": "",
+    "content": "Dragonborn are proud, draconic humanoids, known for their honor and strength, often seeking to prove their worth to their kin.",
+    "quote": "Within our veins flows the essence of Ehx, the fire of ambition ignites our spirits, and with scales gleaming like gems, we rise as Dragonborn, protectors of legacy and seekers of untold glory."
+  },
+  {
+    "id": "dwarf",
+    "image": "",
+    "content": "Dwarves are stout and hardy, famed for their craftsmanship, resilience, and a deep connection to their mountain homes.",
+    "quote": "With ale in hand and hammers ablaze, we forge joy into progress amidst the cold winds."
+  },
+  {
+    "id": "drow",
+    "image": "",
+    "content": "A drow, also known as dark elf, deep elf, night elf, and the Dark One, is infused with the magic of the Underdark.",
+    "quote": "The web of dominance thrives in shadows."
+  },
+  {
+    "id": "elf",
+    "image": "",
+    "content": "Elves are graceful and agile beings, with a natural affinity for magic and a deep connection to the forests and the fey.",
+    "quote": "Embrace of the green and tranquil heart of the forests, where our spirits find solace, whispers of nature weave our eternal song."
+  },
+  {
+    "id": "fairy",
+    "image": "",
+    "content": "Fairies are tiny, magical creatures with wings, embodying whimsy and playfulness, often involved in the affairs of nature.",
+    "quote": "Oh, the Material Plane, a delightful canvas for my mischievous play!"
+  },
+  {
+    "id": "goliath",
+    "image": "",
+    "content": "Goliaths are towering and powerful, often found in mountainous regions, they value strength, endurance, and communal living.",
+    "quote": "Through triumphs forged in stone, our wisdom soars."
+  },
+  {
+    "id": "genasi",
+    "image": "",
+    "content": "Genasi are beings infused with elemental power, embodying the traits of air, earth, fire, or water, and often seen as outsiders.",
+    "quote": "Feeble mortals, witness the genius of a genasi artisan, for in my hands, the elements dance with envy, while your pitiful craftsmanship pales in comparison to the unparalleled majesty I bestow upon this world!"
+  },
+  {
+    "id": "gnome",
+    "image": "",
+    "content": "Gnomes are clever and inventive, known for their curiosity and knack for tinkering with magic and technology.",
+    "quote": "In the realm of boundless imagination, we wield invention and exploration, painting life's canvas with the curious brush of creation, where each moment becomes a masterpiece of play and delight."
+  },
+  {
+    "id": "human",
+    "image": "",
+    "content": "Humans are versatile and ambitious, capable of adapting to any environment and driven by a desire to explore and innovate.",
+    "quote": "We humans have to stick together! Never trust the other species, never!"
+  },
+  {
+    "id": "half-orc",
+    "image": "",
+    "content": "Half-orcs are a blend of human and orc heritage, often struggling with their dual nature while displaying fierce strength and resilience.",
+    "quote": "Fury stoked by joint might, a legacy beyond mere pillage!"
+  },
+  {
+    "id": "halfling",
+    "image": "",
+    "content": "Halflings are small and nimble folk, known for their resourcefulness, love for comfort, and ability to go unnoticed.",
+    "quote": "Life's truest treasures lie not in grand quests or towering achievements, but in the embrace of family, the bonds of kinship, and the curious pursuit of simple pleasures that weave the tapestry of our Halfling hearts."
+  },
+  {
+    "id": "half-elf",
+    "image": "",
+    "content": "Half-elves combine the best traits of humans and elves, often navigating two worlds while seeking to carve out their own identity.",
+    "quote": "Betwixt two realms, hunted and foreign, we arise with unyielding ambition."
+  },
+  {
+    "id": "kenku",
+    "image": "",
+    "content": "Kenku are avian humanoids, skilled in mimicry and stealth, often struggling with their lost ability to fly and seeking to reclaim their heritage.",
+    "quote": "Echoes may escape my beak, but the stories remain forever in my heart as I am both the authentic and the mimic."
+  },
+  {
+    "id": "loxodon",
+    "image": "",
+    "content": "Loxodons are elephantine humanoids, known for their wisdom, compassion, and strong sense of community.",
+    "quote": "We, the steadfast, choose to embrace the Modest Truth for its unyielding clarity, its resolute guidance that cuts through the veils of uncertainty, and its unwavering foundation upon which we stand as stalwart defenders of justice and guardians of unwavering principles."
+  },
+  {
+    "id": "leonin",
+    "image": "",
+    "content": "Leonin are proud, lion-like humanoids who value honor and strength, often living in tribes and defending their territory fiercely.",
+    "quote": "Sometimes it's not about being talented, it's about being hungrier."
+  },
+  {
+    "id": "svirfneblin",
+    "image": "",
+    "content": "Svirfneblin, or deep gnomes, are a subrace of gnomes dwelling in the Underdark, known for their stealth, magic, and elusive nature.",
+    "quote": "A secret is hidden, mine is beneath the hidden surface."
+  },
+  {
+    "id": "shifter",
+    "image": "",
+    "content": "Shifters are descendants of humans and lycanthropes, capable of taking on bestial traits and embodying primal instincts.",
+    "quote": "Roahr - Why are you so afraid, never seen sharp teeth?"
+  },
+  {
+    "id": "tortle",
+    "image": "",
+    "content": "Tortles are turtle-like humanoids with a slow and steady demeanor, known for their deep connection to the sea and nature.",
+    "quote": "I caught a big fish. Now I search for a good friend. To share my lunch with."
+  },
+  {
+    "id": "tiefling",
+    "image": "",
+    "content": "Tieflings bear the legacy of infernal heritage, marked by their unusual appearance and often grappling with societal prejudices.",
+    "quote": "We Tieflings bear the scars of bitter pasts, our hearts burdened with deep-seated distrust and the weight of abandonment, yet, through the flames of adversity, we tread the path in search of power, for in its embrace, we find solace and the means to forge our own destiny."
+  },
+  {
+    "id": "warforged",
+    "image": "",
+    "content": "Warforged are living constructs, created for battle but seeking purpose and identity beyond their original design.",
+    "quote": "For honor, for sacrifice, for the forge"
+  }
+]

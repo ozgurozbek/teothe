@@ -28,13 +28,21 @@ export default function SpeciesCon({
         />
         <Title className="capitalize">{DescriptionText.title}</Title>
         {DescriptionText.paragraph}
-        <p className="italic pl-2 border-l-[#630436] border-l-2 text-lg text-gray-400">
+        <p className="italic pl-2 border-l-[#630436] border-l-2 text-lg text-gray-400 mt-4">
           {SpeciesPic.phrase}
         </p>
         <div className="mt-auto">
           <Button
+            href={"/pantheons/" + DescriptionText.title}
+            className="w-full mt-4"
+          >
+            <span className="capitalize">
+              See {DescriptionText.title} Pantheon
+            </span>
+          </Button>
+          <Button
             href={"/species/" + DescriptionText.title}
-            className="w-full mt-4 mb-4"
+            className="w-full mt-4"
           >
             <span className="capitalize">More On {DescriptionText.title}</span>
           </Button>
