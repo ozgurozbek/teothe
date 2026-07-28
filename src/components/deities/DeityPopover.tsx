@@ -1,15 +1,21 @@
-import { Popover, Avatar, Typography, Space } from "antd";
+import { Popover, Avatar, Space } from "antd";
 import deities from "@/jsons/deities/deities.json";
+import Text from "antd/es/typography/Text";
 
-const { Text } = Typography;
-
-export interface DeityType { order: number; id: string; rank: string; name: string; image: string; description: string; domains: string[]; }
+export interface DeityType {
+  order: number;
+  id: string;
+  rank: string;
+  name: string;
+  image: string;
+  description: string;
+  domains: string[];
+}
 
 function getDeityByName(name: string): DeityType | null {
   if (!name) return null;
   return deities.find((d) => d.name === name) ?? null;
 }
-
 
 export default function DeityPopover({ name }: { name: string }) {
   const deity = getDeityByName(name);

@@ -1,10 +1,18 @@
 import { notFound } from "next/navigation";
-import { Card, Divider } from "antd";
+import { Card, Divider, Image, Space } from "antd";
+import Title from "antd/es/typography/Title";
 
 import GetCrumbs from "@/components/NavigationCrumb";
+import SpeciesPopover from "@/components/species/SpeciesPopover";
+import DeityPopover from "@/components/deities/DeityPopover";
+
 import pantheons from "@/jsons/pantheons/pantheons.json";
 
-import Title from "antd/es/typography/Title";
+function FormatName(value: string) {
+  return value
+    .replaceAll("_", " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+}
 
 interface PantheonData {
   id: string;
@@ -34,66 +42,100 @@ export default async function PantheonPage({
 }) {
   const { id } = await params;
 
-  const pantheon = (pantheons as PantheonData[]).find(
-    (item) => item.id === id
-  );
+  const pantheon = (pantheons as PantheonData[]).find((item) => item.id === id);
 
   if (!pantheon) {
     notFound();
   }
- console.log(pantheon.system.name)
+
+  const patrons = pantheon.system.deities.filter((d) => d.stance === "patron");
+
+  const enemies = pantheon.system.deities.filter((d) => d.stance === "enemy");
+
+  const others = pantheon.system.deities.filter(
+    (d) => !d.stance || d.stance === "none",
+  );
+
   return (
     <section>
-      <GetCrumbs
-        path={`Teothe,Pantheons,${pantheon.system.name}`}
-      />
+      <GetCrumbs path={`Teothe,Pantheons,${pantheon.system.name}`} />
 
       <Card variant="outlined">
-        <Title>
-          {pantheon.system.name}
-        </Title>
+        <Image
+          src={`/Pantheons/${pantheon.id}.png`}
+          alt={pantheon.system.name}
+          width="100%"
+        />
+
+        <Title>{pantheon.system.name}</Title>
 
         {pantheon.system.description?.map((text) => (
-          <p key={text}>
-            {text}
-          </p>
+          <p key={text}>{text}</p>
         ))}
 
         <Divider />
 
-        <Title level={3}>
-          Species
-        </Title>
+        <Title level={3}>Species</Title>
 
-        <p>
-          {pantheon.system.species.join(", ")}
-        </p>
+        <Space wrap>
+          {pantheon.system.species.map((species) => (
+            <SpeciesPopover key={species} id={species} />
+          ))}
+        </Space>
 
         <Divider />
 
-        <Title level={3}>
-          Divine Entities
-        </Title>
+        {patrons.length > 0 && (
+          <>
+            <Title level={3}>Patrons</Title>
 
-        {pantheon.system.deities.map((entity) => (
-          <Card key={entity.id} className="mb-2">
-            <Title level={4}>
-              {entity.name ?? entity.id}
-            </Title>
+            {patrons.map((deity) => (
+              <Card key={deity.id} className="mb-2">
+                <Title level={4}>
+                  <DeityPopover name={deity.name ?? FormatName(deity.id)} />
+                </Title>
 
-            {entity.description && (
-              <p>
-                {entity.description}
-              </p>
-            )}
+                {deity.description && <p>{deity.description}</p>}
+              </Card>
+            ))}
+          </>
+        )}
 
-            {entity.stance && (
-              <p>
-                Role: {entity.stance}
-              </p>
-            )}
-          </Card>
-        ))}
+        {enemies.length > 0 && (
+          <>
+            <Divider />
+
+            <Title level={3}>Enemies</Title>
+
+            {enemies.map((deity) => (
+              <Card key={deity.id} className="mb-2">
+                <Title level={4}>
+                  <DeityPopover name={deity.name ?? FormatName(deity.id)} />
+                </Title>
+
+                {deity.description && <p>{deity.description}</p>}
+              </Card>
+            ))}
+          </>
+        )}
+
+        {others.length > 0 && (
+          <>
+            <Divider />
+
+            <Title level={3}>Divine Entities</Title>
+
+            {others.map((deity) => (
+              <Card key={deity.id} className="mb-2">
+                <Title level={4}>
+                  <DeityPopover name={deity.name ?? FormatName(deity.id)} />
+                </Title>
+
+                {deity.description && <p>{deity.description}</p>}
+              </Card>
+            ))}
+          </>
+        )}
       </Card>
     </section>
   );

@@ -1,4 +1,4 @@
-import { Typography, Col, Image, Button, Divider } from "antd";
+import { Typography, Col, Image, Button, Divider, Dropdown } from "antd";
 
 import { GetPantheonsForSpecies } from "@/lib/pantheons";
 
@@ -30,9 +30,7 @@ export default function SpeciesCon({
           rootClassName="w-full"
         />
 
-        <Title className="capitalize">
-          {DescriptionText.title}
-        </Title>
+        <Title className="capitalize">{DescriptionText.title}</Title>
 
         {DescriptionText.paragraph}
 
@@ -41,25 +39,38 @@ export default function SpeciesCon({
         </p>
 
         <div className="mt-auto">
-          {pantheons.map((pantheon) => (
+          {pantheons.length === 1 && (
             <Button
-              key={pantheon.id}
-              href={`/pantheons/${pantheon.id}`}
+              href={`/pantheons/${pantheons[0].id}`}
               className="w-full mt-4"
             >
-              <span className="capitalize">
-                See {pantheon.system.name}
-              </span>
+              <span className="capitalize">See {pantheons[0].system.name}</span>
             </Button>
-          ))}
+          )}
 
-          <Button
-            href={`/species/${SpeciesId}`}
-            className="w-full mt-4"
-          >
-            <span className="capitalize">
-              More On {DescriptionText.title}
-            </span>
+          {pantheons.length > 1 && (
+            <Dropdown
+              menu={{
+                items: pantheons.map((pantheon) => ({
+                  key: pantheon.id,
+                  label: pantheon.system.name,
+                  onClick: () => {
+                    window.location.href = `/pantheons/${pantheon.id}`;
+                  },
+                })),
+              }}
+              placement="bottom"
+            >
+              <Button className="w-full mt-4">
+                <span className="capitalize">
+                  See {pantheons.length} {DescriptionText.title} Pantheons ▼
+                </span>
+              </Button>
+            </Dropdown>
+          )}
+
+          <Button href={`/species/${SpeciesId}`} className="w-full mt-4">
+            <span className="capitalize">More On {DescriptionText.title}</span>
           </Button>
 
           <Divider />
