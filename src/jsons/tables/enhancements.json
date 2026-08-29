@@ -6,11 +6,11 @@
   },
   "tableData": [
     {
-      "cost": "2",
-      "price": "100 gp",
-      "description": "Inflicts STR mod amounts of damage on grapple.",
-      "id": "6",
-      "name": "Bladed"
+      "cost": "0",
+      "price": "5 gp",
+      "description": "Armor resizes to fit the user. Magical items automatically do this.",
+      "id": "1",
+      "name": "Fitting"
     },
     {
       "cost": "1",
@@ -20,25 +20,11 @@
       "name": "Comfort"
     },
     {
-      "cost": "2",
-      "price": "100 gp",
-      "description": "Does not reduce movement speed from STR requirement.",
-      "id": "8",
-      "name": "Light"
-    },
-    {
       "cost": "1",
       "price": "15 gp",
       "description": "Armor is self cleaning.",
       "id": "3",
       "name": "Cleaning"
-    },
-    {
-      "cost": "0",
-      "price": "5 gp",
-      "description": "Armor resizes to fit the user. Magical items automatically do this.",
-      "id": "1",
-      "name": "Fitting"
     },
     {
       "cost": "1",
@@ -48,18 +34,39 @@
       "name": "Shiny"
     },
     {
-      "cost": "2",
-      "price": "100 gp",
-      "description": "Does not grant disadvantage on stealth checks.",
-      "id": "7",
-      "name": "Suppressed"
-    },
-    {
       "cost": "1",
       "price": "25 gp",
       "description": "Armor is unnoticable and appears simple upon short inspection.",
       "id": "5",
       "name": "Dull"
+    },
+    {
+      "cost": "2",
+      "price": "100 gp",
+      "description": "Inflicts STR mod amounts of damage on grapple.",
+      "id": "6",
+      "name": "Bladed"
+    },
+    {
+      "cost": "2",
+      "price": "100 gp",
+      "description": "Grants immunity to Shock damage and effects caused by it.",
+      "id": "7",
+      "name": "Rubber"
+    },
+    {
+      "cost": "2",
+      "price": "100 gp",
+      "description": "Does not grant disadvantage on stealth checks.",
+      "id": "8",
+      "name": "Suppressed"
+    },
+    {
+      "cost": "2",
+      "price": "100 gp",
+      "description": "Does not reduce movement speed from STR requirement.",
+      "id": "9",
+      "name": "Light"
     }
   ]
 }
