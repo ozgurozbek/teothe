@@ -1,7 +1,6 @@
-import { Typography, Image, Tooltip, Space, Card } from "antd";
-import { useState } from "react";
+import { Image, Tooltip, Space, Card } from "antd";
 
-const { Title } = Typography;
+import Title from "antd/es/typography/Title";
 
 const domainIcons: Record<string, string> = {
   War: "war",
@@ -28,7 +27,7 @@ function GetDomainObject(name: string) {
   return (
     <Tooltip placement="left" color="#630436" title={name} key={name}>
       <Image
-        src={`./Icons/Domains/${icon}.png`}
+        src={`/Icons/Domains/${icon}.png`}
         alt={name}
         width={48}
         height={48}
@@ -63,8 +62,6 @@ export default function Deity({
     domains: string[];
   };
 }) {
-  const [previewOpen, setPreviewOpen] = useState(false);
-
   const img = encodeURI(imageSrc);
 
   return (
@@ -73,7 +70,6 @@ export default function Deity({
         {/* Background image layer */}
         <div
           className="absolute inset-0 cursor-pointer"
-          onClick={() => setPreviewOpen(true)}
           style={{
             backgroundImage: `
               linear-gradient(
@@ -108,7 +104,6 @@ export default function Deity({
                 objectFit: "cover",
                 cursor: "pointer",
               }}
-              onClick={() => setPreviewOpen(true)}
             />
 
             <Title level={3}>{descriptionProps.title}</Title>

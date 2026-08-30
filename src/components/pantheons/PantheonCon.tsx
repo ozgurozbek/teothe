@@ -40,11 +40,6 @@ export default function PantheonCon({
           </p>
         ))}
 
-        <p className="italic pl-2 border-l-[#630436] border-l-2 text-lg text-gray-400">
-          Worshipped by:{" "}
-          {PantheonData.species.join(", ")}
-        </p>
-
         <div className="mt-auto">
 
           <Button

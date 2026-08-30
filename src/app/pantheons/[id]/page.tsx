@@ -1,18 +1,15 @@
 import { notFound } from "next/navigation";
-import { Card, Divider, Image, Space } from "antd";
+import { Button, Card, Col, Divider, Image, Row, Space } from "antd";
 import Title from "antd/es/typography/Title";
 
 import GetCrumbs from "@/components/NavigationCrumb";
 import SpeciesPopover from "@/components/species/SpeciesPopover";
-import DeityPopover from "@/components/deities/DeityPopover";
+import Deity from "@/components/deities/Deities";
+
+import { DoubleRightOutlined } from "@ant-design/icons";
 
 import pantheons from "@/jsons/pantheons/pantheons.json";
-
-function FormatName(value: string) {
-  return value
-    .replaceAll("_", " ")
-    .replace(/\b\w/g, (char) => char.toUpperCase());
-}
+import deities from "@/jsons/deities/deities.json";
 
 interface PantheonData {
   id: string;
@@ -22,6 +19,7 @@ interface PantheonData {
     species: string[];
     deities: {
       id: string;
+      image?: string;
       name?: string;
       description?: string;
       stance?: string;
@@ -29,10 +27,37 @@ interface PantheonData {
   };
 }
 
+interface DeityData {
+  id: string;
+  name: string;
+  image: string;
+  description: string;
+  domains: string[];
+}
+
+interface ResolvedDeity extends DeityData {
+  stance?: string;
+}
+
 export function generateStaticParams() {
   return (pantheons as PantheonData[]).map((pantheon) => ({
     id: pantheon.id,
   }));
+}
+
+function ResolveDeity(
+  deity: PantheonData["system"]["deities"][number],
+): ResolvedDeity {
+  const base = (deities as DeityData[]).find((item) => item.id === deity.id);
+
+  return {
+    id: deity.id,
+    name: deity.name ?? base?.name ?? deity.id.replaceAll("_", " "),
+    image: deity.image ?? base?.image ?? "",
+    description: deity.description ?? base?.description ?? "",
+    domains: base?.domains ?? [],
+    stance: deity.stance,
+  };
 }
 
 export default async function PantheonPage({
@@ -48,92 +73,99 @@ export default async function PantheonPage({
     notFound();
   }
 
-  const patrons = pantheon.system.deities.filter((d) => d.stance === "patron");
-
-  const enemies = pantheon.system.deities.filter((d) => d.stance === "enemy");
-
-  const others = pantheon.system.deities.filter(
-    (d) => !d.stance || d.stance === "none",
-  );
+  const resolvedDeities = pantheon.system.deities.map(ResolveDeity);
 
   return (
     <section>
       <GetCrumbs path={`Teothe,Pantheons,${pantheon.system.name}`} />
 
       <Card variant="outlined">
-        <Image
-          src={`/Pantheons/${pantheon.id}.png`}
-          alt={pantheon.system.name}
-          width="100%"
-        />
+        <Row justify="space-between">
+          <Col xs={24} sm={24} md={12} lg={6} xl={6} xxl={6} className="pr-4">
+            <Image
+              src={`/Pantheons/${pantheon.id}.png`}
+              alt={pantheon.system.name}
+              rootClassName="w-full"
+            />
+          </Col>
 
-        <Title>{pantheon.system.name}</Title>
+          <Col xs={24} sm={24} md={12} lg={18} xl={18} xxl={18} className="p-4">
+            <Title>{pantheon.system.name}</Title>
 
-        {pantheon.system.description?.map((text) => (
-          <p key={text}>{text}</p>
-        ))}
+            {pantheon.system.description?.map((text) => (
+              <p key={text}>{text}</p>
+            ))}
+          </Col>
+        </Row>
+
+        <Button href="/pantheons">
+          See All Pantheons <DoubleRightOutlined />
+        </Button>
 
         <Divider />
 
-        <Title level={3}>Species</Title>
-
-        <Space wrap>
-          {pantheon.system.species.map((species) => (
-            <SpeciesPopover key={species} id={species} />
-          ))}
-        </Space>
-
-        <Divider />
-
-        {patrons.length > 0 && (
+        {pantheon.system.species.length > 0 && (
           <>
-            <Title level={3}>Patrons</Title>
+            <Title level={3}>Species</Title>
 
-            {patrons.map((deity) => (
-              <Card key={deity.id} className="mb-2">
-                <Title level={4}>
-                  <DeityPopover name={deity.name ?? FormatName(deity.id)} />
-                </Title>
+            <Space wrap>
+              {pantheon.system.species.map((species) => (
+                <Button key={species} href={`/species/${species}`}>
+                  <SpeciesPopover id={species} />
+                </Button>
+              ))}
 
-                {deity.description && <p>{deity.description}</p>}
-              </Card>
-            ))}
+              <Button href="/species">
+                See All Species <DoubleRightOutlined />
+              </Button>
+            </Space>
+
+            <Divider />
           </>
         )}
 
-        {enemies.length > 0 && (
+        {resolvedDeities.length > 0 && (
           <>
-            <Divider />
-
-            <Title level={3}>Enemies</Title>
-
-            {enemies.map((deity) => (
-              <Card key={deity.id} className="mb-2">
-                <Title level={4}>
-                  <DeityPopover name={deity.name ?? FormatName(deity.id)} />
-                </Title>
-
-                {deity.description && <p>{deity.description}</p>}
-              </Card>
-            ))}
-          </>
-        )}
-
-        {others.length > 0 && (
-          <>
-            <Divider />
-
             <Title level={3}>Divine Entities</Title>
 
-            {others.map((deity) => (
-              <Card key={deity.id} className="mb-2">
-                <Title level={4}>
-                  <DeityPopover name={deity.name ?? FormatName(deity.id)} />
-                </Title>
-
-                {deity.description && <p>{deity.description}</p>}
-              </Card>
-            ))}
+            <Row gutter={[16, 16]}>
+              {resolvedDeities.map((deity) => (
+                <Col
+                  key={deity.id}
+                  xs={24}
+                  sm={24}
+                  md={12}
+                  lg={8}
+                  xl={8}
+                  xxl={6}
+                >
+                  <div
+                    className="rounded-lg h-full"
+                    style={{
+                      border:
+                        deity.stance === "patron"
+                          ? "3px solid #630436"
+                          : deity.stance === "enemy"
+                            ? "3px solid #30011a"
+                            : undefined,
+                    }}
+                  >
+                    <Deity
+                      imageSrc={
+                        deity.image
+                          ? `/Deities/${deity.image}`
+                          : `/Deities/${deity.id}.png`
+                      }
+                      descriptionProps={{
+                        title: deity.name,
+                        body: deity.description,
+                        domains: deity.domains,
+                      }}
+                    />
+                  </div>
+                </Col>
+              ))}
+            </Row>
           </>
         )}
       </Card>

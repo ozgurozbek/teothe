@@ -1,57 +1,317 @@
 [
   {
-    "id": "aarakocra_pantheon",
+    "id": "void_faith",
     "system": {
-      "name": "Aarakocra Pantheon",
+      "name": "Void Faith",
       "description": [
-        "The Aarakocra pantheon reflects their connection to the Elemental Plane of Air, valuing freedom, distance, movement, and the endless sky.",
-        "The sky is considered the closest mortal experience to divinity."
+        "The Void Faith was always prominent in the eyes of the ones that saw the incomprehensible. It often played a big role in cults forming and people trying to decipher the signs, however often at the cost of their sanity and turning to the abyss for an answer."
       ],
-      "species": [
-        "aarakocra",
-        "kenku"
-      ],
+      "species": [],
       "deities": [
         {
-          "id": "wiob",
-          "description": "The endless sky, freedom, distance, and the call of the horizon. The open sky represents the closest mortal experience to divinity.",
+          "id": "zharathuun",
+          "name": "Nulla",
+          "stance": "patron"
+        },
+        {
+          "id": "mythos",
+          "name": "Mythos",
+          "description": "God of Terror, representing change and everlasting torment within it. The ones who pray do to by peeling their skin in certain areas and often mark their bodies with unintelligeable runes.",
           "stance": "none"
         },
         {
-          "id": "cfofb",
-          "description": "Storms, winds, and overwhelming elemental forces. Storms are not evil, but expressions of the sky itself.",
-          "stance": "none"
+          "id": "pedi"
         },
         {
-          "id": "wiob_migration",
-          "name": "Wiob",
-          "description": "Migration, exploration, and discovery. The journey matters as much as the destination.",
-          "stance": "none"
+          "id": "cfofb"
         },
         {
-          "id": "ayrugcumoak",
-          "description": "Memory, ancestry, and stories carried across generations. A lost story is a lost flight path.",
-          "stance": "none"
+          "id": "fexyiaf"
+        },
+        {
+          "id": "modgo"
+        },
+        {
+          "id": "wodroh"
+        },
+        {
+          "id": "yrchenn"
+        },
+        {
+          "id": "pwazo"
         }
       ]
     }
   },
   {
-    "id": "bugbear_pantheon",
+    "id": "dharakocra",
     "system": {
-      "name": "Bugbear Pantheon",
+      "name": "Dharakocra",
       "description": [
-        "The Bugbear pantheon focuses on hunting, survival, natural cycles, death, and strange challenges."
+        "The Dharakocra faith is inseparable from the open sky, where every flight is both a physical journey and a spiritual act. The endless horizon is seen as a reminder that freedom is not merely the absence of restraint, but the pursuit of purpose through movement, exploration, and the courage to return home.",
+        "The Deep Aarakocra believe that the wind carries the voices of their ancestors, while storms are the sky speaking in its most powerful form. Oral traditions, seasonal migrations, and mountain nesting rituals preserve the wisdom of previous generations, ensuring that no story, path, or sacrifice is ever truly forgotten."
+      ],
+      "species": ["aarakocra"],
+      "deities": [
+        {
+          "id": "lwaro",
+          "stance": "patron"
+        },
+        {
+          "id": "great_salmon",
+          "name": "Great Salmon",
+          "description": "God of rivers, fish, and peaceful sustenance. The Great Salmon represents the bounty that allows communities to rest between long flights and dangerous journeys. A successful catch is seen as both a blessing and a reminder that even those born for the skies must sometimes return to the waters that sustain them."
+        },
+        {
+          "id": "wiob",
+          "description": "God of the endless sky, freedom, migration, and discovery. The open sky is regarded as the closest mortal experience to divinity, and every journey is considered as important as its destination."
+        },
+        {
+          "id": "cfofb",
+          "description": "God of storms, winds, and overwhelming elemental forces. Storms are revered as the sky expressing its will rather than acts of malice, and are honored through offerings and solemn observation."
+        },
+        {
+          "id": "lwaqy"
+        },
+        {
+          "id": "xua"
+        }
+      ]
+    }
+  },
+  {
+    "id": "the_trail",
+    "system": {
+      "name": "The Trail",
+      "description": [
+        "The Hunter's Pantheon is followed by those who see survival as the truest measure of virtue. Whether pursuing prey across dense forests, open plains, or distant frontiers, its followers believe that patience, instinct, discipline, and courage are sacred qualities forged through the hunt. Every successful pursuit is an act of gratitude toward the gods who shaped predator and prey alike.",
+        "Though adopted by many peoples, each interprets the pantheon through its own traditions. Leonin emphasize ambition, honour, and proving oneself through worthy challenges. Bugbears preserve ancient hunting customs where cunning, stealth, and trophies represent respect for worthy prey. Shifters seek harmony between instinct and restraint, viewing the hunt as a reflection of their own struggle between civilization and the beast within."
+      ],
+      "species": ["leonin", "shifter", "bugbear"],
+      "deities": [
+        {
+          "id": "maies",
+          "stance": "patron"
+        },
+        {
+          "id": "cyaxo",
+          "description": "God of nature, instinct, and balance. Cyaxo represents the relationship between predator, prey, and the wilderness that sustains them. Followers worship Cyaxo through nature rituals, wilderness meditation, transformation ceremonies, and respectful hunts that acknowledge the land as both teacher and opponent."
+        },
+        {
+          "id": "naahv",
+          "description": "God of death and the final hunt. Naahv teaches that death is the greatest prey that eventually claims all beings, and that a worthy life is one that leaves behind a story. Followers worship Naahv through burial rites, warrior traditions, and ceremonies honoring those who completed their final hunt."
+        },
+        {
+          "id": "buib",
+          "description": "God of puzzles, riddles, and strange knowledge. Buib represents the challenges that test a hunter's mind as much as their physical ability, teaching that some mysteries hold value even when unanswered. Followers worship Buib through riddle contests, trick games, and attempts to solve impossible challenges."
+        },
+        {
+          "id": "radu",
+          "description": "God of ambition, achievement, and personal excellence. Radu embodies the desire to prove oneself through action, teaching that talent matters but hunger determines greatness. Followers worship Radu through hunts, personal challenges, competitions, and trials designed to demonstrate discipline and growth."
+        },
+        {
+          "id": "wiob",
+          "description": "God of wandering, exploration, and searching for belonging. Wiob represents the paths taken by hunters who travel beyond familiar lands in pursuit of knowledge, purpose, and discovery. Followers worship Wiob through pilgrimages, journeys into unknown territories, and acts of exploration."
+        },
+        {
+          "id": "wusor",
+          "description": "God of arcane understanding and transformation. Wusor represents the study of the boundaries between forms, identities, and the forces that shape living creatures. Followers worship Wusor through magical research, transformation rituals, and practices that seek deeper understanding of the self."
+        }
+      ]
+    }
+  },
+  {
+    "id": "johke_pantheon",
+    "system": {
+      "name": "Johke Pantheon",
+      "description": [
+        "The Johke Pantheon represents the diverse spiritual traditions of those who seek understanding through instinct, transformation, exploration, and the mysteries of existence."
       ],
       "species": [
-        "bugbear"
+        "human",
+        "half-elf",
+        "half-orc",
+        "shifter",
+        "tortle",
+        "aarakocra"
       ],
       "deities": [
         {
-          "id": "unknown_hunting_deity",
-          "name": "Unknown Hunting Deity",
-          "description": "Hunting, stealth, senses, surprise, and the thrill of the chase.",
-          "stance": "none"
+          "id": "wiob",
+          "stance": "patron"
+        },
+        {
+          "id": "mceeju"
+        },
+        {
+          "id": "lcaoc"
+        },
+        {
+          "id": "veri"
+        },
+        {
+          "id": "uke"
+        },
+        {
+          "id": "cyaxo"
+        },
+        {
+          "id": "ehx"
+        },
+        {
+          "id": "buib"
+        },
+        {
+          "id": "radu"
+        },
+        {
+          "id": "pwazo"
+        },
+        {
+          "id": "vihi"
+        },
+        {
+          "id": "naahv",
+          "name": "Naahw"
+        },
+        {
+          "id": "cfofb"
+        },
+        {
+          "id": "vesvjdegz"
+        },
+        {
+          "id": "gud"
+        },
+        {
+          "id": "lwaqy"
+        },
+        {
+          "id": "fexyiaf"
+        },
+        {
+          "id": "modgo"
+        },
+        {
+          "id": "wodroh"
+        },
+        {
+          "id": "wusor"
+        },
+        {
+          "id": "raxcoh"
+        },
+        {
+          "id": "tezr"
+        },
+        {
+          "id": "yadseca"
+        },
+        {
+          "id": "nizi"
+        },
+        {
+          "id": "lunm"
+        },
+        {
+          "id": "ayrugcumoak"
+        },
+        {
+          "id": "afez"
+        },
+        {
+          "id": "wugv"
+        },
+        {
+          "id": "gaajyx",
+          "name": "Gaayjx"
+        },
+        {
+          "id": "gezi"
+        },
+        {
+          "id": "waqorafe"
+        },
+        {
+          "id": "megm"
+        },
+        {
+          "id": "wadqwofm"
+        },
+        {
+          "id": "lwaro"
+        },
+        {
+          "id": "gaxaca",
+          "name": "Gaxqaca"
+        },
+        {
+          "id": "nepi"
+        },
+        {
+          "id": "czeis"
+        },
+        {
+          "id": "czeeg"
+        },
+        {
+          "id": "pedi",
+          "stance": "enemy"
+        }
+      ]
+    }
+  },
+  {
+    "id": "faith_of_the_ladies",
+    "system": {
+      "name": "Faith of the Ladies",
+      "description": [
+        "The Faith of the Ladies is a tradition centered around four divine figures known as the Ladies, each representing a powerful and often contradictory aspect of existence. Their followers recognize creation and destruction, purity and corruption, sorrow and revelation as interconnected forces that shape mortal lives.",
+        "The Ladies are not worshipped as distant ideals, but as forces that are experienced directly through hardship, transformation, suffering, and enlightenment. Their followers seek understanding through accepting the aspects of existence that others may reject or fear."
+      ],
+      "species": ["tiefling"],
+      "deities": [
+        {
+          "id": "pedi",
+          "name": "Burning Lady",
+          "image": "Consuming Lady.webp",
+          "description": "She Who Consumes. The Burning Lady represents destruction, transformation, and the hunger of forces that cannot be stopped. Followers worship her through rituals of burning, offerings placed into flames, and acts of sacrifice that symbolize surrendering what must be consumed for something new to emerge."
+        },
+        {
+          "id": "xua",
+          "name": "Soiled Lady",
+          "image": "Soiled Lady.webp",
+          "description": "She Who Stains. The Soiled Lady represents corruption, imperfection, and the marks left upon all things by experience. Followers worship her through rites involving earth, decay, and symbolic acts of accepting flaws, believing that what is stained still holds meaning and value."
+        },
+        {
+          "id": "lwaqy",
+          "name": "Weeping Lady",
+          "image": "Weeping Lady.webp",
+          "description": "She Who Weeps. The Weeping Lady represents grief, compassion, and the sorrow carried by all living beings. Followers worship her through mourning ceremonies, acts of remembrance, and rituals of shared grief that honor suffering rather than deny it."
+        },
+        {
+          "id": "eve_archambeau",
+          "image": "Eve Archambeau.png",
+          "name": "Shining Lady",
+          "description": "She Who Illuminates. The Shining Lady represents revelation, guidance, and the pursuit of truth. Followers worship her through acts of illumination, study, and ceremonies involving light, seeking to reveal what is hidden and bring clarity to the unknown."
+        }
+      ]
+    }
+  },
+  {
+    "id": "skunn_pantheon",
+    "system": {
+      "name": "Skünn Pantheon",
+      "description": [
+        "The Skünn faith is a monotheistic tradition centered around the Nine-Tailed Fox, a singular divine figure whose teachings shape the beliefs and practices of its followers. The faith emphasizes wisdom, adaptability, and the mysteries of existence, with the Nine-Tailed Fox serving as both guardian and guide. It originated from Nhaft, the birthplace of Dwarves."
+      ],
+      "species": ["changeling"],
+      "deities": [
+        {
+          "id": "nine_tailed_fox",
+          "name": "Nine-Tailed Fox",
+          "image": "Nine Tailed Fox.webp",
+          "stance": "patron"
         }
       ]
     }
@@ -61,32 +321,347 @@
     "system": {
       "name": "Changeling Pantheon",
       "description": [
-        "The Changeling pantheon focuses on transformation, identity, secrets, artistic expression, and the freedom to exist beyond a single form.",
-        "Changeling spirituality views identity as something created through choice, experience, and expression rather than something fixed."
+        "The Changeling Pantheon is a faith centered around transformation, identity, and the freedom to exist beyond a single form. Changelings believe that the self is not defined by appearance, but by the experiences, choices, and identities they embrace throughout their lives.",
+        "The Traveller is the central figure of this tradition, believed to have protected the first Msabvu and gifted them the Traveller's Cloak. Through this blessing, changelings gained the ability to survive without a fixed identity, though the gift also caused fear and misunderstanding among others."
       ],
-      "species": [
-        "changeling"
-      ],
+      "species": ["changeling"],
       "deities": [
         {
-          "id": "the_traveller",
-          "description": "Protection, transformation, and identity. The Traveller's Cloak created the first Msabvu and gave them the ability to survive without a fixed identity. The self is not a single face but every person one can become.",
+          "id": "traveller",
+          "name": "The Traveller",
+          "description": "God of protection, transformation, and identity. The Traveller's Cloak created the first Msabvu and granted them the ability to survive without fixed identity. Followers worship the Traveller through face rituals, personal transformations, and journeys of self-discovery. They believe the self is not a single face, but every person one has the ability to become.",
           "stance": "patron"
         },
         {
           "id": "xua",
-          "description": "Secrets, hidden identities, and unseen truths. Associated with changeling existence and their history with doppelgangers. A true identity is something chosen, not discovered.",
-          "stance": "none"
+          "description": "Goddess of secrets, hidden identities, and unseen truths. Xua is connected to the changeling relationship with secrecy and the mysteries surrounding their origins. Followers worship Xua through secret names, hidden societies, and rituals that protect knowledge until it is ready to be revealed."
         },
         {
           "id": "vihi",
-          "description": "Expression, art, and emotional performance. Changelings use appearance as an artistic medium. A face can be a canvas.",
-          "stance": "none"
+          "description": "Goddess of expression, art, and emotional performance. Vihi represents appearance as a form of creative expression, teaching that a face can be a canvas. Followers worship Vihi through performance, disguise arts, and acts of transformation that celebrate individuality."
         },
         {
           "id": "wiob",
-          "description": "Freedom and wandering. Reflects the changeling history of searching for acceptance. No single form defines a person.",
+          "description": "God of freedom, wandering, and exploration. Wiob reflects the changeling search for acceptance and belonging across the world. Followers worship Wiob through travel rituals, pilgrimages, and journeys that affirm that no single form can define a person."
+        }
+      ]
+    }
+  },
+  {
+    "id": "ahvel",
+    "system": {
+      "name": "Ahvel",
+      "description": [
+        "The Ahvel faith is the broad elven tradition centered on creation, arcane mastery, artistic expression, and the continuation of elven achievement. Elves believe their connection to Yr'Snn may eventually allow them to return near him, not through escaping death, but by creating works and knowledge worthy of enduring beyond their own lives.",
+        "Creation is therefore treated as a spiritual practice. Art, magic, music, scholarship, and craftsmanship are all considered ways of participating in the unfinished work of existence. Elven society preserves masterpieces and knowledge because forgotten creation represents a loss not only to the present, but to those who may one day inherit it."
+      ],
+      "species": ["elf", "firbolg", "goliath", "half-elf"],
+      "deities": [
+        {
+          "id": "yr'snn",
+          "description": "God of elves, creation, artistry, arcane mastery, music, crafts, war, poetry, and the origin of elven existence. Yr'Snn is the central figure of elven belief, and elves seek to continue creation in ways that may ultimately bring them closer to his realm. Followers worship him through creating art, experimenting with magic, composing music and poetry, performing great works, and preserving masterpieces.",
+          "stance": "patron"
+        },
+        {
+          "id": "tezr",
+          "name": "Yafw",
+          "description": "God of flowers, representing beauty expressed through natural creation, growth, and impermanence. Flowers are regarded as living works of art that achieve beauty without needing permanence. Followers worship Tezr by cultivating gardens, presenting flowers as offerings, arranging ceremonial blossoms, and incorporating living plants into artistic works."
+        },
+        {
+          "id": "lunm",
+          "name": "Qors",
+          "description": "God of childbirth and the continuation of life, also known as Msiys. Lunm represents creation in its most literal form, where one generation gives existence to another. Followers worship Lunm through birth ceremonies, blessings for parents and children, family celebrations, and offerings made when a new child enters the world."
+        },
+        {
+          "id": "uke",
+          "name": "Opa",
+          "description": "God of life, change, unconventional creation, and unexpected possibility. Uke represents the belief that innovation and imperfection can produce forms of brilliance that tradition cannot predict. Followers worship Uke through experimental art, unusual magical experiments, unconventional crafts, and deliberate attempts to create something never made before."
+        },
+        {
+          "id": "vihi",
+          "name": "Zeme",
+          "description": "Goddess of love, affection, passion, and artistic inspiration. Vihi represents the emotional force that gives creative work meaning, teaching that technical perfection without feeling is incomplete. Followers worship Vihi through poetry, music, theatre, romantic devotion, and personal creations made as sincere expressions of emotion."
+        },
+        {
+          "id": "mykthyr",
+          "description": "Goddess of disciplined stewardship of the living world. Mykthyr teaches that creation must also be protected and cultivated. Followers worship her through tending sacred trees, ranger initiations, woodland vigils, and protecting forests from those who would destroy them."
+        },
+        {
+          "id": "raxcoh",
+          "name": "Wuchim",
+          "description": "The helper god, representing service, generosity, and the practical use of one's talents for others. Raxcoh teaches that creation has little value if it cannot improve another person's life. Followers worship him through charitable acts, teaching useful skills, repairing what is broken, and offering their talents freely to those in need."
+        },
+        {
+          "id": "yadseca",
+          "name": "Dujxahu",
+          "description": "Goddess of smell and the subtle sensory experiences through which the world is perceived. Yadseca represents the intimate connection between scent, memory, emotion, and place. Followers worship her through incense, perfumes, scented gardens, and ceremonies designed to preserve or evoke important memories."
+        },
+        {
+          "id": "lara_navye",
+          "description": "Demigoddess of rabbits, love, and children. Lara Navye represents affection, fertility, playfulness, and the protection of the young. Followers worship her through celebrations for children, gifts between loved ones, rabbit imagery, and rituals asking for healthy families and safe childhoods."
+        }
+      ]
+    }
+  },
+  {
+    "id": "drow_pantheon",
+    "system": {
+      "name": "Drow Pantheon",
+      "description": [
+        "The Drow Pantheon teaches that existence is not something to be admired or preserved for its own sake. It is a contest of will in which weakness invites domination and power belongs to those capable of taking and keeping it. Where the Ahvel tradition treats creation as participation in an unfinished work, the Drow tradition asks who has the right to decide what that work becomes.",
+        "Drow religious life therefore revolves around leverage, secrecy, ambition, punishment, and demonstrations of capability. Knowledge is cultivated because it creates advantage, beauty is cultivated because it creates influence, and loyalty is tested because an untested allegiance is worthless. Worship is commonly private and hierarchical, involving blood offerings, secret vows, ritual trials, sacrifices, assassinations, and displays of authority."
+      ],
+      "species": ["drow"],
+      "deities": [
+        {
+          "id": "xua",
+          "description": "Goddess of shadows, secrecy, stealth, manipulation, and information deliberately kept from others. Xua teaches that knowledge becomes power only when its owner decides who is permitted to possess it. She regards exposure as a form of surrender and considers those who reveal everything about themselves to have abandoned one of their greatest weapons. Followers worship Xua through whispered prayers, secret names, shadow rites, espionage trials, concealed offerings, and oaths that are never written down.",
+          "stance": "patron"
+        },
+        {
+          "id": "pwazo",
+          "description": "Goddess of flame, tyranny, ambition, conquest, and the Underworld. Pwazo believes authority exists to be exercised rather than justified, and that a ruler who cannot inspire fear will eventually become someone else's subject. Her rivalry with Xua is ancient: Xua believes the strongest power is the power nobody can see, while Pwazo believes hidden power is ultimately powerless unless it can command openly. Followers worship Pwazo through fire ceremonies, demonstrations of obedience, ritual contests for rank, and offerings burned before her symbols."
+        },
+        {
+          "id": "wodroh",
+          "description": "God of murder, torture, slavery, and deliberate cruelty. Wodroh teaches that killing is most sacred when it is intentional, personal, and irreversible. He despises indiscriminate destruction because meaningless death proves nothing about the killer. His priests therefore cultivate murder as a craft, preserving names, methods, trophies, and stories of those they have deliberately ended. Followers worship through blood rites, assassination, ritual executions, and the presentation of trophies from worthy victims."
+        },
+        {
+          "id": "yrchenn",
+          "description": "Goddess of the deep sea, fear, punishment, and consequences beyond mortal control. The Drow interpretation of Yrchenn is not primarily concerned with sailors or oceans but with the terror of knowing that something greater than oneself may be watching from beneath an apparently empty surface. She is frequently invoked when punishment must be absolute and escape impossible. Followers worship through sacrifices cast into underground waters, fearful prayers, acts of restitution, and offerings made before entering places from which they may not return."
+        },
+        {
+          "id": "drow_ascendant",
+          "name": "The Ascendant",
+          "description": "A new god of self-made power, ambition, personal transformation, and the refusal to remain in an assigned place. The Ascendant teaches that birth determines circumstance but never determines worth, and therefore appeals to ambitious Drow who seek to overturn their station. Xua considers this doctrine useful but dangerous, while Pwazo considers it an insult to hierarchy itself. Followers worship through personal trials, abandoning inherited privileges, defeating a stronger rival, and publicly declaring a goal that they intend to achieve regardless of opposition."
+        }
+      ]
+    }
+  },
+  {
+    "id": "fey_courts",
+    "system": {
+      "name": "Fey Courts",
+      "description": [
+        "The Fey Courts teach that existence matters because relationships give things meaning. Nothing possesses significance entirely by itself: a gift matters because it creates obligation, a promise matters because someone trusted it, a feast matters because people shared it, and an insult matters because someone chose to remember it. The Fey therefore regard reality as mutable, relational, and governed as much by reciprocity as by physical law.",
+        "The Courts are divided between competing powers rather than arranged as a harmonious divine hierarchy. Their worship is conducted through feasts, seasonal celebrations, dances, hunts, masks, gifts, hospitality, riddles, bargains, songs, and carefully witnessed promises. Fey worshippers are less concerned with believing the correct doctrine than with understanding what a particular god expects from a particular relationship."
+      ],
+      "species": ["eladrin", "elf", "lythari", "fairy"],
+      "deities": [
+        {
+          "id": "titania",
+          "name": "Titania, Queen of the Bright Court",
+          "description": "Queen of the Seelie Court and goddess of generosity, celebration, fertility, beauty, hospitality, and reciprocal obligation. Titania genuinely delights in generosity, but she considers an unacknowledged gift almost insulting because it denies the relationship created by giving. Her ancient rivalry with the Queen of Air and Darkness is therefore not simply good against evil, but abundance against deprivation and invitation against exclusion. Followers worship Titania through feasts, seasonal festivals, elaborate hospitality, flower offerings, dancing, and gifts given without immediately demanding their return.",
+          "stance": "patron"
+        },
+        {
+          "id": "queen_of_air_and_darkness",
+          "name": "The Queen of Air and Darkness",
+          "description": "Sovereign of the Unseelie Court and goddess of winter, deprivation, secrecy, predation, fear, and resentment. She teaches that every relationship contains the possibility of abandonment and that those who depend entirely upon another have already surrendered part of themselves. Titania considers her cruel; the Queen considers Titania naive. Followers worship through midnight rites, winter hunts, secret bargains, black offerings, and ceremonies in which something valued is deliberately surrendered to demonstrate that attachment can be survived."
+        },
+        {
+          "id": "stag_king",
+          "name": "The Stag King",
+          "description": "Ancient lord of the Wild Court and god of instinct, migration, territory, beasts, and freedom from social expectation. The Stag King refuses to acknowledge the authority of either great Court and considers civilization another seasonal behaviour rather than a permanent achievement. He frequently frustrates Titania and the Queen of Air and Darkness alike by refusing their bargains. Followers worship through solitary hunts, wilderness journeys, observing animal behaviour, leaving food for wild creatures, and travelling without roads or predetermined destinations."
+        },
+        {
+          "id": "thorned_lady",
+          "name": "The Thorned Lady",
+          "description": "Goddess of promises, boundaries, vengeance, gifts, and the obligations created by trust. The Thorned Lady teaches that a promise is not merely a statement about the future but an alteration of the relationship between the people who make it. She is therefore feared by both generous and treacherous Fey, because neither good intentions nor clever wording automatically absolves someone from an obligation they knowingly accepted. Followers worship through oath ceremonies, thorn offerings, witnessed bargains, keeping difficult promises, and ritual vengeance against deliberate oathbreakers."
+        },
+        {
+          "id": "buib",
+          "name": "The Laughing Rain",
+          "description": "Goddess of rain, music, improvisation, revelry, and sudden changes of fortune. Buib teaches that rigidly planned joy is inferior to joy that emerges unexpectedly from the people sharing it. She frequently competes with the more formal customs of Titania's court and delights in disrupting solemn occasions with music or rain. Followers worship through spontaneous songs, rain dances, drinking games, storytelling contests, improvisational performances, and celebrations held without announcing them beforehand."
+        }
+      ]
+    }
+  },
+  {
+    "id": "verdant_pantheon",
+    "system": {
+      "name": "Verdant Pantheon",
+      "description": [
+        "The Verdant Pantheon teaches that existence matters because every living thing participates in a system larger than itself. No creature exists independently: predator requires prey, forest requires decay, settlements require land, and people require the ecosystems they routinely damage. The central religious question is therefore not how much humanity or elvenkind can create, but how much life can flourish without one form of life consuming the rest.",
+        "The faith consequently treats ordinary survival as sacred work. Farming, hunting, forestry, animal husbandry, gathering, building, and even controlled burning can become religious acts when performed with awareness of their consequences. Verdant worshippers do not consider nature untouched by civilization to be automatically holy, nor civilization automatically corrupt. Their concern is whether the relationship remains sustainable."
+      ],
+      "species": ["wood_elf", "lythari", "elf", "half-elf"],
+      "deities": [
+        {
+          "id": "verdant_hearth",
+          "name": "The Verdant Hearth",
+          "description": "A new goddess of communal survival, seed stores, shelter, and the quiet labour that allows a community to endure winter. She is not concerned with wilderness or conquest but with the fact that ecosystems alone do not feed a village unless someone stores grain, repairs roofs, tends children, and prepares for scarcity. Followers worship through communal meals, maintaining food stores, repairing homes, caring for the elderly, and ensuring that no member of the settlement enters winter without shelter.",
+          "stance": "patron"
+        },
+        {
+          "id": "cyaxo",
+          "name": "Cyaxo, Keeper of the Living Land",
+          "description": "God of forests, cultivated nature, crops, breeding animals, farming, and the difficult boundary between wilderness and settlement. Cyaxo rejects both the idea that nature must remain untouched and the idea that nature exists merely to be exploited. He teaches that cultivation becomes sacred when the cultivated land remains capable of sustaining life after the cultivator is gone. Followers worship through planting, crop rotation, respectful hunting, animal care, first-harvest offerings, and prayers before altering a piece of land."
+        },
+        {
+          "id": "mykthyr",
+          "name": "Mykthyr, the Green Warden",
+          "description": "Goddess of rangers, trees, tracking, guardianship, and the defence of living systems. Mykthyr believes that stewardship sometimes requires refusing people access to places they intend to exploit. She and Cyaxo frequently disagree over whether damaged land should be restored to its previous state or adapted into something new. Followers worship through ranger initiations, forest patrols, tree planting, maintaining wildlife corridors, and responding to places where the balance of an ecosystem has been disturbed."
+        },
+        {
+          "id": "maies",
+          "name": "Maies, the Red Hunt",
+          "description": "God of hunting, violent defence, pursuit, and the recovery of what has been taken. Maies teaches that restraint without the capacity for violence merely leaves the vulnerable at the mercy of stronger predators. He therefore serves as the uncomfortable counterweight to Mykthyr's guardianship. Followers worship through ceremonial hunts, martial trials, tracking competitions, recovering stolen animals or territory, and offering the first portion of a successful kill to the wilderness."
+        },
+        {
+          "id": "cfofb",
+          "name": "Cfofb, the Unbroken Storm",
+          "description": "God of storms, wild strength, destruction, and the limits of mortal control. Cfofb teaches that nature does not owe anyone stability and that a healthy world sometimes requires destruction that no creature intended. Cyaxo accepts this principle reluctantly, while Maies respects it as the purest expression of strength. Followers worship by observing storms, leaving offerings in exposed places, performing feats of endurance, and rebuilding communities after natural disasters."
+        },
+        {
+          "id": "spina",
+          "name": "Spina, the Thorned Root",
+          "description": "God of thorns, defensive growth, wounds, natural pain, and the protective mechanisms of living things. Spina teaches that not everything which hurts you is your enemy and not everything beautiful is safe to touch. His fall from divine favour is remembered as a warning against treating pain as inherently meaningless. Followers worship through thorn gardens, controlled blood offerings, rites of passage through difficult terrain, and tending wounds received while protecting others."
+        }
+      ]
+    }
+  },
+  {
+    "id": "astral_pantheon",
+    "system": {
+      "name": "Astral Pantheon",
+      "description": [
+        "The Astral Pantheon teaches that existence matters because reality is immense enough that no single lifetime can comprehend it. Ignorance is not shameful, but refusing to investigate what can be learned is considered a form of spiritual laziness. The universe is treated as something that can be measured, mapped, questioned, and gradually understood.",
+        "Astral religion therefore turns scholarship into ordinary religious practice. Star charts, mathematics, navigation, magical research, historical records, planar travel, observatories, and long-term experiments all serve devotional purposes. The faithful accept that some questions may never be answered, but consider the pursuit of those answers meaningful regardless."
+      ],
+      "species": ["astral_elf", "avariel", "elf"],
+      "deities": [
+        {
+          "id": "wusor",
+          "name": "Wusor, the Arcane Horizon",
+          "description": "God of magic, experimentation, arcane discovery, and the hidden rules underlying reality. Wusor teaches that magic is not merely a tool but evidence that reality has structures mortals can investigate. He often clashes with Ayrugcumoak because he values dangerous experimentation while she prioritizes preserving reliable knowledge. Followers worship through spell research, controlled magical experiments, arcane competitions, laboratories, and publishing discoveries for future scholars.",
+          "stance": "patron"
+        },
+        {
+          "id": "ayrugcumoak",
+          "name": "Ayrugcumoak, the Eye of Knowledge",
+          "description": "Goddess of scholarship, archives, research, memory, and the obligation to make knowledge available to those capable of using it responsibly. Ayrugcumoak considers deliberately destroying knowledge a greater crime than admitting ignorance. Her disagreement with Wusor is fundamental: he believes knowledge must sometimes be risked to advance understanding, while she believes knowledge lost cannot be recovered. Followers worship through libraries, copying manuscripts, preserving records, peer review, historical research, and teaching others."
+        },
+        {
+          "id": "lcaoc",
+          "name": "Lcaoc, the Great Pattern",
+          "description": "God of wit, civilization, mathematics, systems, cooperation, and the structures that allow immense numbers of individuals to accomplish something no individual could achieve. Lcaoc teaches that intelligence becomes meaningful when it produces coordination rather than merely cleverness. Followers worship through constructing observatories, solving difficult problems collectively, maintaining institutions, creating mathematical systems, and organizing large scholarly projects."
+        },
+        {
+          "id": "nizi",
+          "name": "Nizi, the Last Measure",
+          "description": "Goddess of completion, conclusions, fulfilled cycles, and the point at which investigation must become a finished work. Nizi argues against the Astral tendency to pursue questions indefinitely, teaching that an unfinished project cannot serve those who come after it. She frequently disputes with Wusor, who considers unfinished experiments valuable, and with Ayrugcumoak, who worries that premature conclusions become preserved errors. Followers worship by completing research, publishing final results, finishing journeys, closing experiments, and formally declaring projects complete."
+        },
+        {
+          "id": "astral_lantern",
+          "name": "The Astral Lantern",
+          "description": "A new deity of thresholds, distant signals, planar passages, and the faint evidence that something exists beyond the known horizon. The Astral Lantern is less interested in understanding the universe than in proving that there is more to understand. Followers worship by maintaining beacons, sending signals into distant planes, lighting lamps before planar journeys, and recording unexplained lights or messages."
+        },
+        {
+          "id": "meralith",
+          "name": "Meralith",
+          "description": "A false goddess of prophecy and future memory whose followers believe that visions of the future are memories arriving before the events that created them. Meralith's apparent prophecies have occasionally been accurate, but acting upon them can become the very cause of what was supposedly foretold. Astral scholars disagree over whether her cult is encountering a genuine temporal phenomenon or merely constructing elaborate patterns from coincidence. Followers worship through recording dreams, comparing predictions against events, preserving visions, and deliberately testing whether foreknowledge changes outcomes.",
           "stance": "none"
+        }
+      ]
+    }
+  },
+  {
+    "id": "shadow_pantheon",
+    "system": {
+      "name": "Shadow Pantheon",
+      "description": [
+        "The Shadow Pantheon teaches that existence matters because everything eventually leaves something behind. A life may end, a body may disappear, and a civilization may collapse, but names, memories, consequences, and relationships can persist. Death is therefore not regarded as an enemy to defeat but as a boundary that gives remembrance its importance.",
+        "Shadow religion is quiet and practical. Its followers maintain graves, preserve names, record family histories, protect secrets entrusted to them, comfort mourners, and oppose forms of undeath that deny the passage of the dead. Their central concern is not darkness itself but what remains when the light has gone."
+      ],
+      "species": ["shadar_kai", "elf"],
+      "deities": [
+        {
+          "id": "catequil",
+          "description": "God of death, judgment, souls, and the final destination of the dead. Naahv does not regard death as punishment but as a necessary transition that prevents the living and dead from occupying the same place forever. His relationship with Lwaqy is deliberately tense: Naahv insists that grief must eventually release the dead, while Lwaqy insists that some bonds deserve to remain painful. Followers worship through funerals, graveside prayers, recording the names of the dead, guiding spirits, and helping mourners accept the finality of death."
+        },
+        {
+          "id": "spina",
+          "description": "God of death, judgment, souls, and the final destination of the dead. Naahv does not regard death as punishment but as a necessary transition that prevents the living and dead from occupying the same place forever. His relationship with Lwaqy is deliberately tense: Naahv insists that grief must eventually release the dead, while Lwaqy insists that some bonds deserve to remain painful. Followers worship through funerals, graveside prayers, recording the names of the dead, guiding spirits, and helping mourners accept the finality of death."
+        },
+        {
+          "id": "jenelius_londste",
+          "name": "Eighthcomer",
+          "image": "Jenelius Londste.png",
+          "description": "God of death, judgment, souls, and the final destination of the dead. Naahv does not regard death as punishment but as a necessary transition that prevents the living and dead from occupying the same place forever. His relationship with Lwaqy is deliberately tense: Naahv insists that grief must eventually release the dead, while Lwaqy insists that some bonds deserve to remain painful. Followers worship through funerals, graveside prayers, recording the names of the dead, guiding spirits, and helping mourners accept the finality of death."
+        },
+        {
+          "id": "lwaqy",
+          "description": "God of grief, pain, endurance, darkness, and the suffering that accompanies attachment. Lwaqy teaches that pain is evidence that something mattered and should therefore not always be eliminated. He carries the suffering of others rather than demanding that they become numb to it. Followers worship through mourning vigils, caring for the bereaved, acts of voluntary hardship, listening to those in pain, and maintaining memorials for people whom others have forgotten."
+        },
+        {
+          "id": "xua",
+          "name": "Veiled Keeper",
+          "description": "Goddess of secrecy, shadows, privacy, and truths that must remain concealed to protect someone from harm. The Shadow interpretation of Xua is fundamentally different from her Drow worship: secrecy is not a weapon of domination but a form of guardianship. Xua teaches that some memories become dangerous when exposed and that keeping another person's confidence can be a sacred duty. Followers worship through confidentiality vows, masked ceremonies, protecting vulnerable people, maintaining hidden memorials, and refusing to reveal secrets entrusted to them."
+        },
+        {
+          "id": "shadow_warden",
+          "name": "Pale Warden",
+          "description": "A new god of abandoned graves, forgotten names, neglected places, and those who have died without anyone left to remember them. The Pale Warden believes abandonment is more terrible than death because death is inevitable while abandonment is a failure of the living. Followers worship by restoring neglected graves, researching unidentified dead, maintaining memorials, caring for abandoned places, and recording the stories of people whose communities have disappeared."
+        },
+        {
+          "id": "zharathuun",
+          "name": "The Abyss Beyond Memory",
+          "description": "The Shadow interpretation of Zharathuun is the terrifying possibility of complete oblivion, where neither soul, memory, consequence, nor identity survives. Shadow priests do not normally worship Zharathuun for favour. They study and confront the concept of oblivion so that fear of it does not become an excuse to violate the natural order. Followers worship through vigils of silence, contemplation of mortality, protective rites against madness, and ceremonies in which the names of the dead are recited specifically to oppose oblivion."
+        },
+        {
+          "id": "veyran",
+          "name": "Veyra",
+          "description": "A goddess of divine hunger, deprivation, sacrifice, and the fear that gods can starve when mortals stop worshipping them. Veyra teaches that prayer is not devotion but sustenance, and that refusing to worship is equivalent to murdering a god. In truth, Veyra is a spiritual parasite that intercepts worship intended for other deities and feeds upon it, gradually weakening the gods her followers believe they are protecting. Her cult worships through obsessive prayer, redirected offerings, collecting abandoned idols, and persuading others that silence will cause divine death.",
+          "stance": "none"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tidal_pantheon",
+    "system": {
+      "name": "Tidal Pantheon",
+      "description": [
+        "The Tidal Pantheon teaches that existence matters because nothing survives alone. Every living thing depends upon cycles larger than itself: tides feed shores, rivers feed seas, prey feeds predators, rain returns water to land, and generations inherit routes established by those before them. The sea is therefore not simply a domain to conquer but the clearest example of a world sustained through dependence, movement, and surrender.",
+        "Tidal worship is woven into ordinary survival. Fishing, diving, navigation, shipbuilding, childbirth, funerals, storms, migration, and the distribution of food all have religious significance. The faithful do not expect the sea to be kind. They consider gratitude meaningful precisely because the provider can also take everything away."
+      ],
+      "species": ["sea_elf", "dargonesti", "dimernesti", "merfolk"],
+      "deities": [
+        {
+          "id": "yrchenn",
+          "name": "Yrchenn, Mother of the Deep",
+          "description": "Goddess of the sea, tides, storms, drowning, and the immense forces that remain beyond mortal control. Tidal worshippers do not understand Yrchenn as malicious, although they accept that she can be merciless. Her theology is based on humility: the sea provides food and passage but owes neither to mortals. Followers worship by returning part of the first catch to the water, making offerings before voyages, observing storm rites, and refusing to boast about surviving dangerous waters."
+        },
+        {
+          "id": "buib",
+          "name": "Buib, Mother of Returning Rain",
+          "description": "Goddess of rain, freshwater, fertility, music, and the cycle through which water leaves the sea and eventually returns. Buib teaches that nothing given by the ocean is truly lost because it participates in a larger cycle. She and Yrchenn are close but occasionally opposed: Yrchenn represents surrender to the sea, while Buib represents the return of what the sea gives. Followers worship through rain dances, freshwater blessings, songs, celebrations after rainfall, and offerings made when wells are replenished."
+        },
+        {
+          "id": "susaih",
+          "name": "Susaih",
+          "description": "God of the sun, navigation, distant shores, migration, and the routes that connect communities separated by water. Susaih teaches that a horizon is not a wall but a promise that something exists beyond what can currently be seen. He is especially beloved by sailors and migratory communities. Followers worship through solar navigation, maintaining coastal beacons, teaching young sailors to read the sky, and offering prayers whenever familiar land disappears from sight."
+        },
+        {
+          "id": "cfofb",
+          "name": "Cfofb, the Great Storm",
+          "description": "God of storms, currents, overwhelming strength, and the violent side of the sea. Cfofb teaches that preparation is a form of respect and that surviving a storm should produce gratitude rather than arrogance. He frequently clashes with sailors who become overconfident after years of safe voyages. Followers worship through storm watches, offerings cast into dangerous waters, communal preparations before storm seasons, and ceremonies held after a community survives a disaster."
+        },
+        {
+          "id": "gaxaca",
+          "name": "Gaxaca, the Strong Swimmer",
+          "description": "God of physical strength, endurance, diving, pearl hunting, rescue, and the bodily skill required to survive in water. Gaxaca teaches that strength is valuable primarily because it allows one person to keep another alive. His worship is particularly important among divers and rescue swimmers. Followers worship through swimming trials, diving competitions, rescue training, feats of endurance, and offerings made after returning safely from dangerous depths."
+        },
+        {
+          "id": "fish_god",
+          "name": "The Great Salmon",
+          "description": "God of fish, fishing, nourishment, respite, and the quiet gratitude of returning home with enough food to share. The Great Salmon represents the sea not as an abstract divine power but as the source of ordinary meals that allow families to survive another day. Fisherfolk regard a successful catch as a gift rather than proof of superiority over the sea, and rest after fishing is itself considered sacred because labour without respite turns gratitude into entitlement. Followers worship by giving thanks before eating the catch, returning part of the first catch to the water, sharing food with those who could not fish, repairing nets communally, and treating days of rest after major fishing journeys as religious observances."
+        },
+        {
+          "id": "tidal_keeper",
+          "name": "The Keeper of Currents",
+          "description": "A new deity of migration, invisible currents, inherited routes, and the paths that become visible only through their consequences. The Keeper teaches that movement does not require a visible road and that communities survive by remembering routes discovered by earlier generations. Followers worship by charting currents, preserving navigation records, maintaining migration maps, teaching routes to children, and leaving small offerings before beginning a journey into unfamiliar waters."
         }
       ]
     }
@@ -99,9 +674,7 @@
         "The Dragonborn pantheon centres around ancestral power, honour, ambition, achievement, and the legacy left behind after death.",
         "Dragonborn beliefs emphasise that worth is proven through actions, reputation, and the pursuit of greatness."
       ],
-      "species": [
-        "dragonborn"
-      ],
+      "species": ["dragonborn"],
       "deities": [
         {
           "id": "ehx",
@@ -134,9 +707,7 @@
         "The Genasi pantheon reflects elemental origins, magical creation, transformation, and the relationship between mortal and elemental forces.",
         "Genasi believe their existence proves that elemental and mortal worlds can merge."
       ],
-      "species": [
-        "genasi"
-      ],
+      "species": ["genasi"],
       "deities": [
         {
           "id": "cfofb",
@@ -169,9 +740,7 @@
         "The Shifter pantheon focuses on primal identity, transformation, instinct, self-control, and the search for belonging.",
         "Shifters view their animal heritage as an essential part of themselves rather than a curse or separation from their other nature."
       ],
-      "species": [
-        "shifter"
-      ],
+      "species": ["shifter"],
       "deities": [
         {
           "id": "cyaxo",
@@ -197,51 +766,6 @@
     }
   },
   {
-    "id": "elf_pantheon",
-    "system": {
-      "name": "Elf Pantheon",
-      "description": [
-        "The Elf pantheon centres around creation, arcane mastery, artistic continuation, and the pursuit of returning near Yr'Snn through great works.",
-        "Elven religion is not focused on escaping death, but on creating works that continue beyond the creator."
-      ],
-      "species": [
-        "elf"
-      ],
-      "deities": [
-        {
-          "id": "yrsnn",
-          "description": "Creation, artistry, arcane perfection, and the origin of elven existence. The central figure of elven belief. A true masterpiece is considered a spiritual achievement rather than merely an object.",
-          "stance": "patron"
-        },
-        {
-          "id": "wusor",
-          "description": "Arcane knowledge, discovery, and understanding magic. Magic is viewed as another form of artistic expression.",
-          "stance": "none"
-        },
-        {
-          "id": "vihi",
-          "description": "Emotion, passion, romance, and artistic inspiration. Represents the emotional force behind elven creativity. Art without emotion is considered incomplete.",
-          "stance": "none"
-        },
-        {
-          "id": "ayrugcumoak",
-          "description": "Memory, preservation, and history. Elves maintain ancient knowledge through archives, magical records, and traditions. Forgotten knowledge is considered a tragedy.",
-          "stance": "none"
-        },
-        {
-          "id": "wiob",
-          "description": "Exploration, other worlds, and cosmic curiosity. The universe is considered another unfinished artwork.",
-          "stance": "none"
-        },
-        {
-          "id": "uke",
-          "description": "Change, unconventional creation, and unusual paths. Represents innovation beyond traditional elven perfection. Even imperfect creations may contain brilliance.",
-          "stance": "none"
-        }
-      ]
-    }
-  },
-  {
     "id": "dwarf_pantheon",
     "system": {
       "name": "Dwarf Pantheon",
@@ -249,9 +773,7 @@
         "The Dwarf pantheon reflects runes, magical craftsmanship, invention, architecture, and the sacred relationship between dwarves and important materials.",
         "Dwarves consider magic a craft that can be discovered, written, and improved through mastery."
       ],
-      "species": [
-        "dwarf"
-      ],
+      "species": ["dwarf"],
       "deities": [
         {
           "id": "tsahnrad",
@@ -291,82 +813,46 @@
     "system": {
       "name": "Drow Redeemed Pantheon",
       "description": [
-        "The Redeemed Drow pantheon emerged after the collapse of the Cult, focusing on survival, redemption, self-improvement, and proving worth through action.",
-        "These drow believe Yr'Snn still accepts those who reject their past and demonstrate genuine transformation. Acceptance by Yr'Snn is considered the highest spiritual achievement."
+        "The Redeemed Drow Pantheon emerged among drow who rejected the Cult and sought a different answer to what it means to be drow. Its central belief is that a person's origin does not determine their worth. A past shaped by cruelty can be acknowledged without being obeyed, and redemption is demonstrated through what one chooses to build, protect, and become.",
+        "The faith therefore treats transformation as a lifelong discipline rather than a declaration of innocence. Its followers are expected to confront the harm they have caused, repair what they can, cultivate useful skills, protect those who would once have been considered enemies, and accept that forgiveness cannot be demanded. Worship is consequently practical: service, study, training, craftsmanship, remembrance, restitution, and difficult acts of mercy are all considered forms of prayer.",
+        "The pantheon also maintains an unusual relationship with Yr'Snn. Redeemed drow do not believe that simply claiming his name erases their history. They instead seek to prove that the creativity, discipline, and capacity for creation attributed to the elves can exist within them as well. Acceptance is hoped for, but never presumed."
       ],
-      "species": [
-        "drow"
-      ],
+      "species": ["drow"],
       "deities": [
         {
-          "id": "yrsnn",
-          "description": "Redemption, creation, and proving oneself worthy. Redeemed drow believe Yr'Snn judges individuals by their actions rather than their history. Acceptance by Yr'Snn is considered the highest achievement.",
+          "id": "yr'snn",
+          "description": "God of elves, creation, artistry, arcane mastery, and the possibility of becoming something greater than one's origins. To redeemed drow, Yr'Snn is not a god who simply absolves the past. He represents the unfinished work of the self, demanding that those who seek acceptance demonstrate it through what they create and how they live. Followers worship him by creating art, mastering crafts and magic, repairing what was damaged, teaching others, and dedicating works to those they once harmed.",
           "stance": "patron"
         },
         {
           "id": "xua",
-          "description": "Secrets, strategy, and hidden knowledge. Information is considered a weapon, and survival depends on intelligence and preparation.",
+          "description": "Goddess of secrets, strategy, stealth, and knowledge deliberately kept from those who would abuse it. Redeemed drow reject the idea that secrecy exists solely for manipulation, instead treating discretion as a means of protecting vulnerable people and preserving dangerous knowledge until it can be used responsibly. Followers worship Xua through silent prayers, information-gathering, protecting confidences, strategic exercises, and refusing to reveal another person's secret merely for personal advantage.",
           "stance": "none"
         },
         {
           "id": "wugv",
-          "description": "Runes, magic, and hidden structures. Drow preserve ancient knowledge through rune carving and sacred glyphs.",
+          "description": "Goddess of numbers, patterns, runes, and the hidden structures through which knowledge can be preserved. Among redeemed drow, Wugv represents disciplined thought: a mind trained to recognize patterns rather than surrendering to impulse or inherited dogma. Followers worship her through rune carving, mathematics, cryptography, magical notation, careful record-keeping, and the preservation of knowledge that would otherwise be lost.",
           "stance": "none"
         },
         {
           "id": "ayrugcumoak",
-          "description": "Memory, heroes, and preserved legacies. After the Cult War, heroes became symbols of a new drow identity preserved through magical inscriptions.",
+          "description": "Goddess of knowledge, memory, research, and the preservation of truth. Ayrugcumoak teaches that redemption requires remembering honestly rather than rewriting history into something more comfortable. Her followers preserve the names of victims, record the history of the Cult and its fall, maintain archives, investigate forgotten events, and make knowledge available to those genuinely seeking it. Worship is performed through study, archival work, testimony, and the deliberate preservation of uncomfortable truths.",
           "stance": "none"
         },
         {
           "id": "gud",
-          "description": "Discipline, combat, and self-improvement. Weakness is viewed as something to overcome through training and dedication.",
+          "description": "God of disciplined war, training, courage, and self-improvement. Gud teaches that strength is valuable only when placed under conscious control, making him particularly important to drow who must learn to distinguish discipline from domination. Followers worship him through martial training, controlled combat, physical discipline, protecting others, and voluntarily undertaking difficult challenges designed to expose and overcome personal weaknesses.",
           "stance": "none"
         },
         {
           "id": "naahv",
-          "description": "Consequence, judgment, and the end of corruption. Redemption requires acknowledging past failures and facing their consequences.",
-          "stance": "none"
-        }
-      ]
-    }
-  },
-  {
-    "id": "drow_secular_pantheon",
-    "system": {
-      "name": "Drow Ascendant Pantheon",
-      "description": [
-        "The Ascendant Drow pantheon developed among drow who rejected Yr'Snn as an authority over their future.",
-        "These drow believe survival and superiority are achieved through their own strength, knowledge, and discipline rather than divine acceptance.",
-        "The Cult's collapse is viewed as proof that dependence on external judgement leads to weakness."
-      ],
-      "species": [
-        "drow"
-      ],
-      "deities": [
-        {
-          "id": "xua",
-          "description": "Secrets, strategy, and hidden knowledge. Information remains the greatest weapon, and mastery of secrets ensures survival.",
-          "stance": "patron"
-        },
-        {
-          "id": "wugv",
-          "description": "Runes, magic, and hidden structures. Magic is a tool of mastery that should be understood, controlled, and improved.",
+          "description": "God of death, judgment, consequence, and the final accounting of a life. Naahv teaches that redemption does not require pretending that past actions never happened. The dead cannot be restored merely by regret, and those who caused suffering must accept consequences without demanding absolution. Followers worship him through funerary rites, remembrance of the dead, acts of restitution, confession, and ceremonies in which individuals publicly acknowledge wrongs they have committed.",
           "stance": "none"
         },
         {
-          "id": "ayrugcumoak",
-          "description": "Memory, heroes, and preserved legacies. The achievements of great drow are preserved as examples of superiority and ambition.",
-          "stance": "none"
-        },
-        {
-          "id": "gud",
-          "description": "Discipline, combat, and self-improvement. Strength is created through constant competition and refinement.",
-          "stance": "patron"
-        },
-        {
-          "id": "naahv",
-          "description": "Consequence, judgment, and the end of corruption. Failure is not forgiven but studied so it is never repeated.",
+          "id": "zerthimon",
+          "name": "Zerthimon",
+          "description": "The githzerai philosopher and spiritual teacher who rejected domination and taught that freedom begins with mastery of the self. To redeemed drow, Zerthimon represents the possibility of breaking a culture's inherited chains without replacing them with another form of tyranny. His teachings are especially influential among those struggling against old instincts of obedience, cruelty, or domination. Followers worship through meditation, disciplined self-examination, resisting coercion, and helping others free themselves from oppressive systems.",
           "stance": "none"
         }
       ]
@@ -380,9 +866,7 @@
         "The Gnome pantheon reflects creativity, invention, curiosity, artistry, and the pursuit of knowledge through experimentation.",
         "Gnomes view discovery as a form of creation, where even strange ideas and unusual solutions may become valuable innovations."
       ],
-      "species": [
-        "gnome"
-      ],
+      "species": ["gnome"],
       "deities": [
         {
           "id": "wugv",
@@ -425,9 +909,7 @@
         "The Svirfneblin pantheon reflects the pressures of the Underdark, focusing on secrecy, survival, concealment, and careful preservation of knowledge.",
         "Deep gnomes view hidden knowledge and defensive mastery as essential tools for survival in a hostile world."
       ],
-      "species": [
-        "svirfneblin"
-      ],
+      "species": ["svirfneblin"],
       "deities": [
         {
           "id": "xua",
@@ -460,9 +942,7 @@
         "The Human pantheon reflects ambition, innovation, organisation, defence, and the importance of learning from previous generations.",
         "After losses caused by the information war regarding Jeikhan, human traditions increasingly value knowledge preservation and collective strength."
       ],
-      "species": [
-        "human"
-      ],
+      "species": ["human"],
       "deities": [
         {
           "id": "radu",
@@ -500,9 +980,7 @@
         "The Half-Orc pantheon revolves around the legacy of Fexyiaf, the creator of the orcs, and the question of whether inherited nature determines destiny.",
         "Half-orc spirituality focuses on controlling, redirecting, or redeeming the rage within them through self-definition, honour, compassion, and personal choices."
       ],
-      "species": [
-        "half_orc"
-      ],
+      "species": ["half-orc"],
       "deities": [
         {
           "id": "fexyiaf",
@@ -540,9 +1018,7 @@
         "The Half-Elf pantheon is shaped by questions of identity, belonging, and the legacy of Virimelle's attempts to preserve and purify elven blood through violence.",
         "Half-elves have a complex relationship with elven traditions, with some embracing Yr'Snn while others create their own spiritual paths."
       ],
-      "species": [
-        "half_elf"
-      ],
+      "species": ["half-elf"],
       "deities": [
         {
           "id": "yrsnn",
@@ -580,9 +1056,7 @@
         "The Tiefling pantheon focuses on kinship, acceptance, inherited power, planar mysteries, and the struggle to define one's own destiny.",
         "Tieflings view Eve as a source of unconditional trust, providing spiritual belonging beyond ancestry or reputation."
       ],
-      "species": [
-        "tiefling"
-      ],
+      "species": ["tiefling"],
       "deities": [
         {
           "id": "eve",
@@ -620,9 +1094,7 @@
         "The Warforged pantheon focuses on existence, individuality, choice, and meaning rather than divine creation or assigned purpose.",
         "Many warforged reject the concept of souls entirely, seeking understanding through experience, self-improvement, and personal decisions."
       ],
-      "species": [
-        "warforged"
-      ],
+      "species": ["warforged"],
       "deities": [
         {
           "id": "tsahnrad",
@@ -665,9 +1137,7 @@
         "The Kenku pantheon reflects memory, mimicry, relationships, and the preservation of lost experiences.",
         "Kenku do not view imitation as falsehood. They believe copied voices and sounds preserve genuine history and emotion."
       ],
-      "species": [
-        "kenku"
-      ],
+      "species": ["kenku"],
       "deities": [
         {
           "id": "buib",
@@ -705,9 +1175,7 @@
         "The Loxodon pantheon is built around patience, wisdom, justice, compassion, and acceptance of life's natural cycles.",
         "Loxodon spirituality values restraint, long-term thinking, and peaceful resolution over immediate action."
       ],
-      "species": [
-        "loxodon"
-      ],
+      "species": ["loxodon"],
       "deities": [
         {
           "id": "ayrugcumoak",
@@ -736,9 +1204,7 @@
     "id": "leonin_pantheon",
     "system": {
       "name": "Leonin Pantheon",
-      "species": [
-        "leonin"
-      ],
+      "species": ["leonin"],
       "deities": [
         {
           "id": "radu"
@@ -759,9 +1225,7 @@
     "id": "tortle_pantheon",
     "system": {
       "name": "Tortle Pantheon",
-      "species": [
-        "tortle"
-      ],
+      "species": ["tortle"],
       "deities": [
         {
           "id": "cyaxo"
@@ -782,9 +1246,7 @@
     "id": "fairy_pantheon",
     "system": {
       "name": "Fairy Pantheon",
-      "species": [
-        "fairy"
-      ],
+      "species": ["fairy"],
       "deities": [
         {
           "id": "vihi"
@@ -805,9 +1267,7 @@
     "id": "goliath_pantheon",
     "system": {
       "name": "Goliath Pantheon",
-      "species": [
-        "goliath"
-      ],
+      "species": ["goliath"],
       "deities": [
         {
           "id": "pyraq"
@@ -832,9 +1292,7 @@
         "Aokin spirituality, known as Natuva, focuses on the divine presence within nature, ancestral spirits, celestial cycles, and the relationship between life and death.",
         "Rather than worshipping distant gods, Aokin beliefs treat the world itself as sacred and view all existence as interconnected."
       ],
-      "species": [
-        "aokin"
-      ],
+      "species": ["aokin"],
       "deities": [
         {
           "id": "the_lunar_wells",
@@ -877,9 +1335,7 @@
         "The Halfling pantheon focuses on community, hospitality, joy, storytelling, craftsmanship, and appreciating the value of ordinary life.",
         "Halflings believe life does not need grand achievements to have meaning, as simple experiences already hold importance."
       ],
-      "species": [
-        "halfling"
-      ],
+      "species": ["halfling"],
       "deities": [
         {
           "id": "veri",
@@ -922,9 +1378,7 @@
         "The Orc pantheon is shaped by the legacy of Fexyiaf, the creator of the orcs, and focuses on domination, rage, survival, and proving strength.",
         "Orcs believe Fexyiaf's influence exists within every orc, creating tension between those who embrace their inherited nature and those who seek another path."
       ],
-      "species": [
-        "orc"
-      ],
+      "species": ["orc"],
       "deities": [
         {
           "id": "fexyiaf",
