@@ -1,0 +1,250 @@
+Teothe is a vast D&D5E campaign setting well utilised in AL-adjacent events in Turkey and the UK. It is expansive and non-descriptive allowing storytellers to get into the game by providing them with the most common tools and information for the campaign setting for Teothe.
+
+## Intro
+
+Welcome to the world of Teothe, a universe of darkness and light, where planetary planes and endless possibilities intertwine. Once, the Astral Sea was reformed, and the gods favored their divinity upon the land, leading the people to prosper and thrive. Adventurers formed groups and traversed other nations, sparking cultural renaissances across history, religion, politics, and technology. The people reached such heights that they questioned the necessity of the gods themselves. With waning faith, the gods starved, and to prevent their demise, domains united. But as different philosophies collided, warped concepts merged, and the ties between planes were severed, setting the cogs of fate into motion.
+During this tumultuous era, the world witnessed the catastrophic 'Corrosion of Rods', an event that saw the clash of the Underworld and Overworld forces. In the aftermath of this clash, the divine rods that once connected the Material Planes were shattered, and the remnants formed a mysterious 'Divine Curtain' that now veils the material realms.
+Amidst the turmoil, the last incomprehensible Ancient artifact, which had long stood atop Teothe's desert, vanished into nothingness, leading the magic-affiliated mourn the loss of the opportunity to grasp the past's inherited knowledge.
+Now, the world of Teothe stands at a crossroads of chaos and potential. The rage and confusion manifested into the very weave of reality, altering the fabric of existence itself. As a brave adventurer, you will navigate the layered planes, delve into the hidden corners of the universe, encounter diverse beings that ignore gods, time, and even reality. Secluded planes devoid of life await rediscovery, while forgotten ways between planes offer new mysteries to unravel. Embrace your destiny as you embark on an epic adventure that will leave an indelible mark on this ever-evolving universe. The corrosion of rods and the divine curtain have changed Teothe forever, and it is up to you to shape its destiny in the face of darkness and light. The fate of Teothe lies in your hands as the rage and confusion manifested into the weave... our story begins.
+Will you be the harbinger of unity, seeking to reunite the gods' domains and breathe life back into faith, or will you embrace the wild currents of chaos and carve your unique path through the enigmatic realms? Delve into the annals of time, unearthing ancient knowledge to guide the people of Teothe towards magical wonders, or thread the path of logic, inventing technological marvels that defy the limits of imagination? Will you weave yourself into the tapestry of the people, embracing their hopes and dreams, or shall you embrace cunning stratagems, manipulating them all for personal gain? Face the dark corners of existence, cleansing the malevolent planes, and bringing radiant light into the shadows, or grasp dominion, seizing control to shape the fate of entire realms? Amidst these momentous choices, will you chase the elusive promises of eternity or humbly submit to the raw power of elemental forces?
+Teothe awaits your decisions, and with each step, the universe reshapes in the wake of your actions, weaving a story of epic proportions that echoes through the ages.
+
+## Common Lore of Teothe
+
+Long before their battles, gods were once "All," harnessing the energy and magic of reality. However, their egos led to conflicts and the need to determine superiority. Lesser creatures desired an end to the fighting, but gods, being immortal and unforgiving, couldn't accept another "Perfect Being's" actions.
+Eventually, prayers were answered, and the gods ceased fighting, but this created a worse situation. They stopped communicating and individually created humans from Mceeju, who, despite their differences, served the gods. The gods made peace with their divergences and established various species within the Astral Sea.
+Humans, lacking intelligence and divine guidance, possessed magic but often perished due to imperfections. Their deaths released magic into the universe. The gods accepted their punishment and judged themselves, losing their perfect nature and becoming distinct from one another.
+The gods continued to create humans, who exhibited predictable yet mysterious traits. They showed mercy and guided some humans towards greatness, rewarding them with demigod status. However, such accomplishments became scarce over time.
+Despite sharing the same creators, species clashed or multiplied uncontrollably, losing control of the Weave and facing an unstoppable force: Mceeju.
+Mceeju divided the Astral Sea, creating the Material Planes and the Inner Worlds while isolating the Elemental Chaos with a dimensional barrier. Species were divided, and even the gods' domains were split. The Overworld, Underworld, and Outer Worlds emerged.
+With newfound freedom, the gods led by Mceeju's order. Some stayed united, some pursued separate paths, and others descended to the Material Planes.
+
+## Domains
+
+Deities of Teothe are divided into 8 domains. These domains are Nature, Tempest, Trickery, Death, Knowledge, War, Life and Light. Most Deities exist within one to two domains.
+Pantheon deities use fundamental domains. Gameplay-wise, other domains like Endless domains (destruction, destiny, despair, desire, delirium, dream), Broad domains (decay, drama, fabrication, fate, time, distance, potential) or ones introduced in XGE (forge, grave), or UA (order) are welcome.
+
+## COSMOLOGY
+
+| Plane / Realm | Purpose |
+| --------------------- | ------------------------------------------------------ |
+| Material Plane | Mortal worlds, including Teothe |
+| Feywild | Magical reflection of the Material Plane |
+| Shadowfell | Dark reflection associated with decay and shadows |
+| Ethereal Plane | Misty realm used for travel between planes |
+| Astral Sea | Interplanar void and primary route between worlds |
+| Inner Planes | Elemental realms of Fire, Water, Air and Earth |
+| Elemental Planes | Includes para-elemental and quasi-elemental realms |
+| Outer Planes | Realms representing alignments and powerful beings |
+| Far Realm | Alien realm of eldritch horrors and madness |
+| Gehenna | Plane of avarice and selfishness |
+| Acheron | Iron cubes symbolising war and pain |
+| Arcadia | Realm of purity and celestial harmony |
+| Limbo | Extremely dangerous realm of chaotic elemental change |
+| Arboria | Realm governed by powerful emotions |
+| Soulon | Spore-filled world without insects |
+| Plane of Air | Endless sky, floating terrain and dangerous weather |
+| Pceey | World of creatures, dominated by one continent |
+| Negative Energy Plane | Void that drains life and energy |
+| Plane of Water | Endless ocean of currents and waves |
+| Mechanus | Perfect clockwork realm ruled by Primus |
+| Pandemonium | Tunnels filled with madness and screaming winds |
+| Positive Energy Plane | Void overflowing with life-giving energy |
+| Plane of Earth | Gem-rich realm of earthquakes and crushing gravity |
+| Nhaft | Dwarven world consisting of one enormous mountain |
+| Ecp | Orcish world consisting of one vast tundra |
+| Carseri | Six-layered, exceptionally cruel prison plane |
+| Teothe | Home plane of the campaign setting |
+| Thaum | Damaged island world with four moons |
+| Beastlands | Untamed wilderness governed entirely by nature |
+| Abyss | Endless layers of demonic horrors |
+| Pravukadz | Aberration world of alien forests and cosmic life |
+| Outlands | Central hub with gateways to the Outer Planes |
+| Epipremnum | Wasteland surrounding a surviving capital |
+| Demi-planes | Custom worlds created by beings or forces |
+| Iyiyoke | Ruined world of shortfolk and tallfolk |
+| Far Realm | Reality beyond the multiverse, origin of aberrations |
+| Plane of Fire | Perpetually burning realm dominated by flame and magma |
+
+https://teothe.com/wheel.png
+
+# DEITIES
+
+| Deity | Rank | Domain / Purpose | URL |
+| -------------------- | --------- | ------------------------------------------- | ----------------- |
+| Mceeju | Overdeity | Joy and light. | https://teothe.com/Deities/Mceeju.png |
+| Nmei | Overdeity | Fate. | https://teothe.com/Deities/Nmei.png |
+| Lcaoc | Overdeity | Wit, civilization, order. | https://teothe.com/Deities/Lcaoc.png |
+| Veri | Overdeity | Life, healing, hope, freedom. | https://teothe.com/Deities/Veri.png |
+| Uke | Greater | Life. | https://teothe.com/Deities/Uke.png |
+| Cyaxo | Greater | Nature, forests, farming. | https://teothe.com/Deities/Cyaxo.png |
+| Ehx | Greater | Sky, sun, birds, dragons. | https://teothe.com/Deities/Ehx.png |
+| Buib | Greater | Rain and bards. | https://teothe.com/Deities/Buib.png |
+| Radu | Greater | Heroism, youth, vitality, self-improvement. | https://teothe.com/Deities/Radu.png |
+| Pwazo | Greater | Flames, tyranny, ambition. | https://teothe.com/Deities/Pwazo.png |
+| Vihi | Greater | Love, affection, beauty. | https://teothe.com/Deities/Vihi.png |
+| Naahv | Greater | Death and judgement. | https://teothe.com/Deities/Naahv.png |
+| Boghradyn | Greater | Dwarves, wisdom, virtue, family, forging. | https://teothe.com/Deities/Boghradyn.png |
+| Yr'snn | Greater | Elves, creativity, arcane arts. | https://teothe.com/Deities/Yr'snn.png |
+| Guulagh | Greater | Orcs, raiding, conquest. | https://teothe.com/Deities/Guulagh.png |
+| Zharathuun | Higher | Madness and destruction. | https://teothe.com/Deities/Zharathuun.png |
+| Cfofb | Higher | Storms, power, fury. | https://teothe.com/Deities/Cfofb.png |
+| Vesvjdegz | Higher | Lightning, freedom, luck. | https://teothe.com/Deities/Vesvjdegz.png |
+| Gud | Higher | War and conflict. | https://teothe.com/Deities/Gud.png |
+| Lwaqy | Higher | Pain, darkness, suffering. | https://teothe.com/Deities/Lwaqy.png |
+| Fexyiaf | Higher | Villainy, deception, destruction. | https://teothe.com/Deities/Fexyiaf.png |
+| Modgo | Higher | Curses, control, domination. | https://teothe.com/Deities/Modgo.png |
+| Wiob | Higher | Moon, guidance, navigation, aid. | https://teothe.com/Deities/Wiob.png |
+| Wodroh | Higher | Murder, torture, slavery. | https://teothe.com/Deities/Wodroh.png |
+| Tsahnrad | Higher | Crafting and invention. | https://teothe.com/Deities/Tsahnrad.png |
+| Wusor | Higher | Magic. | https://teothe.com/Deities/Wusor.png |
+| Yrchenn | Higher | Sea, storms, sacrifice. | https://teothe.com/Deities/Yrchenn.png |
+| Atlatmak | Higher | Kobolds. | https://teothe.com/Deities/Atlatmak.png |
+| Xua | Higher | Shadows, stealth, secrecy. | https://teothe.com/Deities/Xua.png |
+| Mykthyr | Lesser | Rangers and trees. | https://teothe.com/Deities/Mykthyr.png |
+| Pedi | Lesser | Underworld. | https://teothe.com/Deities/Pedi.png |
+| Raxcoh | Lesser | Helping those in need. | https://teothe.com/Deities/Raxcoh.png |
+| Tezr | Lesser | Flowers. | https://teothe.com/Deities/Tezr.png |
+| Maies | Lesser | Battles and broken promises. | https://teothe.com/Deities/Maies.png |
+| Yadseca | Lesser | Smell. | https://teothe.com/Deities/Yadseca.png |
+| Nizi | Lesser | Completion. | https://teothe.com/Deities/Nizi.png |
+| Lunm | Lesser | Childbirth. | https://teothe.com/Deities/Lunm.png |
+| Cyani | Lesser | Poison and assassination. | https://teothe.com/Deities/Cyani.png |
+| Ayrugcumoak | Lesser | Knowledge, research, preservation. | https://teothe.com/Deities/Ayrugcumoak.png |
+| Afez | Lesser | Belongings. | https://teothe.com/Deities/Afez.png |
+| Wugv | Lesser | Numbers. | https://teothe.com/Deities/Wugv.png |
+| Gaajyx | Lesser | Wealth and greed. | https://teothe.com/Deities/Gaajyx.png |
+| Gezi | Lesser | Wine and food. | https://teothe.com/Deities/Gezi.png |
+| Waqorafe | Lesser | Medicine. | https://teothe.com/Deities/Waqorafe.png |
+| Megm | Lesser | Architecture and cities. | https://teothe.com/Deities/Megm.png |
+| Wadqwofm | Lesser | Merchants and trade. | https://teothe.com/Deities/Wadqwofm.png |
+| Lwaro | Lesser | Blades. | https://teothe.com/Deities/Lwaro.png |
+| Gaxaca | Lesser | Strength. | https://teothe.com/Deities/Gaxaca.png |
+| Catequil | Lesser | Thunder. | https://teothe.com/Deities/Catequil.png |
+| Spina | Lesser | Thorns and natural pain. | https://teothe.com/Deities/Spina.png |
+| Jenelius Londste | Lesser | Devotion and determination. | https://teothe.com/Deities/Jenelius%20Londste.png |
+| Eve Archambeau | Lesser | Redemption, gemstones, jewellery. | https://teothe.com/Deities/Eve%20Archambeau.png |
+| Nepi | Demi | Dice and balance. | https://teothe.com/Deities/Nepi.png |
+| Astro | Demi | Corruption and mosquitoes. | https://teothe.com/Deities/Astro.png |
+| Oxar Ares | Demi | Chaos and wounds. | https://teothe.com/Deities/Oxar%20Ares.png |
+| Czeis | Demi | Speed, news, respect. | https://teothe.com/Deities/Czeis.png |
+| Lara Navye | Demi | Rabbits, love, children. | https://teothe.com/Deities/Lara%20Navye.png |
+| Xenia | Demi | Hallucinogens. | https://teothe.com/Deities/Xenia.png |
+| Sai | Demi | Runes and traps. | https://teothe.com/Deities/Sai.png |
+| Anomenada | Demi | Alchemy. | https://teothe.com/Deities/Anomenada.png |
+| Czeeg | Demi | Spears and war. | https://teothe.com/Deities/Czeeg.png |
+
+
+---
+
+# MATERIAL
+
+| Material | Purpose |
+| --------------------- | ----------------------------------------------------- |
+| Mithral | Lightweight precious metal. |
+| Adamantine | Exceptionally durable metal. |
+| Lesser Variant | Poor-quality material. |
+| Frostforge Steel | Dwarven cold-forged metal. |
+| Skyforge Metal | Naturally liquid metal used for sharp weapons. |
+| Demonic Tungsten | Infernal, blood-bound metal. |
+| Hexed Jade | Magical jade-steel alloy. |
+| Phosite | Volatile, highly dangerous metal-coating substance. |
+| Arambarium | Elemental and primordial magic-conducting metal. |
+| Arandur | Versatile, highly bondable metal. |
+| Celestial Steel | Heavenly magical metal. |
+| Cold Iron | Metal associated with combating Fey. |
+| Darksteel | Extremely durable ancient metal. |
+| Dlarun | Secretive nature-associated metal. |
+| Hizagkuur | Underdark metal that reflects magic. |
+| Infernal Iron | Metal originating from the Nine Hells. |
+| Orcslayer | Lost anti-orc alloy. |
+| Star Metal | Meteoric metal used to enhance weapons. |
+| Telstang | Protective, transformation-resistant alloy. |
+| Zardazil | Concealable, intangible weapon metal. |
+| Stainless Niobium | Corrosion-resistant modern alloy. |
+| Cursed | Warlock Patron-bound item. |
+| Blessed | Artifact-grade item. |
+| Alchemy | System for carrying and using potions. |
+| Runes | Divine enhancements dependent on specific conditions. |
+
+# SPECIES
+
+| Species | Purpose / Description | URL |
+| --------------- | ---------------------------------------------------------- | ---------------------------------------------- |
+| Aokin | Nature-bound, cosmic beings. | https://teothe.com/Species/aokin.png |
+| Aasimar | Celestial-touched mortals. | https://teothe.com/Species/aasimar.png |
+| Aarakocra | Avian sky-dwellers valuing freedom. | https://teothe.com/Species/aarakocra.png |
+| Bugbear | Strong, stealthy humanoids. | https://teothe.com/Species/bugbear.png |
+| Changeling | Shape-shifters able to alter appearance. | https://teothe.com/Species/changeling.png |
+| Dragonborn | Proud draconic humanoids driven by honour. | https://teothe.com/Species/dragonborn.png |
+| Dwarf | Hardy mountain folk and master craftsmen. | https://teothe.com/Species/dwarf.png |
+| Drow | Dark elves infused with Underdark magic. | https://teothe.com/Species/drow.png |
+| Elf | Agile, magical forest and Fey-connected folk. | https://teothe.com/Species/elf.png |
+| Fairy | Tiny winged creatures tied to nature and magic. | https://teothe.com/Species/fairy.png |
+| Goliath | Powerful mountain dwellers valuing strength and community. | https://teothe.com/Species/goliath.png |
+| Genasi | Elemental beings of air, earth, fire, or water. | https://teothe.com/Species/genasi.png |
+| Gnome | Inventive, curious magical tinkerers. | https://teothe.com/Species/gnome.png |
+| Human | Versatile, ambitious explorers and innovators. | https://teothe.com/Species/human.png |
+| Half-Orc | Human-orc descendants with great strength and resilience. | https://teothe.com/Species/half-orc.png |
+| Halfling | Small, nimble, resourceful folk. | https://teothe.com/Species/halfling.png |
+| Half-Elf | Human-elf descendants navigating both cultures. | https://teothe.com/Species/half-elf.png |
+| Kenku | Avian mimics skilled in stealth. | https://teothe.com/Species/kenku.png |
+| Loxodon | Elephantine humanoids known for wisdom and community. | https://teothe.com/Species/loxodon.png |
+| Leonin | Proud lion-like tribal warriors. | https://teothe.com/Species/leonin.png |
+| Svirfneblin | Underdark deep gnomes skilled in stealth and magic. | https://teothe.com/Species/svirfneblin.png |
+| Shifter | Human-lycanthrope descendants with bestial traits. | https://teothe.com/Species/shifter.png |
+| Tortle | Turtle-like humanoids connected to sea and nature. | https://teothe.com/Species/tortle.png |
+| Tiefling | Humanoids carrying infernal heritage. | https://teothe.com/Species/tiefling.png |
+| Warforged | Living constructs seeking purpose beyond warfare. | https://teothe.com/Species/warforged.png |
+
+
+# CALENDAR
+
+Every day is 24 hours, 8 days a week, 8 weeks, 48 days long months. In total there are 384 days.
+
+| Month | Name | Season |
+| --- | --- | --- |
+| 1 | Buibus | Spring |
+| 2 | Ukeus | Spring |
+| 3 | Verus | Summer |
+| 4 | Vihus | Summer |
+| 5 | Fexyius | Fall |
+| 6 | Vesius | Fall |
+| 7 | Cyaxus | Winter |
+| 8 | Radus | Winter |
+
+# FACTIONS
+
+| Faction | Purpose | URL |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | --- |
+| Adventurer's Guild | General adventuring organisation that provides quests, contracts, rewards, and opportunities for new adventurers. | https://teothe.com/Factions/Adventurer's%20Guild.png |
+| Black Scripture | Custodians and users of ancient, often cursed magical artefacts, with cultists who manipulate others' thoughts. | https://teothe.com/Factions/Black%20Scripture.png |
+| Meadowcrew | Treasure hunters who explore dungeons, tombs, museums, and other sites for valuable discoveries. | https://teothe.com/Factions/Meadowcrew.png |
+| Inthizilelgghinn | Assassin's guild and rogue school specialising in assassination, infiltration, and blending into surroundings. | https://teothe.com/Factions/Inthizilelgghinn.png |
+| Obsidian Order | Assassin's guild operating within Teothe's lands outside the Underdark. | https://teothe.com/Factions/Obsidian%20Order.png |
+| Winston's Fleet | Alliance of pirate and bandit crews operating under the legendary pirate Winston. | https://teothe.com/Factions/Winston's%20Fleet.png |
+| The Quartet | Guild of combat-oriented bards and sorcerers combining performance, entertainment, and martial prowess. | https://teothe.com/Factions/The%20Quartet.png |
+| The Ashen Fire | Secretive organisation developing gunpowder technology, firearms, explosives, traps, and related alchemy and engineering. | https://teothe.com/Factions/The%20Ashen%20Fire.png |
+| Guild of Dark Blood Witchers | Elite monster hunters and Blood Hunters who use forbidden or corrupting magic to combat threats. | https://teothe.com/Factions/Guild%20of%20Dark%20Blood%20Witchers.png |
+| Warrior's Guild | Fellowship and training ground for elite warriors, including a connection to the Feywild. | https://teothe.com/Factions/Warrior's%20Guild.png |
+| Thieve's Guild | Secret worldwide criminal network specialising primarily in information gathering, espionage, and theft. | https://teothe.com/Factions/Thieve's%20Guild.png |
+| Adamantium Concordat | Order of paladins of varied oaths and creeds who earn rank through their deeds. | https://teothe.com/Factions/Adamantium%20Concordat.png |
+| Arcanum Alliance | Magical governing authority seeking to regulate magic and magic users, while protecting Teothe from magical and extraplanar threats. | https://teothe.com/Factions/Arcanum%20Alliance.png |
+| Melody Union | Guild for Fighters and Barbarians seeking glory through combat rather than formal warfare or fighting rings. | https://teothe.com/Factions/Melody%20Union.png |
+| Poor Bruisers | Worldwide underground pit-fighting organisation, with illegal arenas operating across cities. | https://teothe.com/Factions/Poor%20Bruisers.png |
+| Crimson Caravan Company | Major merchant and caravan network transporting goods along trade routes between cities. | https://teothe.com/Factions/Crimson%20Caravan%20Company.png |
+| Fisherman's Guild | Formerly influential fishing organisation that has largely declined as fishermen moved into caravan companies. | https://teothe.com/Factions/Fisherman's%20Guild.png |
+| Horizon Conglomerate | Merchant organisation connecting trade between Underdark and surface communities. | https://teothe.com/Factions/Horizon%20Conglomerate.png |
+| Ancientry Preservation Union | Organisation dedicated to preserving knowledge and surviving records concerning the ancient Pioneers of Teothe. | https://teothe.com/Factions/Ancientry%20Preservation%20Union.png |
+| Sapphire Sanctum | International and extraplanar court dealing particularly with magical criminals, supported by a hierarchy of magical enforcers. | https://teothe.com/Factions/Sapphire%20Sanctum.png |
+| Slayer's Take | Witcher and monster-hunting organisation that contracts with governments, nobles, and communities to eliminate dangerous creatures. | https://teothe.com/Factions/Slayer's%20Take.png |
+| Opal Observatory | Diplomatic organisation handling relations with the elemental planes and supporting interplanar diplomacy. | https://teothe.com/Factions/Opal%20Observatory.png |
+| Artificer's Union | Organisation dedicated to technological advancement, automation, magical engineering, and meticulous documentation of innovations. | https://teothe.com/Factions/Artificer's%20Union.png |
+| Artisan's Guild | Guild representing artisans and craftsmen, with extensive connections to resources, trade, and royalty. | https://teothe.com/Factions/Artisan's%20Guild.png |
+| Brewer's Guild | Community of brewers and potion-makers focused on alcohol, brewing, drinking, and potion crafting. | https://teothe.com/Factions/Brewer's%20Guild.png |
+| Guild of Afternoon Tea | Secretive organisation based in the Abyss with an intentionally mysterious recruitment process and purpose. | https://teothe.com/Factions/Guild%20of%20Afternoon%20Tea.png |
+| The Orchestra | Legendary and secretive guild of bards. | https://teothe.com/Factions/The%20Orchestra.png |
+| The Baked Beak | Kenku intelligence and forgery organisation specialising in secrets, influence, negotiation, information gathering, and difficult ciphers. | https://teothe.com/Factions/The%20Baked%20Beak.png |
+| Wonderers of Du'Ora | Druidic organisation focused on preservation, opposing pollution and destruction, and requiring members to have visited Du'Ora. | https://teothe.com/Factions/Wonderers%20of%20Du'Ora.png |
+| Mage's Guild | Reformed organisation of mages that survived the political upheaval and violence surrounding the former Mage's Guild and its coup. | https://teothe.com/Factions/Mage's%20Guild.png |
+| Pearl Plunderers | Magical battle-mage army that creates weapons from magical energy drawn from multiple planes. | https://teothe.com/Factions/Pearl%20Plunderers.png |
