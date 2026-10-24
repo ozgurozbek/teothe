@@ -67,7 +67,7 @@ const loadPageURL = (menuItem: any) => {
       return "1";
     case "planes":
       return "2";
-    case "deities":
+    case "pantheons":
       return "3";
     case "species":
       return "4";
@@ -99,6 +99,8 @@ const loadPageURL = (menuItem: any) => {
       return "17";
     case "codex":
       return "18";
+    case "deities":
+      return "19";
     default:
       return "0";
   }
@@ -122,7 +124,7 @@ export default function Navbar() {
 
   const menuItems: MenuItem[] = [
     getItem("Common Lore", "1", "common-lore", getIcon("CommonLore")),
-    getItem("Deities", "3", "deities", getIcon("Deities")),
+    getItem("Pantheons", "3", "pantheons", getIcon("Pantheons")),
     getItem("Species", "4", "species", getIcon("Species")),
     getItem("Factions", "19", "factions", getIcon("Factions")),
     getItem("Library", "6", "library", getIcon("Library")),
@@ -131,6 +133,7 @@ export default function Navbar() {
     getItem("Calendar", "12", "calendar", getIcon("Calendar")),
     getItem("Codex", "18", "codex", getIcon("Codex")),
     getItem("DM's Works ▼", "-2", undefined, getIcon("DMworks"), undefined, [
+      getItem("Deities", "20", "deities", getIcon("Deities")),
       getItem("Planes", "2", "planes", getIcon("Locations")),
       getItem("Tools", "8", "tools", getIcon("Tools")),
       getItem("Pricing", "7", "pricing", getIcon("Pricing")),

@@ -1,5 +1,5 @@
 "use client";
-import { Button, Card, Divider } from "antd";
+import { Button, Card, Divider, Space } from "antd";
 import GetCrumbs from "@/components/NavigationCrumb";
 import SimpleContent from "@/components/SimpleCon";
 import { DoubleRightOutlined } from "@ant-design/icons";
@@ -90,11 +90,18 @@ export default function CommonLoreContent() {
             ],
           }}
         />
+        <Space>
         <Button href="/deities">
           <span>
             See Deities <DoubleRightOutlined />
           </span>
         </Button>
+        <Button href="/pantheons">
+          <span>
+            See Pantheons <DoubleRightOutlined />
+          </span>
+        </Button>
+        </Space>
       </Card>
     </section>
   );
