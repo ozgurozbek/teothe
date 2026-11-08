@@ -65,6 +65,21 @@ export default function CalendarCell({
         </div>
       </div>
       {holidayList && holidayList}
+      {cellProps.sessionNote && (
+        <div
+          className={
+            holidayList.length === 0
+              ? "w-full italic text-clip h-44 overflow-y-scroll no-scrollbar"
+              : holidayList.length === 3
+              ? "w-full italic text-clip h-28 overflow-y-scroll no-scrollbar"
+              : "w-full italic text-clip h-36 overflow-y-scroll no-scrollbar"
+          }
+        >
+          <p title={cellProps.sessionNote.split(" --- ")[1]}>
+            {cellProps.sessionNote.split(" --- ")[0]}
+          </p>
+        </div>
+      )}
     </section>
   );
 }

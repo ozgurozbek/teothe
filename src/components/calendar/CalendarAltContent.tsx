@@ -1,7 +1,17 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import { Card, Divider, Dropdown, Space, Button, InputNumber, Empty, Table, MenuProps } from "antd";
+import React, { useState } from "react";
+import {
+  Card,
+  Divider,
+  Dropdown,
+  Space,
+  Button,
+  InputNumber,
+  Empty,
+  Table,
+  MenuProps,
+} from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import SimpleContent from "@/components/SimpleCon";
 import GetCrumbs from "Comp/NavigationCrumb";
@@ -9,36 +19,34 @@ import CalendarAltTable from "@/components/calendar/CalendarAltTable";
 
 const calendarData = {
   months: [
-    'Buiborn','Ukennir','Pwazorn','Verhildr','Vihildr','Wiobrun',
-    'Vesmirr','Fexgrim','Aurskar','Mceejul','Lcaorn','Cyarn',
-    'Radrik','Naavok'
+    "Buibus",
+    "Ukeus",
+    "Verus",
+    "Vihus",
+    "Fexyius",
+    "Vesius",
+    "Cyaxus",
+    "Radus",
   ],
-  monthLengths: [34,30,34,33,22,36,31,35,6,4,21,37,30,31],
+  monthLengths: [48, 48, 48, 48, 48, 48, 48, 48],
 };
 
 function GetAPICalendar() {
   const data = {
     tableDescription: {
-      description:
-        "Every day is 24 hours. In total there are 384 days.",
+      description: "Every day is 24 hours. In total there are 384 days.",
       columns: ["month", "name", "season"],
       tabName: "calendar",
     },
     tableData: [
-      { season: "Spring", name: "Buiborn", month: "1" },
-      { season: "Spring", name: "Ukennir", month: "2" },
-      { season: "Windburn", name: "Pwazorn", month: "3" },
-      { season: "Summer", name: "Verhildr", month: "4" },
-      { season: "Summer", name: "Vihildr", month: "5" },
-      { season: "Scorchphase", name: "Wiobrun", month: "6" },
-      { season: "Autumn", name: "Vesmirr", month: "7" },
-      { season: "Autumn", name: "Fexgrim", month: "8" },
-      { season: "Charmfall", name: "Aurskar", month: "9" },
-      { season: "Mirefall", name: "Mceejul", month: "10" },
-      { season: "Floodwane", name: "Lcaorn", month: "11" },
-      { season: "Winter", name: "Cyarn", month: "12" },
-      { season: "Winter", name: "Radrik", month: "13" },
-      { season: "Frostclamp", name: "Naavok", month: "14" },
+      { season: "Spring", name: "Buibus", month: "1" },
+      { season: "Spring", name: "Ukeus", month: "2" },
+      { season: "Summer", name: "Verus", month: "3" },
+      { season: "Summer", name: "Vihus", month: "4" },
+      { season: "Fall", name: "Fexyius", month: "5" },
+      { season: "Fall", name: "Vesius", month: "6" },
+      { season: "Winter", name: "Cyaxus", month: "7" },
+      { season: "Winter", name: "Radus", month: "8" },
     ],
   };
 
@@ -48,7 +56,9 @@ function GetAPICalendar() {
     key: col,
   }));
 
-  const dataSource = [...data.tableData].sort((a, b) => parseInt(a.month) - parseInt(b.month));
+  const dataSource = [...data.tableData].sort(
+    (a, b) => parseInt(a.month) - parseInt(b.month),
+  );
 
   return (
     <>
@@ -58,31 +68,103 @@ function GetAPICalendar() {
           text: [data.tableDescription.description],
         }}
       />
-      <Table className="mt-4" dataSource={dataSource} columns={columns} pagination={false} rowKey="month" />
+      <Table
+        className="mt-4"
+        dataSource={dataSource}
+        columns={columns}
+        pagination={false}
+        rowKey="month"
+      />
     </>
   );
 }
 
 const CalendarPage: React.FC = () => {
   const [monthName, setMonthName] = useState<string>("");
+  const [tableNo, setTableNo] = useState("1");
+  const [yearCount, setYearCount] = useState(27);
 
-  const monthItems: MenuProps["items"] = calendarData.months.map((m) => ({ label: m, key: m }));
+  const monthItems: MenuProps["items"] = calendarData.months.map((m) => ({
+    label: m,
+    key: m,
+  }));
+
+  const tableItems: MenuProps["items"] = Array.from({ length: 5 }, (_, i) => ({
+    label: String(i + 1),
+    key: String(i + 1),
+  }));
 
   const selectedMonthIndex = calendarData.months.indexOf(monthName);
-  const monthLength = selectedMonthIndex >= 0 ? calendarData.monthLengths[selectedMonthIndex] : 0;
+  const monthLength =
+    selectedMonthIndex >= 0 ? calendarData.monthLengths[selectedMonthIndex] : 0;
 
   return (
     <section>
       <GetCrumbs path={"Teothe,Calendar"} />
-      <Card bordered={false} className="w-full">
+      <Card variant="outlined" className="w-full">
+        <SimpleContent
+          contentProps={{
+            title: "Calendar",
+            text: [
+              "In the realm of Teothe, 28 unique holidays are celebrated throught 8 months of every year.",
+              "16 of these holidays are recognized and celebrated by everyone in Teothe, and 12 of them are specific to different species.",
+            ],
+          }}
+        />
         <Space className="mb-4 flex flex-wrap">
           <div>
-            Month:{" "}
-            <Dropdown menu={{ items: monthItems, onClick: (e) => setMonthName(e.key) }}>
+            Table:{" "}
+            <Dropdown
+              menu={{
+                items: tableItems,
+                onClick: (e) => setTableNo(e.key),
+              }}
+            >
               <Button>
-                <Space>{monthName || "Select"}<DownOutlined /></Space>
+                <Space>
+                  {tableNo}
+                  <DownOutlined />
+                </Space>
               </Button>
             </Dropdown>
+          </div>
+
+          <Divider orientation="vertical" style={{ borderColor: "white" }} />
+
+          <div>
+            Month:{" "}
+            <Dropdown
+              menu={{
+                items: monthItems,
+                onClick: (e) => setMonthName(e.key),
+              }}
+            >
+              <Button>
+                <Space>
+                  {monthName || "Select"}
+                  <DownOutlined />
+                </Space>
+              </Button>
+            </Dropdown>
+          </div>
+
+          <Divider orientation="vertical" style={{ borderColor: "white" }} />
+
+          <div className="flex items-center">
+            <p className="mr-2">Year:</p>
+
+            <InputNumber
+              addonAfter="Blue Era"
+              value={yearCount}
+              min={27}
+              precision={0}
+              keyboard={false}
+              onChange={(value) => {
+                if (value !== null) {
+                  setYearCount(value);
+                }
+              }}
+            />
           </div>
         </Space>
 
@@ -90,7 +172,9 @@ const CalendarPage: React.FC = () => {
         {monthName ? (
           <CalendarAltTable
             calendarProps={{
-              monthName
+              tableNo: tableNo,
+              monthName: monthName,
+              year: yearCount,
             }}
             monthLength={monthLength}
           />
