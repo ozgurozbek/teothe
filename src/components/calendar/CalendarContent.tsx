@@ -1,37 +1,40 @@
 "use client";
+
+import React, { useState } from "react";
 import {
-  Button,
   Card,
   Divider,
   Dropdown,
-  Empty,
-  InputNumber,
-  MenuProps,
   Space,
+  Button,
+  InputNumber,
+  Empty,
   Table,
+  MenuProps,
 } from "antd";
+import { DownOutlined } from "@ant-design/icons";
 import SimpleContent from "@/components/SimpleCon";
 import GetCrumbs from "Comp/NavigationCrumb";
 import CalendarTable from "@/components/calendar/CalendarTable";
-import { useState } from "react";
-import { DownOutlined } from "@ant-design/icons";
 
-/**
- * The parent component for the calendar. Holds states that are then passed to the table then to cell. Helps fetch data depending on table number, month and year.
- * @see CalendarTable
- * @see CalendarCell
- * @returns Card(antd) wrapped by section
- */
+const calendarData = {
+  months: [
+    "Buibus",
+    "Ukeus",
+    "Verus",
+    "Vihus",
+    "Fexyius",
+    "Vesius",
+    "Cyaxus",
+    "Radus",
+  ],
+  monthLengths: [48, 48, 48, 48, 48, 48, 48, 48],
+};
+
 function GetAPICalendar() {
-  /**
-   * Fetcher function for API requests.
-   * @param args - RequestInfo object containing information about the request.
-   * @returns Promise resolving to the parsed JSON response.
-   */
   const data = {
     tableDescription: {
-      description:
-        "Every day is 24 hours, 8 days a week, 8 weeks, 48 days long months. In total there are 384 days.",
+      description: "Every day is 24 hours. In total there are 384 days.",
       columns: ["month", "name", "season"],
       tabName: "calendar",
     },
@@ -47,27 +50,16 @@ function GetAPICalendar() {
     ],
   };
 
-  function titleCase(text: string) {
-    return text
-      .split(" ")
-      .map((w) => w[0].toUpperCase() + w.substring(1).toLowerCase())
-      .join(" ");
-  }
-  //dataSource, columns
-  let columns = [];
-  for (let i = 0; i < data.tableDescription.columns.length; i++) {
-    columns.push({
-      title: titleCase(data.tableDescription.columns[i]),
-      dataIndex: data.tableDescription.columns[i],
-      key: data.tableDescription.columns[i],
-    });
-  }
+  const columns = data.tableDescription.columns.map((col) => ({
+    title: col[0].toUpperCase() + col.slice(1).toLowerCase(),
+    dataIndex: col,
+    key: col,
+  }));
 
-  let dataSource = [];
-  for (let rowData of data.tableData) {
-    dataSource.push(rowData);
-  }
-  dataSource.sort((a, b) => parseInt(a.month) - parseInt(b.month));
+  const dataSource = [...data.tableData].sort(
+    (a, b) => parseInt(a.month) - parseInt(b.month),
+  );
+
   return (
     <>
       <SimpleContent
@@ -81,93 +73,31 @@ function GetAPICalendar() {
         dataSource={dataSource}
         columns={columns}
         pagination={false}
+        rowKey="month"
       />
     </>
   );
 }
 
-export default function CalendarContent() {
-  const [monthName, setMonthName] = useState("");
+const CalendarPage: React.FC = () => {
+  const [monthName, setMonthName] = useState<string>("");
   const [tableNo, setTableNo] = useState("1");
   const [yearCount, setYearCount] = useState(27);
 
-  const handleMonthClick: MenuProps["onClick"] = (e) => {
-    setMonthName(e.key);
-  };
+  const monthItems: MenuProps["items"] = calendarData.months.map((m) => ({
+    label: m,
+    key: m,
+  }));
 
-  const handleTableClick: MenuProps["onClick"] = (e) => {
-    setTableNo(e.key);
-  };
+  const tableItems: MenuProps["items"] = Array.from({ length: 5 }, (_, i) => ({
+    label: String(i + 1),
+    key: String(i + 1),
+  }));
 
-  const handleYearClick = (value: number) => {
-    setYearCount(value);
-  };
+  const selectedMonthIndex = calendarData.months.indexOf(monthName);
+  const monthLength =
+    selectedMonthIndex >= 0 ? calendarData.monthLengths[selectedMonthIndex] : 0;
 
-  const items: MenuProps["items"] = [
-    {
-      label: "Buibus",
-      key: "Buibus",
-    },
-    {
-      label: "Ukeus",
-      key: "Ukeus",
-    },
-    {
-      label: "Verus",
-      key: "Verus",
-    },
-    {
-      label: "Vihus",
-      key: "Vihus",
-    },
-    {
-      label: "Fexyius",
-      key: "Fexyius",
-    },
-    {
-      label: "Vesius",
-      key: "Vesius",
-    },
-    {
-      label: "Cyaxus",
-      key: "Cyaxus",
-    },
-    {
-      label: "Radus",
-      key: "Radus",
-    },
-  ];
-  const monthProps = {
-    items,
-    onClick: handleMonthClick,
-  };
-
-  const tableItems: MenuProps["items"] = [
-    {
-      label: "1",
-      key: "1",
-    },
-    {
-      label: "2",
-      key: "2",
-    },
-    {
-      label: "3",
-      key: "3",
-    },
-    {
-      label: "4",
-      key: "4",
-    },
-    {
-      label: "5",
-      key: "5",
-    },
-  ];
-  const tableProps = {
-    items: tableItems,
-    onClick: handleTableClick,
-  };
   return (
     <section>
       <GetCrumbs path={"Teothe,Calendar"} />
@@ -184,7 +114,12 @@ export default function CalendarContent() {
         <Space className="mb-4 flex flex-wrap">
           <div>
             Table:{" "}
-            <Dropdown menu={tableProps}>
+            <Dropdown
+              menu={{
+                items: tableItems,
+                onClick: (e) => setTableNo(e.key),
+              }}
+            >
               <Button>
                 <Space>
                   {tableNo}
@@ -193,30 +128,40 @@ export default function CalendarContent() {
               </Button>
             </Dropdown>
           </div>
+
           <Divider orientation="vertical" style={{ borderColor: "white" }} />
+
           <div>
             Month:{" "}
-            <Dropdown menu={monthProps}>
+            <Dropdown
+              menu={{
+                items: monthItems,
+                onClick: (e) => setMonthName(e.key),
+              }}
+            >
               <Button>
                 <Space>
-                  {monthName}
+                  {monthName || "Select"}
                   <DownOutlined />
                 </Space>
               </Button>
             </Dropdown>
           </div>
+
           <Divider orientation="vertical" style={{ borderColor: "white" }} />
-          <div className="flex items-center ">
-            <p className="mr-2"> Year: </p>
+
+          <div className="flex items-center">
+            <p className="mr-2">Year:</p>
+
             <InputNumber
               addonAfter="Blue Era"
-              defaultValue={27}
+              value={yearCount}
               min={27}
               precision={0}
               keyboard={false}
-              onChange={(x) => {
-                if (x != null) {
-                  handleYearClick(x);
+              onChange={(value) => {
+                if (value !== null) {
+                  setYearCount(value);
                 }
               }}
             />
@@ -224,13 +169,14 @@ export default function CalendarContent() {
         </Space>
 
         <Divider />
-        {monthName !== "" ? (
+        {monthName ? (
           <CalendarTable
             calendarProps={{
               tableNo: tableNo,
               monthName: monthName,
               year: yearCount,
             }}
+            monthLength={monthLength}
           />
         ) : (
           <Empty />
@@ -240,4 +186,6 @@ export default function CalendarContent() {
       </Card>
     </section>
   );
-}
+};
+
+export default CalendarPage;

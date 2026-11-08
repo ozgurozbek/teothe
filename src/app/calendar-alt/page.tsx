@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import CalendarAltContent from "@/components/calendar/CalendarAltContent";
+import CalendarContent from "@/components/calendar/CalendarContent";
 
 export const metadata: Metadata = {
   title: "Calendar",
@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function CalendarPage() {
-  return <CalendarAltContent />;
+  return <CalendarContent />;
 }

@@ -1,3 +1,5 @@
+"use client";
+
 import { Col, Row, Skeleton } from "antd";
 import CalendarCell from "./CalendarCell";
 import useSWR from "swr";
@@ -25,7 +27,7 @@ function GetSessionNotes(tableNo: string, year: string, month: string) {
       year +
       "&month=" +
       month,
-    fetcher
+    fetcher,
   );
   if (error) {
     console.log(error);
@@ -36,9 +38,7 @@ function GetSessionNotes(tableNo: string, year: string, month: string) {
   return data;
 }
 
-/**
- * Staticly holds holidays for every month and date if there is one
- */
+// Static holidays
 const holidays: { [key: string]: string[] } = {
   "Buibus, 1": ["New Years", "Sister's Month"],
   "Vihus, 46": ["Festival of Renewal"],
@@ -247,193 +247,119 @@ const holidays: { [key: string]: string[] } = {
   "Radus, 10": ["Sunken Barrel Morning*, Celebrated heavily by Dwarves"],
 };
 
-/**
- * Gets the holidays for select month and date in a string format merged with ", ", which is then split in CalendarCell.tsx
- * @generator
- * @param monthName title case
- * @param date
- * @returns string array
- */
-function getHolidays(monthName: string, date: number) {
-  const key: string = monthName + ", " + date;
-  return holidays[key];
-}
-
-/**
- * Staticly holds moon phases for every month, split into 2 for moon cycles
- */
-const moonPhase = [
-  {
-    // For Buibus, Verus, Fexyius*, Cyaxus
-    1: "Full Moon",
-    2: "Full Moon",
-    3: "Full Moon",
-    4: "Full Moon",
-    5: "Waning Gibbous",
-    6: "Waning Gibbous",
-    7: "Waning Gibbous",
-    8: "Waning Gibbous",
-    9: "Waning Gibbous",
-    10: "Waning Gibbous",
-    11: "Waning Gibbous",
-    12: "Waning Gibbous",
-    13: "Waning Gibbous",
-    14: "Waning Gibbous",
-    15: "Waning Quarter",
-    16: "Waning Quarter",
-    17: "Waning Quarter",
-    18: "Waning Quarter",
-    19: "Waning Quarter",
-    20: "Waning Quarter",
-    21: "Waning Quarter",
-    22: "Waning Quarter",
-    23: "Waning Quarter",
-    24: "Waning Quarter",
-    25: "Waning Crescent",
-    26: "Waning Crescent",
-    27: "Waning Crescent",
-    28: "Waning Crescent",
-    29: "Waning Crescent",
-    30: "Waning Crescent",
-    31: "Waning Crescent",
-    32: "Waning Crescent",
-    33: "Waning Crescent",
-    34: "Waning Crescent",
-    35: "Old Moon",
-    36: "Old Moon",
-    37: "Old Moon",
-    38: "Old Moon",
-    39: "Old Moon",
-    40: "Old Moon",
-    41: "Old Moon",
-    42: "Old Moon",
-    43: "Old Moon",
-    44: "Old Moon",
-    45: "New Moon",
-    46: "New Moon",
-    47: "New Moon",
-    48: "New Moon",
-  },
-  {
-    // For Ukeus, Vihus, Vesius, Radus
-    1: "New Moon",
-    2: "New Moon",
-    3: "New Moon",
-    4: "New Moon",
-    5: "Young Moon",
-    6: "Young Moon",
-    7: "Young Moon",
-    8: "Young Moon",
-    9: "Young Moon",
-    10: "Young Moon",
-    11: "Young Moon",
-    12: "Young Moon",
-    13: "Young Moon",
-    14: "Young Moon",
-    15: "Waxing Crescent",
-    16: "Waxing Crescent",
-    17: "Waxing Crescent",
-    18: "Waxing Crescent",
-    19: "Waxing Crescent",
-    20: "Waxing Crescent",
-    21: "Waxing Crescent",
-    22: "Waxing Crescent",
-    23: "Waxing Crescent",
-    24: "Waxing Crescent",
-    25: "Waxing Quarter",
-    26: "Waxing Quarter",
-    27: "Waxing Quarter",
-    28: "Waxing Quarter",
-    29: "Waxing Quarter",
-    30: "Waxing Quarter",
-    31: "Waxing Quarter",
-    32: "Waxing Quarter",
-    33: "Waxing Quarter",
-    34: "Waxing Quarter",
-    35: "Waxing Gibbous",
-    36: "Waxing Gibbous",
-    37: "Waxing Gibbous",
-    38: "Waxing Gibbous",
-    39: "Waxing Gibbous",
-    40: "Waxing Gibbous",
-    41: "Waxing Gibbous",
-    42: "Waxing Gibbous",
-    43: "Waxing Gibbous",
-    44: "Waxing Gibbous",
-    45: "Full Moon",
-    46: "Full Moon",
-    47: "Full Moon",
-    48: "Full Moon",
-  },
+// Moon phases
+const moonPhases = [
+  "New Moon",
+  "Young Moon",
+  "Waxing Crescent",
+  "Waxing Quarter",
+  "Waxing Gibbous",
+  "Full Moon",
+  "Waning Gibbous",
+  "Waning Quarter",
+  "Waning Crescent",
+  "Old Moon",
 ];
 
-/**
- * Gets the moon phases for select month and date
- * @generator
- * @param monthName title case
- * @param date
- * @returns string
- */
-function getMoonPhase(monthName: string, date: number) {
-  let temp: any = [];
-  if (
-    monthName == "Buibus" ||
-    monthName == "Verus" ||
-    monthName == "Fexyius" ||
-    monthName == "Cyaxus"
-  ) {
-    temp = moonPhase[0];
-    temp = temp[date];
-  } else {
-    temp = moonPhase[1];
-    temp = temp[date];
-  }
-  return temp;
+// Map each month to its order in the year
+const monthOrder = [
+  "Buibus",
+  "Ukeus",
+  "Verus",
+  "Vihus",
+  "Fexyius",
+  "Vesius",
+  "Cyaxus",
+  "Radus",
+];
+
+// Example month lengths
+const monthLengths = [48, 48, 48, 48, 48, 48, 48, 48];
+
+function getHolidays(monthName: string, day: number) {
+  return holidays[`${monthName}, ${day}`];
 }
 
-/**
- * Generates the Calendar view with CalendarCell.tsx populating a cell for each date. It is split weirdly for grid styling purposes. There is 8 cols per row.
- * @param calendarProps
- * @returns Row(antd)
- */
+// This is now dynamically calculated.
+function getMoonPhaseDynamic(monthName: string, day: number): string {
+  const monthIndex = monthOrder.indexOf(monthName);
+  if (monthIndex === -1 || day < 1 || day > monthLengths[monthIndex]) {
+    return "Unknown Moon";
+  }
+
+  //I made it very specific when making the calendar. However the calendar-alt branch merge (see git chain) has a more appropriate estimator.
+  const phaseGroups: [number, number, string][][] = [
+    [
+      [1, 4, "Full Moon"],
+      [5, 14, "Waning Gibbous"],
+      [15, 24, "Waning Quarter"],
+      [25, 34, "Waning Crescent"],
+      [35, 44, "Old Moon"],
+      [45, 48, "New Moon"],
+    ],
+    [
+      [1, 4, "New Moon"],
+      [5, 14, "Young Moon"],
+      [15, 24, "Waxing Crescent"],
+      [25, 34, "Waxing Quarter"],
+      [35, 44, "Waxing Gibbous"],
+      [45, 48, "Full Moon"],
+    ],
+  ];
+
+  const phase = phaseGroups[monthIndex % 2].find(
+    ([start, end]) => day >= start && day <= end
+  );
+
+  return phase?.[2] ?? "Unknown Moon";
+}
+
 export default function CalendarTable({
   calendarProps,
+  monthLength,
 }: {
   calendarProps: {
     tableNo: string;
     monthName: string;
     year: number;
   };
+  monthLength: number;
 }) {
-  let thisMonthsNotes = GetSessionNotes(
+  const thisMonthsNotes = GetSessionNotes(
     calendarProps.tableNo,
     calendarProps.year.toString(),
     calendarProps.monthName
   );
-  let tableMain = [];
-  /* Index here is the date */
-  for (let index = 1; index < 49; index++) {
-      tableMain.push(
-        <Col
-          xs={12}
-          sm={6}
-          md={4}
-          lg={4}
-          xl={3}
-          xxl={3}
-          className="bg-[#171b20] h-60"
-          style={{boxShadow:"0px 0px 0px 1px #33373b"}}
-        >
-          <CalendarCell
-            cellProps={{
-              dayNumber: index,
-              moonPhase: getMoonPhase(calendarProps.monthName, index),
-              holiday: getHolidays(calendarProps.monthName, index),
-              sessionNote: thisMonthsNotes[index],
-            }}
-          />
-        </Col>
-      );
+
+  const tableMain = [];
+
+  for (let day = 1; day <= monthLength; day++) {
+    tableMain.push(
+      <Col
+        key={day}
+        xs={12}
+        sm={6}
+        md={4}
+        lg={4}
+        xl={3}
+        xxl={3}
+        className="bg-[#171b20] h-60"
+        style={{ boxShadow: "0px 0px 0px 1px #33373b" }}
+      >
+        <CalendarCell
+          cellProps={{
+            dayNumber: day,
+            moonPhase: getMoonPhaseDynamic(
+              calendarProps.monthName,
+              day
+            ),
+            holiday: getHolidays(calendarProps.monthName, day),
+            sessionNote: thisMonthsNotes?.[day],
+          }}
+        />
+      </Col>
+    );
   }
+
   return <Row>{tableMain}</Row>;
 }
