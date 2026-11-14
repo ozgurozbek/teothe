@@ -71,6 +71,7 @@ export default function Faction({
         <Space size="small" className="mb-2">
           <Image
             src={img}
+            fallback="/Factions/_.png"
             alt={descriptionProps.factionName}
             width={80}
             height={80}

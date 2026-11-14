@@ -35,8 +35,7 @@ export default function FactionPopover({ factionName }: Props) {
 
       {faction.factionAliases?.length ? (
         <div style={{ marginTop: 8 }}>
-          <strong>Also known as:</strong>{" "}
-          {faction.factionAliases.join(", ")}
+          <strong>Also known as:</strong> {faction.factionAliases.join(", ")}
         </div>
       ) : null}
     </>
@@ -47,12 +46,11 @@ export default function FactionPopover({ factionName }: Props) {
       triggerLabel={factionName}
       title={faction.factionName}
       imageSrc={`/Factions/${imageName}.png`}
+      fallbackImageSrc="/Factions/_.png"
       subtitle={
         <>
           <div>{faction.factionType}</div>
-          {faction.factionHQ && (
-            <div>Headquarters: {faction.factionHQ}</div>
-          )}
+          {faction.factionHQ && <div>Headquarters: {faction.factionHQ}</div>}
         </>
       }
       description={description}
