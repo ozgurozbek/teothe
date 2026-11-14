@@ -133,7 +133,7 @@ export default function Navbar() {
     getItem("Calendar", "12", "calendar", getIcon("Calendar")),
     getItem("Codex", "18", "codex", getIcon("Codex")),
     getItem("DM's Works ▼", "-2", undefined, getIcon("DMworks"), undefined, [
-      getItem("Deities", "20", "deities", getIcon("Deities")),
+      getItem("Deities", "22", "deities", getIcon("Deities")),
       getItem("Planes", "2", "planes", getIcon("Locations")),
       getItem("Tools", "8", "tools", getIcon("Tools")),
       getItem("Pricing", "7", "pricing", getIcon("Pricing")),

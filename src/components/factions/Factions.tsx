@@ -2,6 +2,8 @@ import { Typography, Image, Tooltip, Space, Card, Divider } from "antd";
 import { useState } from "react";
 import DeityPopover from "@/components/deities/DeityPopover";
 import { AlignmentRadar } from "../AlignmentChart";
+import FactionPopover from "./FactionsPopover";
+import type { DataType } from "@/lib/factions";
 
 const alignmentData: Record<
   string,
@@ -17,18 +19,9 @@ export default function Faction({
 }: {
   imageSrc: string;
   typeImageSrc: string;
-  descriptionProps: {
-    factionType: string;
-    factionName: string;
-    factionAliases: string[];
-    factionDeity: string;
-    factionEnemies: string[];
-    factionAllies: string[];
-    factionDetail: string[];
-    factionHQ: string;
-    factionKey: number;
-  };
+  descriptionProps: DataType;
 }) {
+  //This is used by the images no matter what your editor says.
   const [previewOpen, setPreviewOpen] = useState(false);
   const [typePreviewOpen, setTypePreviewOpen] = useState(false);
 
@@ -109,11 +102,27 @@ export default function Faction({
         )}
 
         {descriptionProps.factionAllies.length > 0 && (
-          <p>Allies: {descriptionProps.factionAllies.join(", ")}</p>
+          <p>
+            Allies:{" "}
+            {descriptionProps.factionAllies.map((name, index) => (
+              <span key={`${name}-${index}`}>
+                {index > 0 && ", "}
+                <FactionPopover factionName={name} />
+              </span>
+            ))}
+          </p>
         )}
 
         {descriptionProps.factionEnemies.length > 0 && (
-          <p>Enemies: {descriptionProps.factionEnemies.join(", ")}</p>
+          <p>
+            Enemies:{" "}
+            {descriptionProps.factionEnemies.map((name, index) => (
+              <span key={`${name}-${index}`}>
+                {index > 0 && ", "}
+                <FactionPopover factionName={name} />
+              </span>
+            ))}
+          </p>
         )}
 
         {descriptionProps.factionDeity && (
