@@ -1,11 +1,15 @@
+"use client";
+
 import { Avatar, Popover, Space } from "antd";
 import Text from "antd/es/typography/Text";
 import type { ReactNode } from "react";
+import { useState } from "react";
 
 export interface EntityPopoverProps {
   triggerLabel: string;
   title: string;
   imageSrc?: string;
+  fallbackImageSrc?: string;
   subtitle?: ReactNode;
   description?: ReactNode;
   quote?: string;
@@ -15,14 +19,30 @@ export default function EntityPopover({
   triggerLabel,
   title,
   imageSrc,
+  fallbackImageSrc,
   subtitle,
   description,
   quote,
 }: EntityPopoverProps) {
-  const imagePreview = imageSrc ? (
+  const [failedImage, setFailedImage] = useState<string | null>(null);
+
+  const displayImageSrc =
+    imageSrc && failedImage === imageSrc
+      ? fallbackImageSrc
+      : imageSrc;
+
+  const handleImageError = () => {
+    if (fallbackImageSrc && imageSrc && failedImage !== imageSrc) {
+      setFailedImage(imageSrc);
+    }
+    return false;
+  };
+
+  const imagePreview = displayImageSrc ? (
     <img
-      src={imageSrc}
+      src={displayImageSrc}
       alt={title}
+      onError={handleImageError}
       style={{
         maxWidth: 300,
         maxHeight: 300,
@@ -34,7 +54,7 @@ export default function EntityPopover({
   const content = (
     <div style={{ maxWidth: 340 }}>
       <Space align="start">
-        {imageSrc && (
+        {displayImageSrc && (
           <Popover
             content={imagePreview}
             trigger="hover"
@@ -43,7 +63,8 @@ export default function EntityPopover({
           >
             <Avatar
               size={64}
-              src={imageSrc}
+              src={displayImageSrc}
+              onError={handleImageError}
               style={{ cursor: "zoom-in" }}
             />
           </Popover>
