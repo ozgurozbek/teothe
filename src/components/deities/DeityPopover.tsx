@@ -1,6 +1,5 @@
-import { Popover, Avatar, Space } from "antd";
 import deities from "@/jsons/deities/deities.json";
-import Text from "antd/es/typography/Text";
+import EntityPopover from "@/components/EntityPopover";
 
 export interface DeityType {
   order: number;
@@ -22,49 +21,13 @@ export default function DeityPopover({ name }: { name: string }) {
 
   if (!deity) return <span>{name}</span>;
 
-  const imageSrc = `/Deities/${deity.name}.png`;
-
-  const imagePreview = (
-    <img
-      src={imageSrc}
-      alt={deity.name}
-      style={{
-        maxWidth: 300,
-        maxHeight: 300,
-        display: "block",
-      }}
-    />
-  );
-
-  const content = (
-    <div style={{ maxWidth: 300 }}>
-      <Space align="start">
-        <Popover
-          content={imagePreview}
-          trigger="hover"
-          placement="right"
-          styles={{
-            container: { padding: 0 },
-          }}
-        >
-          <Avatar size={64} src={imageSrc} style={{ cursor: "zoom-in" }} />
-        </Popover>
-
-        <div>
-          <Text strong>{deity.name}</Text>
-          <div style={{ color: "#999" }}>{deity.domains.join(", ")}</div>
-        </div>
-      </Space>
-
-      <div style={{ marginTop: 8 }}>{deity.description}</div>
-    </div>
-  );
-
   return (
-    <Popover content={content} trigger={["hover", "click"]} placement="top">
-      <span style={{ textDecoration: "underline", cursor: "pointer" }}>
-        {name}
-      </span>
-    </Popover>
+    <EntityPopover
+      triggerLabel={deity.name}
+      title={deity.name}
+      imageSrc={`/Deities/${deity.name}.png`}
+      subtitle={deity.domains.join(", ")}
+      description={deity.description}
+    />
   );
 }
