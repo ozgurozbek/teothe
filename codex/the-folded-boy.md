@@ -15,7 +15,7 @@ paidContentPartner: ""
 duration: "3"
 ---
 
-It was a wet and sour mid-autumn day in Uxibo, and little Dia was scared. She had just gone into a bakery, hoping to find some warm smearpuffs, the kind that smelled sweet and buttery. But when she came out, her mum was gone, and the bakery didn’t even have any smearpuffs! The rain dripped from her hood, and the wet smell of mud and bread filled the air. She waited outside for a few minutes, but her mum didn’t appear. After the last time she got lost, they had promised to always meet by the Market Street.
+It was a wet and sour mid-autumn day in Uxibo, and little Dia was scared. She had just gone into a bakery, hoping to find some warm smearpuffs, the kind that smelled sweet and buttery. But when she came out, her mum was gone, and the bakery didn't even have any smearpuffs! The rain dripped from her hood, and the wet smell of mud and bread filled the air. She waited outside for a few minutes, but her mum didn't appear. After the last time she got lost, they had promised to always meet by the Market Street.
 
 Dia saw a crowd near the wet, cobblestoned market square. People were cheering and shouting so loud that her ears rang. The smell of rain and sweat mixed with roasted chestnuts from a nearby stall. It was busier and noisier than usual. She hoped her mum could still find her, but her curiosity pulled her closer. She squeezed through the crowd, small enough to slip under elbows and skirts, until she reached the front.
 
@@ -33,8 +33,8 @@ The other creature was hurt. Its talons scraped uselessly against the smaller on
 
 Dia noticed the tail on the grimacing creature's left side, and then in a moment, it got chopped in half. A terrible scream ripped through the crowd, making Dia cover her ears. People around her shouted, “Folded Boy!” as the grotesque halfling was etching closer on a victory...
 
-Dia leaned back in terror and ran. She looked frantically for her mum as the rain dripped into her eyes, mixing with tears. Then - a booming sound of victory, like a drum echoing across the square... The "Folded Boy" had won. The other creature laid still. A man’s voice rose above the cheering, announcing the winner, and some people rushed to help the fallen performer. For a single moment, Dia and the Folded Boy’s eyes met again. Hollow eyes. A blank face. It felt like he didn’t even know what he had done. Dia felt a cold shiver, like the rain had gone under her skin.
+Dia leaned back in terror and ran. She looked frantically for her mum as the rain dripped into her eyes, mixing with tears. Then - a booming sound of victory, like a drum echoing across the square... The "Folded Boy" had won. The other creature laid still. A man's voice rose above the cheering, announcing the winner, and some people rushed to help the fallen performer. For a single moment, Dia and the Folded Boy's eyes met again. Hollow eyes. A blank face. It felt like he didn't even know what he had done. Dia felt a cold shiver, like the rain had gone under her skin.
 
-Trembling, she continued to wriggle through the crowd. Just then, she heard her panicked mum calling for her name over the cheering. Dia ran and threw herself into her mum’s arms, sobbing. The smell of her mum’s coat and hair made her feel safe again. On the way home, Dia promised she would never leave her mum’s side again and that she would never, ever become like the Folded Boy.
+Trembling, she continued to wriggle through the crowd. Just then, she heard her panicked mum calling for her name over the cheering. Dia ran and threw herself into her mum's arms, sobbing. The smell of her mum's coat and hair made her feel safe again. On the way home, Dia promised she would never leave her mum's side again and that she would never, ever become like the Folded Boy.
 
 Maybe, just maybe, there was something she could do for him.

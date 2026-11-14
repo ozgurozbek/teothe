@@ -8,7 +8,7 @@ import { DoubleRightOutlined } from "@ant-design/icons";
 export default function AdventurersGuideToUnderdarkContent() {
   return (
     <section>
-      <GetCrumbs path={"Teothe,Books,Adventurer’s Guide: To Underdark"} />
+      <GetCrumbs path={"Teothe,Books,Adventurer's Guide: To Underdark"} />
       <Card
         variant="outlined"
         className="w-full bg-[url('/books/main.svg')] bg-cover bg-center"
@@ -16,7 +16,7 @@ export default function AdventurersGuideToUnderdarkContent() {
         <article className="h-[70vh] overflow-y-scroll no-scrollbar m-auto max-w-[50rem] [&>.mb-2]:{text-justify} px-8 py-2 backdrop-blur-lg">
           <SimpleBookContent
             contentProps={{
-              title: "Adventurer’s Guide: To Underdark",
+              title: "Adventurer's Guide: To Underdark",
               text: [
                 "You want to visit the Underdark huh? It is similar to our home but different in a way that troubles most souls that venture there. Slavers and slaves, drow and duergar fill this place. The vast, multilayered underworld that imitates our home. Always cold with dry air, never feeling the sunlight and the wind. There are ways to go in and die there.",
                 "On your travels, without stars and proper navigation, your way will be lit with bioluminescent fungi and glowstone. If the path is dark, you are surrounded by dark rock. You may be surprised to see old bridges and destroyed buildings but remember, these lands are full of life. That wood you see is not actually wood. Lumber-like fungus and carved stalagmites are used for them, and they are weak or sharp. Settling down below the caves, in the caves, underground magma rivers.",
@@ -29,7 +29,7 @@ export default function AdventurersGuideToUnderdarkContent() {
                 "If you are still reading this book series, I'll keep it information only, since you must be determined to die. Let's talk about Faerzress. It is a constant radiation of magic. A magic force that protects from receiving visions from different places, alters spells, limits teleportation and feeds plants. That is why the mushrooms are abundant, and moss still grows even in the absence of the sun. Yes, you read that right, the condensed energy is a rival to our sun.",
                 "There are also small places that resemble a different world or are so unique called The Undergroves. These can be the difference between your death and survival. I've only come across one, and it is called the Barnacle Fields by the gnomes. Cavernous area, large craters. Their hard shell makes them really difficult to kill but has good meat if you can manage it. Be careful to cook it well to avoid fungus infection. Do not stand on their mouth. Never a good idea.",
                 "After learning all this information, I can only hope that you don't die and come back to tell a story. Maybe, you can advance the knowledge provided by this book, or completely destroy the nonsense that is written here, if it is actually nonsense then. Seek out the fourth volume for a map and gear recommendations which I believe to be essential to my return. Good luck adventurers.",
-                "The items I have used are as follows. These are a must, in my humble opinion. A lizard leather breathing hood for spore-infested caverns or gaseous chambers. A climbing kit is since stalagmites, purple worm tunnels, pits, volcanic tubes, vertical shafts and many other terrains are extremely dangerous and hard to traverse through. Monsters won’t wait for you so a spider kit and Stoneburner gloves are really good. Potion bladder is also proved useful because you are definitely going to need potions. Running and fighting happened a lot, but if need be, a mister could be used for a more stealthy approach. Best of luck to you, and don't die.",
+                "The items I have used are as follows. These are a must, in my humble opinion. A lizard leather breathing hood for spore-infested caverns or gaseous chambers. A climbing kit is since stalagmites, purple worm tunnels, pits, volcanic tubes, vertical shafts and many other terrains are extremely dangerous and hard to traverse through. Monsters won't wait for you so a spider kit and Stoneburner gloves are really good. Potion bladder is also proved useful because you are definitely going to need potions. Running and fighting happened a lot, but if need be, a mister could be used for a more stealthy approach. Best of luck to you, and don't die.",
                 "[Map is long lost]"
               ],
             }}

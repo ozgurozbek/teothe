@@ -84,7 +84,7 @@ function GetQuestIdea() {
         </p>
         <p>
           With this tool, crafting narratives becomes effortless. You can adapt
-          generated ideas to suit your players’ choices and customize various
+          generated ideas to suit your players' choices and customize various
           elements, including monsters, spells, and items, enriching your
           storytelling experience.
         </p>

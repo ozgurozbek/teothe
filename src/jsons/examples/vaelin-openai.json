@@ -1,6 +1,6 @@
 {
   "name": "Vaelin OpenAI (AI GENERATED)",
-  "appearance": "Vaelin is a broad-shouldered half-orc with weathered olive-grey skin, a broken tusk on the left side of his jaw, and long black hair tied into a rough braid behind his head. He wears layered traveler’s leathers reinforced with scavenged metal plates, and a faded green cloak stitched with symbols from old caravans he once guarded.",
+  "appearance": "Vaelin is a broad-shouldered half-orc with weathered olive-grey skin, a broken tusk on the left side of his jaw, and long black hair tied into a rough braid behind his head. He wears layered traveler's leathers reinforced with scavenged metal plates, and a faded green cloak stitched with symbols from old caravans he once guarded.",
   "images": ["/Examples/openai.png"],
   "base": {
     "alignment": "Neutral Good",

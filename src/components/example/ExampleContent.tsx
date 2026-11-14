@@ -26,7 +26,7 @@ export default function ExampleContent() {
               url: "examples/naestte-xob-lebi-aiana",
               image: "/Examples/lebi-1.png",
               author: " ",
-              name: "Na’estte -!Xob Lebi Aiana",
+              name: "Na'estte -!Xob Lebi Aiana",
             }}
           />
           <GetBook

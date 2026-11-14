@@ -1,7 +1,7 @@
 ---
 title: "Mary lit me up and left me burning"
 date: "2025-05-22"
-description: "I got yanked out of death by the hottest fire sorcerer in black, lost her, lost my mind, and now I’m babysitting a broken tank while the voices get louder. Helmet life’s a joke, and I’m the punchline"
+description: "I got yanked out of death by the hottest fire sorcerer in black, lost her, lost my mind, and now I'm babysitting a broken tank while the voices get louder. Helmet life's a joke, and I'm the punchline"
 category: "Journal"
 contentWarning: "Violence, Death, Mental-illness, Blood"
 authorName: "Ron Redstream"

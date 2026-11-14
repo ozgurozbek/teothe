@@ -16,7 +16,7 @@ export default function GeneralJetsReformContent() {
         <article className="h-[70vh] overflow-y-scroll no-scrollbar m-auto max-w-[50rem] [&>.mb-2]:{text-justify} px-8 py-2 backdrop-blur-lg">
           <SimpleBookContent
             contentProps={{
-              title: "General Jet’s Reform",
+              title: "General Jet's Reform",
               text: [
                 "These 10 points must be acknowledged by all. After the Mages' Crisis, anyone violating these will be hunted down, especially by the Arcanum Alliance or Sapphire Sanctum.",
                 "1. You are not allowed to use magic on a living creature to cause it harm that will not kill it.",
