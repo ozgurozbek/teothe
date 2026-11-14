@@ -70,11 +70,11 @@ export default function RootLayoutProvider({
             CC BY-NC-SA License{" "}
           </a>
           and protected by the{" "}
-          <a target="_blank" href="./SRD-OGL_V5.1.pdf">
+          <a target="_blank" href="/SRD-OGL_V5.1.pdf">
             Wizards OGL{" "}
           </a>
           and{" "}
-          <a target="_blank" href="./SRD5.1-CCBY4.0_License_livelinks.pdf">
+          <a target="_blank" href="/SRD5.1-CCBY4.0_License_livelinks.pdf">
             Wizards CC BY
           </a>
           . Further attributions can be found on the{" "}
