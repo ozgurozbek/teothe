@@ -148,5 +148,245 @@
     "image": "",
     "content": "Warforged are living constructs, created for battle but seeking purpose and identity beyond their original design.",
     "quote": "For honor, for sacrifice, for the forge"
+  },
+  {
+    "id": "astral elf",
+    "image": "astral_elf.png",
+    "content": "Astral elves are elven wanderers shaped by long ages among the Astral Plane's silver void, where time, distance, and starlight feel different from the mortal world.",
+    "quote": "The stars are not distant lights. They are the roads we have not walked yet."
+  },
+  {
+    "id": "autognome",
+    "image": "",
+    "content": "Autognomes are self-aware mechanical folk, often built by gnomish inventors, who turn craftsmanship and curiosity into a personal search for purpose.",
+    "quote": "I was built to follow a plan. Becoming myself was the first deviation."
+  },
+  {
+    "id": "centaur",
+    "image": "",
+    "content": "Centaurs combine humanoid upper bodies with equine lower bodies, and often prize mobility, independence, and close ties to their chosen communities.",
+    "quote": "A road is only a line until someone chooses where it leads."
+  },
+  {
+    "id": "duergar",
+    "image": "",
+    "content": "Duergar are dwarves whose ancestors endured generations in the Underdark, developing formidable discipline and a wary culture shaped by enslavement, survival, and psionic power.",
+    "quote": "We learned to distrust the dark. Then we learned to make it distrust us."
+  },
+  {
+    "id": "eladrin",
+    "image": "",
+    "content": "Eladrin are elves deeply bound to the Feywild, whose appearance and temperament may shift with the season and the emotions that season awakens.",
+    "quote": "Do not ask which season I am. Ask what your heart has brought into bloom."
+  },
+  {
+    "id": "firbolg",
+    "image": "",
+    "content": "Firbolgs are giant-kin with a natural affinity for old forests, quiet stewardship, and magic that helps them protect communities without demanding attention.",
+    "quote": "A forest survives because most of its guardians never ask to be seen."
+  },
+  {
+    "id": "giff",
+    "image": "",
+    "content": "Giff are broad, hippo-headed folk known for disciplined martial traditions, distinctive personal style, and a fascination with firearms and military ceremony.",
+    "quote": "If the plan lacks a salute, a uniform, and a loud report, it is not yet a proper plan."
+  },
+  {
+    "id": "githyanki",
+    "image": "",
+    "content": "Githyanki are astral-raiders and martial psions who forged a fierce culture after escaping the mind flayers that once enslaved their ancestors.",
+    "quote": "Freedom is not granted. It is defended, every day, with a blade and a clear mind."
+  },
+  {
+    "id": "githzerai",
+    "image": "",
+    "content": "Githzerai cultivate mental discipline in the turbulent plane of Limbo, using focus and psionic skill to preserve order within themselves and reshape the chaos around them.",
+    "quote": "The storm outside is loud. The storm within is the one that matters."
+  },
+  {
+    "id": "goblin",
+    "image": "",
+    "content": "Goblins are small, resourceful goblinoids whose communities range from fearful hierarchies to inventive, fiercely independent groups that refuse to be defined by old masters.",
+    "quote": "Being underestimated is not an insult. It is a resource."
+  },
+  {
+    "id": "grung",
+    "image": "",
+    "content": "Grung are brightly coloured amphibious folk whose societies are shaped by vertical rainforest habitats, specialised roles, and skin secretions that can be dangerously toxic.",
+    "quote": "Look up before you step. We have already seen you coming."
+  },
+  {
+    "id": "hadozee",
+    "image": "",
+    "content": "Hadozees are agile, gliding folk with a long tradition of seafaring and spacefaring, valued for their sure hands, cooperative crews, and practical adaptability.",
+    "quote": "The gap is not too wide. It is simply asking for a better route."
+  },
+  {
+    "id": "harengon",
+    "image": "",
+    "content": "Harengons are rabbit-like folk touched by Feywild magic, combining quick reflexes, keen senses, and a knack for escaping danger at precisely the right moment.",
+    "quote": "Luck is what other people call preparation when it happens too quickly to notice."
+  },
+  {
+    "id": "hobgoblin",
+    "image": "",
+    "content": "Hobgoblins are disciplined goblinoids whose cultures often emphasise training, shared duty, and the strength that comes from coordinated effort.",
+    "quote": "A lone victory proves skill. A shared victory proves a system."
+  },
+  {
+    "id": "kalashtar",
+    "image": "",
+    "content": "Kalashtar are people spiritually linked to benevolent dream entities, carrying an unusual connection to the realm of dreams and a quiet resistance to psychic intrusion.",
+    "quote": "Some dreams are memories. Some are visitors. Learn which voice is speaking."
+  },
+  {
+    "id": "kender",
+    "image": "",
+    "content": "Kender are curious, fearless wanderers whose fascination with people, stories, and unusual objects can make them disarming companions and accidental troublemakers.",
+    "quote": "I borrowed it to see whether it had a story. I was going to give it back after the story."
+  },
+  {
+    "id": "kobold",
+    "image": "",
+    "content": "Kobolds are small, resourceful draconic folk who thrive through teamwork, traps, clever engineering, and a fierce pride in their chosen lineage.",
+    "quote": "A dragon wins by being mighty. We win by deciding where mighty has to stand."
+  },
+  {
+    "id": "lizardfolk",
+    "image": "",
+    "content": "Lizardfolk are reptilian humanoids shaped by wetlands and survival, often approaching emotion and social custom from a practical perspective unlike that of neighbouring peoples.",
+    "quote": "The swamp does not hate you. It simply has no reason to save you."
+  },
+  {
+    "id": "locathah",
+    "image": "",
+    "content": "Locathah are fishlike aquatic folk with a resilient communal culture, shaped by histories of exploitation and a determination to protect their own.",
+    "quote": "We have survived the deep, the net, and the spear. Do not mistake survival for surrender."
+  },
+  {
+    "id": "minotaur",
+    "image": "",
+    "content": "Minotaurs are powerful horned folk often associated with labyrinths, seafaring, disciplined craft, or the challenge of proving oneself through deeds.",
+    "quote": "A maze is an argument. Patience is how you win it."
+  },
+  {
+    "id": "owlin",
+    "image": "",
+    "content": "Owlin are owl-like folk whose wings and night-adapted senses lend them a natural affinity for quiet movement, study, and watching over the dark.",
+    "quote": "The night is not empty. It is merely speaking softly."
+  },
+  {
+    "id": "plasmoid",
+    "image": "",
+    "content": "Plasmoids are amorphous, sentient beings able to reshape their bodies, squeeze through narrow spaces, and approach identity without relying on a fixed silhouette.",
+    "quote": "You recognise me by my promise, not by my outline."
+  },
+  {
+    "id": "satyr",
+    "image": "",
+    "content": "Satyrs are fey folk known for revelry, music, mischief, and a determination to experience life with their whole being, even when their celebrations have consequences.",
+    "quote": "A good song should make you dance. A great one should change your plans."
+  },
+  {
+    "id": "shadar-kai",
+    "image": "",
+    "content": "Shadar-kai are elves tied to the Shadowfell, accustomed to bleak beauty and difficult emotions, whose traditions often treat memory, duty, and mortality with stark seriousness.",
+    "quote": "A shadow is not the absence of a life. It is proof that something stood in the light."
+  },
+  {
+    "id": "simic hybrid",
+    "image": "simic_hybrid.png",
+    "content": "Simic hybrids are people altered through experimental biomancy, carrying animal adaptations that reflect ambitious efforts to improve life through magical science.",
+    "quote": "The body is not a finished work. It is a question still being tested."
+  },
+  {
+    "id": "tabaxi",
+    "image": "",
+    "content": "Tabaxi are feline humanoids driven by curiosity, personal stories, and the thrill of discovery, often treating an unfamiliar place as an invitation to explore.",
+    "quote": "I have no need for a map. I need to know what is over there."
+  },
+  {
+    "id": "thri kreen",
+    "image": "thri_kreen.png",
+    "content": "Thri-kreen are mantis-like nomads with alien body language, keen survival instincts, and a communal outlook that may differ sharply from humanoid customs.",
+    "quote": "Words are slow. Watch the hands, the stillness, and the direction of the hunt."
+  },
+  {
+    "id": "triton",
+    "image": "",
+    "content": "Tritons are aquatic guardians from the deep, accustomed to ancient threats and the duty of protecting surface lands from dangers that rise out of the sea.",
+    "quote": "The surface calls us heroes. The deep calls us late."
+  },
+  {
+    "id": "vedalken",
+    "image": "",
+    "content": "Vedalken are thoughtful, methodical folk who prize improvement, precise knowledge, and the belief that every discipline can be refined through sustained effort.",
+    "quote": "Perfection is not a destination. It is a measurement we keep improving."
+  },
+  {
+    "id": "verdan",
+    "image": "",
+    "content": "Verdan are goblinoid folk transformed by chaotic magic, often marked by unusual growth, telepathic sensitivity, and an earnest desire to understand a world that changed around them.",
+    "quote": "Yesterday I knew what I was. Today I know what I might become."
+  },
+  {
+    "id": "yuan ti",
+    "image": "yuan_ti.png",
+    "content": "Yuan-ti are serpent-descended people whose cultures vary widely, from secretive hierarchies to individuals who reject inherited expectations and forge their own identities.",
+    "quote": "Blood may carry a history. It does not write the next line for you."
+  },
+  {
+    "id": "wood elf",
+    "image": "wood_elf.png",
+    "content": "Wood elves are elves closely tied to deep forests, valuing practical skill, independence, and a spiritual relationship with living landscapes.",
+    "quote": "The forest does not need a king. It needs people who know when to leave it alone."
+  },
+  {
+    "id": "duskling",
+    "image": "",
+    "content": "Dusklings are Feywild-touched beings whose magic can suffuse them with strange effects, giving them an affinity for uncanny movement and the margins between light and dark.",
+    "quote": "Dawn and dusk are doors. Most people only ever notice the walls."
+  },
+  {
+    "id": "avariel",
+    "image": "",
+    "content": "Avariel are a winged elven people from older D&D setting material, associated with secluded aeries, aerial grace, and an enduring sense of freedom.",
+    "quote": "The ground is a place to rest, not a boundary to obey."
+  },
+  {
+    "id": "dargonesti",
+    "image": "",
+    "content": "Dargonesti are deep-dwelling sea elves from Dragonlance lore, adapted to the pressure, darkness, and strange beauty of the ocean depths.",
+    "quote": "The deep is not a prison. It is a country with its own horizon."
+  },
+  {
+    "id": "dimernesti",
+    "image": "",
+    "content": "Dimernesti are shallow-water sea elves from Dragonlance lore, tied to reefs, coasts, and the shifting border between ocean and shore.",
+    "quote": "The tide is a border that moves because neither side owns it."
+  },
+  {
+    "id": "lythari",
+    "image": "",
+    "content": "Lythari are wolf-shifting elves from older Forgotten Realms lore, reflecting a close spiritual bond between elven communities and the wild.",
+    "quote": "A wolf's path and an elf's path need not lead to different homes."
+  },
+  {
+    "id": "merfolk",
+    "image": "",
+    "content": "Merfolk are aquatic humanoids whose communities range from sheltered reefs to open-water kingdoms, with customs shaped by currents, distance, and the sea's living ecosystems.",
+    "quote": "Land measures distance in roads. We measure it in tides."
+  },
+  {
+    "id": "orc",
+    "image": "",
+    "content": "Orcs are robust, determined people with a wide range of cultures, from communities shaped by conquest to individuals who define strength through protection, endurance, and self-determination.",
+    "quote": "Strength is what you carry when the world gives you a reason to put it down."
+  },
+  {
+    "id": "kuo-toa",
+    "image": "",
+    "content": "Kuo-Toa are subterranean fishlike humanoids whose fervent collective beliefs can give shape to impossible powers. In Teothe, their desperate prayer created an abyssal presence that answered their wishes while transforming the bodies, minds, and settlements of its worshippers.",
+    "quote": "We called into the dark together. Something answered, and now we must decide what we invited."
   }
 ]

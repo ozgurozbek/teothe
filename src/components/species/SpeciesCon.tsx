@@ -26,6 +26,7 @@ export default function SpeciesCon({
       <Col span={24} className="h-full flex flex-col">
         <Image
           src={SpeciesPic.src}
+          fallback="/Species/_.png"
           alt={SpeciesPic.alt}
           rootClassName="w-full"
         />
