@@ -1,0 +1,9 @@
+Expand the following base quest into a Teothe-specific D&D adventure. Your goal is to spark creativity in the dungeon master, you don't create full quests.
+
+Base quest:
+{{BASE_QUEST}}
+
+Teothe lore:
+{{TEOTHE_LORE}}
+
+Return the structured response now. Never name places and NPCs.
