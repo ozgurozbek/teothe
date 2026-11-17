@@ -1,0 +1,1706 @@
+[
+  {
+    "factionType": "Adventuring",
+    "factionName": "Adventurer's Guild",
+    "factionAliases": ["Adventurer's League"],
+    "factionDeity": "Radu",
+    "factionEnemies": ["Inthizilelgghinn", "Obsidian Order"],
+    "factionAllies": ["Meadowcrew", "Warrior's Guild"],
+    "factionDetail": [
+      "A common adventurer's go-to place for new beginnings. Full of tasks and adventures, sometimes taking place in bars and inns, sometimes in castles.",
+      "Quest difficulty and rewards are categorized, and rewards include gold with bonuses for timeliness, challenges, and inconvenience. Guild takes a small cut."
+    ],
+    "factionHQ": "Arikna",
+    "factionKey": 1
+  },
+  {
+    "factionType": "Peacekeeping",
+    "factionName": "Ancientry Preservation Union",
+    "factionAliases": [],
+    "factionDeity": "Ayrugcumoak",
+    "factionEnemies": [],
+    "factionAllies": [
+      "Artificer's Union",
+      "Orange Glass",
+      "Sivirron Paracix Foundation"
+    ],
+    "factionDetail": [
+      "They preserve whatever was left regarding Pioneers of Teothe, mostly vague information from that time.",
+      "Formed after Sivirron Paracix's guide and within the Blue Era."
+    ],
+    "factionHQ": "",
+    "factionKey": 2
+  },
+  {
+    "factionType": "Enforcement",
+    "factionName": "Arcanum Alliance",
+    "factionAliases": ["Arcanum", "Tybalum"],
+    "factionDeity": "Wusor",
+    "factionEnemies": ["Pearl Plunderers", "Ember Sect", "Dealgach Holding"],
+    "factionAllies": [
+      "Sapphire Sanctum",
+      "Opal Observatory",
+      "Trigeminal Conclave"
+    ],
+    "factionDetail": [
+      "The magical body governing the plane by seeking order between all magic and magic casters. Their greatest feat was being on the winning side of the Mages' Uprising, also known as the Mages' Crisis. Consists of two divisions: Arcanum (above ground) and Tybalum (below ground).",
+      "Arcanum often interfere with other planes of existence if actions there could affect Teothe.",
+      "Owns the world's largest magic academy located on the island of Fei, near Konark."
+    ],
+    "factionHQ": "Konark",
+    "factionKey": 3
+  },
+  {
+    "factionType": "Professional",
+    "factionName": "Artificer's Union",
+    "factionAliases": [],
+    "factionDeity": "Ayrugcumoak",
+    "factionEnemies": ["Mârv'ôlîn-dil Drâth'môrûn"],
+    "factionAllies": [
+      "Guild of Ash and Fire",
+      "Artisan's Guild",
+      "Ancientry Preservation Union",
+      "Chattering Mime",
+      "Steamers"
+    ],
+    "factionDetail": [
+      "With meticulous documentation about anything related to advancement and automation, whether it's magically enhanced or not, is being worked in this union.",
+      "One of the most memorable honorary member is Isaac, the man that informed the Steamcart's development."
+    ],
+    "factionHQ": "Fireward",
+    "factionKey": 4
+  },
+  {
+    "factionType": "Professional",
+    "factionName": "Artisan's Guild",
+    "factionAliases": [],
+    "factionDeity": "Tsahnrad",
+    "factionEnemies": ["Thieve's Guild"],
+    "factionAllies": [
+      "Artificer's Union",
+      "Brewer's Guild",
+      "Bink's",
+      "Chattering Mime"
+    ],
+    "factionDetail": [
+      "A guild of artisans and craftsmen, which also has many contacts to vast resources and royalty."
+    ],
+    "factionHQ": "",
+    "factionKey": 5
+  },
+  {
+    "factionType": "Adventuring",
+    "factionName": "Black Scripture",
+    "factionAliases": [],
+    "factionDeity": "Pwazo",
+    "factionEnemies": ["Sapphire Sanctum"],
+    "factionAllies": [
+      "Ancientry Preservation Union",
+      "The Guild of Dark Blood Witchers"
+    ],
+    "factionDetail": [
+      "Responsible for old, very antique magical items, most of which are cursed.",
+      "They have no leader worthy, and members are often missing. Black Scripture cultists, however, still wander around. Cultists are mostly leeches infusing others' thoughts."
+    ],
+    "factionHQ": "",
+    "factionKey": 6
+  },
+  {
+    "factionType": "Professional",
+    "factionName": "Brewer's Guild",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": ["Poor Bruisers", "Silverspoons", "Golden Breadstore"],
+    "factionDetail": [
+      "A guild for craft alcohol and potion enthusiasts. Members specialize in drinking, brewing and potion-making."
+    ],
+    "factionHQ": "",
+    "factionKey": 7
+  },
+  {
+    "factionType": "Merchant",
+    "factionName": "Crimson Caravan Company",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": ["Arrow Company", "Phantom Knives", "Fisherman's Guild"],
+    "factionAllies": ["Horizon Conglomerate", "House Tranc"],
+    "factionDetail": [
+      "A group of caravanners that grew huge by acquiring many other caravaneer companies.",
+      "Due to greed and raising taxes/pricing, the Crimson Caravan Company disbanded into three caravan companies operating the main trade routes.",
+      "The three companies are Crimson Caravan Company, Amazon, and Azure Caravan Company.",
+      "They trade on all routes and mostly between cities."
+    ],
+    "factionHQ": "",
+    "factionKey": 8
+  },
+  {
+    "factionType": "Merchant",
+    "factionName": "Fisherman's Guild",
+    "factionAliases": [],
+    "factionDeity": "Wadqwofm",
+    "factionEnemies": ["Crimson Caravan Company"],
+    "factionAllies": ["Poor Bruisers", "House Marinth"],
+    "factionDetail": [
+      "Fisherman's Guild is now, mostly, just a title and no longer is influencial.",
+      "Most of the fishermen joined one of the caravaneer companies."
+    ],
+    "factionHQ": "",
+    "factionKey": 9
+  },
+  {
+    "factionType": "Secret",
+    "factionName": "Guild of Afternoon Tea",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": [],
+    "factionDetail": ["ʞᎸʏɿƚᎸǫƚʜʏ! To apply, summon Ꮈɿʏᴎꙅƚʏꞁ."],
+    "factionHQ": "The Outlands",
+    "factionKey": 10
+  },
+  {
+    "factionType": "Berserker",
+    "factionName": "Guild of Ash and Fire",
+    "factionImageName": "The Ashen Fire",
+    "factionAliases": ["The Ashen Fire"],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": ["Artificer's Union", "House Galeth"],
+    "factionDetail": [
+      "A clandestine organization specializing in gunpowder-based technologies. Comprised of skilled alchemists, engineers, and gunsmiths who master gunpowder's explosive properties. Known for crafting devastating firearms, explosive devices, and intricate traps.",
+      "They operate from hidden workshops and underground laboratories and carefully guard their gunpowder recipes and techniques. It is a rough balance being guardians of their craft and wielding its explosive power responsibly in a dangerous world."
+    ],
+    "factionHQ": "",
+    "factionKey": 11
+  },
+  {
+    "factionType": "Merchant",
+    "factionName": "Horizon Conglomerate",
+    "factionAliases": ["Horizon Syndicate"],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": [
+      "Crimson Caravan Company",
+      "Arvisso",
+      "Meadowcrew",
+      "House Marinth",
+      "Mârv'ôlîn-dil Drâth'môrûn",
+      "Baked Beak"
+    ],
+    "factionDetail": [
+      "A merchant conglomerate that organized trade between Underdark communities and surface ones."
+    ],
+    "factionHQ": "",
+    "factionKey": 12
+  },
+  {
+    "factionType": "Assassins",
+    "factionName": "Inthizilelgghinn",
+    "factionAliases": [],
+    "factionDeity": "Xua",
+    "factionEnemies": [
+      "Adventurer's Guild",
+      "Mârv'ôlîn-dil Drâth'môrûn",
+      "House Serryn"
+    ],
+    "factionAllies": ["Meadowcrew", "Obsidian Order"],
+    "factionDetail": [
+      "Name means 'Plan as Death' in Drow. It is an Assassins' Guild and Rogue school, providing training in blending in with heat hues."
+    ],
+    "factionHQ": "",
+    "factionKey": 13
+  },
+  {
+    "factionType": "Weave",
+    "factionName": "Mage's Guild",
+    "factionAliases": [],
+    "factionDeity": "Wusor",
+    "factionEnemies": ["Pearl Plunderers"],
+    "factionAllies": ["The Eclipse Fist", "Trigeminal Conclave"],
+    "factionDetail": [
+      "Nowhere near its old glory; the reformed Mage's Guild has no HQ. Many mages miss their former demiplane HQ, but none are strong enough to relocate or create another.",
+      "After many political issues and the murder of mages, they caused a coup killing many world leaders. Over time, this oppression was stopped."
+    ],
+    "factionHQ": "",
+    "factionKey": 14
+  },
+  {
+    "factionType": "Adventuring",
+    "factionName": "Meadowcrew",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": ["Winston's Fleet"],
+    "factionAllies": [
+      "Horizon Conglomerate",
+      "Inthizilelgghinn",
+      "House Serryn"
+    ],
+    "factionDetail": [
+      "A guild of treasure hunters that actively delve into dungeons, tombs, and museums. They do not have official openings for new members but if you know which dungeon they are delving into..."
+    ],
+    "factionHQ": "",
+    "factionKey": 15
+  },
+  {
+    "factionType": "Mercenary",
+    "factionName": "Melody Union",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": ["Poor Bruisers"],
+    "factionAllies": ["Warrior's Guild"],
+    "factionDetail": [
+      "A guild for Fighters and Barbarians who seek natural glory rather than fighting rings or battles.",
+      "Members all have broken bones and squeaky parts in their bodies, hence, they have a bad taste and appreciation for music.",
+      "Entry requires members to have had broken bones from combat, preferably squeaky."
+    ],
+    "factionHQ": "",
+    "factionKey": 16
+  },
+  {
+    "factionType": "Assassins",
+    "factionName": "Obsidian Order",
+    "factionAliases": [],
+    "factionDeity": "Xua",
+    "factionEnemies": ["House Serryn", "Mârv'ôlîn-dil Drâth'môrûn"],
+    "factionAllies": ["Inthizilelgghinn", "Thieve's Guild"],
+    "factionDetail": [
+      "An Assassin's Guild strictly operating in Teothe's lands, excluding the Underdark."
+    ],
+    "factionHQ": "",
+    "factionKey": 17
+  },
+  {
+    "factionType": "Political",
+    "factionName": "Opal Observatory",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": [
+      "Arcanum Alliance",
+      "Sapphire Sanctum",
+      "Teothean Imperial Fleet"
+    ],
+    "factionDetail": [
+      "Group of people who carry diplomatic business to elemental planes, whom helped defend the Major Cities of Feianthe during the Mages' Crisis."
+    ],
+    "factionHQ": "City of Brass",
+    "factionKey": 18
+  },
+  {
+    "factionType": "Crusader",
+    "factionName": "Paladin's Guild",
+    "factionImageName": "Adamantium Concordat",
+    "factionAliases": ["Adamantium Concordat"],
+    "factionDeity": "Yr'snn",
+    "factionEnemies": ["Geasa", "Red Coir", "Taimi Cult"],
+    "factionAllies": [
+      "Adventurer's Guild",
+      "Slayer's Take",
+      "Taranqir",
+      "Dawnhands"
+    ],
+    "factionDetail": [
+      "An order of paladins of different oaths and creeds.",
+      "Membership is earned by recounting your deeds rather than entering a physical place. Guild ranks go up to 3 marks; 4 marks are considered extraordinary."
+    ],
+    "factionHQ": "Fex",
+    "factionKey": 19
+  },
+  {
+    "factionType": "Weave",
+    "factionName": "Pearl Plunderers",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": ["Arcanum Alliance", "Mage's Guild", "Thieve's Guild"],
+    "factionAllies": [],
+    "factionDetail": [
+      "A battle mage army that forms weapons out of pure magical energy, drawing from various planar sources. Some believe they were the underlying cause of the Mages' Crisis."
+    ],
+    "factionHQ": "Plane of Choll",
+    "factionKey": 20
+  },
+  {
+    "factionType": "Mercenary",
+    "factionName": "Poor Bruisers",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": ["Melody Union"],
+    "factionAllies": ["Brewer's Guild", "Fisherman's Guild"],
+    "factionDetail": [
+      "An underground illegal pit fighting ring with a gig under every city around the world!",
+      "Their HQ is in the Colosseum of Wukhim.",
+      "Hell's Kitchen, a criminal organization, is a wing of Poor Bruisers based in Fex."
+    ],
+    "factionHQ": "Wukhim",
+    "factionKey": 21
+  },
+  {
+    "factionType": "Peacekeeping",
+    "factionName": "Sapphire Sanctum",
+    "factionAliases": [],
+    "factionDeity": "Lcaoc",
+    "factionEnemies": ["Black Scripture"],
+    "factionAllies": ["Arcanum Alliance", "Opal Observatory", "Iron Reason"],
+    "factionDetail": [
+      "A court for international and extraplanar criminals, especially those whose crimes are magical in nature.",
+      "They have enforcers rated as Grandmaster, International Master, National Master, and Master. Members can move from the court to being an enforcer, but not the other way around.",
+      "To join, you must complete 3 mundane quests that aren't very real. After completing the quests, you gain a rating and start as a Master."
+    ],
+    "factionHQ": "",
+    "factionKey": 22
+  },
+  {
+    "factionType": "Peacekeeping",
+    "factionName": "Slayer's Take",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": ["The Guild of Dark Blood Witchers", "Baked Beak"],
+    "factionAllies": ["Paladin's Guild", "Wonderers of Du'Ora", "Leafwatch"],
+    "factionDetail": [
+      "A group of witchers and monster hunters. They scout potential, gather newcomers, search for jobs, and hunt. Includes traders, rogues, and wizards, but the majority are monster hunters.",
+      "They hunt wild creatures and beasts under contracts from the government, nobles, or villagers. They also offer excellent combat training against monsters for members and prospective members."
+    ],
+    "factionHQ": "Wukhim",
+    "factionKey": 23
+  },
+  {
+    "factionType": "Berserker",
+    "factionName": "The Guild of Dark Blood Witchers",
+    "factionImageName": "Guild of Dark Blood Witchers",
+    "factionAliases": ["Better Slayer's Take", "Guild of Dark Blood Witchers"],
+    "factionDeity": "",
+    "factionEnemies": ["Paladin's Guild"],
+    "factionAllies": ["Guild of Afternoon Tea", "Black Scripture"],
+    "factionDetail": [
+      "Extremely skilled individuals above and beyond Slayer's Take. They serve the greater good but are deemed heretics by common folk for using foul magics that taint their being.",
+      "Mostly consists of high-level Blood Hunters and some high-level utility spellcasters, with the Guild master only revealing themselves to the advanced members. Yet, members argue that the guild has no leader."
+    ],
+    "factionHQ": "",
+    "factionKey": 24
+  },
+  {
+    "factionType": "Secret",
+    "factionName": "The Orchestra",
+    "factionAliases": [],
+    "factionDeity": "Naahv",
+    "factionEnemies": [],
+    "factionAllies": ["Wet Sparks"],
+    "factionDetail": ["A legendary guild of bards."],
+    "factionHQ": "",
+    "factionKey": 25
+  },
+  {
+    "factionType": "Bardic",
+    "factionName": "The Quartet",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": ["Warrior's Guild", "Swan's Hall"],
+    "factionDetail": [
+      "Guild for Bards and Sorcerers skilled in combat and entertainment. Some members have circuses, others bear battle trophies and scars."
+    ],
+    "factionHQ": "",
+    "factionKey": 26
+  },
+  {
+    "factionType": "Criminal",
+    "factionName": "Thieve's Guild",
+    "factionAliases": [],
+    "factionDeity": "Xua",
+    "factionEnemies": [
+      "Sapphire Sanctum",
+      "Pearl Plunderers",
+      "Dealgach Holding"
+    ],
+    "factionAllies": [
+      "Obsidian Order",
+      "Inthizilelgghinn",
+      "House Tornar",
+      "Sleeping Crow"
+    ],
+    "factionDetail": [
+      "A secret organization with branches in nearly all towns, cities, and villages. Led by a female human named Katarina.",
+      "Often hired for information rather than for stealing and selling goods."
+    ],
+    "factionHQ": "Oywego",
+    "factionKey": 27
+  },
+  {
+    "factionType": "Berserker",
+    "factionName": "Warrior's Guild",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": ["Poor Bruisers", "Melody Union"],
+    "factionDetail": [
+      "Home for the fiercest warriors that also has a Feywild connection!",
+      "Their rough entry trial is respected by all, including bandits and the nature."
+    ],
+    "factionHQ": "Wukhim",
+    "factionKey": 28
+  },
+  {
+    "factionType": "Bandits",
+    "factionName": "Winston's Fleet",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": ["Sapphire Sanctum", "Crimson Caravan Company"],
+    "factionAllies": [
+      "Thieve's Guild",
+      "Meadowcrew",
+      "Pearl Plunderers",
+      "Poor Bruisers",
+      "Baked Beak"
+    ],
+    "factionDetail": [
+      "A group of bandit fleets answering only to the legendary pirate Winston.",
+      "Consists of multiple pirate crews, most famous Winston's Ship, Alean II, Madame Cheng's Ship, The Prostitute, and Firebeard's Fleet, 'If you are reading this, you are now retired'"
+    ],
+    "factionHQ": "",
+    "factionKey": 29
+  },
+  {
+    "factionType": "Tribe",
+    "factionName": "Wonderers of Du'Ora",
+    "factionAliases": ["N'Tiora Folk", "Druids"],
+    "factionDeity": "Cyaxo",
+    "factionEnemies": ["Crimson Caravan Company"],
+    "factionAllies": ["Slayer's Take", "Leafwatch"],
+    "factionDetail": [
+      "Guild for Druids who belong to a circle and have ventured to Du'Ora at least once. Members must agree with the guild's views on pollution, destruction, and preservation.",
+      "Includes branches such as the Kaio branch."
+    ],
+    "factionHQ": "N'Tiora Tree",
+    "factionKey": 30
+  },
+  {
+    "factionType": "Secret",
+    "factionName": "Baked Beak",
+    "factionImageName": "The Baked Beak",
+    "factionAliases": ["Crows", "The Baked Beak"],
+    "factionDeity": "",
+    "factionEnemies": ["Slayer's Take", "Arrow Company"],
+    "factionAllies": [
+      "Horizon Conglomerate",
+      "Crimson Caravan Company",
+      "Meadowcrew",
+      "Inthizilelgghinn",
+      "Thieve's Guild",
+      "Sleeping Crow",
+      "Arvisso"
+    ],
+    "factionDetail": [
+      "Maintains an extensive forgery and intelligence operation. Kenku here secure influence, uncover secrets, and generate profit through careful negotiation and discreet dealings, providing expertise whenever particularly difficult ciphers or puzzles need to be solved."
+    ],
+    "factionHQ": "",
+    "factionKey": 31
+  },
+  {
+    "factionType": "Criminal",
+    "factionName": "Arrow Company",
+    "factionAliases": [],
+    "factionDeity": "Mykthyr",
+    "factionEnemies": [
+      "Paladin's Guild",
+      "Crimson Caravan Company",
+      "Baked Beak"
+    ],
+    "factionAllies": [],
+    "factionDetail": [
+      "A criminal Mykthyr-ian organization. They revered Megm, and attack her places of worship quite often. They choose to live outside the settlements in mobile camps, and often stay out."
+    ],
+    "factionHQ": "",
+    "factionKey": 32
+  },
+  {
+    "factionType": "Merchant",
+    "factionName": "Arvisso",
+    "factionAliases": [],
+    "factionDeity": "Vihi",
+    "factionEnemies": [],
+    "factionAllies": [
+      "Paladin's Guild",
+      "Crimson Caravan Company",
+      "Horizon Conglomerate",
+      "Baked Beak"
+    ],
+    "factionDetail": [
+      "Named by the Half-Pioneer traveller Harutya, Arvisso is a club for single people. It has constantly changed places and owners, but is always painted in pink all over, which makes it easy to locate."
+    ],
+    "factionHQ": "Jidxhexi",
+    "factionKey": 33
+  },
+  {
+    "factionType": "Merchant",
+    "factionName": "Bink's",
+    "factionAliases": ["The Ember"],
+    "factionDeity": "",
+    "factionEnemies": ["Phantom Knives"],
+    "factionAllies": [
+      "Horizon Conglomerate",
+      "Artisan's Guild",
+      "House Marinth",
+      "Winston's Fleet"
+    ],
+    "factionDetail": [
+      "Bink's is a club and private drinking establishment for the most stuck-up merchants of the city. Patrons nibbled on spiced pastries and sipped rare spirits pulled from deep vaults beneath the lounge. Most that came to be seen utilised secluded, panelled rooms for quieter dealings.",
+      "Currently, Ember has became the favoured ground for trade deals and quiet scheming."
+    ],
+    "factionHQ": "Nioi",
+    "factionKey": 34
+  },
+  {
+    "factionType": "Criminal",
+    "factionName": "Bloodtakers",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": ["Thieve's Guild"],
+    "factionAllies": [],
+    "factionDetail": [
+      "The Bloodtakers were a group of failed actors and singers that posed as vampires and extorted tolls from gullible adventurers."
+    ],
+    "factionHQ": "Uxibo",
+    "factionKey": 35
+  },
+  {
+    "factionType": "Professional",
+    "factionName": "Bold Exclamation Mark",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": [],
+    "factionDetail": [
+      "The Bold Exclamation Mark is a professional association of heralds, signwriters, and public announcers."
+    ],
+    "factionHQ": "Boute",
+    "factionKey": 36
+  },
+  {
+    "factionType": "Peacekeeping",
+    "factionName": "Cavaliers of the Breeze",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": ["Tetraodontidae"],
+    "factionDetail": [
+      "All members being water breathing individuals, they protect underwater points of interests and old Akash."
+    ],
+    "factionHQ": "Horifell",
+    "factionKey": 37
+  },
+  {
+    "factionType": "Crusader",
+    "factionName": "Cavaliers of the Fire",
+    "factionAliases": [],
+    "factionDeity": "Pwazo",
+    "factionEnemies": [],
+    "factionAllies": ["Paladin's Guild", "Word of Good"],
+    "factionDetail": [
+      "They are a militaristic order of warriors in the service of Pwazo, who act according to their code by protecting various sites that were deemed holy for Pwazo. They also lead holy campaigns and protect Pillar of Flames - the leading members of the church of Pwazo. They often get harrassed by races that were natural water-breathers."
+    ],
+    "factionHQ": "",
+    "factionKey": 38
+  },
+  {
+    "factionType": "Professional",
+    "factionName": "Chattering Mime",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": ["Artificer's Union", "Artisan's Guild"],
+    "factionDetail": [
+      "The Chattering Mime is a professional guild specialising in work involving golems and other constructs. It is often hired to provide illusion services, although its commissions are not limited to that field."
+    ],
+    "factionHQ": "",
+    "factionKey": 39
+  },
+  {
+    "factionType": "Professional",
+    "factionName": "Cherry Spring",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": [],
+    "factionDetail": [
+      "Cherry Spring is a fellowship of horticulturalists and herbal practitioners known for cultivating rare fruit trees, medicinal blossoms, Cylphnia, and supplying traders and households with carefully prepared herbs, preserves, and restorative mixtures."
+    ],
+    "factionHQ": "",
+    "factionKey": 40
+  },
+  {
+    "factionType": "Merchant",
+    "factionName": "Clover Health Society",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": ["Dawnhands", "Golden Breadstore"],
+    "factionDetail": [
+      "It is a social club and a spa run by kobolds. It is the oldest establishment in Feion and easy to spot with it's paper-made elaborate banners."
+    ],
+    "factionHQ": "Feion",
+    "factionKey": 41
+  },
+  {
+    "factionType": "Bandits",
+    "factionName": "Coldbrood",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": ["Trueform Consortium", "Slayer's Take", "Leafwatch"],
+    "factionAllies": [],
+    "factionDetail": [
+      "The individuals of Coldbrood were worshippers of Pedi from Phlegethos, which proudly don robes with hell hounds as their banner. Each group in the brood act much like a pack with the strongest member being the leader. Occasionally, an agent of Phlegethos was sent to replace the now-useless leader."
+    ],
+    "factionHQ": "",
+    "factionKey": 42
+  },
+  {
+    "factionType": "Charitable",
+    "factionName": "Dawnhands",
+    "factionAliases": [],
+    "factionDeity": "Ehx",
+    "factionEnemies": [],
+    "factionAllies": [
+      "Golden Breadstore",
+      "Clover Health Society",
+      "Followers of the Rune",
+      "Word of Good"
+    ],
+    "factionDetail": [
+      "The Dawnhands are a humble, itinerant faction in Teothe, devoted to healing the sick and bringing light to the darkest corners in the name of Ehx. Guided by compassion and mercy, they shun politics and power, wielding only hope, kindness, and divine grace."
+    ],
+    "factionHQ": "",
+    "factionKey": 43
+  },
+  {
+    "factionType": "Assassins",
+    "factionName": "Dealgach Holding",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [
+      "Arcanum Alliance",
+      "Sapphire Sanctum",
+      "Iron Reason",
+      "Paladin's Guild",
+      "The Fever"
+    ],
+    "factionAllies": ["Baked Beak"],
+    "factionDetail": [
+      "A vast, clandestine holding company. With operations spread across Teothe, Dealgach Holding specializes in covert manipulation, information warfare, magical espionage, assassination, and theological subversion. It is led by a secretive board known only as The Ledger, whose members' identities are unknown even to most within the organization."
+    ],
+    "factionHQ": "",
+    "factionKey": 44
+  },
+  {
+    "factionType": "Merchant",
+    "factionName": "Drunken Mermaid",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": ["Silverspoons"],
+    "factionAllies": ["House Marinth", "Wet Sparks"],
+    "factionDetail": [
+      "It is a club in Haytie, where many sailors go to get drunk and share absurd stories. Day-time, it provides overtly distinct haircuts."
+    ],
+    "factionHQ": "",
+    "factionKey": 45
+  },
+  {
+    "factionType": "Religious",
+    "factionName": "Ember Sect",
+    "factionAliases": ["The Ember Sect of the Undying Pyre"],
+    "factionDeity": "",
+    "factionEnemies": [
+      "Arcanum Alliance",
+      "Trigeminal Conclave",
+      "The Eclipse Fist"
+    ],
+    "factionAllies": [],
+    "factionDetail": [
+      "Ember Sect is an extremist order of fire mages devoted to the supremacy of magical flame that hunts practitioners it considers impure.",
+      "Most members are true elementalists, with agents hidden across major cities of Teothe."
+    ],
+    "factionHQ": "Elemental Plane of Fire",
+    "factionKey": 46
+  },
+  {
+    "factionType": "Bandits",
+    "factionName": "Everglum Conclave",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": ["Iron Reason"],
+    "factionAllies": ["Ziphiree"],
+    "factionDetail": [
+      "Everglum Conclave is a paid-for bandit group in the Underdark started working for Elkian Castle and royals. They then moved on, ruled by a Shadowborn, to carry their operations to Shadowfell to provide a safe place for themselves and their conclave."
+    ],
+    "factionHQ": "Shadowfell",
+    "factionKey": 47
+  },
+  {
+    "factionType": "Professional",
+    "factionName": "Farmer's Guild",
+    "factionAliases": [],
+    "factionDeity": "Veri",
+    "factionEnemies": [],
+    "factionAllies": [],
+    "factionDetail": [
+      "Represents the farmers, smallholders, and agricultural stewards whose work sustains Teothe's settlements. It is actually incredibly powerful, but can't properly unionise."
+    ],
+    "factionHQ": "",
+    "factionKey": 48
+  },
+  {
+    "factionType": "Religious",
+    "factionName": "Followers of the Rune",
+    "factionAliases": ["Poet for the Mud"],
+    "factionDeity": "Sai",
+    "factionEnemies": [],
+    "factionAllies": [
+      "Golden Breadstore",
+      "Dawnhands",
+      "Sivirron Paracix Foundation"
+    ],
+    "factionDetail": [
+      "The Followers of the Rune, who were often mockingly called the Poet for the Mud, was a monastic order devoted to Sai. The Followers of the Rune provided scribe services to destitute individuals who could not otherwise afford such services."
+    ],
+    "factionHQ": "Fex",
+    "factionKey": 49
+  },
+  {
+    "factionType": "Slaving",
+    "factionName": "Geasa",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": ["Paladin's Guild", "Taranqir", "The Fever"],
+    "factionAllies": ["Red Coir", "Ironfell Brotherhood", "House Lestrange"],
+    "factionDetail": [
+      "An organization dedicated to enslaving all wizards, clerics, and nobility. Majority of the power came from the body-enhancing-drug-producer lich, while the remaining members were thieves, priests of unknown faiths, and warriors."
+    ],
+    "factionHQ": "",
+    "factionKey": 50
+  },
+  {
+    "factionType": "Tribe",
+    "factionName": "Gnawsparker Horde",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": ["Leafwatch", "Slayer's Take"],
+    "factionAllies": [],
+    "factionDetail": [
+      "An allied army of goblinoids and gnolls mostly occupying the northern coast of Northern Elkian Dominion."
+    ],
+    "factionHQ": "",
+    "factionKey": 51
+  },
+  {
+    "factionType": "Merchant",
+    "factionName": "Golden Breadstore",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": [
+      "Dawnhands",
+      "Clover Health Society",
+      "Followers of the Rune"
+    ],
+    "factionDetail": [
+      "The Golden Breadstore was offering food and lodgings to its guests, but its most well-known operation was a charity that provided food for those unable to feed themselves, formed by a Dwarvish adventurer."
+    ],
+    "factionHQ": "",
+    "factionKey": 52
+  },
+  {
+    "factionType": "Psionic",
+    "factionName": "Group 27",
+    "factionAliases": [],
+    "factionDeity": "Xoypoh",
+    "factionEnemies": [],
+    "factionAllies": [
+      "Jewels of the Wild",
+      "The Eclipse Fist",
+      "Inthizilelgghinn"
+    ],
+    "factionDetail": [
+      "Group 27 is a militant order sworn to annihilate the Mindflayers, aberrations from broken planes who feed on thought. They operate from a relic-fortress in Teothe's larger moon, salvaging psionic tech.",
+      "Though once founded by priests of Xoypoh, goddess of numbers, their ranks now span many faiths. Marshal Gesel Eifor, a paladin of Lcaoc, leads their expanding crusade across Teothe's moons and voidways."
+    ],
+    "factionHQ": "Teothe's Larger Moon",
+    "factionKey": 53
+  },
+  {
+    "factionType": "Crusader",
+    "factionName": "Hori's Arm",
+    "factionAliases": ["Hori's Vein"],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": ["Adventurer's Guild", "Paladin's Guild"],
+    "factionDetail": [
+      "Also known as Hori's Vein, they mean more than what they immediately appear to be. They are the group of adventurers (also the most crowded party members of the Adventurer's Guild) strife to rid Horifell of all that is traditionally evil. They would often intercede if the Paladin's Guild failed their operations around Horifell."
+    ],
+    "factionHQ": "Horifell",
+    "factionKey": 54
+  },
+  {
+    "factionType": "House",
+    "factionName": "House Archambeau",
+    "factionAliases": ["Lady Eve's Blood"],
+    "factionDeity": "Eve Archambeau",
+    "factionEnemies": ["Paladin's Guild", "Czeeg", "Red Coir"],
+    "factionAllies": ["House Caelrath", "Mossy Mud Horde", "House Varren"],
+    "factionDetail": [
+      "\"In harmony we prosper\" is the house motto, where a Tiefling community sustains itself independently, however trading in spicy liquor and perfumes."
+    ],
+    "factionHQ": "Archambeau Mansion",
+    "factionKey": 55
+  },
+  {
+    "factionType": "House",
+    "factionName": "House Caelrath",
+    "factionAliases": ["Gold Mantle"],
+    "factionDeity": "Lcaoc",
+    "factionEnemies": ["Thieve's Guild", "Dealgach Holding", "Phantom Knives"],
+    "factionAllies": [
+      "Sapphire Sanctum",
+      "Arcanum Alliance",
+      "House Archambeau",
+      "Iron Reason",
+      "House Varren"
+    ],
+    "factionDetail": [
+      "An urban noble house built on precedent, contracts, and relentless bureaucracy. Caelrath prefers injunctions to invasions and embargoes to open war. Their retainers are advocates, investigators, and accountants as often as knights. Publicly righteous, privately exacting, they view chaos as both sin and opportunity."
+    ],
+    "factionHQ": "Haytie",
+    "factionKey": 56
+  },
+  {
+    "factionType": "House",
+    "factionName": "House Galeth",
+    "factionAliases": [],
+    "factionDeity": "Ayrugcumoak",
+    "factionEnemies": ["Black Scripture", "Obsidian Order"],
+    "factionAllies": [
+      "Artificer's Union",
+      "Ancientry Preservation Union",
+      "Arcanum Alliance",
+      "Orange Glass",
+      "Sivirron Paracix Foundation"
+    ],
+    "factionDetail": [
+      "A house built on the shoulders of scholars and engineers. They are keepers of obscure tech lore, and they grew strong as education and invention became a currency. They have evolved to be a House of planners and inventors; often aloof but indispensable to kingdoms' progress."
+    ],
+    "factionHQ": "Fireward",
+    "factionKey": 57
+  },
+  {
+    "factionType": "House",
+    "factionName": "House Marinth",
+    "factionAliases": ["Tide Lords"],
+    "factionDeity": "Wadqwofm",
+    "factionEnemies": ["Sapphire Sanctum", "Poor Bruisers"],
+    "factionAllies": [
+      "Winston's Fleet",
+      "Horizon Conglomerate",
+      "Fisherman's Guild",
+      "Tetraodontidae"
+    ],
+    "factionDetail": [
+      "Merchant-mariner house rising from coastal trade and piracy suppression. Naval aristocracy blending commerce with war fleets; respected, feared by dockside gangs."
+    ],
+    "factionHQ": "Jidxhexi",
+    "factionKey": 58
+  },
+  {
+    "factionType": "House",
+    "factionName": "House Serryn",
+    "factionAliases": ["Banished Crown"],
+    "factionDeity": "Xua",
+    "factionEnemies": ["Obsidian Order"],
+    "factionAllies": [
+      "Meadowcrew",
+      "Inthizilelgghinn",
+      "Thieve's Guild",
+      "Baked Beak"
+    ],
+    "factionDetail": [
+      "A hard, practical house tied to shadow politics and survival. They were caught in palace conspiracy and founding members were exiled after a failed coup. They command loyalty through personal pacts rather than lineage."
+    ],
+    "factionHQ": "Vania",
+    "factionKey": 59
+  },
+  {
+    "factionType": "House",
+    "factionName": "House Tornar",
+    "factionAliases": [],
+    "factionDeity": "Fexyiaf",
+    "factionEnemies": [],
+    "factionAllies": ["Thieve's Guild"],
+    "factionDetail": [
+      "House Tornar is a Fex-based noble house whose influence is maintained through discreet patronage and carefully managed private arrangements. Its pragmatic understanding with the city's underworld, provides access to information and channels that formal retainers cannot easily reach. The house keeps its public history and political ambitions guarded, making it difficult for outsiders to distinguish its legitimate interests from its quieter dealings."
+    ],
+    "factionHQ": "Fex",
+    "factionKey": 60
+  },
+  {
+    "factionType": "House",
+    "factionName": "House Tranc",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": [
+      "Crimson Caravan Company",
+      "Horizon Conglomerate",
+      "House Marinth",
+      "Bink's"
+    ],
+    "factionDetail": [
+      "House Tranc built its influence around river transport, moving wine, copper, and diamonds to Yoin Bi Keep and Guragon. Its vessels and trading partners play a significant role in the Woven Route. Rather than relying solely on territorial holdings, House Tranc derives much of its power from controlling passage, schedules, and commercial access along the rivers."
+    ],
+    "factionHQ": "Guragon",
+    "factionKey": 61
+  },
+  {
+    "factionType": "House",
+    "factionName": "House Varren",
+    "factionAliases": ["Manor Wardens"],
+    "factionDeity": "Yr'snn",
+    "factionEnemies": ["Black Scripture"],
+    "factionAllies": [
+      "Adventurer's Guild",
+      "Paladin's Guild",
+      "Slayer's Take",
+      "Leafwatch"
+    ],
+    "factionDetail": [
+      "Grew through loyal stewardship of border fiefs. Earned titles by repelling raids and upholding feudal law.",
+      "Traditional nobles with heavy cavalry and ceremonial pageantry; they lean on institutional authority."
+    ],
+    "factionHQ": "Phinlei Keep",
+    "factionKey": 62
+  },
+  {
+    "factionType": "House",
+    "factionName": "House Verdiori",
+    "factionAliases": [],
+    "factionDeity": "Cyaxo",
+    "factionEnemies": [
+      "Crimson Caravan Company",
+      "Pearl Plunderers",
+      "Virimelle Renegades"
+    ],
+    "factionAllies": ["Meadowcrew", "Wonderers of Du'Ora", "Leafwatch"],
+    "factionDetail": [
+      "From village chiefs protecting sacred woodlands to influential voices in green politics and Druid business."
+    ],
+    "factionHQ": "Pudai",
+    "factionKey": 63
+  },
+  {
+    "factionType": "House",
+    "factionName": "House Zaurin",
+    "factionAliases": [],
+    "factionDeity": "Megm",
+    "factionEnemies": [],
+    "factionAllies": [],
+    "factionDetail": [
+      "House Zaurin is a tiny noble house whose standing rests on the careful administration of estates, harvests, and rural obligations. Its stewards maintain detailed accounts so that Zaurin can protect the interests of their residents."
+    ],
+    "factionHQ": "",
+    "factionKey": 64
+  },
+  {
+    "factionType": "Bandits",
+    "factionName": "Ice House",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": [],
+    "factionDetail": [
+      "The Ice House is a band of exiled Uxibo-nian lordlings who turned to banditry after losing their titles and estates. They survive by raiding travellers while seeking other dispossessed nobles who might join them."
+    ],
+    "factionHQ": "",
+    "factionKey": 65
+  },
+  {
+    "factionType": "Enforcement",
+    "factionName": "Iron Reason",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [
+      "Dealgach Holding",
+      "Phantom Knives",
+      "Spiral of Thought"
+    ],
+    "factionAllies": ["Arcanum Alliance", "Sapphire Sanctum", "House Caelrath"],
+    "factionDetail": [
+      "A strict, disciplined order of enforcement of universal order, with the philosophy of rationalism and emotional restraint. Active across multiple planes, they believe peace comes through unyielding law backed by an intense education focused on doctrine, law, and logical thinking, not sentiment."
+    ],
+    "factionHQ": "Konark",
+    "factionKey": 66
+  },
+  {
+    "factionType": "Crusader",
+    "factionName": "Ironfell Brotherhood",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [
+      "Taranqir",
+      "Paladin's Guild",
+      "Mârv'ôlîn-dil Drâth'môrûn"
+    ],
+    "factionAllies": [],
+    "factionDetail": [
+      "They combine magical and military dominance with Kaio's control over rune-smithing. They wield weapons and tools forged with runes, expand their influence through force, manipulation, and a network of oaths that bind members under threat of deadly curses. Their armies often consist of conscripted humanoids and monstrous creatures, using mining sites as bases."
+    ],
+    "factionHQ": "Veruns",
+    "factionKey": 67
+  },
+  {
+    "factionType": "Professional",
+    "factionName": "Jewels of the Wild",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": ["Group 27"],
+    "factionDetail": [
+      "They are an ancient order that operate within the Feywild and keep an eye out for aberrations from the Far Realm."
+    ],
+    "factionHQ": "",
+    "factionKey": 68
+  },
+  {
+    "factionType": "Charitable",
+    "factionName": "Leafwatch",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": ["Coldbrood", "Gnawsparker Horde", "Virimelle Renegades"],
+    "factionAllies": ["Slayer's Take", "Wonderers of Du'Ora", "Dawnhands"],
+    "factionDetail": [
+      "A group of volunteers, mostly composed of warriors that have a divine code, rangers, and worshippers of Raxcoh. Leafwatch was dedicated to rid Jidxhexi as well as the surrounding area of evil creatures. It was formed by the adventurer Aelere Krautek.",
+      "The cat in their logo was placed after the initial draft, where Blessing the Cat was thought to be included by Byush Krautek."
+    ],
+    "factionHQ": "Jidxhexi",
+    "factionKey": 69
+  },
+  {
+    "factionType": "Secret",
+    "factionName": "Lepidolite Taurus",
+    "factionAliases": [],
+    "factionDeity": "Xua",
+    "factionEnemies": [],
+    "factionAllies": ["Ziphiree", "Thieve's Guild", "Obsidian Order"],
+    "factionDetail": [
+      "The Lepidolite Taurus is a secret cult of Xua guarding the lost Gatekeepers' fate. Their goal is known to create a new Gatekeeper."
+    ],
+    "factionHQ": "",
+    "factionKey": 70
+  },
+  {
+    "factionType": "Professional",
+    "factionName": "Messenger's Guild",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": [],
+    "factionDetail": [
+      "The Messenger's Guild maintains a network of couriers who carry letters, contracts, official notices, and private correspondence between settlements."
+    ],
+    "factionHQ": "",
+    "factionKey": 71
+  },
+  {
+    "factionType": "Psionic",
+    "factionName": "Mindweft Covenant",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": ["Thieve's Guild", "Baked Beak", "Meadowcrew"],
+    "factionDetail": [
+      "The Mindweft Covenant is a secretive guild formed around Red Era by merging the psionic mercenaries of the Underdark and the espionage experts from Spider's Hall.",
+      "Members include wilders, cognition thieves, and skilled shapechangers. They've quietly expanded their influence across Teothe's trade routes and shadow conflicts."
+    ],
+    "factionHQ": "",
+    "factionKey": 72
+  },
+  {
+    "factionType": "Tribe",
+    "factionName": "Mossy Mud Horde",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": ["Slayer's Take"],
+    "factionAllies": [],
+    "factionDetail": [
+      "The Horde was composed of goblins, kobolds, ogres, and orcs, and their ranks boasted many shamans and spellcasters. Mostly diminished."
+    ],
+    "factionHQ": "Yuyan Birches",
+    "factionKey": 73
+  },
+  {
+    "factionType": "Monastic",
+    "factionName": "Mârv'ôlîn-dil Drâth'môrûn",
+    "factionAliases": ["Drath"],
+    "factionDeity": "Wusor",
+    "factionEnemies": [
+      "Black Scripture",
+      "Obsidian Order",
+      "Inthizilelgghinn",
+      "Artificer's Union",
+      "Geasa",
+      "Red Coir",
+      "Ember Sect"
+    ],
+    "factionAllies": [
+      "Paladin's Guild",
+      "Horizon Conglomerate",
+      "Dawnhands",
+      "Taranqir",
+      "Slayer's Take"
+    ],
+    "factionDetail": [
+      "Technophobic monastic order that subdues wayward humanoids through overwhelming but non-lethal force, while killing genuinely evil creatures without mercy, believing spared evil makes them spiritually accountable for its future crimes.",
+      "Through Gurroka's magic, they hunt evil, slavers, fiend cults and hostile adventurers. Their monasteries are discoverable, recruitment is conducted openly through travelling recruiter monks and petitions from families, and captured raiders face merciless beatings in public."
+    ],
+    "factionHQ": "",
+    "factionKey": 74
+  },
+  {
+    "factionType": "Mercenary",
+    "factionName": "Nine Lizards",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": [],
+    "factionDetail": [
+      "The Nine Lizards were a mercenary and bandit group who predominantly did the 'dirty works' for the knights of Kaio, former Akairo."
+    ],
+    "factionHQ": "",
+    "factionKey": 75
+  },
+  {
+    "factionType": "Bandits",
+    "factionName": "Oasis Hue",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": [],
+    "factionDetail": [
+      "Roughly 350 members, most of whom were warriors equipped with leather armour or chain mail. Bandits of the Oasis Hue would force prisoners, and even lizards, to drink from the dangerous pools of the Fireward Desert until they discovered which pool was safe to drink from on that particular day."
+    ],
+    "factionHQ": "Horlow",
+    "factionKey": 76
+  },
+  {
+    "factionType": "Weave",
+    "factionName": "Orange Glass",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": ["Meadowcrew"],
+    "factionAllies": [
+      "Ancientry Preservation Union",
+      "Artificer's Union",
+      "House Galeth",
+      "Mage's Guild"
+    ],
+    "factionDetail": [
+      "A secretive society of predominantly human and elven wizards dedicated to discovering and recovering foreign magical artifacts buried in Teothe's desert ruins beyond Alean's Grave, believing they were left by a long-lost civilisation. Operating through divination and informants, they support their members, maintain uneasy relations with local rulers and close ties with astrologers. Increasing secrecy and restricted recruitment have fuelled internal disputes over whether to remain hidden or pursue greater influence through their recovered artifacts."
+    ],
+    "factionHQ": "",
+    "factionKey": 77
+  },
+  {
+    "factionType": "Assassins",
+    "factionName": "Phantom Knives",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [
+      "Iron Reason",
+      "Paladin's Guild",
+      "Slayer's Take",
+      "Crimson Caravan Company",
+      "Teothean Imperial Fleet"
+    ],
+    "factionAllies": ["Winston's Fleet"],
+    "factionDetail": [
+      "Terrorist faction operating on the outskirts of most walled cities. Specializing in guerrilla warfare and swift ambushes, they focus on terrorizing city gates, harassing poorly defended city guards, and raiding caravans traveling just beyond city walls. They aim to destabilize city defenses, disrupt trade, and spread fear to weaken authority and provoke chaos within walled cities.",
+      "Their motto is 'Strike unseen, vanish unheard'"
+    ],
+    "factionHQ": "",
+    "factionKey": 78
+  },
+  {
+    "factionType": "Professional",
+    "factionName": "Primordial Nourishment",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": [],
+    "factionDetail": [
+      "Primordial Nourishment is a specialist association devoted to preparing and supplying provisions for beings and practitioners connected to primordial forces."
+    ],
+    "factionHQ": "",
+    "factionKey": 79
+  },
+  {
+    "factionType": "Slaving",
+    "factionName": "Red Coir",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [
+      "Paladin's Guild",
+      "Taranqir",
+      "Dawnhands",
+      "Mârv'ôlîn-dil Drâth'môrûn",
+      "House Archambeau"
+    ],
+    "factionAllies": [],
+    "factionDetail": [
+      "A slaving company from Jidxhexi, which has a bad name throughout Kheros and Nulgos. Red Coir members were often identifiable by a red-dyed rope decorating their caravans and capes. They had a particular liking towards the Tiefling, believing no infernal species should freely taint Teothe."
+    ],
+    "factionHQ": "Jidxhexi",
+    "factionKey": 80
+  },
+  {
+    "factionType": "Bandits",
+    "factionName": "Rock Moles",
+    "factionAliases": ["Molescreamers"],
+    "factionDeity": "",
+    "factionEnemies": ["Slayer's Take"],
+    "factionAllies": [],
+    "factionDetail": [
+      "Also known as Molescreamers, were a savage and bloodthirsty pack of dire weremole gnomes. They launch raids often to the Underdark. They terrorized and preyed upon all living creatures they caught in these lands, and had been an ever-present enemy of the gnomes and drow who lived in the Underdark. They live in the barren tunnels dug by giant ants below Hephai."
+    ],
+    "factionHQ": "Hephai",
+    "factionKey": 81
+  },
+  {
+    "factionType": "Religious",
+    "factionName": "Sensate Theorists",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": ["The Quartet", "Swan's Hall"],
+    "factionDetail": [
+      "A diverse philosophical guild seeking enlightenment through experiencing and analyzing all sensations, ideas, and arts across the multiverse."
+    ],
+    "factionHQ": "Uxibo",
+    "factionKey": 82
+  },
+  {
+    "factionType": "Weave",
+    "factionName": "Silent Slither Society",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": ["Trueform Consortium"],
+    "factionDetail": [
+      "The SSS is a secret society dedicated to the protection of Ysstassi from foreigners. They struggle a lot when the pilgrimage to the Alean's Grave unmistakably invites foreigners to cross the city."
+    ],
+    "factionHQ": "",
+    "factionKey": 83
+  },
+  {
+    "factionType": "Merchant",
+    "factionName": "Silverspoons",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": ["Drunken Mermaid"],
+    "factionAllies": ["Brewer's Guild", "Bink's"],
+    "factionDetail": [
+      "Silverspoons is a widespread chain of public houses serving travellers, workers, and townsfolk across multiple settlements. Its branches offer familiar food, drink, and dependable service."
+    ],
+    "factionHQ": "",
+    "factionKey": 84
+  },
+  {
+    "factionType": "Professional",
+    "factionName": "Sivirron Paracix Foundation",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": [
+      "Ancientry Preservation Union",
+      "Followers of the Rune",
+      "House Galeth"
+    ],
+    "factionDetail": [
+      "The Sivirron Paracix Foundation preserves and circulates the writings, research, and practical guidance associated with Sivirron Paracix. It supports scholars and explorers who investigate the history of the Pioneers of Teothe, helping ensure that fragile records and hard-won knowledge remain accessible to later generations. Its work is scholarly rather than political, although the information it safeguards can influence disputes over history, ownership, and ancient discoveries."
+    ],
+    "factionHQ": "",
+    "factionKey": 85
+  },
+  {
+    "factionType": "Bandits",
+    "factionName": "Sky Claw",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": ["Teothean Imperial Fleet", "Slayer's Take"],
+    "factionAllies": [],
+    "factionDetail": [
+      "The Sky Claw was a bandit gang that operated throughout Aoradon, the smaller moon of Teothe. A certain number of the members are Aokin and skeletal undead. They set up operations and completely terrorize a single town or settlement upon descent, then take whatever they could back to Aoradon, often trafficking."
+    ],
+    "factionHQ": "Aoradon",
+    "factionKey": 86
+  },
+  {
+    "factionType": "Merchant",
+    "factionName": "Sleeping Crow",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": ["Thieve's Guild", "Bink's"],
+    "factionDetail": [
+      "It is a small, mostly wooden establishment. It provides suitable areas for private conversations and quality drinks. It has lost some popularity after introducing Smears to their selection, but having command over this club is regarded as a powerful position amongst many politicians of Burashu."
+    ],
+    "factionHQ": "Burashu",
+    "factionKey": 87
+  },
+  {
+    "factionType": "Professional",
+    "factionName": "Smearatarians",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": [],
+    "factionDetail": [
+      "The Smearatarians are a society devoted to the study, preservation, and responsible consumption of Smears."
+    ],
+    "factionHQ": "",
+    "factionKey": 88
+  },
+  {
+    "factionType": "Psionic",
+    "factionName": "Spiral of Thought",
+    "factionAliases": [],
+    "factionDeity": "Zharathuun",
+    "factionEnemies": ["Iron Reason"],
+    "factionAllies": [],
+    "factionDetail": [
+      "The Spiral of Ash and Thought is a little-known psionic sect said to serve Zharathuun, the god of entropy in their eyes."
+    ],
+    "factionHQ": "",
+    "factionKey": 89
+  },
+  {
+    "factionType": "Professional",
+    "factionName": "Steamers",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": [
+      "Artificer's Union",
+      "Guild of Ash and Fire",
+      "Chattering Mime"
+    ],
+    "factionDetail": [
+      "The Steamers are a professional association of boilerwrights, mechanics, and operators who specialise in steam-powered machinery and transport.",
+      "Their work complements the Artificer's Union's wider interest in technological advancement, while giving practical form to their inventions that might otherwise remain confined to workshops."
+    ],
+    "factionHQ": "",
+    "factionKey": 90
+  },
+  {
+    "factionType": "Bardic",
+    "factionName": "Swan's Hall",
+    "factionAliases": ["Bist's Place"],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": ["The Quartet", "The Orchestra", "Wet Sparks"],
+    "factionDetail": [
+      "It is a privately booked festival hall in Horifell, just across the ancient elven statue, named after the paladin Bist Kasneik's swans which she raised in the surrounding fields. It is often referred as Bist's Place by the locals. It is most importantly known for having an entrance to the Underdark."
+    ],
+    "factionHQ": "Horifell",
+    "factionKey": 91
+  },
+  {
+    "factionType": "Criminal",
+    "factionName": "Taimi Cult",
+    "factionAliases": [],
+    "factionDeity": "Lyulu",
+    "factionEnemies": [
+      "Paladin's Guild",
+      "Taranqir",
+      "Dawnhands",
+      "Slayer's Take"
+    ],
+    "factionAllies": [],
+    "factionDetail": [
+      "They were defeated by the Paladin's Guild in the Age of Wizardry and the remaining members who fled to the Sea of Breeze started a regime to spread terror in the now deserted lands of the Jeikhan Republic. Recently, in the Jeikhan Republic, they are known for the Eight Nights of the Whale, where many politicians that were involved in whale trading were poisoned."
+    ],
+    "factionHQ": "Yuzhka",
+    "factionKey": 92
+  },
+  {
+    "factionType": "Crusader",
+    "factionName": "Taranqir",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [
+      "Geasa",
+      "Red Coir",
+      "Taimi Cult",
+      "Ironfell Brotherhood"
+    ],
+    "factionAllies": ["Warrior's Guild", "Paladin's Guild"],
+    "factionDetail": [
+      "Taranqir is a group of crusaders that journey throughout the Wukhim plains, who oppose slave trade and protect travellers. Most of the members are also associated with the Warrior's Guild."
+    ],
+    "factionHQ": "",
+    "factionKey": 93
+  },
+  {
+    "factionType": "Fleet",
+    "factionName": "Teothean Imperial Fleet",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [
+      "Winston's Fleet",
+      "Sky Claw",
+      "Phantom Knives",
+      "Pearl Plunderers"
+    ],
+    "factionAllies": [
+      "Opal Observatory",
+      "Arcanum Alliance",
+      "Sapphire Sanctum"
+    ],
+    "factionDetail": [
+      "The Teothean Imperial Fleet is a fearsome, elite jamming force that navigates the currents between planes. Composed of hardened warriors from all races and nations within Teothe, entry is earned solely through skill and valor. There is no political influence that corrupts its ranks."
+    ],
+    "factionHQ": "",
+    "factionKey": 94
+  },
+  {
+    "factionType": "Tribe",
+    "factionName": "Tetraodontidae",
+    "factionAliases": ["White Shores", "White Coves"],
+    "factionDeity": "",
+    "factionEnemies": ["House Marinth"],
+    "factionAllies": ["Cavaliers of the Breeze"],
+    "factionDetail": [
+      "A tribe of Merfolk in the White Lagoon. White Shores and White Coves are the sister factions. They wield spears and spines of pufferfish. They are particularly known for hunting.",
+      "White Shores have a strong distaste towards the Tortle race, it is known that they wield tortle shells as shields and craft tortle lanterns.",
+      "Based on the fallen City of White around Kirame beneath White Lagoon and inspired of the song Megm Eq Gsiho a lot of non-Merfolk people assumed this is a faction other people could join in which is not the case."
+    ],
+    "factionHQ": "White Lagoon",
+    "factionKey": 95
+  },
+  {
+    "factionType": "Religious",
+    "factionName": "The Divine Cult",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": [],
+    "factionDetail": [
+      "The Divine Cult follows a three-part spiritual doctrine centred on Acceptance, Repentance, and Resonance. Its teachings promise followers a path towards personal transformation, spiritual advancement, and eventual enlightenment through commitment to the organisation's principles.",
+      "Recruitment and community growth are central to the cult's practices. Followers are encouraged to introduce others to the faith, establish new circles of believers, and strengthen the organisation through regular contributions and participation in its activities."
+    ],
+    "factionHQ": "",
+    "factionKey": 96
+  },
+  {
+    "factionType": "Psionic",
+    "factionName": "The Eclipse Fist",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": ["Group 27"],
+    "factionDetail": [
+      "A disciplined order and academy dedicated to mastering psionics through rigorous study and martial practice. Based in a fortified stronghold near the Allwatcher Tower, they blend the Konark's college's open teaching and research with the monastic training and spiritual discipline.",
+      "The Eclipse Fist believes true enlightenment comes from balance, combining knowledge with action, and that psionics is both a sacred gift and the path to higher existence."
+    ],
+    "factionHQ": "Allwatcher Tower",
+    "factionKey": 97
+  },
+  {
+    "factionType": "Secret",
+    "factionName": "The Fever",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [
+      "Dealgach Holding",
+      "Geasa",
+      "Phantom Knives",
+      "Red Coir"
+    ],
+    "factionAllies": ["Dawnhands", "Paladin's Guild", "Slayer's Take"],
+    "factionDetail": [
+      "The Fever is an organization of adventurers and spies, dedicated to protecting the innocent and opposing tyranny. They operate covertly to fight corruption and injustice, often working behind the scenes to influence events for the greater good. Members come from diverse backgrounds, united by a shared mission of vigilance and sacrifice."
+    ],
+    "factionHQ": "",
+    "factionKey": 98
+  },
+  {
+    "factionType": "Secret",
+    "factionName": "The Manacle",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": [],
+    "factionDetail": [
+      "The Manacle is a private chain of clubs operating in the Dwarven Union."
+    ],
+    "factionHQ": "Omouma",
+    "factionKey": 99
+  },
+  {
+    "factionType": "Professional",
+    "factionName": "The Paw",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": [],
+    "factionDetail": [
+      "The Paw is a professional fellowship of animal handlers, trackers, and creature-care specialists. Its members are hired to train working animals, locate lost beasts, manage dangerous creatures, and advise communities on the needs of local wildlife."
+    ],
+    "factionHQ": "",
+    "factionKey": 100
+  },
+  {
+    "factionType": "Professional",
+    "factionName": "The Trifecta",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": ["Guild of Afternoon Tea"],
+    "factionDetail": [
+      "An organisation of explorers specialising in travel beyond the boundaries of known Marbles. Its expeditions venture into the Phlogiston to chart navigable passages, locate previously undiscovered Marbles, and establish routes between distant Marbles by following the Rods. Its members include spelljamming pilots and seasoned explorers, surveyors...",
+      "The Trifecta commissions expeditions, exchanges navigational intelligence, and facilitates the movement of people and goods between otherwise isolated Marbles."
+    ],
+    "factionHQ": "Ethereal Plane",
+    "factionKey": 101
+  },
+  {
+    "factionType": "Enforcement",
+    "factionName": "Trigeminal Conclave",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [
+      "Ember Sect",
+      "Pearl Plunderers",
+      "Mage's Guild",
+      "Spiral of Thought"
+    ],
+    "factionAllies": ["Arcanum Alliance"],
+    "factionDetail": [
+      "Ruled by the Elders of Feianthe, and enforced the laws regarding the practice, research, and misuse of magic in the nation. It was not an official political or governmental group, but rather an elite 'secret' society. Although a secret society, the Trigeminal Conclave was well known and was respected and feared by every Feianthe citizen.",
+      "Whenever the experiments, conduct, or other actions of a wizard in Feianthe became unrestrained, the Trigeminal Conclave would intervene. They began with a warning, usually in the form of sending a simple note advising the wizard to refrain from continued abuse of magic. If the offenses continued, then other ways to correct their behavior were explored."
+    ],
+    "factionHQ": "Naalti",
+    "factionKey": 102
+  },
+  {
+    "factionType": "Tribe",
+    "factionName": "Trueform Consortium",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": ["Coldbrood"],
+    "factionAllies": ["Silent Slither Society"],
+    "factionDetail": [
+      "The Trueform Consortium were a loose association of metallic dragonborns based in Elpiji with the purpose of eliminating all shapechangers that tried to enter the City of Nioi."
+    ],
+    "factionHQ": "Elpiji",
+    "factionKey": 103
+  },
+  {
+    "factionType": "Bandits",
+    "factionName": "Virimelle Renegades",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": ["House Verdiori", "Leafwatch", "Wonderers of Du'Ora"],
+    "factionAllies": [],
+    "factionDetail": [
+      "The Virimelle Renegades was a group of half-elf bandits who raided the elven settlements along the Chet Valley in west-northwest Teothe."
+    ],
+    "factionHQ": "",
+    "factionKey": 104
+  },
+  {
+    "factionType": "Psionic",
+    "factionName": "Vos Burakrin",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": [],
+    "factionDetail": [
+      "Vos Burakrin is a group of 4 sets of 9 elite Derro savants who advised the Duergar of Underdark. Membership typically followed a member's death. They use magic and cunning to control some Duergar clans and constantly seek to expand their power."
+    ],
+    "factionHQ": "",
+    "factionKey": 105
+  },
+  {
+    "factionType": "Fleet",
+    "factionName": "Wet Sparks",
+    "factionAliases": [],
+    "factionDeity": "",
+    "factionEnemies": [],
+    "factionAllies": [
+      "Swan's Hall",
+      "The Quartet",
+      "The Orchestra",
+      "Drunken Mermaid"
+    ],
+    "factionDetail": [
+      "Traveling the Baibroun Beach and Kirame Beach in their four galleons (Pixie, Softwood, Buster, and Superlicious) the Wet Sparks performed shows and parades in towns up and down the coast. Wet Sparks was a traveling carnival of entertainers."
+    ],
+    "factionHQ": "Superlicious",
+    "factionKey": 106
+  },
+  {
+    "factionType": "Religious",
+    "factionName": "Word of Good",
+    "factionAliases": [],
+    "factionDeity": "It's Complicated",
+    "factionEnemies": [],
+    "factionAllies": ["Dawnhands", "Paladin's Guild", "Followers of the Rune"],
+    "factionDetail": [
+      "Word of Good was a religious sect that held the belief of divine Tezr, Yadseca and Waqorafe to be a single One. Even though Waqorafe worshipping clerics denounced the faction as heresy, many granted their assistance."
+    ],
+    "factionHQ": "Fex",
+    "factionKey": 107
+  },
+  {
+    "factionType": "Criminal",
+    "factionName": "Ziphiree",
+    "factionAliases": [],
+    "factionDeity": "Modgo",
+    "factionEnemies": ["Iron Reason", "Arcanum Alliance"],
+    "factionAllies": [
+      "Lepidolite Taurus",
+      "Thieve's Guild",
+      "Inthizilelgghinn"
+    ],
+    "factionDetail": [
+      "Upon the death of a great thief, their followers swore to be better than petty, and struck a deal with shadow mages to utilise Shadowfell's vast magic.",
+      "They have operated from Talonclaw, east of Oywego's Minami Keep. They also worked closely with the clergy of Modgo. Many members of the group transformed themselves into shades upon failing but still returning from their trial."
+    ],
+    "factionHQ": "Talonclaw",
+    "factionKey": 108
+  },
+  {
+    "factionType": "Fleet",
+    "factionName": "Kebab Trading Company",
+    "factionAliases": ["KTC"],
+    "factionDeity": "Umberlee",
+    "factionEnemies": [
+      "Adventurer's Guild",
+      "Warrior's Guild",
+      "Winston's Fleet",
+      "Crimson Caravan Company",
+      "Phantom Knives",
+      "Red Coir",
+      "Arrow Company",
+      "House Marinth"
+    ],
+    "factionAllies": [
+      "Tribes Of Blight",
+      "The Baked Beak",
+      "Artisan's Guild",
+      "Bink's"
+    ],
+    "factionDetail": [
+      "A notoriously aggressive pirate crew and trading organization, infamous for its firepower, naval dominance, and complete disregard for authority.",
+      "Operates a controlled economic and alchemical empire centered around Nioi, maintaining specialized in-house production while engaging in selective alliances and formal declarations of war against major rival guilds and companies."
+    ],
+    "factionHQ": "Nioi",
+    "factionKey": 109
+  }
+]
