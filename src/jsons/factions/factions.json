@@ -123,7 +123,7 @@
     "factionName": "Crimson Caravan Company",
     "factionAliases": [],
     "factionDeity": "",
-    "factionEnemies": ["Arrow Company", "Phantom Knives", "Fisherman's Guild"],
+    "factionEnemies": ["Arrow Company", "Phantom Knives", "Fisherman's Guild","Kebab Trading Company"],
     "factionAllies": ["Horizon Conglomerate", "House Tranc"],
     "factionDetail": [
       "A group of caravanners that grew huge by acquiring many other caravaneer companies.",
@@ -140,7 +140,7 @@
     "factionAliases": [],
     "factionDeity": "Wadqwofm",
     "factionEnemies": ["Crimson Caravan Company"],
-    "factionAllies": ["Poor Bruisers", "House Marinth"],
+    "factionAllies": ["Poor Bruisers", "Kebab Trading Company", "House Marinth"],
     "factionDetail": [
       "Fisherman's Guild is now, mostly, just a title and no longer is influencial.",
       "Most of the fishermen joined one of the caravaneer companies."
@@ -445,7 +445,7 @@
     "factionName": "Winston's Fleet",
     "factionAliases": [],
     "factionDeity": "",
-    "factionEnemies": ["Sapphire Sanctum", "Crimson Caravan Company"],
+    "factionEnemies": ["Sapphire Sanctum", "Crimson Caravan Company","Kebab Trading Company"],
     "factionAllies": [
       "Thieve's Guild",
       "Meadowcrew",
@@ -895,7 +895,7 @@
     "factionName": "House Marinth",
     "factionAliases": ["Tide Lords"],
     "factionDeity": "Wadqwofm",
-    "factionEnemies": ["Sapphire Sanctum", "Poor Bruisers"],
+    "factionEnemies": ["Sapphire Sanctum", "Poor Bruisers","Kebab Trading Company"],
     "factionAllies": [
       "Winston's Fleet",
       "Horizon Conglomerate",
@@ -999,7 +999,7 @@
     "factionAliases": [],
     "factionDeity": "Megm",
     "factionEnemies": [],
-    "factionAllies": [],
+    "factionAllies": ["Kebab Trading Company"],
     "factionDetail": [
       "House Zaurin is a tiny noble house whose standing rests on the careful administration of estates, harvests, and rural obligations. Its stewards maintain detailed accounts so that Zaurin can protect the interests of their residents."
     ],
@@ -1687,11 +1687,9 @@
       "Crimson Caravan Company",
       "Phantom Knives",
       "Red Coir",
-      "Arrow Company",
       "House Marinth"
     ],
     "factionAllies": [
-      "Tribes Of Blight",
       "The Baked Beak",
       "Artisan's Guild",
       "Bink's"
