@@ -27,20 +27,21 @@ function GetPantheons() {
   const data = pantheons as PantheonData[];
 
   const renderedPantheons = [...data]
-    .sort((a, b) =>
-      a.system.name.localeCompare(b.system.name)
-    )
-    .map((item) => (
-      <PantheonCon
-        key={item.id}
-        PantheonData={{
-          id: item.id,
-          name: item.system.name,
-          description: item.system.description ?? [],
-          species: item.system.species,
-        }}
-      />
-    ));
+  .sort((a, b) =>
+    a.system.name.localeCompare(b.system.name)
+  )
+  .map((item) => (
+    <PantheonCon
+      key={item.id}
+      PantheonData={{
+        id: item.id,
+        name: item.system.name,
+        description: item.system.description ?? [],
+        species: item.system.species,
+        deities: item.system.deities,
+      }}
+    />
+  ));
 
   return <Row>{renderedPantheons}</Row>;
 }
